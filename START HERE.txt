@@ -1,0 +1,35 @@
+GLASS-BOX MATH · MathDerive — single-file offline app
+=====================================================
+
+HOW TO RUN  (MacBook or Windows, 100% offline)
+  • Double-click  "Glass-Box Math.html"  → it opens in any browser. That's it.
+  • No internet, no install, no fonts or libraries downloaded. Copy the file
+    anywhere (USB stick, Desktop, shared folder) and it still works.
+  • Use the SAME browser to keep your streaks, mastery and XP (saved locally).
+
+WHAT'S INSIDE
+  • Modules (self-paced) — 49 ICSE chapter modules (covering ALL 23 Selina Concise
+    chapters and every major exercise type, no duplicates) + 20 mental-math
+    techniques, as a free-choice gallery. Pick ANY module in ANY
+    order — nothing is locked. Filter chips jump you to any category; each card
+    tracks its own progress.
+  • Solve & Explain — the glass box: every answer is DERIVED. Each step names
+    the RULE and the WHY, with step-reveal so you think before you peek.
+  • Worksheet — generate 1–40 fresh problems, toggle the answer key, print
+    (Cmd/Ctrl+P prints only the worksheet).
+  • Question Bank — all 1,700+ KV Class VIII problems (MCQ + practice) from the
+    KumarSwamy question bank, each with glass-box step-by-step solutions and
+    step-reveal. Filter by chapter or type; search any keyword.
+  • Self-Test — 10 scored, timed questions with Hint and full Solution; your
+    best score sets that chapter's mastery and feeds your level + streak.
+  • Formula Book — every rule the engine uses, grouped by chapter.
+  • Progress — streak, chapters mastered, overall mastery, XP and per-chapter bars.
+
+PROFILES (up to 3 learners on one device)
+  Click the profile card (top-left) to switch, add, edit or delete a learner.
+  Each keeps their own progress.
+
+UNDER THE HOOD
+  The math engine is rule-based and untouched from your precision build:
+  69 topics, pure params → {question, steps[{rule, why, math}], answer}.
+  A self-contained LaTeX renderer draws fractions/roots/exponents — no MathJax.

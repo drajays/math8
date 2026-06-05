@@ -266,5 +266,8 @@ def main():
     html=html[:start]+marker+"\n<script>\n"+data+"\n</script>"+html[end:]
     open(HTML_PATH,"w",encoding="utf-8").write(html)
     print(f"Embedded into {HTML_PATH} ({len(html)//1024} KB total)")
+    import shutil
+    shutil.copy2(HTML_PATH, "index.html")
+    print("Synced index.html for GitHub Pages")
 
 if __name__=="__main__": main()

@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ICSE Class 8 Maths · Aggarwal · Glass-Box</title>
+<script>
+/* GitHub Pages: /math8/textbook (no slash) breaks ../ relative fetches — normalize first */
+(function(){
+  var p = location.pathname;
+  if (/\/textbook$/i.test(p)) location.replace(p + "/" + location.search + location.hash);
+})();
+</script>
 <style>
 :root{
   --serif:"Iowan Old Style",Palatino,Georgia,serif;
@@ -100,6 +107,27 @@ const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 let MANIFEST = null, CUR = null, CACHE = {}, QIDX = 0, REVEAL = 0;
 
+/** Repo root e.g. https://drajays.github.io/math8/ — works with or without trailing slash on /textbook */
+function repoRoot(){
+  const path = location.pathname;
+  const i = path.indexOf("/textbook");
+  const rootPath = i >= 0 ? path.slice(0, i + 1) : path.replace(/\/[^/]*$/, "/");
+  return location.origin + rootPath;
+}
+function appBase(){
+  const path = location.pathname;
+  const i = path.indexOf("/textbook");
+  const base = i >= 0 ? path.slice(0, i + "/textbook/".length) : path.replace(/\/[^/]*$/, "/");
+  return location.origin + base;
+}
+function resolveUrl(path){
+  if (/^https?:\/\//i.test(path)) return path;
+  const clean = path.replace(/^\.\.\//, "");
+  if (clean.startsWith("data/")) return repoRoot() + clean;
+  if (clean.startsWith("textbook/")) return repoRoot() + clean;
+  return appBase() + clean.replace(/^\//, "");
+}
+
 function esc(s){ return String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
 
 function renderMath(el){
@@ -117,10 +145,10 @@ function mdToHtml(md){
 }
 
 async function loadText(url){
-  const r = await fetch(url); if(!r.ok) throw new Error(url); return r.text();
+  const r = await fetch(resolveUrl(url)); if(!r.ok) throw new Error(resolveUrl(url) + " → " + r.status); return r.text();
 }
 async function loadJson(url){
-  const r = await fetch(url); if(!r.ok) throw new Error(url); return r.json();
+  const r = await fetch(resolveUrl(url)); if(!r.ok) throw new Error(resolveUrl(url) + " → " + r.status); return r.json();
 }
 
 async function loadChapter(ch){
@@ -157,7 +185,8 @@ async function selectChapter(ch){
     paintQuestions(data.questions);
     paintOneWord(data.oneword);
   } catch(e){
-    $('#notes').innerHTML = '<div class="empty">Failed to load chapter data.</div>';
+    console.error(e);
+    $('#notes').innerHTML = `<div class="empty">Failed to load chapter data.<br><small>${esc(String(e.message||e))}</small></div>`;
   }
 }
 
@@ -221,9 +250,15 @@ $$('#tabs .tab').forEach(t => t.onclick = () => {
 });
 
 (async function boot(){
-  MANIFEST = await loadJson('manifest.json');
-  paintChapters();
-  if(MANIFEST.chapters.length) selectChapter(MANIFEST.chapters[0]);
+  try {
+    MANIFEST = await loadJson("manifest.json");
+    paintChapters();
+    if(MANIFEST.chapters.length) selectChapter(MANIFEST.chapters[0]);
+  } catch(e) {
+    console.error(e);
+    $('#chap-list').innerHTML = `<div class="empty">Could not load manifest.<br><small>${esc(String(e.message||e))}</small></div>`;
+    $('#notes').innerHTML = '<div class="empty">Check that data/chapters/ is deployed alongside this app.</div>';
+  }
 })();
 </script>
 </body>

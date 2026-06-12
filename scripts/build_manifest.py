@@ -12,12 +12,12 @@ for ch in range(1, 21):
     manifest.append({
         "num": ch, "tag": tag, "title": src["title"], "topicId": src["topicId"], "questions": 100,
         "files": {
-            "questions": f"../data/chapters/chapter_{tag}_questions.json",
-            "facts": f"../data/chapters/chapter_{tag}_facts.json",
-            "notes": f"../data/chapters/chapter_{tag}_notes.md",
-            "mindmap": f"../data/chapters/chapter_{tag}_mindmap.md",
-            "cheatsheet": f"../data/chapters/chapter_{tag}_cheatsheet.md",
-            "oneword": f"../data/chapters/chapter_{tag}_oneword.json",
+            "questions": f"data/chapters/chapter_{tag}_questions.json",
+            "facts": f"data/chapters/chapter_{tag}_facts.json",
+            "notes": f"data/chapters/chapter_{tag}_notes.md",
+            "mindmap": f"data/chapters/chapter_{tag}_mindmap.md",
+            "cheatsheet": f"data/chapters/chapter_{tag}_cheatsheet.md",
+            "oneword": f"data/chapters/chapter_{tag}_oneword.json",
         },
     })
 (REPO / "textbook" / "manifest.json").write_text(

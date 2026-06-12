@@ -517,7 +517,7 @@ h1.title{font-family:var(--serif); font-weight:700; font-size:40px; line-height:
           <div class="card-head">
             <span class="n">②</span> Glass-Box Derivation
             <label class="reveal-toggle">Step reveal
-              <span class="switch"><input type="checkbox" id="reveal-switch" checked><span class="track"></span></span>
+              <span class="switch"><input type="checkbox" id="reveal-switch"><span class="track"></span></span>
             </label>
           </div>
           <div class="card-body">
@@ -625,7 +625,7 @@ h1.title{font-family:var(--serif); font-weight:700; font-size:40px; line-height:
           <div class="card-head">
             <span class="n">②</span> Glass-Box Solution
             <label class="reveal-toggle">Step reveal
-              <span class="switch"><input type="checkbox" id="qb-reveal-switch" checked><span class="track"></span></span>
+              <span class="switch"><input type="checkbox" id="qb-reveal-switch"><span class="track"></span></span>
             </label>
           </div>
           <div class="card-body">
@@ -3207,7 +3207,7 @@ function buildPath(){
 /* ============================================================================
    SOLVE & EXPLAIN
    ============================================================================ */
-let REVEAL_MODE = true, REVEAL_IDX = 0, REVEAL_TOTAL = 0;
+let REVEAL_MODE = false, REVEAL_IDX = 0, REVEAL_TOTAL = 0;
 
 function selectTopic(id){
   CURRENT = TOPICS.find(t => t.id === id) || TOPICS[0];
@@ -3492,7 +3492,7 @@ function buildProgress(){
    ============================================================================ */
 const QB_PAGE = 30;
 let QB_CH = "all", QB_TYPE = "all", QB_Q = "", QB_PAGE_IDX = 0, QB_SEL = null;
-let QB_REVEAL = true, QB_REVEAL_IDX = 0, QB_REVEAL_TOTAL = 0;
+let QB_REVEAL = false, QB_REVEAL_IDX = 0, QB_REVEAL_TOTAL = 0;
 
 function qbFiltered(){
   if (typeof QUESTION_BANK === "undefined") return [];

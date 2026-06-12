@@ -273,7 +273,7 @@
   function panelHeroHtml(kind, badge, title, subtitle, deps) {
     const icons = { practice: "❓", mindmap: "🧠", cheat: "⚡", oneword: "🔤" };
     const subs = {
-      practice: "Glass-box step reveals · MCQ · Fill · T/F",
+      practice: "Full solution shown · toggle step-by-step reveal if you want",
       mindmap: "Concept tree linked to facts & practice",
       cheat: "Quick facts, formulas & exam traps",
       oneword: "Tap a card to flip and reveal",

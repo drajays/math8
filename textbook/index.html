@@ -172,6 +172,10 @@ a{color:var(--blue)}
 .pane-label::after{content:"";flex:1;height:1px;background:var(--border)}
 .glass-problem .pane-label{color:#e11d48}
 .glass-solution .pane-label{color:var(--emerald)}
+.glass-solution-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.glass-solution-head .pane-label{margin:0;flex:1}
+.glass-mode-toggle{display:flex;align-items:center;gap:8px;font-family:var(--sans);font-size:12px;font-weight:600;color:var(--on-var);cursor:pointer;user-select:none;white-space:nowrap}
+.glass-mode-toggle input{accent-color:#e11d48;width:15px;height:15px;cursor:pointer}
 .glass-problem .problem{margin-bottom:12px}
 .glass-problem .opts{margin-bottom:0}
 .glass-solution .steps{margin-bottom:8px}
@@ -338,6 +342,7 @@ const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 let MANIFEST = null, CUR = null, CACHE = {}, QIDX = 0, REVEAL = 0, LOAD_TOKEN = 0;
 let CUR_QUESTIONS = [], Q_FILTER = "all", Q_SEARCH = "";
+let GLASS_STEP_MODE = false;
 
 function safeStr(v){ return v == null ? "" : String(v); }
 const TYPE_LABEL = { mcq: "MCQ", fill_blank: "Fill", true_false: "T/F" };
@@ -607,27 +612,53 @@ function showGlass(q){
             ${opts}
           </div>
           <div class="glass-solution">
-            <h3 class="pane-label">Glass-box solution</h3>
+            <div class="glass-solution-head">
+              <h3 class="pane-label">Glass-box solution</h3>
+              <label class="glass-mode-toggle" title="When off, all steps and the answer are shown">
+                <input type="checkbox" id="glass-step-mode"> Step-by-step reveal
+              </label>
+            </div>
             <ol class="steps" id="steps">${(q.glassboxSteps || []).map((s, i) =>
               `<li class="step" data-i="${i}"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math mathline">${splitRenderTex(s.math)}</div></li>`
             ).join("")}</ol>
             <button class="btn" id="btn-next">Reveal next step ↓</button>
-            <div class="answer" id="ans" style="display:none"><span class="mathline">Answer: ${splitRenderTex(q.answer)}</span></div>
+            <div class="answer" id="ans"><span class="mathline">Answer: ${splitRenderTex(q.answer)}</span></div>
             <div class="glass-link">Linked note: ${esc(safeStr(q.linked_note_id))}</div>
           </div>
         </div>
       </div>
     </div>`;
-  REVEAL = 0; applyReveal();
+  REVEAL = 0;
+  wireGlassModeToggle();
+  applyReveal();
   $("#btn-next").onclick = () => { REVEAL++; applyReveal(); };
+}
+
+function wireGlassModeToggle(){
+  const cb = $("#glass-step-mode");
+  if (!cb) return;
+  cb.checked = GLASS_STEP_MODE;
+  cb.onchange = () => {
+    GLASS_STEP_MODE = cb.checked;
+    REVEAL = 0;
+    try { localStorage.setItem("math8-glass-step-mode", GLASS_STEP_MODE ? "1" : "0"); } catch(e){}
+    applyReveal();
+  };
 }
 
 function applyReveal(){
   const steps = $$('#steps .step');
-  steps.forEach((s,i)=> s.classList.toggle('pending', i>REVEAL));
   const ans = $('#ans');
-  if(ans) ans.style.display = REVEAL >= steps.length-1 ? 'block' : 'none';
-  if($('#btn-next')) $('#btn-next').style.display = REVEAL >= steps.length-1 ? 'none' : 'inline-block';
+  const btn = $('#btn-next');
+  if (!GLASS_STEP_MODE) {
+    steps.forEach(s => s.classList.remove('pending'));
+    if (ans) ans.style.display = 'block';
+    if (btn) btn.style.display = 'none';
+    return;
+  }
+  steps.forEach((s,i)=> s.classList.toggle('pending', i>REVEAL));
+  if (ans) ans.style.display = REVEAL >= Math.max(0, steps.length - 1) ? 'block' : 'none';
+  if (btn) btn.style.display = REVEAL >= Math.max(0, steps.length - 1) ? 'none' : 'inline-block';
 }
 
 function paintOneWord(cards){
@@ -686,6 +717,8 @@ $('#sidebar-toggle')?.addEventListener('click', () => {
   try {
     const saved = localStorage.getItem('math8-sidebar-collapsed');
     if (saved === '1') setSidebarCollapsed(true);
+    const glassMode = localStorage.getItem('math8-glass-step-mode');
+    if (glassMode === '1') GLASS_STEP_MODE = true;
     MANIFEST = await loadJson("manifest.json?v=4");
     paintChapters();
     if(MANIFEST.chapters.length) selectChapter(MANIFEST.chapters[0]);

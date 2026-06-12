@@ -175,16 +175,25 @@ async function loadJson(url){
   const r = await fetch(resolveUrl(url)); if(!r.ok) throw new Error(resolveUrl(url) + " → " + r.status); return r.json();
 }
 
+function chapterPaths(tag){
+  const p = "data/chapters/chapter_" + tag + "_";
+  return {
+    questions: p + "questions.json",
+    facts: p + "facts.json",
+    notes: p + "notes.md",
+    mindmap: p + "mindmap.md",
+    cheatsheet: p + "cheatsheet.md",
+    oneword: p + "oneword.json",
+  };
+}
+
 async function loadChapter(ch){
   if(CACHE[ch.tag]) return CACHE[ch.tag];
-  const f = ch.files || {};
-  const need = ["questions","facts","notes","mindmap","cheatsheet","oneword"];
-  for (const k of need){
-    if (!f[k]) throw new Error("Manifest missing files." + k + " for chapter " + ch.num);
-  }
+  const tag = safeStr(ch.tag || String(ch.num).padStart(2, "0"));
+  const f = chapterPaths(tag);
   const [questions, facts, notes, mindmap, cheat, oneword] = await Promise.all([
     loadJson(f.questions), loadJson(f.facts), loadText(f.notes),
-    loadText(f.mindmap), loadText(f.cheat), loadJson(f.oneword)
+    loadText(f.mindmap), loadText(f.cheatsheet), loadJson(f.oneword)
   ]);
   CACHE[ch.tag] = {
     questions: normQuestions(questions),
@@ -299,7 +308,7 @@ $$('#tabs .tab').forEach(t => t.onclick = () => {
 
 (async function boot(){
   try {
-    MANIFEST = await loadJson("manifest.json");
+    MANIFEST = await loadJson("manifest.json?v=3");
     paintChapters();
     if(MANIFEST.chapters.length) selectChapter(MANIFEST.chapters[0]);
   } catch(e) {

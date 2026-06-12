@@ -44,21 +44,58 @@ header{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:20p
 .notes-md{font-size:15px;max-height:62vh;overflow:auto;padding-right:6px}
 .notes-md h2{font-family:var(--serif);font-size:20px;margin:18px 0 8px;color:var(--primary)}
 .notes-md hr{border:none;border-top:1px dashed var(--border);margin:16px 0}
-.q-list{display:flex;flex-direction:column;gap:8px;max-height:38vh;overflow:auto;margin-bottom:14px}
-.q-item{padding:10px 12px;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;font-size:14px;background:var(--surface)}
+.q-list{display:flex;flex-direction:column;gap:8px;max-height:38vh;overflow:auto;margin-bottom:14px;padding-right:4px}
+.q-toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.q-search{flex:1;min-width:160px;font-family:var(--mono);font-size:13px;padding:9px 12px;border-radius:var(--r);border:1.5px solid var(--border);background:var(--surface)}
+.q-search:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
+.q-filters{display:flex;flex-wrap:wrap;gap:6px}
+.q-chip{border:1.5px solid var(--border);background:var(--surface);border-radius:var(--pill);padding:5px 12px;font-size:12px;font-weight:600;cursor:pointer;font-family:var(--mono)}
+.q-chip.active{background:var(--crimson);color:#fff;border-color:var(--crimson)}
+.q-item{padding:10px 12px;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;background:var(--surface);transition:border-color .15s,background .15s}
+.q-item:hover{border-color:var(--blue)}
 .q-item.active{border-color:var(--crimson);background:var(--crimson-soft)}
-.problem{border-left:4px solid var(--primary);background:var(--surface);padding:14px 16px;border-radius:var(--r);margin-bottom:10px;font-family:var(--serif);font-size:18px}
+.q-item .q-meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:5px}
+.q-item .q-id{font-family:var(--mono);font-size:10px;color:var(--on-dim);background:var(--bg);padding:2px 7px;border-radius:4px}
+.q-item .q-type{font-family:var(--mono);font-size:10px;font-weight:600;text-transform:uppercase;padding:2px 7px;border-radius:4px}
+.q-item .q-type.mcq{background:var(--blue-soft);color:var(--blue)}
+.q-item .q-type.fill_blank{background:var(--emerald-soft);color:var(--emerald)}
+.q-item .q-type.true_false{background:#fff3e0;color:#b45309}
+.q-item .q-preview{font-family:var(--serif);font-size:14px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.problem{border-left:4px solid var(--primary);background:var(--surface);padding:14px 16px;border-radius:var(--r);margin-bottom:12px;font-family:var(--serif);font-size:19px;line-height:1.65}
+.problem .mathline{line-height:1.7}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;list-style:none;margin:0 0 14px;padding:0}
+.opt{display:flex;align-items:flex-start;gap:8px;padding:10px 12px;border:1.5px solid var(--border);border-radius:var(--r);background:var(--surface);font-family:var(--serif);font-size:15px;line-height:1.5}
+.opt.correct{border-color:var(--emerald);background:var(--emerald-soft)}
+.opt .ol{font-family:var(--mono);font-weight:700;color:var(--on-var);min-width:1.2em}
+.opt .mark{color:var(--emerald);font-weight:700}
 .steps{list-style:none;margin:0;padding:0}
 .step{padding:14px 0 14px 48px;position:relative;border-bottom:1px dashed var(--border)}
 .step .num{position:absolute;left:0;top:10px;width:28px;height:28px;border-radius:50%;border:2px solid var(--crimson);display:grid;place-items:center;font-weight:700;font-size:13px;color:var(--crimson)}
 .step .rule{font-family:var(--mono);font-size:10px;text-transform:uppercase;background:var(--crimson-soft);color:var(--crimson);padding:3px 8px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .step .why{color:var(--on-var);font-size:14px;margin-bottom:6px}
-.step .math{font-family:var(--serif);font-size:17px;background:var(--surface);padding:10px 12px;border-radius:var(--r);overflow-x:auto}
+.step .math{font-family:var(--serif);font-size:17px;background:var(--surface);padding:10px 12px;border-radius:var(--r);overflow-x:auto;line-height:1.65}
 .step.pending{filter:blur(4px);opacity:.45;pointer-events:none}
-.answer{margin-top:12px;padding:14px 16px;background:var(--emerald-soft);border-radius:var(--r);font-family:var(--serif);font-size:20px;color:var(--emerald)}
+.answer{margin-top:12px;padding:14px 16px;background:var(--emerald-soft);border-radius:var(--r);font-family:var(--serif);font-size:20px;color:var(--emerald);line-height:1.65}
 .btn{border:none;border-radius:var(--r);padding:10px 16px;font-weight:600;cursor:pointer;background:var(--crimson);color:#fff;margin-top:10px}
 .meta{font-family:var(--mono);font-size:11px;color:var(--on-dim);margin-bottom:10px}
-.mindmap,.cheat{white-space:pre-wrap;font-size:14px;max-height:62vh;overflow:auto;font-family:var(--mono)}
+.mindmap,.cheat{font-size:14px;max-height:62vh;overflow:auto;line-height:1.6}
+.mindmap p,.cheat p{margin:0 0 8px}
+.notes-md code,.cheat code,.mindmap code{font-family:var(--mono);font-size:.9em;background:var(--bg);padding:1px 5px;border-radius:3px}
+.notes-md ul{margin:8px 0;padding-left:1.2em}
+.notes-md li{margin:4px 0}
+/* math rendering */
+.mathline,.math,.problem .mathline{line-height:1.7}
+.mfrac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;margin:0 .12em}
+.mfrac .mnum{border-bottom:1.4px solid currentColor;padding:0 .35em 1px}
+.mfrac .mden{padding:1px .35em 0}
+.msqrt{display:inline-flex;align-items:flex-start}
+.msqrt .mroot{font-size:.62em;transform:translateY(-.15em);margin-right:-.28em;font-family:var(--mono)}
+.msqrt .mradsign{transform:scaleY(1.25);display:inline-block;margin-right:1px}
+.msqrt .mrad{border-top:1.4px solid currentColor;padding:1px .14em 0}
+.msup,.msub{font-size:.72em;font-family:inherit}
+.msub{vertical-align:sub}
+.mtext{font-family:var(--sans);font-size:.9em;font-style:normal}
+.mvar{font-style:italic}
 .ow-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
 .ow-card{padding:12px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);cursor:pointer;text-align:center;font-weight:600}
 .ow-reveal{margin-top:12px;padding:14px;background:var(--blue-soft);border-radius:var(--r);min-height:48px}
@@ -89,11 +126,15 @@ header{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:20p
         <div class="panel active" id="panel-notes"><div class="notes-md empty" id="notes">Pick a chapter.</div></div>
         <div class="panel" id="panel-practice">
           <div class="meta" id="q-meta"></div>
+          <div class="q-toolbar">
+            <input class="q-search" id="q-search" type="search" placeholder="Search questions…" autocomplete="off">
+            <div class="q-filters" id="q-filters"></div>
+          </div>
           <div class="q-list" id="q-list"></div>
           <div id="glass-host"><div class="empty">Select a question for glass-box derivation.</div></div>
         </div>
-        <div class="panel" id="panel-mindmap"><pre class="mindmap empty" id="mindmap"></pre></div>
-        <div class="panel" id="panel-cheat"><pre class="cheat empty" id="cheat"></pre></div>
+        <div class="panel" id="panel-mindmap"><div class="mindmap empty" id="mindmap"></div></div>
+        <div class="panel" id="panel-cheat"><div class="cheat empty" id="cheat"></div></div>
         <div class="panel" id="panel-oneword">
           <div class="ow-grid" id="ow-grid"></div>
           <div class="ow-reveal" id="ow-reveal">Tap a word to reveal.</div>
@@ -102,13 +143,70 @@ header{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:20p
     </div>
   </div>
 </div>
+<script src="../shared/math-render.js?v=1"></script>
 <script>
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 let MANIFEST = null, CUR = null, CACHE = {}, QIDX = 0, REVEAL = 0, LOAD_TOKEN = 0;
+let CUR_QUESTIONS = [], Q_FILTER = "all", Q_SEARCH = "";
 
 function safeStr(v){ return v == null ? "" : String(v); }
-function texClean(v){ return safeStr(v).replace(/\$/g, ""); }
+const TYPE_LABEL = { mcq: "MCQ", fill_blank: "Fill", true_false: "T/F" };
+const OPT_LABELS = "ABCDEF";
+
+function texHtml(tex){ return MathRender.render(safeStr(tex)); }
+
+function inlineFmt(text){
+  return esc(text)
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/`([^`]+)`/g, "<code>$1</code>");
+}
+
+function splitRenderTex(text){
+  const re = /\$\$([^$]+)\$\$|\$([^$]+)\$/g;
+  let out = "", last = 0, m;
+  const s = safeStr(text);
+  while ((m = re.exec(s)) !== null) {
+    out += inlineFmt(s.slice(last, m.index));
+    out += `<span class="mathline">${texHtml(m[1] ?? m[2])}</span>`;
+    last = m.index + m[0].length;
+  }
+  out += inlineFmt(s.slice(last));
+  return out;
+}
+
+function cleanQuestionText(q){
+  return safeStr(q).replace(/^\[\d+\]\s*/, "");
+}
+
+function mdToHtml(md){
+  const lines = safeStr(md).split("\n");
+  let html = "", inList = false;
+  for (const line of lines) {
+    if (/^\* /.test(line)) {
+      if (!inList) { html += "<ul>"; inList = true; }
+      html += `<li>${splitRenderTex(line.slice(2))}</li>`;
+      continue;
+    }
+    if (inList) { html += "</ul>"; inList = false; }
+    const t = line.trim();
+    if (!t) { html += "<br>"; continue; }
+    if (t === "---") { html += "<hr>"; continue; }
+    const h3 = line.match(/^### (.+)$/);
+    if (h3) { html += `<h3>${splitRenderTex(h3[1])}</h3>`; continue; }
+    const h2 = line.match(/^## (.+)$/);
+    if (h2) { html += `<h2>${splitRenderTex(h2[1])}</h2>`; continue; }
+    const h1 = line.match(/^# (.+)$/);
+    if (h1) { html += `<h1>${splitRenderTex(h1[1])}</h1>`; continue; }
+    html += `<p>${splitRenderTex(line)}</p>`;
+  }
+  if (inList) html += "</ul>";
+  return html;
+}
+
+function plainToHtml(text){
+  return safeStr(text).split("\n").map(line => line ? `<p>${splitRenderTex(line)}</p>` : "").join("");
+}
 
 /** Repo root e.g. https://drajays.github.io/math8/ — works with or without trailing slash on /textbook */
 function repoRoot(){
@@ -153,20 +251,6 @@ function normOneWord(raw){
 }
 
 function esc(s){ return String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
-
-function renderMath(el){
-  el.innerHTML = el.innerHTML
-    .replace(/\$\$([^$]+)\$\$/g,'<span class="math">$1</span>')
-    .replace(/\$([^$]+)\$/g,'<span class="math">$1</span>');
-}
-
-function mdToHtml(md){
-  let h = esc(safeStr(md));
-  h = h.replace(/^# (.+)$/gm,'<h1>$1</h1>').replace(/^## (.+)$/gm,'<h2>$1</h2>').replace(/^### (.+)$/gm,'<h3>$1</h3>');
-  h = h.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/^---$/gm,'<hr>').replace(/\n/g,'<br>');
-  h = h.replace(/\$([^$]+)\$/g,'<span class="math">$1</span>');
-  return h;
-}
 
 async function loadText(url){
   const r = await fetch(resolveUrl(url)); if(!r.ok) throw new Error(resolveUrl(url) + " → " + r.status); return r.text();
@@ -228,8 +312,12 @@ async function selectChapter(ch){
     if (token !== LOAD_TOKEN) return;
     $("#notes").innerHTML = mdToHtml(data.notes);
     $("#notes").classList.remove("empty");
-    $("#mindmap").textContent = data.mindmap; $("#mindmap").classList.remove("empty");
-    $("#cheat").textContent = data.cheat; $("#cheat").classList.remove("empty");
+    $("#mindmap").innerHTML = plainToHtml(data.mindmap); $("#mindmap").classList.remove("empty");
+    $("#cheat").innerHTML = mdToHtml(data.cheat); $("#cheat").classList.remove("empty");
+    CUR_QUESTIONS = data.questions;
+    Q_FILTER = "all"; Q_SEARCH = "";
+    if ($("#q-search")) $("#q-search").value = "";
+    paintQuestionFilters(data.questions);
     paintQuestions(data.questions);
     paintOneWord(data.oneword);
   } catch(e){
@@ -239,6 +327,31 @@ async function selectChapter(ch){
   }
 }
 
+function filteredQuestions(qs){
+  const q = Q_SEARCH.trim().toLowerCase();
+  return qs.filter(item => {
+    if (Q_FILTER !== "all" && item.type !== Q_FILTER) return false;
+    if (!q) return true;
+    const hay = (item.id + " " + cleanQuestionText(item.question)).toLowerCase();
+    return hay.includes(q);
+  });
+}
+
+function paintQuestionFilters(qs){
+  const root = $("#q-filters");
+  if (!root) return;
+  const counts = { all: qs.length, mcq: 0, fill_blank: 0, true_false: 0 };
+  qs.forEach(q => { if (counts[q.type] != null) counts[q.type]++; });
+  root.innerHTML = "";
+  ["all", "mcq", "fill_blank", "true_false"].forEach(key => {
+    const b = document.createElement("button");
+    b.className = "q-chip" + (Q_FILTER === key ? " active" : "");
+    b.textContent = (key === "all" ? "All" : TYPE_LABEL[key]) + " (" + counts[key] + ")";
+    b.onclick = () => { Q_FILTER = key; QIDX = 0; paintQuestions(CUR_QUESTIONS); };
+    root.appendChild(b);
+  });
+}
+
 function paintQuestions(qs){
   if (!Array.isArray(qs) || !qs.length){
     $("#q-list").innerHTML = "";
@@ -246,16 +359,29 @@ function paintQuestions(qs){
     $("#q-meta").textContent = "0 questions";
     return;
   }
-  if (QIDX >= qs.length) QIDX = 0;
-  const types = {mcq:0,fill_blank:0,true_false:0};
-  qs.forEach(q => types[q.type] = (types[q.type]||0)+1);
-  $("#q-meta").textContent = `${qs.length} questions · ${types.mcq||0} MCQ · ${types.fill_blank||0} fill · ${types.true_false||0} T/F`;
+  const visible = filteredQuestions(qs);
+  if (!visible.length){
+    $("#q-list").innerHTML = '<div class="empty">No questions match your filter.</div>';
+    $("#glass-host").innerHTML = '<div class="empty">Adjust search or filter.</div>';
+    $("#q-meta").textContent = `0 of ${qs.length} shown`;
+    return;
+  }
+  const sel = visible.find(q => qs.indexOf(q) === QIDX) || visible[0];
+  QIDX = qs.indexOf(sel);
+  const types = { mcq: 0, fill_blank: 0, true_false: 0 };
+  qs.forEach(q => types[q.type] = (types[q.type] || 0) + 1);
+  $("#q-meta").textContent = `${visible.length} of ${qs.length} shown · ${types.mcq||0} MCQ · ${types.fill_blank||0} fill · ${types.true_false||0} T/F`;
   const list = $("#q-list"); list.innerHTML = "";
-  qs.forEach((q,i) => {
+  visible.forEach(q => {
+    const i = qs.indexOf(q);
     const d = document.createElement("div");
-    d.className = "q-item" + (i===QIDX?" active":"");
-    d.textContent = `${q.id} · ${q.type} · ${texClean(q.question).slice(0,70)}${q.question.length>70?"…":""}`;
-    d.onclick = () => { QIDX=i; paintQuestions(qs); showGlass(q); };
+    d.className = "q-item" + (i === QIDX ? " active" : "");
+    d.innerHTML = `<div class="q-meta">
+        <span class="q-id">${esc(q.id)}</span>
+        <span class="q-type ${esc(q.type)}">${esc(TYPE_LABEL[q.type] || q.type)}</span>
+      </div>
+      <div class="q-preview">${splitRenderTex(cleanQuestionText(q.question))}</div>`;
+    d.onclick = () => { QIDX = i; paintQuestions(qs); showGlass(q); };
     list.appendChild(d);
   });
   showGlass(qs[QIDX]);
@@ -265,17 +391,23 @@ function showGlass(q){
   if (!q) return;
   const host = $("#glass-host");
   let opts = "";
-  if(q.type==="mcq" && q.options && q.options.length){
-    opts = "<ul>"+q.options.map((o,i)=>`<li>${i===q.correctOption?"✓ ":""}${esc(texClean(o))}</li>`).join("")+"</ul>";
+  if (q.type === "mcq" && q.options && q.options.length) {
+    opts = `<ul class="opts">${q.options.map((o, i) =>
+      `<li class="opt${i === q.correctOption ? " correct" : ""}">
+        <span class="ol">${OPT_LABELS[i] || i + 1}.</span>
+        <span class="mathline">${splitRenderTex(o)}</span>
+        ${i === q.correctOption ? '<span class="mark">✓</span>' : ""}
+      </li>`
+    ).join("")}</ul>`;
   }
   host.innerHTML = `
-    <div class="problem">${esc(texClean(q.question))}</div>
+    <div class="problem"><div class="mathline">${splitRenderTex(cleanQuestionText(q.question))}</div></div>
     ${opts}
-    <ol class="steps" id="steps">${(q.glassboxSteps||[]).map((s,i)=>
-      `<li class="step" data-i="${i}"><span class="num">${i+1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math">${esc(texClean(s.math))}</div></li>`
+    <ol class="steps" id="steps">${(q.glassboxSteps || []).map((s, i) =>
+      `<li class="step" data-i="${i}"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math mathline">${splitRenderTex(s.math)}</div></li>`
     ).join("")}</ol>
     <button class="btn" id="btn-next">Reveal next step ↓</button>
-    <div class="answer" id="ans" style="display:none">Answer: ${esc(texClean(q.answer))}</div>
+    <div class="answer" id="ans" style="display:none"><span class="mathline">Answer: ${splitRenderTex(q.answer)}</span></div>
     <div class="meta">Linked note: ${esc(safeStr(q.linked_note_id))}</div>`;
   REVEAL = 0; applyReveal();
   $("#btn-next").onclick = () => { REVEAL++; applyReveal(); };
@@ -294,10 +426,16 @@ function paintOneWord(cards){
   cards.forEach(c => {
     const d = document.createElement('div');
     d.className = 'ow-card'; d.textContent = c.term;
-    d.onclick = () => { $('#ow-reveal').innerHTML = `<strong>${esc(c.term)}</strong><br>${esc(c.answer)}`; };
+    d.onclick = () => { $('#ow-reveal').innerHTML = `<strong>${esc(c.term)}</strong><br>${splitRenderTex(c.answer)}`; };
     g.appendChild(d);
   });
 }
+
+$("#q-search")?.addEventListener("input", e => {
+  Q_SEARCH = e.target.value;
+  QIDX = 0;
+  if (CUR_QUESTIONS.length) paintQuestions(CUR_QUESTIONS);
+});
 
 $$('#tabs .tab').forEach(t => t.onclick = () => {
   $$('#tabs .tab').forEach(x=>x.classList.remove('active'));
@@ -308,7 +446,7 @@ $$('#tabs .tab').forEach(t => t.onclick = () => {
 
 (async function boot(){
   try {
-    MANIFEST = await loadJson("manifest.json?v=3");
+    MANIFEST = await loadJson("manifest.json?v=4");
     paintChapters();
     if(MANIFEST.chapters.length) selectChapter(MANIFEST.chapters[0]);
   } catch(e) {

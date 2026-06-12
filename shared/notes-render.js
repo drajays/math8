@@ -266,5 +266,92 @@
     return html;
   }
 
-  root.NotesRender = { notesToHtml, splitRenderTex, inlineFmt };
+  function chapterTheme(chNum) {
+    return SECTION_THEMES[(Math.max(1, chNum) - 1) % SECTION_THEMES.length];
+  }
+
+  function panelHeroHtml(kind, badge, title, subtitle, deps) {
+    const icons = { practice: "❓", mindmap: "🧠", cheat: "⚡", oneword: "🔤" };
+    const subs = {
+      practice: "Glass-box step reveals · MCQ · Fill · T/F",
+      mindmap: "Concept tree linked to facts & practice",
+      cheat: "Quick facts, formulas & exam traps",
+      oneword: "Tap a card to flip and reveal",
+    };
+    return `<header class="panel-hero panel-hero--${kind}">
+      <div class="panel-hero-inner">
+        <span class="panel-hero-icon" aria-hidden="true">${icons[kind] || "📖"}</span>
+        <div class="panel-hero-text">
+          <span class="panel-hero-badge">${esc(badge)}</span>
+          <h2 class="panel-hero-title">${splitRenderTex(title, deps)}</h2>
+          <p class="panel-hero-sub">${esc(subtitle || subs[kind] || "")}</p>
+        </div>
+      </div>
+    </header>`;
+  }
+
+  function cheatSheetHtml(md, deps) {
+    const lines = String(md ?? "").split("\n");
+    let title = "Cheat Sheet";
+    const facts = [];
+    for (const line of lines) {
+      const h = line.match(/^# (.+)$/);
+      if (h) { title = h[1]; continue; }
+      if (!line.trim().startsWith("|") || /^\|[-\s|]+\|$/.test(line.trim())) continue;
+      const cells = line.split("|").map(c => c.trim()).filter(Boolean);
+      if (cells.length >= 3 && cells[0] !== "#" && !/^[-]+$/.test(cells[0])) {
+        facts.push({ num: cells[0], fact: cells[1], noteId: cells[2].replace(/`/g, "").trim() });
+      }
+    }
+    let html = `<div class="rich-doc cheat-doc">${panelHeroHtml("cheat", facts.length + " facts", title, null, deps)}<div class="cheat-grid">`;
+    facts.forEach((f, i) => {
+      const theme = SECTION_THEMES[i % SECTION_THEMES.length];
+      html += `<article class="cheat-card" style="--sec-accent:${theme.accent};--sec-soft:${theme.soft}">
+        <span class="cheat-num">${esc(f.num)}</span>
+        <div class="cheat-body">${splitRenderTex(f.fact, deps)}</div>
+        <span class="note-id-pill">${esc(f.noteId)}</span>
+      </article>`;
+    });
+    return html + `</div></div>`;
+  }
+
+  function renderMindBranch(items, start, depth, deps) {
+    let html = `<ul class="mind-branch mind-branch--${depth}">`;
+    let i = start;
+    while (i < items.length) {
+      const d = Math.floor(items[i].depth / 2);
+      if (d < depth) break;
+      if (d > depth) { i++; continue; }
+      const theme = SECTION_THEMES[d % SECTION_THEMES.length];
+      html += `<li class="mind-node${d === 0 ? " mind-node--root" : ""}" style="--sec-accent:${theme.accent};--sec-soft:${theme.soft}">
+        <div class="mind-node-card">${splitRenderTex(items[i].text, deps)}</div>`;
+      i++;
+      if (i < items.length && Math.floor(items[i].depth / 2) > depth) {
+        const sub = renderMindBranch(items, i, depth + 1, deps);
+        html += sub.html;
+        i = sub.index;
+      }
+      html += `</li>`;
+    }
+    html += `</ul>`;
+    return { html, index: i };
+  }
+
+  function mindMapHtml(md, deps) {
+    const lines = String(md ?? "").split("\n");
+    let title = "Mind Map";
+    const items = [];
+    for (const line of lines) {
+      const h = line.match(/^# (.+)$/);
+      if (h) { title = h[1]; continue; }
+      const m = line.match(/^(\s*)- (.+)$/);
+      if (m) items.push({ depth: m[1].length, text: m[2] });
+    }
+    let html = `<div class="rich-doc mind-doc">${panelHeroHtml("mindmap", items.length + " nodes", title, null, deps)}<div class="mind-tree">`;
+    if (items.length) html += renderMindBranch(items, 0, 0, deps).html;
+    else html += `<p class="empty-state">No mind map nodes for this chapter.</p>`;
+    return html + `</div></div>`;
+  }
+
+  root.NotesRender = { notesToHtml, splitRenderTex, inlineFmt, SECTION_THEMES, chapterTheme, panelHeroHtml, cheatSheetHtml, mindMapHtml };
 })(typeof window !== "undefined" ? window : this);

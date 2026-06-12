@@ -1,0 +1,145 @@
+{
+  "chapter": 13,
+  "title": "Understanding Shapes",
+  "topicId": "math-ch13",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    12374,
+    13978
+  ],
+  "sections": [
+    {
+      "id": "CH13-sec-understanding-shapes",
+      "title": "Understanding Shapes",
+      "level": 2
+    },
+    {
+      "id": "CH13-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH13-sec-vi",
+      "title": "(vi)",
+      "level": 5
+    },
+    {
+      "id": "CH13-sec-vii",
+      "title": "(vii)",
+      "level": 5
+    },
+    {
+      "id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "title": "(n-2)\\times3=2n \\Rightarrow 3n-6=2n",
+      "level": 4
+    },
+    {
+      "id": "CH13-sec-exercise-13-1",
+      "title": "Exercise 13.1",
+      "level": 5
+    },
+    {
+      "id": "CH13-sec-1-some-figures-are-given-below",
+      "title": "1. Some figures are given below.",
+      "level": 2
+    },
+    {
+      "id": "CH13-sec-it-find-the-angle-measure-x-in-the-following-fig",
+      "title": "It find the angle measure x in the following figures:",
+      "level": 2
+    },
+    {
+      "id": "CH13-sec-from-the-adjoining-figure-find",
+      "title": "from the adjoining figure, find",
+      "level": 2
+    },
+    {
+      "id": "CH13-sec-quadrilateral",
+      "title": "QUADRILATERAL",
+      "level": 4
+    },
+    {
+      "id": "CH13-sec-activity-5",
+      "title": "ACTIVITY 5",
+      "level": 4
+    },
+    {
+      "id": "CH13-sec-activity-6",
+      "title": "ACTIVITY 6",
+      "level": 4
+    },
+    {
+      "id": "CH13-sec-1-activity-7",
+      "title": "1 % ACTIVITY 7",
+      "level": 2
+    },
+    {
+      "id": "CH13-sec-sides-of-an-equilateral-triangle-sides-of-a-squa",
+      "title": "(sides of an equilateral triangle) (sides of a square)",
+      "level": 3
+    },
+    {
+      "id": "CH13-sec-because-angle-dae-angle-aed-75-circ",
+      "title": "( $ \\because \\angle DAE = \\angle AED = 75^\\circ $)",
+      "level": 5
+    },
+    {
+      "id": "CH13-sec-in-the-following-examples-choose-the-correct-ans",
+      "title": "In the following examples, choose the correct answer from the given four options. Example 1. Which of the following is a convex polygon?",
+      "level": 2
+    },
+    {
+      "id": "CH13-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH13-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 4
+    },
+    {
+      "id": "CH13-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH13-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I–II TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH13-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH13-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 4
+    },
+    {
+      "id": "CH13-sec-time-allowed-1-hour",
+      "title": "Time allowed: 1 Hour",
+      "level": 3
+    },
+    {
+      "id": "CH13-sec-7-in-the-adjoining-figure-abcd-is-a-rectangle-pr",
+      "title": "7. In the adjoining figure, ABCD is a rectangle. Prove that  $ AC = BD $.",
+      "level": 2
+    },
+    {
+      "id": "CH13-sec-15-in-the-adjoining-pentagon-abcde-find-the-valu",
+      "title": "15. In the adjoining pentagon ABCDE, find the value of $x$.",
+      "level": 2
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "FACT-CH09-001",
+    "chapter": 9,
+    "fact": "i.e. $ \\frac{x}{y} = \\text{constant}(k) $ or x = ky, where k is called $ \\text{constant of variation} $. So we can say that:",
+    "linked_note_id": "CH09-sec-direct-variation"
+  },
+  {
+    "id": "FACT-CH09-002",
+    "chapter": 9,
+    "fact": "i.e. $ xy = k(\\text{constant}) $, where k is called constant of variation.",
+    "linked_note_id": "CH09-sec-inverse-variation"
+  }
+]

@@ -3,8 +3,8 @@ GLASS-BOX MATH · MathDerive — single-file offline app
 
 HOW TO RUN  (MacBook or Windows, 100% offline)
   • Double-click  "Glass-Box Math.html"  → it opens in any browser. That's it.
-  • No internet, no install, no fonts or libraries downloaded. Copy the file
-    anywhere (USB stick, Desktop, shared folder) and it still works.
+  • Online: https://drajays.github.io/math8/glass-box/
+  • Hub: https://drajays.github.io/math8/
   • Use the SAME browser to keep your streaks, mastery and XP (saved locally).
 
 WHAT'S INSIDE

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "FACT-CH16-001",
+    "chapter": 16,
+    "fact": "(i) the horizontal line X'OX is called x-axis.",
+    "linked_note_id": "CH16-sec-coordinate-system"
+  },
+  {
+    "id": "FACT-CH16-002",
+    "chapter": 16,
+    "fact": "The configuration so formed is called a coordinate system or coordinate plane or cartesian plane.",
+    "linked_note_id": "CH16-sec-coordinate-system"
+  },
+  {
+    "id": "FACT-CH16-003",
+    "chapter": 16,
+    "fact": "(i) OM is called x-coordinate or abscissa of P and is usually denoted by x.",
+    "linked_note_id": "CH16-sec-coordinates-of-a-point"
+  },
+  {
+    "id": "FACT-CH16-004",
+    "chapter": 16,
+    "fact": "(ii) MP is called y-coordinate or ordinate of P and is usually denoted by y.",
+    "linked_note_id": "CH16-sec-coordinates-of-a-point"
+  },
+  {
+    "id": "FACT-CH16-005",
+    "chapter": 16,
+    "fact": "(iii) X'OY' is called third quadrant. Here both x and y are negative.",
+    "linked_note_id": "CH16-sec-quadrants"
+  },
+  {
+    "id": "FACT-CH16-006",
+    "chapter": 16,
+    "fact": "(i) The horizontal line X'OY in a coordinate plane is called .....",
+    "linked_note_id": "CH16-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH16-007",
+    "chapter": 16,
+    "fact": "(ii) The point of intersection of x-axis and y-axis is called $ \\ldots\\ldots $.",
+    "linked_note_id": "CH16-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH16-008",
+    "chapter": 16,
+    "fact": "Area of circle depends on the radius of circle, then radius of circle is called $ \\dots $ variable.",
+    "linked_note_id": "CH16-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH16-009",
+    "chapter": 16,
+    "fact": "(ii) The y-coordinate of a point is called abscissa.",
+    "linked_note_id": "CH16-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH16-010",
+    "chapter": 16,
+    "fact": "★ From any point P in the coordination (i) OM (= x) is called x-coordinate or abscissa of P.",
+    "linked_note_id": "CH16-sec-summary"
+  },
+  {
+    "id": "FACT-CH16-011",
+    "chapter": 16,
+    "fact": "(ii) MP (= y) is called y-coordinate or ordinate of P.",
+    "linked_note_id": "CH16-sec-summary"
+  }
+]

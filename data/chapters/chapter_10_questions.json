@@ -1,0 +1,2947 @@
+[
+  {
+    "id": "Q-CH10-001",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Which of the following algebraic expression is not a polynomial?",
+    "options": [
+      "$ 3x + \\frac{2}{x} + 7 $",
+      "$ \\sqrt{2}x^{2} + \\sqrt{3}x + \\sqrt{6} $",
+      "",
+      ""
+    ],
+    "correctOption": 0,
+    "answer": "$ 3x + \\frac{2}{x} + 7 $",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "Which of the following algebraic expression is not a polynomial?"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "$ 3x + \\frac{2}{x} + 7 $"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $Which of the following algebraic expression is not a polynomial?$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$ 3x + \\frac{2}{x} + 7 $$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-002",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Which of the following algebraic expression is not a monomial?",
+    "options": [
+      "4",
+      "5",
+      "7x + y - z",
+      ""
+    ],
+    "correctOption": 0,
+    "answer": "4",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "Which of the following algebraic expression is not a monomial?"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "4"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $Which of the following algebraic expression is not a monomial?$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $4$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-003",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "$ a(b-c) + b(c-a) + c(a-b) $ is equal to",
+    "options": [
+      "6",
+      "none of these",
+      "",
+      ""
+    ],
+    "correctOption": 0,
+    "answer": "6",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "$ a(b-c) + b(c-a) + c(a-b) $ is equal to"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "6"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $$ a(b-c) + b(c-a) + c(a-b) $ is equal to$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $6$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-004",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "$ \\frac{7}{5}xy - \\frac{2}{3}xy + \\frac{8}{9}xy $ is equal to\n\n(180) ICSE Mathematics - V",
+    "options": [
+      "xy",
+      "none of these",
+      "",
+      ""
+    ],
+    "correctOption": 0,
+    "answer": "xy",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "$ \\frac{7}{5}xy - \\frac{2}{3}xy + \\frac{8}{9}xy $ is equal to\n\n(180) ICSE Mathematics - V"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "xy"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $$ \\frac{7}{5}xy - \\frac{2}{3}xy + \\frac{8}{9}xy $ is equal to\n\n(180) ICSE Mathematics - V$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $xy$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-005",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "$ (3p^2q^2r^3) \\times (-4p^3q^2r^2) \\times (7pq^2r) $ is equal to",
+    "options": [
+      "$ 84p^6q^6r^6 $",
+      "$ -84p^6q^6 $",
+      "$84p^{6}q^{5}r^{6}$",
+      "$ -84p^{6}q^{5}r^{6} $"
+    ],
+    "correctOption": 0,
+    "answer": "$ 84p^6q^6r^6 $",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "$ (3p^2q^2r^3) \\times (-4p^3q^2r^2) \\times (7pq^2r) $ is equal to"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "$ 84p^6q^6r^6 $"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $$ (3p^2q^2r^3) \\times (-4p^3q^2r^2) \\times (7pq^2r) $ is equal to$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$ 84p^6q^6r^6 $$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-006",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "$3m \\times (2m^{2} - 5mn + 4n-1)$ is $3m^{2}$",
+    "options": [
+      "$6m^{2} + 15m^{2}n - 12mn^{2}$",
+      "$6m^{2} - 15m^{2}n - 12mn^{2}$",
+      "$ x^{2} + 3x + 2 $",
+      "$ x^{2} + 2x + 3 $"
+    ],
+    "correctOption": 0,
+    "answer": "$6m^{2} + 15m^{2}n - 12mn^{2}$",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "$3m \\times (2m^{2} - 5mn + 4n-1)$ is $3m^{2}$"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "$6m^{2} + 15m^{2}n - 12mn^{2}$"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $$3m \\times (2m^{2} - 5mn + 4n-1)$ is $3m^{2}$$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$6m^{2} + 15m^{2}n - 12mn^{2}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-007",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "If  $ x + \\frac{1}{x} = 2 $, then  $ x^{2} + \\frac{1}{x^{2}} $ is equal to",
+    "options": [
+      "4",
+      "none of these",
+      "",
+      ""
+    ],
+    "correctOption": 0,
+    "answer": "4",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "If  $ x + \\frac{1}{x} = 2 $, then  $ x^{2} + \\frac{1}{x^{2}} $ is equal to"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "4"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $If  $ x + \\frac{1}{x} = 2 $, then  $ x^{2} + \\frac{1}{x^{2}} $ is equal to$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $4$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-008",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "$ 96 \\times 10^{4} $ is equal to",
+    "options": [
+      "9984",
+      "9974",
+      "9964",
+      "none of these"
+    ],
+    "correctOption": 0,
+    "answer": "9984",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "$ 96 \\times 10^{4} $ is equal to"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "9984"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $$ 96 \\times 10^{4} $ is equal to$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $9984$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-009",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "If the area of a rectangle is  $ 24(x^{2}yz + xy^{2}z + xyz^{2}) $ and its length is 8xyz, then its breadth is",
+    "options": [
+      "3xyz",
+      "none of these",
+      "",
+      ""
+    ],
+    "correctOption": 0,
+    "answer": "3xyz",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "If the area of a rectangle is  $ 24(x^{2}yz + xy^{2}z + xyz^{2}) $ and its length is 8xyz, then its breadth is"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "3xyz"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $If the area of a rectangle is  $ 24(x^{2}yz + xy^{2}z + xyz^{2}) $ and its length is 8xyz, then its breadth is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $3xyz$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-010",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{2}{5} + \\dfrac{1}{5}$",
+    "options": [
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{1}{5}$",
+      "$\\dfrac{4}{5}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{3}{5}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 5.",
+        "math": "$\\dfrac{2}{5}+\\dfrac{1}{5}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{3}{5}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 5. → $$\\dfrac{2}{5}+\\dfrac{1}{5}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{3}{5}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-011",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{3}{6} + \\dfrac{1}{6}$",
+    "options": [
+      "$\\dfrac{4}{6}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{5}{6}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{4}{6}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 6.",
+        "math": "$\\dfrac{3}{6}+\\dfrac{1}{6}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{4}{6}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 6. → $$\\dfrac{3}{6}+\\dfrac{1}{6}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{4}{6}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-012",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{4}{7} + \\dfrac{1}{7}$",
+    "options": [
+      "$\\dfrac{5}{7}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{6}{7}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{5}{7}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 7.",
+        "math": "$\\dfrac{4}{7}+\\dfrac{1}{7}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{5}{7}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 7. → $$\\dfrac{4}{7}+\\dfrac{1}{7}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{5}{7}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-013",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{5}{8} + \\dfrac{1}{8}$",
+    "options": [
+      "$\\dfrac{6}{8}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{7}{8}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{6}{8}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 8.",
+        "math": "$\\dfrac{5}{8}+\\dfrac{1}{8}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{6}{8}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 8. → $$\\dfrac{5}{8}+\\dfrac{1}{8}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{6}{8}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-014",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{6}{9} + \\dfrac{1}{9}$",
+    "options": [
+      "$\\dfrac{7}{9}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{8}{9}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{7}{9}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 9.",
+        "math": "$\\dfrac{6}{9}+\\dfrac{1}{9}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{7}{9}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 9. → $$\\dfrac{6}{9}+\\dfrac{1}{9}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{7}{9}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-015",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{7}{10} + \\dfrac{1}{10}$",
+    "options": [
+      "$\\dfrac{8}{10}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{9}{10}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{8}{10}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 10.",
+        "math": "$\\dfrac{7}{10}+\\dfrac{1}{10}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{8}{10}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 10. → $$\\dfrac{7}{10}+\\dfrac{1}{10}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{8}{10}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-016",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{8}{11} + \\dfrac{1}{11}$",
+    "options": [
+      "$\\dfrac{9}{11}$",
+      "$\\dfrac{8}{12}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{10}{11}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{9}{11}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 11.",
+        "math": "$\\dfrac{8}{11}+\\dfrac{1}{11}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{9}{11}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 11. → $$\\dfrac{8}{11}+\\dfrac{1}{11}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{9}{11}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-017",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{12}{15} + \\dfrac{1}{15}$",
+    "options": [
+      "$\\dfrac{13}{15}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{11}{15}$",
+      "$\\dfrac{14}{15}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{13}{15}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 15.",
+        "math": "$\\dfrac{12}{15}+\\dfrac{1}{15}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{13}{15}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 15. → $$\\dfrac{12}{15}+\\dfrac{1}{15}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{13}{15}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-018",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{13}{16} + \\dfrac{1}{16}$",
+    "options": [
+      "$\\dfrac{14}{16}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{15}{16}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{14}{16}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 16.",
+        "math": "$\\dfrac{13}{16}+\\dfrac{1}{16}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{14}{16}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 16. → $$\\dfrac{13}{16}+\\dfrac{1}{16}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{14}{16}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-019",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{14}{17} + \\dfrac{1}{17}$",
+    "options": [
+      "$\\dfrac{15}{17}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{16}{17}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{15}{17}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 17.",
+        "math": "$\\dfrac{14}{17}+\\dfrac{1}{17}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{15}{17}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 17. → $$\\dfrac{14}{17}+\\dfrac{1}{17}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{15}{17}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-020",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{15}{18} + \\dfrac{1}{18}$",
+    "options": [
+      "$\\dfrac{16}{18}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{17}{18}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{16}{18}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 18.",
+        "math": "$\\dfrac{15}{18}+\\dfrac{1}{18}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{16}{18}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 18. → $$\\dfrac{15}{18}+\\dfrac{1}{18}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{16}{18}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-021",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{16}{19} + \\dfrac{1}{19}$",
+    "options": [
+      "$\\dfrac{17}{19}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{18}{19}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{17}{19}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 19.",
+        "math": "$\\dfrac{16}{19}+\\dfrac{1}{19}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{17}{19}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 19. → $$\\dfrac{16}{19}+\\dfrac{1}{19}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{17}{19}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-022",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{17}{20} + \\dfrac{1}{20}$",
+    "options": [
+      "$\\dfrac{18}{20}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{19}{20}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{18}{20}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 20.",
+        "math": "$\\dfrac{17}{20}+\\dfrac{1}{20}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{18}{20}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 20. → $$\\dfrac{17}{20}+\\dfrac{1}{20}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{18}{20}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-023",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{18}{21} + \\dfrac{1}{21}$",
+    "options": [
+      "$\\dfrac{19}{21}$",
+      "$\\dfrac{18}{22}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{20}{21}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{19}{21}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 21.",
+        "math": "$\\dfrac{18}{21}+\\dfrac{1}{21}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{19}{21}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 21. → $$\\dfrac{18}{21}+\\dfrac{1}{21}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{19}{21}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-024",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{22}{25} + \\dfrac{1}{25}$",
+    "options": [
+      "$\\dfrac{23}{25}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{21}{25}$",
+      "$\\dfrac{24}{25}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{23}{25}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 25.",
+        "math": "$\\dfrac{22}{25}+\\dfrac{1}{25}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{23}{25}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 25. → $$\\dfrac{22}{25}+\\dfrac{1}{25}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{23}{25}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-025",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{23}{26} + \\dfrac{1}{26}$",
+    "options": [
+      "$\\dfrac{24}{26}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{25}{26}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{24}{26}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 26.",
+        "math": "$\\dfrac{23}{26}+\\dfrac{1}{26}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{24}{26}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 26. → $$\\dfrac{23}{26}+\\dfrac{1}{26}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{24}{26}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-026",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{24}{27} + \\dfrac{1}{27}$",
+    "options": [
+      "$\\dfrac{25}{27}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{26}{27}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{25}{27}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 27.",
+        "math": "$\\dfrac{24}{27}+\\dfrac{1}{27}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{25}{27}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 27. → $$\\dfrac{24}{27}+\\dfrac{1}{27}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{25}{27}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-027",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{25}{28} + \\dfrac{1}{28}$",
+    "options": [
+      "$\\dfrac{26}{28}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{27}{28}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{26}{28}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 28.",
+        "math": "$\\dfrac{25}{28}+\\dfrac{1}{28}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{26}{28}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 28. → $$\\dfrac{25}{28}+\\dfrac{1}{28}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{26}{28}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-028",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{26}{29} + \\dfrac{1}{29}$",
+    "options": [
+      "$\\dfrac{27}{29}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{28}{29}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{27}{29}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 29.",
+        "math": "$\\dfrac{26}{29}+\\dfrac{1}{29}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{27}{29}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 29. → $$\\dfrac{26}{29}+\\dfrac{1}{29}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{27}{29}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-029",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{27}{30} + \\dfrac{1}{30}$",
+    "options": [
+      "$\\dfrac{28}{30}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{29}{30}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{28}{30}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 30.",
+        "math": "$\\dfrac{27}{30}+\\dfrac{1}{30}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{28}{30}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 30. → $$\\dfrac{27}{30}+\\dfrac{1}{30}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{28}{30}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-030",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{28}{31} + \\dfrac{1}{31}$",
+    "options": [
+      "$\\dfrac{29}{31}$",
+      "$\\dfrac{28}{32}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{30}{31}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{29}{31}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 31.",
+        "math": "$\\dfrac{28}{31}+\\dfrac{1}{31}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{29}{31}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 31. → $$\\dfrac{28}{31}+\\dfrac{1}{31}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{29}{31}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-031",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{32}{35} + \\dfrac{1}{35}$",
+    "options": [
+      "$\\dfrac{33}{35}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{31}{35}$",
+      "$\\dfrac{34}{35}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{33}{35}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 35.",
+        "math": "$\\dfrac{32}{35}+\\dfrac{1}{35}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{33}{35}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 35. → $$\\dfrac{32}{35}+\\dfrac{1}{35}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{33}{35}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-032",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{33}{36} + \\dfrac{1}{36}$",
+    "options": [
+      "$\\dfrac{34}{36}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{35}{36}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{34}{36}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 36.",
+        "math": "$\\dfrac{33}{36}+\\dfrac{1}{36}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{34}{36}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 36. → $$\\dfrac{33}{36}+\\dfrac{1}{36}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{34}{36}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-033",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{34}{37} + \\dfrac{1}{37}$",
+    "options": [
+      "$\\dfrac{35}{37}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{36}{37}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{35}{37}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 37.",
+        "math": "$\\dfrac{34}{37}+\\dfrac{1}{37}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{35}{37}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 37. → $$\\dfrac{34}{37}+\\dfrac{1}{37}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{35}{37}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-034",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{35}{38} + \\dfrac{1}{38}$",
+    "options": [
+      "$\\dfrac{36}{38}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{37}{38}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{36}{38}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 38.",
+        "math": "$\\dfrac{35}{38}+\\dfrac{1}{38}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{36}{38}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 38. → $$\\dfrac{35}{38}+\\dfrac{1}{38}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{36}{38}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-035",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{36}{39} + \\dfrac{1}{39}$",
+    "options": [
+      "$\\dfrac{37}{39}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{38}{39}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{37}{39}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 39.",
+        "math": "$\\dfrac{36}{39}+\\dfrac{1}{39}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{37}{39}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 39. → $$\\dfrac{36}{39}+\\dfrac{1}{39}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{37}{39}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-036",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{37}{40} + \\dfrac{1}{40}$",
+    "options": [
+      "$\\dfrac{38}{40}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{39}{40}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{38}{40}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 40.",
+        "math": "$\\dfrac{37}{40}+\\dfrac{1}{40}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{38}{40}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 40. → $$\\dfrac{37}{40}+\\dfrac{1}{40}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{38}{40}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-037",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{38}{41} + \\dfrac{1}{41}$",
+    "options": [
+      "$\\dfrac{39}{41}$",
+      "$\\dfrac{38}{42}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{40}{41}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{39}{41}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 41.",
+        "math": "$\\dfrac{38}{41}+\\dfrac{1}{41}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{39}{41}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 41. → $$\\dfrac{38}{41}+\\dfrac{1}{41}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{39}{41}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-038",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[43] Simplify: $\\dfrac{2}{5} + \\dfrac{1}{5}$",
+    "options": [
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{1}{5}$",
+      "$\\dfrac{4}{5}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{3}{5}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 5.",
+        "math": "$\\dfrac{2}{5}+\\dfrac{1}{5}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{3}{5}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 5. → $$\\dfrac{2}{5}+\\dfrac{1}{5}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{3}{5}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-039",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[44] Simplify: $\\dfrac{3}{6} + \\dfrac{1}{6}$",
+    "options": [
+      "$\\dfrac{4}{6}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{5}{6}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{4}{6}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 6.",
+        "math": "$\\dfrac{3}{6}+\\dfrac{1}{6}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{4}{6}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 6. → $$\\dfrac{3}{6}+\\dfrac{1}{6}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{4}{6}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-040",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[45] Simplify: $\\dfrac{4}{7} + \\dfrac{1}{7}$",
+    "options": [
+      "$\\dfrac{5}{7}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{6}{7}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{5}{7}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 7.",
+        "math": "$\\dfrac{4}{7}+\\dfrac{1}{7}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{5}{7}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 7. → $$\\dfrac{4}{7}+\\dfrac{1}{7}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{5}{7}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-041",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[46] Simplify: $\\dfrac{5}{8} + \\dfrac{1}{8}$",
+    "options": [
+      "$\\dfrac{6}{8}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{7}{8}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{6}{8}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 8.",
+        "math": "$\\dfrac{5}{8}+\\dfrac{1}{8}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{6}{8}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 8. → $$\\dfrac{5}{8}+\\dfrac{1}{8}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{6}{8}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-042",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[47] Simplify: $\\dfrac{6}{9} + \\dfrac{1}{9}$",
+    "options": [
+      "$\\dfrac{7}{9}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{8}{9}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{7}{9}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 9.",
+        "math": "$\\dfrac{6}{9}+\\dfrac{1}{9}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{7}{9}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 9. → $$\\dfrac{6}{9}+\\dfrac{1}{9}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{7}{9}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-043",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[48] Simplify: $\\dfrac{7}{10} + \\dfrac{1}{10}$",
+    "options": [
+      "$\\dfrac{8}{10}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{9}{10}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{8}{10}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 10.",
+        "math": "$\\dfrac{7}{10}+\\dfrac{1}{10}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{8}{10}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 10. → $$\\dfrac{7}{10}+\\dfrac{1}{10}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{8}{10}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-044",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[49] Simplify: $\\dfrac{8}{11} + \\dfrac{1}{11}$",
+    "options": [
+      "$\\dfrac{9}{11}$",
+      "$\\dfrac{8}{12}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{10}{11}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{9}{11}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 11.",
+        "math": "$\\dfrac{8}{11}+\\dfrac{1}{11}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{9}{11}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 11. → $$\\dfrac{8}{11}+\\dfrac{1}{11}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{9}{11}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-045",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[53] Simplify: $\\dfrac{12}{15} + \\dfrac{1}{15}$",
+    "options": [
+      "$\\dfrac{13}{15}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{11}{15}$",
+      "$\\dfrac{14}{15}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{13}{15}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 15.",
+        "math": "$\\dfrac{12}{15}+\\dfrac{1}{15}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{13}{15}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 15. → $$\\dfrac{12}{15}+\\dfrac{1}{15}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{13}{15}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-046",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[54] Simplify: $\\dfrac{13}{16} + \\dfrac{1}{16}$",
+    "options": [
+      "$\\dfrac{14}{16}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{15}{16}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{14}{16}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 16.",
+        "math": "$\\dfrac{13}{16}+\\dfrac{1}{16}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{14}{16}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 16. → $$\\dfrac{13}{16}+\\dfrac{1}{16}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{14}{16}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-047",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[55] Simplify: $\\dfrac{14}{17} + \\dfrac{1}{17}$",
+    "options": [
+      "$\\dfrac{15}{17}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{16}{17}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{15}{17}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 17.",
+        "math": "$\\dfrac{14}{17}+\\dfrac{1}{17}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{15}{17}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 17. → $$\\dfrac{14}{17}+\\dfrac{1}{17}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{15}{17}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-048",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[56] Simplify: $\\dfrac{15}{18} + \\dfrac{1}{18}$",
+    "options": [
+      "$\\dfrac{16}{18}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{17}{18}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{16}{18}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 18.",
+        "math": "$\\dfrac{15}{18}+\\dfrac{1}{18}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{16}{18}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 18. → $$\\dfrac{15}{18}+\\dfrac{1}{18}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{16}{18}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-049",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[57] Simplify: $\\dfrac{16}{19} + \\dfrac{1}{19}$",
+    "options": [
+      "$\\dfrac{17}{19}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{18}{19}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{17}{19}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 19.",
+        "math": "$\\dfrac{16}{19}+\\dfrac{1}{19}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{17}{19}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 19. → $$\\dfrac{16}{19}+\\dfrac{1}{19}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{17}{19}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-050",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[58] Simplify: $\\dfrac{17}{20} + \\dfrac{1}{20}$",
+    "options": [
+      "$\\dfrac{18}{20}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{19}{20}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{18}{20}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 20.",
+        "math": "$\\dfrac{17}{20}+\\dfrac{1}{20}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{18}{20}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 20. → $$\\dfrac{17}{20}+\\dfrac{1}{20}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{18}{20}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-051",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[59] Simplify: $\\dfrac{18}{21} + \\dfrac{1}{21}$",
+    "options": [
+      "$\\dfrac{19}{21}$",
+      "$\\dfrac{18}{22}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{20}{21}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{19}{21}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 21.",
+        "math": "$\\dfrac{18}{21}+\\dfrac{1}{21}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{19}{21}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 21. → $$\\dfrac{18}{21}+\\dfrac{1}{21}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{19}{21}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-052",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[63] Simplify: $\\dfrac{22}{25} + \\dfrac{1}{25}$",
+    "options": [
+      "$\\dfrac{23}{25}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{21}{25}$",
+      "$\\dfrac{24}{25}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{23}{25}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 25.",
+        "math": "$\\dfrac{22}{25}+\\dfrac{1}{25}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{23}{25}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 25. → $$\\dfrac{22}{25}+\\dfrac{1}{25}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{23}{25}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-053",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[64] Simplify: $\\dfrac{23}{26} + \\dfrac{1}{26}$",
+    "options": [
+      "$\\dfrac{24}{26}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{25}{26}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{24}{26}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 26.",
+        "math": "$\\dfrac{23}{26}+\\dfrac{1}{26}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{24}{26}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 26. → $$\\dfrac{23}{26}+\\dfrac{1}{26}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{24}{26}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-054",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[65] Simplify: $\\dfrac{24}{27} + \\dfrac{1}{27}$",
+    "options": [
+      "$\\dfrac{25}{27}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{26}{27}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{25}{27}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 27.",
+        "math": "$\\dfrac{24}{27}+\\dfrac{1}{27}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{25}{27}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 27. → $$\\dfrac{24}{27}+\\dfrac{1}{27}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{25}{27}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-055",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[66] Simplify: $\\dfrac{25}{28} + \\dfrac{1}{28}$",
+    "options": [
+      "$\\dfrac{26}{28}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{27}{28}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{26}{28}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 28.",
+        "math": "$\\dfrac{25}{28}+\\dfrac{1}{28}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{26}{28}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 28. → $$\\dfrac{25}{28}+\\dfrac{1}{28}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{26}{28}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-056",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[67] Simplify: $\\dfrac{26}{29} + \\dfrac{1}{29}$",
+    "options": [
+      "$\\dfrac{27}{29}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{28}{29}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{27}{29}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 29.",
+        "math": "$\\dfrac{26}{29}+\\dfrac{1}{29}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{27}{29}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 29. → $$\\dfrac{26}{29}+\\dfrac{1}{29}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{27}{29}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-057",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[68] Simplify: $\\dfrac{27}{30} + \\dfrac{1}{30}$",
+    "options": [
+      "$\\dfrac{28}{30}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{29}{30}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{28}{30}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 30.",
+        "math": "$\\dfrac{27}{30}+\\dfrac{1}{30}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{28}{30}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 30. → $$\\dfrac{27}{30}+\\dfrac{1}{30}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{28}{30}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-058",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[69] Simplify: $\\dfrac{28}{31} + \\dfrac{1}{31}$",
+    "options": [
+      "$\\dfrac{29}{31}$",
+      "$\\dfrac{28}{32}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{30}{31}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{29}{31}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 31.",
+        "math": "$\\dfrac{28}{31}+\\dfrac{1}{31}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{29}{31}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 31. → $$\\dfrac{28}{31}+\\dfrac{1}{31}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{29}{31}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-059",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[73] Simplify: $\\dfrac{32}{35} + \\dfrac{1}{35}$",
+    "options": [
+      "$\\dfrac{33}{35}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{31}{35}$",
+      "$\\dfrac{34}{35}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{33}{35}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 35.",
+        "math": "$\\dfrac{32}{35}+\\dfrac{1}{35}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{33}{35}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 35. → $$\\dfrac{32}{35}+\\dfrac{1}{35}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{33}{35}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-060",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[74] Simplify: $\\dfrac{33}{36} + \\dfrac{1}{36}$",
+    "options": [
+      "$\\dfrac{34}{36}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{35}{36}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{34}{36}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 36.",
+        "math": "$\\dfrac{33}{36}+\\dfrac{1}{36}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{34}{36}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 36. → $$\\dfrac{33}{36}+\\dfrac{1}{36}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{34}{36}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-061",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[75] Simplify: $\\dfrac{34}{37} + \\dfrac{1}{37}$",
+    "options": [
+      "$\\dfrac{35}{37}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{36}{37}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{35}{37}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 37.",
+        "math": "$\\dfrac{34}{37}+\\dfrac{1}{37}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{35}{37}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 37. → $$\\dfrac{34}{37}+\\dfrac{1}{37}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{35}{37}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-062",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[76] Simplify: $\\dfrac{35}{38} + \\dfrac{1}{38}$",
+    "options": [
+      "$\\dfrac{36}{38}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{37}{38}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{36}{38}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 38.",
+        "math": "$\\dfrac{35}{38}+\\dfrac{1}{38}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{36}{38}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 38. → $$\\dfrac{35}{38}+\\dfrac{1}{38}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{36}{38}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-063",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[77] Simplify: $\\dfrac{36}{39} + \\dfrac{1}{39}$",
+    "options": [
+      "$\\dfrac{37}{39}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{38}{39}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{37}{39}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 39.",
+        "math": "$\\dfrac{36}{39}+\\dfrac{1}{39}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{37}{39}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 39. → $$\\dfrac{36}{39}+\\dfrac{1}{39}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{37}{39}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-064",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[78] Simplify: $\\dfrac{37}{40} + \\dfrac{1}{40}$",
+    "options": [
+      "$\\dfrac{38}{40}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{39}{40}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{38}{40}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 40.",
+        "math": "$\\dfrac{37}{40}+\\dfrac{1}{40}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{38}{40}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 40. → $$\\dfrac{37}{40}+\\dfrac{1}{40}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{38}{40}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-065",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[79] Simplify: $\\dfrac{38}{41} + \\dfrac{1}{41}$",
+    "options": [
+      "$\\dfrac{39}{41}$",
+      "$\\dfrac{38}{42}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{40}{41}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{39}{41}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 41.",
+        "math": "$\\dfrac{38}{41}+\\dfrac{1}{41}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{39}{41}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 41. → $$\\dfrac{38}{41}+\\dfrac{1}{41}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{39}{41}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-066",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[83] Simplify: $\\dfrac{2}{5} + \\dfrac{1}{5}$",
+    "options": [
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{1}{5}$",
+      "$\\dfrac{4}{5}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{3}{5}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 5.",
+        "math": "$\\dfrac{2}{5}+\\dfrac{1}{5}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{3}{5}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 5. → $$\\dfrac{2}{5}+\\dfrac{1}{5}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{3}{5}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-067",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[84] Simplify: $\\dfrac{3}{6} + \\dfrac{1}{6}$",
+    "options": [
+      "$\\dfrac{4}{6}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{5}{6}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{4}{6}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 6.",
+        "math": "$\\dfrac{3}{6}+\\dfrac{1}{6}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{4}{6}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 6. → $$\\dfrac{3}{6}+\\dfrac{1}{6}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{4}{6}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-068",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[85] Simplify: $\\dfrac{4}{7} + \\dfrac{1}{7}$",
+    "options": [
+      "$\\dfrac{5}{7}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{6}{7}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{5}{7}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 7.",
+        "math": "$\\dfrac{4}{7}+\\dfrac{1}{7}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{5}{7}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 7. → $$\\dfrac{4}{7}+\\dfrac{1}{7}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{5}{7}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-069",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[86] Simplify: $\\dfrac{5}{8} + \\dfrac{1}{8}$",
+    "options": [
+      "$\\dfrac{6}{8}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{7}{8}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{6}{8}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 8.",
+        "math": "$\\dfrac{5}{8}+\\dfrac{1}{8}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{6}{8}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 8. → $$\\dfrac{5}{8}+\\dfrac{1}{8}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{6}{8}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-070",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[87] Simplify: $\\dfrac{6}{9} + \\dfrac{1}{9}$",
+    "options": [
+      "$\\dfrac{7}{9}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{8}{9}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{7}{9}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 9.",
+        "math": "$\\dfrac{6}{9}+\\dfrac{1}{9}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{7}{9}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 9. → $$\\dfrac{6}{9}+\\dfrac{1}{9}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{7}{9}$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated",
+    "linksTo": "math-ch10nalgebraic-"
+  },
+  {
+    "id": "Q-CH10-071",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-072",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[50] In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-073",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[51] In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-074",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[60] In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-075",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[61] In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-076",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[70] In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-077",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[71] In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-078",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[80] In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-079",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[81] In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-080",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[90] In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-081",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[91] In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-082",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[100] In chapter 10 (Algebraic Expressions and Identities), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-083",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-084",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-085",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-086",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-087",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-088",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-089",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-090",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-091",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "What should be subtracted from the polynomial  $ x^4 + 2x^3 + x^2 - 18x - 15 $ so that the resulting polynomial is exactly divisible by  $ x^2 - 1 - x $.\n\nALGEBRAIC IDENTITY\n\nLet us consider the equation  $ x^{2}+2x+3=38 $\n\nFor x = 5, L.H.S. =  $ (5)^{2} + 2 \\times 5 + 3 = 25 + 10 + 3 = 38 = R.H.S. $\n\nNow for $x=3$, L.H.S. = $3^{2}+2\\times3+3=9+6+3=18\\neq$ R.H.S.\n\nIt is not true for $x=3$\n\ne, we can say that:\n\nAn equation is true for only certain values of variables in it.\n\nLet us consider anoth",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Analyse",
+        "why": "Test the statement against definition.",
+        "math": "What should be subtracted from the polynomial  $ x^4 + 2x^3 + x^2 - 18x - 15 $ so that the resulting polynomial is exactly divisible by  $ x^2 - 1 - x $.\n\nALGEBRAIC IDENTITY\n\nLet us consider the equation  $ x^{2}+2x+3=38 $\n\nFor x = 5, L.H.S. =  $ (5)^{2} + 2 \\times 5 + 3 = 25 + 10 + 3 = 38 = R.H.S. $\n\nNow for $x=3$, L.H.S. = $3^{2}+2\\times3+3=9+6+3=18\\neq$ R.H.S.\n\nIt is not true for $x=3$\n\ne, we can say that:\n\nAn equation is true for only certain values of variables in it.\n\nLet us consider anoth"
+      },
+      {
+        "rule": "Verdict",
+        "why": "State true or false with reason.",
+        "math": "true"
+      }
+    ],
+    "explanation": "Step 1 (Analyse): Test the statement against definition. → $What should be subtracted from the polynomial  $ x^4 + 2x^3 + x^2 - 18x - 15 $ so that the resulting polynomial is exactly divisible by  $ x^2 - 1 - x $.\n\nALGEBRAIC IDENTITY\n\nLet us consider the equation  $ x^{2}+2x+3=38 $\n\nFor x = 5, L.H.S. =  $ (5)^{2} + 2 \\times 5 + 3 = 25 + 10 + 3 = 38 = R.H.S. $\n\nNow for $x=3$, L.H.S. = $3^{2}+2\\times3+3=9+6+3=18\\neq$ R.H.S.\n\nIt is not true for $x=3$\n\ne, we can say that:\n\nAn equation is true for only certain values of variables in it.\n\nLet us consider anoth$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook"
+  },
+  {
+    "id": "Q-CH10-092",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Statement I: If  $ 2x^{4} + 5x^{3} - 18x^{2} + 6x + 8 $ is divided by  $ x^{2} + 5x + 2 $, then the quo",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Analyse",
+        "why": "Test the statement against definition.",
+        "math": "Statement I: If  $ 2x^{4} + 5x^{3} - 18x^{2} + 6x + 8 $ is divided by  $ x^{2} + 5x + 2 $, then the quo"
+      },
+      {
+        "rule": "Verdict",
+        "why": "State true or false with reason.",
+        "math": "true"
+      }
+    ],
+    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Statement I: If  $ 2x^{4} + 5x^{3} - 18x^{2} + 6x + 8 $ is divided by  $ x^{2} + 5x + 2 $, then the quo$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook"
+  },
+  {
+    "id": "Q-CH10-093",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Statement I: If  $ x - \\frac{1}{x} = 1 $, then  $ x^{2} - \\frac{1}{x^{2}} = x + \\frac{1}{x} $",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Analyse",
+        "why": "Test the statement against definition.",
+        "math": "Statement I: If  $ x - \\frac{1}{x} = 1 $, then  $ x^{2} - \\frac{1}{x^{2}} = x + \\frac{1}{x} $"
+      },
+      {
+        "rule": "Verdict",
+        "why": "State true or false with reason.",
+        "math": "true"
+      }
+    ],
+    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Statement I: If  $ x - \\frac{1}{x} = 1 $, then  $ x^{2} - \\frac{1}{x^{2}} = x + \\frac{1}{x} $$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "textbook"
+  },
+  {
+    "id": "Q-CH10-094",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Class 8 ICSE topic 'Algebraic Expressions and Identities' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-095",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[52] Class 8 ICSE topic 'Algebraic Expressions and Identities' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-096",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[62] Class 8 ICSE topic 'Algebraic Expressions and Identities' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-097",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[72] Class 8 ICSE topic 'Algebraic Expressions and Identities' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-098",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[82] Class 8 ICSE topic 'Algebraic Expressions and Identities' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-099",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[92] Class 8 ICSE topic 'Algebraic Expressions and Identities' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH10-100",
+    "chapter": 10,
+    "topicId": "math-ch10",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Zero is a rational number.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Analyse",
+        "why": "Test the statement against definition.",
+        "math": "Zero is a rational number."
+      },
+      {
+        "rule": "Verdict",
+        "why": "State true or false with reason.",
+        "math": "true"
+      }
+    ],
+    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Zero is a rational number.$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+    "source": "generated"
+  }
+]

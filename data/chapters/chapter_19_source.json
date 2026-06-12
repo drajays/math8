@@ -1,0 +1,125 @@
+{
+  "chapter": 19,
+  "title": "Mensuration",
+  "topicId": "math-ch19",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    16965,
+    18450
+  ],
+  "sections": [
+    {
+      "id": "CH19-sec-mensuration",
+      "title": "Mensuration",
+      "level": 4
+    },
+    {
+      "id": "CH19-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "title": "AREA AND PERIMETER OF SOME PLANE FIGURES",
+      "level": 4
+    },
+    {
+      "id": "CH19-sec-exercise-19-1",
+      "title": "Exercise 19.1",
+      "level": 4
+    },
+    {
+      "id": "CH19-sec-mensuration-295",
+      "title": "Mensuration 295",
+      "level": 5
+    },
+    {
+      "id": "CH19-sec-mensuration-299",
+      "title": "Mensuration 299",
+      "level": 5
+    },
+    {
+      "id": "CH19-sec-volume-of-solids",
+      "title": "VOLUME OF SOLIDS",
+      "level": 5
+    },
+    {
+      "id": "CH19-sec-300-icse-mathematics-viii",
+      "title": "300 ICSE Mathematics - VIII",
+      "level": 2
+    },
+    {
+      "id": "CH19-sec-volume-of-a-cube",
+      "title": "Volume of a cube",
+      "level": 4
+    },
+    {
+      "id": "CH19-sec-remark",
+      "title": "REMARK",
+      "level": 5
+    },
+    {
+      "id": "CH19-sec-volume-and-capacity",
+      "title": "Volume and capacity",
+      "level": 5
+    },
+    {
+      "id": "CH19-sec-306-icse-mathematics-viii",
+      "title": "306 ICSE Mathematics - VIII",
+      "level": 2
+    },
+    {
+      "id": "CH19-sec-to-find-the-surface-area-of-a-cylinder",
+      "title": "To find the surface area of a cylinder",
+      "level": 4
+    },
+    {
+      "id": "CH19-sec-ii-pair-of-scissors",
+      "title": "(ii) Pair of scissors",
+      "level": 4
+    },
+    {
+      "id": "CH19-sec-310-icse-mathematics-viii",
+      "title": "310 ICSE Mathematics - VIII",
+      "level": 2
+    },
+    {
+      "id": "CH19-sec-mca-solved",
+      "title": "MCA (SOLVED)",
+      "level": 4
+    },
+    {
+      "id": "CH19-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH19-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 4
+    },
+    {
+      "id": "CH19-sec-cube",
+      "title": "★Cube",
+      "level": 5
+    },
+    {
+      "id": "CH19-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 5
+    },
+    {
+      "id": "CH19-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

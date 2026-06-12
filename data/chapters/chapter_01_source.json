@@ -1,0 +1,255 @@
+{
+  "chapter": 1,
+  "title": "Rational Numbers",
+  "topicId": "math-ch1",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    111,
+    1745
+  ],
+  "sections": [
+    {
+      "id": "CH01-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH01-sec-rational-numbers",
+      "title": "RATIONAL NUMBERS",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-remarks",
+      "title": "REMARKS",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-rational-number-frac-p-a-is-said-to-be-in-the-st",
+      "title": "rational number  $ \\frac{p}{a} $ is said to be in the standard (or simplest) form if q > 0 and p and q have no",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-lcm-of-18-and-24-72",
+      "title": "LCM of 18 and 24 = 72",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-properties-of-addition-of-rational-numbers-prope",
+      "title": "PROPERTIES OF ADDITION OF RATIONAL NUMBERS Property",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-exercise-1-2",
+      "title": "Exercise 1.2",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-multiplication-of-rational-numbers",
+      "title": "MULTIPLICATION OF RATIONAL NUMBERS",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-remark",
+      "title": "REMARK",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-activity-1",
+      "title": "ACTIVITY 1",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-multiplication-of-rational-numbers",
+      "title": "Multiplication of rational numbers",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-materials-required",
+      "title": "Materials required",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-steps",
+      "title": "Steps",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-result",
+      "title": "Result",
+      "level": 2
+    },
+    {
+      "id": "CH01-sec-properties-of-multiplication-of-rational-numbers",
+      "title": "PROPERTIES OF MULTIPLICATION OF RATIONAL NUMBERS are property",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-commutative-property",
+      "title": "Commutative property",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-associative-property",
+      "title": "Associative property",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-existence-of-multiplicative-identity",
+      "title": "Existence of multiplicative identity",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-existence-of-multiplicative-inverse-reciprocal",
+      "title": "Existence of multiplicative inverse (reciprocal)",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-remarks",
+      "title": "REMARKS",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-distributive-property-of-multiplication-over-add",
+      "title": "Distributive property of multiplication over addition",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-note",
+      "title": "NOTE",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-exercise-1-3",
+      "title": "Exercise 1.3",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-division-of-rational-numbers",
+      "title": "DIVISION OF RATIONAL NUMBERS",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-remarks",
+      "title": "REMARKS",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-properties-of-division-of-rational-numbers-prope",
+      "title": "PROPERTIES OF DIVISION OF RATIONAL NUMBERS property",
+      "level": 3
+    },
+    {
+      "id": "CH01-sec-closure-property",
+      "title": "Closure property",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-not-commutative-under-division",
+      "title": "Not commutative under division",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-not-associative-under-division",
+      "title": "Not associative under division",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-exercise-1-4",
+      "title": "Exercise 1.4",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-representation-of-rational-numbers-on-the-number",
+      "title": "Representation of rational numbers on the number line",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-comparison-of-rational-numbers",
+      "title": "comparison of rational numbers",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-rational-numbers-between-two-rational-numbers",
+      "title": "Rational numbers between two rational numbers",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-another-method",
+      "title": "Another Method",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-exercise-1-5",
+      "title": "Exercise 1.5",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-word-problems",
+      "title": "Word Problems",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-exercise-1-6",
+      "title": "Exercise 1.6",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-exercise-1-6",
+      "title": "Exercise 1.6",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-statement-i-ii-type-questions-solved",
+      "title": "STATEMENT I–II TYPE QUESTIONS (SOLVED)",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I-II TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH01-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH01-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 5
+    },
+    {
+      "id": "CH01-sec-1-complete-the-following-table",
+      "title": "1. Complete the following table:",
+      "level": 2
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

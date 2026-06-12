@@ -1,0 +1,210 @@
+{
+  "chapter": 5,
+  "title": "Playing with Numbers",
+  "topicId": "math-ch5",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    4676,
+    5920
+  ],
+  "sections": [
+    {
+      "id": "CH05-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH05-sec-numbers-in-general-form",
+      "title": "NUMBERS IN GENERAL FORM",
+      "level": 4
+    },
+    {
+      "id": "CH05-sec-remarks",
+      "title": "REMARKS",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-games-with-numbers",
+      "title": "GAMES WITH NUMBERS",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-solution-given-number-is-49",
+      "title": "Solution. Given number is 49",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-exercise-5-1",
+      "title": "Exercise 5.1",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-puzzles",
+      "title": "Puzzles",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-rules",
+      "title": "Rules",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-solution-given",
+      "title": "Solution. Given",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-number-puzzles-and-games",
+      "title": "Number puzzles and games",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-exercise-5-2",
+      "title": "Exercise 5.2",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-tests-of-divisibility",
+      "title": "TESTS OF DIVISIBILITY",
+      "level": 4
+    },
+    {
+      "id": "CH05-sec-divisibility-by-10",
+      "title": "Divisibility by 10",
+      "level": 4
+    },
+    {
+      "id": "CH05-sec-for-a-number-in-generalized-form",
+      "title": "For a number in generalized form",
+      "level": 4
+    },
+    {
+      "id": "CH05-sec-divisibility-by-5",
+      "title": "Divisibility by 5",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-for-a-number-in-generalized-form",
+      "title": "For a number in generalized form",
+      "level": 4
+    },
+    {
+      "id": "CH05-sec-divisibility-by-2",
+      "title": "Divisibility by 2",
+      "level": 4
+    },
+    {
+      "id": "CH05-sec-divisibility-by-3",
+      "title": "Divisibility by 3",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-for-a-number-in-generalized-form",
+      "title": "For a number in generalized form",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-divisibility-by-9",
+      "title": "Divisibility by 9",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-for-a-number-in-generalized-form",
+      "title": "For a number in generalized form",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-divisibility-by-4",
+      "title": "Divisibility by 4",
+      "level": 4
+    },
+    {
+      "id": "CH05-sec-divisibility-by-8",
+      "title": "Divisibility by 8",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-divisibility-by-6",
+      "title": "Divisibility by 6",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-divisibility-by-11",
+      "title": "Divisibility by 11",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-note",
+      "title": "NOTE",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-divisibility-by-7",
+      "title": "Divisibility by 7",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-example-1-in-3791-5-replace-by-a-digit-so-that-t",
+      "title": "Example 1. In 3791 * 5, replace * by a digit so that the number formed is divisible by 9.",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-example-2-if-31z5-is-a-multiple-of-9-where-z-is-",
+      "title": "Example 2. If 31z5 is a multiple of 9, where z is a digit, what is the value of z?",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-example-3-if-47x562-is-divisible-by-3-where-x-is",
+      "title": "Example 3. If 47x562 is divisible by 3, where x is a digit, find the value(s) of x.",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-exercise-5-3",
+      "title": "Exercise 5.3",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH05-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I–II TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH05-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH05-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 5
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

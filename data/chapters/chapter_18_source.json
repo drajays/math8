@@ -1,0 +1,190 @@
+{
+  "chapter": 18,
+  "title": "Visualising Solid Shapes",
+  "topicId": "math-ch18",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    16061,
+    16964
+  ],
+  "sections": [
+    {
+      "id": "CH18-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH18-sec-2-dimensional-shapes",
+      "title": "2-Dimensional Shapes",
+      "level": 2
+    },
+    {
+      "id": "CH18-sec-3-dimensional-shapes",
+      "title": "3-Dimensional Shapes",
+      "level": 2
+    },
+    {
+      "id": "CH18-sec-identify-and-match-pictures-with-shapes",
+      "title": "IDENTIFY AND MATCH PICTURES WITH SHAPES",
+      "level": 3
+    },
+    {
+      "id": "CH18-sec-drawing-2-d-representation-of-3-d-objects",
+      "title": "DRAWING 2-D REPRESENTATION OF 3-D OBJECTS",
+      "level": 3
+    },
+    {
+      "id": "CH18-sec-oblique-sketches",
+      "title": "Oblique sketches",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-steps",
+      "title": "Steps",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-isometric-sketches",
+      "title": "Isometric sketches",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-steps",
+      "title": "Steps",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-exercise-18-1",
+      "title": "Exercise 18.1",
+      "level": 4
+    },
+    {
+      "id": "CH18-sec-polyhedron",
+      "title": "POLYHEDRON",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-convex-polyhedrons",
+      "title": "Convex polyhedrons",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-regular-polyhedrons",
+      "title": "Regular polyhedrons",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-prism",
+      "title": "Prism",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-triangular-prism",
+      "title": "Triangular prism",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-rectangular-prism",
+      "title": "Rectangular prism",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-pentagonal-prism",
+      "title": "Pentagonal. prism",
+      "level": 4
+    },
+    {
+      "id": "CH18-sec-hexagonal-prism",
+      "title": "Hexagonal prism",
+      "level": 4
+    },
+    {
+      "id": "CH18-sec-pyramid",
+      "title": "Pyramid",
+      "level": 4
+    },
+    {
+      "id": "CH18-sec-triangular-pyramid",
+      "title": "Triangular pyramid",
+      "level": 4
+    },
+    {
+      "id": "CH18-sec-rectangular-pyramid",
+      "title": "Rectangular pyramid",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-square-pyramid",
+      "title": "Square pyramid",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-pentagonal-pyramid",
+      "title": "Pentagonal pyramid",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-hexagonal-pyramid",
+      "title": "Hexagonal pyramid",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-faces-edges-and-vertices",
+      "title": "FACES, EDGES AND VERTICES",
+      "level": 4
+    },
+    {
+      "id": "CH18-sec-note",
+      "title": "NOTE",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-exercise-18-2",
+      "title": "Exercise 18.2",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 5
+    },
+    {
+      "id": "CH18-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 2
+    },
+    {
+      "id": "CH18-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 4
+    },
+    {
+      "id": "CH18-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH18-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I–II TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH18-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH18-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 4
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

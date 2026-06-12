@@ -1,0 +1,16 @@
+UNDERSTANDING MATHEMATICS · ICSE Class 8 · Glass-Box App
+=========================================================
+
+HOW TO RUN
+  • Online: https://drajays.github.io/math8/textbook/
+  • Offline: open textbook/index.html in any browser (needs data/ folder alongside)
+
+WHAT'S INSIDE (per chapter × 20)
+  • Notes — high-yield textbook sections with linked question IDs
+  • Practice — 100 questions (70 MCQ / 20 fill / 10 T-F) with glass-box steps
+  • Mind Map · Cheat Sheet · One Word (30 cards)
+
+DATA
+  Chapter JSON/MD lives in ../data/chapters/
+  Regenerate from OCR: python3 ../scripts/pipeline_glassbox.py
+  (source files in Downloads/math or data/source/)

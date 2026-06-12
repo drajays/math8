@@ -1,0 +1,86 @@
+[
+  {
+    "id": "FACT-CH07-001",
+    "chapter": 7,
+    "fact": "The word percent means ‘per hundred’ or out of hundred.",
+    "linked_note_id": "CH07-sec-percentage"
+  },
+  {
+    "id": "FACT-CH07-002",
+    "chapter": 7,
+    "fact": "Utkarsh got 95 marks out of hundred marks. It means he got 95 percent marks.",
+    "linked_note_id": "CH07-sec-percentage"
+  },
+  {
+    "id": "FACT-CH07-003",
+    "chapter": 7,
+    "fact": "Thus, 95% means 95 out of hundred = $ \\frac{95}{100} $",
+    "linked_note_id": "CH07-sec-percentage"
+  },
+  {
+    "id": "FACT-CH07-004",
+    "chapter": 7,
+    "fact": "Cost price. The price at which an article is purchased by a dealer is called its cost price (C.P.).",
+    "linked_note_id": "CH07-sec-profit-and-loss"
+  },
+  {
+    "id": "FACT-CH07-005",
+    "chapter": 7,
+    "fact": "Selling price. The price at which an article is sold by a dealer is called its selling price (S.P.).",
+    "linked_note_id": "CH07-sec-profit-and-loss"
+  },
+  {
+    "id": "FACT-CH07-006",
+    "chapter": 7,
+    "fact": "Marked price. The price printed on an article or written on a slip attached to it is called its marked price (abbreviated M.P.).",
+    "linked_note_id": "CH07-sec-discount"
+  },
+  {
+    "id": "FACT-CH07-007",
+    "chapter": 7,
+    "fact": "Discount. The amount deducted from the marked price of an article is called discount (or trade discount).",
+    "linked_note_id": "CH07-sec-discount"
+  },
+  {
+    "id": "FACT-CH07-008",
+    "chapter": 7,
+    "fact": "Selling price. The price of an article after deducting discount from the marked price is called selling price or net price. It is the price of the article paid by a customer.",
+    "linked_note_id": "CH07-sec-discount"
+  },
+  {
+    "id": "FACT-CH07-009",
+    "chapter": 7,
+    "fact": "(viii) Amount deducted from the marked price of an article is called .....",
+    "linked_note_id": "CH07-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH07-010",
+    "chapter": 7,
+    "fact": "★ Percent means per hundred or out of hundred. The symbol % stands for percent i.e.",
+    "linked_note_id": "CH07-sec-summary"
+  },
+  {
+    "id": "FACT-CH07-011",
+    "chapter": 7,
+    "fact": "★ The price at which an article is sold by a dealer is called its cost price (C.P.).",
+    "linked_note_id": "CH07-sec-summary"
+  },
+  {
+    "id": "FACT-CH07-012",
+    "chapter": 7,
+    "fact": "★ The price printed on an article or written on a slip attached to it is called its marked price (M.P.). It is also called listed (printed, catalogued or advertised) price.",
+    "linked_note_id": "CH07-sec-summary"
+  },
+  {
+    "id": "FACT-CH07-013",
+    "chapter": 7,
+    "fact": "★ The amount deducted from the marked price of an article is called discount. Discount is always given on the marked price.",
+    "linked_note_id": "CH07-sec-summary"
+  },
+  {
+    "id": "FACT-CH07-014",
+    "chapter": 7,
+    "fact": "★ The price of an article after deducting discount from the marked price is called selling (or net) price. It is the price of the article paid by a customer.",
+    "linked_note_id": "CH07-sec-summary"
+  }
+]

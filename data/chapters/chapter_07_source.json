@@ -1,0 +1,145 @@
+{
+  "chapter": 7,
+  "title": "Percentage and its Applications",
+  "topicId": "math-ch7",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    6779,
+    8320
+  ],
+  "sections": [
+    {
+      "id": "CH07-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH07-sec-percentage",
+      "title": "PERCENTAGE",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-converting-a-percentage-into-a-fraction",
+      "title": "Converting a percentage into a fraction",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-converting-a-fraction-into-a-percentage",
+      "title": "Converting a fraction into a percentage",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-converting-a-percentage-into-a-ratio",
+      "title": "Converting a percentage into a ratio",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-converting-a-percentage-into-a-decimal",
+      "title": "Converting a percentage into a decimal",
+      "level": 4
+    },
+    {
+      "id": "CH07-sec-converting-a-decimal-into-a-percentage",
+      "title": "Converting a decimal into a percentage",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-remarks",
+      "title": "REMARKS",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-finding-a-percentage-of-a-given-quantity",
+      "title": "Finding a percentage of a given quantity",
+      "level": 4
+    },
+    {
+      "id": "CH07-sec-exercise-7-1",
+      "title": "Exercise 7.1",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-profit-and-loss",
+      "title": "PROFIT AND LOSS",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-overheads",
+      "title": "☐ Overheads",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-exercise-7-2",
+      "title": "Exercise 7.2",
+      "level": 4
+    },
+    {
+      "id": "CH07-sec-discount",
+      "title": "DISCOUNT",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-exercise-7-3",
+      "title": "Exercise 7.3",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-goods-and-services-tax-gst",
+      "title": "GOODS AND SERVICES TAX (GST)",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-note",
+      "title": "NOTE",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-exercise-7-4",
+      "title": "Exercise 7.4",
+      "level": 4
+    },
+    {
+      "id": "CH07-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH07-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I–II TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH07-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH07-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 4
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

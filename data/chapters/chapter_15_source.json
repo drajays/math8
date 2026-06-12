@@ -1,0 +1,90 @@
+{
+  "chapter": 15,
+  "title": "Circle",
+  "topicId": "math-ch15",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    14382,
+    14712
+  ],
+  "sections": [
+    {
+      "id": "CH15-sec-circle",
+      "title": "CIRCLE",
+      "level": 5
+    },
+    {
+      "id": "CH15-sec-all-radii-of-a-circle-are-equal",
+      "title": "All radii of a circle are equal.",
+      "level": 5
+    },
+    {
+      "id": "CH15-sec-some-terms-associated-with-circle",
+      "title": "SOME TERMS ASSOCIATED WITH CIRCLE",
+      "level": 4
+    },
+    {
+      "id": "CH15-sec-central-angle",
+      "title": "• Central angle",
+      "level": 5
+    },
+    {
+      "id": "CH15-sec-6-in-each-of-the-following-figures-o-is-the-cent",
+      "title": "6. In each of the following figures, O is the centre of the circle. Find the values of x and",
+      "level": 2
+    },
+    {
+      "id": "CH15-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 4
+    },
+    {
+      "id": "CH15-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH15-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 5
+    },
+    {
+      "id": "CH15-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH15-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I–II TYPE QUESTIONS",
+      "level": 3
+    },
+    {
+      "id": "CH15-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH15-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 4
+    },
+    {
+      "id": "CH15-sec-production",
+      "title": "PRODUCTION",
+      "level": 3
+    },
+    {
+      "id": "CH15-sec-ordered-pair",
+      "title": "ORDERED PAIR",
+      "level": 4
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

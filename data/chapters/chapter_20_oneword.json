@@ -1,0 +1,212 @@
+[
+  {
+    "id": "OW-CH20-001",
+    "chapter": 20,
+    "term": "The",
+    "answer": "The data arranged in this form is called data array or arrayed data. The presentation of the data in this form gives muc",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-002",
+    "chapter": 20,
+    "term": "An",
+    "answer": "An action which results in some (well defined) outcomes is called an experiment.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-003",
+    "chapter": 20,
+    "term": "An",
+    "answer": "An experiment is called random if it has more than one possible outcomes and it is not possible to tell predict) the out",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-004",
+    "chapter": 20,
+    "term": "In",
+    "answer": "In such cases, we may say that the different outcomes of the experiment are equally likely. This means that each of the ",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-005",
+    "chapter": 20,
+    "term": "An",
+    "answer": "An event which always happens is called a sure event or a certain event.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-006",
+    "chapter": 20,
+    "term": "An",
+    "answer": "An event which never happens is called an impossible event.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-007",
+    "chapter": 20,
+    "term": "50,",
+    "answer": "50, the total runner is getting at least one head, means getting one head or two heads and the outcomes HT, TH, HH are f",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-008",
+    "chapter": 20,
+    "term": "2.",
+    "answer": "2. Since there is a kink from 0 to 50, it means that no student scored less than 50.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-009",
+    "chapter": 20,
+    "term": "(ii)",
+    "answer": "(ii) In a grouped frequency distribution, the difference between lower limit and upper limit a class is called .....",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-010",
+    "chapter": 20,
+    "term": "(iii)",
+    "answer": "(iii) The mid point of the class interval is called",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-011",
+    "chapter": 20,
+    "term": "Data",
+    "answer": "Data mostly available to us in an unorganized form is called raw data.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-012",
+    "chapter": 20,
+    "term": "★",
+    "answer": "★ The mid point of the class interval is called class mark.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-013",
+    "chapter": 20,
+    "term": "An",
+    "answer": "An event which always happens is called a sure event. $P(\\text{sure event}) = 1$",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-014",
+    "chapter": 20,
+    "term": "An",
+    "answer": "An event which never happens is called an impossible event.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-015",
+    "chapter": 20,
+    "term": "13.",
+    "answer": "13. Verify Euler's formula for decagonal pyramid.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-016",
+    "chapter": 20,
+    "term": "Rational",
+    "answer": "Number of form p/q, q≠0",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-017",
+    "chapter": 20,
+    "term": "Identity",
+    "answer": "Element that leaves value unchanged under an operation",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-018",
+    "chapter": 20,
+    "term": "Inverse",
+    "answer": "Element that returns to identity under operation",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-019",
+    "chapter": 20,
+    "term": "LCM",
+    "answer": "Least common multiple of denominators",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-020",
+    "chapter": 20,
+    "term": "HCF",
+    "answer": "Highest common factor",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-021",
+    "chapter": 20,
+    "term": "The",
+    "answer": "The data arranged in this form is called data array or arrayed data. The presentation of the data in this form gives muc",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-022",
+    "chapter": 20,
+    "term": "An",
+    "answer": "An action which results in some (well defined) outcomes is called an experiment.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-023",
+    "chapter": 20,
+    "term": "An",
+    "answer": "An experiment is called random if it has more than one possible outcomes and it is not possible to tell predict) the out",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-024",
+    "chapter": 20,
+    "term": "In",
+    "answer": "In such cases, we may say that the different outcomes of the experiment are equally likely. This means that each of the ",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-025",
+    "chapter": 20,
+    "term": "An",
+    "answer": "An event which always happens is called a sure event or a certain event.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-026",
+    "chapter": 20,
+    "term": "An",
+    "answer": "An event which never happens is called an impossible event.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-027",
+    "chapter": 20,
+    "term": "50,",
+    "answer": "50, the total runner is getting at least one head, means getting one head or two heads and the outcomes HT, TH, HH are f",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-028",
+    "chapter": 20,
+    "term": "2.",
+    "answer": "2. Since there is a kink from 0 to 50, it means that no student scored less than 50.",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-029",
+    "chapter": 20,
+    "term": "(ii)",
+    "answer": "(ii) In a grouped frequency distribution, the difference between lower limit and upper limit a class is called .....",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "OW-CH20-030",
+    "chapter": 20,
+    "term": "(iii)",
+    "answer": "(iii) The mid point of the class interval is called",
+    "linked_note_id": "CH20-sec-data-handling"
+  }
+]

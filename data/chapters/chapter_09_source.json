@@ -1,0 +1,130 @@
+{
+  "chapter": 9,
+  "title": "Direct and Inverse Variation",
+  "topicId": "math-ch9",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    9037,
+    10035
+  ],
+  "sections": [
+    {
+      "id": "CH09-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH09-sec-variation",
+      "title": "VARIATION",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-direct-variation",
+      "title": "DIRECT VARIATION",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-activity-3",
+      "title": "ACTIVITY 3",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-exercise-9-1",
+      "title": "Exercise 9.1",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-inverse-variation",
+      "title": "INVERSE VARIATION",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-exercise-9-2",
+      "title": "Exercise 9.2",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-time-and-work",
+      "title": "TIME AND WORK",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-boys-work",
+      "title": "boys' work",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-exercise-9-3",
+      "title": "Exercise 9.3",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH09-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-vii-if-the-number-of-articles-purchased-increase",
+      "title": "(vii) If the number of articles purchased increases the total cost decreases.  (iii) At the same time length of shadow is in direct variation with length of the  (ix) The distance covered varies inversely to the consumption of petrol.",
+      "level": 3
+    },
+    {
+      "id": "CH09-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH09-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH09-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 4
+    },
+    {
+      "id": "CH09-sec-ii-from-the-following-table-determine-a-and-b-if",
+      "title": "(ii) From the following table, determine a and b if x and y vary inversely:",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-time-2-frac-1-2-hours",
+      "title": "Time:  $ 2\\frac{1}{2} $ Hours",
+      "level": 4
+    },
+    {
+      "id": "CH09-sec-section-c",
+      "title": "SECTION C",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-2-1-left-frac-1-1-9-right-1",
+      "title": "+ 2 ^ { - 1 } + \\left( \\frac { 1 } { 1 9 } \\right) ^ { - 1 }",
+      "level": 4
+    },
+    {
+      "id": "CH09-sec-3-5-times-3-2-div-3-6-2-2-times-3-2",
+      "title": "$ 3^{-5} \\times 3^{2} \\div 3^{-6} + (2^{2} \\times 3)^{2} + $",
+      "level": 5
+    },
+    {
+      "id": "CH09-sec-section-d",
+      "title": "SECTION D",
+      "level": 5
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

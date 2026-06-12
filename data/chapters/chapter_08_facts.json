@@ -1,0 +1,110 @@
+[
+  {
+    "id": "FACT-CH08-001",
+    "chapter": 8,
+    "fact": "Principal. The money borrowed (lent or invested) is called principal.",
+    "linked_note_id": "CH08-sec-simple-interest"
+  },
+  {
+    "id": "FACT-CH08-002",
+    "chapter": 8,
+    "fact": "Interest. The additional money paid by the borrower to the moneylender in lieu of the money used is called interest.",
+    "linked_note_id": "CH08-sec-simple-interest"
+  },
+  {
+    "id": "FACT-CH08-003",
+    "chapter": 8,
+    "fact": "Amount. The total money paid by the borrower to the moneylender is called amount. Thus,",
+    "linked_note_id": "CH08-sec-simple-interest"
+  },
+  {
+    "id": "FACT-CH08-004",
+    "chapter": 8,
+    "fact": "(i) Rate of $6\\frac{1}{4}\\%$ per annum means that the interest paid on $\\mathbb{R}$100 for one year is $\\mathbb{R}^{6}\\frac{1}{4}$",
+    "linked_note_id": "CH08-sec-simple-interest"
+  },
+  {
+    "id": "FACT-CH08-005",
+    "chapter": 8,
+    "fact": "(ii) Rate of 2.5% per quarterly means that the interest paid on ₹100 for 3 months is ₹2.5. However, if the time period for the interest rate is not given, then we will take the time period as one year",
+    "linked_note_id": "CH08-sec-simple-interest"
+  },
+  {
+    "id": "FACT-CH08-006",
+    "chapter": 8,
+    "fact": "Using the formula $A=\\left(1+\\frac{R\\times T}{100}\\right)P$, we get",
+    "linked_note_id": "CH08-sec-simple-interest"
+  },
+  {
+    "id": "FACT-CH08-007",
+    "chapter": 8,
+    "fact": "The difference between the final amount and the original principal (money borrowed) is called the compound interest.",
+    "linked_note_id": "CH08-sec-exercise-8-1"
+  },
+  {
+    "id": "FACT-CH08-008",
+    "chapter": 8,
+    "fact": "#### DEDUCING A FORMULA FOR COMPOUND INTEREST",
+    "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest"
+  },
+  {
+    "id": "FACT-CH08-009",
+    "chapter": 8,
+    "fact": "Hence, the formula for finding amount at the end of $n$ years for principal $P$ and rate of interest $R\\%$ per annum is",
+    "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest"
+  },
+  {
+    "id": "FACT-CH08-010",
+    "chapter": 8,
+    "fact": "Conversion period. The time period after which the interest is added each time to form a new principal is called conversion period.",
+    "linked_note_id": "CH08-sec-rate-compounded-annually-half-yearly-or-quarterl"
+  },
+  {
+    "id": "FACT-CH08-011",
+    "chapter": 8,
+    "fact": "The time from one specified interest period to the next period is called conversion period.",
+    "linked_note_id": "CH08-sec-rate-compounded-annually-half-yearly-or-quarterl"
+  },
+  {
+    "id": "FACT-CH08-012",
+    "chapter": 8,
+    "fact": "Using formula, $ \\mathrm{A} = \\mathrm{P} \\left( 1 + \\frac{\\mathrm{R}}{100} \\right)^{\\mathrm{n}} $",
+    "linked_note_id": "CH08-sec-mcq-solved"
+  },
+  {
+    "id": "FACT-CH08-013",
+    "chapter": 8,
+    "fact": "(i) The money borrowed (lent or invested) is called .....",
+    "linked_note_id": "CH08-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH08-014",
+    "chapter": 8,
+    "fact": "(ii) The additional money paid by the borrower to the moneylender in lieu of the money used is called .....",
+    "linked_note_id": "CH08-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH08-015",
+    "chapter": 8,
+    "fact": "(v) The time after which the interest is added each time to form a new principal is called.....",
+    "linked_note_id": "CH08-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH08-016",
+    "chapter": 8,
+    "fact": "(iv) The time from one specified interest period to the next period is called conversion period.",
+    "linked_note_id": "CH08-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH08-017",
+    "chapter": 8,
+    "fact": "★ Formula for finding amount at the end of $n$ years for principal $P$ and rate of interest $R\\%$ per annum is",
+    "linked_note_id": "CH08-sec-summary"
+  },
+  {
+    "id": "FACT-CH08-018",
+    "chapter": 8,
+    "fact": "The time period after which the interest is added each time to form a new principal is called conversion period.",
+    "linked_note_id": "CH08-sec-summary"
+  }
+]

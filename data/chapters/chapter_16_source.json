@@ -1,0 +1,125 @@
+{
+  "chapter": 16,
+  "title": "Coordinate System and Graphs",
+  "topicId": "math-ch16",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    14713,
+    15351
+  ],
+  "sections": [
+    {
+      "id": "CH16-sec-coordinate-system",
+      "title": "COORDINATE SYSTEM",
+      "level": 5
+    },
+    {
+      "id": "CH16-sec-coordinates-of-a-point",
+      "title": "Coordinates of a point",
+      "level": 5
+    },
+    {
+      "id": "CH16-sec-convention-for-signs-of-coordinates",
+      "title": "Convention for signs of coordinates",
+      "level": 4
+    },
+    {
+      "id": "CH16-sec-remarks",
+      "title": "REMARKS",
+      "level": 5
+    },
+    {
+      "id": "CH16-sec-quadrants",
+      "title": "Quadrants",
+      "level": 5
+    },
+    {
+      "id": "CH16-sec-plotting-of-points-in-a-plane",
+      "title": "PLOTTING OF POINTS IN A PLANE",
+      "level": 4
+    },
+    {
+      "id": "CH16-sec-linear-graphs",
+      "title": "LINEAR GRAPHS",
+      "level": 5
+    },
+    {
+      "id": "CH16-sec-exercise-16-1",
+      "title": "Exercise 16.1",
+      "level": 5
+    },
+    {
+      "id": "CH16-sec-graphs",
+      "title": "GRAPHS",
+      "level": 5
+    },
+    {
+      "id": "CH16-sec-reading-of-linear-graphs",
+      "title": "Reading of Linear Graphs",
+      "level": 5
+    },
+    {
+      "id": "CH16-sec-remark",
+      "title": "REMARK",
+      "level": 5
+    },
+    {
+      "id": "CH16-sec-example-2-perimeter-and-length-of-a-side-of-a-sq",
+      "title": "Example 2. (Perimeter and length of a side of a square)",
+      "level": 3
+    },
+    {
+      "id": "CH16-sec-example-3-cost-and-quantity",
+      "title": "Example 3. (Cost and quantity)",
+      "level": 5
+    },
+    {
+      "id": "CH16-sec-le-4-time-and-temperature",
+      "title": "le 4. (Time and temperature)",
+      "level": 3
+    },
+    {
+      "id": "CH16-sec-example-5-area-and-the-length-of-a-side-of-a-squ",
+      "title": "Example 5. (Area and the length of a side of a square)",
+      "level": 4
+    },
+    {
+      "id": "CH16-sec-exercise-16-2",
+      "title": "Exercise 16.2",
+      "level": 5
+    },
+    {
+      "id": "CH16-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 3
+    },
+    {
+      "id": "CH16-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 4
+    },
+    {
+      "id": "CH16-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH16-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH16-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 5
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

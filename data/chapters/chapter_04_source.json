@@ -1,0 +1,140 @@
+{
+  "chapter": 4,
+  "title": "Cubes and Cube Roots",
+  "topicId": "math-ch4",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    3853,
+    4675
+  ],
+  "sections": [
+    {
+      "id": "CH04-sec-cube-numbers-or-perfect-cubes",
+      "title": "CUBE NUMBERS OR PERFECT CUBES",
+      "level": 4
+    },
+    {
+      "id": "CH04-sec-properties-of-cubes-of-natural-numbers",
+      "title": "PROPERTIES OF CUBES OF NATURAL NUMBERS",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-property-2",
+      "title": "Property 2.",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-cubes-of-negative-integers",
+      "title": "Cubes of negative integers",
+      "level": 4
+    },
+    {
+      "id": "CH04-sec-cubes-of-rational-numbers",
+      "title": "Cubes of rational numbers",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-exercise-4-1",
+      "title": "Exercise 4.1",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-cube-roots",
+      "title": "CUBE ROOTS",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-remarks",
+      "title": "REMARKS",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-cube-root-of-a-negative-perfect-cube",
+      "title": "Cube root of a negative perfect cube",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-cube-root-of-product-of-integers",
+      "title": "Cube root of product of integers",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-example-5-evaluate-sqrt-3-27-times-64",
+      "title": "Example 5. Evaluate:  $ \\sqrt[3]{27 \\times 64} $",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-prime-factorisation",
+      "title": "Prime factorisation",
+      "level": 4
+    },
+    {
+      "id": "CH04-sec-prime-factorisation",
+      "title": "Prime factorisation",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-prime-factorisation",
+      "title": "Prime factorisation",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-prime-factorisation",
+      "title": "Prime factorisation",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-prime-factorisation",
+      "title": "Prime factorisation",
+      "level": 4
+    },
+    {
+      "id": "CH04-sec-exercise-4-2",
+      "title": "Exercise 4.2",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 4
+    },
+    {
+      "id": "CH04-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH04-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I–II TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH04-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH04-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 4
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

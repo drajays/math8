@@ -1,0 +1,2912 @@
+[
+  {
+    "id": "Q-CH13-001",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "In the adjoining figure, the value of x is",
+    "options": [
+      "$120^{\\circ}$",
+      "$130^{\\circ}$",
+      "$140^{\\circ}$",
+      "$150^{\\circ}$"
+    ],
+    "correctOption": 0,
+    "answer": "$120^{\\circ}$",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "In the adjoining figure, the value of x is"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "$120^{\\circ}$"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $In the adjoining figure, the value of x is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$120^{\\circ}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "textbook",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-002",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "In the adjoining figure, the value of\n\n $ x + y + z + w $ is",
+    "options": [
+      "$ 180^{\\circ} $",
+      "$ 270^{\\circ} $",
+      "$ 300^{\\circ} $",
+      "$ 360^{\\circ} $"
+    ],
+    "correctOption": 0,
+    "answer": "$ 180^{\\circ} $",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "In the adjoining figure, the value of\n\n $ x + y + z + w $ is"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "$ 180^{\\circ} $"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $In the adjoining figure, the value of\n\n $ x + y + z + w $ is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$ 180^{\\circ} $$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "textbook",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-003",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "In the adjoining figure ABCD is a parallelogram, the values of x and y respectively are",
+    "options": [
+      "1 cm, 1 cm",
+      "2 cm, 1 cm",
+      "1 cm, 2 cm",
+      "2 cm, 2 cm"
+    ],
+    "correctOption": 0,
+    "answer": "1 cm, 1 cm",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "In the adjoining figure ABCD is a parallelogram, the values of x and y respectively are"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "1 cm, 1 cm"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $In the adjoining figure ABCD is a parallelogram, the values of x and y respectively are$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $1 cm, 1 cm$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "textbook",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-004",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Prove that the quadrilateral formed by joining the mid-points of the adjacent sides of a rectangle is a parallelogram. A\n\n<div style=\"text-align: center;\"><div style=\"text-align: center;\">Time allowed: 1 Hour</div> </div>\n\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>",
+    "options": [
+      "10</td><td style='text-align: center; word-wrap: break-word;'>",
+      "12</td><td style='text-align: center; word-wrap: break-word;'>",
+      "14</td><td style='text-align: center; word-wrap: break-word;'>",
+      "16</td></tr></table>\n\nIn class 1, you learn.\n\ntriangle.\n\nIn this chapter, we will learn how to construct quadrilaterals."
+    ],
+    "correctOption": 0,
+    "answer": "10</td><td style='text-align: center; word-wrap: break-word;'>",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "Prove that the quadrilateral formed by joining the mid-points of the adjacent sides of a rectangle is a parallelogram. A\n\n<div style=\"text-align: center;\"><div style=\"text-align: center;\">Time allowed: 1 Hour</div> </div>\n\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "10</td><td style='text-align: center; word-wrap: break-word;'>"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $Prove that the quadrilateral formed by joining the mid-points of the adjacent sides of a rectangle is a parallelogram. A\n\n<div style=\"text-align: center;\"><div style=\"text-align: center;\">Time allowed: 1 Hour</div> </div>\n\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $10</td><td style='text-align: center; word-wrap: break-word;'>$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "textbook",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-005",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{2}{5} + \\dfrac{1}{5}$",
+    "options": [
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{1}{5}$",
+      "$\\dfrac{4}{5}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{3}{5}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 5.",
+        "math": "$\\dfrac{2}{5}+\\dfrac{1}{5}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{3}{5}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 5. → $$\\dfrac{2}{5}+\\dfrac{1}{5}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{3}{5}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-006",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{3}{6} + \\dfrac{1}{6}$",
+    "options": [
+      "$\\dfrac{4}{6}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{5}{6}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{4}{6}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 6.",
+        "math": "$\\dfrac{3}{6}+\\dfrac{1}{6}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{4}{6}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 6. → $$\\dfrac{3}{6}+\\dfrac{1}{6}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{4}{6}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-007",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{4}{7} + \\dfrac{1}{7}$",
+    "options": [
+      "$\\dfrac{5}{7}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{6}{7}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{5}{7}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 7.",
+        "math": "$\\dfrac{4}{7}+\\dfrac{1}{7}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{5}{7}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 7. → $$\\dfrac{4}{7}+\\dfrac{1}{7}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{5}{7}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-008",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{5}{8} + \\dfrac{1}{8}$",
+    "options": [
+      "$\\dfrac{6}{8}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{7}{8}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{6}{8}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 8.",
+        "math": "$\\dfrac{5}{8}+\\dfrac{1}{8}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{6}{8}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 8. → $$\\dfrac{5}{8}+\\dfrac{1}{8}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{6}{8}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-009",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{6}{9} + \\dfrac{1}{9}$",
+    "options": [
+      "$\\dfrac{7}{9}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{8}{9}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{7}{9}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 9.",
+        "math": "$\\dfrac{6}{9}+\\dfrac{1}{9}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{7}{9}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 9. → $$\\dfrac{6}{9}+\\dfrac{1}{9}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{7}{9}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-010",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{7}{10} + \\dfrac{1}{10}$",
+    "options": [
+      "$\\dfrac{8}{10}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{9}{10}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{8}{10}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 10.",
+        "math": "$\\dfrac{7}{10}+\\dfrac{1}{10}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{8}{10}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 10. → $$\\dfrac{7}{10}+\\dfrac{1}{10}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{8}{10}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-011",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{8}{11} + \\dfrac{1}{11}$",
+    "options": [
+      "$\\dfrac{9}{11}$",
+      "$\\dfrac{8}{12}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{10}{11}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{9}{11}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 11.",
+        "math": "$\\dfrac{8}{11}+\\dfrac{1}{11}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{9}{11}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 11. → $$\\dfrac{8}{11}+\\dfrac{1}{11}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{9}{11}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-012",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{12}{15} + \\dfrac{1}{15}$",
+    "options": [
+      "$\\dfrac{13}{15}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{11}{15}$",
+      "$\\dfrac{14}{15}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{13}{15}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 15.",
+        "math": "$\\dfrac{12}{15}+\\dfrac{1}{15}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{13}{15}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 15. → $$\\dfrac{12}{15}+\\dfrac{1}{15}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{13}{15}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-013",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{13}{16} + \\dfrac{1}{16}$",
+    "options": [
+      "$\\dfrac{14}{16}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{15}{16}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{14}{16}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 16.",
+        "math": "$\\dfrac{13}{16}+\\dfrac{1}{16}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{14}{16}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 16. → $$\\dfrac{13}{16}+\\dfrac{1}{16}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{14}{16}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-014",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{14}{17} + \\dfrac{1}{17}$",
+    "options": [
+      "$\\dfrac{15}{17}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{16}{17}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{15}{17}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 17.",
+        "math": "$\\dfrac{14}{17}+\\dfrac{1}{17}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{15}{17}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 17. → $$\\dfrac{14}{17}+\\dfrac{1}{17}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{15}{17}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-015",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{15}{18} + \\dfrac{1}{18}$",
+    "options": [
+      "$\\dfrac{16}{18}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{17}{18}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{16}{18}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 18.",
+        "math": "$\\dfrac{15}{18}+\\dfrac{1}{18}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{16}{18}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 18. → $$\\dfrac{15}{18}+\\dfrac{1}{18}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{16}{18}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-016",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{16}{19} + \\dfrac{1}{19}$",
+    "options": [
+      "$\\dfrac{17}{19}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{18}{19}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{17}{19}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 19.",
+        "math": "$\\dfrac{16}{19}+\\dfrac{1}{19}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{17}{19}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 19. → $$\\dfrac{16}{19}+\\dfrac{1}{19}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{17}{19}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-017",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{17}{20} + \\dfrac{1}{20}$",
+    "options": [
+      "$\\dfrac{18}{20}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{19}{20}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{18}{20}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 20.",
+        "math": "$\\dfrac{17}{20}+\\dfrac{1}{20}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{18}{20}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 20. → $$\\dfrac{17}{20}+\\dfrac{1}{20}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{18}{20}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-018",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{18}{21} + \\dfrac{1}{21}$",
+    "options": [
+      "$\\dfrac{19}{21}$",
+      "$\\dfrac{18}{22}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{20}{21}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{19}{21}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 21.",
+        "math": "$\\dfrac{18}{21}+\\dfrac{1}{21}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{19}{21}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 21. → $$\\dfrac{18}{21}+\\dfrac{1}{21}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{19}{21}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-019",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{22}{25} + \\dfrac{1}{25}$",
+    "options": [
+      "$\\dfrac{23}{25}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{21}{25}$",
+      "$\\dfrac{24}{25}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{23}{25}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 25.",
+        "math": "$\\dfrac{22}{25}+\\dfrac{1}{25}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{23}{25}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 25. → $$\\dfrac{22}{25}+\\dfrac{1}{25}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{23}{25}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-020",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{23}{26} + \\dfrac{1}{26}$",
+    "options": [
+      "$\\dfrac{24}{26}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{25}{26}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{24}{26}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 26.",
+        "math": "$\\dfrac{23}{26}+\\dfrac{1}{26}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{24}{26}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 26. → $$\\dfrac{23}{26}+\\dfrac{1}{26}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{24}{26}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-021",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{24}{27} + \\dfrac{1}{27}$",
+    "options": [
+      "$\\dfrac{25}{27}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{26}{27}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{25}{27}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 27.",
+        "math": "$\\dfrac{24}{27}+\\dfrac{1}{27}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{25}{27}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 27. → $$\\dfrac{24}{27}+\\dfrac{1}{27}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{25}{27}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-022",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{25}{28} + \\dfrac{1}{28}$",
+    "options": [
+      "$\\dfrac{26}{28}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{27}{28}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{26}{28}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 28.",
+        "math": "$\\dfrac{25}{28}+\\dfrac{1}{28}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{26}{28}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 28. → $$\\dfrac{25}{28}+\\dfrac{1}{28}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{26}{28}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-023",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{26}{29} + \\dfrac{1}{29}$",
+    "options": [
+      "$\\dfrac{27}{29}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{28}{29}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{27}{29}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 29.",
+        "math": "$\\dfrac{26}{29}+\\dfrac{1}{29}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{27}{29}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 29. → $$\\dfrac{26}{29}+\\dfrac{1}{29}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{27}{29}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-024",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{27}{30} + \\dfrac{1}{30}$",
+    "options": [
+      "$\\dfrac{28}{30}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{29}{30}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{28}{30}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 30.",
+        "math": "$\\dfrac{27}{30}+\\dfrac{1}{30}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{28}{30}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 30. → $$\\dfrac{27}{30}+\\dfrac{1}{30}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{28}{30}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-025",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{28}{31} + \\dfrac{1}{31}$",
+    "options": [
+      "$\\dfrac{29}{31}$",
+      "$\\dfrac{28}{32}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{30}{31}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{29}{31}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 31.",
+        "math": "$\\dfrac{28}{31}+\\dfrac{1}{31}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{29}{31}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 31. → $$\\dfrac{28}{31}+\\dfrac{1}{31}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{29}{31}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-026",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{32}{35} + \\dfrac{1}{35}$",
+    "options": [
+      "$\\dfrac{33}{35}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{31}{35}$",
+      "$\\dfrac{34}{35}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{33}{35}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 35.",
+        "math": "$\\dfrac{32}{35}+\\dfrac{1}{35}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{33}{35}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 35. → $$\\dfrac{32}{35}+\\dfrac{1}{35}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{33}{35}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-027",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{33}{36} + \\dfrac{1}{36}$",
+    "options": [
+      "$\\dfrac{34}{36}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{35}{36}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{34}{36}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 36.",
+        "math": "$\\dfrac{33}{36}+\\dfrac{1}{36}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{34}{36}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 36. → $$\\dfrac{33}{36}+\\dfrac{1}{36}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{34}{36}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-028",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{34}{37} + \\dfrac{1}{37}$",
+    "options": [
+      "$\\dfrac{35}{37}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{36}{37}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{35}{37}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 37.",
+        "math": "$\\dfrac{34}{37}+\\dfrac{1}{37}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{35}{37}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 37. → $$\\dfrac{34}{37}+\\dfrac{1}{37}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{35}{37}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-029",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{35}{38} + \\dfrac{1}{38}$",
+    "options": [
+      "$\\dfrac{36}{38}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{37}{38}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{36}{38}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 38.",
+        "math": "$\\dfrac{35}{38}+\\dfrac{1}{38}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{36}{38}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 38. → $$\\dfrac{35}{38}+\\dfrac{1}{38}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{36}{38}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-030",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{36}{39} + \\dfrac{1}{39}$",
+    "options": [
+      "$\\dfrac{37}{39}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{38}{39}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{37}{39}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 39.",
+        "math": "$\\dfrac{36}{39}+\\dfrac{1}{39}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{37}{39}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 39. → $$\\dfrac{36}{39}+\\dfrac{1}{39}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{37}{39}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-031",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{37}{40} + \\dfrac{1}{40}$",
+    "options": [
+      "$\\dfrac{38}{40}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{39}{40}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{38}{40}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 40.",
+        "math": "$\\dfrac{37}{40}+\\dfrac{1}{40}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{38}{40}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 40. → $$\\dfrac{37}{40}+\\dfrac{1}{40}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{38}{40}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-032",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{38}{41} + \\dfrac{1}{41}$",
+    "options": [
+      "$\\dfrac{39}{41}$",
+      "$\\dfrac{38}{42}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{40}{41}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{39}{41}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 41.",
+        "math": "$\\dfrac{38}{41}+\\dfrac{1}{41}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{39}{41}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 41. → $$\\dfrac{38}{41}+\\dfrac{1}{41}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{39}{41}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-033",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[37] Simplify: $\\dfrac{2}{5} + \\dfrac{1}{5}$",
+    "options": [
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{1}{5}$",
+      "$\\dfrac{4}{5}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{3}{5}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 5.",
+        "math": "$\\dfrac{2}{5}+\\dfrac{1}{5}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{3}{5}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 5. → $$\\dfrac{2}{5}+\\dfrac{1}{5}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{3}{5}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-034",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[38] Simplify: $\\dfrac{3}{6} + \\dfrac{1}{6}$",
+    "options": [
+      "$\\dfrac{4}{6}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{5}{6}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{4}{6}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 6.",
+        "math": "$\\dfrac{3}{6}+\\dfrac{1}{6}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{4}{6}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 6. → $$\\dfrac{3}{6}+\\dfrac{1}{6}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{4}{6}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-035",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[39] Simplify: $\\dfrac{4}{7} + \\dfrac{1}{7}$",
+    "options": [
+      "$\\dfrac{5}{7}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{6}{7}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{5}{7}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 7.",
+        "math": "$\\dfrac{4}{7}+\\dfrac{1}{7}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{5}{7}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 7. → $$\\dfrac{4}{7}+\\dfrac{1}{7}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{5}{7}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-036",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[40] Simplify: $\\dfrac{5}{8} + \\dfrac{1}{8}$",
+    "options": [
+      "$\\dfrac{6}{8}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{7}{8}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{6}{8}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 8.",
+        "math": "$\\dfrac{5}{8}+\\dfrac{1}{8}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{6}{8}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 8. → $$\\dfrac{5}{8}+\\dfrac{1}{8}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{6}{8}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-037",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[41] Simplify: $\\dfrac{6}{9} + \\dfrac{1}{9}$",
+    "options": [
+      "$\\dfrac{7}{9}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{8}{9}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{7}{9}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 9.",
+        "math": "$\\dfrac{6}{9}+\\dfrac{1}{9}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{7}{9}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 9. → $$\\dfrac{6}{9}+\\dfrac{1}{9}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{7}{9}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-038",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[42] Simplify: $\\dfrac{7}{10} + \\dfrac{1}{10}$",
+    "options": [
+      "$\\dfrac{8}{10}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{9}{10}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{8}{10}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 10.",
+        "math": "$\\dfrac{7}{10}+\\dfrac{1}{10}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{8}{10}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 10. → $$\\dfrac{7}{10}+\\dfrac{1}{10}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{8}{10}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-039",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[43] Simplify: $\\dfrac{8}{11} + \\dfrac{1}{11}$",
+    "options": [
+      "$\\dfrac{9}{11}$",
+      "$\\dfrac{8}{12}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{10}{11}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{9}{11}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 11.",
+        "math": "$\\dfrac{8}{11}+\\dfrac{1}{11}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{9}{11}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 11. → $$\\dfrac{8}{11}+\\dfrac{1}{11}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{9}{11}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-040",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[47] Simplify: $\\dfrac{12}{15} + \\dfrac{1}{15}$",
+    "options": [
+      "$\\dfrac{13}{15}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{11}{15}$",
+      "$\\dfrac{14}{15}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{13}{15}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 15.",
+        "math": "$\\dfrac{12}{15}+\\dfrac{1}{15}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{13}{15}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 15. → $$\\dfrac{12}{15}+\\dfrac{1}{15}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{13}{15}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-041",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[48] Simplify: $\\dfrac{13}{16} + \\dfrac{1}{16}$",
+    "options": [
+      "$\\dfrac{14}{16}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{15}{16}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{14}{16}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 16.",
+        "math": "$\\dfrac{13}{16}+\\dfrac{1}{16}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{14}{16}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 16. → $$\\dfrac{13}{16}+\\dfrac{1}{16}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{14}{16}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-042",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[49] Simplify: $\\dfrac{14}{17} + \\dfrac{1}{17}$",
+    "options": [
+      "$\\dfrac{15}{17}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{16}{17}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{15}{17}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 17.",
+        "math": "$\\dfrac{14}{17}+\\dfrac{1}{17}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{15}{17}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 17. → $$\\dfrac{14}{17}+\\dfrac{1}{17}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{15}{17}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-043",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[50] Simplify: $\\dfrac{15}{18} + \\dfrac{1}{18}$",
+    "options": [
+      "$\\dfrac{16}{18}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{17}{18}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{16}{18}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 18.",
+        "math": "$\\dfrac{15}{18}+\\dfrac{1}{18}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{16}{18}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 18. → $$\\dfrac{15}{18}+\\dfrac{1}{18}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{16}{18}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-044",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[51] Simplify: $\\dfrac{16}{19} + \\dfrac{1}{19}$",
+    "options": [
+      "$\\dfrac{17}{19}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{18}{19}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{17}{19}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 19.",
+        "math": "$\\dfrac{16}{19}+\\dfrac{1}{19}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{17}{19}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 19. → $$\\dfrac{16}{19}+\\dfrac{1}{19}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{17}{19}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-045",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[52] Simplify: $\\dfrac{17}{20} + \\dfrac{1}{20}$",
+    "options": [
+      "$\\dfrac{18}{20}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{19}{20}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{18}{20}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 20.",
+        "math": "$\\dfrac{17}{20}+\\dfrac{1}{20}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{18}{20}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 20. → $$\\dfrac{17}{20}+\\dfrac{1}{20}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{18}{20}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-046",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[53] Simplify: $\\dfrac{18}{21} + \\dfrac{1}{21}$",
+    "options": [
+      "$\\dfrac{19}{21}$",
+      "$\\dfrac{18}{22}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{20}{21}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{19}{21}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 21.",
+        "math": "$\\dfrac{18}{21}+\\dfrac{1}{21}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{19}{21}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 21. → $$\\dfrac{18}{21}+\\dfrac{1}{21}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{19}{21}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-047",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[57] Simplify: $\\dfrac{22}{25} + \\dfrac{1}{25}$",
+    "options": [
+      "$\\dfrac{23}{25}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{21}{25}$",
+      "$\\dfrac{24}{25}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{23}{25}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 25.",
+        "math": "$\\dfrac{22}{25}+\\dfrac{1}{25}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{23}{25}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 25. → $$\\dfrac{22}{25}+\\dfrac{1}{25}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{23}{25}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-048",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[58] Simplify: $\\dfrac{23}{26} + \\dfrac{1}{26}$",
+    "options": [
+      "$\\dfrac{24}{26}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{25}{26}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{24}{26}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 26.",
+        "math": "$\\dfrac{23}{26}+\\dfrac{1}{26}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{24}{26}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 26. → $$\\dfrac{23}{26}+\\dfrac{1}{26}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{24}{26}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-049",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[59] Simplify: $\\dfrac{24}{27} + \\dfrac{1}{27}$",
+    "options": [
+      "$\\dfrac{25}{27}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{26}{27}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{25}{27}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 27.",
+        "math": "$\\dfrac{24}{27}+\\dfrac{1}{27}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{25}{27}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 27. → $$\\dfrac{24}{27}+\\dfrac{1}{27}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{25}{27}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-050",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[60] Simplify: $\\dfrac{25}{28} + \\dfrac{1}{28}$",
+    "options": [
+      "$\\dfrac{26}{28}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{27}{28}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{26}{28}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 28.",
+        "math": "$\\dfrac{25}{28}+\\dfrac{1}{28}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{26}{28}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 28. → $$\\dfrac{25}{28}+\\dfrac{1}{28}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{26}{28}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-051",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[61] Simplify: $\\dfrac{26}{29} + \\dfrac{1}{29}$",
+    "options": [
+      "$\\dfrac{27}{29}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{28}{29}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{27}{29}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 29.",
+        "math": "$\\dfrac{26}{29}+\\dfrac{1}{29}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{27}{29}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 29. → $$\\dfrac{26}{29}+\\dfrac{1}{29}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{27}{29}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-052",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[62] Simplify: $\\dfrac{27}{30} + \\dfrac{1}{30}$",
+    "options": [
+      "$\\dfrac{28}{30}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{29}{30}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{28}{30}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 30.",
+        "math": "$\\dfrac{27}{30}+\\dfrac{1}{30}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{28}{30}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 30. → $$\\dfrac{27}{30}+\\dfrac{1}{30}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{28}{30}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-053",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[63] Simplify: $\\dfrac{28}{31} + \\dfrac{1}{31}$",
+    "options": [
+      "$\\dfrac{29}{31}$",
+      "$\\dfrac{28}{32}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{30}{31}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{29}{31}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 31.",
+        "math": "$\\dfrac{28}{31}+\\dfrac{1}{31}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{29}{31}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 31. → $$\\dfrac{28}{31}+\\dfrac{1}{31}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{29}{31}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-054",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[67] Simplify: $\\dfrac{32}{35} + \\dfrac{1}{35}$",
+    "options": [
+      "$\\dfrac{33}{35}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{31}{35}$",
+      "$\\dfrac{34}{35}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{33}{35}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 35.",
+        "math": "$\\dfrac{32}{35}+\\dfrac{1}{35}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{33}{35}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 35. → $$\\dfrac{32}{35}+\\dfrac{1}{35}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{33}{35}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-055",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[68] Simplify: $\\dfrac{33}{36} + \\dfrac{1}{36}$",
+    "options": [
+      "$\\dfrac{34}{36}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{35}{36}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{34}{36}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 36.",
+        "math": "$\\dfrac{33}{36}+\\dfrac{1}{36}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{34}{36}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 36. → $$\\dfrac{33}{36}+\\dfrac{1}{36}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{34}{36}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-056",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[69] Simplify: $\\dfrac{34}{37} + \\dfrac{1}{37}$",
+    "options": [
+      "$\\dfrac{35}{37}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{36}{37}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{35}{37}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 37.",
+        "math": "$\\dfrac{34}{37}+\\dfrac{1}{37}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{35}{37}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 37. → $$\\dfrac{34}{37}+\\dfrac{1}{37}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{35}{37}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-057",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[70] Simplify: $\\dfrac{35}{38} + \\dfrac{1}{38}$",
+    "options": [
+      "$\\dfrac{36}{38}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{37}{38}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{36}{38}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 38.",
+        "math": "$\\dfrac{35}{38}+\\dfrac{1}{38}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{36}{38}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 38. → $$\\dfrac{35}{38}+\\dfrac{1}{38}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{36}{38}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-058",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[71] Simplify: $\\dfrac{36}{39} + \\dfrac{1}{39}$",
+    "options": [
+      "$\\dfrac{37}{39}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{38}{39}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{37}{39}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 39.",
+        "math": "$\\dfrac{36}{39}+\\dfrac{1}{39}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{37}{39}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 39. → $$\\dfrac{36}{39}+\\dfrac{1}{39}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{37}{39}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-059",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[72] Simplify: $\\dfrac{37}{40} + \\dfrac{1}{40}$",
+    "options": [
+      "$\\dfrac{38}{40}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{39}{40}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{38}{40}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 40.",
+        "math": "$\\dfrac{37}{40}+\\dfrac{1}{40}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{38}{40}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 40. → $$\\dfrac{37}{40}+\\dfrac{1}{40}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{38}{40}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-060",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[73] Simplify: $\\dfrac{38}{41} + \\dfrac{1}{41}$",
+    "options": [
+      "$\\dfrac{39}{41}$",
+      "$\\dfrac{38}{42}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{40}{41}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{39}{41}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 41.",
+        "math": "$\\dfrac{38}{41}+\\dfrac{1}{41}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{39}{41}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 41. → $$\\dfrac{38}{41}+\\dfrac{1}{41}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{39}{41}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-061",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[77] Simplify: $\\dfrac{2}{5} + \\dfrac{1}{5}$",
+    "options": [
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{1}{5}$",
+      "$\\dfrac{4}{5}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{3}{5}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 5.",
+        "math": "$\\dfrac{2}{5}+\\dfrac{1}{5}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{3}{5}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 5. → $$\\dfrac{2}{5}+\\dfrac{1}{5}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{3}{5}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-062",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[78] Simplify: $\\dfrac{3}{6} + \\dfrac{1}{6}$",
+    "options": [
+      "$\\dfrac{4}{6}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{5}{6}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{4}{6}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 6.",
+        "math": "$\\dfrac{3}{6}+\\dfrac{1}{6}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{4}{6}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 6. → $$\\dfrac{3}{6}+\\dfrac{1}{6}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{4}{6}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-063",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[79] Simplify: $\\dfrac{4}{7} + \\dfrac{1}{7}$",
+    "options": [
+      "$\\dfrac{5}{7}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{6}{7}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{5}{7}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 7.",
+        "math": "$\\dfrac{4}{7}+\\dfrac{1}{7}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{5}{7}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 7. → $$\\dfrac{4}{7}+\\dfrac{1}{7}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{5}{7}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-064",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[80] Simplify: $\\dfrac{5}{8} + \\dfrac{1}{8}$",
+    "options": [
+      "$\\dfrac{6}{8}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{7}{8}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{6}{8}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 8.",
+        "math": "$\\dfrac{5}{8}+\\dfrac{1}{8}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{6}{8}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 8. → $$\\dfrac{5}{8}+\\dfrac{1}{8}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{6}{8}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-065",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[81] Simplify: $\\dfrac{6}{9} + \\dfrac{1}{9}$",
+    "options": [
+      "$\\dfrac{7}{9}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{8}{9}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{7}{9}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 9.",
+        "math": "$\\dfrac{6}{9}+\\dfrac{1}{9}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{7}{9}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 9. → $$\\dfrac{6}{9}+\\dfrac{1}{9}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{7}{9}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-066",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[82] Simplify: $\\dfrac{7}{10} + \\dfrac{1}{10}$",
+    "options": [
+      "$\\dfrac{8}{10}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{9}{10}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{8}{10}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 10.",
+        "math": "$\\dfrac{7}{10}+\\dfrac{1}{10}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{8}{10}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 10. → $$\\dfrac{7}{10}+\\dfrac{1}{10}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{8}{10}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-067",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[83] Simplify: $\\dfrac{8}{11} + \\dfrac{1}{11}$",
+    "options": [
+      "$\\dfrac{9}{11}$",
+      "$\\dfrac{8}{12}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{10}{11}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{9}{11}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 11.",
+        "math": "$\\dfrac{8}{11}+\\dfrac{1}{11}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{9}{11}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 11. → $$\\dfrac{8}{11}+\\dfrac{1}{11}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{9}{11}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-068",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[87] Simplify: $\\dfrac{12}{15} + \\dfrac{1}{15}$",
+    "options": [
+      "$\\dfrac{13}{15}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{11}{15}$",
+      "$\\dfrac{14}{15}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{13}{15}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 15.",
+        "math": "$\\dfrac{12}{15}+\\dfrac{1}{15}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{13}{15}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 15. → $$\\dfrac{12}{15}+\\dfrac{1}{15}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{13}{15}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-069",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[88] Simplify: $\\dfrac{13}{16} + \\dfrac{1}{16}$",
+    "options": [
+      "$\\dfrac{14}{16}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{15}{16}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{14}{16}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 16.",
+        "math": "$\\dfrac{13}{16}+\\dfrac{1}{16}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{14}{16}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 16. → $$\\dfrac{13}{16}+\\dfrac{1}{16}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{14}{16}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-070",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[89] Simplify: $\\dfrac{14}{17} + \\dfrac{1}{17}$",
+    "options": [
+      "$\\dfrac{15}{17}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{16}{17}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{15}{17}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 17.",
+        "math": "$\\dfrac{14}{17}+\\dfrac{1}{17}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{15}{17}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 17. → $$\\dfrac{14}{17}+\\dfrac{1}{17}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{15}{17}$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated",
+    "linksTo": "math-ch13nunderstand"
+  },
+  {
+    "id": "Q-CH13-071",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Fill in the blanks:\n\n(i) The curves which have different beginning and end points are called .....\n\n(ii) A curve which does not cross itself at any point is called a .....\n\n(iii) A simple closed curve made up entirely of line segments is called a .....\n\n(iv) A polygon in which each interior angle is less than  $ 180^{\\circ} $ is called a .....\n\n(v) 10 sided polygon is called ....\n\n(vi) A polygon which has all its sides of equal length and all its angles of equal angle called a\n\nwo adjacent sides",
+    "blankAnswer": "",
+    "answer": "",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "Fill in the blanks:\n\n(i) The curves which have different beginning and end points are called .....\n\n(ii) A curve which does not cross itself at any point is called a .....\n\n(iii) A simple closed curve made up entirely of line segments is called a .....\n\n(iv) A polygon in which each interior angle is less than  $ 180^{\\circ} $ is called a .....\n\n(v) 10 sided polygon is called ....\n\n(vi) A polygon which has all its sides of equal length and all its angles of equal angle called a\n\nwo adjacent sides"
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "?"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $Fill in the blanks:\n\n(i) The curves which have different beginning and end points are called .....\n\n(ii) A curve which does not cross itself at any point is called a .....\n\n(iii) A simple closed curve made up entirely of line segments is called a .....\n\n(iv) A polygon in which each interior angle is less than  $ 180^{\\circ} $ is called a .....\n\n(v) 10 sided polygon is called ....\n\n(vi) A polygon which has all its sides of equal length and all its angles of equal angle called a\n\nwo adjacent sides$ Step 2 (Fill): Insert the missing term. → $?$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "textbook"
+  },
+  {
+    "id": "Q-CH13-072",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-073",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[44] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-074",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[45] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-075",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[54] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-076",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[55] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-077",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[64] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-078",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[65] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-079",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[74] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-080",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[75] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-081",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[84] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-082",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[85] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-083",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[94] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-084",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[95] In chapter 13 (Understanding Shapes), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-085",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-086",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-087",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-088",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-089",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-090",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-091",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Statement I: Each interior angle of a regular heptagon is  $ 120^{\\circ} $.\n\n[ : All rectangles are parallelograms.\n\nstatement I: The opposite sides of a parallelogram are equal\n\n1 rhombuses are parallelograms.\n\nnent I: The diagonals of a rectangle are also angle bisectors of the interior angles of the\n\nStatement II: The diagonals of a rectangle bisect each other",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Analyse",
+        "why": "Test the statement against definition.",
+        "math": "Statement I: Each interior angle of a regular heptagon is  $ 120^{\\circ} $.\n\n[ : All rectangles are parallelograms.\n\nstatement I: The opposite sides of a parallelogram are equal\n\n1 rhombuses are parallelograms.\n\nnent I: The diagonals of a rectangle are also angle bisectors of the interior angles of the\n\nStatement II: The diagonals of a rectangle bisect each other"
+      },
+      {
+        "rule": "Verdict",
+        "why": "State true or false with reason.",
+        "math": "true"
+      }
+    ],
+    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Statement I: Each interior angle of a regular heptagon is  $ 120^{\\circ} $.\n\n[ : All rectangles are parallelograms.\n\nstatement I: The opposite sides of a parallelogram are equal\n\n1 rhombuses are parallelograms.\n\nnent I: The diagonals of a rectangle are also angle bisectors of the interior angles of the\n\nStatement II: The diagonals of a rectangle bisect each other$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "textbook"
+  },
+  {
+    "id": "Q-CH13-092",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Class 8 ICSE topic 'Understanding Shapes' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-093",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[46] Class 8 ICSE topic 'Understanding Shapes' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-094",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[56] Class 8 ICSE topic 'Understanding Shapes' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-095",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[66] Class 8 ICSE topic 'Understanding Shapes' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-096",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[76] Class 8 ICSE topic 'Understanding Shapes' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-097",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[86] Class 8 ICSE topic 'Understanding Shapes' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-098",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[96] Class 8 ICSE topic 'Understanding Shapes' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-099",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Zero is a rational number.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Analyse",
+        "why": "Test the statement against definition.",
+        "math": "Zero is a rational number."
+      },
+      {
+        "rule": "Verdict",
+        "why": "State true or false with reason.",
+        "math": "true"
+      }
+    ],
+    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Zero is a rational number.$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH13-100",
+    "chapter": 13,
+    "topicId": "math-ch13",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Zero is a rational number.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Analyse",
+        "why": "Test the statement against definition.",
+        "math": "Zero is a rational number."
+      },
+      {
+        "rule": "Verdict",
+        "why": "State true or false with reason.",
+        "math": "true"
+      }
+    ],
+    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Zero is a rational number.$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "linked_note_id": "CH13-sec-understanding-shapes",
+    "source": "generated"
+  }
+]

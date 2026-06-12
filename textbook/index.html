@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICSE Class 8 Maths · Aggarwal · Glass-Box</title>
+<style>
+:root{
+  --serif:"Iowan Old Style",Palatino,Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,Menlo,Consolas,monospace;
+  --bg:#f7f9fb;--surface:#fff;--on:#191c1e;--on-var:#45474c;--on-dim:#75777d;
+  --primary:#0e1b2e;--crimson:#ba0035;--crimson-soft:#fde2e8;
+  --blue:#1d6fa5;--blue-soft:#e3eefb;--emerald:#0f7a55;--emerald-soft:#dff3ea;
+  --glass:rgba(255,255,255,.78);--border:rgba(30,41,59,.1);
+  --r:.55rem;--r-lg:1rem;--pill:999px;--shadow:0 8px 28px -16px rgba(14,27,46,.28);
+}
+*{box-sizing:border-box}body{margin:0;font-family:var(--sans);color:var(--on);background:var(--bg);line-height:1.55}
+a{color:var(--blue)}.wrap{max-width:1180px;margin:0 auto;padding:24px 20px 60px}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:20px}
+.brand{font-family:var(--serif);font-weight:700;font-size:28px;color:var(--crimson)}
+.brand small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--on-dim)}
+.back{font-size:14px;color:var(--on-var);text-decoration:none}
+.grid{display:grid;grid-template-columns:280px 1fr;gap:22px;align-items:start}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:var(--glass);border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--shadow);backdrop-filter:blur(10px)}
+.card-head{padding:14px 18px;border-bottom:1px solid var(--border);font-weight:700;display:flex;align-items:center;gap:8px}
+.card-body{padding:16px 18px}
+.chap-list{display:flex;flex-direction:column;gap:6px;max-height:70vh;overflow:auto}
+.chap-btn{text-align:left;border:1px solid var(--border);background:var(--surface);border-radius:var(--r);padding:10px 12px;cursor:pointer;font-size:14px}
+.chap-btn:hover,.chap-btn.active{border-color:var(--crimson);background:var(--crimson-soft)}
+.chap-btn .n{font-family:var(--mono);font-size:10px;color:var(--on-dim)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.tab{border:1.5px solid var(--border);background:var(--surface);border-radius:var(--pill);padding:8px 14px;font-size:13px;font-weight:600;cursor:pointer}
+.tab.active{background:var(--crimson);color:#fff;border-color:var(--crimson)}
+.panel{display:none}.panel.active{display:block}
+.notes-md{font-size:15px;max-height:62vh;overflow:auto;padding-right:6px}
+.notes-md h2{font-family:var(--serif);font-size:20px;margin:18px 0 8px;color:var(--primary)}
+.notes-md hr{border:none;border-top:1px dashed var(--border);margin:16px 0}
+.q-list{display:flex;flex-direction:column;gap:8px;max-height:38vh;overflow:auto;margin-bottom:14px}
+.q-item{padding:10px 12px;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;font-size:14px;background:var(--surface)}
+.q-item.active{border-color:var(--crimson);background:var(--crimson-soft)}
+.problem{border-left:4px solid var(--primary);background:var(--surface);padding:14px 16px;border-radius:var(--r);margin-bottom:10px;font-family:var(--serif);font-size:18px}
+.steps{list-style:none;margin:0;padding:0}
+.step{padding:14px 0 14px 48px;position:relative;border-bottom:1px dashed var(--border)}
+.step .num{position:absolute;left:0;top:10px;width:28px;height:28px;border-radius:50%;border:2px solid var(--crimson);display:grid;place-items:center;font-weight:700;font-size:13px;color:var(--crimson)}
+.step .rule{font-family:var(--mono);font-size:10px;text-transform:uppercase;background:var(--crimson-soft);color:var(--crimson);padding:3px 8px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.step .why{color:var(--on-var);font-size:14px;margin-bottom:6px}
+.step .math{font-family:var(--serif);font-size:17px;background:var(--surface);padding:10px 12px;border-radius:var(--r);overflow-x:auto}
+.step.pending{filter:blur(4px);opacity:.45;pointer-events:none}
+.answer{margin-top:12px;padding:14px 16px;background:var(--emerald-soft);border-radius:var(--r);font-family:var(--serif);font-size:20px;color:var(--emerald)}
+.btn{border:none;border-radius:var(--r);padding:10px 16px;font-weight:600;cursor:pointer;background:var(--crimson);color:#fff;margin-top:10px}
+.meta{font-family:var(--mono);font-size:11px;color:var(--on-dim);margin-bottom:10px}
+.mindmap,.cheat{white-space:pre-wrap;font-size:14px;max-height:62vh;overflow:auto;font-family:var(--mono)}
+.ow-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
+.ow-card{padding:12px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);cursor:pointer;text-align:center;font-weight:600}
+.ow-reveal{margin-top:12px;padding:14px;background:var(--blue-soft);border-radius:var(--r);min-height:48px}
+.empty{color:var(--on-dim);padding:20px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="../">← math8 apps</a>
+    <div class="brand">Understanding Mathematics<small>ICSE CLASS 8 · M.L. AGGARWAL · GLASS-BOX</small></div>
+  </header>
+  <div class="grid">
+    <div class="card">
+      <div class="card-head">📚 Chapters</div>
+      <div class="card-body"><div class="chap-list" id="chap-list"></div></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><span id="ch-title">Select a chapter</span></div>
+      <div class="card-body">
+        <div class="tabs" id="tabs">
+          <button class="tab active" data-tab="notes">📝 Notes</button>
+          <button class="tab" data-tab="practice">❓ Practice (100)</button>
+          <button class="tab" data-tab="mindmap">🧠 Mind Map</button>
+          <button class="tab" data-tab="cheat">⚡ Cheat Sheet</button>
+          <button class="tab" data-tab="oneword">🔤 One Word (30)</button>
+        </div>
+        <div class="panel active" id="panel-notes"><div class="notes-md empty" id="notes">Pick a chapter.</div></div>
+        <div class="panel" id="panel-practice">
+          <div class="meta" id="q-meta"></div>
+          <div class="q-list" id="q-list"></div>
+          <div id="glass-host"><div class="empty">Select a question for glass-box derivation.</div></div>
+        </div>
+        <div class="panel" id="panel-mindmap"><pre class="mindmap empty" id="mindmap"></pre></div>
+        <div class="panel" id="panel-cheat"><pre class="cheat empty" id="cheat"></pre></div>
+        <div class="panel" id="panel-oneword">
+          <div class="ow-grid" id="ow-grid"></div>
+          <div class="ow-reveal" id="ow-reveal">Tap a word to reveal.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+let MANIFEST = null, CUR = null, CACHE = {}, QIDX = 0, REVEAL = 0;
+
+function esc(s){ return String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+
+function renderMath(el){
+  el.innerHTML = el.innerHTML
+    .replace(/\$\$([^$]+)\$\$/g,'<span class="math">$1</span>')
+    .replace(/\$([^$]+)\$/g,'<span class="math">$1</span>');
+}
+
+function mdToHtml(md){
+  let h = esc(md);
+  h = h.replace(/^# (.+)$/gm,'<h1>$1</h1>').replace(/^## (.+)$/gm,'<h2>$1</h2>').replace(/^### (.+)$/gm,'<h3>$1</h3>');
+  h = h.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/^---$/gm,'<hr>').replace(/\n/g,'<br>');
+  h = h.replace(/\$([^$]+)\$/g,'<span class="math">$1</span>');
+  return h;
+}
+
+async function loadText(url){
+  const r = await fetch(url); if(!r.ok) throw new Error(url); return r.text();
+}
+async function loadJson(url){
+  const r = await fetch(url); if(!r.ok) throw new Error(url); return r.json();
+}
+
+async function loadChapter(ch){
+  if(CACHE[ch.tag]) return CACHE[ch.tag];
+  const f = ch.files;
+  const [questions, facts, notes, mindmap, cheat, oneword] = await Promise.all([
+    loadJson(f.questions), loadJson(f.facts), loadText(f.notes),
+    loadText(f.mindmap), loadText(f.cheat), loadJson(f.oneword)
+  ]);
+  CACHE[ch.tag] = {questions,facts,notes,mindmap,cheat,oneword};
+  return CACHE[ch.tag];
+}
+
+function paintChapters(){
+  const root = $('#chap-list'); root.innerHTML = '';
+  MANIFEST.chapters.forEach(ch => {
+    const b = document.createElement('button');
+    b.className = 'chap-btn' + (CUR && CUR.num===ch.num ? ' active':'');
+    b.innerHTML = `<span class="n">Ch ${ch.num}</span>${esc(ch.title)}`;
+    b.onclick = () => selectChapter(ch);
+    root.appendChild(b);
+  });
+}
+
+async function selectChapter(ch){
+  CUR = ch; paintChapters();
+  $('#ch-title').textContent = `Ch ${ch.num}: ${ch.title}`;
+  try {
+    const data = await loadChapter(ch);
+    $('#notes').innerHTML = mdToHtml(data.notes);
+    $('#notes').classList.remove('empty');
+    $('#mindmap').textContent = data.mindmap; $('#mindmap').classList.remove('empty');
+    $('#cheat').textContent = data.cheat; $('#cheat').classList.remove('empty');
+    paintQuestions(data.questions);
+    paintOneWord(data.oneword);
+  } catch(e){
+    $('#notes').innerHTML = '<div class="empty">Failed to load chapter data.</div>';
+  }
+}
+
+function paintQuestions(qs){
+  const types = {mcq:0,fill_blank:0,true_false:0};
+  qs.forEach(q => types[q.type]++);
+  $('#q-meta').textContent = `${qs.length} questions · ${types.mcq} MCQ · ${types.fill_blank} fill · ${types.true_false} T/F`;
+  const list = $('#q-list'); list.innerHTML = '';
+  qs.forEach((q,i) => {
+    const d = document.createElement('div');
+    d.className = 'q-item' + (i===QIDX?' active':'');
+    d.textContent = `${q.id} · ${q.type} · ${q.question.replace(/\$/g,'').slice(0,70)}…`;
+    d.onclick = () => { QIDX=i; paintQuestions(qs); showGlass(q); };
+    list.appendChild(d);
+  });
+  if(qs.length) showGlass(qs[QIDX]);
+}
+
+function showGlass(q){
+  const host = $('#glass-host');
+  let opts = '';
+  if(q.type==='mcq' && q.options){
+    opts = '<ul>'+q.options.map((o,i)=>`<li>${i===q.correctOption?'✓ ':''}${esc(o.replace(/\$/g,''))}</li>`).join('')+'</ul>';
+  }
+  host.innerHTML = `
+    <div class="problem">${esc(q.question.replace(/\$/g,''))}</div>
+    ${opts}
+    <ol class="steps" id="steps">${(q.glassboxSteps||[]).map((s,i)=>
+      `<li class="step" data-i="${i}"><span class="num">${i+1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math">${esc(s.math.replace(/\$/g,''))}</div></li>`
+    ).join('')}</ol>
+    <button class="btn" id="btn-next">Reveal next step ↓</button>
+    <div class="answer" id="ans" style="display:none">Answer: ${esc(String(q.answer||'').replace(/\$/g,''))}</div>
+    <div class="meta">Linked note: ${esc(q.linked_note_id||'—')}</div>`;
+  REVEAL = 0; applyReveal();
+  $('#btn-next').onclick = () => { REVEAL++; applyReveal(); };
+}
+
+function applyReveal(){
+  const steps = $$('#steps .step');
+  steps.forEach((s,i)=> s.classList.toggle('pending', i>REVEAL));
+  const ans = $('#ans');
+  if(ans) ans.style.display = REVEAL >= steps.length-1 ? 'block' : 'none';
+  if($('#btn-next')) $('#btn-next').style.display = REVEAL >= steps.length-1 ? 'none' : 'inline-block';
+}
+
+function paintOneWord(cards){
+  const g = $('#ow-grid'); g.innerHTML = '';
+  cards.forEach(c => {
+    const d = document.createElement('div');
+    d.className = 'ow-card'; d.textContent = c.term;
+    d.onclick = () => { $('#ow-reveal').innerHTML = `<strong>${esc(c.term)}</strong><br>${esc(c.answer)}`; };
+    g.appendChild(d);
+  });
+}
+
+$$('#tabs .tab').forEach(t => t.onclick = () => {
+  $$('#tabs .tab').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  $$('.panel').forEach(p=>p.classList.remove('active'));
+  $('#panel-'+t.dataset.tab).classList.add('active');
+});
+
+(async function boot(){
+  MANIFEST = await loadJson('manifest.json');
+  paintChapters();
+  if(MANIFEST.chapters.length) selectChapter(MANIFEST.chapters[0]);
+})();
+</script>
+</body>
+</html>

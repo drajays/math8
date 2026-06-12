@@ -1,0 +1,210 @@
+{
+  "chapter": 17,
+  "title": "Symmetry, Reflection and Rotation",
+  "topicId": "math-ch17",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    15352,
+    16060
+  ],
+  "sections": [
+    {
+      "id": "CH17-sec-symmetry-reflection-and-rotation",
+      "title": "Symmetry, Reflection and Rotation",
+      "level": 2
+    },
+    {
+      "id": "CH17-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH17-sec-line-symmetry",
+      "title": "LINE SYMMETRY",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-point-symmetry",
+      "title": "POINT SYMMETRY",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-parallelogram",
+      "title": "Parallelogram",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-letter-s",
+      "title": "Letter S",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-reflection",
+      "title": "REFLECTION",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-reflection-and-symmetry",
+      "title": "Reflection and symmetry",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-remark",
+      "title": "REMARK",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-rotation",
+      "title": "ROTATION",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-rotational-symmetry",
+      "title": "ROTATIONAL SYMMETRY",
+      "level": 4
+    },
+    {
+      "id": "CH17-sec-ngle-of-rotation",
+      "title": "ngle of rotation",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-3-rder-of-rotational-symmetry",
+      "title": "(3)rder of rotational symmetry",
+      "level": 3
+    },
+    {
+      "id": "CH17-sec-line-symmetry-and-rotational-symmetry",
+      "title": "Line symmetry and rotational symmetry",
+      "level": 4
+    },
+    {
+      "id": "CH17-sec-symmetry-of-some-figures",
+      "title": "SYMMETRY OF SOME FIGURES",
+      "level": 4
+    },
+    {
+      "id": "CH17-sec-line-segment",
+      "title": "Line segment",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-angle",
+      "title": "Angle",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-scalene-triangle",
+      "title": "Scalene triangle",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-isosceles-triangle",
+      "title": "Isosceles triangle",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-equilateral-triangle",
+      "title": "Equilateral triangle",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-parallelogram",
+      "title": "Parallelogram",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-celes-trapezium",
+      "title": "celes trapezium",
+      "level": 3
+    },
+    {
+      "id": "CH17-sec-stangle",
+      "title": "stangle",
+      "level": 4
+    },
+    {
+      "id": "CH17-sec-tombus",
+      "title": "tombus",
+      "level": 4
+    },
+    {
+      "id": "CH17-sec-quare",
+      "title": "quare",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-arrowhead",
+      "title": "Arrowhead",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-semicircle",
+      "title": "Semicircle",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-regular-pentagon",
+      "title": "Regular pentagon",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-regular-hexagon",
+      "title": "Regular hexagon",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-circle",
+      "title": "Circle",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-letters",
+      "title": "Letters",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-exercise-17",
+      "title": "Exercise 17",
+      "level": 3
+    },
+    {
+      "id": "CH17-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 5
+    },
+    {
+      "id": "CH17-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 4
+    },
+    {
+      "id": "CH17-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH17-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I-II TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH17-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH17-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 4
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "chapter": 10,
+  "title": "Algebraic Expressions and Identities",
+  "topicId": "math-ch10",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    10036,
+    11093
+  ],
+  "sections": [
+    {
+      "id": "CH10-sec-algebraic-expressions-and-identities",
+      "title": "Algebraic Expressions and Identities",
+      "level": 2
+    },
+    {
+      "id": "CH10-sec-troduction",
+      "title": "TRODUCTION",
+      "level": 3
+    },
+    {
+      "id": "CH10-sec-fundamental-concepts",
+      "title": "FUNDAMENTAL CONCEPTS",
+      "level": 4
+    },
+    {
+      "id": "CH10-sec-exercise-10-1",
+      "title": "exercise 10.1",
+      "level": 3
+    },
+    {
+      "id": "CH10-sec-33p-3-16p-2-21p-14",
+      "title": "$ =33p^{3}+16p^{2}-21p+14. $",
+      "level": 5
+    },
+    {
+      "id": "CH10-sec-exercise-10-2",
+      "title": "Exercise 10.2",
+      "level": 3
+    },
+    {
+      "id": "CH10-sec-exercise-10-3",
+      "title": "Exercise 10.3",
+      "level": 2
+    },
+    {
+      "id": "CH10-sec-exercise-10-4",
+      "title": "Exercise 10.4",
+      "level": 3
+    },
+    {
+      "id": "CH10-sec-distributive-law",
+      "title": "(Distributive law)",
+      "level": 5
+    },
+    {
+      "id": "CH10-sec-a-2-bv",
+      "title": "$$=a^{2}-bv$$",
+      "level": 5
+    },
+    {
+      "id": "CH10-sec-a-2-2ab-b-2",
+      "title": "$ a^{2}-2ab+b^{2} $",
+      "level": 5
+    },
+    {
+      "id": "CH10-sec-a-2-2ab-b-2",
+      "title": "$ a^{2}+2ab+b^{2} $",
+      "level": 5
+    },
+    {
+      "id": "CH10-sec-i-pq-5r-2",
+      "title": "(i)  $ (pq + 5r)^{2} $",
+      "level": 5
+    },
+    {
+      "id": "CH10-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 4
+    },
+    {
+      "id": "CH10-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 5
+    },
+    {
+      "id": "CH10-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I–II TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH10-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 5
+    },
+    {
+      "id": "CH10-sec-i-3x-4y-3x-4y",
+      "title": "(i)  $ (3x + 4y)(3x + 4y) $",
+      "level": 4
+    },
+    {
+      "id": "CH10-sec-i-x-2-frac-1-x-2",
+      "title": "(i)  $ x^{2}+\\frac{1}{x^{2}} $",
+      "level": 5
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

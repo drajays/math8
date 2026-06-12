@@ -1,0 +1,212 @@
+[
+  {
+    "id": "OW-CH11-001",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of two or more polynomials (with integral coefficients) is",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-002",
+    "chapter": 11,
+    "term": "two",
+    "answer": "two or more monomials = (HCF of $ \\times $ (HCF of their literal coefficients)",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-003",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of literal coefficients = product of each common literal raised to the lowest power",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-004",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of numerical coefficients = HCF of 6 and 8 =",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-005",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of literal coefficients = HCF of $x^{2}y^{2}$ and $xy^{3}$",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-006",
+    "chapter": 11,
+    "term": "(ii)",
+    "answer": "(ii) HCF of $15a^{3}b^{2}c^{3}$, $12a^{4}bc^{4}$ and $18a^{5}b^{3}c^{2}$:",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-007",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of numerical coefficients = HCF of 15, 12 and 18 = 3",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-008",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of literal coefficients = HCF of $a^{3}b^{2}c^{3}$, $a^{4}bc^{4}$ and $a^{5}b^{3}c^{2}$",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-009",
+    "chapter": 11,
+    "term": "(ii)",
+    "answer": "(ii) Divide each term of the given polynomial by HCF. Enclose the quotient within the brackets and keep the common facto",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-010",
+    "chapter": 11,
+    "term": "Solution.",
+    "answer": "Solution. (i) HCF of $24x^{3}$ and $32x^{2}$ is $8x^{2}$",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-011",
+    "chapter": 11,
+    "term": "(iii)",
+    "answer": "(iii) HCF of $14x^{2}y^{2}$, $10x^{2}y$ and $8xy^{2}$ is $2xy$",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-012",
+    "chapter": 11,
+    "term": "(ii)",
+    "answer": "(ii) HCF of the expressions $10(p-2q)^{3}$, $6(p-2q)^{2}$ and $20(p-2q)$ is $2(p-2q)$ and $10(p-2q)^{3}+6(p-2q)^{2}-20(p",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-013",
+    "chapter": 11,
+    "term": "Solution.",
+    "answer": "Solution. We will use the identity $ a^{2} - b^{2} = (a + b)(a - b) $",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-014",
+    "chapter": 11,
+    "term": "(i)",
+    "answer": "(i) When an algebraic expression can be written as the product of two or more expressions then each of these expressions",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-015",
+    "chapter": 11,
+    "term": "(ii)",
+    "answer": "(ii) The process of finding expression called .... (HCF of their ..... coefficients) × (HCF of their life coefficients)",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-016",
+    "chapter": 11,
+    "term": "Rational",
+    "answer": "Number of form p/q, q≠0",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-017",
+    "chapter": 11,
+    "term": "Identity",
+    "answer": "Element that leaves value unchanged under an operation",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-018",
+    "chapter": 11,
+    "term": "Inverse",
+    "answer": "Element that returns to identity under operation",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-019",
+    "chapter": 11,
+    "term": "LCM",
+    "answer": "Least common multiple of denominators",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-020",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "Highest common factor",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-021",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of two or more polynomials (with integral coefficients) is",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-022",
+    "chapter": 11,
+    "term": "two",
+    "answer": "two or more monomials = (HCF of $ \\times $ (HCF of their literal coefficients)",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-023",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of literal coefficients = product of each common literal raised to the lowest power",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-024",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of numerical coefficients = HCF of 6 and 8 =",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-025",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of literal coefficients = HCF of $x^{2}y^{2}$ and $xy^{3}$",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-026",
+    "chapter": 11,
+    "term": "(ii)",
+    "answer": "(ii) HCF of $15a^{3}b^{2}c^{3}$, $12a^{4}bc^{4}$ and $18a^{5}b^{3}c^{2}$:",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-027",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of numerical coefficients = HCF of 15, 12 and 18 = 3",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-028",
+    "chapter": 11,
+    "term": "HCF",
+    "answer": "HCF of literal coefficients = HCF of $a^{3}b^{2}c^{3}$, $a^{4}bc^{4}$ and $a^{5}b^{3}c^{2}$",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-029",
+    "chapter": 11,
+    "term": "(ii)",
+    "answer": "(ii) Divide each term of the given polynomial by HCF. Enclose the quotient within the brackets and keep the common facto",
+    "linked_note_id": "CH11-sec-factorisation"
+  },
+  {
+    "id": "OW-CH11-030",
+    "chapter": 11,
+    "term": "Solution.",
+    "answer": "Solution. (i) HCF of $24x^{3}$ and $32x^{2}$ is $8x^{2}$",
+    "linked_note_id": "CH11-sec-factorisation"
+  }
+]

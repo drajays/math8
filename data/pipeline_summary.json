@@ -1,0 +1,102 @@
+[
+  {
+    "chapter": 1,
+    "title": "Rational Numbers",
+    "status": "complete"
+  },
+  {
+    "chapter": 2,
+    "title": "Exponents and Powers",
+    "status": "complete"
+  },
+  {
+    "chapter": 3,
+    "title": "Squares and Square Roots",
+    "status": "complete"
+  },
+  {
+    "chapter": 4,
+    "title": "Cubes and Cube Roots",
+    "status": "complete"
+  },
+  {
+    "chapter": 5,
+    "title": "Playing with Numbers",
+    "status": "complete"
+  },
+  {
+    "chapter": 6,
+    "title": "Operations on Sets",
+    "status": "complete"
+  },
+  {
+    "chapter": 7,
+    "title": "Percentage and its Applications",
+    "status": "complete"
+  },
+  {
+    "chapter": 8,
+    "title": "Simple and Compound Interest",
+    "status": "complete"
+  },
+  {
+    "chapter": 9,
+    "title": "Direct and Inverse Variation",
+    "status": "complete"
+  },
+  {
+    "chapter": 10,
+    "title": "Algebraic Expressions and Identities",
+    "status": "complete"
+  },
+  {
+    "chapter": 11,
+    "title": "Factorisation",
+    "status": "complete"
+  },
+  {
+    "chapter": 12,
+    "title": "Linear Equations and Inequalities in One Variable",
+    "status": "complete"
+  },
+  {
+    "chapter": 13,
+    "title": "Understanding Shapes",
+    "status": "complete"
+  },
+  {
+    "chapter": 14,
+    "title": "Construction of Quadrilaterals",
+    "status": "complete"
+  },
+  {
+    "chapter": 15,
+    "title": "Circle",
+    "status": "complete"
+  },
+  {
+    "chapter": 16,
+    "title": "Coordinate System and Graphs",
+    "status": "complete"
+  },
+  {
+    "chapter": 17,
+    "title": "Symmetry, Reflection and Rotation",
+    "status": "complete"
+  },
+  {
+    "chapter": 18,
+    "title": "Visualising Solid Shapes",
+    "status": "complete"
+  },
+  {
+    "chapter": 19,
+    "title": "Mensuration",
+    "status": "complete"
+  },
+  {
+    "chapter": 20,
+    "title": "Data Handling",
+    "status": "complete"
+  }
+]

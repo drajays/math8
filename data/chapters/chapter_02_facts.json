@@ -1,0 +1,14 @@
+[
+  {
+    "id": "FACT-CH02-001",
+    "chapter": 2,
+    "fact": "You know that $ 2^{4} = 2 \\times 2 \\times 2 \\times 2 $ (2 is called the base and 4 is called the exponent)",
+    "linked_note_id": "CH02-sec-powers-with-negative-exponents"
+  },
+  {
+    "id": "FACT-CH02-002",
+    "chapter": 2,
+    "fact": "$ a^{-m} $ is called multiplicative inverse (or reciprocal) of $ a^{m} $",
+    "linked_note_id": "CH02-sec-summary"
+  }
+]

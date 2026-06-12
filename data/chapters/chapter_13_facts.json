@@ -1,0 +1,116 @@
+[
+  {
+    "id": "FACT-CH13-001",
+    "chapter": 13,
+    "fact": "In previous classes, you learnt about curves, open and closed curves, polygons, quadrilaterals etc. In this chapter, we will review, revise and strengthen these concepts. We will also learn the proper",
+    "linked_note_id": "CH13-sec-introduction"
+  },
+  {
+    "id": "FACT-CH13-002",
+    "chapter": 13,
+    "fact": "In the acy interior of the plane that lies outside the curve. The region of the exterior of the curve. The curve is called the exterior of the curve, point B lies in the adjoining figure, point B lies",
+    "linked_note_id": "CH13-sec-introduction"
+  },
+  {
+    "id": "FACT-CH13-003",
+    "chapter": 13,
+    "fact": "The meeting point of a pair of consecutive sides is called a vertex of the polygon. It has five vertices A, B, C, D and E.",
+    "linked_note_id": "CH13-sec-vii"
+  },
+  {
+    "id": "FACT-CH13-004",
+    "chapter": 13,
+    "fact": "Regular and A polygon is called regular polygon if all its sides have equal length and all its angles have equal measure.",
+    "linked_note_id": "CH13-sec-vii"
+  },
+  {
+    "id": "FACT-CH13-005",
+    "chapter": 13,
+    "fact": "A polygon which is not regular is called irregular polygon.",
+    "linked_note_id": "CH13-sec-vii"
+  },
+  {
+    "id": "FACT-CH13-006",
+    "chapter": 13,
+    "fact": "A quadrilateral in which both the pairs of opposite sides are parallel is called a p $ \\underline{\\text{logram}} $.",
+    "linked_note_id": "CH13-sec-quadrilateral"
+  },
+  {
+    "id": "FACT-CH13-007",
+    "chapter": 13,
+    "fact": "Now place A'B' of parallelogram A'B'C'D' over DC. You will find that they coincide. It means A'B' = DC, since AB = A'B' (being identical). So AB = DC",
+    "linked_note_id": "CH13-sec-activity-5"
+  },
+  {
+    "id": "FACT-CH13-008",
+    "chapter": 13,
+    "fact": "it sides of a parallelogram are equal, then it is called a rhombus",
+    "linked_note_id": "CH13-sec-1-activity-7"
+  },
+  {
+    "id": "FACT-CH13-009",
+    "chapter": 13,
+    "fact": "recent sides of a rectangle are equal, then it is called a square. Alternatively,",
+    "linked_note_id": "CH13-sec-1-activity-7"
+  },
+  {
+    "id": "FACT-CH13-010",
+    "chapter": 13,
+    "fact": "ngle of a rhombus is a right angle, then it is called a square.",
+    "linked_note_id": "CH13-sec-1-activity-7"
+  },
+  {
+    "id": "FACT-CH13-011",
+    "chapter": 13,
+    "fact": "terial in which one pair of opposite sides is parallel is called a",
+    "linked_note_id": "CH13-sec-because-angle-dae-angle-aed-75-circ"
+  },
+  {
+    "id": "FACT-CH13-012",
+    "chapter": 13,
+    "fact": "' sides of a trapezium are equal then it is called an",
+    "linked_note_id": "CH13-sec-because-angle-dae-angle-aed-75-circ"
+  },
+  {
+    "id": "FACT-CH13-013",
+    "chapter": 13,
+    "fact": "quadrilateral in which two pairs of adjacent sides are equal is called a",
+    "linked_note_id": "CH13-sec-because-angle-dae-angle-aed-75-circ"
+  },
+  {
+    "id": "FACT-CH13-014",
+    "chapter": 13,
+    "fact": "(ii) A curve which does not cross itself at any point is called a .....",
+    "linked_note_id": "CH13-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH13-015",
+    "chapter": 13,
+    "fact": "(iii) A simple closed curve made up entirely of line segments is called a .....",
+    "linked_note_id": "CH13-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH13-016",
+    "chapter": 13,
+    "fact": "(iv) A polygon in which each interior angle is less than $ 180^{\\circ} $ is called a .....",
+    "linked_note_id": "CH13-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH13-017",
+    "chapter": 13,
+    "fact": "wo adjacent sides of a rectangle are equal, then it is called a rhombus bisect each other.",
+    "linked_note_id": "CH13-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH13-018",
+    "chapter": 13,
+    "fact": "The region of the plane that lies inside the curve is called interior of curve which at least one interior angle is greater than the",
+    "linked_note_id": "CH13-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH13-019",
+    "chapter": 13,
+    "fact": "★ A simple closed plane figure bounded by four line segments is called a",
+    "linked_note_id": "CH13-sec-summary"
+  }
+]

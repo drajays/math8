@@ -1,0 +1,105 @@
+{
+  "chapter": 6,
+  "title": "Operations on Sets",
+  "topicId": "math-ch6",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    5921,
+    6778
+  ],
+  "sections": [
+    {
+      "id": "CH06-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH06-sec-operations-on-sets",
+      "title": "OPERATIONS ON SETS",
+      "level": 4
+    },
+    {
+      "id": "CH06-sec-union-of-sets",
+      "title": "Union of sets",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-intersection-of-sets",
+      "title": "Intersection of sets",
+      "level": 4
+    },
+    {
+      "id": "CH06-sec-difference-of-two-sets",
+      "title": "Difference of two sets",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-complement-of-a-set",
+      "title": "Complement of a set",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-overlapping-intersecting-sets",
+      "title": "Overlapping (intersecting) sets",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-disjoint-sets",
+      "title": "Disjoint sets",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-remarks",
+      "title": "REMARKS",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-exercise-6",
+      "title": "Exercise 6",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I–II TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH06-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH06-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 5
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

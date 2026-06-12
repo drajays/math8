@@ -1,0 +1,205 @@
+{
+  "chapter": 3,
+  "title": "Squares and Square Roots",
+  "topicId": "math-ch3",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    2447,
+    3852
+  ],
+  "sections": [
+    {
+      "id": "CH03-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH03-sec-square-numbers-or-perfect-squares",
+      "title": "SQUARE NUMBERS OR PERFECT SQUARES",
+      "level": 4
+    },
+    {
+      "id": "CH03-sec-properties-of-square-numbers",
+      "title": "PROPERTIES OF SQUARE NUMBERS",
+      "level": 4
+    },
+    {
+      "id": "CH03-sec-property-1",
+      "title": "Property 1",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-property-2",
+      "title": "Property 2",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-property-3",
+      "title": "Property 3",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-property-4",
+      "title": "Property 4",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-some-interesting-patterns",
+      "title": "SOME INTERESTING PATTERNS",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-1-numbers-between-consecutive-square-numbers",
+      "title": "1. Numbers between consecutive square numbers",
+      "level": 2
+    },
+    {
+      "id": "CH03-sec-2-adding-odd-numbers",
+      "title": "2. Adding odd numbers",
+      "level": 2
+    },
+    {
+      "id": "CH03-sec-4-square-of-numbers-with-unit-digit-5",
+      "title": "4. Square of numbers with unit digit 5",
+      "level": 2
+    },
+    {
+      "id": "CH03-sec-exercise-3-2",
+      "title": "Exercise 3.2",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-square-roots",
+      "title": "SQUARE ROOTS",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-finding-square-roots",
+      "title": "Finding square roots",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-remark",
+      "title": "REMARK",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-finding-the-square-roots-through-prime-factorisa",
+      "title": "Finding the square roots through prime factorisation In the",
+      "level": 3
+    },
+    {
+      "id": "CH03-sec-remarks",
+      "title": "REMARKS",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-exercise-3-3",
+      "title": "Exercise 3.3",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-finding-square-root-of-a-number-by-division-meth",
+      "title": "Finding square root of a number by division method",
+      "level": 4
+    },
+    {
+      "id": "CH03-sec-ii-steps",
+      "title": "(ii) Steps",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-solution-given-number-is-6412",
+      "title": "Solution. Given number is 6412",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-activity-2",
+      "title": "% ACTIVITY 2",
+      "level": 4
+    },
+    {
+      "id": "CH03-sec-square-roots-of-2-and-3",
+      "title": "Square roots of 2 and 3",
+      "level": 4
+    },
+    {
+      "id": "CH03-sec-steps",
+      "title": "Steps",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-square-roots-of-decimals",
+      "title": "Square roots of decimals",
+      "level": 4
+    },
+    {
+      "id": "CH03-sec-solution-i-steps",
+      "title": "Solution. (i) Steps",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-note",
+      "title": "NOTE",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-square-root-of-a-fraction-when-numerator-or-deno",
+      "title": "Square root of a fraction when numerator or denominator or both are not perfect squares:",
+      "level": 4
+    },
+    {
+      "id": "CH03-sec-exercise-3-4",
+      "title": "Exercise 3.4",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-in-the-following-examples-choose-the-correct-ans",
+      "title": "In the following examples, choose the correct answer from the given four options.",
+      "level": 4
+    },
+    {
+      "id": "CH03-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH03-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I–II TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH03-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH03-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 5
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

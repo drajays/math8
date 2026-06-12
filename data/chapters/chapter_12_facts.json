@@ -1,0 +1,44 @@
+[
+  {
+    "id": "FACT-CH12-001",
+    "chapter": 12,
+    "fact": "in equation of the type $ax + v = v$, where $a \\neq 0$, is called a linear equation in the variable $x$.",
+    "linked_note_id": "CH12-sec-equations"
+  },
+  {
+    "id": "FACT-CH12-002",
+    "chapter": 12,
+    "fact": "ides equal is called a solution (or root) of the equation.",
+    "linked_note_id": "CH12-sec-equations"
+  },
+  {
+    "id": "FACT-CH12-003",
+    "chapter": 12,
+    "fact": "Also given that Baichung's father is 26 years younger than Baichung's grandfather. It means Baichung's grandfather is 26 years older than Baichung's father.",
+    "linked_note_id": "CH12-sec-x-frac-864-5-288"
+  },
+  {
+    "id": "FACT-CH12-004",
+    "chapter": 12,
+    "fact": "The set from which the values of the variable (involved in the inequality) are chosen is called the replacement set.",
+    "linked_note_id": "CH12-sec-statements-such-as"
+  },
+  {
+    "id": "FACT-CH12-005",
+    "chapter": 12,
+    "fact": "(ii) Remove fractions (or decimals) by multiplying both sides by an appropriate number (LCM of denominators or a power of 10 in case of decimals).",
+    "linked_note_id": "CH12-sec-statements-such-as"
+  },
+  {
+    "id": "FACT-CH12-006",
+    "chapter": 12,
+    "fact": "the variable which satisfies the equation is called a .... of the equation.",
+    "linked_note_id": "CH12-sec-objective-type-questions"
+  },
+  {
+    "id": "FACT-CH12-007",
+    "chapter": 12,
+    "fact": "The set from which the values of the variable are chosen is called the replacement set. A solution of an inequality is a number (chosen from the replacement set) which, when substituted",
+    "linked_note_id": "CH12-sec-summary"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "FACT-CH04-001",
+    "chapter": 4,
+    "fact": "Property 1. Consider the following table:",
+    "linked_note_id": "CH04-sec-properties-of-cubes-of-natural-numbers"
+  },
+  {
+    "id": "FACT-CH04-002",
+    "chapter": 4,
+    "fact": "Hence, finding a number whose cube is known, is called finding the cube root.",
+    "linked_note_id": "CH04-sec-cube-roots"
+  },
+  {
+    "id": "FACT-CH04-003",
+    "chapter": 4,
+    "fact": "(vi) If a number can be expressed as the triplets of equal prime factors, then it is called .....",
+    "linked_note_id": "CH04-sec-mental-maths"
+  }
+]

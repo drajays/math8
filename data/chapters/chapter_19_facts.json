@@ -1,0 +1,26 @@
+[
+  {
+    "id": "FACT-CH19-001",
+    "chapter": 19,
+    "fact": "From $ \\Delta ABC $, by Pythagoras theorem, we get",
+    "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures"
+  },
+  {
+    "id": "FACT-CH19-002",
+    "chapter": 19,
+    "fact": "The above formula is true for all values of $l, b$ and $h$.",
+    "linked_note_id": "CH19-sec-300-icse-mathematics-viii"
+  },
+  {
+    "id": "FACT-CH19-003",
+    "chapter": 19,
+    "fact": "Surface area of any solid means total surface area.",
+    "linked_note_id": "CH19-sec-306-icse-mathematics-viii"
+  },
+  {
+    "id": "FACT-CH19-004",
+    "chapter": 19,
+    "fact": "13. The area of a sphere with radius $ r $ is given by the formula $ r^3 $. The volume of the sphere is calculated using the formula $ V = \\frac{4}{3}\\pi r^3 $.",
+    "linked_note_id": "CH19-sec-310-icse-mathematics-viii"
+  }
+]

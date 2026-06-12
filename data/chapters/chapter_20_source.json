@@ -1,0 +1,65 @@
+{
+  "chapter": 20,
+  "title": "Data Handling",
+  "topicId": "math-ch20",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    18451,
+    19346
+  ],
+  "sections": [
+    {
+      "id": "CH20-sec-data-handling",
+      "title": "Data Handling",
+      "level": 3
+    },
+    {
+      "id": "CH20-sec-solution-steps",
+      "title": "Solution. Steps:",
+      "level": 4
+    },
+    {
+      "id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph",
+      "title": "Represent the above data by a double bar graph.",
+      "level": 4
+    },
+    {
+      "id": "CH20-sec-334-icse-mathematics-viii",
+      "title": "334 ICSE Mathematics - VIII",
+      "level": 2
+    },
+    {
+      "id": "CH20-sec-t-white",
+      "title": "(t) white",
+      "level": 5
+    },
+    {
+      "id": "CH20-sec-338-icse-mathematics-viii",
+      "title": "338 ICSE Mathematics - VIII",
+      "level": 2
+    },
+    {
+      "id": "CH20-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I-II TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH20-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH20-sec-likely",
+      "title": "likely.",
+      "level": 5
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

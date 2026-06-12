@@ -1,0 +1,85 @@
+{
+  "chapter": 2,
+  "title": "Exponents and Powers",
+  "topicId": "math-ch2",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    1746,
+    2446
+  ],
+  "sections": [
+    {
+      "id": "CH02-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH02-sec-powers-with-negative-exponents",
+      "title": "POWERS WITH NEGATIVE EXPONENTS",
+      "level": 4
+    },
+    {
+      "id": "CH02-sec-laws-of-exponents",
+      "title": "LAWS OF EXPONENTS",
+      "level": 4
+    },
+    {
+      "id": "CH02-sec-remark",
+      "title": "REMARK",
+      "level": 5
+    },
+    {
+      "id": "CH02-sec-exercise-2",
+      "title": "Exercise 2",
+      "level": 5
+    },
+    {
+      "id": "CH02-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 5
+    },
+    {
+      "id": "CH02-sec-objective-type-que",
+      "title": "OBJECTIVE TYPE QUE",
+      "level": 5
+    },
+    {
+      "id": "CH02-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH02-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 5
+    },
+    {
+      "id": "CH02-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH02-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I-II TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH02-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH02-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 5
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

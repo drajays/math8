@@ -1,0 +1,212 @@
+[
+  {
+    "id": "OW-CH01-001",
+    "chapter": 1,
+    "term": "####",
+    "answer": "#### PROPERTIES OF ADDITION OF RATIONAL NUMBERS Property",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-002",
+    "chapter": 1,
+    "term": "This",
+    "answer": "This is called commutative property of addition of rational numbers.",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-003",
+    "chapter": 1,
+    "term": "This",
+    "answer": "This is associative property of addition of rational numbers. Example 5. Write the additive inverse of each of the follo",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-004",
+    "chapter": 1,
+    "term": "Example",
+    "answer": "Example 4. Show that $ \\left(\\frac{-1}{2}\\right)+\\left[\\frac{3}{7}+\\left(\\frac{-4}{3}\\right)\\right]=\\left[\\left(\\frac{-1",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-005",
+    "chapter": 1,
+    "term": "Example",
+    "answer": "Example 3. Verify the commutative property of addition for the pair of rational numbers: $ \\frac{-8}{9} $ and $ \\frac{3}",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-006",
+    "chapter": 1,
+    "term": "Thus,",
+    "answer": "Thus, $ -\\frac{p}{q} $ is called the additive inverse of $ \\frac{p}{q} $ and $ \\frac{p}{q} $ is called the additive inve",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-007",
+    "chapter": 1,
+    "term": "If",
+    "answer": "If $\\frac{p}{q}$ and $\\frac{r}{s}$ ($q, s \\neq 0$) are two rational numbers, then $\\left(\\frac{p}{q}-\\frac{r}{s}\\right)$",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-008",
+    "chapter": 1,
+    "term": "(iv)",
+    "answer": "(iv) Commutative property holds for subtraction of rational numbers.",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-009",
+    "chapter": 1,
+    "term": "(v)",
+    "answer": "(v) Associative property does not hold for subtraction of rational numbers.",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-010",
+    "chapter": 1,
+    "term": "(vi)",
+    "answer": "(vi) 0 is the identity element for subtraction of rational numbers.",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-011",
+    "chapter": 1,
+    "term": "$$\\frac{3}{7}",
+    "answer": "$$\\frac{3}{7} \\times \\frac{4}{5} \\text{ means to find } \\frac{3}{7} \\text{ of } \\frac{4}{5}$$",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-012",
+    "chapter": 1,
+    "term": "####",
+    "answer": "#### PROPERTIES OF MULTIPLICATION OF RATIONAL NUMBERS are property",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-013",
+    "chapter": 1,
+    "term": "This",
+    "answer": "This is called closure property of multiplication of rational numbers.",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-014",
+    "chapter": 1,
+    "term": "This",
+    "answer": "This is called commutative property of multiplication of rational numbers.",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-015",
+    "chapter": 1,
+    "term": "#####",
+    "answer": "##### Existence of multiplicative identity",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-016",
+    "chapter": 1,
+    "term": "Rational",
+    "answer": "Number of form p/q, q≠0",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-017",
+    "chapter": 1,
+    "term": "Identity",
+    "answer": "Element that leaves value unchanged under an operation",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-018",
+    "chapter": 1,
+    "term": "Inverse",
+    "answer": "Element that returns to identity under operation",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-019",
+    "chapter": 1,
+    "term": "LCM",
+    "answer": "Least common multiple of denominators",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-020",
+    "chapter": 1,
+    "term": "HCF",
+    "answer": "Highest common factor",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-021",
+    "chapter": 1,
+    "term": "####",
+    "answer": "#### PROPERTIES OF ADDITION OF RATIONAL NUMBERS Property",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-022",
+    "chapter": 1,
+    "term": "This",
+    "answer": "This is called commutative property of addition of rational numbers.",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-023",
+    "chapter": 1,
+    "term": "This",
+    "answer": "This is associative property of addition of rational numbers. Example 5. Write the additive inverse of each of the follo",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-024",
+    "chapter": 1,
+    "term": "Example",
+    "answer": "Example 4. Show that $ \\left(\\frac{-1}{2}\\right)+\\left[\\frac{3}{7}+\\left(\\frac{-4}{3}\\right)\\right]=\\left[\\left(\\frac{-1",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-025",
+    "chapter": 1,
+    "term": "Example",
+    "answer": "Example 3. Verify the commutative property of addition for the pair of rational numbers: $ \\frac{-8}{9} $ and $ \\frac{3}",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-026",
+    "chapter": 1,
+    "term": "Thus,",
+    "answer": "Thus, $ -\\frac{p}{q} $ is called the additive inverse of $ \\frac{p}{q} $ and $ \\frac{p}{q} $ is called the additive inve",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-027",
+    "chapter": 1,
+    "term": "If",
+    "answer": "If $\\frac{p}{q}$ and $\\frac{r}{s}$ ($q, s \\neq 0$) are two rational numbers, then $\\left(\\frac{p}{q}-\\frac{r}{s}\\right)$",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-028",
+    "chapter": 1,
+    "term": "(iv)",
+    "answer": "(iv) Commutative property holds for subtraction of rational numbers.",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-029",
+    "chapter": 1,
+    "term": "(v)",
+    "answer": "(v) Associative property does not hold for subtraction of rational numbers.",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  },
+  {
+    "id": "OW-CH01-030",
+    "chapter": 1,
+    "term": "(vi)",
+    "answer": "(vi) 0 is the identity element for subtraction of rational numbers.",
+    "linked_note_id": "CH01-sec-rational-numbers"
+  }
+]

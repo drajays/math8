@@ -1,0 +1,120 @@
+{
+  "chapter": 8,
+  "title": "Simple and Compound Interest",
+  "topicId": "math-ch8",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    8321,
+    9036
+  ],
+  "sections": [
+    {
+      "id": "CH08-sec-introduction",
+      "title": "INTRODUCTION",
+      "level": 2
+    },
+    {
+      "id": "CH08-sec-simple-interest",
+      "title": "SIMPLE INTEREST",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-exercise-8-1",
+      "title": "Exercise 8.1",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-remark",
+      "title": "REMARK",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-note",
+      "title": "NOTE",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-solution",
+      "title": "Solution.",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-exercise-8-2",
+      "title": "Exercise 8.2",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "title": "DEDUCING A FORMULA FOR COMPOUND INTEREST",
+      "level": 4
+    },
+    {
+      "id": "CH08-sec-rate-compounded-annually-half-yearly-or-quarterl",
+      "title": "Rate compounded annually, half-yearly or quarterly",
+      "level": 4
+    },
+    {
+      "id": "CH08-sec-note",
+      "title": "NOTE",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-compound-interest-when-the-total-time-is-not-a-c",
+      "title": "Compound interest when the total time is not a complete number of conversion periods",
+      "level": 3
+    },
+    {
+      "id": "CH08-sec-exercise-8-3",
+      "title": "Exercise 8.3",
+      "level": 4
+    },
+    {
+      "id": "CH08-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-multiple-choice-questions",
+      "title": "MULTIPLE CHOICE QUESTIONS",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I–II TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH08-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH08-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 5
+    },
+    {
+      "id": "CH08-sec-choose-correct-answer-from-the-given-four-option",
+      "title": "Choose correct answer from the given four options (1-2):",
+      "level": 4
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

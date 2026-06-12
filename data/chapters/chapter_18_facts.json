@@ -1,0 +1,170 @@
+[
+  {
+    "id": "FACT-CH18-001",
+    "chapter": 18,
+    "fact": "A sketch of 3-D shape in which the measurements of the sides are proportional to their actual lengths is called an isometric sketch. Isometric sketches are drawn on isometric dot sheets.",
+    "linked_note_id": "CH18-sec-isometric-sketches"
+  },
+  {
+    "id": "FACT-CH18-002",
+    "chapter": 18,
+    "fact": "A solid made up of polygonal regions is called polyhedron.",
+    "linked_note_id": "CH18-sec-polyhedron"
+  },
+  {
+    "id": "FACT-CH18-003",
+    "chapter": 18,
+    "fact": "Polyhedrons that are made up of convex polygons are called convex polyhedrons i.e. polyhedron whose surfaces are convex polygons is called convex polyhedron.",
+    "linked_note_id": "CH18-sec-convex-polyhedrons"
+  },
+  {
+    "id": "FACT-CH18-004",
+    "chapter": 18,
+    "fact": "A polyhedron whose base and top are congruent polygons and whose lateral faces are parallelograms in shape is called a prism.",
+    "linked_note_id": "CH18-sec-prism"
+  },
+  {
+    "id": "FACT-CH18-005",
+    "chapter": 18,
+    "fact": "A prism is named after its base, if base is a triangle then it is called a triangular prism. Various types of prisms are given below.",
+    "linked_note_id": "CH18-sec-prism"
+  },
+  {
+    "id": "FACT-CH18-006",
+    "chapter": 18,
+    "fact": "A prism whose base and top are congruent triangles and lateral faces are rectangles is called a triangular prism.",
+    "linked_note_id": "CH18-sec-triangular-prism"
+  },
+  {
+    "id": "FACT-CH18-007",
+    "chapter": 18,
+    "fact": "A prism whose base and top are congruent rectangles and lateral faces are rectangles is called a rectangular prism. It is also called a cuboid.",
+    "linked_note_id": "CH18-sec-rectangular-prism"
+  },
+  {
+    "id": "FACT-CH18-008",
+    "chapter": 18,
+    "fact": "A prism whose base and top are congruent pentagons and lateral faces are rectangles is called a pentagonal prism.",
+    "linked_note_id": "CH18-sec-pentagonal-prism"
+  },
+  {
+    "id": "FACT-CH18-009",
+    "chapter": 18,
+    "fact": "A prism whose base and top are congruent hexagons and lateral faces are rectangles is called a hexagonal prism.",
+    "linked_note_id": "CH18-sec-hexagonal-prism"
+  },
+  {
+    "id": "FACT-CH18-010",
+    "chapter": 18,
+    "fact": "A polyhedron whose base is a polygon (of any number of sides) and whose lateral faces are triangles with a common vertex is called a pyramid.",
+    "linked_note_id": "CH18-sec-pyramid"
+  },
+  {
+    "id": "FACT-CH18-011",
+    "chapter": 18,
+    "fact": "A pyramid whose base is a triangle is called a triangular pyramid. It is also known as tetrahedron.",
+    "linked_note_id": "CH18-sec-triangular-pyramid"
+  },
+  {
+    "id": "FACT-CH18-012",
+    "chapter": 18,
+    "fact": "A pyramid whose base is a rectangle is called a rectangular pyramid.",
+    "linked_note_id": "CH18-sec-rectangular-pyramid"
+  },
+  {
+    "id": "FACT-CH18-013",
+    "chapter": 18,
+    "fact": "A pyramid whose base is a square is called a square pyramid.",
+    "linked_note_id": "CH18-sec-rectangular-pyramid"
+  },
+  {
+    "id": "FACT-CH18-014",
+    "chapter": 18,
+    "fact": "A pyramid whose base is a pentagon is called a pentagonal pyramid.",
+    "linked_note_id": "CH18-sec-square-pyramid"
+  },
+  {
+    "id": "FACT-CH18-015",
+    "chapter": 18,
+    "fact": "A pyramid whose base is a hexagon is called a hexagonal pyramid.",
+    "linked_note_id": "CH18-sec-hexagonal-pyramid"
+  },
+  {
+    "id": "FACT-CH18-016",
+    "chapter": 18,
+    "fact": "Example 2. Using Euler's formula find the unknown:",
+    "linked_note_id": "CH18-sec-note"
+  },
+  {
+    "id": "FACT-CH18-017",
+    "chapter": 18,
+    "fact": "3. Verify Euler's formula for these solids:",
+    "linked_note_id": "CH18-sec-exercise-18-2"
+  },
+  {
+    "id": "FACT-CH18-018",
+    "chapter": 18,
+    "fact": "Solution. Using Euler's formula: $ F + V = E + 2 $",
+    "linked_note_id": "CH18-sec-mcq-solved"
+  },
+  {
+    "id": "FACT-CH18-019",
+    "chapter": 18,
+    "fact": "(i) A solid made up of polygonal regions is called ...",
+    "linked_note_id": "CH18-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH18-020",
+    "chapter": 18,
+    "fact": "(iv) A polyhedron whose base and top are congruent polygons and whose lateral faces are parallelograms in shape is called a.....",
+    "linked_note_id": "CH18-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH18-021",
+    "chapter": 18,
+    "fact": "(v) A prism whose base and top are congruent hexagon is called a hedron whose all lateral faces are triangles.",
+    "linked_note_id": "CH18-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH18-022",
+    "chapter": 18,
+    "fact": "(vi) A polyhedron whose faces are triangles is called a ...",
+    "linked_note_id": "CH18-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH18-023",
+    "chapter": 18,
+    "fact": "(v) $F + E = V + 2$ is called Euler's formula.",
+    "linked_note_id": "CH18-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH18-024",
+    "chapter": 18,
+    "fact": "18. Statement I: If a polyhedron has 5 faces and 15 edges, then it has 18 vertic. Statement II: Euler's formula states that in any polyhedron $ F + E = V + 2 $",
+    "linked_note_id": "CH18-sec-statement-i-ii-type-questions"
+  },
+  {
+    "id": "FACT-CH18-025",
+    "chapter": 18,
+    "fact": "★ A solid made up of polygonal regions is called polyhedron.",
+    "linked_note_id": "CH18-sec-summary"
+  },
+  {
+    "id": "FACT-CH18-026",
+    "chapter": 18,
+    "fact": "★ A polyhedron whose base and top are congruent polygons and whose lateral faces are parallelograms in shape is called a prism.",
+    "linked_note_id": "CH18-sec-summary"
+  },
+  {
+    "id": "FACT-CH18-027",
+    "chapter": 18,
+    "fact": "★ A polyhedron whose base is a polygon and whose lateral faces are triangles with a common vertex is called a pyramid.",
+    "linked_note_id": "CH18-sec-summary"
+  },
+  {
+    "id": "FACT-CH18-028",
+    "chapter": 18,
+    "fact": "$ F + V = E + 2 $, the given formula is known as Euler's formula.",
+    "linked_note_id": "CH18-sec-summary"
+  }
+]

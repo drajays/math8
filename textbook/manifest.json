@@ -1,0 +1,305 @@
+{
+  "chapters": [
+    {
+      "num": 1,
+      "tag": "01",
+      "title": "Rational Numbers",
+      "topicId": "math-ch1",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_01_questions.json",
+        "facts": "../data/chapters/chapter_01_facts.json",
+        "notes": "../data/chapters/chapter_01_notes.md",
+        "mindmap": "../data/chapters/chapter_01_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_01_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_01_oneword.json"
+      }
+    },
+    {
+      "num": 2,
+      "tag": "02",
+      "title": "Exponents and Powers",
+      "topicId": "math-ch2",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_02_questions.json",
+        "facts": "../data/chapters/chapter_02_facts.json",
+        "notes": "../data/chapters/chapter_02_notes.md",
+        "mindmap": "../data/chapters/chapter_02_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_02_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_02_oneword.json"
+      }
+    },
+    {
+      "num": 3,
+      "tag": "03",
+      "title": "Squares and Square Roots",
+      "topicId": "math-ch3",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_03_questions.json",
+        "facts": "../data/chapters/chapter_03_facts.json",
+        "notes": "../data/chapters/chapter_03_notes.md",
+        "mindmap": "../data/chapters/chapter_03_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_03_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_03_oneword.json"
+      }
+    },
+    {
+      "num": 4,
+      "tag": "04",
+      "title": "Cubes and Cube Roots",
+      "topicId": "math-ch4",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_04_questions.json",
+        "facts": "../data/chapters/chapter_04_facts.json",
+        "notes": "../data/chapters/chapter_04_notes.md",
+        "mindmap": "../data/chapters/chapter_04_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_04_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_04_oneword.json"
+      }
+    },
+    {
+      "num": 5,
+      "tag": "05",
+      "title": "Playing with Numbers",
+      "topicId": "math-ch5",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_05_questions.json",
+        "facts": "../data/chapters/chapter_05_facts.json",
+        "notes": "../data/chapters/chapter_05_notes.md",
+        "mindmap": "../data/chapters/chapter_05_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_05_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_05_oneword.json"
+      }
+    },
+    {
+      "num": 6,
+      "tag": "06",
+      "title": "Operations on Sets",
+      "topicId": "math-ch6",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_06_questions.json",
+        "facts": "../data/chapters/chapter_06_facts.json",
+        "notes": "../data/chapters/chapter_06_notes.md",
+        "mindmap": "../data/chapters/chapter_06_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_06_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_06_oneword.json"
+      }
+    },
+    {
+      "num": 7,
+      "tag": "07",
+      "title": "Percentage and its Applications",
+      "topicId": "math-ch7",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_07_questions.json",
+        "facts": "../data/chapters/chapter_07_facts.json",
+        "notes": "../data/chapters/chapter_07_notes.md",
+        "mindmap": "../data/chapters/chapter_07_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_07_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_07_oneword.json"
+      }
+    },
+    {
+      "num": 8,
+      "tag": "08",
+      "title": "Simple and Compound Interest",
+      "topicId": "math-ch8",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_08_questions.json",
+        "facts": "../data/chapters/chapter_08_facts.json",
+        "notes": "../data/chapters/chapter_08_notes.md",
+        "mindmap": "../data/chapters/chapter_08_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_08_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_08_oneword.json"
+      }
+    },
+    {
+      "num": 9,
+      "tag": "09",
+      "title": "Direct and Inverse Variation",
+      "topicId": "math-ch9",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_09_questions.json",
+        "facts": "../data/chapters/chapter_09_facts.json",
+        "notes": "../data/chapters/chapter_09_notes.md",
+        "mindmap": "../data/chapters/chapter_09_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_09_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_09_oneword.json"
+      }
+    },
+    {
+      "num": 10,
+      "tag": "10",
+      "title": "Algebraic Expressions and Identities",
+      "topicId": "math-ch10",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_10_questions.json",
+        "facts": "../data/chapters/chapter_10_facts.json",
+        "notes": "../data/chapters/chapter_10_notes.md",
+        "mindmap": "../data/chapters/chapter_10_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_10_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_10_oneword.json"
+      }
+    },
+    {
+      "num": 11,
+      "tag": "11",
+      "title": "Factorisation",
+      "topicId": "math-ch11",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_11_questions.json",
+        "facts": "../data/chapters/chapter_11_facts.json",
+        "notes": "../data/chapters/chapter_11_notes.md",
+        "mindmap": "../data/chapters/chapter_11_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_11_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_11_oneword.json"
+      }
+    },
+    {
+      "num": 12,
+      "tag": "12",
+      "title": "Linear Equations and Inequalities in One Variable",
+      "topicId": "math-ch12",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_12_questions.json",
+        "facts": "../data/chapters/chapter_12_facts.json",
+        "notes": "../data/chapters/chapter_12_notes.md",
+        "mindmap": "../data/chapters/chapter_12_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_12_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_12_oneword.json"
+      }
+    },
+    {
+      "num": 13,
+      "tag": "13",
+      "title": "Understanding Shapes",
+      "topicId": "math-ch13",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_13_questions.json",
+        "facts": "../data/chapters/chapter_13_facts.json",
+        "notes": "../data/chapters/chapter_13_notes.md",
+        "mindmap": "../data/chapters/chapter_13_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_13_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_13_oneword.json"
+      }
+    },
+    {
+      "num": 14,
+      "tag": "14",
+      "title": "Construction of Quadrilaterals",
+      "topicId": "math-ch14",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_14_questions.json",
+        "facts": "../data/chapters/chapter_14_facts.json",
+        "notes": "../data/chapters/chapter_14_notes.md",
+        "mindmap": "../data/chapters/chapter_14_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_14_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_14_oneword.json"
+      }
+    },
+    {
+      "num": 15,
+      "tag": "15",
+      "title": "Circle",
+      "topicId": "math-ch15",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_15_questions.json",
+        "facts": "../data/chapters/chapter_15_facts.json",
+        "notes": "../data/chapters/chapter_15_notes.md",
+        "mindmap": "../data/chapters/chapter_15_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_15_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_15_oneword.json"
+      }
+    },
+    {
+      "num": 16,
+      "tag": "16",
+      "title": "Coordinate System and Graphs",
+      "topicId": "math-ch16",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_16_questions.json",
+        "facts": "../data/chapters/chapter_16_facts.json",
+        "notes": "../data/chapters/chapter_16_notes.md",
+        "mindmap": "../data/chapters/chapter_16_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_16_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_16_oneword.json"
+      }
+    },
+    {
+      "num": 17,
+      "tag": "17",
+      "title": "Symmetry, Reflection and Rotation",
+      "topicId": "math-ch17",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_17_questions.json",
+        "facts": "../data/chapters/chapter_17_facts.json",
+        "notes": "../data/chapters/chapter_17_notes.md",
+        "mindmap": "../data/chapters/chapter_17_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_17_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_17_oneword.json"
+      }
+    },
+    {
+      "num": 18,
+      "tag": "18",
+      "title": "Visualising Solid Shapes",
+      "topicId": "math-ch18",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_18_questions.json",
+        "facts": "../data/chapters/chapter_18_facts.json",
+        "notes": "../data/chapters/chapter_18_notes.md",
+        "mindmap": "../data/chapters/chapter_18_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_18_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_18_oneword.json"
+      }
+    },
+    {
+      "num": 19,
+      "tag": "19",
+      "title": "Mensuration",
+      "topicId": "math-ch19",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_19_questions.json",
+        "facts": "../data/chapters/chapter_19_facts.json",
+        "notes": "../data/chapters/chapter_19_notes.md",
+        "mindmap": "../data/chapters/chapter_19_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_19_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_19_oneword.json"
+      }
+    },
+    {
+      "num": 20,
+      "tag": "20",
+      "title": "Data Handling",
+      "topicId": "math-ch20",
+      "questions": 100,
+      "files": {
+        "questions": "../data/chapters/chapter_20_questions.json",
+        "facts": "../data/chapters/chapter_20_facts.json",
+        "notes": "../data/chapters/chapter_20_notes.md",
+        "mindmap": "../data/chapters/chapter_20_mindmap.md",
+        "cheatsheet": "../data/chapters/chapter_20_cheatsheet.md",
+        "oneword": "../data/chapters/chapter_20_oneword.json"
+      }
+    }
+  ],
+  "totalQuestions": 2000
+}

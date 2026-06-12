@@ -1,0 +1,92 @@
+[
+  {
+    "id": "FACT-CH20-001",
+    "chapter": 20,
+    "fact": "The data arranged in this form is called data array or arrayed data. The presentation of the data in this form gives much more information:",
+    "linked_note_id": "CH20-sec-data-handling"
+  },
+  {
+    "id": "FACT-CH20-002",
+    "chapter": 20,
+    "fact": "An action which results in some (well defined) outcomes is called an experiment.",
+    "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph"
+  },
+  {
+    "id": "FACT-CH20-003",
+    "chapter": 20,
+    "fact": "An experiment is called random if it has more than one possible outcomes and it is not possible to tell predict) the outcome in advance.",
+    "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph"
+  },
+  {
+    "id": "FACT-CH20-004",
+    "chapter": 20,
+    "fact": "In such cases, we may say that the different outcomes of the experiment are equally likely. This means that each of the outcomes has the same chance of occurring.",
+    "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph"
+  },
+  {
+    "id": "FACT-CH20-005",
+    "chapter": 20,
+    "fact": "An event which always happens is called a sure event or a certain event.",
+    "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph"
+  },
+  {
+    "id": "FACT-CH20-006",
+    "chapter": 20,
+    "fact": "An event which never happens is called an impossible event.",
+    "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph"
+  },
+  {
+    "id": "FACT-CH20-007",
+    "chapter": 20,
+    "fact": "50, the total runner is getting at least one head, means getting one head or two heads and the outcomes HT, TH, HH are favourable to the event. So, the number of favourable outcomes = 3",
+    "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph"
+  },
+  {
+    "id": "FACT-CH20-008",
+    "chapter": 20,
+    "fact": "2. Since there is a kink from 0 to 50, it means that no student scored less than 50.",
+    "linked_note_id": "CH20-sec-t-white"
+  },
+  {
+    "id": "FACT-CH20-009",
+    "chapter": 20,
+    "fact": "(ii) In a grouped frequency distribution, the difference between lower limit and upper limit a class is called .....",
+    "linked_note_id": "CH20-sec-t-white"
+  },
+  {
+    "id": "FACT-CH20-010",
+    "chapter": 20,
+    "fact": "(iii) The mid point of the class interval is called",
+    "linked_note_id": "CH20-sec-t-white"
+  },
+  {
+    "id": "FACT-CH20-011",
+    "chapter": 20,
+    "fact": "Data mostly available to us in an unorganized form is called raw data.",
+    "linked_note_id": "CH20-sec-summary"
+  },
+  {
+    "id": "FACT-CH20-012",
+    "chapter": 20,
+    "fact": "★ The mid point of the class interval is called class mark.",
+    "linked_note_id": "CH20-sec-summary"
+  },
+  {
+    "id": "FACT-CH20-013",
+    "chapter": 20,
+    "fact": "An event which always happens is called a sure event. $P(\\text{sure event}) = 1$",
+    "linked_note_id": "CH20-sec-likely"
+  },
+  {
+    "id": "FACT-CH20-014",
+    "chapter": 20,
+    "fact": "An event which never happens is called an impossible event.",
+    "linked_note_id": "CH20-sec-likely"
+  },
+  {
+    "id": "FACT-CH20-015",
+    "chapter": 20,
+    "fact": "13. Verify Euler's formula for decagonal pyramid.",
+    "linked_note_id": "CH20-sec-likely"
+  }
+]

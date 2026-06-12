@@ -1,0 +1,212 @@
+[
+  {
+    "id": "OW-CH15-001",
+    "chapter": 15,
+    "term": "the",
+    "answer": "the fixed point is called the centre and the constant distance is called the radius.",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-002",
+    "chapter": 15,
+    "term": "An",
+    "answer": "An continuous) part of a circle is called an arc of the circle. circle is denoted by the symbol $ \\sim $.",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-003",
+    "chapter": 15,
+    "term": "whole",
+    "answer": "whole arc of the circle is called the circumference of the",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-004",
+    "chapter": 15,
+    "term": "of",
+    "answer": "of the whole arc of a circle is called a semicircle of the",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-005",
+    "chapter": 15,
+    "term": "An",
+    "answer": "An arc less than one-half of the whole arc of a circle is called a minor arc of the circle, and an arc greater than one-",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-006",
+    "chapter": 15,
+    "term": "The",
+    "answer": "The angle formed by the two radii of an arc of a circle at the centre of the circle is called the angle subtended by the",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-007",
+    "chapter": 15,
+    "term": "The",
+    "answer": "The angle subtended by an arc (or chord) of a circle at the centre of the circle is called the central angle.",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-008",
+    "chapter": 15,
+    "term": "part",
+    "answer": "part of the circular region of the plane enclosed by an arc of a circle and its bounding radii is called a sector of the",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-009",
+    "chapter": 15,
+    "term": "In",
+    "answer": "In the part containing the minor arc is called the minor sector, and the part containing the major arc is called the maj",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-010",
+    "chapter": 15,
+    "term": "A",
+    "answer": "A chord of a circle divides its circular region into two parts. Each part is called",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-011",
+    "chapter": 15,
+    "term": "The",
+    "answer": "The part containing the minor arc is called the minor segment, and the part containing the major arc is called the major",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-012",
+    "chapter": 15,
+    "term": "An",
+    "answer": "An angle inscribed in a semicircle is called an angle in the semicircle.",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-013",
+    "chapter": 15,
+    "term": "triangle",
+    "answer": "triangle CPT, by Pythagoras theorem, we get",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-014",
+    "chapter": 15,
+    "term": "line",
+    "answer": "line which meets a circle in one and only one point is called a ... to",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-015",
+    "chapter": 15,
+    "term": "3.",
+    "answer": "3. If P and Q are any two points on a circle, then the line segment PQ is called a (a) radius of the circle (b) diameter",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-016",
+    "chapter": 15,
+    "term": "Rational",
+    "answer": "Number of form p/q, q≠0",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-017",
+    "chapter": 15,
+    "term": "Identity",
+    "answer": "Element that leaves value unchanged under an operation",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-018",
+    "chapter": 15,
+    "term": "Inverse",
+    "answer": "Element that returns to identity under operation",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-019",
+    "chapter": 15,
+    "term": "LCM",
+    "answer": "Least common multiple of denominators",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-020",
+    "chapter": 15,
+    "term": "HCF",
+    "answer": "Highest common factor",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-021",
+    "chapter": 15,
+    "term": "the",
+    "answer": "the fixed point is called the centre and the constant distance is called the radius.",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-022",
+    "chapter": 15,
+    "term": "An",
+    "answer": "An continuous) part of a circle is called an arc of the circle. circle is denoted by the symbol $ \\sim $.",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-023",
+    "chapter": 15,
+    "term": "whole",
+    "answer": "whole arc of the circle is called the circumference of the",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-024",
+    "chapter": 15,
+    "term": "of",
+    "answer": "of the whole arc of a circle is called a semicircle of the",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-025",
+    "chapter": 15,
+    "term": "An",
+    "answer": "An arc less than one-half of the whole arc of a circle is called a minor arc of the circle, and an arc greater than one-",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-026",
+    "chapter": 15,
+    "term": "The",
+    "answer": "The angle formed by the two radii of an arc of a circle at the centre of the circle is called the angle subtended by the",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-027",
+    "chapter": 15,
+    "term": "The",
+    "answer": "The angle subtended by an arc (or chord) of a circle at the centre of the circle is called the central angle.",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-028",
+    "chapter": 15,
+    "term": "part",
+    "answer": "part of the circular region of the plane enclosed by an arc of a circle and its bounding radii is called a sector of the",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-029",
+    "chapter": 15,
+    "term": "In",
+    "answer": "In the part containing the minor arc is called the minor sector, and the part containing the major arc is called the maj",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "OW-CH15-030",
+    "chapter": 15,
+    "term": "A",
+    "answer": "A chord of a circle divides its circular region into two parts. Each part is called",
+    "linked_note_id": "CH15-sec-circle"
+  }
+]

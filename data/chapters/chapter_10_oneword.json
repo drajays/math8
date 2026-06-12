@@ -1,0 +1,212 @@
+[
+  {
+    "id": "OW-CH10-001",
+    "chapter": 10,
+    "term": "Constant.",
+    "answer": "Constant. A symbol which has a fixed value is called a constant",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-002",
+    "chapter": 10,
+    "term": "A",
+    "answer": "A collection of constants and variables (literals) connected by one or more of the operations of addition, subtraction, ",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-003",
+    "chapter": 10,
+    "term": "A",
+    "answer": "A collection of constants and variables (literals) is called an algebraic expression.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-004",
+    "chapter": 10,
+    "term": "A",
+    "answer": "A collection of constant and variable variables called an algebraic expression is called the",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-005",
+    "chapter": 10,
+    "term": "subtraction,",
+    "answer": "subtraction, multiplication and division is called an algebraic expression.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-006",
+    "chapter": 10,
+    "term": "subtraction,",
+    "answer": "subtraction, multiplication and division is called an algebraic expression by '+ or -' sign are called terms of the",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-007",
+    "chapter": 10,
+    "term": "The",
+    "answer": "The various parts of an algebraic expression. Various types of algebraic expression having only one term is called a mon",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-008",
+    "chapter": 10,
+    "term": "Binomial.",
+    "answer": "Binomial. An algebraic expression having two terms is called a trinomial.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-009",
+    "chapter": 10,
+    "term": "Trinomial.",
+    "answer": "Trinomial. An algebraic expression having three terms is called a multinomial.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-010",
+    "chapter": 10,
+    "term": "Multinomial.",
+    "answer": "Multinomial. An algebraic expression having two or more terms is called a multinomial.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-011",
+    "chapter": 10,
+    "term": "An",
+    "answer": "An algebraic expression containing two or more variables (literals) is called a polynomial in those variables the powers",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-012",
+    "chapter": 10,
+    "term": "Polynomial.",
+    "answer": "Polynomial. A polynomial of degree 1 is called a linear polynomial.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-013",
+    "chapter": 10,
+    "term": "Identity",
+    "answer": "Identity 4. $ (x + a)(x + b) = x(x + \\frac{1}{x^2 + 1}) $",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-014",
+    "chapter": 10,
+    "term": "Identity",
+    "answer": "Identity 3. $ (a+b)(a-b)=a(a-b)+b(a-b)=a^{2}-ab+ba-b^{2} $",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-015",
+    "chapter": 10,
+    "term": "We",
+    "answer": "We can see that this equality is true for all values of x. Such an equality is called an $ x $.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-016",
+    "chapter": 10,
+    "term": "Rational",
+    "answer": "Number of form p/q, q≠0",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-017",
+    "chapter": 10,
+    "term": "Identity",
+    "answer": "Element that leaves value unchanged under an operation",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-018",
+    "chapter": 10,
+    "term": "Inverse",
+    "answer": "Element that returns to identity under operation",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-019",
+    "chapter": 10,
+    "term": "LCM",
+    "answer": "Least common multiple of denominators",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-020",
+    "chapter": 10,
+    "term": "HCF",
+    "answer": "Highest common factor",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-021",
+    "chapter": 10,
+    "term": "Constant.",
+    "answer": "Constant. A symbol which has a fixed value is called a constant",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-022",
+    "chapter": 10,
+    "term": "A",
+    "answer": "A collection of constants and variables (literals) connected by one or more of the operations of addition, subtraction, ",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-023",
+    "chapter": 10,
+    "term": "A",
+    "answer": "A collection of constants and variables (literals) is called an algebraic expression.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-024",
+    "chapter": 10,
+    "term": "A",
+    "answer": "A collection of constant and variable variables called an algebraic expression is called the",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-025",
+    "chapter": 10,
+    "term": "subtraction,",
+    "answer": "subtraction, multiplication and division is called an algebraic expression.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-026",
+    "chapter": 10,
+    "term": "subtraction,",
+    "answer": "subtraction, multiplication and division is called an algebraic expression by '+ or -' sign are called terms of the",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-027",
+    "chapter": 10,
+    "term": "The",
+    "answer": "The various parts of an algebraic expression. Various types of algebraic expression having only one term is called a mon",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-028",
+    "chapter": 10,
+    "term": "Binomial.",
+    "answer": "Binomial. An algebraic expression having two terms is called a trinomial.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-029",
+    "chapter": 10,
+    "term": "Trinomial.",
+    "answer": "Trinomial. An algebraic expression having three terms is called a multinomial.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  },
+  {
+    "id": "OW-CH10-030",
+    "chapter": 10,
+    "term": "Multinomial.",
+    "answer": "Multinomial. An algebraic expression having two or more terms is called a multinomial.",
+    "linked_note_id": "CH10-sec-algebraic-expressions-and-identities"
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "chapter": 12,
+  "title": "Linear Equations and Inequalities in One Variable",
+  "topicId": "math-ch12",
+  "sourceFiles": [
+    "maths.pdf_by_PaddleOCR-VL-1.6.md",
+    "maths.pdf_by_PaddleOCR-VL-1.6.json"
+  ],
+  "lineRange": [
+    11640,
+    12373
+  ],
+  "sections": [
+    {
+      "id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "title": "Linear Equations and Inequalities in One Variable",
+      "level": 2
+    },
+    {
+      "id": "CH12-sec-nitroduction",
+      "title": "NITRODUCTION",
+      "level": 4
+    },
+    {
+      "id": "CH12-sec-equations",
+      "title": "EQUATIONS",
+      "level": 5
+    },
+    {
+      "id": "CH12-sec-application-of-linear-equations",
+      "title": "APPLICATION OF LINEAR EQUATIONS",
+      "level": 5
+    },
+    {
+      "id": "CH12-sec-word-problems",
+      "title": "Word problems",
+      "level": 4
+    },
+    {
+      "id": "CH12-sec-5x-3x-18",
+      "title": "$ 5x - 3x = 18 $",
+      "level": 5
+    },
+    {
+      "id": "CH12-sec-x-frac-864-5-288",
+      "title": "$ x=\\frac{864}{5}=288 $",
+      "level": 5
+    },
+    {
+      "id": "CH12-sec-exercise-12-2",
+      "title": "Exercise 12.2",
+      "level": 5
+    },
+    {
+      "id": "CH12-sec-linear-inequalities",
+      "title": "LINEAR INEQUALITIES",
+      "level": 4
+    },
+    {
+      "id": "CH12-sec-statements-such-as",
+      "title": "Statements such as",
+      "level": 5
+    },
+    {
+      "id": "CH12-sec-mcq-solved",
+      "title": "MCQ (SOLVED)",
+      "level": 5
+    },
+    {
+      "id": "CH12-sec-nt-set-is-w-the-solution-set-is-0-1-2-3-ldots-i-",
+      "title": "nt set is W, the solution set is \\{0, 1, 2, 3, \\ldots\\}, i.e.",
+      "level": 2
+    },
+    {
+      "id": "CH12-sec-solution-frac-2x-1-3-geq-1",
+      "title": "Solution.  $ \\frac{2x-1}{3} \\geq -1 $",
+      "level": 3
+    },
+    {
+      "id": "CH12-sec-mental-maths",
+      "title": "MENTAL MATHS",
+      "level": 4
+    },
+    {
+      "id": "CH12-sec-objective-type-questions",
+      "title": "OBJECTIVE TYPE QUESTIONS",
+      "level": 3
+    },
+    {
+      "id": "CH12-sec-statement-i-ii-type-questions",
+      "title": "STATEMENT I–II TYPE QUESTIONS",
+      "level": 4
+    },
+    {
+      "id": "CH12-sec-summary",
+      "title": "SUMMARY",
+      "level": 2
+    },
+    {
+      "id": "CH12-sec-check-your-progress",
+      "title": "CHECK YOUR PROGRESS",
+      "level": 5
+    }
+  ],
+  "metadata": {
+    "board": "ICSE",
+    "class": 8,
+    "textbook": "Understanding Mathematics — M.L. Aggarwal"
+  }
+}

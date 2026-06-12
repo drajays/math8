@@ -14,7 +14,7 @@ from sympy.parsing.sympy_parser import (parse_expr, standard_transformations,
 
 JSON_PATH = "maths-class-viii-question-bank.pdf_by_PaddleOCR-VL-1.6.json"
 OUT_PATH  = "question-bank.generated.js"
-HTML_PATH = "Glass-Box Math.html"
+HTML_PATH = "index.html"
 
 CHAPTER_NAMES = {"1":"Rational Numbers","2":"Linear Equations","3":"Quadrilaterals",
  "4":"Practical Geometry","5":"Data Handling","6":"Squares & Square Roots",

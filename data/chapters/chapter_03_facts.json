@@ -1,0 +1,68 @@
+[
+  {
+    "id": "FACT-CH03-001",
+    "chapter": 3,
+    "fact": "Property. A number having 2, 3, 7 or 8 at its unit place is never a square number.",
+    "linked_note_id": "CH03-sec-property-1"
+  },
+  {
+    "id": "FACT-CH03-002",
+    "chapter": 3,
+    "fact": "Property. A number ending in an odd number of zeros is never a perfect square.",
+    "linked_note_id": "CH03-sec-property-2"
+  },
+  {
+    "id": "FACT-CH03-003",
+    "chapter": 3,
+    "fact": "Property. Squares of even natural numbers are even and squares of odd natural numbers and odd.",
+    "linked_note_id": "CH03-sec-property-3"
+  },
+  {
+    "id": "FACT-CH03-004",
+    "chapter": 3,
+    "fact": "Thus, we can find the square of numbers with unit digit 5, by using the formula",
+    "linked_note_id": "CH03-sec-4-square-of-numbers-with-unit-digit-5"
+  },
+  {
+    "id": "FACT-CH03-005",
+    "chapter": 3,
+    "fact": "To find the length of side, we need to find a number whose square is 169. Hence, finding a number whose square is known, is called finding the square root. Thus, we can say that:",
+    "linked_note_id": "CH03-sec-square-roots"
+  },
+  {
+    "id": "FACT-CH03-006",
+    "chapter": 3,
+    "fact": "It means $ (44)^{2} $ is less than 1989 by 53",
+    "linked_note_id": "CH03-sec-ii-steps"
+  },
+  {
+    "id": "FACT-CH03-007",
+    "chapter": 3,
+    "fact": "It means $ (90)^{2} $ is less than 9999 by 198",
+    "linked_note_id": "CH03-sec-ii-steps"
+  },
+  {
+    "id": "FACT-CH03-008",
+    "chapter": 3,
+    "fact": "5. Join OP. By using Pythagoras theorem in $ \\Delta OP A $, we get",
+    "linked_note_id": "CH03-sec-steps"
+  },
+  {
+    "id": "FACT-CH03-009",
+    "chapter": 3,
+    "fact": "2. Join OQ. By using Pythagoras theorem in $ \\Delta OP'Q $, we get",
+    "linked_note_id": "CH03-sec-steps"
+  },
+  {
+    "id": "FACT-CH03-010",
+    "chapter": 3,
+    "fact": "(vii) For a natural number $m > 1$, $(2m, m^{2} - 1, m^{2} + 1)$ is called .....",
+    "linked_note_id": "CH03-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH03-011",
+    "chapter": 3,
+    "fact": "★ For any natural number $ m > 1 $, $ (2m, m^2 - 1, m^2 + 1) $ is called a Pythagorean triplet.",
+    "linked_note_id": "CH03-sec-summary"
+  }
+]

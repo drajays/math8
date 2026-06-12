@@ -1,0 +1,122 @@
+[
+  {
+    "id": "FACT-CH15-001",
+    "chapter": 15,
+    "fact": "the fixed point is called the centre and the constant distance is called the radius.",
+    "linked_note_id": "CH15-sec-circle"
+  },
+  {
+    "id": "FACT-CH15-002",
+    "chapter": 15,
+    "fact": "An continuous) part of a circle is called an arc of the circle. circle is denoted by the symbol $ \\sim $.",
+    "linked_note_id": "CH15-sec-some-terms-associated-with-circle"
+  },
+  {
+    "id": "FACT-CH15-003",
+    "chapter": 15,
+    "fact": "whole arc of the circle is called the circumference of the",
+    "linked_note_id": "CH15-sec-some-terms-associated-with-circle"
+  },
+  {
+    "id": "FACT-CH15-004",
+    "chapter": 15,
+    "fact": "of the whole arc of a circle is called a semicircle of the",
+    "linked_note_id": "CH15-sec-some-terms-associated-with-circle"
+  },
+  {
+    "id": "FACT-CH15-005",
+    "chapter": 15,
+    "fact": "An arc less than one-half of the whole arc of a circle is called a minor arc of the circle, and an arc greater than one-half of the whole arc of a circle is called a major arc of the circle.",
+    "linked_note_id": "CH15-sec-some-terms-associated-with-circle"
+  },
+  {
+    "id": "FACT-CH15-006",
+    "chapter": 15,
+    "fact": "The angle formed by the two radii of an arc of a circle at the centre of the circle is called the angle subtended by the arc.",
+    "linked_note_id": "CH15-sec-some-terms-associated-with-circle"
+  },
+  {
+    "id": "FACT-CH15-007",
+    "chapter": 15,
+    "fact": "The angle subtended by an arc (or chord) of a circle at the centre of the circle is called the central angle.",
+    "linked_note_id": "CH15-sec-central-angle"
+  },
+  {
+    "id": "FACT-CH15-008",
+    "chapter": 15,
+    "fact": "part of the circular region of the plane enclosed by an arc of a circle and its bounding radii is called a sector of the circle.",
+    "linked_note_id": "CH15-sec-central-angle"
+  },
+  {
+    "id": "FACT-CH15-009",
+    "chapter": 15,
+    "fact": "In the part containing the minor arc is called the minor sector, and the part containing the major arc is called the major sector.",
+    "linked_note_id": "CH15-sec-central-angle"
+  },
+  {
+    "id": "FACT-CH15-010",
+    "chapter": 15,
+    "fact": "A chord of a circle divides its circular region into two parts. Each part is called",
+    "linked_note_id": "CH15-sec-central-angle"
+  },
+  {
+    "id": "FACT-CH15-011",
+    "chapter": 15,
+    "fact": "The part containing the minor arc is called the minor segment, and the part containing the major arc is called the major segment.",
+    "linked_note_id": "CH15-sec-central-angle"
+  },
+  {
+    "id": "FACT-CH15-012",
+    "chapter": 15,
+    "fact": "An angle inscribed in a semicircle is called an angle in the semicircle.",
+    "linked_note_id": "CH15-sec-central-angle"
+  },
+  {
+    "id": "FACT-CH15-013",
+    "chapter": 15,
+    "fact": "triangle CPT, by Pythagoras theorem, we get",
+    "linked_note_id": "CH15-sec-central-angle"
+  },
+  {
+    "id": "FACT-CH15-014",
+    "chapter": 15,
+    "fact": "line which meets a circle in one and only one point is called a ... to",
+    "linked_note_id": "CH15-sec-mental-maths"
+  },
+  {
+    "id": "FACT-CH15-015",
+    "chapter": 15,
+    "fact": "3. If P and Q are any two points on a circle, then the line segment PQ is called a (a) radius of the circle (b) diameter of the circle",
+    "linked_note_id": "CH15-sec-multiple-choice-questions"
+  },
+  {
+    "id": "FACT-CH15-016",
+    "chapter": 15,
+    "fact": "(c) Statement I: A chord of a circle passing through its centre is called a diameter.",
+    "linked_note_id": "CH15-sec-statement-i-ii-type-questions"
+  },
+  {
+    "id": "FACT-CH15-017",
+    "chapter": 15,
+    "fact": "int is called the centre and constant distance is called ra.",
+    "linked_note_id": "CH15-sec-summary"
+  },
+  {
+    "id": "FACT-CH15-018",
+    "chapter": 15,
+    "fact": "The centre of a circle lies in the circle. The plane of a circle that consists of the circle and its interior is called the circular",
+    "linked_note_id": "CH15-sec-summary"
+  },
+  {
+    "id": "FACT-CH15-019",
+    "chapter": 15,
+    "fact": "★ The angle subtended by an arc (or chord) of a circle at the centre of the circle is called the central",
+    "linked_note_id": "CH15-sec-summary"
+  },
+  {
+    "id": "FACT-CH15-020",
+    "chapter": 15,
+    "fact": "The end-points of a diameter of a circle divide the circle into two parts; each part is called a semicircle.",
+    "linked_note_id": "CH15-sec-summary"
+  }
+]

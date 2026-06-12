@@ -1,0 +1,2932 @@
+[
+  {
+    "id": "Q-CH02-001",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "$\\left(\\frac{1}{2}\\right)^{-5}$ is equal to",
+    "options": [
+      "32",
+      "$ \\frac{1}{37} $",
+      "-32",
+      "$ \\frac{1}{32} $"
+    ],
+    "correctOption": 0,
+    "answer": "32",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "$\\left(\\frac{1}{2}\\right)^{-5}$ is equal to"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "32"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $$\\left(\\frac{1}{2}\\right)^{-5}$ is equal to$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $32$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-002",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The value of  $ \\left[\\left(\\frac{1}{4}\\right)^{-2}+\\left(\\frac{1}{3}\\right)^{-2}\\right]\\div\\left(\\frac{1}{5}\\right)^{-2} $ is",
+    "options": [
+      "0",
+      "-1",
+      "",
+      ""
+    ],
+    "correctOption": 0,
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "The value of  $ \\left[\\left(\\frac{1}{4}\\right)^{-2}+\\left(\\frac{1}{3}\\right)^{-2}\\right]\\div\\left(\\frac{1}{5}\\right)^{-2} $ is"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $The value of  $ \\left[\\left(\\frac{1}{4}\\right)^{-2}+\\left(\\frac{1}{3}\\right)^{-2}\\right]\\div\\left(\\frac{1}{5}\\right)^{-2} $ is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $0$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-003",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "If  $ 2^{4} \\times 4^{3} = 4^{x} $, then value of x is",
+    "options": [
+      "5",
+      "7",
+      "4",
+      "-5"
+    ],
+    "correctOption": 0,
+    "answer": "5",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "If  $ 2^{4} \\times 4^{3} = 4^{x} $, then value of x is"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "5"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $If  $ 2^{4} \\times 4^{3} = 4^{x} $, then value of x is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $5$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-004",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Multiplicative inverse of  $ \\left(\\frac{-2}{3}\\right)^{4} $ is",
+    "options": [
+      "$ \\frac{16}{81} $",
+      "$ \\frac{-16}{81} $",
+      "$ \\frac{81}{16} $",
+      "$ \\frac{-81}{16} $"
+    ],
+    "correctOption": 0,
+    "answer": "$ \\frac{16}{81} $",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "Multiplicative inverse of  $ \\left(\\frac{-2}{3}\\right)^{4} $ is"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "$ \\frac{16}{81} $"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $Multiplicative inverse of  $ \\left(\\frac{-2}{3}\\right)^{4} $ is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$ \\frac{16}{81} $$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-005",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "$ 2^{0} + 3^{0} + \\left(\\frac{1}{4}\\right)^{0} $ is equal to",
+    "options": [
+      "$ \\frac{21}{4} $",
+      "0",
+      "9",
+      "3"
+    ],
+    "correctOption": 0,
+    "answer": "$ \\frac{21}{4} $",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "$ 2^{0} + 3^{0} + \\left(\\frac{1}{4}\\right)^{0} $ is equal to"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "$ \\frac{21}{4} $"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $$ 2^{0} + 3^{0} + \\left(\\frac{1}{4}\\right)^{0} $ is equal to$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$ \\frac{21}{4} $$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-006",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "If  $ \\left(\\frac{12}{13}\\right)^{4} \\times \\left(\\frac{13}{12}\\right)^{-8} = \\left(\\frac{12}{13}\\right)^{2x} $, then x is",
+    "options": [
+      "-2",
+      "6",
+      "2",
+      "-6"
+    ],
+    "correctOption": 0,
+    "answer": "-2",
+    "glassboxSteps": [
+      {
+        "rule": "Given",
+        "why": "Restate the problem.",
+        "math": "If  $ \\left(\\frac{12}{13}\\right)^{4} \\times \\left(\\frac{13}{12}\\right)^{-8} = \\left(\\frac{12}{13}\\right)^{2x} $, then x is"
+      },
+      {
+        "rule": "Method",
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
+      },
+      {
+        "rule": "Result",
+        "why": "Match with the correct option.",
+        "math": "-2"
+      }
+    ],
+    "explanation": "Step 1 (Given): Restate the problem. → $If  $ \\left(\\frac{12}{13}\\right)^{4} \\times \\left(\\frac{13}{12}\\right)^{-8} = \\left(\\frac{12}{13}\\right)^{2x} $, then x is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $-2$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-007",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{2}{5} + \\dfrac{1}{5}$",
+    "options": [
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{1}{5}$",
+      "$\\dfrac{4}{5}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{3}{5}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 5.",
+        "math": "$\\dfrac{2}{5}+\\dfrac{1}{5}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{3}{5}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 5. → $$\\dfrac{2}{5}+\\dfrac{1}{5}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{3}{5}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-008",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{3}{6} + \\dfrac{1}{6}$",
+    "options": [
+      "$\\dfrac{4}{6}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{5}{6}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{4}{6}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 6.",
+        "math": "$\\dfrac{3}{6}+\\dfrac{1}{6}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{4}{6}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 6. → $$\\dfrac{3}{6}+\\dfrac{1}{6}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{4}{6}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-009",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{4}{7} + \\dfrac{1}{7}$",
+    "options": [
+      "$\\dfrac{5}{7}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{6}{7}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{5}{7}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 7.",
+        "math": "$\\dfrac{4}{7}+\\dfrac{1}{7}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{5}{7}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 7. → $$\\dfrac{4}{7}+\\dfrac{1}{7}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{5}{7}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-010",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{5}{8} + \\dfrac{1}{8}$",
+    "options": [
+      "$\\dfrac{6}{8}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{7}{8}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{6}{8}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 8.",
+        "math": "$\\dfrac{5}{8}+\\dfrac{1}{8}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{6}{8}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 8. → $$\\dfrac{5}{8}+\\dfrac{1}{8}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{6}{8}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-011",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{6}{9} + \\dfrac{1}{9}$",
+    "options": [
+      "$\\dfrac{7}{9}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{8}{9}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{7}{9}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 9.",
+        "math": "$\\dfrac{6}{9}+\\dfrac{1}{9}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{7}{9}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 9. → $$\\dfrac{6}{9}+\\dfrac{1}{9}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{7}{9}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-012",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{7}{10} + \\dfrac{1}{10}$",
+    "options": [
+      "$\\dfrac{8}{10}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{9}{10}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{8}{10}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 10.",
+        "math": "$\\dfrac{7}{10}+\\dfrac{1}{10}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{8}{10}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 10. → $$\\dfrac{7}{10}+\\dfrac{1}{10}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{8}{10}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-013",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{8}{11} + \\dfrac{1}{11}$",
+    "options": [
+      "$\\dfrac{9}{11}$",
+      "$\\dfrac{8}{12}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{10}{11}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{9}{11}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 11.",
+        "math": "$\\dfrac{8}{11}+\\dfrac{1}{11}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{9}{11}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 11. → $$\\dfrac{8}{11}+\\dfrac{1}{11}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{9}{11}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-014",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{12}{15} + \\dfrac{1}{15}$",
+    "options": [
+      "$\\dfrac{13}{15}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{11}{15}$",
+      "$\\dfrac{14}{15}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{13}{15}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 15.",
+        "math": "$\\dfrac{12}{15}+\\dfrac{1}{15}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{13}{15}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 15. → $$\\dfrac{12}{15}+\\dfrac{1}{15}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{13}{15}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-015",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{13}{16} + \\dfrac{1}{16}$",
+    "options": [
+      "$\\dfrac{14}{16}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{15}{16}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{14}{16}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 16.",
+        "math": "$\\dfrac{13}{16}+\\dfrac{1}{16}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{14}{16}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 16. → $$\\dfrac{13}{16}+\\dfrac{1}{16}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{14}{16}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-016",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{14}{17} + \\dfrac{1}{17}$",
+    "options": [
+      "$\\dfrac{15}{17}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{16}{17}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{15}{17}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 17.",
+        "math": "$\\dfrac{14}{17}+\\dfrac{1}{17}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{15}{17}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 17. → $$\\dfrac{14}{17}+\\dfrac{1}{17}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{15}{17}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-017",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{15}{18} + \\dfrac{1}{18}$",
+    "options": [
+      "$\\dfrac{16}{18}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{17}{18}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{16}{18}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 18.",
+        "math": "$\\dfrac{15}{18}+\\dfrac{1}{18}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{16}{18}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 18. → $$\\dfrac{15}{18}+\\dfrac{1}{18}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{16}{18}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-018",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{16}{19} + \\dfrac{1}{19}$",
+    "options": [
+      "$\\dfrac{17}{19}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{18}{19}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{17}{19}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 19.",
+        "math": "$\\dfrac{16}{19}+\\dfrac{1}{19}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{17}{19}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 19. → $$\\dfrac{16}{19}+\\dfrac{1}{19}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{17}{19}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-019",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{17}{20} + \\dfrac{1}{20}$",
+    "options": [
+      "$\\dfrac{18}{20}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{19}{20}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{18}{20}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 20.",
+        "math": "$\\dfrac{17}{20}+\\dfrac{1}{20}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{18}{20}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 20. → $$\\dfrac{17}{20}+\\dfrac{1}{20}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{18}{20}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-020",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{18}{21} + \\dfrac{1}{21}$",
+    "options": [
+      "$\\dfrac{19}{21}$",
+      "$\\dfrac{18}{22}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{20}{21}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{19}{21}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 21.",
+        "math": "$\\dfrac{18}{21}+\\dfrac{1}{21}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{19}{21}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 21. → $$\\dfrac{18}{21}+\\dfrac{1}{21}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{19}{21}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-021",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{22}{25} + \\dfrac{1}{25}$",
+    "options": [
+      "$\\dfrac{23}{25}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{21}{25}$",
+      "$\\dfrac{24}{25}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{23}{25}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 25.",
+        "math": "$\\dfrac{22}{25}+\\dfrac{1}{25}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{23}{25}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 25. → $$\\dfrac{22}{25}+\\dfrac{1}{25}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{23}{25}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-022",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{23}{26} + \\dfrac{1}{26}$",
+    "options": [
+      "$\\dfrac{24}{26}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{25}{26}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{24}{26}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 26.",
+        "math": "$\\dfrac{23}{26}+\\dfrac{1}{26}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{24}{26}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 26. → $$\\dfrac{23}{26}+\\dfrac{1}{26}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{24}{26}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-023",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{24}{27} + \\dfrac{1}{27}$",
+    "options": [
+      "$\\dfrac{25}{27}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{26}{27}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{25}{27}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 27.",
+        "math": "$\\dfrac{24}{27}+\\dfrac{1}{27}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{25}{27}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 27. → $$\\dfrac{24}{27}+\\dfrac{1}{27}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{25}{27}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-024",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{25}{28} + \\dfrac{1}{28}$",
+    "options": [
+      "$\\dfrac{26}{28}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{27}{28}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{26}{28}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 28.",
+        "math": "$\\dfrac{25}{28}+\\dfrac{1}{28}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{26}{28}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 28. → $$\\dfrac{25}{28}+\\dfrac{1}{28}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{26}{28}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-025",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{26}{29} + \\dfrac{1}{29}$",
+    "options": [
+      "$\\dfrac{27}{29}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{28}{29}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{27}{29}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 29.",
+        "math": "$\\dfrac{26}{29}+\\dfrac{1}{29}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{27}{29}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 29. → $$\\dfrac{26}{29}+\\dfrac{1}{29}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{27}{29}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-026",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{27}{30} + \\dfrac{1}{30}$",
+    "options": [
+      "$\\dfrac{28}{30}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{29}{30}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{28}{30}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 30.",
+        "math": "$\\dfrac{27}{30}+\\dfrac{1}{30}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{28}{30}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 30. → $$\\dfrac{27}{30}+\\dfrac{1}{30}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{28}{30}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-027",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{28}{31} + \\dfrac{1}{31}$",
+    "options": [
+      "$\\dfrac{29}{31}$",
+      "$\\dfrac{28}{32}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{30}{31}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{29}{31}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 31.",
+        "math": "$\\dfrac{28}{31}+\\dfrac{1}{31}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{29}{31}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 31. → $$\\dfrac{28}{31}+\\dfrac{1}{31}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{29}{31}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-028",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{32}{35} + \\dfrac{1}{35}$",
+    "options": [
+      "$\\dfrac{33}{35}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{31}{35}$",
+      "$\\dfrac{34}{35}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{33}{35}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 35.",
+        "math": "$\\dfrac{32}{35}+\\dfrac{1}{35}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{33}{35}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 35. → $$\\dfrac{32}{35}+\\dfrac{1}{35}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{33}{35}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-029",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{33}{36} + \\dfrac{1}{36}$",
+    "options": [
+      "$\\dfrac{34}{36}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{35}{36}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{34}{36}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 36.",
+        "math": "$\\dfrac{33}{36}+\\dfrac{1}{36}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{34}{36}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 36. → $$\\dfrac{33}{36}+\\dfrac{1}{36}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{34}{36}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-030",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{34}{37} + \\dfrac{1}{37}$",
+    "options": [
+      "$\\dfrac{35}{37}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{36}{37}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{35}{37}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 37.",
+        "math": "$\\dfrac{34}{37}+\\dfrac{1}{37}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{35}{37}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 37. → $$\\dfrac{34}{37}+\\dfrac{1}{37}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{35}{37}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-031",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{35}{38} + \\dfrac{1}{38}$",
+    "options": [
+      "$\\dfrac{36}{38}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{37}{38}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{36}{38}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 38.",
+        "math": "$\\dfrac{35}{38}+\\dfrac{1}{38}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{36}{38}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 38. → $$\\dfrac{35}{38}+\\dfrac{1}{38}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{36}{38}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-032",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{36}{39} + \\dfrac{1}{39}$",
+    "options": [
+      "$\\dfrac{37}{39}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{38}{39}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{37}{39}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 39.",
+        "math": "$\\dfrac{36}{39}+\\dfrac{1}{39}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{37}{39}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 39. → $$\\dfrac{36}{39}+\\dfrac{1}{39}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{37}{39}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-033",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{37}{40} + \\dfrac{1}{40}$",
+    "options": [
+      "$\\dfrac{38}{40}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{39}{40}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{38}{40}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 40.",
+        "math": "$\\dfrac{37}{40}+\\dfrac{1}{40}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{38}{40}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 40. → $$\\dfrac{37}{40}+\\dfrac{1}{40}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{38}{40}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-034",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Simplify: $\\dfrac{38}{41} + \\dfrac{1}{41}$",
+    "options": [
+      "$\\dfrac{39}{41}$",
+      "$\\dfrac{38}{42}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{40}{41}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{39}{41}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 41.",
+        "math": "$\\dfrac{38}{41}+\\dfrac{1}{41}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{39}{41}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 41. → $$\\dfrac{38}{41}+\\dfrac{1}{41}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{39}{41}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-035",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[43] Simplify: $\\dfrac{2}{5} + \\dfrac{1}{5}$",
+    "options": [
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{1}{5}$",
+      "$\\dfrac{4}{5}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{3}{5}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 5.",
+        "math": "$\\dfrac{2}{5}+\\dfrac{1}{5}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{3}{5}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 5. → $$\\dfrac{2}{5}+\\dfrac{1}{5}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{3}{5}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-036",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[44] Simplify: $\\dfrac{3}{6} + \\dfrac{1}{6}$",
+    "options": [
+      "$\\dfrac{4}{6}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{5}{6}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{4}{6}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 6.",
+        "math": "$\\dfrac{3}{6}+\\dfrac{1}{6}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{4}{6}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 6. → $$\\dfrac{3}{6}+\\dfrac{1}{6}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{4}{6}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-037",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[45] Simplify: $\\dfrac{4}{7} + \\dfrac{1}{7}$",
+    "options": [
+      "$\\dfrac{5}{7}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{6}{7}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{5}{7}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 7.",
+        "math": "$\\dfrac{4}{7}+\\dfrac{1}{7}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{5}{7}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 7. → $$\\dfrac{4}{7}+\\dfrac{1}{7}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{5}{7}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-038",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[46] Simplify: $\\dfrac{5}{8} + \\dfrac{1}{8}$",
+    "options": [
+      "$\\dfrac{6}{8}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{7}{8}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{6}{8}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 8.",
+        "math": "$\\dfrac{5}{8}+\\dfrac{1}{8}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{6}{8}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 8. → $$\\dfrac{5}{8}+\\dfrac{1}{8}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{6}{8}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-039",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[47] Simplify: $\\dfrac{6}{9} + \\dfrac{1}{9}$",
+    "options": [
+      "$\\dfrac{7}{9}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{8}{9}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{7}{9}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 9.",
+        "math": "$\\dfrac{6}{9}+\\dfrac{1}{9}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{7}{9}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 9. → $$\\dfrac{6}{9}+\\dfrac{1}{9}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{7}{9}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-040",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[48] Simplify: $\\dfrac{7}{10} + \\dfrac{1}{10}$",
+    "options": [
+      "$\\dfrac{8}{10}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{9}{10}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{8}{10}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 10.",
+        "math": "$\\dfrac{7}{10}+\\dfrac{1}{10}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{8}{10}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 10. → $$\\dfrac{7}{10}+\\dfrac{1}{10}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{8}{10}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-041",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[49] Simplify: $\\dfrac{8}{11} + \\dfrac{1}{11}$",
+    "options": [
+      "$\\dfrac{9}{11}$",
+      "$\\dfrac{8}{12}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{10}{11}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{9}{11}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 11.",
+        "math": "$\\dfrac{8}{11}+\\dfrac{1}{11}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{9}{11}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 11. → $$\\dfrac{8}{11}+\\dfrac{1}{11}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{9}{11}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-042",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[53] Simplify: $\\dfrac{12}{15} + \\dfrac{1}{15}$",
+    "options": [
+      "$\\dfrac{13}{15}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{11}{15}$",
+      "$\\dfrac{14}{15}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{13}{15}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 15.",
+        "math": "$\\dfrac{12}{15}+\\dfrac{1}{15}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{13}{15}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 15. → $$\\dfrac{12}{15}+\\dfrac{1}{15}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{13}{15}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-043",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[54] Simplify: $\\dfrac{13}{16} + \\dfrac{1}{16}$",
+    "options": [
+      "$\\dfrac{14}{16}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{15}{16}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{14}{16}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 16.",
+        "math": "$\\dfrac{13}{16}+\\dfrac{1}{16}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{14}{16}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 16. → $$\\dfrac{13}{16}+\\dfrac{1}{16}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{14}{16}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-044",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[55] Simplify: $\\dfrac{14}{17} + \\dfrac{1}{17}$",
+    "options": [
+      "$\\dfrac{15}{17}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{13}{17}$",
+      "$\\dfrac{16}{17}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{15}{17}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 17.",
+        "math": "$\\dfrac{14}{17}+\\dfrac{1}{17}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{15}{17}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 17. → $$\\dfrac{14}{17}+\\dfrac{1}{17}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{15}{17}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-045",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[56] Simplify: $\\dfrac{15}{18} + \\dfrac{1}{18}$",
+    "options": [
+      "$\\dfrac{16}{18}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{14}{18}$",
+      "$\\dfrac{17}{18}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{16}{18}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 18.",
+        "math": "$\\dfrac{15}{18}+\\dfrac{1}{18}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{16}{18}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 18. → $$\\dfrac{15}{18}+\\dfrac{1}{18}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{16}{18}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-046",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[57] Simplify: $\\dfrac{16}{19} + \\dfrac{1}{19}$",
+    "options": [
+      "$\\dfrac{17}{19}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{15}{19}$",
+      "$\\dfrac{18}{19}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{17}{19}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 19.",
+        "math": "$\\dfrac{16}{19}+\\dfrac{1}{19}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{17}{19}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 19. → $$\\dfrac{16}{19}+\\dfrac{1}{19}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{17}{19}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-047",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[58] Simplify: $\\dfrac{17}{20} + \\dfrac{1}{20}$",
+    "options": [
+      "$\\dfrac{18}{20}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{16}{20}$",
+      "$\\dfrac{19}{20}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{18}{20}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 20.",
+        "math": "$\\dfrac{17}{20}+\\dfrac{1}{20}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{18}{20}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 20. → $$\\dfrac{17}{20}+\\dfrac{1}{20}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{18}{20}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-048",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[59] Simplify: $\\dfrac{18}{21} + \\dfrac{1}{21}$",
+    "options": [
+      "$\\dfrac{19}{21}$",
+      "$\\dfrac{18}{22}$",
+      "$\\dfrac{17}{21}$",
+      "$\\dfrac{20}{21}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{19}{21}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 21.",
+        "math": "$\\dfrac{18}{21}+\\dfrac{1}{21}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{19}{21}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 21. → $$\\dfrac{18}{21}+\\dfrac{1}{21}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{19}{21}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-049",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[63] Simplify: $\\dfrac{22}{25} + \\dfrac{1}{25}$",
+    "options": [
+      "$\\dfrac{23}{25}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{21}{25}$",
+      "$\\dfrac{24}{25}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{23}{25}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 25.",
+        "math": "$\\dfrac{22}{25}+\\dfrac{1}{25}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{23}{25}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 25. → $$\\dfrac{22}{25}+\\dfrac{1}{25}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{23}{25}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-050",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[64] Simplify: $\\dfrac{23}{26} + \\dfrac{1}{26}$",
+    "options": [
+      "$\\dfrac{24}{26}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{22}{26}$",
+      "$\\dfrac{25}{26}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{24}{26}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 26.",
+        "math": "$\\dfrac{23}{26}+\\dfrac{1}{26}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{24}{26}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 26. → $$\\dfrac{23}{26}+\\dfrac{1}{26}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{24}{26}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-051",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[65] Simplify: $\\dfrac{24}{27} + \\dfrac{1}{27}$",
+    "options": [
+      "$\\dfrac{25}{27}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{23}{27}$",
+      "$\\dfrac{26}{27}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{25}{27}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 27.",
+        "math": "$\\dfrac{24}{27}+\\dfrac{1}{27}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{25}{27}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 27. → $$\\dfrac{24}{27}+\\dfrac{1}{27}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{25}{27}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-052",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[66] Simplify: $\\dfrac{25}{28} + \\dfrac{1}{28}$",
+    "options": [
+      "$\\dfrac{26}{28}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{24}{28}$",
+      "$\\dfrac{27}{28}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{26}{28}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 28.",
+        "math": "$\\dfrac{25}{28}+\\dfrac{1}{28}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{26}{28}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 28. → $$\\dfrac{25}{28}+\\dfrac{1}{28}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{26}{28}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-053",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[67] Simplify: $\\dfrac{26}{29} + \\dfrac{1}{29}$",
+    "options": [
+      "$\\dfrac{27}{29}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{25}{29}$",
+      "$\\dfrac{28}{29}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{27}{29}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 29.",
+        "math": "$\\dfrac{26}{29}+\\dfrac{1}{29}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{27}{29}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 29. → $$\\dfrac{26}{29}+\\dfrac{1}{29}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{27}{29}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-054",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[68] Simplify: $\\dfrac{27}{30} + \\dfrac{1}{30}$",
+    "options": [
+      "$\\dfrac{28}{30}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{26}{30}$",
+      "$\\dfrac{29}{30}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{28}{30}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 30.",
+        "math": "$\\dfrac{27}{30}+\\dfrac{1}{30}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{28}{30}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 30. → $$\\dfrac{27}{30}+\\dfrac{1}{30}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{28}{30}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-055",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[69] Simplify: $\\dfrac{28}{31} + \\dfrac{1}{31}$",
+    "options": [
+      "$\\dfrac{29}{31}$",
+      "$\\dfrac{28}{32}$",
+      "$\\dfrac{27}{31}$",
+      "$\\dfrac{30}{31}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{29}{31}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 31.",
+        "math": "$\\dfrac{28}{31}+\\dfrac{1}{31}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{29}{31}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 31. → $$\\dfrac{28}{31}+\\dfrac{1}{31}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{29}{31}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-056",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[73] Simplify: $\\dfrac{32}{35} + \\dfrac{1}{35}$",
+    "options": [
+      "$\\dfrac{33}{35}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{31}{35}$",
+      "$\\dfrac{34}{35}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{33}{35}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 35.",
+        "math": "$\\dfrac{32}{35}+\\dfrac{1}{35}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{33}{35}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 35. → $$\\dfrac{32}{35}+\\dfrac{1}{35}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{33}{35}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-057",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[74] Simplify: $\\dfrac{33}{36} + \\dfrac{1}{36}$",
+    "options": [
+      "$\\dfrac{34}{36}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{32}{36}$",
+      "$\\dfrac{35}{36}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{34}{36}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 36.",
+        "math": "$\\dfrac{33}{36}+\\dfrac{1}{36}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{34}{36}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 36. → $$\\dfrac{33}{36}+\\dfrac{1}{36}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{34}{36}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-058",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[75] Simplify: $\\dfrac{34}{37} + \\dfrac{1}{37}$",
+    "options": [
+      "$\\dfrac{35}{37}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{33}{37}$",
+      "$\\dfrac{36}{37}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{35}{37}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 37.",
+        "math": "$\\dfrac{34}{37}+\\dfrac{1}{37}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{35}{37}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 37. → $$\\dfrac{34}{37}+\\dfrac{1}{37}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{35}{37}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-059",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[76] Simplify: $\\dfrac{35}{38} + \\dfrac{1}{38}$",
+    "options": [
+      "$\\dfrac{36}{38}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{34}{38}$",
+      "$\\dfrac{37}{38}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{36}{38}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 38.",
+        "math": "$\\dfrac{35}{38}+\\dfrac{1}{38}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{36}{38}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 38. → $$\\dfrac{35}{38}+\\dfrac{1}{38}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{36}{38}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-060",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[77] Simplify: $\\dfrac{36}{39} + \\dfrac{1}{39}$",
+    "options": [
+      "$\\dfrac{37}{39}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{35}{39}$",
+      "$\\dfrac{38}{39}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{37}{39}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 39.",
+        "math": "$\\dfrac{36}{39}+\\dfrac{1}{39}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{37}{39}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 39. → $$\\dfrac{36}{39}+\\dfrac{1}{39}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{37}{39}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-061",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[78] Simplify: $\\dfrac{37}{40} + \\dfrac{1}{40}$",
+    "options": [
+      "$\\dfrac{38}{40}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{36}{40}$",
+      "$\\dfrac{39}{40}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{38}{40}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 40.",
+        "math": "$\\dfrac{37}{40}+\\dfrac{1}{40}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{38}{40}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 40. → $$\\dfrac{37}{40}+\\dfrac{1}{40}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{38}{40}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-062",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[79] Simplify: $\\dfrac{38}{41} + \\dfrac{1}{41}$",
+    "options": [
+      "$\\dfrac{39}{41}$",
+      "$\\dfrac{38}{42}$",
+      "$\\dfrac{37}{41}$",
+      "$\\dfrac{40}{41}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{39}{41}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 41.",
+        "math": "$\\dfrac{38}{41}+\\dfrac{1}{41}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{39}{41}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 41. → $$\\dfrac{38}{41}+\\dfrac{1}{41}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{39}{41}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-063",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[83] Simplify: $\\dfrac{2}{5} + \\dfrac{1}{5}$",
+    "options": [
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{1}{5}$",
+      "$\\dfrac{4}{5}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{3}{5}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 5.",
+        "math": "$\\dfrac{2}{5}+\\dfrac{1}{5}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{3}{5}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 5. → $$\\dfrac{2}{5}+\\dfrac{1}{5}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{3}{5}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-064",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[84] Simplify: $\\dfrac{3}{6} + \\dfrac{1}{6}$",
+    "options": [
+      "$\\dfrac{4}{6}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{2}{6}$",
+      "$\\dfrac{5}{6}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{4}{6}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 6.",
+        "math": "$\\dfrac{3}{6}+\\dfrac{1}{6}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{4}{6}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 6. → $$\\dfrac{3}{6}+\\dfrac{1}{6}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{4}{6}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-065",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[85] Simplify: $\\dfrac{4}{7} + \\dfrac{1}{7}$",
+    "options": [
+      "$\\dfrac{5}{7}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{6}{7}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{5}{7}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 7.",
+        "math": "$\\dfrac{4}{7}+\\dfrac{1}{7}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{5}{7}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 7. → $$\\dfrac{4}{7}+\\dfrac{1}{7}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{5}{7}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-066",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[86] Simplify: $\\dfrac{5}{8} + \\dfrac{1}{8}$",
+    "options": [
+      "$\\dfrac{6}{8}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{4}{8}$",
+      "$\\dfrac{7}{8}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{6}{8}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 8.",
+        "math": "$\\dfrac{5}{8}+\\dfrac{1}{8}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{6}{8}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 8. → $$\\dfrac{5}{8}+\\dfrac{1}{8}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{6}{8}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-067",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[87] Simplify: $\\dfrac{6}{9} + \\dfrac{1}{9}$",
+    "options": [
+      "$\\dfrac{7}{9}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{5}{9}$",
+      "$\\dfrac{8}{9}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{7}{9}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 9.",
+        "math": "$\\dfrac{6}{9}+\\dfrac{1}{9}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{7}{9}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 9. → $$\\dfrac{6}{9}+\\dfrac{1}{9}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{7}{9}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-068",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[88] Simplify: $\\dfrac{7}{10} + \\dfrac{1}{10}$",
+    "options": [
+      "$\\dfrac{8}{10}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{6}{10}$",
+      "$\\dfrac{9}{10}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{8}{10}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 10.",
+        "math": "$\\dfrac{7}{10}+\\dfrac{1}{10}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{8}{10}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 10. → $$\\dfrac{7}{10}+\\dfrac{1}{10}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{8}{10}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-069",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[89] Simplify: $\\dfrac{8}{11} + \\dfrac{1}{11}$",
+    "options": [
+      "$\\dfrac{9}{11}$",
+      "$\\dfrac{8}{12}$",
+      "$\\dfrac{7}{11}$",
+      "$\\dfrac{10}{11}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{9}{11}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 11.",
+        "math": "$\\dfrac{8}{11}+\\dfrac{1}{11}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{9}{11}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 11. → $$\\dfrac{8}{11}+\\dfrac{1}{11}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{9}{11}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-070",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "mcq",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[93] Simplify: $\\dfrac{12}{15} + \\dfrac{1}{15}$",
+    "options": [
+      "$\\dfrac{13}{15}$",
+      "$\\dfrac{12}{16}$",
+      "$\\dfrac{11}{15}$",
+      "$\\dfrac{14}{15}$"
+    ],
+    "correctOption": 0,
+    "answer": "$\\dfrac{13}{15}$",
+    "glassboxSteps": [
+      {
+        "rule": "LCM",
+        "why": "Common denominator is 15.",
+        "math": "$\\dfrac{12}{15}+\\dfrac{1}{15}$"
+      },
+      {
+        "rule": "Add numerators",
+        "why": "Add when denominators match.",
+        "math": "$\\dfrac{13}{15}$"
+      }
+    ],
+    "explanation": "Step 1 (LCM): Common denominator is 15. → $$\\dfrac{12}{15}+\\dfrac{1}{15}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{13}{15}$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated",
+    "linksTo": "math-ch02nexponents-"
+  },
+  {
+    "id": "Q-CH02-071",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Fill in the blanks:\n\n(i) Multiplicative in\n\n(ii) If  $ (-7)^{x} \\times \\left( \\frac{1}{-7} \\right) $\n\n(iii) If 3^{n} = 729, then\n\n(iv) The value of (7",
+    "blankAnswer": "",
+    "answer": "",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "Fill in the blanks:\n\n(i) Multiplicative in\n\n(ii) If  $ (-7)^{x} \\times \\left( \\frac{1}{-7} \\right) $\n\n(iii) If 3^{n} = 729, then\n\n(iv) The value of (7"
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "?"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $Fill in the blanks:\n\n(i) Multiplicative in\n\n(ii) If  $ (-7)^{x} \\times \\left( \\frac{1}{-7} \\right) $\n\n(iii) If 3^{n} = 729, then\n\n(iv) The value of (7$ Step 2 (Fill): Insert the missing term. → $?$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook"
+  },
+  {
+    "id": "Q-CH02-072",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Fill in the blanks:\n\n(i) Multiplicative inverse of  $ \\left(\\frac{-4}{5}\\right)^{2} = \\cdots\\cdots $\n\n(ii) If  $ (-7)^x \\times \\left(\\frac{1}{-7}\\right)^{-3} = 7^8 $, then value of  $ x $ is .....\n\n(iii) If $3^{n}=729$, then $n=\\cdots\\cdots$\n\n(iv) The value of  $  (7^{0} + 5^{0})  $ is .....",
+    "blankAnswer": "",
+    "answer": "",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "Fill in the blanks:\n\n(i) Multiplicative inverse of  $ \\left(\\frac{-4}{5}\\right)^{2} = \\cdots\\cdots $\n\n(ii) If  $ (-7)^x \\times \\left(\\frac{1}{-7}\\right)^{-3} = 7^8 $, then value of  $ x $ is .....\n\n(iii) If $3^{n}=729$, then $n=\\cdots\\cdots$\n\n(iv) The value of  $  (7^{0} + 5^{0})  $ is ....."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "?"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $Fill in the blanks:\n\n(i) Multiplicative inverse of  $ \\left(\\frac{-4}{5}\\right)^{2} = \\cdots\\cdots $\n\n(ii) If  $ (-7)^x \\times \\left(\\frac{1}{-7}\\right)^{-3} = 7^8 $, then value of  $ x $ is .....\n\n(iii) If $3^{n}=729$, then $n=\\cdots\\cdots$\n\n(iv) The value of  $  (7^{0} + 5^{0})  $ is .....$ Step 2 (Fill): Insert the missing term. → $?$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook"
+  },
+  {
+    "id": "Q-CH02-073",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-074",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[50] In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-075",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[51] In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-076",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[60] In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-077",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[61] In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-078",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[70] In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-079",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[71] In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-080",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[80] In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-081",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[81] In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-082",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[90] In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-083",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[91] In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-084",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[100] In chapter 2 (Exponents and Powers), the symbol for 'therefore' is ______.",
+    "blankAnswer": "∴",
+    "answer": "∴",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Mathematical shorthand for logical conclusion.",
+        "math": "$\\therefore$"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Mathematical shorthand for logical conclusion. → $$\\therefore$$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-085",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-086",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-087",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-088",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-089",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-090",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "fill_blank",
+    "subtopic": "Glassbox Question Bank",
+    "question": "The additive identity is ______.",
+    "blankAnswer": "0",
+    "answer": "0",
+    "glassboxSteps": [
+      {
+        "rule": "Recall",
+        "why": "Use definition from notes.",
+        "math": "The additive identity is ______."
+      },
+      {
+        "rule": "Fill",
+        "why": "Insert the missing term.",
+        "math": "0"
+      }
+    ],
+    "explanation": "Step 1 (Recall): Use definition from notes. → $The additive identity is ______.$ Step 2 (Fill): Insert the missing term. → $0$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-091",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "State whether the following statements are true (T) or false (F):\n\n(i) The value of  $ (-3)^{-2} $ is  $ \\frac{1}{-9} $\n\n(ii) For negative integers  $ m $ and  $ n $,  $ a^m \\times a^n = a^{m+n} (a \\neq 0) $\n\n(iii)\n\n(iii)  $ 3^{0} \\times 4^{0} = 12^{0} $\n\n(iv) The value of  $ 3^{7}-2^{7} $ is 17\n\n(v) Multiplicative inverse of  $ (-2)^{5} $ is  $ \\frac{1}{-32} $",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Analyse",
+        "why": "Test the statement against definition.",
+        "math": "State whether the following statements are true (T) or false (F):\n\n(i) The value of  $ (-3)^{-2} $ is  $ \\frac{1}{-9} $\n\n(ii) For negative integers  $ m $ and  $ n $,  $ a^m \\times a^n = a^{m+n} (a \\neq 0) $\n\n(iii)\n\n(iii)  $ 3^{0} \\times 4^{0} = 12^{0} $\n\n(iv) The value of  $ 3^{7}-2^{7} $ is 17\n\n(v) Multiplicative inverse of  $ (-2)^{5} $ is  $ \\frac{1}{-32} $"
+      },
+      {
+        "rule": "Verdict",
+        "why": "State true or false with reason.",
+        "math": "true"
+      }
+    ],
+    "explanation": "Step 1 (Analyse): Test the statement against definition. → $State whether the following statements are true (T) or false (F):\n\n(i) The value of  $ (-3)^{-2} $ is  $ \\frac{1}{-9} $\n\n(ii) For negative integers  $ m $ and  $ n $,  $ a^m \\times a^n = a^{m+n} (a \\neq 0) $\n\n(iii)\n\n(iii)  $ 3^{0} \\times 4^{0} = 12^{0} $\n\n(iv) The value of  $ 3^{7}-2^{7} $ is 17\n\n(v) Multiplicative inverse of  $ (-2)^{5} $ is  $ \\frac{1}{-32} $$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook"
+  },
+  {
+    "id": "Q-CH02-092",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Statement I: The value of  $ \\left(\\frac{-1}{2}\\right)^{-4} $ is 16.\n\nStatement II: $a^{-m} = \\frac{1}{a^{m}}$, where $a$ is any non-zero integer and $m$ is a positive integer.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Analyse",
+        "why": "Test the statement against definition.",
+        "math": "Statement I: The value of  $ \\left(\\frac{-1}{2}\\right)^{-4} $ is 16.\n\nStatement II: $a^{-m} = \\frac{1}{a^{m}}$, where $a$ is any non-zero integer and $m$ is a positive integer."
+      },
+      {
+        "rule": "Verdict",
+        "why": "State true or false with reason.",
+        "math": "true"
+      }
+    ],
+    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Statement I: The value of  $ \\left(\\frac{-1}{2}\\right)^{-4} $ is 16.\n\nStatement II: $a^{-m} = \\frac{1}{a^{m}}$, where $a$ is any non-zero integer and $m$ is a positive integer.$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook"
+  },
+  {
+    "id": "Q-CH02-093",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Statement I: The multiplicative inverse of 0 is 0.\n\nStatement II:  $ \\left(\\frac{p}{q}\\right)^{-m} = \\frac{q^{m}}{p^{m}} $, where p and q are non-zero integers and m is a positive integer.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Analyse",
+        "why": "Test the statement against definition.",
+        "math": "Statement I: The multiplicative inverse of 0 is 0.\n\nStatement II:  $ \\left(\\frac{p}{q}\\right)^{-m} = \\frac{q^{m}}{p^{m}} $, where p and q are non-zero integers and m is a positive integer."
+      },
+      {
+        "rule": "Verdict",
+        "why": "State true or false with reason.",
+        "math": "true"
+      }
+    ],
+    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Statement I: The multiplicative inverse of 0 is 0.\n\nStatement II:  $ \\left(\\frac{p}{q}\\right)^{-m} = \\frac{q^{m}}{p^{m}} $, where p and q are non-zero integers and m is a positive integer.$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook"
+  },
+  {
+    "id": "Q-CH02-094",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Statement I:  $ (a + b)^{-1}(a + b)(a^{-1} + b^{-1}) = \\frac{1}{a} + \\frac{1}{b} $, where a and b are non-zero rational numbers.\n\nStatement II:  $ a^{m} - a^{n} = a^{m-n} $, where a is a non-zero rational number and m, n are positive integers.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Analyse",
+        "why": "Test the statement against definition.",
+        "math": "Statement I:  $ (a + b)^{-1}(a + b)(a^{-1} + b^{-1}) = \\frac{1}{a} + \\frac{1}{b} $, where a and b are non-zero rational numbers.\n\nStatement II:  $ a^{m} - a^{n} = a^{m-n} $, where a is a non-zero rational number and m, n are positive integers."
+      },
+      {
+        "rule": "Verdict",
+        "why": "State true or false with reason.",
+        "math": "true"
+      }
+    ],
+    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Statement I:  $ (a + b)^{-1}(a + b)(a^{-1} + b^{-1}) = \\frac{1}{a} + \\frac{1}{b} $, where a and b are non-zero rational numbers.\n\nStatement II:  $ a^{m} - a^{n} = a^{m-n} $, where a is a non-zero rational number and m, n are positive integers.$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "textbook"
+  },
+  {
+    "id": "Q-CH02-095",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "Class 8 ICSE topic 'Exponents and Powers' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-096",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[52] Class 8 ICSE topic 'Exponents and Powers' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-097",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[62] Class 8 ICSE topic 'Exponents and Powers' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-098",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[72] Class 8 ICSE topic 'Exponents and Powers' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-099",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[82] Class 8 ICSE topic 'Exponents and Powers' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  },
+  {
+    "id": "Q-CH02-100",
+    "chapter": 2,
+    "topicId": "math-ch2",
+    "type": "true_false",
+    "subtopic": "Glassbox Question Bank",
+    "question": "[92] Class 8 ICSE topic 'Exponents and Powers' includes exam-style objective questions.",
+    "correctAnswer": "true",
+    "answer": "true",
+    "glassboxSteps": [
+      {
+        "rule": "Syllabus",
+        "why": "Aggarwal text covers this chapter.",
+        "math": "True."
+      }
+    ],
+    "explanation": "Step 1 (Syllabus): Aggarwal text covers this chapter. → $True.$",
+    "linked_note_id": "CH02-sec-exponents-and-powers",
+    "source": "generated"
+  }
+]

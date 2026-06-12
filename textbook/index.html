@@ -105,7 +105,10 @@ header{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:20p
 <script>
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
-let MANIFEST = null, CUR = null, CACHE = {}, QIDX = 0, REVEAL = 0;
+let MANIFEST = null, CUR = null, CACHE = {}, QIDX = 0, REVEAL = 0, LOAD_TOKEN = 0;
+
+function safeStr(v){ return v == null ? "" : String(v); }
+function texClean(v){ return safeStr(v).replace(/\$/g, ""); }
 
 /** Repo root e.g. https://drajays.github.io/math8/ — works with or without trailing slash on /textbook */
 function repoRoot(){
@@ -121,11 +124,32 @@ function appBase(){
   return location.origin + base;
 }
 function resolveUrl(path){
+  if (path == null || path === "") throw new Error("Missing asset path in manifest");
   if (/^https?:\/\//i.test(path)) return path;
-  const clean = path.replace(/^\.\.\//, "");
+  const clean = safeStr(path).replace(/^\.\.\//, "");
   if (clean.startsWith("data/")) return repoRoot() + clean;
   if (clean.startsWith("textbook/")) return repoRoot() + clean;
   return appBase() + clean.replace(/^\//, "");
+}
+
+function normQuestions(raw){
+  if (!Array.isArray(raw)) return [];
+  return raw.map(q => ({
+    ...q,
+    question: safeStr(q.question),
+    answer: q.answer == null ? "" : q.answer,
+    options: Array.isArray(q.options) ? q.options.map(o => safeStr(o)) : [],
+    glassboxSteps: Array.isArray(q.glassboxSteps) ? q.glassboxSteps.map(s => ({
+      rule: safeStr(s.rule || "Step"),
+      why: safeStr(s.why),
+      math: safeStr(s.math),
+    })) : [],
+  }));
+}
+
+function normOneWord(raw){
+  if (!Array.isArray(raw)) return [];
+  return raw.map(c => ({ ...c, term: safeStr(c.term), answer: safeStr(c.answer) }));
 }
 
 function esc(s){ return String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
@@ -137,7 +161,7 @@ function renderMath(el){
 }
 
 function mdToHtml(md){
-  let h = esc(md);
+  let h = esc(safeStr(md));
   h = h.replace(/^# (.+)$/gm,'<h1>$1</h1>').replace(/^## (.+)$/gm,'<h2>$1</h2>').replace(/^### (.+)$/gm,'<h3>$1</h3>');
   h = h.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/^---$/gm,'<hr>').replace(/\n/g,'<br>');
   h = h.replace(/\$([^$]+)\$/g,'<span class="math">$1</span>');
@@ -153,12 +177,23 @@ async function loadJson(url){
 
 async function loadChapter(ch){
   if(CACHE[ch.tag]) return CACHE[ch.tag];
-  const f = ch.files;
+  const f = ch.files || {};
+  const need = ["questions","facts","notes","mindmap","cheatsheet","oneword"];
+  for (const k of need){
+    if (!f[k]) throw new Error("Manifest missing files." + k + " for chapter " + ch.num);
+  }
   const [questions, facts, notes, mindmap, cheat, oneword] = await Promise.all([
     loadJson(f.questions), loadJson(f.facts), loadText(f.notes),
     loadText(f.mindmap), loadText(f.cheat), loadJson(f.oneword)
   ]);
-  CACHE[ch.tag] = {questions,facts,notes,mindmap,cheat,oneword};
+  CACHE[ch.tag] = {
+    questions: normQuestions(questions),
+    facts: Array.isArray(facts) ? facts : [],
+    notes: safeStr(notes),
+    mindmap: safeStr(mindmap),
+    cheat: safeStr(cheat),
+    oneword: normOneWord(oneword),
+  };
   return CACHE[ch.tag];
 }
 
@@ -174,54 +209,67 @@ function paintChapters(){
 }
 
 async function selectChapter(ch){
-  CUR = ch; paintChapters();
-  $('#ch-title').textContent = `Ch ${ch.num}: ${ch.title}`;
+  const token = ++LOAD_TOKEN;
+  CUR = ch; QIDX = 0;
+  paintChapters();
+  $("#ch-title").textContent = `Ch ${ch.num}: ${ch.title}`;
+  $("#notes").innerHTML = '<div class="empty">Loading…</div>';
   try {
     const data = await loadChapter(ch);
-    $('#notes').innerHTML = mdToHtml(data.notes);
-    $('#notes').classList.remove('empty');
-    $('#mindmap').textContent = data.mindmap; $('#mindmap').classList.remove('empty');
-    $('#cheat').textContent = data.cheat; $('#cheat').classList.remove('empty');
+    if (token !== LOAD_TOKEN) return;
+    $("#notes").innerHTML = mdToHtml(data.notes);
+    $("#notes").classList.remove("empty");
+    $("#mindmap").textContent = data.mindmap; $("#mindmap").classList.remove("empty");
+    $("#cheat").textContent = data.cheat; $("#cheat").classList.remove("empty");
     paintQuestions(data.questions);
     paintOneWord(data.oneword);
   } catch(e){
+    if (token !== LOAD_TOKEN) return;
     console.error(e);
-    $('#notes').innerHTML = `<div class="empty">Failed to load chapter data.<br><small>${esc(String(e.message||e))}</small></div>`;
+    $("#notes").innerHTML = `<div class="empty">Failed to load chapter data.<br><small>${esc(safeStr(e.message || e))}</small></div>`;
   }
 }
 
 function paintQuestions(qs){
+  if (!Array.isArray(qs) || !qs.length){
+    $("#q-list").innerHTML = "";
+    $("#glass-host").innerHTML = '<div class="empty">No questions in this chapter.</div>';
+    $("#q-meta").textContent = "0 questions";
+    return;
+  }
+  if (QIDX >= qs.length) QIDX = 0;
   const types = {mcq:0,fill_blank:0,true_false:0};
-  qs.forEach(q => types[q.type]++);
-  $('#q-meta').textContent = `${qs.length} questions · ${types.mcq} MCQ · ${types.fill_blank} fill · ${types.true_false} T/F`;
-  const list = $('#q-list'); list.innerHTML = '';
+  qs.forEach(q => types[q.type] = (types[q.type]||0)+1);
+  $("#q-meta").textContent = `${qs.length} questions · ${types.mcq||0} MCQ · ${types.fill_blank||0} fill · ${types.true_false||0} T/F`;
+  const list = $("#q-list"); list.innerHTML = "";
   qs.forEach((q,i) => {
-    const d = document.createElement('div');
-    d.className = 'q-item' + (i===QIDX?' active':'');
-    d.textContent = `${q.id} · ${q.type} · ${q.question.replace(/\$/g,'').slice(0,70)}…`;
+    const d = document.createElement("div");
+    d.className = "q-item" + (i===QIDX?" active":"");
+    d.textContent = `${q.id} · ${q.type} · ${texClean(q.question).slice(0,70)}${q.question.length>70?"…":""}`;
     d.onclick = () => { QIDX=i; paintQuestions(qs); showGlass(q); };
     list.appendChild(d);
   });
-  if(qs.length) showGlass(qs[QIDX]);
+  showGlass(qs[QIDX]);
 }
 
 function showGlass(q){
-  const host = $('#glass-host');
-  let opts = '';
-  if(q.type==='mcq' && q.options){
-    opts = '<ul>'+q.options.map((o,i)=>`<li>${i===q.correctOption?'✓ ':''}${esc(o.replace(/\$/g,''))}</li>`).join('')+'</ul>';
+  if (!q) return;
+  const host = $("#glass-host");
+  let opts = "";
+  if(q.type==="mcq" && q.options && q.options.length){
+    opts = "<ul>"+q.options.map((o,i)=>`<li>${i===q.correctOption?"✓ ":""}${esc(texClean(o))}</li>`).join("")+"</ul>";
   }
   host.innerHTML = `
-    <div class="problem">${esc(q.question.replace(/\$/g,''))}</div>
+    <div class="problem">${esc(texClean(q.question))}</div>
     ${opts}
     <ol class="steps" id="steps">${(q.glassboxSteps||[]).map((s,i)=>
-      `<li class="step" data-i="${i}"><span class="num">${i+1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math">${esc(s.math.replace(/\$/g,''))}</div></li>`
-    ).join('')}</ol>
+      `<li class="step" data-i="${i}"><span class="num">${i+1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math">${esc(texClean(s.math))}</div></li>`
+    ).join("")}</ol>
     <button class="btn" id="btn-next">Reveal next step ↓</button>
-    <div class="answer" id="ans" style="display:none">Answer: ${esc(String(q.answer||'').replace(/\$/g,''))}</div>
-    <div class="meta">Linked note: ${esc(q.linked_note_id||'—')}</div>`;
+    <div class="answer" id="ans" style="display:none">Answer: ${esc(texClean(q.answer))}</div>
+    <div class="meta">Linked note: ${esc(safeStr(q.linked_note_id))}</div>`;
   REVEAL = 0; applyReveal();
-  $('#btn-next').onclick = () => { REVEAL++; applyReveal(); };
+  $("#btn-next").onclick = () => { REVEAL++; applyReveal(); };
 }
 
 function applyReveal(){

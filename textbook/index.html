@@ -51,12 +51,15 @@ a{color:var(--blue)}
 .grid.sidebar-collapsed .sidebar-title{font-size:0;width:0;overflow:hidden}
 .grid.sidebar-collapsed .sidebar-head{flex-direction:column;justify-content:flex-start;padding:12px 6px;gap:10px;min-height:100px}
 .grid.sidebar-collapsed .sidebar-head::after{content:"Chapters";font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--on-dim);writing-mode:vertical-rl;transform:rotate(180deg);flex:1;display:flex;align-items:center;justify-content:center}
-.app-header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-bottom:10px;padding:12px 16px;background:var(--glass);border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--shadow);backdrop-filter:blur(12px);flex-shrink:0}
-.back{font-size:14px;color:var(--on-var);text-decoration:none;padding:6px 12px;border-radius:var(--pill);background:var(--surface);border:1px solid var(--border);transition:background .15s}
+.app-header{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-bottom:8px;padding:8px 12px;background:var(--glass);border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--shadow);backdrop-filter:blur(12px);flex-shrink:0}
+.wrap.practice-focus{padding:0}
+.wrap.practice-focus .app-header{display:none}
+.wrap.practice-focus .grid{gap:4px}
+.wrap.practice-focus #main-content-card{border-radius:var(--r)}
+.back{font-size:12px;color:var(--on-var);text-decoration:none;padding:4px 10px;border-radius:var(--pill);background:var(--surface);border:1px solid var(--border);transition:background .15s}
 .back:hover{background:var(--blue-soft)}
-.brand{font-family:var(--serif);font-weight:700;font-size:clamp(1.35rem,3vw,1.75rem);color:var(--crimson);flex:1;min-width:200px}
-.brand small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--on-dim);margin-top:4px;font-weight:500}
-
+.brand{font-family:var(--serif);font-weight:700;font-size:clamp(1.1rem,2.5vw,1.45rem);color:var(--crimson);flex:1;min-width:160px}
+.brand small{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:var(--on-dim);margin-top:2px;font-weight:500}
 /* —— Cards —— */
 .card{background:var(--glass);border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--shadow);backdrop-filter:blur(10px);overflow:hidden}
 .card-head{padding:14px 18px;border-bottom:1px solid var(--border);font-weight:700;display:flex;align-items:center;gap:8px;background:linear-gradient(90deg,rgba(99,102,241,.08),transparent)}
@@ -70,12 +73,14 @@ a{color:var(--blue)}
 .chap-btn.active{border-color:var(--ch-accent,#6366f1);background:var(--ch-soft,#eef2ff);box-shadow:0 2px 10px color-mix(in srgb,var(--ch-accent) 20%,transparent)}
 .chap-num{flex-shrink:0;width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--ch-accent,#6366f1),color-mix(in srgb,var(--ch-accent) 70%,#000));color:#fff;font-family:var(--mono);font-size:12px;font-weight:700;display:grid;place-items:center}
 .chap-label{font-weight:600;line-height:1.3;color:var(--on)}
-.card-head.ch-title-wrap{flex-shrink:0;font-family:var(--serif);font-size:1.05rem}
 .card>.content-layout{flex:1;min-height:0}
 
 /* —— Content + mode sidebar (right) —— */
 .content-layout{flex:1;display:grid;grid-template-columns:1fr var(--mode-w,210px);align-items:stretch;min-height:0;height:100%}
 .content-layout.mode-collapsed{--mode-w:52px}
+.content-layout.practice-focus{--mode-w:52px}
+.content-layout.practice-focus .content-main{padding:0;border-right:none}
+.content-layout.practice-focus .mode-sidebar{border-radius:var(--r)}
 .content-main{min-width:0;min-height:0;padding:12px 14px;border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden}
 .mode-sidebar{min-width:0;min-height:0;height:100%;background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(248,250,252,.9));display:flex;flex-direction:column}
 .mode-sidebar-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 14px;border-bottom:1px solid var(--border)}
@@ -123,7 +128,6 @@ a{color:var(--blue)}
 .panel-scroll{flex:1;min-height:0;max-height:none;overflow:auto;scroll-behavior:smooth;padding:2px 4px 2px 0;display:flex;flex-direction:column}
 .panel-scroll::-webkit-scrollbar{width:8px}
 .panel-scroll::-webkit-scrollbar-thumb{background:rgba(99,102,241,.3);border-radius:var(--pill)}
-#practice-scroll{flex:1;min-height:0}
 
 /* —— Shared panel heroes —— */
 #panel-notes.active{display:flex;flex-direction:column;min-height:0}
@@ -202,86 +206,17 @@ a{color:var(--blue)}
 .notes-md code,.note-section-body code{font-family:var(--mono);font-size:.88em;background:var(--bg);padding:2px 6px;border-radius:4px;color:var(--crimson)}
 .notes-md em{color:var(--on-var)}
 
-/* —— Practice panel —— */
-.practice-toolbar{margin-bottom:10px;flex-shrink:0}
-.practice-top-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px;flex-wrap:wrap}
-.practice-top-right{display:flex;align-items:center;gap:8px;margin-left:auto;flex-shrink:0;position:sticky;top:0;z-index:5;padding:4px 0}
-.scroll-jump-select{font-family:var(--mono);font-size:11px;font-weight:600;padding:8px 12px;border-radius:var(--r);border:1.5px solid var(--border);background:var(--surface);color:var(--on-var);max-width:160px;cursor:pointer}
-.scroll-jump-select:focus{outline:none;border-color:#e11d48;box-shadow:0 0 0 3px #ffe4e6}
-.practice-layout-tabs{display:flex;gap:4px;padding:4px;background:var(--bg);border-radius:var(--pill);border:1px solid var(--border);box-shadow:var(--shadow)}
-.practice-layout-tab{border:none;background:transparent;border-radius:var(--pill);padding:7px 12px;font-size:11px;font-weight:600;cursor:pointer;color:var(--on-var);font-family:var(--sans);transition:all .15s;white-space:nowrap}
-.practice-layout-tab:hover{background:var(--surface);color:var(--on)}
-.practice-layout-tab.active{background:linear-gradient(135deg,#e11d48,#be123c);color:#fff;box-shadow:0 2px 10px rgba(225,29,72,.22)}
-.practice-content-center{max-width:none;margin:0;width:100%;flex:1;min-height:0;display:flex;flex-direction:column}
-.practice-view[hidden]{display:none!important}
-.practice-view:not([hidden]){flex:1;min-height:0;display:flex;flex-direction:column}
-#practice-scroll-view{overflow:auto;flex:1;min-height:0}
-#practice-split-view .practice-q-row{flex-shrink:0}
-#practice-split-view .glass-workspace{flex:1;min-height:0;display:flex;flex-direction:column}
-.practice-q-row{margin-bottom:10px;flex-shrink:0}
-.q-list{display:flex;flex-direction:column;gap:6px;max-height:100px;overflow:auto;padding-right:4px;flex-shrink:0}
-.scroll-feed{display:flex;flex-direction:column;gap:24px;padding-bottom:20px}
-.scroll-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);scroll-margin-top:16px}
-.scroll-card-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px 16px;background:linear-gradient(90deg,#fff1f2,#fff);border-bottom:1px solid var(--border)}
-.glass-panel-head .q-id,.scroll-card-head .q-id{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--on-var)}
-.scroll-card-num{font-family:var(--mono);font-size:11px;font-weight:700;color:#e11d48;background:#ffe4e6;padding:4px 10px;border-radius:var(--pill);border:1px solid #fecdd3}
-.scroll-problem{padding:16px 18px;border-bottom:1px dashed var(--border)}
-.scroll-problem .problem{margin-bottom:0}
-.scroll-solution{padding:16px 18px 20px;background:linear-gradient(180deg,#f8fafc,#fff)}
-.scroll-solution-label{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--emerald);margin:0 0 14px;display:flex;align-items:center;gap:8px}
-.scroll-solution-label::after{content:"";flex:1;height:1px;background:var(--border)}
-.glass-workspace{min-width:0;flex:1;min-height:0;display:flex;flex-direction:column}
-.glass-panel{height:100%;display:flex;flex-direction:column;min-height:0}
-.glass-panel-body{flex:1;min-height:0;display:flex;flex-direction:column;padding:0}
-.glass-split{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border)}
-.glass-problem,.glass-solution{padding:16px 18px;overflow-y:auto;min-height:0;max-height:none}
-.glass-problem{background:linear-gradient(180deg,#fffbfb,#fff);border-right:1px solid var(--border)}
-.glass-solution{background:linear-gradient(180deg,#f8fafc,#fff)}
-.pane-label{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--on-dim);margin:0 0 12px;display:flex;align-items:center;gap:8px}
-.pane-label::after{content:"";flex:1;height:1px;background:var(--border)}
-.glass-problem .pane-label{color:#e11d48}
-.glass-solution .pane-label{color:var(--emerald)}
-.glass-solution-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
-.glass-solution-head .pane-label{margin:0;flex:1}
-.glass-mode-toggle{display:flex;align-items:center;gap:8px;font-family:var(--sans);font-size:12px;font-weight:600;color:var(--on-var);cursor:pointer;user-select:none;white-space:nowrap}
-.glass-mode-toggle input{accent-color:#e11d48;width:15px;height:15px;cursor:pointer}
-.glass-problem .problem{margin-bottom:12px}
-.glass-problem .opts{margin-bottom:0}
-.glass-solution .steps{margin-bottom:8px}
-@media(max-width:900px){
-  .glass-split{grid-template-columns:1fr}
-  .glass-problem{border-right:none;border-bottom:1px solid var(--border);max-height:none}
-  .glass-solution{max-height:none}
-}
-@media(max-width:640px){
-  .practice-top-row{flex-direction:column;align-items:stretch}
-  .practice-top-right{margin-left:0;justify-content:flex-end;width:100%}
-  .scroll-jump-select{max-width:none;flex:1}
-}
-.q-search{width:100%;font-family:var(--mono);font-size:13px;padding:9px 12px;border-radius:var(--r);border:1.5px solid var(--border);background:var(--surface)}
-.q-toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;margin-bottom:0}
-.q-toolbar .q-search{flex:1;min-width:160px}
-.q-stats{font-family:var(--mono);font-size:10px;color:var(--on-var);background:var(--bg);padding:6px 10px;border-radius:var(--r);line-height:1.45;max-width:min(100%,520px)}
-.q-search:focus{outline:none;border-color:#e11d48;box-shadow:0 0 0 3px #ffe4e6}
-.q-filters{display:flex;flex-wrap:wrap;gap:5px}
-.q-chip{border:1.5px solid var(--border);background:var(--surface);border-radius:var(--pill);padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;font-family:var(--mono);transition:all .12s}
-.q-chip:hover{border-color:#e11d48}
-.q-chip.active{background:linear-gradient(135deg,#e11d48,#be123c);color:#fff;border-color:transparent}
-.q-item{padding:9px 11px;border:1.5px solid var(--border);border-radius:var(--r);cursor:pointer;background:var(--surface);transition:all .12s}
-.q-item:hover{border-color:var(--blue);box-shadow:0 2px 8px rgba(29,111,165,.1)}
-.q-item.active{border-color:#e11d48;background:linear-gradient(90deg,#fff1f2,#fff);box-shadow:0 2px 10px rgba(225,29,72,.12)}
-.q-item .q-meta{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:4px}
-.q-item .q-id{font-family:var(--mono);font-size:9px;color:var(--on-dim);background:var(--bg);padding:2px 6px;border-radius:4px}
-.q-item .q-type{font-family:var(--mono);font-size:9px;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:4px}
-.q-item .q-type.mcq{background:var(--blue-soft);color:var(--blue)}
-.q-item .q-type.fill_blank{background:var(--emerald-soft);color:var(--emerald)}
-.q-item .q-type.true_false{background:#fff3e0;color:#b45309}
-.q-item .q-type.practice{background:#f3e8ff;color:#7c3aed}
-.q-item .q-source{font-family:var(--mono);font-size:8px;color:var(--on-dim);background:#faf5ff;padding:2px 6px;border-radius:4px;border:1px solid #e9d5ff}
-.q-item .q-hots{font-family:var(--mono);font-size:8px;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:#fff7ed;color:#c2410c;border:1px solid #fed7aa}
-.q-item .q-preview{font-family:var(--serif);font-size:13px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.q-chip.hots{border-color:#fdba74}
-.q-chip.hots.active{background:linear-gradient(135deg,#ea580c,#c2410c);color:#fff;border-color:transparent}
+/* —— Practice panel (notes-style reader) —— */
+#panel-practice.active{display:flex;flex-direction:column;min-height:0;padding:0}
+#panel-practice .panel-scroll{padding:0}
+.practice-md{font-size:16px;flex:1;min-height:0;max-height:none;overflow:auto;padding:0;scroll-behavior:smooth}
+.practice-md::-webkit-scrollbar{width:8px}
+.practice-md::-webkit-scrollbar-thumb{background:rgba(225,29,72,.35);border-radius:var(--pill)}
+.practice-block{padding:24px clamp(16px,3vw,32px) 36px;border-bottom:1px solid var(--border);scroll-margin-top:4px}
+.practice-block:last-child{border-bottom:none;padding-bottom:48px}
+.practice-problem{font-family:var(--serif);font-size:17px;line-height:1.72;color:var(--on);margin-bottom:24px}
+.practice-problem .problem{margin-bottom:14px}
+.practice-solution .steps{margin-bottom:14px}
 
 .glass-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow)}
 .glass-panel-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px 16px;background:linear-gradient(90deg,#fff1f2,#fff);border-bottom:1px solid var(--border)}
@@ -420,42 +355,11 @@ sup.msup,sub.msub{font-family:inherit}
       </div>
     </aside>
     <div class="card" id="main-content-card">
-      <div class="card-head ch-title-wrap"><span id="ch-title">Select a chapter</span></div>
       <div class="content-layout" id="content-layout">
         <div class="content-main">
         <div class="panel active" id="panel-notes"><div class="panel-scroll notes-md empty" id="notes">Pick a chapter.</div></div>
         <div class="panel" id="panel-practice">
-          <div class="panel-scroll" id="practice-scroll">
-            <div id="practice-hero"></div>
-            <div class="practice-toolbar">
-              <div class="practice-top-row">
-                <div class="q-stats" id="q-meta">Select a chapter to practice.</div>
-                <div class="practice-top-right">
-                  <button type="button" id="restore-hidden-btn" class="restore-hidden-btn" hidden>Restore hidden</button>
-                  <select id="scroll-jump-select" class="scroll-jump-select" hidden aria-label="Jump to question">
-                    <option value="">Jump to…</option>
-                  </select>
-                  <div class="practice-layout-tabs" id="practice-layout-tabs" role="tablist" aria-label="Practice layout">
-                    <button type="button" class="practice-layout-tab active" data-layout="scroll" role="tab" aria-selected="true">📜 Scroll</button>
-                    <button type="button" class="practice-layout-tab" data-layout="split" role="tab" aria-selected="false">↔ Split</button>
-                  </div>
-                </div>
-              </div>
-              <div class="q-toolbar">
-                <input class="q-search" id="q-search" type="search" placeholder="Search questions…" autocomplete="off">
-                <div class="q-filters" id="q-filters"></div>
-              </div>
-            </div>
-            <div class="practice-content-center">
-            <div id="practice-split-view" class="practice-view">
-              <div class="practice-q-row"><div class="q-list" id="q-list"></div></div>
-              <main class="glass-workspace" id="glass-host"><div class="empty-state">Select a question for glass-box derivation.</div></main>
-            </div>
-            <div id="practice-scroll-view" class="practice-view" hidden>
-              <div class="scroll-feed" id="scroll-feed"></div>
-            </div>
-            </div>
-          </div>
+          <div class="panel-scroll practice-md empty" id="practice-feed">Pick a chapter.</div>
         </div>
         <div class="panel" id="panel-mindmap"><div class="panel-scroll mindmap empty" id="mindmap"></div></div>
         <div class="panel" id="panel-cheat"><div class="panel-scroll cheat empty" id="cheat"></div></div>
@@ -534,10 +438,8 @@ sup.msup,sub.msub{font-family:inherit}
 <script>
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
-let MANIFEST = null, CUR = null, CACHE = {}, QIDX = 0, REVEAL = 0, LOAD_TOKEN = 0;
-let CUR_QUESTIONS = [], Q_FILTER = "all", Q_SEARCH = "", Q_SOURCE = "all";
-let GLASS_STEP_MODE = false;
-let PRACTICE_LAYOUT = "scroll";
+let MANIFEST = null, CUR = null, CACHE = {}, LOAD_TOKEN = 0;
+let CUR_QUESTIONS = [];
 let EDIT_QID = null;
 const OVERRIDE_KEY = "math8-question-overrides";
 const BATCH_COUNT = 10;
@@ -649,7 +551,6 @@ function getOverrides(){
 
 function saveOverrides(o){
   try { localStorage.setItem(OVERRIDE_KEY, JSON.stringify(o)); } catch(e){}
-  updateRestoreButton();
 }
 
 function applyQuestionOverrides(qs){
@@ -683,17 +584,7 @@ function refreshQuestionsFromCache(){
   const data = CACHE[CUR.tag];
   data.questions = applyQuestionOverrides(data.rawQuestions);
   CUR_QUESTIONS = data.questions;
-  updateRestoreButton();
-  paintQuestionFilters(CUR_QUESTIONS);
   paintQuestions(CUR_QUESTIONS);
-}
-
-function updateRestoreButton(){
-  const btn = $("#restore-hidden-btn");
-  if (!btn) return;
-  const n = (getOverrides().deleted || []).length;
-  btn.hidden = !n;
-  btn.textContent = n ? `Restore ${n} hidden` : "Restore hidden";
 }
 
 function questionAdminBarHtml(q){
@@ -809,7 +700,7 @@ function saveEditModal(){
 function wireQuestionAdmin(){
   if (wireQuestionAdmin._done) return;
   wireQuestionAdmin._done = true;
-  $("#practice-content-center")?.addEventListener("click", e => {
+  $("#practice-feed")?.addEventListener("click", e => {
     const editBtn = e.target.closest("[data-edit-q]");
     const delBtn = e.target.closest("[data-delete-q]");
     if (editBtn) { e.preventDefault(); e.stopPropagation(); openEditModal(editBtn.dataset.editQ); return; }
@@ -825,7 +716,6 @@ function wireQuestionAdmin(){
     paintEditSteps(steps);
   });
   $("#q-edit-overlay")?.addEventListener("click", e => { if (e.target.id === "q-edit-overlay") closeEditModal(); });
-  $("#restore-hidden-btn")?.addEventListener("click", restoreAllHidden);
   document.addEventListener("keydown", e => {
     if (e.key === "Escape" && !$("#q-edit-overlay")?.hidden) closeEditModal();
   });
@@ -907,9 +797,8 @@ function paintChapters(){
 
 async function selectChapter(ch){
   const token = ++LOAD_TOKEN;
-  CUR = ch; QIDX = 0;
+  CUR = ch;
   paintChapters();
-  $("#ch-title").textContent = chapterLabel(ch);
   $("#notes").innerHTML = '<div class="empty-state">Loading…</div>';
   try {
     const data = await loadChapter(ch);
@@ -923,20 +812,9 @@ async function selectChapter(ch){
     $("#mindmap").classList.remove("empty");
     $("#cheat").innerHTML = cheatSheetHtml(data.cheat);
     $("#cheat").classList.remove("empty");
-    paintPanelHero("#practice-hero", "practice", data.questions.length + " questions", chapterLabel(ch),
-      (() => {
-        const hots = data.questions.filter(isHotsQuestion).length;
-        const gem = data.batchCount || 0;
-        if (!gem) return null;
-        let sub = data.baseCount + " textbook + " + gem + " Gemini";
-        if (hots) sub += " · " + hots + " Advanced HOTS";
-        return sub;
-      })());
     paintPanelHero("#oneword-hero", "oneword", data.oneword.length + " cards", chapterLabel(ch), null);
+    syncPracticeSideTools(getActiveTab());
     CUR_QUESTIONS = data.questions;
-    Q_FILTER = "all"; Q_SEARCH = "";
-    if ($("#q-search")) $("#q-search").value = "";
-    paintQuestionFilters(data.questions);
     paintQuestions(data.questions);
     paintOneWord(data.oneword);
   } catch(e){
@@ -946,112 +824,54 @@ async function selectChapter(ch){
   }
 }
 
-function filteredQuestions(qs){
-  const q = Q_SEARCH.trim().toLowerCase();
-  return qs.filter(item => {
-    if (Q_FILTER !== "all" && item.type !== Q_FILTER) return false;
-    if (Q_SOURCE === "textbook" && String(item.source || "").startsWith("gemini")) return false;
-    if (Q_SOURCE === "gemini" && !String(item.source || "").startsWith("gemini")) return false;
-    if (Q_SOURCE === "hots" && !isHotsQuestion(item)) return false;
-    if (!q) return true;
-    const hay = (item.id + " " + cleanQuestionText(item.question) + " " + safeStr(item.subtopic)).toLowerCase();
-    return hay.includes(q);
-  });
-}
-
 function isHotsQuestion(q){
   return safeStr(q.subtopic).includes("Advanced HOTS") || Number(q.batch) >= 9;
 }
 
-function paintQuestionFilters(qs){
-  const root = $("#q-filters");
-  if (!root) return;
-  const counts = { all: qs.length, mcq: 0, fill_blank: 0, true_false: 0, practice: 0 };
-  const src = { all: qs.length, textbook: 0, gemini: 0, hots: 0 };
-  qs.forEach(q => {
-    if (counts[q.type] != null) counts[q.type]++;
-    if (String(q.source || "").startsWith("gemini")) src.gemini++;
-    else src.textbook++;
-    if (isHotsQuestion(q)) src.hots++;
-  });
-  root.innerHTML = "";
-  ["all", "mcq", "fill_blank", "true_false", "practice"].forEach(key => {
-    if (key !== "all" && !counts[key]) return;
-    const b = document.createElement("button");
-    b.className = "q-chip" + (Q_FILTER === key ? " active" : "");
-    b.textContent = (key === "all" ? "All types" : TYPE_LABEL[key]) + " (" + counts[key] + ")";
-    b.onclick = () => { Q_FILTER = key; Q_SOURCE = "all"; QIDX = 0; paintQuestions(CUR_QUESTIONS); };
-    root.appendChild(b);
-  });
-  ["all", "textbook", "gemini", "hots"].forEach(key => {
-    if (key !== "all" && !src[key]) return;
-    const b = document.createElement("button");
-    const labels = { all: "All sources", textbook: "Textbook", gemini: "Gemini batches", hots: "Advanced HOTS" };
-    b.className = "q-chip q-chip-src" + (key === "hots" ? " hots" : "") + (Q_SOURCE === key ? " active" : "");
-    b.textContent = labels[key] + " (" + src[key] + ")";
-    b.onclick = () => { Q_SOURCE = key; QIDX = 0; paintQuestions(CUR_QUESTIONS); };
-    root.appendChild(b);
-  });
-}
-
 function paintQuestions(qs){
+  const feed = $("#practice-feed");
+  const practiceLabel = $('.mode-tab[data-tab="practice"] .mode-tab-label');
+  if (practiceLabel) practiceLabel.textContent = qs?.length ? `Practice (${qs.length})` : "Practice";
+  if (!feed) return;
   if (!Array.isArray(qs) || !qs.length){
-    $("#q-list").innerHTML = "";
-    $("#glass-host").innerHTML = '<div class="empty-state">No questions in this chapter.</div>';
-    $("#scroll-feed").innerHTML = '<div class="empty-state">No questions in this chapter.</div>';
-    const js = $("#scroll-jump-select"); if (js) { js.hidden = true; js.innerHTML = '<option value="">Jump to…</option>'; }
-    $("#q-meta").textContent = "0 questions";
+    feed.innerHTML = '<div class="empty-state">No questions in this chapter.</div>';
+    feed.classList.add("empty");
     return;
   }
-  const visible = filteredQuestions(qs);
-  if (!visible.length){
-    $("#q-list").innerHTML = '<div class="empty-state">No questions match your filter.</div>';
-    $("#glass-host").innerHTML = '<div class="empty-state">Adjust search or filter.</div>';
-    $("#scroll-feed").innerHTML = '<div class="empty-state">No questions match your filter.</div>';
-    const js = $("#scroll-jump-select"); if (js) { js.hidden = true; js.innerHTML = '<option value="">Jump to…</option>'; }
-    $("#q-meta").textContent = `0 of ${qs.length} shown`;
-    return;
-  }
-  if (!visible.find(q => qs.indexOf(q) === QIDX)) QIDX = qs.indexOf(visible[0]);
-  const types = { mcq: 0, fill_blank: 0, true_false: 0, practice: 0 };
-  qs.forEach(q => types[q.type] = (types[q.type] || 0) + 1);
-  const batchN = qs.filter(q => String(q.source || "").startsWith("gemini")).length;
-  const hotsN = qs.filter(isHotsQuestion).length;
-  let meta = `${visible.length} of ${qs.length} questions`;
-  if (batchN) meta += ` · ${batchN} Gemini`;
-  if (hotsN) meta += ` · ${hotsN} HOTS`;
-  $("#q-meta").textContent = meta;
-  updateRestoreButton();
-  applyPracticeLayoutVisibility();
-  if (PRACTICE_LAYOUT === "scroll") {
-    paintScrollFeed(qs, visible);
-    return;
-  }
-  paintSplitQuestionList(qs, visible);
-  showGlass(qs[QIDX]);
+  feed.classList.remove("empty");
+  paintPracticeFeed(qs);
 }
 
-function applyPracticeLayoutVisibility(){
-  const split = $("#practice-split-view");
-  const scroll = $("#practice-scroll-view");
-  const jumpSel = $("#scroll-jump-select");
-  if (split) split.hidden = PRACTICE_LAYOUT !== "split";
-  if (scroll) scroll.hidden = PRACTICE_LAYOUT !== "scroll";
-  if (jumpSel) jumpSel.hidden = PRACTICE_LAYOUT !== "scroll";
-  $$(".practice-layout-tab").forEach(t => {
-    const on = t.dataset.layout === PRACTICE_LAYOUT;
-    t.classList.toggle("active", on);
-    t.setAttribute("aria-selected", on ? "true" : "false");
-  });
+function getActiveTab(){
+  const t = $('.mode-tab.tab.active');
+  return t ? t.dataset.tab : "notes";
 }
 
-function questionHeadBadges(q){
-  const isGem = String(q.source || "").startsWith("gemini");
-  const isHots = isHotsQuestion(q);
-  return `<span class="q-id">${esc(q.id)}</span>
-    <span class="q-type ${esc(q.type)}">${esc(TYPE_LABEL[q.type] || q.type)}</span>
-    ${isHots ? `<span class="q-hots">Advanced HOTS</span>` : ""}
-    ${isGem ? `<span class="q-batch">Gemini · Batch ${esc(String(q.batch || ""))} · ${esc(safeStr(q.localLabel || ""))}</span>` : ""}`;
+let MODE_SIDEBAR_BEFORE_PRACTICE = null;
+let CHAPTER_SIDEBAR_BEFORE_PRACTICE = null;
+
+function syncPracticeSideTools(tab){
+  const on = tab === "practice";
+  $("#main-content-card")?.classList.toggle("practice-focus", on);
+  $("#content-layout")?.classList.toggle("practice-focus", on);
+  $(".wrap")?.classList.toggle("practice-focus", on);
+  if (on) {
+    if (CHAPTER_SIDEBAR_BEFORE_PRACTICE === null)
+      CHAPTER_SIDEBAR_BEFORE_PRACTICE = $("#app-grid")?.classList.contains("sidebar-collapsed") ?? false;
+    if (MODE_SIDEBAR_BEFORE_PRACTICE === null)
+      MODE_SIDEBAR_BEFORE_PRACTICE = $("#content-layout")?.classList.contains("mode-collapsed") ?? false;
+    setSidebarCollapsed(true);
+    setModeSidebarCollapsed(true);
+  } else {
+    if (CHAPTER_SIDEBAR_BEFORE_PRACTICE !== null) {
+      setSidebarCollapsed(CHAPTER_SIDEBAR_BEFORE_PRACTICE);
+      CHAPTER_SIDEBAR_BEFORE_PRACTICE = null;
+    }
+    if (MODE_SIDEBAR_BEFORE_PRACTICE !== null) {
+      setModeSidebarCollapsed(MODE_SIDEBAR_BEFORE_PRACTICE);
+      MODE_SIDEBAR_BEFORE_PRACTICE = null;
+    }
+  }
 }
 
 function questionOptsHtml(q){
@@ -1070,137 +890,19 @@ function questionBodyHtml(q){
   return `<div class="problem"><div class="mathline">${splitRenderTex(cleanQuestionText(q.question))}</div>${diagram}</div>${questionOptsHtml(q)}`;
 }
 
-function solutionStepsHtml(q, idPrefix){
-  return `<ol class="steps" id="${idPrefix}-steps">${(q.glassboxSteps || []).map((s, i) =>
-    `<li class="step" data-i="${i}"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math mathline">${splitRenderTex(s.math)}</div></li>`
-  ).join("")}</ol>
-  <button class="btn" id="${idPrefix}-btn-next">Reveal next step ↓</button>
-  <div class="answer" id="${idPrefix}-ans"><span class="mathline">Answer: ${splitRenderTex(q.answer)}</span></div>
-  <div class="glass-link">Linked note: ${esc(safeStr(q.linked_note_id))}</div>`;
-}
-
-function paintSplitQuestionList(qs, visible){
-  const list = $("#q-list"); list.innerHTML = "";
-  visible.forEach(q => {
-    const i = qs.indexOf(q);
-    const d = document.createElement("div");
-    d.className = "q-item" + (i === QIDX ? " active" : "");
-    const isGem = String(q.source || "").startsWith("gemini");
-    const isHots = isHotsQuestion(q);
-    d.innerHTML = `<div class="q-item-head"><div class="q-meta">
-        <span class="q-id">${esc(q.id)}</span>
-        <span class="q-type ${esc(q.type)}">${esc(TYPE_LABEL[q.type] || q.type)}</span>
-        ${isHots ? `<span class="q-hots">HOTS</span>` : ""}
-        ${isGem ? `<span class="q-source">Batch ${q.batch || ""}</span>` : ""}
-      </div>${questionAdminBarHtml(q)}</div>
-      <div class="q-preview">${splitRenderTex(cleanQuestionText(q.question))}</div>`;
-    d.onclick = () => { QIDX = i; paintSplitQuestionList(qs, visible); showGlass(q); };
-    list.appendChild(d);
-  });
-}
-
-function paintScrollFeed(qs, visible){
-  const feed = $("#scroll-feed");
-  const jumpSel = $("#scroll-jump-select");
+function paintPracticeFeed(qs){
+  const feed = $("#practice-feed");
   if (!feed) return;
-  if (jumpSel) {
-    jumpSel.hidden = !visible.length;
-    jumpSel.innerHTML = '<option value="">Jump to…</option>' +
-      visible.map((q, n) => {
-        const label = safeStr(q.localLabel) || safeStr(q.id) || `Q${n + 1}`;
-        return `<option value="scroll-${esc(q.id)}">${esc(label)}</option>`;
-      }).join("");
-    jumpSel.onchange = () => {
-      if (!jumpSel.value) return;
-      const el = document.getElementById(jumpSel.value);
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-      jumpSel.value = "";
-    };
-  }
-  feed.innerHTML = visible.map((q, n) => {
-    const label = safeStr(q.localLabel) || `Q${n + 1}`;
-    return `<article class="scroll-card" id="scroll-${esc(q.id)}">
-      <header class="scroll-card-head">
-        <div class="scroll-card-head-main">
-          <span class="scroll-card-num">${esc(label)}</span>
-          ${questionHeadBadges(q)}
-        </div>
-        ${questionAdminBarHtml(q)}
-      </header>
-      <section class="scroll-problem">
-        <h3 class="pane-label">Problem</h3>
-        ${questionBodyHtml(q)}
-      </section>
-      <section class="scroll-solution">
-        <h3 class="scroll-solution-label">Glass-box solution</h3>
+  feed.innerHTML = qs.map(q => `<article class="practice-block" id="scroll-${esc(q.id)}">
+      <div class="practice-problem">${questionBodyHtml(q)}</div>
+      <div class="practice-solution">
         <ol class="steps">${(q.glassboxSteps || []).map((s, i) =>
           `<li class="step"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math mathline">${splitRenderTex(s.math)}</div></li>`
         ).join("")}</ol>
-        <div class="answer"><span class="mathline">Answer: ${splitRenderTex(q.answer)}</span></div>
-        <div class="glass-link">Linked note: ${esc(safeStr(q.linked_note_id))}</div>
-      </section>
-    </article>`;
-  }).join("");
-}
-
-function showGlass(q){
-  if (!q) return;
-  const host = $("#glass-host");
-  host.innerHTML = `
-    <div class="glass-panel">
-      <div class="glass-panel-head">
-        <div class="glass-panel-head-main">${questionHeadBadges(q)}</div>
-        ${questionAdminBarHtml(q)}
+        <div class="answer"><span class="mathline">${splitRenderTex(q.answer)}</span></div>
       </div>
-      <div class="glass-panel-body">
-        <div class="glass-split">
-          <div class="glass-problem">
-            <h3 class="pane-label">Problem</h3>
-            ${questionBodyHtml(q)}
-          </div>
-          <div class="glass-solution">
-            <div class="glass-solution-head">
-              <h3 class="pane-label">Glass-box solution</h3>
-              <label class="glass-mode-toggle" title="When off, all steps and the answer are shown">
-                <input type="checkbox" id="glass-step-mode"> Step-by-step reveal
-              </label>
-            </div>
-            ${solutionStepsHtml(q, "glass")}
-          </div>
-        </div>
-      </div>
-    </div>`;
-  REVEAL = 0;
-  wireGlassModeToggle();
-  applyReveal();
-  $("#glass-btn-next")?.addEventListener("click", () => { REVEAL++; applyReveal(); });
-}
-
-function wireGlassModeToggle(){
-  const cb = $("#glass-step-mode");
-  if (!cb) return;
-  cb.checked = GLASS_STEP_MODE;
-  cb.onchange = () => {
-    GLASS_STEP_MODE = cb.checked;
-    REVEAL = 0;
-    try { localStorage.setItem("math8-glass-step-mode", GLASS_STEP_MODE ? "1" : "0"); } catch(e){}
-    applyReveal();
-  };
-}
-
-function applyReveal(){
-  const steps = $$('#glass-steps .step');
-  const ans = $('#glass-ans');
-  const btn = $('#glass-btn-next');
-  if (!GLASS_STEP_MODE) {
-    steps.forEach(s => s.classList.remove('pending'));
-    if (ans) ans.style.display = 'block';
-    if (btn) btn.style.display = 'none';
-    return;
-  }
-  steps.forEach((s,i)=> s.classList.toggle('pending', i>REVEAL));
-  if (ans) ans.style.display = REVEAL >= Math.max(0, steps.length - 1) ? 'block' : 'none';
-  if (btn) btn.style.display = REVEAL >= Math.max(0, steps.length - 1) ? 'none' : 'inline-block';
+    </article>`).join("");
+  feed.scrollTop = 0;
 }
 
 function paintOneWord(cards){
@@ -1224,24 +926,7 @@ function paintOneWord(cards){
   rev.textContent = 'Tap a card to reveal the answer.';
 }
 
-$("#q-search")?.addEventListener("input", e => {
-  Q_SEARCH = e.target.value;
-  QIDX = 0;
-  if (CUR_QUESTIONS.length) paintQuestions(CUR_QUESTIONS);
-});
-
-$$("#practice-layout-tabs .practice-layout-tab").forEach(t => {
-  t.onclick = () => {
-    PRACTICE_LAYOUT = t.dataset.layout === "scroll" ? "scroll" : "split";
-    try { localStorage.setItem("math8-practice-layout", PRACTICE_LAYOUT); } catch(e){}
-    if (CUR_QUESTIONS.length) paintQuestions(CUR_QUESTIONS);
-  };
-});
-
 $$('#tabs .tab').forEach(t => t.onclick = () => {
-  if ($('#content-layout')?.classList.contains('mode-collapsed')) {
-    setModeSidebarCollapsed(false);
-  }
   $$('#tabs .tab').forEach(x => {
     x.classList.remove('active');
     x.setAttribute('aria-selected', 'false');
@@ -1250,6 +935,7 @@ $$('#tabs .tab').forEach(t => t.onclick = () => {
   t.setAttribute('aria-selected', 'true');
   $$('.panel').forEach(p=>p.classList.remove('active'));
   $('#panel-'+t.dataset.tab).classList.add('active');
+  syncPracticeSideTools(t.dataset.tab);
 });
 
 function setModeSidebarCollapsed(collapsed){
@@ -1292,13 +978,8 @@ $('#sidebar-toggle')?.addEventListener('click', () => {
     if (saved === '1') setSidebarCollapsed(true);
     const modeSaved = localStorage.getItem('math8-mode-sidebar-collapsed');
     if (modeSaved === '1') setModeSidebarCollapsed(true);
-    const glassMode = localStorage.getItem('math8-glass-step-mode');
-    if (glassMode === '1') GLASS_STEP_MODE = true;
-    const savedLayout = localStorage.getItem('math8-practice-layout');
-    if (savedLayout === 'scroll' || savedLayout === 'split') PRACTICE_LAYOUT = savedLayout;
-    applyPracticeLayoutVisibility();
-    updateRestoreButton();
     wireQuestionAdmin();
+    syncPracticeSideTools(getActiveTab());
     MANIFEST = await loadJson("manifest.json?v=5");
     paintChapters();
     if(MANIFEST.chapters.length) selectChapter(MANIFEST.chapters[0]);

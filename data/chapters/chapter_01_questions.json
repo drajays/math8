@@ -5,7 +5,7 @@
     "topicId": "math-ch1",
     "type": "mcq",
     "subtopic": "Glassbox Question Bank",
-    "question": "Additive inverse of  $ \\frac{-2}{-5} $ is",
+    "question": "Additive inverse of  $ \\frac{-2}{5} $ is",
     "options": [
       "$ \\frac{2}{5} $",
       "$ \\frac{5}{2} $",
@@ -23,7 +23,7 @@
       {
         "rule": "Method",
         "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "math": "\\text{The additive inverse of a number is the value you must add to it to get a sum of 0.}"
       },
       {
         "rule": "Result",

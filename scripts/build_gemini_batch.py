@@ -24,6 +24,8 @@ NOTE_BY_CH = {
     13: "CH13-sec-quadrilateral",
     14: "CH14-sec-construction-of-quadrilaterals",
     18: "CH18-sec-drawing-2-d-representation-of-3-d-objects",
+    19: "CH19-sec-area-and-perimeter-of-some-plane-figures",
+    20: "CH20-sec-data-handling",
 }
 
 TOPIC_BY_CH = {n: f"math-ch{n}" for n in range(1, 21)}
@@ -33,10 +35,10 @@ def step(rule, why, math):
     return {"rule": rule, "why": why, "math": math}
 
 
-def mk_q(batch, global_num, chapter, question, answer, steps, *, local_label=None, linked_note_id=None):
+def mk_q(batch, global_num, chapter, question, answer, steps, *, local_label=None, linked_note_id=None, diagram=None):
     bnum = global_num - (batch - 1) * 50
     lid = f"Q-GEM-B{batch:02d}-{global_num:03d}"
-    return {
+    out = {
         "id": lid,
         "chapter": chapter,
         "batch": batch,
@@ -53,6 +55,9 @@ def mk_q(batch, global_num, chapter, question, answer, steps, *, local_label=Non
         "linked_note_id": linked_note_id or NOTE_BY_CH.get(chapter, f"CH{chapter:02d}-sec-introduction"),
         "source": f"gemini-batch-{batch:02d}",
     }
+    if diagram:
+        out["diagram"] = diagram
+    return out
 
 
 def batch_01():
@@ -1121,7 +1126,169 @@ def batch_06():
     return qs
 
 
-BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03, 4: batch_04, 5: batch_05, 6: batch_06}
+def batch_07():
+    B = 7
+    qs = []
+    N18D = "CH18-sec-drawing-2-d-representation-of-3-d-objects"
+    N18P = "CH18-sec-polyhedron"
+    N19A = "CH19-sec-area-and-perimeter-of-some-plane-figures"
+    N19V = "CH19-sec-volume-and-capacity"
+    N20D = "CH20-sec-data-handling"
+    N20G = "CH20-sec-represent-the-above-data-by-a-double-bar-graph"
+
+    def put(gn, ch, qu, ans, st, label, nid, diagram=None):
+        qs.append(mk_q(B, gn, ch, qu, ans, st, local_label=label, linked_note_id=nid, diagram=diagram))
+
+    # Ch18 wrap-up (301-304)
+    put(301, 18, "Draw the net of a cone with radius $3$ cm and height $4$ cm.", "Circle + sector; slant $5$ cm",
+        [step("Base", "Circle $r=3$ cm.", "Flat base"),
+         step("Sector", "$3^2+4^2=25$, slant $=5$ cm.", "Pizza-slice net")], "Ch18-Q9", N18D, "cone-net")
+    put(302, 18, "Vertices, edges, faces of a hexagonal pyramid?", "$7$ faces, $7$ vertices, $12$ edges",
+        [step("Faces", "1 hex base + 6 triangles.", "$F=7$"),
+         step("Count", "$V=7$, $E=12$.", "Euler: $7+7=12+2$")], "Ch18-Q10", N18P, "hex-pyramid")
+    put(303, 18, "Isometric view of cuboid $4\\times 3\\times 2$ units.", "See diagram",
+        [step("Start", "Pick dot; draw $4$ and $3$ isometric axes.", "Height $2$"),
+         step("Close", "Parallel lines complete box.", "Isometric cuboid")], "Ch18-Q11", N18D, "isometric-cuboid-4x3x2")
+    put(304, 18, "Verify Euler's formula for a square pyramid.", "Verified: $10=10$",
+        [step("Count", "$F=5,V=5,E=8$.", "Square base + 4 triangles"),
+         step("Formula", "$5+5=8+2$.", "Verified")], "Ch18-Q12", N18P, "square-pyramid")
+
+    # Ch19 area (305-324)
+    area = [
+        (305, "Trapezium: parallel sides $25$ cm, $13$ cm; height $8$ cm.", "$152$ cm²", "trapezium-area"),
+        (306, "Trapezium area $480$ cm²; height $15$ cm. Sum of parallel sides?", "$64$ cm", None),
+        (307, "Regular hexagon side $6$ cm.", "$54\\sqrt{3}$ cm² ($\\approx 93.53$)", "regular-hexagon"),
+        (308, "Parallel sides ratio $3:5$, height $12$ cm, area $480$ cm².", "$30$ cm and $50$ cm", None),
+        (309, "Polygon vertices $(0,0),(4,0),(4,3),(2,5),(0,3)$. Area?", "$16$ sq units", "polygon-house-coords"),
+        (310, "Trapezium parallel $20,12$ cm; non-parallel $10,8$ cm.", "$\\approx 124.8$ cm²", "trapezium-area"),
+        (311, "Regular pentagon side $10$ cm.", "$172$ cm²", None),
+        (312, "Trapezium area $384$ cm²; one side $16$ cm, height $12$ cm.", "Other side $48$ cm", "trapezium-area"),
+        (313, "Regular octagon side $8$ cm.", "$\\approx 308.99$ cm²", "regular-hexagon"),
+        (314, "Field trapezium: parallel $25$ m, $10$ m; sides $14$ m, $13$ m.", "$196$ m²", "trapezium-field"),
+        (315, "Regular hexagon side $8$ cm.", "$96\\sqrt{3}$ cm² ($\\approx 166.27$)", "regular-hexagon"),
+        (316, "Rhombus diagonals $16$ cm, $12$ cm.", "$96$ cm²", "rhombus-diagonals"),
+        (317, "Polygon $A(1,1),B(4,1),C(6,4),D(4,7),E(1,4)$. Area?", "$19.5$ sq units", "polygon-pentagon-coords"),
+        (318, "Trapezium area $300$ cm²; sides ratio $2:3$, height $10$ cm.", "$24$ cm and $36$ cm", "trapezium-area"),
+        (319, "Regular decagon side $5$ cm.", "$\\approx 192.25$ cm²", None),
+        (320, "Trapezium parallel $20,30$ cm; non-parallel $13,14$ cm.", "$\\approx 311.75$ cm²", "trapezium-area"),
+        (321, "Regular heptagon side $7$ cm.", "$\\approx 178.07$ cm²", None),
+        (322, "Rhombus area $240$ cm²; one diagonal $16$ cm.", "Other diagonal $30$ cm", "rhombus-diagonals"),
+        (323, "Polygon $(0,0),(5,0),(7,3),(4,6),(1,4)$. Area?", "$27.5$ sq units", "polygon-split-coords"),
+        (324, "Trapezium area $540$ cm²; ratio $4:5$, height $12$ cm.", "$40$ cm and $50$ cm", "trapezium-area"),
+    ]
+    area_steps = {
+        305: [step("Formula", "$\\dfrac{1}{2}(25+13)\\times 8$.", "$19\\times 8=152$")],
+        306: [step("Equation", "$480=\\dfrac{1}{2}S\\times 15$.", "$S=64$ cm")],
+        307: [step("6 triangles", "$6\\times\\dfrac{\\sqrt{3}}{4}\\times 36$.", "$54\\sqrt{3}$ cm²")],
+        308: [step("Let", "$3x,5x$.", "$480=6\\times 8x$, $x=10$")],
+        309: [step("Split", "Rectangle $4\\times 3=12$.", "Roof triangle area $4$"),
+               step("Total", "$12+4$.", "$16$ sq units")],
+        310: [step("Triangle", "Heron's on sides $8,10,8$.", "Height $\\approx 7.8$ cm"),
+               step("Area", "$\\dfrac{1}{2}\\times 32\\times 7.8$.", "$\\approx 124.8$ cm²")],
+        311: [step("Formula", "$\\approx 1.72\\times 100$.", "$172$ cm²")],
+        312: [step("Solve", "$384=6(16+b)$.", "$b=48$ cm")],
+        313: [step("Formula", "$2(1+\\sqrt{2})\\times 64$.", "$\\approx 308.99$ cm²")],
+        314: [step("Heron", "Triangle base $15$, sides $13,14$.", "Height $11.2$ m"),
+               step("Area", "$\\dfrac{1}{2}\\times 35\\times 11.2$.", "$196$ m²")],
+        315: [step("Hexagon", "$6\\times\\dfrac{\\sqrt{3}}{4}\\times 64$.", "$96\\sqrt{3}$ cm²")],
+        316: [step("Formula", "$\\dfrac{1}{2}\\times 16\\times 12$.", "$96$ cm²")],
+        317: [step("Split", "Trapezium $12$ + triangle $7.5$.", "$19.5$ sq units")],
+        318: [step("Ratio", "$300=5\\times 5x$.", "$x=12$")],
+        319: [step("Decagon", "$7.69\\times 25$.", "$\\approx 192.25$ cm²")],
+        320: [step("Heron", "Triangle base $10$.", "Height $\\approx 12.47$ cm"),
+               step("Area", "$25\\times 12.47$.", "$\\approx 311.75$ cm²")],
+        321: [step("Heptagon", "$3.634\\times 49$.", "$\\approx 178.07$ cm²")],
+        322: [step("Formula", "$240=8d_2$.", "$d_2=30$ cm")],
+        323: [step("Strip method", "Triangles + trapeziums − excess.", "$27.5$ sq units")],
+        324: [step("Ratio", "$540=6\\times 9x$.", "$x=10$")],
+    }
+    for gn, qu, ans, dia in area:
+        put(gn, 19, qu, ans, area_steps[gn], f"Ch19-Q{gn-304}", N19A, dia)
+
+    # Ch19 volume (325-344)
+    vol = [
+        (325, "Volume of cuboid $8\\times 6\\times 4$ cm.", "$192$ cm³", "cuboid-dims"),
+        (326, "Cube total surface area $150$ cm². Volume?", "$125$ cm³", "cuboid-dims"),
+        (327, "Cylinder $r=7$ m, $h=10$ m. Capacity in litres?", "$1{,}540{,}000$ L", "cylinder-tank"),
+        (328, "Cuboid volume $3600$ cm³; $L=40$, $B=30$. Height?", "$3$ cm", "cuboid-dims"),
+        (329, "Surface area of cube side $7$ cm.", "$294$ cm²", "cuboid-dims"),
+        (330, "Cylinder volume $1540$ cm³, $h=10$ cm. Radius?", "$7$ cm", "cylinder-tank"),
+        (331, "Cylinder $r=3.5$ cm, $h=10$ cm. Volume?", "$385$ cm³", "cylinder-tank"),
+        (332, "Cuboid TSA $236$ cm²; $L=8$, $B=6$. Height and volume?", "$H=5$ cm, Vol $240$ cm³", "cuboid-dims"),
+        (333, "Cylinder $r=7$ cm, $h=20$ cm full of water. Litres?", "$3.08$ L", "cylinder-tank"),
+        (334, "Cube surface area $384$ cm². Volume?", "$512$ cm³", "cuboid-dims"),
+        (335, "Cylinder volume $3080$ cm³, $r=7$ cm. Height?", "$20$ cm", "cylinder-tank"),
+        (336, "Cuboid volume $2400$ cm³; $L:B:H=4:3:2$. Dimensions?", "$4\\sqrt[3]{100}$, $3\\sqrt[3]{100}$, $2\\sqrt[3]{100}$ cm", "cuboid-dims"),
+        (337, "Curved surface area: cylinder $r=3.5$ cm, $h=20$ cm.", "$440$ cm²", "cylinder-tank"),
+        (338, "Cube volume $729$ cm³. Total surface area?", "$486$ cm²", "cuboid-dims"),
+        (339, "Cylinder holds $3080$ L, $r=7$ m. Height?", "$0.02$ m (2 cm)", "cylinder-tank"),
+        (340, "Cuboid $L:B:H=3:2:1$, TSA $88$ cm². Volume?", "$48$ cm³", "cuboid-dims"),
+        (341, "Cylinder TSA $440$ cm², $h=10$ cm. Radius and volume?", "$r\\approx 4.74$ cm, Vol $\\approx 707$ cm³", "cylinder-tank"),
+        (342, "Cylinder diameter $14$ cm, height $15$ cm. Volume?", "$2310$ cm³", "cylinder-tank"),
+        (343, "Cube side $6$ cm; cuboid $8\\times 6\\times h$ same volume. Find $h$.", "$4.5$ cm", "cuboid-dims"),
+        (344, "Cylinder $r=3.5$ m, $h=4$ m. Capacity in kilolitres?", "$154$ kL", "cylinder-tank"),
+    ]
+    vol_steps = {
+        325: [step("Multiply", "$8\\times 6\\times 4$.", "$192$ cm³")],
+        326: [step("Face", "One face $25$ cm² → side $5$.", "Vol $125$ cm³")],
+        327: [step("Volume", "$\\dfrac{22}{7}\\times 49\\times 10=1540$ m³.", "$1.54\\times 10^6$ L")],
+        328: [step("Equation", "$3600=1200H$.", "$H=3$ cm")],
+        329: [step("6 faces", "$6\\times 49$.", "$294$ cm²")],
+        330: [step("Solve", "$1540=\\dfrac{22}{7}r^2\\times 10$.", "$r=7$ cm")],
+        331: [step("Calculate", "$\\dfrac{22}{7}\\times 3.5^2\\times 10$.", "$385$ cm³")],
+        332: [step("TSA", "$118=48+14H$.", "$H=5$, Vol $240$ cm³")],
+        333: [step("Volume", "$3080$ cm³.", "$3.08$ L")],
+        334: [step("Side", "$\\sqrt{64}=8$.", "$8^3=512$ cm³")],
+        335: [step("Equation", "$3080=154h$.", "$h=20$ cm")],
+        336: [step("Ratio", "$24x^3=2400$.", "$x=\\sqrt[3]{100}$")],
+        337: [step("CSA", "$2\\pi rh$.", "$440$ cm²")],
+        338: [step("Side 9", "TSA $6\\times 81$.", "$486$ cm²")],
+        339: [step("Convert", "$3.08$ m³.", "$h=0.02$ m")],
+        340: [step("TSA", "$22x^2=88$, $x=2$.", "Vol $48$ cm³")],
+        341: [step("Quadratic", "Solve for $r$.", "Vol $\\approx 707$ cm³")],
+        342: [step("Radius 7", "$154\\times 15$.", "$2310$ cm³")],
+        343: [step("Equal vol", "$216=48h$.", "$h=4.5$ cm")],
+        344: [step("Volume", "$154$ m³.", "$154$ kL")],
+    }
+    for gn, qu, ans, dia in vol:
+        put(gn, 19, qu, ans, vol_steps[gn], f"Ch20-Q{gn-324}", N19V, dia)
+
+    # Ch20 data (345-350)
+    put(345, 20,
+        "Frequency table (class width $10$): marks $45,48,45,55,58,55,55,55,60,65,68,62,68,60,65,72,75,70,78,75,70,78,80,82,85,82,85,88,90,92$.",
+        "See table: 40–50:3, 50–60:5, 60–70:7, 70–80:7, 80–90:6, 90–100:2",
+        [step("Buckets", "Group by tens.", "Tally frequencies"),
+         step("Table", "40–50 through 90–100.", "Complete distribution")], "Ch21-Q1", N20D, "histogram-frequency")
+    put(346, 20,
+        "Draw a bar graph: Class 6→52, 7→48, 8→45, 9→38, 10→30 students.",
+        "See bar graph",
+        [step("Axes", "X: classes; Y: students.", "Scale to 60"),
+         step("Bars", "Separate rectangles per class.", "See diagram")], "Ch21-Q2", N20G, "bar-graph-classes")
+    put(347, 20,
+        "Books read per month: 0 books→10, 1–2→15, 3–5→20, 5+→5 students. Construct pie chart.",
+        "Slices: $72^\\circ,108^\\circ,144^\\circ,36^\\circ$",
+        [step("Total", "$50$ students.", "$360/50=7.2^\\circ$ each"),
+         step("Angles", "Multiply each group.", "Pie slices")], "Ch21-Q3", N20G, "pie-chart-books")
+    put(348, 20,
+        "Mean, median, mode of: $12,15,18,12,20,15,18,12,25,15$.",
+        "Mean $16.2$; median $15$; modes $12$ and $15$",
+        [step("Order", "Sort data.", "Mean $162/10$"),
+         step("Median/Mode", "Middle values; most frequent.", "Bimodal")], "Ch21-Q4", N20D, None)
+    put(349, 20,
+        "Histogram: 0–10→5, 10–20→8, 20–30→12, 30–40→15, 40–50→10.",
+        "See histogram (touching bars)",
+        [step("Continuous", "Bars must touch.", "Height = frequency"),
+         step("Draw", "Blocks on axis 0–50.", "See diagram")], "Ch21-Q5", N20G, "histogram-frequency")
+    put(350, 20,
+        "Pie chart: total expenditure ₹$60000$; food sector $30\\%$.",
+        "₹$18000$ on food",
+        [step("Percent", "$30\\%$ of $60000$.", "$0.3\\times 60000$"),
+         step("Answer", "₹$18000$.", "₹$18000$")], "Ch21-Q6", N20D, "pie-chart-books")
+
+    return qs
+
+
+BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03, 4: batch_04, 5: batch_05, 6: batch_06, 7: batch_07}
 
 
 def build(batch_num: int):

@@ -1,0 +1,1275 @@
+{
+  "batch": 7,
+  "title": "Gemini Open Glassbox · Batch 7",
+  "count": 50,
+  "globalRange": [
+    301,
+    350
+  ],
+  "questions": [
+    {
+      "id": "Q-GEM-B07-301",
+      "chapter": 18,
+      "batch": 7,
+      "batchNum": 1,
+      "globalNum": 301,
+      "localLabel": "Ch18-Q9",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Draw the net of a cone with radius $3$ cm and height $4$ cm.",
+      "answer": "Circle + sector; slant $5$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Base",
+          "why": "Circle $r=3$ cm.",
+          "math": "Flat base"
+        },
+        {
+          "rule": "Sector",
+          "why": "$3^2+4^2=25$, slant $=5$ cm.",
+          "math": "Pizza-slice net"
+        }
+      ],
+      "linked_note_id": "CH18-sec-drawing-2-d-representation-of-3-d-objects",
+      "source": "gemini-batch-07",
+      "diagram": "cone-net"
+    },
+    {
+      "id": "Q-GEM-B07-302",
+      "chapter": 18,
+      "batch": 7,
+      "batchNum": 2,
+      "globalNum": 302,
+      "localLabel": "Ch18-Q10",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Vertices, edges, faces of a hexagonal pyramid?",
+      "answer": "$7$ faces, $7$ vertices, $12$ edges",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Faces",
+          "why": "1 hex base + 6 triangles.",
+          "math": "$F=7$"
+        },
+        {
+          "rule": "Count",
+          "why": "$V=7$, $E=12$.",
+          "math": "Euler: $7+7=12+2$"
+        }
+      ],
+      "linked_note_id": "CH18-sec-polyhedron",
+      "source": "gemini-batch-07",
+      "diagram": "hex-pyramid"
+    },
+    {
+      "id": "Q-GEM-B07-303",
+      "chapter": 18,
+      "batch": 7,
+      "batchNum": 3,
+      "globalNum": 303,
+      "localLabel": "Ch18-Q11",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Isometric view of cuboid $4\\times 3\\times 2$ units.",
+      "answer": "See diagram",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Start",
+          "why": "Pick dot; draw $4$ and $3$ isometric axes.",
+          "math": "Height $2$"
+        },
+        {
+          "rule": "Close",
+          "why": "Parallel lines complete box.",
+          "math": "Isometric cuboid"
+        }
+      ],
+      "linked_note_id": "CH18-sec-drawing-2-d-representation-of-3-d-objects",
+      "source": "gemini-batch-07",
+      "diagram": "isometric-cuboid-4x3x2"
+    },
+    {
+      "id": "Q-GEM-B07-304",
+      "chapter": 18,
+      "batch": 7,
+      "batchNum": 4,
+      "globalNum": 304,
+      "localLabel": "Ch18-Q12",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Verify Euler's formula for a square pyramid.",
+      "answer": "Verified: $10=10$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Count",
+          "why": "$F=5,V=5,E=8$.",
+          "math": "Square base + 4 triangles"
+        },
+        {
+          "rule": "Formula",
+          "why": "$5+5=8+2$.",
+          "math": "Verified"
+        }
+      ],
+      "linked_note_id": "CH18-sec-polyhedron",
+      "source": "gemini-batch-07",
+      "diagram": "square-pyramid"
+    },
+    {
+      "id": "Q-GEM-B07-305",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 5,
+      "globalNum": 305,
+      "localLabel": "Ch19-Q1",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Trapezium: parallel sides $25$ cm, $13$ cm; height $8$ cm.",
+      "answer": "$152$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$\\dfrac{1}{2}(25+13)\\times 8$.",
+          "math": "$19\\times 8=152$"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "trapezium-area"
+    },
+    {
+      "id": "Q-GEM-B07-306",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 6,
+      "globalNum": 306,
+      "localLabel": "Ch19-Q2",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Trapezium area $480$ cm²; height $15$ cm. Sum of parallel sides?",
+      "answer": "$64$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$480=\\dfrac{1}{2}S\\times 15$.",
+          "math": "$S=64$ cm"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07"
+    },
+    {
+      "id": "Q-GEM-B07-307",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 7,
+      "globalNum": 307,
+      "localLabel": "Ch19-Q3",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Regular hexagon side $6$ cm.",
+      "answer": "$54\\sqrt{3}$ cm² ($\\approx 93.53$)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "6 triangles",
+          "why": "$6\\times\\dfrac{\\sqrt{3}}{4}\\times 36$.",
+          "math": "$54\\sqrt{3}$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "regular-hexagon"
+    },
+    {
+      "id": "Q-GEM-B07-308",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 8,
+      "globalNum": 308,
+      "localLabel": "Ch19-Q4",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Parallel sides ratio $3:5$, height $12$ cm, area $480$ cm².",
+      "answer": "$30$ cm and $50$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let",
+          "why": "$3x,5x$.",
+          "math": "$480=6\\times 8x$, $x=10$"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07"
+    },
+    {
+      "id": "Q-GEM-B07-309",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 9,
+      "globalNum": 309,
+      "localLabel": "Ch19-Q5",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Polygon vertices $(0,0),(4,0),(4,3),(2,5),(0,3)$. Area?",
+      "answer": "$16$ sq units",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "Rectangle $4\\times 3=12$.",
+          "math": "Roof triangle area $4$"
+        },
+        {
+          "rule": "Total",
+          "why": "$12+4$.",
+          "math": "$16$ sq units"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "polygon-house-coords"
+    },
+    {
+      "id": "Q-GEM-B07-310",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 10,
+      "globalNum": 310,
+      "localLabel": "Ch19-Q6",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Trapezium parallel $20,12$ cm; non-parallel $10,8$ cm.",
+      "answer": "$\\approx 124.8$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Triangle",
+          "why": "Heron's on sides $8,10,8$.",
+          "math": "Height $\\approx 7.8$ cm"
+        },
+        {
+          "rule": "Area",
+          "why": "$\\dfrac{1}{2}\\times 32\\times 7.8$.",
+          "math": "$\\approx 124.8$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "trapezium-area"
+    },
+    {
+      "id": "Q-GEM-B07-311",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 11,
+      "globalNum": 311,
+      "localLabel": "Ch19-Q7",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Regular pentagon side $10$ cm.",
+      "answer": "$172$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$\\approx 1.72\\times 100$.",
+          "math": "$172$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07"
+    },
+    {
+      "id": "Q-GEM-B07-312",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 12,
+      "globalNum": 312,
+      "localLabel": "Ch19-Q8",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Trapezium area $384$ cm²; one side $16$ cm, height $12$ cm.",
+      "answer": "Other side $48$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Solve",
+          "why": "$384=6(16+b)$.",
+          "math": "$b=48$ cm"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "trapezium-area"
+    },
+    {
+      "id": "Q-GEM-B07-313",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 13,
+      "globalNum": 313,
+      "localLabel": "Ch19-Q9",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Regular octagon side $8$ cm.",
+      "answer": "$\\approx 308.99$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$2(1+\\sqrt{2})\\times 64$.",
+          "math": "$\\approx 308.99$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "regular-hexagon"
+    },
+    {
+      "id": "Q-GEM-B07-314",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 14,
+      "globalNum": 314,
+      "localLabel": "Ch19-Q10",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Field trapezium: parallel $25$ m, $10$ m; sides $14$ m, $13$ m.",
+      "answer": "$196$ m²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Heron",
+          "why": "Triangle base $15$, sides $13,14$.",
+          "math": "Height $11.2$ m"
+        },
+        {
+          "rule": "Area",
+          "why": "$\\dfrac{1}{2}\\times 35\\times 11.2$.",
+          "math": "$196$ m²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "trapezium-field"
+    },
+    {
+      "id": "Q-GEM-B07-315",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 15,
+      "globalNum": 315,
+      "localLabel": "Ch19-Q11",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Regular hexagon side $8$ cm.",
+      "answer": "$96\\sqrt{3}$ cm² ($\\approx 166.27$)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Hexagon",
+          "why": "$6\\times\\dfrac{\\sqrt{3}}{4}\\times 64$.",
+          "math": "$96\\sqrt{3}$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "regular-hexagon"
+    },
+    {
+      "id": "Q-GEM-B07-316",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 16,
+      "globalNum": 316,
+      "localLabel": "Ch19-Q12",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Rhombus diagonals $16$ cm, $12$ cm.",
+      "answer": "$96$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$\\dfrac{1}{2}\\times 16\\times 12$.",
+          "math": "$96$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "rhombus-diagonals"
+    },
+    {
+      "id": "Q-GEM-B07-317",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 17,
+      "globalNum": 317,
+      "localLabel": "Ch19-Q13",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Polygon $A(1,1),B(4,1),C(6,4),D(4,7),E(1,4)$. Area?",
+      "answer": "$19.5$ sq units",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "Trapezium $12$ + triangle $7.5$.",
+          "math": "$19.5$ sq units"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "polygon-pentagon-coords"
+    },
+    {
+      "id": "Q-GEM-B07-318",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 18,
+      "globalNum": 318,
+      "localLabel": "Ch19-Q14",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Trapezium area $300$ cm²; sides ratio $2:3$, height $10$ cm.",
+      "answer": "$24$ cm and $36$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Ratio",
+          "why": "$300=5\\times 5x$.",
+          "math": "$x=12$"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "trapezium-area"
+    },
+    {
+      "id": "Q-GEM-B07-319",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 19,
+      "globalNum": 319,
+      "localLabel": "Ch19-Q15",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Regular decagon side $5$ cm.",
+      "answer": "$\\approx 192.25$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Decagon",
+          "why": "$7.69\\times 25$.",
+          "math": "$\\approx 192.25$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07"
+    },
+    {
+      "id": "Q-GEM-B07-320",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 20,
+      "globalNum": 320,
+      "localLabel": "Ch19-Q16",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Trapezium parallel $20,30$ cm; non-parallel $13,14$ cm.",
+      "answer": "$\\approx 311.75$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Heron",
+          "why": "Triangle base $10$.",
+          "math": "Height $\\approx 12.47$ cm"
+        },
+        {
+          "rule": "Area",
+          "why": "$25\\times 12.47$.",
+          "math": "$\\approx 311.75$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "trapezium-area"
+    },
+    {
+      "id": "Q-GEM-B07-321",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 21,
+      "globalNum": 321,
+      "localLabel": "Ch19-Q17",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Regular heptagon side $7$ cm.",
+      "answer": "$\\approx 178.07$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Heptagon",
+          "why": "$3.634\\times 49$.",
+          "math": "$\\approx 178.07$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07"
+    },
+    {
+      "id": "Q-GEM-B07-322",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 22,
+      "globalNum": 322,
+      "localLabel": "Ch19-Q18",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Rhombus area $240$ cm²; one diagonal $16$ cm.",
+      "answer": "Other diagonal $30$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$240=8d_2$.",
+          "math": "$d_2=30$ cm"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "rhombus-diagonals"
+    },
+    {
+      "id": "Q-GEM-B07-323",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 23,
+      "globalNum": 323,
+      "localLabel": "Ch19-Q19",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Polygon $(0,0),(5,0),(7,3),(4,6),(1,4)$. Area?",
+      "answer": "$27.5$ sq units",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Strip method",
+          "why": "Triangles + trapeziums − excess.",
+          "math": "$27.5$ sq units"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "polygon-split-coords"
+    },
+    {
+      "id": "Q-GEM-B07-324",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 24,
+      "globalNum": 324,
+      "localLabel": "Ch19-Q20",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Trapezium area $540$ cm²; ratio $4:5$, height $12$ cm.",
+      "answer": "$40$ cm and $50$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Ratio",
+          "why": "$540=6\\times 9x$.",
+          "math": "$x=10$"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-07",
+      "diagram": "trapezium-area"
+    },
+    {
+      "id": "Q-GEM-B07-325",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 25,
+      "globalNum": 325,
+      "localLabel": "Ch20-Q1",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Volume of cuboid $8\\times 6\\times 4$ cm.",
+      "answer": "$192$ cm³",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Multiply",
+          "why": "$8\\times 6\\times 4$.",
+          "math": "$192$ cm³"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cuboid-dims"
+    },
+    {
+      "id": "Q-GEM-B07-326",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 26,
+      "globalNum": 326,
+      "localLabel": "Ch20-Q2",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cube total surface area $150$ cm². Volume?",
+      "answer": "$125$ cm³",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Face",
+          "why": "One face $25$ cm² → side $5$.",
+          "math": "Vol $125$ cm³"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cuboid-dims"
+    },
+    {
+      "id": "Q-GEM-B07-327",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 27,
+      "globalNum": 327,
+      "localLabel": "Ch20-Q3",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cylinder $r=7$ m, $h=10$ m. Capacity in litres?",
+      "answer": "$1{,}540{,}000$ L",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Volume",
+          "why": "$\\dfrac{22}{7}\\times 49\\times 10=1540$ m³.",
+          "math": "$1.54\\times 10^6$ L"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cylinder-tank"
+    },
+    {
+      "id": "Q-GEM-B07-328",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 28,
+      "globalNum": 328,
+      "localLabel": "Ch20-Q4",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cuboid volume $3600$ cm³; $L=40$, $B=30$. Height?",
+      "answer": "$3$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$3600=1200H$.",
+          "math": "$H=3$ cm"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cuboid-dims"
+    },
+    {
+      "id": "Q-GEM-B07-329",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 29,
+      "globalNum": 329,
+      "localLabel": "Ch20-Q5",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Surface area of cube side $7$ cm.",
+      "answer": "$294$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "6 faces",
+          "why": "$6\\times 49$.",
+          "math": "$294$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cuboid-dims"
+    },
+    {
+      "id": "Q-GEM-B07-330",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 30,
+      "globalNum": 330,
+      "localLabel": "Ch20-Q6",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cylinder volume $1540$ cm³, $h=10$ cm. Radius?",
+      "answer": "$7$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Solve",
+          "why": "$1540=\\dfrac{22}{7}r^2\\times 10$.",
+          "math": "$r=7$ cm"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cylinder-tank"
+    },
+    {
+      "id": "Q-GEM-B07-331",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 31,
+      "globalNum": 331,
+      "localLabel": "Ch20-Q7",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cylinder $r=3.5$ cm, $h=10$ cm. Volume?",
+      "answer": "$385$ cm³",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Calculate",
+          "why": "$\\dfrac{22}{7}\\times 3.5^2\\times 10$.",
+          "math": "$385$ cm³"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cylinder-tank"
+    },
+    {
+      "id": "Q-GEM-B07-332",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 32,
+      "globalNum": 332,
+      "localLabel": "Ch20-Q8",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cuboid TSA $236$ cm²; $L=8$, $B=6$. Height and volume?",
+      "answer": "$H=5$ cm, Vol $240$ cm³",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "TSA",
+          "why": "$118=48+14H$.",
+          "math": "$H=5$, Vol $240$ cm³"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cuboid-dims"
+    },
+    {
+      "id": "Q-GEM-B07-333",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 33,
+      "globalNum": 333,
+      "localLabel": "Ch20-Q9",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cylinder $r=7$ cm, $h=20$ cm full of water. Litres?",
+      "answer": "$3.08$ L",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Volume",
+          "why": "$3080$ cm³.",
+          "math": "$3.08$ L"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cylinder-tank"
+    },
+    {
+      "id": "Q-GEM-B07-334",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 34,
+      "globalNum": 334,
+      "localLabel": "Ch20-Q10",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cube surface area $384$ cm². Volume?",
+      "answer": "$512$ cm³",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Side",
+          "why": "$\\sqrt{64}=8$.",
+          "math": "$8^3=512$ cm³"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cuboid-dims"
+    },
+    {
+      "id": "Q-GEM-B07-335",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 35,
+      "globalNum": 335,
+      "localLabel": "Ch20-Q11",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cylinder volume $3080$ cm³, $r=7$ cm. Height?",
+      "answer": "$20$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$3080=154h$.",
+          "math": "$h=20$ cm"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cylinder-tank"
+    },
+    {
+      "id": "Q-GEM-B07-336",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 36,
+      "globalNum": 336,
+      "localLabel": "Ch20-Q12",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cuboid volume $2400$ cm³; $L:B:H=4:3:2$. Dimensions?",
+      "answer": "$4\\sqrt[3]{100}$, $3\\sqrt[3]{100}$, $2\\sqrt[3]{100}$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Ratio",
+          "why": "$24x^3=2400$.",
+          "math": "$x=\\sqrt[3]{100}$"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cuboid-dims"
+    },
+    {
+      "id": "Q-GEM-B07-337",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 37,
+      "globalNum": 337,
+      "localLabel": "Ch20-Q13",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Curved surface area: cylinder $r=3.5$ cm, $h=20$ cm.",
+      "answer": "$440$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "CSA",
+          "why": "$2\\pi rh$.",
+          "math": "$440$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cylinder-tank"
+    },
+    {
+      "id": "Q-GEM-B07-338",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 38,
+      "globalNum": 338,
+      "localLabel": "Ch20-Q14",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cube volume $729$ cm³. Total surface area?",
+      "answer": "$486$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Side 9",
+          "why": "TSA $6\\times 81$.",
+          "math": "$486$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cuboid-dims"
+    },
+    {
+      "id": "Q-GEM-B07-339",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 39,
+      "globalNum": 339,
+      "localLabel": "Ch20-Q15",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cylinder holds $3080$ L, $r=7$ m. Height?",
+      "answer": "$0.02$ m (2 cm)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Convert",
+          "why": "$3.08$ m³.",
+          "math": "$h=0.02$ m"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cylinder-tank"
+    },
+    {
+      "id": "Q-GEM-B07-340",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 40,
+      "globalNum": 340,
+      "localLabel": "Ch20-Q16",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cuboid $L:B:H=3:2:1$, TSA $88$ cm². Volume?",
+      "answer": "$48$ cm³",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "TSA",
+          "why": "$22x^2=88$, $x=2$.",
+          "math": "Vol $48$ cm³"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cuboid-dims"
+    },
+    {
+      "id": "Q-GEM-B07-341",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 41,
+      "globalNum": 341,
+      "localLabel": "Ch20-Q17",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cylinder TSA $440$ cm², $h=10$ cm. Radius and volume?",
+      "answer": "$r\\approx 4.74$ cm, Vol $\\approx 707$ cm³",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Quadratic",
+          "why": "Solve for $r$.",
+          "math": "Vol $\\approx 707$ cm³"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cylinder-tank"
+    },
+    {
+      "id": "Q-GEM-B07-342",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 42,
+      "globalNum": 342,
+      "localLabel": "Ch20-Q18",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cylinder diameter $14$ cm, height $15$ cm. Volume?",
+      "answer": "$2310$ cm³",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Radius 7",
+          "why": "$154\\times 15$.",
+          "math": "$2310$ cm³"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cylinder-tank"
+    },
+    {
+      "id": "Q-GEM-B07-343",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 43,
+      "globalNum": 343,
+      "localLabel": "Ch20-Q19",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cube side $6$ cm; cuboid $8\\times 6\\times h$ same volume. Find $h$.",
+      "answer": "$4.5$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equal vol",
+          "why": "$216=48h$.",
+          "math": "$h=4.5$ cm"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cuboid-dims"
+    },
+    {
+      "id": "Q-GEM-B07-344",
+      "chapter": 19,
+      "batch": 7,
+      "batchNum": 44,
+      "globalNum": 344,
+      "localLabel": "Ch20-Q20",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Cylinder $r=3.5$ m, $h=4$ m. Capacity in kilolitres?",
+      "answer": "$154$ kL",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Volume",
+          "why": "$154$ m³.",
+          "math": "$154$ kL"
+        }
+      ],
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "gemini-batch-07",
+      "diagram": "cylinder-tank"
+    },
+    {
+      "id": "Q-GEM-B07-345",
+      "chapter": 20,
+      "batch": 7,
+      "batchNum": 45,
+      "globalNum": 345,
+      "localLabel": "Ch21-Q1",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Frequency table (class width $10$): marks $45,48,45,55,58,55,55,55,60,65,68,62,68,60,65,72,75,70,78,75,70,78,80,82,85,82,85,88,90,92$.",
+      "answer": "See table: 40–50:3, 50–60:5, 60–70:7, 70–80:7, 80–90:6, 90–100:2",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Buckets",
+          "why": "Group by tens.",
+          "math": "Tally frequencies"
+        },
+        {
+          "rule": "Table",
+          "why": "40–50 through 90–100.",
+          "math": "Complete distribution"
+        }
+      ],
+      "linked_note_id": "CH20-sec-data-handling",
+      "source": "gemini-batch-07",
+      "diagram": "histogram-frequency"
+    },
+    {
+      "id": "Q-GEM-B07-346",
+      "chapter": 20,
+      "batch": 7,
+      "batchNum": 46,
+      "globalNum": 346,
+      "localLabel": "Ch21-Q2",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Draw a bar graph: Class 6→52, 7→48, 8→45, 9→38, 10→30 students.",
+      "answer": "See bar graph",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Axes",
+          "why": "X: classes; Y: students.",
+          "math": "Scale to 60"
+        },
+        {
+          "rule": "Bars",
+          "why": "Separate rectangles per class.",
+          "math": "See diagram"
+        }
+      ],
+      "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph",
+      "source": "gemini-batch-07",
+      "diagram": "bar-graph-classes"
+    },
+    {
+      "id": "Q-GEM-B07-347",
+      "chapter": 20,
+      "batch": 7,
+      "batchNum": 47,
+      "globalNum": 347,
+      "localLabel": "Ch21-Q3",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Books read per month: 0 books→10, 1–2→15, 3–5→20, 5+→5 students. Construct pie chart.",
+      "answer": "Slices: $72^\\circ,108^\\circ,144^\\circ,36^\\circ$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Total",
+          "why": "$50$ students.",
+          "math": "$360/50=7.2^\\circ$ each"
+        },
+        {
+          "rule": "Angles",
+          "why": "Multiply each group.",
+          "math": "Pie slices"
+        }
+      ],
+      "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph",
+      "source": "gemini-batch-07",
+      "diagram": "pie-chart-books"
+    },
+    {
+      "id": "Q-GEM-B07-348",
+      "chapter": 20,
+      "batch": 7,
+      "batchNum": 48,
+      "globalNum": 348,
+      "localLabel": "Ch21-Q4",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Mean, median, mode of: $12,15,18,12,20,15,18,12,25,15$.",
+      "answer": "Mean $16.2$; median $15$; modes $12$ and $15$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Order",
+          "why": "Sort data.",
+          "math": "Mean $162/10$"
+        },
+        {
+          "rule": "Median/Mode",
+          "why": "Middle values; most frequent.",
+          "math": "Bimodal"
+        }
+      ],
+      "linked_note_id": "CH20-sec-data-handling",
+      "source": "gemini-batch-07"
+    },
+    {
+      "id": "Q-GEM-B07-349",
+      "chapter": 20,
+      "batch": 7,
+      "batchNum": 49,
+      "globalNum": 349,
+      "localLabel": "Ch21-Q5",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Histogram: 0–10→5, 10–20→8, 20–30→12, 30–40→15, 40–50→10.",
+      "answer": "See histogram (touching bars)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Continuous",
+          "why": "Bars must touch.",
+          "math": "Height = frequency"
+        },
+        {
+          "rule": "Draw",
+          "why": "Blocks on axis 0–50.",
+          "math": "See diagram"
+        }
+      ],
+      "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph",
+      "source": "gemini-batch-07",
+      "diagram": "histogram-frequency"
+    },
+    {
+      "id": "Q-GEM-B07-350",
+      "chapter": 20,
+      "batch": 7,
+      "batchNum": 50,
+      "globalNum": 350,
+      "localLabel": "Ch21-Q6",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 7",
+      "question": "Pie chart: total expenditure ₹$60000$; food sector $30\\%$.",
+      "answer": "₹$18000$ on food",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Percent",
+          "why": "$30\\%$ of $60000$.",
+          "math": "$0.3\\times 60000$"
+        },
+        {
+          "rule": "Answer",
+          "why": "₹$18000$.",
+          "math": "₹$18000$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-data-handling",
+      "source": "gemini-batch-07",
+      "diagram": "pie-chart-books"
+    }
+  ]
+}

@@ -12,6 +12,7 @@ Upload **10 batches × 50 questions** here. Existing textbook questions are **ne
 | `batch_04.json` | 151–200 | Ch 8 (9), Ch 9 (15), Ch 10 (26) |
 | `batch_05.json` | 201–250 | Ch 10 (12), Ch 11 (18), Ch 12 (20) |
 | `batch_06.json` | 251–300 | Ch 13 (30), Ch 14 (12), Ch 18 (8) |
+| `batch_07.json` | 301–350 | Ch 18 (4), Ch 19 (40), Ch 20 (6) |
 | `batch_10.json` | 451–500 | (TBD) |
 
 ## Add a new batch
@@ -22,4 +23,4 @@ Upload **10 batches × 50 questions** here. Existing textbook questions are **ne
 
 ## Question format
 
-Each entry uses `type: "practice"` with full `glassboxSteps`. IDs: `Q-GEM-B01-001` … `Q-GEM-B10-050`.
+Each entry uses `type: "practice"` with full `glassboxSteps`. Optional `"diagram"` id renders an inline SVG (see `shared/practice-diagrams.js`). IDs: `Q-GEM-B01-001` … `Q-GEM-B10-050`.

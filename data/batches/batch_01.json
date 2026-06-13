@@ -1,0 +1,1296 @@
+{
+  "batch": 1,
+  "title": "Gemini Open Glassbox · Batch 1",
+  "count": 50,
+  "globalRange": [
+    1,
+    50
+  ],
+  "questions": [
+    {
+      "id": "Q-GEM-B01-001",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 1,
+      "globalNum": 1,
+      "localLabel": "Q1",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Write the additive inverse of each: (i) $1$ (ii) $-\\dfrac{1}{9}$ (iii) $-\\dfrac{2}{3}$ (iv) $2$ (v) $-\\dfrac{9}{1}$",
+      "answer": "(i) $-1$ (ii) $\\dfrac{1}{9}$ (iii) $\\dfrac{2}{3}$ (iv) $-2$ (v) $9$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Additive inverse changes the sign.",
+          "math": "Additive inverse of $a$ is $-a$."
+        },
+        {
+          "rule": "Apply",
+          "why": "Flip the sign of each number.",
+          "math": "(i) $-1$, (ii) $\\dfrac{1}{9}$, (iii) $\\dfrac{2}{3}$, (iv) $-2$, (v) $9$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-002",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 2,
+      "globalNum": 2,
+      "localLabel": "Q2",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find the multiplicative inverse of: (i) $-\\dfrac{5}{8}$ (ii) $\\dfrac{3}{-7}$ (iii) $-1$ (iv) $1$",
+      "answer": "(i) $-\\dfrac{8}{5}$ (ii) $-\\dfrac{7}{3}$ (iii) $-1$ (iv) $1$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Reciprocal = flip numerator and denominator; sign unchanged.",
+          "math": "$\\text{Reciprocal of }\\dfrac{p}{q}=\\dfrac{q}{p}$"
+        },
+        {
+          "rule": "Apply",
+          "why": "Flip each fraction.",
+          "math": "(i) $-\\dfrac{8}{5}$, (ii) $-\\dfrac{7}{3}$, (iii) $-1$ (self-reciprocal), (iv) $1$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-003",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 3,
+      "globalNum": 3,
+      "localLabel": "Q3",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "The product of two rational numbers is $2$. If one number is $\\dfrac{1}{7}$, find the other.",
+      "answer": "$14$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Set up",
+          "why": "Let the unknown be $x$.",
+          "math": "$\\dfrac{1}{7} \\times x = 2$"
+        },
+        {
+          "rule": "Isolate",
+          "why": "Multiply both sides by the reciprocal $\\dfrac{7}{1}$.",
+          "math": "$x = 2 \\times 7 = 14$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-004",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 4,
+      "globalNum": 4,
+      "localLabel": "Q4",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find five rational numbers between $1$ and $2$.",
+      "answer": "$\\dfrac{7}{6},\\dfrac{8}{6},\\dfrac{9}{6},\\dfrac{10}{6},\\dfrac{11}{6}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rewrite",
+          "why": "Use a common denominator larger than $5$.",
+          "math": "$1=\\dfrac{6}{6}$, $2=\\dfrac{12}{6}$"
+        },
+        {
+          "rule": "Pick five",
+          "why": "Choose fractions strictly between $\\dfrac{6}{6}$ and $\\dfrac{12}{6}$.",
+          "math": "$\\dfrac{7}{6},\\dfrac{4}{3},\\dfrac{3}{2},\\dfrac{5}{3},\\dfrac{11}{6}$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-005",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 5,
+      "globalNum": 5,
+      "localLabel": "Q5",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Show that rational numbers are closed under $+$, $-$, $\\times$, $\\div$ (except $\\div 0$).",
+      "answer": "Each operation on two rationals gives another rational.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Addition",
+          "why": "Example: $\\dfrac{1}{2}+\\dfrac{1}{3}=\\dfrac{5}{6}$ (rational).",
+          "math": "$\\dfrac{5}{6}$"
+        },
+        {
+          "rule": "Subtraction",
+          "why": "$\\dfrac{1}{2}-\\dfrac{1}{3}=\\dfrac{1}{6}$.",
+          "math": "$\\dfrac{1}{6}$"
+        },
+        {
+          "rule": "Multiplication",
+          "why": "$\\dfrac{1}{2}\\times\\dfrac{1}{3}=\\dfrac{1}{6}$.",
+          "math": "$\\dfrac{1}{6}$"
+        },
+        {
+          "rule": "Division",
+          "why": "$\\dfrac{1}{2}\\div\\dfrac{1}{3}=\\dfrac{3}{2}$ (non-zero divisor).",
+          "math": "$\\dfrac{3}{2}$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-006",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 6,
+      "globalNum": 6,
+      "localLabel": "Q6",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find five rational numbers smaller than $5$.",
+      "answer": "$4,\\,3,\\,2,\\,1,\\,0$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Rationals include integers and fractions less than $5$.",
+          "math": "Any $q<5$ works."
+        },
+        {
+          "rule": "Answer",
+          "why": "Pick five simple values.",
+          "math": "$4,3,2,1,0$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-007",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 7,
+      "globalNum": 7,
+      "localLabel": "Q7",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Verify commutative property of addition for $\\dfrac{2}{3}$ and $-\\dfrac{5}{7}$.",
+      "answer": "Both orders give $-\\dfrac{1}{21}$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Order A",
+          "why": "$\\dfrac{2}{3}+\\left(-\\dfrac{5}{7}\\right)$, LCM $21$.",
+          "math": "$\\dfrac{14}{21}-\\dfrac{15}{21}=-\\dfrac{1}{21}$"
+        },
+        {
+          "rule": "Order B",
+          "why": "$-\\dfrac{5}{7}+\\dfrac{2}{3}$.",
+          "math": "$-\\dfrac{15}{21}+\\dfrac{14}{21}=-\\dfrac{1}{21}$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-008",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 8,
+      "globalNum": 8,
+      "localLabel": "Q8",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Verify associative property of multiplication for $-\\dfrac{3}{5}$, $\\dfrac{2}{7}$, $\\dfrac{1}{4}$.",
+      "answer": "Both groupings give $-\\dfrac{3}{70}$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Group left",
+          "why": "$\\left[-\\dfrac{3}{5}\\times\\dfrac{2}{7}\\right]\\times\\dfrac{1}{4}$.",
+          "math": "$-\\dfrac{6}{140}=-\\dfrac{3}{70}$"
+        },
+        {
+          "rule": "Group right",
+          "why": "$-\\dfrac{3}{5}\\times\\left[\\dfrac{2}{7}\\times\\dfrac{1}{4}\\right]$.",
+          "math": "$-\\dfrac{3}{70}$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-009",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 9,
+      "globalNum": 9,
+      "localLabel": "Q9",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find additive and multiplicative inverses of $-\\dfrac{7}{9}$.",
+      "answer": "Additive: $\\dfrac{7}{9}$; Multiplicative: $-\\dfrac{9}{7}$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Additive",
+          "why": "Change sign.",
+          "math": "$\\dfrac{7}{9}$"
+        },
+        {
+          "rule": "Multiplicative",
+          "why": "Flip fraction.",
+          "math": "$-\\dfrac{9}{7}$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-010",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 10,
+      "globalNum": 10,
+      "localLabel": "Q10",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Represent on the number line: (i) $\\dfrac{3}{4}$ (ii) $-\\dfrac{5}{3}$ (iii) $\\dfrac{7}{2}$",
+      "answer": "(i) between $0$ and $1$ (ii) left of $0$ (iii) $3.5$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "(i)",
+          "why": "Divide unit into $4$ parts; mark $3$.",
+          "math": "$\\dfrac{3}{4}$"
+        },
+        {
+          "rule": "(ii)",
+          "why": "$-\\dfrac{5}{3}=-1\\dfrac{2}{3}$ left of zero.",
+          "math": "$-\\dfrac{5}{3}$"
+        },
+        {
+          "rule": "(iii)",
+          "why": "$\\dfrac{7}{2}=3.5$.",
+          "math": "$3.5$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-011",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 11,
+      "globalNum": 11,
+      "localLabel": "Q11",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Fill in: (i) $\\underline{\\ ?\\ }\\div(-3)=-\\dfrac{4}{15}$ (ii) Numbers that are their own reciprocals.",
+      "answer": "(i) $\\dfrac{4}{5}$ (ii) $1$ and $-1$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "(i)",
+          "why": "Multiply both sides by $-3$.",
+          "math": "$x=\\left(-\\dfrac{4}{15}\\right)(-3)=\\dfrac{4}{5}$"
+        },
+        {
+          "rule": "(ii)",
+          "why": "Flip $1$ and $-1$ gives the same value.",
+          "math": "$1,-1$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-012",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 12,
+      "globalNum": 12,
+      "localLabel": "Q12",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Prove $\\dfrac{a}{b}\\times\\dfrac{c}{d}=\\dfrac{c}{d}\\times\\dfrac{a}{b}$ for rationals.",
+      "answer": "Both sides equal $\\dfrac{ac}{bd}$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "LHS",
+          "why": "Multiply numerators and denominators.",
+          "math": "$\\dfrac{ac}{bd}$"
+        },
+        {
+          "rule": "RHS",
+          "why": "Commutative multiplication of integers.",
+          "math": "$\\dfrac{ca}{db}=\\dfrac{ac}{bd}$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-013",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 13,
+      "globalNum": 13,
+      "localLabel": "Q13",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find three rational numbers between $-\\dfrac{1}{2}$ and $\\dfrac{3}{4}$.",
+      "answer": "$-\\dfrac{1}{4},\\,0,\\,\\dfrac{1}{4}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Common denom.",
+          "why": "$-\\dfrac{1}{2}=-\\dfrac{2}{4}$, compare to $\\dfrac{3}{4}$.",
+          "math": "Between $-\\dfrac{2}{4}$ and $\\dfrac{3}{4}$"
+        },
+        {
+          "rule": "Pick three",
+          "why": "Choose values in between.",
+          "math": "$-\\dfrac{1}{4},0,\\dfrac{1}{4}$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-014",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 14,
+      "globalNum": 14,
+      "localLabel": "Q14",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Sum of two rationals is $-\\dfrac{5}{6}$. One is $\\dfrac{2}{3}$. Find the other.",
+      "answer": "$-\\dfrac{3}{2}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$x+\\dfrac{2}{3}=-\\dfrac{5}{6}$.",
+          "math": "$x=-\\dfrac{5}{6}-\\dfrac{2}{3}$"
+        },
+        {
+          "rule": "Solve",
+          "why": "LCM $6$.",
+          "math": "$x=-\\dfrac{5}{6}-\\dfrac{4}{6}=-\\dfrac{9}{6}=-\\dfrac{3}{2}$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-015",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 15,
+      "globalNum": 15,
+      "localLabel": "Q15",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Simplify: $\\left(-\\dfrac{3}{8}\\right)+\\dfrac{5}{12}-\\left(-\\dfrac{7}{24}\\right)+\\dfrac{1}{6}$.",
+      "answer": "$\\dfrac{1}{2}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Signs",
+          "why": "$-\\left(-\\dfrac{7}{24}\\right)=+\\dfrac{7}{24}$.",
+          "math": "Combine over LCM $24$"
+        },
+        {
+          "rule": "Convert",
+          "why": "$-\\dfrac{9}{24}+\\dfrac{10}{24}+\\dfrac{7}{24}+\\dfrac{4}{24}$.",
+          "math": "$\\dfrac{12}{24}=\\dfrac{1}{2}$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-016",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 16,
+      "globalNum": 16,
+      "localLabel": "Q16",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Express $0.\\overline{3}$ as $\\dfrac{p}{q}$.",
+      "answer": "$\\dfrac{1}{3}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let",
+          "why": "$x=0.333\\ldots$",
+          "math": "$x=0.\\overline{3}$"
+        },
+        {
+          "rule": "Multiply",
+          "why": "$10x=3.333\\ldots$; subtract: $9x=3$.",
+          "math": "$x=\\dfrac{3}{9}=\\dfrac{1}{3}$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-017",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 17,
+      "globalNum": 17,
+      "localLabel": "Q17",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "If $x=\\dfrac{2}{3}$, $y=-\\dfrac{5}{4}$, find $(x+y)(x-y)$.",
+      "answer": "$-\\dfrac{161}{144}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "$x+y$",
+          "why": "LCM $12$.",
+          "math": "$-\\dfrac{7}{12}$"
+        },
+        {
+          "rule": "$x-y$",
+          "why": "$\\dfrac{2}{3}+\\dfrac{5}{4}=\\dfrac{23}{12}$.",
+          "math": "$(x+y)(x-y)=-\\dfrac{161}{144}$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-018",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 18,
+      "globalNum": 18,
+      "localLabel": "Q18",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Which are rational? (i) $\\sqrt{2}$ (ii) $0$ (iii) $-\\dfrac{7}{2}$ (iv) $\\pi$",
+      "answer": "(ii) and (iii) only.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "(i)(iv)",
+          "why": "Non-terminating non-repeating decimals.",
+          "math": "Irrational"
+        },
+        {
+          "rule": "(ii)(iii)",
+          "why": "$0=\\dfrac{0}{1}$, $-\\dfrac{7}{2}$ is $\\dfrac{p}{q}$.",
+          "math": "Rational"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-019",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 19,
+      "globalNum": 19,
+      "localLabel": "Q19",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find $x$ if $\\dfrac{3x-5}{4}=\\dfrac{2x+1}{3}$.",
+      "answer": "$x=19$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Cross-multiply",
+          "why": "$3(3x-5)=4(2x+1)$.",
+          "math": "$9x-15=8x+4$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=19$.",
+          "math": "$x=19$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-020",
+      "chapter": 1,
+      "batch": 1,
+      "batchNum": 20,
+      "globalNum": 20,
+      "localLabel": "Q20",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Prove: a rational number plus its additive inverse is zero.",
+      "answer": "$\\dfrac{a}{b}+\\left(-\\dfrac{a}{b}\\right)=0$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let",
+          "why": "Number $\\dfrac{a}{b}$, inverse $-\\dfrac{a}{b}$.",
+          "math": "Add numerators"
+        },
+        {
+          "rule": "Result",
+          "why": "$\\dfrac{a-a}{b}=\\dfrac{0}{b}=0$.",
+          "math": "$0$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-021",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 21,
+      "globalNum": 21,
+      "localLabel": "Ch2-Q1",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Simplify with positive exponents: $(-4)^5\\div(-4)^8$.",
+      "answer": "$\\dfrac{1}{(-4)^3}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Division rule",
+          "why": "$(-4)^{5-8}=(-4)^{-3}$.",
+          "math": "Negative exponent → reciprocal."
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-022",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 22,
+      "globalNum": 22,
+      "localLabel": "Ch2-Q2",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Evaluate: $a^2\\times a^3\\times a^{-5}$.",
+      "answer": "$1$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Add powers",
+          "why": "$a^{2+3-5}=a^0$.",
+          "math": "$a^0=1$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-023",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 23,
+      "globalNum": 23,
+      "localLabel": "Ch2-Q3",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Express $4^{-3}$ as a power of base $2$.",
+      "answer": "$2^{-6}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rewrite",
+          "why": "$4=2^2$.",
+          "math": "$(2^2)^{-3}=2^{-6}$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-024",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 24,
+      "globalNum": 24,
+      "localLabel": "Ch2-Q4",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find $x$: $\\left(\\dfrac{11}{9}\\right)^3\\left(\\dfrac{9}{11}\\right)^6=\\left(\\dfrac{11}{9}\\right)^{2x-1}$.",
+      "answer": "$x=-1$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Match bases",
+          "why": "$\\left(\\dfrac{9}{11}\\right)^6=\\left(\\dfrac{11}{9}\\right)^{-6}$.",
+          "math": "$3-6=2x-1$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$-3=2x-1$.",
+          "math": "$x=-1$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-025",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 25,
+      "globalNum": 25,
+      "localLabel": "Ch2-Q5",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Simplify: $(2^{-3}\\times 2^{-4})\\div 2^{-7}$.",
+      "answer": "$1$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Inside",
+          "why": "$2^{-7}$.",
+          "math": "$2^{-7}\\div 2^{-7}=2^0=1$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-026",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 26,
+      "globalNum": 26,
+      "localLabel": "Ch2-Q6",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Express $0.00000000000837$ in standard form.",
+      "answer": "$8.37\\times 10^{-12}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Shift decimal",
+          "why": "12 places right.",
+          "math": "$8.37\\times 10^{-12}$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-027",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 27,
+      "globalNum": 27,
+      "localLabel": "Ch2-Q7",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find $(5^0+6^0+7^0)\\times 8^0$.",
+      "answer": "$3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Zero power",
+          "why": "Each term is $1$.",
+          "math": "$(1+1+1)\\times 1=3$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-028",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 28,
+      "globalNum": 28,
+      "localLabel": "Ch2-Q8",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Simplify $(3^{-5}\\times 3^{-7})\\div 3^{-10}$ (positive exponent).",
+      "answer": "$\\dfrac{1}{3^2}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Steps",
+          "why": "$3^{-12}\\div 3^{-10}=3^{-2}$.",
+          "math": "$\\dfrac{1}{9}$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-029",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 29,
+      "globalNum": 29,
+      "localLabel": "Ch2-Q9",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Write $149600000$ in standard form.",
+      "answer": "$1.496\\times 10^8$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Notation",
+          "why": "Decimal after first digit.",
+          "math": "$1.496\\times 10^8$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-030",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 30,
+      "globalNum": 30,
+      "localLabel": "Ch2-Q10",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "If $\\left(\\dfrac{2}{3}\\right)^x=\\dfrac{8}{27}$, find $x$.",
+      "answer": "$x=3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rewrite RHS",
+          "why": "$\\dfrac{8}{27}=\\left(\\dfrac{2}{3}\\right)^3$.",
+          "math": "$x=3$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-031",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 31,
+      "globalNum": 31,
+      "localLabel": "Ch2-Q11",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Simplify $(5^{-3}\\times 5^{-4})\\div 5^{-7}$ in exponential form.",
+      "answer": "$5^0$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rules",
+          "why": "Product then quotient of powers.",
+          "math": "$5^0$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-032",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 32,
+      "globalNum": 32,
+      "localLabel": "Ch2-Q12",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find $(-3)^{-4}\\times(-3)^{-2}$.",
+      "answer": "$\\dfrac{1}{729}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Add",
+          "why": "$(-3)^{-6}=\\dfrac{1}{(-3)^6}$.",
+          "math": "$\\dfrac{1}{729}$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-033",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 33,
+      "globalNum": 33,
+      "localLabel": "Ch2-Q13",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Express $0.0000056$ in standard form.",
+      "answer": "$5.6\\times 10^{-6}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Shift",
+          "why": "6 places right.",
+          "math": "$5.6\\times 10^{-6}$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-034",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 34,
+      "globalNum": 34,
+      "localLabel": "Ch2-Q14",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "If $2^x=32$ and $3^y=81$, find $x+y$.",
+      "answer": "$9$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Solve",
+          "why": "$x=5$, $y=4$.",
+          "math": "$x+y=9$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-035",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 35,
+      "globalNum": 35,
+      "localLabel": "Ch2-Q15",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Simplify $\\left[\\left(-\\dfrac{2}{3}\\right)^3\\left(-\\dfrac{2}{3}\\right)^{-5}\\right]\\div\\left(-\\dfrac{2}{3}\\right)^{-2}$.",
+      "answer": "$1$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Bracket",
+          "why": "Power adds to $(-2/3)^{-2}$.",
+          "math": "Divide same base → exponent $0$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-036",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 36,
+      "globalNum": 36,
+      "localLabel": "Ch2-Q16",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Write $3.45\\times 10^6$ in usual form.",
+      "answer": "$3450000$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Move decimal",
+          "why": "6 places right.",
+          "math": "$3450000$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-037",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 37,
+      "globalNum": 37,
+      "localLabel": "Ch2-Q17",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Prove $(a^m)^n=a^{mn}$.",
+      "answer": "Proven by repeated multiplication.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Meaning",
+          "why": "$(a^m)^n=a^m\\times\\cdots$ ($n$ times).",
+          "math": "Add $m$ exactly $n$ times → $mn$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-038",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 38,
+      "globalNum": 38,
+      "localLabel": "Ch2-Q18",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find $x$ if $\\left(\\dfrac{5}{4}\\right)^{-x}=\\left(\\dfrac{4}{5}\\right)^3$.",
+      "answer": "$x=3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Reciprocal",
+          "why": "$\\left(\\dfrac{4}{5}\\right)^3=\\left(\\dfrac{5}{4}\\right)^{-3}$.",
+          "math": "$-x=-3$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-039",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 39,
+      "globalNum": 39,
+      "localLabel": "Ch2-Q19",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Simplify $2^{-3}\\times 3^{-3}\\times 6^3$.",
+      "answer": "$1$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Combine",
+          "why": "$6^{-3}\\times 6^3$.",
+          "math": "$6^0=1$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-040",
+      "chapter": 2,
+      "batch": 1,
+      "batchNum": 40,
+      "globalNum": 40,
+      "localLabel": "Ch2-Q20",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Express $0.000000567$ in standard form.",
+      "answer": "$5.67\\times 10^{-7}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Shift",
+          "why": "7 places right.",
+          "math": "$5.67\\times 10^{-7}$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-041",
+      "chapter": 3,
+      "batch": 1,
+      "batchNum": 41,
+      "globalNum": 41,
+      "localLabel": "Ch3-Q1",
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find $35^2$ using $(a+b)^2=a^2+2ab+b^2$.",
+      "answer": "$1225$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "$35=30+5$.",
+          "math": "$(30+5)^2=900+300+25$"
+        },
+        {
+          "rule": "Sum",
+          "why": "$1225$.",
+          "math": "$1225$"
+        }
+      ],
+      "linked_note_id": "CH03-sec-square-numbers-or-perfect-squares",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-042",
+      "chapter": 3,
+      "batch": 1,
+      "batchNum": 42,
+      "globalNum": 42,
+      "localLabel": "Ch3-Q2",
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find $\\sqrt{1296}$ by prime factorisation.",
+      "answer": "$36$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Factor",
+          "why": "$1296=2^4\\times 3^4$.",
+          "math": "Pair primes"
+        },
+        {
+          "rule": "Root",
+          "why": "$2^2\\times 3^2=36$.",
+          "math": "$36$"
+        }
+      ],
+      "linked_note_id": "CH03-sec-square-numbers-or-perfect-squares",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-043",
+      "chapter": 3,
+      "batch": 1,
+      "batchNum": 43,
+      "globalNum": 43,
+      "localLabel": "Ch3-Q3",
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Smallest number to divide $9408$ to get a perfect square.",
+      "answer": "$3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Factor",
+          "why": "$9408=2^6\\times 3\\times 7^2$.",
+          "math": "Unpaired factor: $3$"
+        },
+        {
+          "rule": "Answer",
+          "why": "Divide by $3$.",
+          "math": "$3$"
+        }
+      ],
+      "linked_note_id": "CH03-sec-square-numbers-or-perfect-squares",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-044",
+      "chapter": 3,
+      "batch": 1,
+      "batchNum": 44,
+      "globalNum": 44,
+      "localLabel": "Ch3-Q4",
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find $\\sqrt{0.0064}$.",
+      "answer": "$0.08$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Fraction",
+          "why": "$\\dfrac{64}{10000}$.",
+          "math": "$\\dfrac{8}{100}=0.08$"
+        }
+      ],
+      "linked_note_id": "CH03-sec-square-numbers-or-perfect-squares",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-045",
+      "chapter": 3,
+      "batch": 1,
+      "batchNum": 45,
+      "globalNum": 45,
+      "localLabel": "Ch3-Q5",
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Square is $7744$. Find the number.",
+      "answer": "$88$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Factor",
+          "why": "$7744=2^6\\times 11^2$.",
+          "math": "$\\sqrt{7744}=88$"
+        }
+      ],
+      "linked_note_id": "CH03-sec-square-numbers-or-perfect-squares",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-046",
+      "chapter": 3,
+      "batch": 1,
+      "batchNum": 46,
+      "globalNum": 46,
+      "localLabel": "Ch3-Q6",
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find $\\sqrt{7921}$ by long division.",
+      "answer": "$89$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Groups",
+          "why": "$\\overline{79}|\\overline{21}$.",
+          "math": "Trial: $89^2=7921$"
+        }
+      ],
+      "linked_note_id": "CH03-sec-square-numbers-or-perfect-squares",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-047",
+      "chapter": 3,
+      "batch": 1,
+      "batchNum": 47,
+      "globalNum": 47,
+      "localLabel": "Ch3-Q7",
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "How many non-square integers lie strictly between $25^2$ and $26^2$?",
+      "answer": "$50$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "Between $n^2$ and $(n+1)^2$: $2n$ numbers.",
+          "math": "$2\\times 25=50$"
+        }
+      ],
+      "linked_note_id": "CH03-sec-square-numbers-or-perfect-squares",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-048",
+      "chapter": 3,
+      "batch": 1,
+      "batchNum": 48,
+      "globalNum": 48,
+      "localLabel": "Ch3-Q8",
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Smallest square divisible by $6$, $9$, and $15$.",
+      "answer": "$900$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "LCM",
+          "why": "LCM$(6,9,15)=90$.",
+          "math": "Make perfect square: $90\\times 10=900$"
+        }
+      ],
+      "linked_note_id": "CH03-sec-square-numbers-or-perfect-squares",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-049",
+      "chapter": 3,
+      "batch": 1,
+      "batchNum": 49,
+      "globalNum": 49,
+      "localLabel": "Ch3-Q9",
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Remainder when $529$ is divided by $23$.",
+      "answer": "$0$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Recognise",
+          "why": "$529=23^2$.",
+          "math": "Exact division → remainder $0$"
+        }
+      ],
+      "linked_note_id": "CH03-sec-square-numbers-or-perfect-squares",
+      "source": "gemini-batch-01"
+    },
+    {
+      "id": "Q-GEM-B01-050",
+      "chapter": 3,
+      "batch": 1,
+      "batchNum": 50,
+      "globalNum": 50,
+      "localLabel": "Ch3-Q10",
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 1",
+      "question": "Find $\\sqrt{5776}$.",
+      "answer": "$76$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Estimate",
+          "why": "Between $70^2$ and $80^2$; ends in $6$.",
+          "math": "$76^2=5776$"
+        }
+      ],
+      "linked_note_id": "CH03-sec-square-numbers-or-perfect-squares",
+      "source": "gemini-batch-01"
+    }
+  ]
+}

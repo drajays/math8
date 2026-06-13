@@ -294,6 +294,18 @@ a{color:var(--blue)}
 .q-edit-note{font-family:var(--mono);font-size:10px;color:var(--on-dim);margin:0}
 .q-edit-mcq-grid{display:grid;gap:8px}
 
+/* —— Push local edits to GitHub —— */
+.git-push-btn{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--border);background:var(--surface);border-radius:var(--pill);padding:6px 12px;font-size:12px;font-weight:600;font-family:var(--sans);cursor:pointer;color:var(--on-var);transition:all .15s;white-space:nowrap}
+.git-push-btn:hover:not(:disabled){border-color:var(--emerald);background:var(--emerald-soft);color:var(--emerald)}
+.git-push-btn:disabled{opacity:.45;cursor:not-allowed}
+.git-push-badge{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 5px;border-radius:var(--pill);background:#e11d48;color:#fff;font-family:var(--mono);font-size:10px;font-weight:700}
+.git-push-fab{position:fixed;bottom:18px;right:18px;z-index:90;display:inline-flex;align-items:center;gap:8px;border:none;border-radius:var(--pill);padding:12px 18px;font-size:13px;font-weight:700;font-family:var(--sans);cursor:pointer;color:#fff;background:linear-gradient(135deg,#059669,#047857);box-shadow:0 8px 24px rgba(5,150,105,.35);transition:transform .12s,box-shadow .12s}
+.git-push-fab:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(5,150,105,.4)}
+.git-push-fab[hidden]{display:none!important}
+.git-push-log{font-family:var(--mono);font-size:11px;line-height:1.55;background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:10px 12px;max-height:180px;overflow:auto;white-space:pre-wrap;color:var(--on-var)}
+.git-push-log .ok{color:var(--emerald)}
+.git-push-log .err{color:#dc2626}
+
 /* —— Mind map —— */
 .mind-doc,.cheat-doc,.rich-doc{font-family:var(--serif)}
 .mind-tree{padding:8px 4px 16px}
@@ -352,6 +364,7 @@ sup.msup,sub.msub{font-family:inherit}
   <header class="app-header">
     <a class="back" href="../">← math8 apps</a>
     <div class="brand">Understanding Mathematics<small>ICSE CLASS 8 · M.L. AGGARWAL · GLASS-BOX</small></div>
+    <button type="button" class="git-push-btn" id="git-push-btn" disabled title="No local edits to push"><span aria-hidden="true">⬆</span> Push to GitHub <span class="git-push-badge" id="git-push-badge" hidden></span></button>
   </header>
   <div class="grid" id="app-grid">
     <aside class="card sidebar" id="chapter-sidebar">
@@ -400,6 +413,36 @@ sup.msup,sub.msub{font-family:inherit}
   </div>
 </div>
 
+<button type="button" class="git-push-fab" id="git-push-fab" hidden title="Push local edits to GitHub">⬆ Push to GitHub</button>
+
+<div class="q-edit-overlay" id="git-push-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="git-push-title">
+  <div class="q-edit-modal">
+    <div class="q-edit-head">
+      <div>
+        <h2 id="git-push-title">Push edits to GitHub</h2>
+        <div class="q-edit-id" id="git-push-summary"></div>
+      </div>
+      <button type="button" class="q-admin-btn" id="git-push-close" aria-label="Close">✕</button>
+    </div>
+    <div class="q-edit-body">
+      <p class="q-edit-note">Commits your browser edits directly to <strong>drajays/math8</strong> on branch <strong>main</strong>. GitHub Pages redeploys automatically after push.</p>
+      <div class="q-edit-field">
+        <label for="git-push-token">GitHub personal access token</label>
+        <input type="password" id="git-push-token" autocomplete="off" placeholder="ghp_… or github_pat_…">
+        <p class="q-edit-note" style="margin-top:6px">Needs <strong>Contents: Read and write</strong> on this repo. Stored in this tab only (sessionStorage).</p>
+      </div>
+      <div class="q-edit-field">
+        <label>Progress</label>
+        <div class="git-push-log" id="git-push-log">Ready.</div>
+      </div>
+    </div>
+    <div class="q-edit-foot">
+      <button type="button" class="q-admin-btn" id="git-push-cancel">Cancel</button>
+      <button type="button" class="btn" id="git-push-run" style="background:linear-gradient(135deg,#059669,#047857)">Push to GitHub</button>
+    </div>
+  </div>
+</div>
+
 <div class="q-edit-overlay" id="q-edit-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="q-edit-title">
   <div class="q-edit-modal">
     <div class="q-edit-head">
@@ -410,7 +453,7 @@ sup.msup,sub.msub{font-family:inherit}
       <button type="button" class="q-admin-btn" id="q-edit-close" aria-label="Close">✕</button>
     </div>
     <form class="q-edit-body" id="q-edit-form">
-      <p class="q-edit-note">Changes save in this browser only — they do not modify the GitHub files.</p>
+      <p class="q-edit-note">Saves in this browser. Use <strong>Push to GitHub</strong> to commit to the repo.</p>
       <div class="q-edit-field">
         <label for="q-edit-question">Question</label>
         <textarea id="q-edit-question" rows="3" required></textarea>
@@ -451,6 +494,9 @@ let MANIFEST = null, CUR = null, CACHE = {}, LOAD_TOKEN = 0;
 let CUR_QUESTIONS = [];
 let EDIT_QID = null;
 const OVERRIDE_KEY = "math8-question-overrides";
+const GH_TOKEN_KEY = "math8-gh-token";
+const GITHUB_REPO = "drajays/math8";
+const GITHUB_BRANCH = "main";
 const BATCH_COUNT = 10;
 
 function safeStr(v){ return v == null ? "" : String(v); }
@@ -560,6 +606,187 @@ function getOverrides(){
 
 function saveOverrides(o){
   try { localStorage.setItem(OVERRIDE_KEY, JSON.stringify(o)); } catch(e){}
+  updatePushButtonState();
+}
+
+function questionSourceInfo(id){
+  const s = safeStr(id);
+  let m = s.match(/^Q-CH(\d{1,2})-/i);
+  if (m) return { path: "data/chapters/chapter_" + String(m[1]).padStart(2, "0") + "_questions.json", kind: "chapter" };
+  m = s.match(/^Q-GEM-B(\d{1,2})-/i);
+  if (m) return { path: "data/batches/batch_" + String(m[1]).padStart(2, "0") + ".json", kind: "batch" };
+  return null;
+}
+
+function pendingOverrideSummary(){
+  const o = getOverrides();
+  const editCount = Object.keys(o.edits).length;
+  const delCount = o.deleted.length;
+  const paths = new Set();
+  o.deleted.forEach(id => { const info = questionSourceInfo(id); if (info) paths.add(info.path); });
+  Object.keys(o.edits).forEach(id => { const info = questionSourceInfo(id); if (info) paths.add(info.path); });
+  return { editCount, delCount, total: editCount + delCount, paths: [...paths] };
+}
+
+function updatePushButtonState(){
+  const { total } = pendingOverrideSummary();
+  const btn = $("#git-push-btn");
+  const fab = $("#git-push-fab");
+  const badge = $("#git-push-badge");
+  const title = total ? "Push " + total + " local edit(s) to GitHub" : "No local edits to push";
+  if (btn) {
+    btn.disabled = total === 0;
+    btn.title = title;
+  }
+  if (fab) {
+    fab.hidden = total === 0;
+    fab.title = title;
+  }
+  if (badge) {
+    badge.textContent = total ? String(total) : "";
+    badge.hidden = total === 0;
+  }
+}
+
+function mergeEditIntoQuestion(q, edit){
+  const merged = { ...q, ...edit };
+  if (edit.glassboxSteps) merged.glassboxSteps = edit.glassboxSteps.map(s => ({
+    rule: safeStr(s.rule || "Step"),
+    why: safeStr(s.why),
+    math: safeStr(s.math),
+  }));
+  if (edit.options) merged.options = edit.options.map(opt => safeStr(opt));
+  return merged;
+}
+
+function applyOverridesToQuestions(questions, overrides){
+  const deleted = new Set(overrides.deleted || []);
+  return questions
+    .filter(q => !deleted.has(q.id))
+    .map(q => overrides.edits[q.id] ? mergeEditIntoQuestion(q, overrides.edits[q.id]) : q);
+}
+
+function jsonToBase64(obj){
+  const text = JSON.stringify(obj, null, 2) + "\n";
+  const bytes = new TextEncoder().encode(text);
+  let bin = "";
+  bytes.forEach(b => { bin += String.fromCharCode(b); });
+  return btoa(bin);
+}
+
+function base64ToText(b64){
+  const bin = atob(b64.replace(/\n/g, ""));
+  const bytes = Uint8Array.from(bin, c => c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
+async function ghApi(path, token, opts){
+  const res = await fetch("https://api.github.com" + path, {
+    ...opts,
+    headers: {
+      Accept: "application/vnd.github+json",
+      Authorization: "Bearer " + token,
+      "X-GitHub-Api-Version": "2022-11-28",
+      ...(opts.headers || {}),
+    },
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.message || res.statusText || String(res.status));
+  return data;
+}
+
+function appendPushLog(line, cls){
+  const log = $("#git-push-log");
+  if (!log) return;
+  const span = document.createElement("div");
+  if (cls) span.className = cls;
+  span.textContent = line;
+  log.appendChild(span);
+  log.scrollTop = log.scrollHeight;
+}
+
+function openPushModal(){
+  const summary = pendingOverrideSummary();
+  if (!summary.total) return;
+  $("#git-push-summary").textContent =
+    summary.editCount + " edit(s), " + summary.delCount + " delete(s) across " + summary.paths.length + " file(s)";
+  $("#git-push-log").textContent = "Ready.";
+  const savedToken = sessionStorage.getItem(GH_TOKEN_KEY) || "";
+  $("#git-push-token").value = savedToken;
+  $("#git-push-overlay").hidden = false;
+  document.body.style.overflow = "hidden";
+}
+
+function closePushModal(){
+  $("#git-push-overlay").hidden = true;
+  document.body.style.overflow = "";
+}
+
+async function pushOverridesToGitHub(){
+  const overrides = getOverrides();
+  const summary = pendingOverrideSummary();
+  if (!summary.total) return;
+  const token = $("#git-push-token").value.trim();
+  if (!token) { alert("Enter a GitHub personal access token."); return; }
+  sessionStorage.setItem(GH_TOKEN_KEY, token);
+  const runBtn = $("#git-push-run");
+  const cancelBtn = $("#git-push-cancel");
+  runBtn.disabled = true;
+  cancelBtn.disabled = true;
+  $("#git-push-log").textContent = "";
+  appendPushLog("Starting push…");
+  try {
+    for (const path of summary.paths) {
+      appendPushLog("Fetching " + path + "…");
+      const remote = await ghApi("/repos/" + GITHUB_REPO + "/contents/" + path + "?ref=" + GITHUB_BRANCH, token);
+      const parsed = JSON.parse(base64ToText(remote.content));
+      const kind = path.includes("/batches/") ? "batch" : "chapter";
+      let updated;
+      if (kind === "batch") {
+        const questions = applyOverridesToQuestions(parsed.questions || [], overrides);
+        updated = { ...parsed, questions, count: questions.length };
+      } else {
+        updated = applyOverridesToQuestions(Array.isArray(parsed) ? parsed : [], overrides);
+      }
+      appendPushLog("Committing " + path + "…");
+      await ghApi("/repos/" + GITHUB_REPO + "/contents/" + path, token, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: "Update questions from textbook editor",
+          content: jsonToBase64(updated),
+          sha: remote.sha,
+          branch: GITHUB_BRANCH,
+        }),
+      });
+      appendPushLog("✓ " + path, "ok");
+    }
+    saveOverrides({ deleted: [], edits: {} });
+    Object.keys(CACHE).forEach(k => delete CACHE[k]);
+    appendPushLog("Done. GitHub Pages will redeploy in ~1–2 min.", "ok");
+    if (CUR) {
+      appendPushLog("Reloading chapter…");
+      await selectChapter(CUR);
+    }
+    setTimeout(closePushModal, 1200);
+  } catch (e) {
+    console.error(e);
+    appendPushLog("Error: " + safeStr(e.message || e), "err");
+  } finally {
+    runBtn.disabled = false;
+    cancelBtn.disabled = false;
+  }
+}
+
+function wireGitPush(){
+  if (wireGitPush._done) return;
+  wireGitPush._done = true;
+  $("#git-push-btn")?.addEventListener("click", openPushModal);
+  $("#git-push-fab")?.addEventListener("click", openPushModal);
+  $("#git-push-close")?.addEventListener("click", closePushModal);
+  $("#git-push-cancel")?.addEventListener("click", closePushModal);
+  $("#git-push-run")?.addEventListener("click", pushOverridesToGitHub);
+  $("#git-push-overlay")?.addEventListener("click", e => { if (e.target.id === "git-push-overlay") closePushModal(); });
 }
 
 function applyQuestionOverrides(qs){
@@ -727,6 +954,7 @@ function wireQuestionAdmin(){
   $("#q-edit-overlay")?.addEventListener("click", e => { if (e.target.id === "q-edit-overlay") closeEditModal(); });
   document.addEventListener("keydown", e => {
     if (e.key === "Escape" && !$("#q-edit-overlay")?.hidden) closeEditModal();
+    if (e.key === "Escape" && !$("#git-push-overlay")?.hidden) closePushModal();
   });
 }
 
@@ -989,6 +1217,8 @@ $('#sidebar-toggle')?.addEventListener('click', () => {
     const modeSaved = localStorage.getItem('math8-mode-sidebar-collapsed');
     if (modeSaved === '1') setModeSidebarCollapsed(true);
     wireQuestionAdmin();
+    wireGitPush();
+    updatePushButtonState();
     syncPracticeSideTools(getActiveTab());
     MANIFEST = await loadJson("manifest.json?v=5");
     paintChapters();

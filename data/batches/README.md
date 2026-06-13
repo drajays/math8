@@ -10,6 +10,8 @@ Upload **10 batches × 50 questions** here. Existing textbook questions are **ne
 | `batch_02.json` | 51–100 | Ch 3 (8), Ch 4 (15), Ch 5 (15), Ch 6 (12) |
 | `batch_03.json` | 101–150 | Ch 6 (3), Ch 7 (36), Ch 8 (11) |
 | `batch_04.json` | 151–200 | Ch 8 (9), Ch 9 (15), Ch 10 (26) |
+| `batch_05.json` | 201–250 | Ch 10 (12), Ch 11 (18), Ch 12 (20) |
+| `batch_10.json` | 451–500 | (TBD) |
 
 ## Add a new batch
 

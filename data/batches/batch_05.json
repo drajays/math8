@@ -1,0 +1,1331 @@
+{
+  "batch": 5,
+  "title": "Gemini Open Glassbox · Batch 5",
+  "count": 50,
+  "globalRange": [
+    201,
+    250
+  ],
+  "questions": [
+    {
+      "id": "Q-GEM-B05-201",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 1,
+      "globalNum": 201,
+      "localLabel": "Ch12-Q7",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Expand $(x+y+z)^2$.",
+      "answer": "$x^2+y^2+z^2+2xy+2yz+2zx$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(A+B+C)^2$ formula.",
+          "math": "$A=x,B=y,C=z$"
+        },
+        {
+          "rule": "Answer",
+          "why": "Plug in terms.",
+          "math": "Full expansion"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-202",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 2,
+      "globalNum": 202,
+      "localLabel": "Ch12-Q8",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Find $(52)^2$ using $(a-b)^2$ identity.",
+      "answer": "$2704$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "$(60-8)^2$.",
+          "math": "Subtraction identity"
+        },
+        {
+          "rule": "Calculate",
+          "why": "$3600-960+64$.",
+          "math": "$2704$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-203",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 3,
+      "globalNum": 203,
+      "localLabel": "Ch12-Q9",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Expand $\\left(x+\\dfrac{1}{x}\\right)^2$.",
+      "answer": "$x^2+2+\\dfrac{1}{x^2}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(A+B)^2$ with $B=1/x$.",
+          "math": "Middle term cancels"
+        },
+        {
+          "rule": "Answer",
+          "why": "$x^2+2+1/x^2$.",
+          "math": "Expanded form"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-204",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 4,
+      "globalNum": 204,
+      "localLabel": "Ch12-Q10",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Find $99^3$ using identity.",
+      "answer": "$970299$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "$(100-1)^3$.",
+          "math": "Cube identity"
+        },
+        {
+          "rule": "Calculate",
+          "why": "$1000000-30000+300-1$.",
+          "math": "$970299$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-205",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 5,
+      "globalNum": 205,
+      "localLabel": "Ch12-Q11",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Expand $(a-b)^3$.",
+      "answer": "$a^3-3a^2b+3ab^2-b^3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$(a-b)^3$ identity.",
+          "math": "Standard expansion"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-206",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 6,
+      "globalNum": 206,
+      "localLabel": "Ch12-Q12",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Find $(105)^2-(95)^2$ using identity.",
+      "answer": "$2000$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Diff squares",
+          "why": "$(105+95)(105-95)$.",
+          "math": "$(200)(10)$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$2000$.",
+          "math": "$2000$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-207",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 7,
+      "globalNum": 207,
+      "localLabel": "Ch12-Q13",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Expand $(2x-3y)^3$.",
+      "answer": "$8x^3-36x^2y+54xy^2-27y^3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(A-B)^3$.",
+          "math": "$A=2x,B=3y$"
+        },
+        {
+          "rule": "Expand",
+          "why": "Apply powers.",
+          "math": "Full expansion"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-208",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 8,
+      "globalNum": 208,
+      "localLabel": "Ch12-Q14",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Find $48\\times 52$ using identity.",
+      "answer": "$2496$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Pattern",
+          "why": "$(50-2)(50+2)$.",
+          "math": "$50^2-2^2$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$2500-4$.",
+          "math": "$2496$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-209",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 9,
+      "globalNum": 209,
+      "localLabel": "Ch12-Q15",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Expand $(x+y)^3$.",
+      "answer": "$x^3+3x^2y+3xy^2+y^3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$(a+b)^3$ identity.",
+          "math": "Standard expansion"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-210",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 10,
+      "globalNum": 210,
+      "localLabel": "Ch12-Q16",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Find $(1001)^2$ using identity.",
+      "answer": "$1002001$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "$(1000+1)^2$.",
+          "math": "$(A+B)^2$"
+        },
+        {
+          "rule": "Calculate",
+          "why": "$1000000+2000+1$.",
+          "math": "$1002001$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-211",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 11,
+      "globalNum": 211,
+      "localLabel": "Ch12-Q17",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Expand $(a+b+c)(a-b+c)$.",
+      "answer": "$a^2+c^2-b^2+2ac$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Group",
+          "why": "$((a+c)+b)((a+c)-b)$.",
+          "math": "Difference of squares"
+        },
+        {
+          "rule": "Expand",
+          "why": "$(a+c)^2-b^2$.",
+          "math": "$a^2+c^2-b^2+2ac$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-212",
+      "chapter": 10,
+      "batch": 5,
+      "batchNum": 12,
+      "globalNum": 212,
+      "localLabel": "Ch12-Q18",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Find $997\\times 1003$ using identity.",
+      "answer": "$999991$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Pattern",
+          "why": "$(1000-3)(1000+3)$.",
+          "math": "$A^2-B^2$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$1000000-9$.",
+          "math": "$999991$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-213",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 13,
+      "globalNum": 213,
+      "localLabel": "Ch13-Q1",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $12x^2-27$.",
+      "answer": "$3(2x-3)(2x+3)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "GCF",
+          "why": "$3(4x^2-9)$.",
+          "math": "Pull out $3$"
+        },
+        {
+          "rule": "Diff squares",
+          "why": "$(2x)^2-(3)^2$.",
+          "math": "$3(2x-3)(2x+3)$"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-214",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 14,
+      "globalNum": 214,
+      "localLabel": "Ch13-Q2",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $x^2+5x+6$.",
+      "answer": "$(x+2)(x+3)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "Numbers multiply to $6$, add to $5$.",
+          "math": "$2$ and $3$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$(x+2)(x+3)$.",
+          "math": "$(x+2)(x+3)$"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-215",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 15,
+      "globalNum": 215,
+      "localLabel": "Ch13-Q3",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $4x^2-9y^2$.",
+      "answer": "$(2x-3y)(2x+3y)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identify",
+          "why": "$(2x)^2-(3y)^2$.",
+          "math": "Difference of squares"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-216",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 16,
+      "globalNum": 216,
+      "localLabel": "Ch13-Q4",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $x^3-8$.",
+      "answer": "$(x-2)(x^2+2x+4)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Cubes",
+          "why": "$x^3-2^3$.",
+          "math": "Difference of cubes"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-217",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 17,
+      "globalNum": 217,
+      "localLabel": "Ch13-Q5",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $2x^2+7x+6$.",
+      "answer": "$(x+2)(2x+3)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "$ac=12$, use $3,4$.",
+          "math": "$2x^2+4x+3x+6$"
+        },
+        {
+          "rule": "Group",
+          "why": "$2x(x+2)+3(x+2)$.",
+          "math": "$(x+2)(2x+3)$"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-218",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 18,
+      "globalNum": 218,
+      "localLabel": "Ch13-Q6",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $3x^2-12x$.",
+      "answer": "$3x(x-4)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "GCF",
+          "why": "Common factor $3x$.",
+          "math": "$3x(x-4)$"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-219",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 19,
+      "globalNum": 219,
+      "localLabel": "Ch13-Q7",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $x^2-14x+49$.",
+      "answer": "$(x-7)^2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Perfect sq.",
+          "why": "$-7$ and $-7$.",
+          "math": "$(x-7)^2$"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-220",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 20,
+      "globalNum": 220,
+      "localLabel": "Ch13-Q8",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $8x^3-27y^3$.",
+      "answer": "$(2x-3y)(4x^2+6xy+9y^2)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Cubes",
+          "why": "$(2x)^3-(3y)^3$.",
+          "math": "Difference of cubes"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-221",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 21,
+      "globalNum": 221,
+      "localLabel": "Ch13-Q9",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $x^2-5x-14$.",
+      "answer": "$(x-7)(x+2)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Factors",
+          "why": "Multiply to $-14$, add to $-5$.",
+          "math": "$-7$ and $2$"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-222",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 22,
+      "globalNum": 222,
+      "localLabel": "Ch13-Q10",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $5x^2-20$.",
+      "answer": "$5(x-2)(x+2)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "GCF",
+          "why": "$5(x^2-4)$.",
+          "math": "Then diff squares"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-223",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 23,
+      "globalNum": 223,
+      "localLabel": "Ch13-Q11",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $x^3+27$.",
+      "answer": "$(x+3)(x^2-3x+9)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sum cubes",
+          "why": "$x^3+3^3$.",
+          "math": "Standard formula"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-224",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 24,
+      "globalNum": 224,
+      "localLabel": "Ch13-Q12",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $6x^2+11x-35$.",
+      "answer": "$(2x+7)(3x-5)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "$ac=-210$, use $21,-10$.",
+          "math": "Group and factor"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-225",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 25,
+      "globalNum": 225,
+      "localLabel": "Ch13-Q13",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $9x^2-24xy+16y^2$.",
+      "answer": "$(3x-4y)^2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Perfect sq.",
+          "why": "$(3x)^2$ and $(4y)^2$.",
+          "math": "Middle $-24xy$ fits"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-226",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 26,
+      "globalNum": 226,
+      "localLabel": "Ch13-Q14",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $x^2-\\dfrac{1}{x^2}$.",
+      "answer": "$\\left(x-\\dfrac{1}{x}\\right)\\left(x+\\dfrac{1}{x}\\right)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Diff squares",
+          "why": "$A=x,B=1/x$.",
+          "math": "Factor form"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-227",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 27,
+      "globalNum": 227,
+      "localLabel": "Ch13-Q15",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $2x^3+16$.",
+      "answer": "$2(x+2)(x^2-2x+4)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "GCF",
+          "why": "$2(x^3+8)$.",
+          "math": "Sum of cubes inside"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-228",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 28,
+      "globalNum": 228,
+      "localLabel": "Ch13-Q16",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $x^2+2xy+y^2-z^2$.",
+      "answer": "$(x+y-z)(x+y+z)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Group",
+          "why": "$(x+y)^2-z^2$.",
+          "math": "Difference of squares"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-229",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 29,
+      "globalNum": 229,
+      "localLabel": "Ch13-Q17",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $12x^2-7x-10$.",
+      "answer": "$(4x-5)(3x+2)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "$ac=-120$, use $-15,8$.",
+          "math": "Group and factor"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-230",
+      "chapter": 11,
+      "batch": 5,
+      "batchNum": 30,
+      "globalNum": 230,
+      "localLabel": "Ch13-Q18",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Factorise $(x+y)^3-(x-y)^3$.",
+      "answer": "$2y(3x^2+y^2)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Expand",
+          "why": "Subtract cubes.",
+          "math": "Cancel terms"
+        },
+        {
+          "rule": "GCF",
+          "why": "$6x^2y+2y^3$.",
+          "math": "$2y(3x^2+y^2)$"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-231",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 31,
+      "globalNum": 231,
+      "localLabel": "Ch14-Q1",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Solve $3(2x-1)-2(3x+5)=5(x-3)$.",
+      "answer": "$x=\\dfrac{2}{5}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Expand",
+          "why": "$6x-3-6x-10=5x-15$.",
+          "math": "$-13=5x-15$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$2=5x$.",
+          "math": "$x=2/5$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-232",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 32,
+      "globalNum": 232,
+      "localLabel": "Ch14-Q2",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Sum of three consecutive even numbers is $48$. Find them.",
+      "answer": "$14,16,18$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let",
+          "why": "$x,x+2,x+4$.",
+          "math": "$3x+6=48$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=14$.",
+          "math": "$14,16,18$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-word-problems",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-233",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 33,
+      "globalNum": 233,
+      "localLabel": "Ch14-Q3",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Solve $\\dfrac{2x+3}{5}-\\dfrac{x-2}{3}=\\dfrac{4}{15}$.",
+      "answer": "$x=-15$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "LCM $15$",
+          "why": "Clear fractions.",
+          "math": "$3(2x+3)-5(x-2)=4$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x+19=4$.",
+          "math": "$x=-15$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-234",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 34,
+      "globalNum": 234,
+      "localLabel": "Ch14-Q4",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "One number is $12$ more than another; sum is $48$.",
+      "answer": "$18$ and $30$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let",
+          "why": "Smaller $x$, bigger $x+12$.",
+          "math": "$2x+12=48$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$x=18$.",
+          "math": "$18$ and $30$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-word-problems",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-235",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 35,
+      "globalNum": 235,
+      "localLabel": "Ch14-Q5",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Solve $5x-3(3x-7)=2(x+5)-4$.",
+      "answer": "$x=\\dfrac{5}{2}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Expand",
+          "why": "$-4x+21=2x+6$.",
+          "math": "Collect terms"
+        },
+        {
+          "rule": "Solve",
+          "why": "$15=6x$.",
+          "math": "$x=5/2$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-236",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 36,
+      "globalNum": 236,
+      "localLabel": "Ch14-Q6",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Father is $3\\times$ son's age; in $12$ yr father is $2\\times$ son. Present ages?",
+      "answer": "Son $12$, father $36$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let",
+          "why": "Son $x$, father $3x$.",
+          "math": "Future ages"
+        },
+        {
+          "rule": "Equation",
+          "why": "$3x+12=2(x+12)$.",
+          "math": "Son $12$, father $36$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-word-problems",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-237",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 37,
+      "globalNum": 237,
+      "localLabel": "Ch14-Q7",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Solve $\\dfrac{x+1}{2}+\\dfrac{x+2}{3}=\\dfrac{x+3}{4}+4$.",
+      "answer": "$x=\\dfrac{43}{7}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "LCM $12$",
+          "why": "Clear fractions.",
+          "math": "Distribute"
+        },
+        {
+          "rule": "Solve",
+          "why": "$10x+14=3x+57$.",
+          "math": "$x=43/7$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-238",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 38,
+      "globalNum": 238,
+      "localLabel": "Ch14-Q8",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Divide ₹$500$ between A and B in ratio $3:2$.",
+      "answer": "A ₹$300$, B ₹$200$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Parts",
+          "why": "$3x+2x=500$.",
+          "math": "$x=100$"
+        },
+        {
+          "rule": "Shares",
+          "why": "A $300$, B $200$.",
+          "math": "₹$300$, ₹$200$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-word-problems",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-239",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 39,
+      "globalNum": 239,
+      "localLabel": "Ch14-Q9",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Solve $4(2x-3)-3(x+2)=5(x-4)+7$.",
+      "answer": "No solution",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Expand",
+          "why": "$5x-18=5x-13$.",
+          "math": "Subtract $5x$"
+        },
+        {
+          "rule": "Result",
+          "why": "$-18=-13$ false.",
+          "math": "No solution"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-240",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 40,
+      "globalNum": 240,
+      "localLabel": "Ch14-Q10",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Denominator exceeds numerator by $3$; adding $2$ to both gives $4/5$.",
+      "answer": "$\\dfrac{10}{13}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Fraction",
+          "why": "$\\dfrac{x}{x+3}$.",
+          "math": "After adding $2$"
+        },
+        {
+          "rule": "Cross-multiply",
+          "why": "$5(x+2)=4(x+5)$.",
+          "math": "$x=10$ → $10/13$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-word-problems",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-241",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 41,
+      "globalNum": 241,
+      "localLabel": "Ch14-Q11",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Solve $2(x-3)+3(x-2)=4(x-1)-5$.",
+      "answer": "$x=3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Expand",
+          "why": "$5x-12=4x-9$.",
+          "math": "Collect"
+        },
+        {
+          "rule": "Answer",
+          "why": "$x=3$.",
+          "math": "$x=3$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-242",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 42,
+      "globalNum": 242,
+      "localLabel": "Ch14-Q12",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Man is $4\\times$ son's age; in $16$ yr man is $2\\times$ son. Present ages?",
+      "answer": "Son $8$, man $32$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let",
+          "why": "Son $x$, man $4x$.",
+          "math": "Future condition"
+        },
+        {
+          "rule": "Solve",
+          "why": "$4x+16=2(x+16)$.",
+          "math": "Son $8$, man $32$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-word-problems",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-243",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 43,
+      "globalNum": 243,
+      "localLabel": "Ch14-Q13",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Solve $\\dfrac{3x-2}{4}-\\dfrac{2x+3}{5}=\\dfrac{x-1}{3}$.",
+      "answer": "$x=46$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "LCM $60$",
+          "why": "Clear fractions.",
+          "math": "Distribute"
+        },
+        {
+          "rule": "Solve",
+          "why": "$21x-66=20x-20$.",
+          "math": "$x=46$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-244",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 44,
+      "globalNum": 244,
+      "localLabel": "Ch14-Q14",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Two-digit number: digit sum $9$; reversing digits adds $27$.",
+      "answer": "$36$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Digits",
+          "why": "$x+y=9$.",
+          "math": "Reversed equation"
+        },
+        {
+          "rule": "Solve",
+          "why": "$y-x=3$, get $x=3,y=6$.",
+          "math": "$36$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-word-problems",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-245",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 45,
+      "globalNum": 245,
+      "localLabel": "Ch14-Q15",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Solve $7x-5(2x-3)=3(x+4)-8$.",
+      "answer": "$x=\\dfrac{11}{6}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Expand",
+          "why": "$-3x+15=3x+4$.",
+          "math": "Collect"
+        },
+        {
+          "rule": "Answer",
+          "why": "$11=6x$.",
+          "math": "$x=11/6$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-246",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 46,
+      "globalNum": 246,
+      "localLabel": "Ch14-Q16",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Train $360$ km: $10$ km/h faster saves $1$ hour. Find speed.",
+      "answer": "$50$ km/h",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Times",
+          "why": "$360/v-360/(v+10)=1$.",
+          "math": "Clear fractions"
+        },
+        {
+          "rule": "Quadratic",
+          "why": "$v^2+10v-3600=0$.",
+          "math": "$v=50$ km/h"
+        }
+      ],
+      "linked_note_id": "CH12-sec-word-problems",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-247",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 47,
+      "globalNum": 247,
+      "localLabel": "Ch14-Q17",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Solve $\\dfrac{5x+3}{4}=\\dfrac{3x-2}{5}+2$.",
+      "answer": "$x=\\dfrac{17}{13}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "LCM $20$",
+          "why": "Clear fractions.",
+          "math": "Distribute"
+        },
+        {
+          "rule": "Solve",
+          "why": "$25x+15=12x+32$.",
+          "math": "$x=17/13$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-248",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 48,
+      "globalNum": 248,
+      "localLabel": "Ch14-Q18",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Ages ratio $5:3$; after $6$ years ratio $7:5$. Present ages?",
+      "answer": "A $15$, B $9$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let",
+          "why": "$5x$ and $3x$.",
+          "math": "Future ratio"
+        },
+        {
+          "rule": "Solve",
+          "why": "$5(5x+6)=7(3x+6)$.",
+          "math": "A $15$, B $9$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-word-problems",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-249",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 49,
+      "globalNum": 249,
+      "localLabel": "Ch14-Q19",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Solve $2(x+3)-3(x-2)=4(x-5)+7$.",
+      "answer": "$x=5$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Expand",
+          "why": "$-x+12=4x-13$.",
+          "math": "Collect"
+        },
+        {
+          "rule": "Answer",
+          "why": "$25=5x$.",
+          "math": "$x=5$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-05"
+    },
+    {
+      "id": "Q-GEM-B05-250",
+      "chapter": 12,
+      "batch": 5,
+      "batchNum": 50,
+      "globalNum": 250,
+      "localLabel": "Ch14-Q20",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 5",
+      "question": "Rectangle length $3\\times$ breadth; perimeter $64$ cm.",
+      "answer": "Breadth $8$ cm, length $24$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let",
+          "why": "Breadth $x$, length $3x$.",
+          "math": "$2(4x)=64$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$x=8$.",
+          "math": "Breadth $8$ cm, length $24$ cm"
+        }
+      ],
+      "linked_note_id": "CH12-sec-word-problems",
+      "source": "gemini-batch-05"
+    }
+  ]
+}

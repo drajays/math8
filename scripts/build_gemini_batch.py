@@ -19,6 +19,8 @@ NOTE_BY_CH = {
     8: "CH08-sec-simple-interest",
     9: "CH09-sec-direct-variation",
     10: "CH10-sec-fundamental-concepts",
+    11: "CH11-sec-factors-of-algebraic-expressions",
+    12: "CH12-sec-equations",
 }
 
 TOPIC_BY_CH = {n: f"math-ch{n}" for n in range(1, 21)}
@@ -777,7 +779,169 @@ def batch_04():
     return qs
 
 
-BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03, 4: batch_04}
+def batch_05():
+    B = 5
+    qs = []
+    N10I = "CH10-sec-a-2-2ab-b-2"
+    N11 = "CH11-sec-factors-of-algebraic-expressions"
+    N12E = "CH12-sec-equations"
+    N12W = "CH12-sec-word-problems"
+    WP = {232, 234, 236, 238, 240, 242, 244, 246, 248, 250}
+
+    ch10_id = [
+        (201, "Expand $(x+y+z)^2$.", "$x^2+y^2+z^2+2xy+2yz+2zx$",
+         [step("Identity", "$(A+B+C)^2$ formula.", "$A=x,B=y,C=z$"),
+          step("Answer", "Plug in terms.", "Full expansion")]),
+        (202, "Find $(52)^2$ using $(a-b)^2$ identity.", "$2704$",
+         [step("Split", "$(60-8)^2$.", "Subtraction identity"),
+          step("Calculate", "$3600-960+64$.", "$2704$")]),
+        (203, "Expand $\\left(x+\\dfrac{1}{x}\\right)^2$.", "$x^2+2+\\dfrac{1}{x^2}$",
+         [step("Identity", "$(A+B)^2$ with $B=1/x$.", "Middle term cancels"),
+          step("Answer", "$x^2+2+1/x^2$.", "Expanded form")]),
+        (204, "Find $99^3$ using identity.", "$970299$",
+         [step("Split", "$(100-1)^3$.", "Cube identity"),
+          step("Calculate", "$1000000-30000+300-1$.", "$970299$")]),
+        (205, "Expand $(a-b)^3$.", "$a^3-3a^2b+3ab^2-b^3$",
+         [step("Formula", "$(a-b)^3$ identity.", "Standard expansion")]),
+        (206, "Find $(105)^2-(95)^2$ using identity.", "$2000$",
+         [step("Diff squares", "$(105+95)(105-95)$.", "$(200)(10)$"),
+          step("Answer", "$2000$.", "$2000$")]),
+        (207, "Expand $(2x-3y)^3$.", "$8x^3-36x^2y+54xy^2-27y^3$",
+         [step("Identity", "$(A-B)^3$.", "$A=2x,B=3y$"),
+          step("Expand", "Apply powers.", "Full expansion")]),
+        (208, "Find $48\\times 52$ using identity.", "$2496$",
+         [step("Pattern", "$(50-2)(50+2)$.", "$50^2-2^2$"),
+          step("Answer", "$2500-4$.", "$2496$")]),
+        (209, "Expand $(x+y)^3$.", "$x^3+3x^2y+3xy^2+y^3$",
+         [step("Formula", "$(a+b)^3$ identity.", "Standard expansion")]),
+        (210, "Find $(1001)^2$ using identity.", "$1002001$",
+         [step("Split", "$(1000+1)^2$.", "$(A+B)^2$"),
+          step("Calculate", "$1000000+2000+1$.", "$1002001$")]),
+        (211, "Expand $(a+b+c)(a-b+c)$.", "$a^2+c^2-b^2+2ac$",
+         [step("Group", "$((a+c)+b)((a+c)-b)$.", "Difference of squares"),
+          step("Expand", "$(a+c)^2-b^2$.", "$a^2+c^2-b^2+2ac$")]),
+        (212, "Find $997\\times 1003$ using identity.", "$999991$",
+         [step("Pattern", "$(1000-3)(1000+3)$.", "$A^2-B^2$"),
+          step("Answer", "$1000000-9$.", "$999991$")]),
+    ]
+    for gn, qu, ans, st in ch10_id:
+        qs.append(mk_q(B, gn, 10, qu, ans, st, local_label=f"Ch12-Q{gn-194}", linked_note_id=N10I))
+
+    ch11 = [
+        (213, "Factorise $12x^2-27$.", "$3(2x-3)(2x+3)$",
+         [step("GCF", "$3(4x^2-9)$.", "Pull out $3$"),
+          step("Diff squares", "$(2x)^2-(3)^2$.", "$3(2x-3)(2x+3)$")]),
+        (214, "Factorise $x^2+5x+6$.", "$(x+2)(x+3)$",
+         [step("Split", "Numbers multiply to $6$, add to $5$.", "$2$ and $3$"),
+          step("Answer", "$(x+2)(x+3)$.", "$(x+2)(x+3)$")]),
+        (215, "Factorise $4x^2-9y^2$.", "$(2x-3y)(2x+3y)$",
+         [step("Identify", "$(2x)^2-(3y)^2$.", "Difference of squares")]),
+        (216, "Factorise $x^3-8$.", "$(x-2)(x^2+2x+4)$",
+         [step("Cubes", "$x^3-2^3$.", "Difference of cubes")]),
+        (217, "Factorise $2x^2+7x+6$.", "$(x+2)(2x+3)$",
+         [step("Split", "$ac=12$, use $3,4$.", "$2x^2+4x+3x+6$"),
+          step("Group", "$2x(x+2)+3(x+2)$.", "$(x+2)(2x+3)$")]),
+        (218, "Factorise $3x^2-12x$.", "$3x(x-4)$",
+         [step("GCF", "Common factor $3x$.", "$3x(x-4)$")]),
+        (219, "Factorise $x^2-14x+49$.", "$(x-7)^2$",
+         [step("Perfect sq.", "$-7$ and $-7$.", "$(x-7)^2$")]),
+        (220, "Factorise $8x^3-27y^3$.", "$(2x-3y)(4x^2+6xy+9y^2)$",
+         [step("Cubes", "$(2x)^3-(3y)^3$.", "Difference of cubes")]),
+        (221, "Factorise $x^2-5x-14$.", "$(x-7)(x+2)$",
+         [step("Factors", "Multiply to $-14$, add to $-5$.", "$-7$ and $2$")]),
+        (222, "Factorise $5x^2-20$.", "$5(x-2)(x+2)$",
+         [step("GCF", "$5(x^2-4)$.", "Then diff squares")]),
+        (223, "Factorise $x^3+27$.", "$(x+3)(x^2-3x+9)$",
+         [step("Sum cubes", "$x^3+3^3$.", "Standard formula")]),
+        (224, "Factorise $6x^2+11x-35$.", "$(2x+7)(3x-5)$",
+         [step("Split", "$ac=-210$, use $21,-10$.", "Group and factor")]),
+        (225, "Factorise $9x^2-24xy+16y^2$.", "$(3x-4y)^2$",
+         [step("Perfect sq.", "$(3x)^2$ and $(4y)^2$.", "Middle $-24xy$ fits")]),
+        (226, "Factorise $x^2-\\dfrac{1}{x^2}$.", "$\\left(x-\\dfrac{1}{x}\\right)\\left(x+\\dfrac{1}{x}\\right)$",
+         [step("Diff squares", "$A=x,B=1/x$.", "Factor form")]),
+        (227, "Factorise $2x^3+16$.", "$2(x+2)(x^2-2x+4)$",
+         [step("GCF", "$2(x^3+8)$.", "Sum of cubes inside")]),
+        (228, "Factorise $x^2+2xy+y^2-z^2$.", "$(x+y-z)(x+y+z)$",
+         [step("Group", "$(x+y)^2-z^2$.", "Difference of squares")]),
+        (229, "Factorise $12x^2-7x-10$.", "$(4x-5)(3x+2)$",
+         [step("Split", "$ac=-120$, use $-15,8$.", "Group and factor")]),
+        (230, "Factorise $(x+y)^3-(x-y)^3$.", "$2y(3x^2+y^2)$",
+         [step("Expand", "Subtract cubes.", "Cancel terms"),
+          step("GCF", "$6x^2y+2y^3$.", "$2y(3x^2+y^2)$")]),
+    ]
+    for gn, qu, ans, st in ch11:
+        qs.append(mk_q(B, gn, 11, qu, ans, st, local_label=f"Ch13-Q{gn-212}", linked_note_id=N11))
+
+    ch12 = [
+        (231, "Solve $3(2x-1)-2(3x+5)=5(x-3)$.", "$x=\\dfrac{2}{5}$",
+         [step("Expand", "$6x-3-6x-10=5x-15$.", "$-13=5x-15$"),
+          step("Solve", "$2=5x$.", "$x=2/5$")]),
+        (232, "Sum of three consecutive even numbers is $48$. Find them.", "$14,16,18$",
+         [step("Let", "$x,x+2,x+4$.", "$3x+6=48$"),
+          step("Solve", "$x=14$.", "$14,16,18$")]),
+        (233, "Solve $\\dfrac{2x+3}{5}-\\dfrac{x-2}{3}=\\dfrac{4}{15}$.", "$x=-15$",
+         [step("LCM $15$", "Clear fractions.", "$3(2x+3)-5(x-2)=4$"),
+          step("Solve", "$x+19=4$.", "$x=-15$")]),
+        (234, "One number is $12$ more than another; sum is $48$.", "$18$ and $30$",
+         [step("Let", "Smaller $x$, bigger $x+12$.", "$2x+12=48$"),
+          step("Answer", "$x=18$.", "$18$ and $30$")]),
+        (235, "Solve $5x-3(3x-7)=2(x+5)-4$.", "$x=\\dfrac{5}{2}$",
+         [step("Expand", "$-4x+21=2x+6$.", "Collect terms"),
+          step("Solve", "$15=6x$.", "$x=5/2$")]),
+        (236, "Father is $3\\times$ son's age; in $12$ yr father is $2\\times$ son. Present ages?", "Son $12$, father $36$",
+         [step("Let", "Son $x$, father $3x$.", "Future ages"),
+          step("Equation", "$3x+12=2(x+12)$.", "Son $12$, father $36$")]),
+        (237, "Solve $\\dfrac{x+1}{2}+\\dfrac{x+2}{3}=\\dfrac{x+3}{4}+4$.", "$x=\\dfrac{43}{7}$",
+         [step("LCM $12$", "Clear fractions.", "Distribute"),
+          step("Solve", "$10x+14=3x+57$.", "$x=43/7$")]),
+        (238, "Divide ₹$500$ between A and B in ratio $3:2$.", "A ₹$300$, B ₹$200$",
+         [step("Parts", "$3x+2x=500$.", "$x=100$"),
+          step("Shares", "A $300$, B $200$.", "₹$300$, ₹$200$")]),
+        (239, "Solve $4(2x-3)-3(x+2)=5(x-4)+7$.", "No solution",
+         [step("Expand", "$5x-18=5x-13$.", "Subtract $5x$"),
+          step("Result", "$-18=-13$ false.", "No solution")]),
+        (240, "Denominator exceeds numerator by $3$; adding $2$ to both gives $4/5$.", "$\\dfrac{10}{13}$",
+         [step("Fraction", "$\\dfrac{x}{x+3}$.", "After adding $2$"),
+          step("Cross-multiply", "$5(x+2)=4(x+5)$.", "$x=10$ → $10/13$")]),
+        (241, "Solve $2(x-3)+3(x-2)=4(x-1)-5$.", "$x=3$",
+         [step("Expand", "$5x-12=4x-9$.", "Collect"),
+          step("Answer", "$x=3$.", "$x=3$")]),
+        (242, "Man is $4\\times$ son's age; in $16$ yr man is $2\\times$ son. Present ages?", "Son $8$, man $32$",
+         [step("Let", "Son $x$, man $4x$.", "Future condition"),
+          step("Solve", "$4x+16=2(x+16)$.", "Son $8$, man $32$")]),
+        (243, "Solve $\\dfrac{3x-2}{4}-\\dfrac{2x+3}{5}=\\dfrac{x-1}{3}$.", "$x=46$",
+         [step("LCM $60$", "Clear fractions.", "Distribute"),
+          step("Solve", "$21x-66=20x-20$.", "$x=46$")]),
+        (244, "Two-digit number: digit sum $9$; reversing digits adds $27$.", "$36$",
+         [step("Digits", "$x+y=9$.", "Reversed equation"),
+          step("Solve", "$y-x=3$, get $x=3,y=6$.", "$36$")]),
+        (245, "Solve $7x-5(2x-3)=3(x+4)-8$.", "$x=\\dfrac{11}{6}$",
+         [step("Expand", "$-3x+15=3x+4$.", "Collect"),
+          step("Answer", "$11=6x$.", "$x=11/6$")]),
+        (246, "Train $360$ km: $10$ km/h faster saves $1$ hour. Find speed.", "$50$ km/h",
+         [step("Times", "$360/v-360/(v+10)=1$.", "Clear fractions"),
+          step("Quadratic", "$v^2+10v-3600=0$.", "$v=50$ km/h")]),
+        (247, "Solve $\\dfrac{5x+3}{4}=\\dfrac{3x-2}{5}+2$.", "$x=\\dfrac{17}{13}$",
+         [step("LCM $20$", "Clear fractions.", "Distribute"),
+          step("Solve", "$25x+15=12x+32$.", "$x=17/13$")]),
+        (248, "Ages ratio $5:3$; after $6$ years ratio $7:5$. Present ages?", "A $15$, B $9$",
+         [step("Let", "$5x$ and $3x$.", "Future ratio"),
+          step("Solve", "$5(5x+6)=7(3x+6)$.", "A $15$, B $9$")]),
+        (249, "Solve $2(x+3)-3(x-2)=4(x-5)+7$.", "$x=5$",
+         [step("Expand", "$-x+12=4x-13$.", "Collect"),
+          step("Answer", "$25=5x$.", "$x=5$")]),
+        (250, "Rectangle length $3\\times$ breadth; perimeter $64$ cm.", "Breadth $8$ cm, length $24$ cm",
+         [step("Let", "Breadth $x$, length $3x$.", "$2(4x)=64$"),
+          step("Answer", "$x=8$.", "Breadth $8$ cm, length $24$ cm")]),
+    ]
+    for gn, qu, ans, st in ch12:
+        nid = N12W if gn in WP else N12E
+        qs.append(mk_q(B, gn, 12, qu, ans, st, local_label=f"Ch14-Q{gn-230}", linked_note_id=nid))
+
+    return qs
+
+
+BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03, 4: batch_04, 5: batch_05}
 
 
 def build(batch_num: int):

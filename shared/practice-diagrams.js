@@ -133,6 +133,111 @@ const PRACTICE_DIAGRAMS = {
     <text x="100" y="135" font-size="11">25 m</text><text x="200" y="135" font-size="11">10 m</text>
     <text x="120" y="30" font-size="11" fill="#334155">Field trapezium</text>
   </svg>`,
+
+  "venn-two-sets": `<svg viewBox="0 0 280 180" width="280" height="180" aria-label="Venn diagram two sets">
+    <circle cx="105" cy="90" r="55" fill="#dbeafe" fill-opacity="0.6" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="175" cy="90" r="55" fill="#fecaca" fill-opacity="0.6" stroke="#dc2626" stroke-width="2"/>
+    <text x="75" y="95" font-size="11">Only A</text>
+    <text x="148" y="95" font-size="11">Both</text>
+    <text x="195" y="95" font-size="11">Only B</text>
+    <text x="90" y="170" font-size="10" fill="#64748b">Neither outside circles</text>
+  </svg>`,
+
+  "double-bar-students": `<svg viewBox="0 0 320 200" width="320" height="200" aria-label="Double bar graph">
+    <line x1="40" y1="170" x2="300" y2="170" stroke="#64748b"/><line x1="40" y1="30" x2="40" y2="170" stroke="#64748b"/>
+    <rect x="55" y="80" width="12" height="90" fill="#6366f1"/><rect x="69" y="95" width="12" height="75" fill="#f472b6"/>
+    <rect x="105" y="70" width="12" height="100" fill="#6366f1"/><rect x="119" y="85" width="12" height="85" fill="#f472b6"/>
+    <rect x="155" y="90" width="12" height="80" fill="#6366f1"/><rect x="169" y="100" width="12" height="70" fill="#f472b6"/>
+    <text x="55" y="185" font-size="9">Math</text><text x="105" y="185" font-size="9">Sci</text><text x="155" y="185" font-size="9">Eng</text>
+    <text x="120" y="20" font-size="11">Student A (blue) vs B (pink)</text>
+  </svg>`,
+
+  "frequency-polygon": `<svg viewBox="0 0 320 200" width="320" height="200" aria-label="Frequency polygon">
+    <line x1="40" y1="170" x2="300" y2="170" stroke="#64748b"/><line x1="40" y1="30" x2="40" y2="170" stroke="#64748b"/>
+    <polyline points="70,170 110,130 150,95 190,115 230,140 270,170" fill="none" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="110" cy="130" r="4" fill="#2563eb"/><circle cx="150" cy="95" r="4" fill="#2563eb"/>
+    <circle cx="190" cy="115" r="4" fill="#2563eb"/><circle cx="230" cy="140" r="4" fill="#2563eb"/>
+    <text x="100" y="195" font-size="10">Midpoints of class intervals</text>
+  </svg>`,
+
+  "pie-expenditure": `<svg viewBox="0 0 220 220" width="220" height="220" aria-label="Pie chart expenditure">
+    <circle cx="110" cy="110" r="80" fill="#f8fafc" stroke="#cbd5e1"/>
+    <path d="M110 110 L110 30 A80 80 0 1 1 86 186 Z" fill="#fca5a5"/>
+    <path d="M110 110 L86 186 A80 80 0 0 1 30 110 Z" fill="#fdba74"/>
+    <path d="M110 110 L30 110 A80 80 0 0 1 70 40 Z" fill="#86efac"/>
+    <text x="45" y="210" font-size="9">Transport/Food/Educ/Rent/Others</text>
+  </svg>`,
+
+  "bar-rainfall": `<svg viewBox="0 0 300 200" width="300" height="200" aria-label="Bar graph rainfall">
+    <line x1="40" y1="170" x2="280" y2="170" stroke="#64748b"/><line x1="40" y1="20" x2="40" y2="170" stroke="#64748b"/>
+    <rect x="55" y="130" width="30" height="40" fill="#38bdf8"/><rect x="100" y="115" width="30" height="55" fill="#38bdf8"/>
+    <rect x="145" y="95" width="30" height="75" fill="#38bdf8"/><rect x="190" y="70" width="30" height="100" fill="#38bdf8"/>
+    <rect x="235" y="30" width="30" height="140" fill="#38bdf8"/>
+    <text x="58" y="185" font-size="9">Jan</text><text x="103" y="185" font-size="9">Feb</text>
+    <text x="148" y="185" font-size="9">Mar</text><text x="193" y="185" font-size="9">Apr</text><text x="238" y="185" font-size="9">May</text>
+  </svg>`,
+
+  "coord-rectangle": `<svg viewBox="0 0 220 220" width="220" height="220" aria-label="Coordinate rectangle">
+    <line x1="110" y1="20" x2="110" y2="200" stroke="#94a3b8"/><line x1="20" y1="110" x2="200" y2="110" stroke="#94a3b8"/>
+    <polygon points="150,70 70,70 70,150 150,150" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="150" cy="70" r="4" fill="#dc2626"/><circle cx="70" cy="70" r="4" fill="#dc2626"/>
+    <circle cx="70" cy="150" r="4" fill="#dc2626"/><circle cx="150" cy="150" r="4" fill="#dc2626"/>
+    <text x="30" y="215" font-size="10">Rectangle on grid</text>
+  </svg>`,
+
+  "line-graph-linear": `<svg viewBox="0 0 260 200" width="260" height="200" aria-label="Linear graph">
+    <line x1="30" y1="170" x2="240" y2="170" stroke="#64748b"/><line x1="30" y1="20" x2="30" y2="170" stroke="#64748b"/>
+    <line x1="30" y1="150" x2="210" y2="30" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="30" cy="150" r="4" fill="#2563eb"/><circle cx="90" cy="110" r="4" fill="#2563eb"/>
+    <circle cx="150" cy="70" r="4" fill="#2563eb"/>
+    <text x="80" y="195" font-size="10">y = 2x + 1 (example)</text>
+  </svg>`,
+
+  "line-graph-negative-slope": `<svg viewBox="0 0 260 200" width="260" height="200" aria-label="Line with negative slope">
+    <line x1="30" y1="170" x2="240" y2="170" stroke="#64748b"/><line x1="30" y1="20" x2="30" y2="170" stroke="#64748b"/>
+    <line x1="30" y1="50" x2="190" y2="170" stroke="#dc2626" stroke-width="2"/>
+    <circle cx="30" cy="50" r="4" fill="#dc2626"/><circle cx="190" cy="170" r="4" fill="#dc2626"/>
+    <text x="70" y="195" font-size="10">y = −x + 4</text>
+  </svg>`,
+
+  "parabola-yx2": `<svg viewBox="0 0 260 200" width="260" height="200" aria-label="Parabola y equals x squared">
+    <line x1="130" y1="20" x2="130" y2="180" stroke="#94a3b8"/><line x1="30" y1="170" x2="230" y2="170" stroke="#94a3b8"/>
+    <path d="M50 170 Q130 20 210 170" fill="none" stroke="#7c3aed" stroke-width="2"/>
+    <circle cx="130" cy="170" r="4" fill="#7c3aed"/>
+    <text x="85" y="195" font-size="10">U-shaped parabola y = x²</text>
+  </svg>`,
+
+  "square-lines-symmetry": `<svg viewBox="0 0 180 180" width="180" height="180" aria-label="Square lines of symmetry">
+    <rect x="40" y="40" width="100" height="100" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <line x1="90" y1="40" x2="90" y2="140" stroke="#dc2626" stroke-dasharray="4"/>
+    <line x1="40" y1="90" x2="140" y2="90" stroke="#dc2626" stroke-dasharray="4"/>
+    <line x1="40" y1="40" x2="140" y2="140" stroke="#2563eb" stroke-dasharray="4"/>
+    <line x1="140" y1="40" x2="40" y2="140" stroke="#2563eb" stroke-dasharray="4"/>
+    <text x="35" y="175" font-size="10">4 lines of symmetry</text>
+  </svg>`,
+
+  "triangle-lines-symmetry": `<svg viewBox="0 0 180 180" width="180" height="180" aria-label="Equilateral triangle symmetry">
+    <polygon points="90,30 150,150 30,150" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+    <line x1="90" y1="30" x2="90" y2="150" stroke="#dc2626" stroke-dasharray="4"/>
+    <line x1="30" y1="150" x2="120" y2="90" stroke="#2563eb" stroke-dasharray="4"/>
+    <line x1="150" y1="150" x2="60" y2="90" stroke="#16a34a" stroke-dasharray="4"/>
+    <text x="25" y="175" font-size="10">3 lines of symmetry</text>
+  </svg>`,
+
+  "hexagon-lines-symmetry": `<svg viewBox="0 0 200 200" width="200" height="200" aria-label="Regular hexagon symmetry">
+    <polygon points="100,25 165,62 165,138 100,175 35,138 35,62" fill="#ecfccb" stroke="#65a30d" stroke-width="2"/>
+    <line x1="100" y1="25" x2="100" y2="175" stroke="#dc2626" stroke-dasharray="4"/>
+    <line x1="35" y1="62" x2="165" y2="138" stroke="#2563eb" stroke-dasharray="4"/>
+    <line x1="165" y1="62" x2="35" y2="138" stroke="#2563eb" stroke-dasharray="4"/>
+    <text x="30" y="195" font-size="10">6 lines of symmetry</text>
+  </svg>`,
+
+  "reflect-letter-a": `<svg viewBox="0 0 200 160" width="200" height="160" aria-label="Letter A reflection">
+    <line x1="100" y1="20" x2="100" y2="140" stroke="#64748b" stroke-dasharray="5"/>
+    <text x="72" y="100" font-size="48" font-family="serif" fill="#2563eb">A</text>
+    <text x="108" y="100" font-size="48" font-family="serif" fill="#2563eb" opacity="0.5">A</text>
+    <text x="55" y="155" font-size="10">Vertical mirror line</text>
+  </svg>`,
 };
 
 function renderPracticeDiagram(id) {

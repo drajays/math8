@@ -1,0 +1,1292 @@
+{
+  "batch": 8,
+  "title": "Gemini Open Glassbox · Batch 8",
+  "questions": [
+    {
+      "id": "Q-GEM-B08-351",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 1,
+      "globalNum": 351,
+      "localLabel": "Ch21-Q7",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Probability of an even number on a fair die.",
+      "answer": "$\\dfrac{1}{2}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Outcomes",
+          "why": "$\\{1,2,3,4,5,6\\}$.",
+          "math": "Even: $\\{2,4,6\\}$"
+        },
+        {
+          "rule": "Probability",
+          "why": "$3/6$.",
+          "math": "$1/2$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-352",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 2,
+      "globalNum": 352,
+      "localLabel": "Ch21-Q8",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Study hours: $2,3,4,2,5,3,4,6,3,2$. Mean, median, mode?",
+      "answer": "Mean $3.4$; median $3$; modes $2$ and $3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sort",
+          "why": "$2,2,2,3,3,3,4,4,5,6$.",
+          "math": "Sum $34$"
+        },
+        {
+          "rule": "Stats",
+          "why": "Mean $3.4$; median $3$.",
+          "math": "Bimodal $2,3$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-data-handling",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-353",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 3,
+      "globalNum": 353,
+      "localLabel": "Ch21-Q9",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Double bar graph: Student A vs B in Math ($80/75$), Science ($70/85$), English ($88/82$), Hindi ($76/80$), SST ($90/85$).",
+      "answer": "See double bar graph",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Axes",
+          "why": "Subjects on X; marks on Y.",
+          "math": "Two bars per subject"
+        },
+        {
+          "rule": "Legend",
+          "why": "Different colours for A and B.",
+          "math": "See diagram"
+        }
+      ],
+      "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph",
+      "source": "gemini-batch-08",
+      "diagram": "double-bar-students"
+    },
+    {
+      "id": "Q-GEM-B08-354",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 4,
+      "globalNum": 354,
+      "localLabel": "Ch21-Q10",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Class of $40$: $25$ like cricket, $20$ football, $10$ both. Only cricket, only football, neither?",
+      "answer": "Only cricket $15$; only football $10$; neither $5$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Venn",
+          "why": "Overlap $10$ first.",
+          "math": "Only C $=25-10$"
+        },
+        {
+          "rule": "Neither",
+          "why": "$40-35$.",
+          "math": "$15,10,5$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-data-handling",
+      "source": "gemini-batch-08",
+      "diagram": "venn-two-sets"
+    },
+    {
+      "id": "Q-GEM-B08-355",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 5,
+      "globalNum": 355,
+      "localLabel": "Ch21-Q11",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Frequency polygon: classes $10$–$20\\to4$, $20$–$30\\to7$, $30$–$40\\to12$, $40$–$50\\to8$, $50$–$60\\to5$.",
+      "answer": "See frequency polygon",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Midpoints",
+          "why": "$(15,4),(25,7),(35,12),(45,8),(55,5)$.",
+          "math": "Plot and join"
+        },
+        {
+          "rule": "Close",
+          "why": "Drop to axis at $5$ and $65$.",
+          "math": "Polygon"
+        }
+      ],
+      "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph",
+      "source": "gemini-batch-08",
+      "diagram": "frequency-polygon"
+    },
+    {
+      "id": "Q-GEM-B08-356",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 6,
+      "globalNum": 356,
+      "localLabel": "Ch21-Q12",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Mean of $5$ numbers is $18$. Excluding one, mean of rest is $16$. Excluded number?",
+      "answer": "$26$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Totals",
+          "why": "$5\\times18=90$.",
+          "math": "$4\\times16=64$"
+        },
+        {
+          "rule": "Diff",
+          "why": "$90-64$.",
+          "math": "$26$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-data-handling",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-357",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 7,
+      "globalNum": 357,
+      "localLabel": "Ch21-Q13",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Pie chart: Transport $30\\%$, Food $25\\%$, Education $20\\%$, Rent $15\\%$, Others $10\\%$.",
+      "answer": "Angles: $108^\\circ,90^\\circ,72^\\circ,54^\\circ,36^\\circ$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "360°",
+          "why": "Multiply each $\\%$ by $360$.",
+          "math": "Draw slices"
+        },
+        {
+          "rule": "Angles",
+          "why": "Listed above.",
+          "math": "See diagram"
+        }
+      ],
+      "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph",
+      "source": "gemini-batch-08",
+      "diagram": "pie-expenditure"
+    },
+    {
+      "id": "Q-GEM-B08-358",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 8,
+      "globalNum": 358,
+      "localLabel": "Ch21-Q14",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Probability of drawing a red card from a deck of $52$.",
+      "answer": "$\\dfrac{1}{2}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Count",
+          "why": "$26$ red cards.",
+          "math": "$26/52$"
+        },
+        {
+          "rule": "Simplify",
+          "why": "$1/2$.",
+          "math": "$1/2$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-359",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 9,
+      "globalNum": 359,
+      "localLabel": "Ch21-Q15",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Median of $20$ marks: $45,55,60,72,80,65,58,75,68,82,90,48,55,70,85,62,78,55,68,92$.",
+      "answer": "$68$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sort",
+          "why": "Smallest to largest.",
+          "math": "20 values"
+        },
+        {
+          "rule": "Median",
+          "why": "Average of 10th and 11th.",
+          "math": "$68$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-data-handling",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-360",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 10,
+      "globalNum": 360,
+      "localLabel": "Ch21-Q16",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Bar graph monthly rainfall (mm): Jan $20$, Feb $30$, Mar $45$, Apr $60$, May $80$.",
+      "answer": "See bar graph",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Axes",
+          "why": "Months vs mm.",
+          "math": "Scale to $90$"
+        },
+        {
+          "rule": "Bars",
+          "why": "Heights as given.",
+          "math": "See diagram"
+        }
+      ],
+      "linked_note_id": "CH20-sec-represent-the-above-data-by-a-double-bar-graph",
+      "source": "gemini-batch-08",
+      "diagram": "bar-rainfall"
+    },
+    {
+      "id": "Q-GEM-B08-361",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 11,
+      "globalNum": 361,
+      "localLabel": "Ch21-Q17",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Mode of: $5,8,5,12,8,5,15,8,12,5,8$.",
+      "answer": "Modes $5$ and $8$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Count",
+          "why": "$5$ appears $4$ times; $8$ appears $4$ times.",
+          "math": "Tie"
+        },
+        {
+          "rule": "Answer",
+          "why": "Bimodal.",
+          "math": "$5$ and $8$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-data-handling",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-362",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 12,
+      "globalNum": 362,
+      "localLabel": "Ch21-Q18",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Survey $100$ people: $40$ read A, $30$ read B, $20$ both. Only A, only B, neither?",
+      "answer": "Only A $20$; only B $10$; neither $50$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Venn",
+          "why": "Both $20$.",
+          "math": "Only A $20$, only B $10$"
+        },
+        {
+          "rule": "Neither",
+          "why": "$100-50$.",
+          "math": "$50$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-data-handling",
+      "source": "gemini-batch-08",
+      "diagram": "venn-two-sets"
+    },
+    {
+      "id": "Q-GEM-B08-363",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 13,
+      "globalNum": 363,
+      "localLabel": "Ch22-Q1",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Bag: $5$ red, $3$ blue. P(red)?",
+      "answer": "$5/8$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Total",
+          "why": "$8$ balls.",
+          "math": "P $=5/8$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-364",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 14,
+      "globalNum": 364,
+      "localLabel": "Ch22-Q2",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Die: P(number $>4$)?",
+      "answer": "$1/3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Winners",
+          "why": "$\\{5,6\\}$.",
+          "math": "$2/6=1/3$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-365",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 15,
+      "globalNum": 365,
+      "localLabel": "Ch22-Q3",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Deck: P(king or queen)?",
+      "answer": "$2/13$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Cards",
+          "why": "$4+4=8$.",
+          "math": "$8/52=2/13$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-366",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 16,
+      "globalNum": 366,
+      "localLabel": "Ch22-Q4",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Two coins: P(at least one head)?",
+      "answer": "$3/4$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Outcomes",
+          "why": "HH,HT,TH,TT.",
+          "math": "3 of 4"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-367",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 17,
+      "globalNum": 367,
+      "localLabel": "Ch22-Q5",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Box: $4$ red, $3$ green, $5$ blue. P(green)?",
+      "answer": "$1/4$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Total",
+          "why": "$12$.",
+          "math": "$3/12=1/4$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-368",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 18,
+      "globalNum": 368,
+      "localLabel": "Ch22-Q6",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Two dice: P(sum $=7$)?",
+      "answer": "$1/6$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Pairs",
+          "why": "6 ways sum 7.",
+          "math": "$6/36=1/6$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-369",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 19,
+      "globalNum": 369,
+      "localLabel": "Ch22-Q7",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Letter from PROBABILITY: P(vowel)?",
+      "answer": "$4/11$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Vowels",
+          "why": "O,A,I,I.",
+          "math": "$4/11$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-370",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 20,
+      "globalNum": 370,
+      "localLabel": "Ch22-Q8",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Die: P(odd number)?",
+      "answer": "$1/2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Odds",
+          "why": "$\\{1,3,5\\}$.",
+          "math": "$1/2$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-371",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 21,
+      "globalNum": 371,
+      "localLabel": "Ch22-Q9",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Bag $7$ white, $5$ black: P(both white, without replacement)?",
+      "answer": "$7/22$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Multiply",
+          "why": "$7/12\\times6/11$.",
+          "math": "$7/22$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-372",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 22,
+      "globalNum": 372,
+      "localLabel": "Ch22-Q10",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Three coin tosses: P(exactly $2$ heads)?",
+      "answer": "$3/8$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "List",
+          "why": "8 outcomes.",
+          "math": "3 winners"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-373",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 23,
+      "globalNum": 373,
+      "localLabel": "Ch22-Q11",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Deck: P(red ace or black king)?",
+      "answer": "$1/13$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Cards",
+          "why": "4 winning.",
+          "math": "$1/13$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-374",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 24,
+      "globalNum": 374,
+      "localLabel": "Ch22-Q12",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "P(event)$=0.35$. P(not event)?",
+      "answer": "$0.65$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Complement",
+          "why": "$1-0.35$.",
+          "math": "$0.65$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-375",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 25,
+      "globalNum": 375,
+      "localLabel": "Ch22-Q13",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Two dice: P(sum is prime)?",
+      "answer": "$5/12$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Prime sums",
+          "why": "15 ways.",
+          "math": "$5/12$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-376",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 26,
+      "globalNum": 376,
+      "localLabel": "Ch22-Q14",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Bag $3$R,$4$B,$5$G: P(not blue)?",
+      "answer": "$2/3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Not blue",
+          "why": "8 of 12.",
+          "math": "$2/3$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-377",
+      "chapter": 20,
+      "batch": 8,
+      "batchNum": 27,
+      "globalNum": 377,
+      "localLabel": "Ch22-Q15",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Die: P(multiple of $3$)?",
+      "answer": "$1/3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Multiples",
+          "why": "$\\{3,6\\}$.",
+          "math": "$1/3$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-378",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 28,
+      "globalNum": 378,
+      "localLabel": "Ch23-Q1",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Plot $(2,3),(-2,3),(-2,-3),(2,-3)$ and join. Name the figure.",
+      "answer": "Rectangle",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Plot",
+          "why": "Four corners.",
+          "math": "Connect"
+        },
+        {
+          "rule": "Shape",
+          "why": "Opposite sides equal.",
+          "math": "Rectangle"
+        }
+      ],
+      "linked_note_id": "CH16-sec-coordinates-of-a-point",
+      "source": "gemini-batch-08",
+      "diagram": "coord-rectangle"
+    },
+    {
+      "id": "Q-GEM-B08-379",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 29,
+      "globalNum": 379,
+      "localLabel": "Ch23-Q2",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Draw graph of $y=2x+1$.",
+      "answer": "Straight line through $(0,1),(1,3),(2,5)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Table",
+          "why": "$x=0,1,2$.",
+          "math": "Plot points"
+        },
+        {
+          "rule": "Line",
+          "why": "Join with ruler.",
+          "math": "See diagram"
+        }
+      ],
+      "linked_note_id": "CH16-sec-linear-graphs",
+      "source": "gemini-batch-08",
+      "diagram": "line-graph-linear"
+    },
+    {
+      "id": "Q-GEM-B08-380",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 30,
+      "globalNum": 380,
+      "localLabel": "Ch23-Q3",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Point $3$ right, $4$ above origin.",
+      "answer": "$(3,4)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "From origin",
+          "why": "Right $+x$, up $+y$.",
+          "math": "$(3,4)$"
+        }
+      ],
+      "linked_note_id": "CH16-sec-coordinates-of-a-point",
+      "source": "gemini-batch-08",
+      "diagram": "coord-rectangle"
+    },
+    {
+      "id": "Q-GEM-B08-381",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 31,
+      "globalNum": 381,
+      "localLabel": "Ch23-Q4",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Graph $y=3x-2$. Find $y$ when $x=4$.",
+      "answer": "$y=10$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Graph",
+          "why": "Plot line.",
+          "math": "Read or substitute"
+        },
+        {
+          "rule": "Substitute",
+          "why": "$3(4)-2$.",
+          "math": "$10$"
+        }
+      ],
+      "linked_note_id": "CH16-sec-linear-graphs",
+      "source": "gemini-batch-08",
+      "diagram": "line-graph-linear"
+    },
+    {
+      "id": "Q-GEM-B08-382",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 32,
+      "globalNum": 382,
+      "localLabel": "Ch23-Q5",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Plot $A(1,2),B(3,2),C(3,5),D(1,5)$. Name figure.",
+      "answer": "Rectangle",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sides",
+          "why": "Width $2$, height $3$.",
+          "math": "Rectangle"
+        }
+      ],
+      "linked_note_id": "CH16-sec-coordinates-of-a-point",
+      "source": "gemini-batch-08",
+      "diagram": "coord-rectangle"
+    },
+    {
+      "id": "Q-GEM-B08-383",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 33,
+      "globalNum": 383,
+      "localLabel": "Ch23-Q6",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Line through $(2,3)$ and $(4,7)$.",
+      "answer": "See graph",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Plot",
+          "why": "Two points.",
+          "math": "Extend line"
+        }
+      ],
+      "linked_note_id": "CH16-sec-linear-graphs",
+      "source": "gemini-batch-08",
+      "diagram": "line-graph-linear"
+    },
+    {
+      "id": "Q-GEM-B08-384",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 34,
+      "globalNum": 384,
+      "localLabel": "Ch23-Q7",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Midpoint of segment joining $(2,5)$ and $(6,9)$.",
+      "answer": "$(4,7)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "Average of coordinates.",
+          "math": "$(4,7)$"
+        }
+      ],
+      "linked_note_id": "CH16-sec-coordinates-of-a-point",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-385",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 35,
+      "globalNum": 385,
+      "localLabel": "Ch23-Q8",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Draw graph of $y=-x+4$.",
+      "answer": "Line through $(0,4)$ and $(4,0)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Intercepts",
+          "why": "$(0,4),(4,0)$.",
+          "math": "Negative slope"
+        }
+      ],
+      "linked_note_id": "CH16-sec-linear-graphs",
+      "source": "gemini-batch-08",
+      "diagram": "line-graph-negative-slope"
+    },
+    {
+      "id": "Q-GEM-B08-386",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 36,
+      "globalNum": 386,
+      "localLabel": "Ch23-Q9",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Plot $(0,0),(3,0),(3,4),(0,4)$. Name figure.",
+      "answer": "Rectangle",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Axes",
+          "why": "On coordinate axes.",
+          "math": "Rectangle"
+        }
+      ],
+      "linked_note_id": "CH16-sec-coordinates-of-a-point",
+      "source": "gemini-batch-08",
+      "diagram": "coord-rectangle"
+    },
+    {
+      "id": "Q-GEM-B08-387",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 37,
+      "globalNum": 387,
+      "localLabel": "Ch23-Q10",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Graph $2x+3y=6$.",
+      "answer": "Line through $(3,0)$ and $(0,2)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Intercepts",
+          "why": "$x$-intercept $3$.",
+          "math": "$y$-intercept $2$"
+        }
+      ],
+      "linked_note_id": "CH16-sec-linear-graphs",
+      "source": "gemini-batch-08",
+      "diagram": "line-graph-linear"
+    },
+    {
+      "id": "Q-GEM-B08-388",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 38,
+      "globalNum": 388,
+      "localLabel": "Ch23-Q11",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Distance between $(3,4)$ and $(7,9)$.",
+      "answer": "$\\sqrt{41}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Diffs",
+          "why": "$\\Delta x=4$, $\\Delta y=5$.",
+          "math": "Pythagoras"
+        },
+        {
+          "rule": "Distance",
+          "why": "$\\sqrt{16+25}$.",
+          "math": "$\\sqrt{41}$"
+        }
+      ],
+      "linked_note_id": "CH16-sec-coordinates-of-a-point",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-389",
+      "chapter": 16,
+      "batch": 8,
+      "batchNum": 39,
+      "globalNum": 389,
+      "localLabel": "Ch23-Q12",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Graph $y=x^2$ for $x=-2,-1,0,1,2$.",
+      "answer": "Parabola",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Table",
+          "why": "$(-2,4),(-1,1),(0,0),(1,1),(2,4)$.",
+          "math": "Plot"
+        },
+        {
+          "rule": "Curve",
+          "why": "Smooth U-shape.",
+          "math": "Parabola"
+        }
+      ],
+      "linked_note_id": "CH16-sec-linear-graphs",
+      "source": "gemini-batch-08",
+      "diagram": "parabola-yx2"
+    },
+    {
+      "id": "Q-GEM-B08-390",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 40,
+      "globalNum": 390,
+      "localLabel": "Ch24-Q1",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Lines of symmetry of a square?",
+      "answer": "$4$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Square",
+          "why": "Vertical, horizontal, two diagonals.",
+          "math": "$4$"
+        }
+      ],
+      "linked_note_id": "CH17-sec-line-symmetry",
+      "source": "gemini-batch-08",
+      "diagram": "square-lines-symmetry"
+    },
+    {
+      "id": "Q-GEM-B08-391",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 41,
+      "globalNum": 391,
+      "localLabel": "Ch24-Q2",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Lines of symmetry of equilateral triangle?",
+      "answer": "$3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Triangle",
+          "why": "From each vertex to midpoint.",
+          "math": "$3$"
+        }
+      ],
+      "linked_note_id": "CH17-sec-line-symmetry",
+      "source": "gemini-batch-08",
+      "diagram": "triangle-lines-symmetry"
+    },
+    {
+      "id": "Q-GEM-B08-392",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 42,
+      "globalNum": 392,
+      "localLabel": "Ch24-Q3",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Lines of symmetry of regular pentagon?",
+      "answer": "$5$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Regular",
+          "why": "Equals number of sides.",
+          "math": "$5$"
+        }
+      ],
+      "linked_note_id": "CH17-sec-line-symmetry",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-393",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 43,
+      "globalNum": 393,
+      "localLabel": "Ch24-Q4",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Reflect letter A about vertical centre line.",
+      "answer": "Same letter A",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Mirror",
+          "why": "Vertical line through centre.",
+          "math": "Unchanged A"
+        }
+      ],
+      "linked_note_id": "CH17-sec-line-symmetry",
+      "source": "gemini-batch-08",
+      "diagram": "reflect-letter-a"
+    },
+    {
+      "id": "Q-GEM-B08-394",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 44,
+      "globalNum": 394,
+      "localLabel": "Ch24-Q5",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Lines of symmetry of a circle?",
+      "answer": "Infinite",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Circle",
+          "why": "Any diameter.",
+          "math": "Infinite"
+        }
+      ],
+      "linked_note_id": "CH17-sec-line-symmetry",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-395",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 45,
+      "globalNum": 395,
+      "localLabel": "Ch24-Q6",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Lines of symmetry of regular hexagon?",
+      "answer": "$6$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Hexagon",
+          "why": "6 lines.",
+          "math": "$6$"
+        }
+      ],
+      "linked_note_id": "CH17-sec-line-symmetry",
+      "source": "gemini-batch-08",
+      "diagram": "hexagon-lines-symmetry"
+    },
+    {
+      "id": "Q-GEM-B08-396",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 46,
+      "globalNum": 396,
+      "localLabel": "Ch24-Q7",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Rotational symmetry: H, N, S, Z?",
+      "answer": "All four",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "180° test",
+          "why": "All look same upside down.",
+          "math": "All four"
+        }
+      ],
+      "linked_note_id": "CH17-sec-rotational-symmetry",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-397",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 47,
+      "globalNum": 397,
+      "localLabel": "Ch24-Q8",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Reflect figure across given symmetry line.",
+      "answer": "Mirror image",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Measure",
+          "why": "Equal distance from line.",
+          "math": "Mirror image"
+        }
+      ],
+      "linked_note_id": "CH17-sec-line-symmetry",
+      "source": "gemini-batch-08"
+    },
+    {
+      "id": "Q-GEM-B08-398",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 48,
+      "globalNum": 398,
+      "localLabel": "Ch24-Q9",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Lines of symmetry of isosceles triangle?",
+      "answer": "$1$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Isosceles",
+          "why": "One fold line.",
+          "math": "$1$"
+        }
+      ],
+      "linked_note_id": "CH17-sec-line-symmetry",
+      "source": "gemini-batch-08",
+      "diagram": "triangle-lines-symmetry"
+    },
+    {
+      "id": "Q-GEM-B08-399",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 49,
+      "globalNum": 399,
+      "localLabel": "Ch24-Q10",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Order of rotational symmetry of square?",
+      "answer": "$4$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "90° turns",
+          "why": "Looks same 4 times.",
+          "math": "Order $4$"
+        }
+      ],
+      "linked_note_id": "CH17-sec-rotational-symmetry",
+      "source": "gemini-batch-08",
+      "diagram": "square-lines-symmetry"
+    },
+    {
+      "id": "Q-GEM-B08-400",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 50,
+      "globalNum": 400,
+      "localLabel": "Ch24-Q11",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Figure with exactly $2$ lines of symmetry.",
+      "answer": "Rectangle (or rhombus)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rectangle",
+          "why": "Vertical and horizontal only.",
+          "math": "Not diagonals"
+        }
+      ],
+      "linked_note_id": "CH17-sec-line-symmetry",
+      "source": "gemini-batch-08",
+      "diagram": "coord-rectangle"
+    },
+    {
+      "id": "Q-GEM-B08-401",
+      "chapter": 17,
+      "batch": 8,
+      "batchNum": 51,
+      "globalNum": 401,
+      "localLabel": "Ch24-Q12",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 8",
+      "question": "Capital letters with both line and rotational symmetry?",
+      "answer": "H, I, O, X",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Check letters",
+          "why": "Line + 180° rotation.",
+          "math": "H,I,O,X"
+        }
+      ],
+      "linked_note_id": "CH17-sec-rotational-symmetry",
+      "source": "gemini-batch-08"
+    }
+  ],
+  "count": 51,
+  "globalRange": [
+    351,
+    401
+  ]
+}

@@ -343,7 +343,7 @@ a{color:var(--blue)}
 </div>
 <script src="../shared/math-render.js?v=3"></script>
 <script src="../shared/notes-render.js?v=3"></script>
-<script src="../shared/practice-diagrams.js?v=1"></script>
+<script src="../shared/practice-diagrams.js?v=2"></script>
 <script>
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -472,7 +472,7 @@ async function loadBatchQuestions(chNum){
   for (let b = 1; b <= BATCH_COUNT; b++) {
     const tag = String(b).padStart(2, "0");
     try {
-      const data = await loadJson(`data/batches/batch_${tag}.json?v=7`);
+      const data = await loadJson(`data/batches/batch_${tag}.json?v=8`);
       const qs = data.questions || data;
       if (Array.isArray(qs)) {
         qs.forEach(q => { if (Number(q.chapter) === chNum) out.push(q); });

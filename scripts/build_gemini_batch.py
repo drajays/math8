@@ -26,6 +26,8 @@ NOTE_BY_CH = {
     18: "CH18-sec-drawing-2-d-representation-of-3-d-objects",
     19: "CH19-sec-area-and-perimeter-of-some-plane-figures",
     20: "CH20-sec-data-handling",
+    16: "CH16-sec-coordinate-system",
+    17: "CH17-sec-line-symmetry",
 }
 
 TOPIC_BY_CH = {n: f"math-ch{n}" for n in range(1, 21)}
@@ -1288,7 +1290,170 @@ def batch_07():
     return qs
 
 
-BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03, 4: batch_04, 5: batch_05, 6: batch_06, 7: batch_07}
+def batch_08():
+    B = 8
+    qs = []
+    N20D = "CH20-sec-data-handling"
+    N20G = "CH20-sec-represent-the-above-data-by-a-double-bar-graph"
+    N20P = "CH20-sec-likely"
+    N16C = "CH16-sec-coordinates-of-a-point"
+    N16L = "CH16-sec-linear-graphs"
+    N17S = "CH17-sec-line-symmetry"
+    N17R = "CH17-sec-rotational-symmetry"
+
+    def put(gn, ch, qu, ans, st, label, nid, diagram=None):
+        qs.append(mk_q(B, gn, ch, qu, ans, st, local_label=label, linked_note_id=nid, diagram=diagram))
+
+    # Ch21 data continued (351-362) → textbook Ch 20
+    put(351, 20, "Probability of an even number on a fair die.", "$\\dfrac{1}{2}$",
+        [step("Outcomes", "$\\{1,2,3,4,5,6\\}$.", "Even: $\\{2,4,6\\}$"),
+         step("Probability", "$3/6$.", "$1/2$")], "Ch21-Q7", N20P, None)
+    put(352, 20, "Study hours: $2,3,4,2,5,3,4,6,3,2$. Mean, median, mode?", "Mean $3.4$; median $3$; modes $2$ and $3$",
+        [step("Sort", "$2,2,2,3,3,3,4,4,5,6$.", "Sum $34$"),
+         step("Stats", "Mean $3.4$; median $3$.", "Bimodal $2,3$")], "Ch21-Q8", N20D, None)
+    put(353, 20, "Double bar graph: Student A vs B in Math ($80/75$), Science ($70/85$), English ($88/82$), Hindi ($76/80$), SST ($90/85$).",
+        "See double bar graph",
+        [step("Axes", "Subjects on X; marks on Y.", "Two bars per subject"),
+         step("Legend", "Different colours for A and B.", "See diagram")], "Ch21-Q9", N20G, "double-bar-students")
+    put(354, 20, "Class of $40$: $25$ like cricket, $20$ football, $10$ both. Only cricket, only football, neither?",
+        "Only cricket $15$; only football $10$; neither $5$",
+        [step("Venn", "Overlap $10$ first.", "Only C $=25-10$"),
+         step("Neither", "$40-35$.", "$15,10,5$")], "Ch21-Q10", N20D, "venn-two-sets")
+    put(355, 20, "Frequency polygon: classes $10$–$20\\to4$, $20$–$30\\to7$, $30$–$40\\to12$, $40$–$50\\to8$, $50$–$60\\to5$.",
+        "See frequency polygon",
+        [step("Midpoints", "$(15,4),(25,7),(35,12),(45,8),(55,5)$.", "Plot and join"),
+         step("Close", "Drop to axis at $5$ and $65$.", "Polygon")], "Ch21-Q11", N20G, "frequency-polygon")
+    put(356, 20, "Mean of $5$ numbers is $18$. Excluding one, mean of rest is $16$. Excluded number?", "$26$",
+        [step("Totals", "$5\\times18=90$.", "$4\\times16=64$"),
+         step("Diff", "$90-64$.", "$26$")], "Ch21-Q12", N20D, None)
+    put(357, 20, "Pie chart: Transport $30\\%$, Food $25\\%$, Education $20\\%$, Rent $15\\%$, Others $10\\%$.",
+        "Angles: $108^\\circ,90^\\circ,72^\\circ,54^\\circ,36^\\circ$",
+        [step("360°", "Multiply each $\\%$ by $360$.", "Draw slices"),
+         step("Angles", "Listed above.", "See diagram")], "Ch21-Q13", N20G, "pie-expenditure")
+    put(358, 20, "Probability of drawing a red card from a deck of $52$.", "$\\dfrac{1}{2}$",
+        [step("Count", "$26$ red cards.", "$26/52$"),
+         step("Simplify", "$1/2$.", "$1/2$")], "Ch21-Q14", N20P, None)
+    put(359, 20, "Median of $20$ marks: $45,55,60,72,80,65,58,75,68,82,90,48,55,70,85,62,78,55,68,92$.", "$68$",
+        [step("Sort", "Smallest to largest.", "20 values"),
+         step("Median", "Average of 10th and 11th.", "$68$")], "Ch21-Q15", N20D, None)
+    put(360, 20, "Bar graph monthly rainfall (mm): Jan $20$, Feb $30$, Mar $45$, Apr $60$, May $80$.",
+        "See bar graph",
+        [step("Axes", "Months vs mm.", "Scale to $90$"),
+         step("Bars", "Heights as given.", "See diagram")], "Ch21-Q16", N20G, "bar-rainfall")
+    put(361, 20, "Mode of: $5,8,5,12,8,5,15,8,12,5,8$.", "Modes $5$ and $8$",
+        [step("Count", "$5$ appears $4$ times; $8$ appears $4$ times.", "Tie"),
+         step("Answer", "Bimodal.", "$5$ and $8$")], "Ch21-Q17", N20D, None)
+    put(362, 20, "Survey $100$ people: $40$ read A, $30$ read B, $20$ both. Only A, only B, neither?",
+        "Only A $20$; only B $10$; neither $50$",
+        [step("Venn", "Both $20$.", "Only A $20$, only B $10$"),
+         step("Neither", "$100-50$.", "$50$")], "Ch21-Q18", N20D, "venn-two-sets")
+
+    # Ch22 probability (363-377) → Ch 20
+    prob = [
+        (363, "Bag: $5$ red, $3$ blue. P(red)?", "$5/8$"),
+        (364, "Die: P(number $>4$)?", "$1/3$"),
+        (365, "Deck: P(king or queen)?", "$2/13$"),
+        (366, "Two coins: P(at least one head)?", "$3/4$"),
+        (367, "Box: $4$ red, $3$ green, $5$ blue. P(green)?", "$1/4$"),
+        (368, "Two dice: P(sum $=7$)?", "$1/6$"),
+        (369, "Letter from PROBABILITY: P(vowel)?", "$4/11$"),
+        (370, "Die: P(odd number)?", "$1/2$"),
+        (371, "Bag $7$ white, $5$ black: P(both white, without replacement)?", "$7/22$"),
+        (372, "Three coin tosses: P(exactly $2$ heads)?", "$3/8$"),
+        (373, "Deck: P(red ace or black king)?", "$1/13$"),
+        (374, "P(event)$=0.35$. P(not event)?", "$0.65$"),
+        (375, "Two dice: P(sum is prime)?", "$5/12$"),
+        (376, "Bag $3$R,$4$B,$5$G: P(not blue)?", "$2/3$"),
+        (377, "Die: P(multiple of $3$)?", "$1/3$"),
+    ]
+    prob_st = {
+        363: [step("Total", "$8$ balls.", "P $=5/8$")],
+        364: [step("Winners", "$\\{5,6\\}$.", "$2/6=1/3$")],
+        365: [step("Cards", "$4+4=8$.", "$8/52=2/13$")],
+        366: [step("Outcomes", "HH,HT,TH,TT.", "3 of 4")],
+        367: [step("Total", "$12$.", "$3/12=1/4$")],
+        368: [step("Pairs", "6 ways sum 7.", "$6/36=1/6$")],
+        369: [step("Vowels", "O,A,I,I.", "$4/11$")],
+        370: [step("Odds", "$\\{1,3,5\\}$.", "$1/2$")],
+        371: [step("Multiply", "$7/12\\times6/11$.", "$7/22$")],
+        372: [step("List", "8 outcomes.", "3 winners")],
+        373: [step("Cards", "4 winning.", "$1/13$")],
+        374: [step("Complement", "$1-0.35$.", "$0.65$")],
+        375: [step("Prime sums", "15 ways.", "$5/12$")],
+        376: [step("Not blue", "8 of 12.", "$2/3$")],
+        377: [step("Multiples", "$\\{3,6\\}$.", "$1/3$")],
+    }
+    for gn, qu, ans in prob:
+        put(gn, 20, qu, ans, prob_st[gn], f"Ch22-Q{gn-362}", N20P, None)
+
+    # Ch23 graphs (378-389) → Ch 16
+    put(378, 16, "Plot $(2,3),(-2,3),(-2,-3),(2,-3)$ and join. Name the figure.", "Rectangle",
+        [step("Plot", "Four corners.", "Connect"),
+         step("Shape", "Opposite sides equal.", "Rectangle")], "Ch23-Q1", N16C, "coord-rectangle")
+    put(379, 16, "Draw graph of $y=2x+1$.", "Straight line through $(0,1),(1,3),(2,5)$",
+        [step("Table", "$x=0,1,2$.", "Plot points"),
+         step("Line", "Join with ruler.", "See diagram")], "Ch23-Q2", N16L, "line-graph-linear")
+    put(380, 16, "Point $3$ right, $4$ above origin.", "$(3,4)$",
+        [step("From origin", "Right $+x$, up $+y$.", "$(3,4)$")], "Ch23-Q3", N16C, "coord-rectangle")
+    put(381, 16, "Graph $y=3x-2$. Find $y$ when $x=4$.", "$y=10$",
+        [step("Graph", "Plot line.", "Read or substitute"),
+         step("Substitute", "$3(4)-2$.", "$10$")], "Ch23-Q4", N16L, "line-graph-linear")
+    put(382, 16, "Plot $A(1,2),B(3,2),C(3,5),D(1,5)$. Name figure.", "Rectangle",
+        [step("Sides", "Width $2$, height $3$.", "Rectangle")], "Ch23-Q5", N16C, "coord-rectangle")
+    put(383, 16, "Line through $(2,3)$ and $(4,7)$.", "See graph",
+        [step("Plot", "Two points.", "Extend line")], "Ch23-Q6", N16L, "line-graph-linear")
+    put(384, 16, "Midpoint of segment joining $(2,5)$ and $(6,9)$.", "$(4,7)$",
+        [step("Formula", "Average of coordinates.", "$(4,7)$")], "Ch23-Q7", N16C, None)
+    put(385, 16, "Draw graph of $y=-x+4$.", "Line through $(0,4)$ and $(4,0)$",
+        [step("Intercepts", "$(0,4),(4,0)$.", "Negative slope")], "Ch23-Q8", N16L, "line-graph-negative-slope")
+    put(386, 16, "Plot $(0,0),(3,0),(3,4),(0,4)$. Name figure.", "Rectangle",
+        [step("Axes", "On coordinate axes.", "Rectangle")], "Ch23-Q9", N16C, "coord-rectangle")
+    put(387, 16, "Graph $2x+3y=6$.", "Line through $(3,0)$ and $(0,2)$",
+        [step("Intercepts", "$x$-intercept $3$.", "$y$-intercept $2$")], "Ch23-Q10", N16L, "line-graph-linear")
+    put(388, 16, "Distance between $(3,4)$ and $(7,9)$.", "$\\sqrt{41}$",
+        [step("Diffs", "$\\Delta x=4$, $\\Delta y=5$.", "Pythagoras"),
+         step("Distance", "$\\sqrt{16+25}$.", "$\\sqrt{41}$")], "Ch23-Q11", N16C, None)
+    put(389, 16, "Graph $y=x^2$ for $x=-2,-1,0,1,2$.", "Parabola",
+        [step("Table", "$(-2,4),(-1,1),(0,0),(1,1),(2,4)$.", "Plot"),
+         step("Curve", "Smooth U-shape.", "Parabola")], "Ch23-Q12", N16L, "parabola-yx2")
+
+    # Ch24 symmetry (390-401) → Ch 17
+    sym = [
+        (390, "Lines of symmetry of a square?", "$4$", "square-lines-symmetry", N17S),
+        (391, "Lines of symmetry of equilateral triangle?", "$3$", "triangle-lines-symmetry", N17S),
+        (392, "Lines of symmetry of regular pentagon?", "$5$", None, N17S),
+        (393, "Reflect letter A about vertical centre line.", "Same letter A", "reflect-letter-a", N17S),
+        (394, "Lines of symmetry of a circle?", "Infinite", None, N17S),
+        (395, "Lines of symmetry of regular hexagon?", "$6$", "hexagon-lines-symmetry", N17S),
+        (396, "Rotational symmetry: H, N, S, Z?", "All four", None, N17R),
+        (397, "Reflect figure across given symmetry line.", "Mirror image",
+         None, N17S),
+        (398, "Lines of symmetry of isosceles triangle?", "$1$", "triangle-lines-symmetry", N17S),
+        (399, "Order of rotational symmetry of square?", "$4$", "square-lines-symmetry", N17R),
+        (400, "Figure with exactly $2$ lines of symmetry.", "Rectangle (or rhombus)", "coord-rectangle", N17S),
+        (401, "Capital letters with both line and rotational symmetry?", "H, I, O, X", None, N17R),
+    ]
+    sym_st = {
+        390: [step("Square", "Vertical, horizontal, two diagonals.", "$4$")],
+        391: [step("Triangle", "From each vertex to midpoint.", "$3$")],
+        392: [step("Regular", "Equals number of sides.", "$5$")],
+        393: [step("Mirror", "Vertical line through centre.", "Unchanged A")],
+        394: [step("Circle", "Any diameter.", "Infinite")],
+        395: [step("Hexagon", "6 lines.", "$6$")],
+        396: [step("180° test", "All look same upside down.", "All four")],
+        397: [step("Measure", "Equal distance from line.", "Mirror image")],
+        398: [step("Isosceles", "One fold line.", "$1$")],
+        399: [step("90° turns", "Looks same 4 times.", "Order $4$")],
+        400: [step("Rectangle", "Vertical and horizontal only.", "Not diagonals")],
+        401: [step("Check letters", "Line + 180° rotation.", "H,I,O,X")],
+    }
+    for gn, qu, ans, dia, nid in sym:
+        put(gn, 17, qu, ans, sym_st[gn], f"Ch24-Q{gn-389}", nid, dia)
+
+    return qs
+
+
+BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03, 4: batch_04, 5: batch_05, 6: batch_06, 7: batch_07, 8: batch_08}
 
 
 def build(batch_num: int):
@@ -1298,10 +1463,11 @@ def build(batch_num: int):
     data = {
         "batch": batch_num,
         "title": f"Gemini Open Glassbox · Batch {batch_num}",
-        "count": 50,
-        "globalRange": [(batch_num - 1) * 50 + 1, batch_num * 50],
         "questions": BUILDERS[batch_num](),
     }
+    qs = data["questions"]
+    data["count"] = len(qs)
+    data["globalRange"] = [qs[0]["globalNum"], qs[-1]["globalNum"]] if qs else [(batch_num - 1) * 50 + 1, batch_num * 50]
     out = BATCHES_DIR / f"batch_{batch_num:02d}.json"
     out.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     by_ch = {}

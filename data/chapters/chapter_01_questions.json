@@ -18,20 +18,20 @@
       {
         "rule": "Given",
         "why": "Restate the problem.",
-        "math": "Additive inverse of  $ \\frac{-2}{-5} $ is"
+        "math": "Additive inverse of  $ \\frac{-2}{5} $ is"
       },
       {
         "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{The additive inverse of a number is the value you must add to it to get a sum of 0.}"
+        "why": "The additive inverse of $a$ is $-a$, such that $a + (-a) = 0$.",
+        "math": "-\\left(-\\frac{2}{5}\\right) = \\frac{2}{5}"
       },
       {
         "rule": "Result",
-        "why": "Match with the correct option.",
+        "why": "Match with Option A.",
         "math": "$ \\frac{2}{5} $"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Additive inverse of  $ \\frac{-2}{-5} $ is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$ \\frac{2}{5} $$",
+    "explanation": "Step 1 (Given): Additive inverse of $-\\frac{2}{5}$. Step 2 (Method): $-\\left(-\\frac{2}{5}\\right) = \\frac{2}{5}$. Step 3 (Result): Option A ($\\frac{2}{5}$).",
     "linked_note_id": "CH01-sec-rational-numbers",
     "source": "textbook",
     "linksTo": "math-ch01nrational-n"
@@ -49,8 +49,8 @@
       "$ \\frac{3}{7} $",
       "None of these"
     ],
-    "correctOption": 0,
-    "answer": "$ \\frac{7}{3} $",
+    "correctOption": 1,
+    "answer": "$ \\frac{-7}{3} $",
     "glassboxSteps": [
       {
         "rule": "Given",
@@ -59,16 +59,16 @@
       },
       {
         "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "why": "The reciprocal of non-zero $x$ is $\\frac{1}{x}$, so that $x \\cdot \\frac{1}{x} = 1$.",
+        "math": "\\frac{1}{-\\frac{3}{7}} = \\frac{7}{-3} = -\\frac{7}{3}"
       },
       {
         "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "$ \\frac{7}{3} $"
+        "why": "Match with Option B.",
+        "math": "$ \\frac{-7}{3} $"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Multiplicative inverse of  $ \\frac{-3}{7} $ is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$ \\frac{7}{3} $$",
+    "explanation": "Step 1 (Given): Multiplicative inverse of $-\\frac{3}{7}$. Step 2 (Method): Reciprocal is $\\frac{7}{-3} = -\\frac{7}{3}$. Step 3 (Result): Option B ($-\\frac{7}{3}$).",
     "linked_note_id": "CH01-sec-rational-numbers",
     "source": "textbook",
     "linksTo": "math-ch01nrational-n"
@@ -86,8 +86,8 @@
       "",
       ""
     ],
-    "correctOption": 0,
-    "answer": "1",
+    "correctOption": 1,
+    "answer": "0",
     "glassboxSteps": [
       {
         "rule": "Given",
@@ -96,16 +96,16 @@
       },
       {
         "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "why": "Adding a number to its additive inverse yields the additive identity.",
+        "math": "x + (-x) = 0"
       },
       {
         "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "1"
+        "why": "Match with Option B.",
+        "math": "0"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Sum of a rational number and its additive inverse is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $1$",
+    "explanation": "Step 1 (Given): Sum of a rational number and its additive inverse. Step 2 (Method): $x + (-x) = 0$. Step 3 (Result): Option B (0).",
     "linked_note_id": "CH01-sec-rational-numbers",
     "source": "textbook",
     "linksTo": "math-ch01nrational-n"
@@ -123,8 +123,8 @@
       "multiplication",
       "None of these"
     ],
-    "correctOption": 0,
-    "answer": "addition",
+    "correctOption": 3,
+    "answer": "None of these",
     "glassboxSteps": [
       {
         "rule": "Given",
@@ -133,16 +133,16 @@
       },
       {
         "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "why": "Rational numbers are closed under addition, subtraction, and multiplication; only division by zero is undefined.",
+        "math": "\\text{Sum, difference, and product of rationals are rational}"
       },
       {
         "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "addition"
+        "why": "Match with Option D (None of these).",
+        "math": "\\text{None of these}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Rational numbers are not closed under$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $addition$",
+    "explanation": "Step 1 (Given): Rational numbers are not closed under which operation? Step 2 (Method): Closed under addition, subtraction, and multiplication. Step 3 (Result): Option D (None of these).",
     "linked_note_id": "CH01-sec-rational-numbers",
     "source": "textbook",
     "linksTo": "math-ch01nrational-n"
@@ -160,8 +160,8 @@
       "0",
       "not defined"
     ],
-    "correctOption": 0,
-    "answer": "$\\frac{2}{3}$",
+    "correctOption": 2,
+    "answer": "0",
     "glassboxSteps": [
       {
         "rule": "Given",
@@ -170,16 +170,16 @@
       },
       {
         "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "why": "Zero divided by any non-zero number is zero.",
+        "math": "0 \\div \\frac{2}{3} = 0 \\cdot \\frac{3}{2} = 0"
       },
       {
         "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "$\\frac{2}{3}$"
+        "why": "Match with Option C.",
+        "math": "0"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $$0 \\div \\frac{2}{3}$ is equal to$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$\\frac{2}{3}$$",
+    "explanation": "Step 1 (Given): $0 \\div \\frac{2}{3}$. Step 2 (Method): $0 \\cdot \\frac{3}{2} = 0$. Step 3 (Result): Option C (0).",
     "linked_note_id": "CH01-sec-rational-numbers",
     "source": "textbook",
     "linksTo": "math-ch01nrational-n"
@@ -193,12 +193,12 @@
     "question": "$ \\frac{2}{3} \\div 0 $ is equal to",
     "options": [
       "$ \\frac{2}{3} $",
-      "$ \\frac{2}{3} $",
+      "$ -\\frac{2}{3} $",
       "not defined",
-      ""
+      "0"
     ],
-    "correctOption": 0,
-    "answer": "$ \\frac{2}{3} $",
+    "correctOption": 2,
+    "answer": "not defined",
     "glassboxSteps": [
       {
         "rule": "Given",
@@ -207,16 +207,16 @@
       },
       {
         "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "why": "Division by zero is undefined; no number times 0 equals $\\frac{2}{3}$.",
+        "math": "\\frac{2}{3} \\div 0 = \\text{undefined}"
       },
       {
         "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "$ \\frac{2}{3} $"
+        "why": "Match with Option C.",
+        "math": "\\text{not defined}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $$ \\frac{2}{3} \\div 0 $ is equal to$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$ \\frac{2}{3} $$",
+    "explanation": "Step 1 (Given): $\\frac{2}{3} \\div 0$. Step 2 (Method): Division by zero is undefined. Step 3 (Result): Option C (not defined).",
     "linked_note_id": "CH01-sec-rational-numbers",
     "source": "textbook",
     "linksTo": "math-ch01nrational-n"

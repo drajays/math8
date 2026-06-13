@@ -232,11 +232,90 @@ const PRACTICE_DIAGRAMS = {
     <text x="30" y="195" font-size="10">6 lines of symmetry</text>
   </svg>`,
 
+  "octagon-lines-symmetry": `<svg viewBox="0 0 200 200" width="200" height="200" aria-label="Regular octagon symmetry">
+    <polygon points="100,20 155,45 180,100 155,155 100,180 45,155 20,100 45,45" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+    <line x1="100" y1="20" x2="100" y2="180" stroke="#dc2626" stroke-dasharray="4"/>
+    <line x1="20" y1="100" x2="180" y2="100" stroke="#dc2626" stroke-dasharray="4"/>
+    <line x1="45" y1="45" x2="155" y2="155" stroke="#2563eb" stroke-dasharray="4"/>
+    <line x1="155" y1="45" x2="45" y2="155" stroke="#2563eb" stroke-dasharray="4"/>
+    <text x="28" y="195" font-size="10">8 lines of symmetry · order 8</text>
+  </svg>`,
+
+  "parallelogram-diagonals": `<svg viewBox="0 0 260 180" width="260" height="180" aria-label="Parallelogram diagonals bisecting">
+    <polygon points="50,130 210,130 180,50 20,50" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <line x1="50" y1="130" x2="180" y2="50" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="210" y1="130" x2="20" y2="50" stroke="#64748b" stroke-width="1.5"/>
+    <circle cx="115" cy="90" r="4" fill="#dc2626"/>
+    <text x="108" y="85" font-size="10" fill="#dc2626">O</text>
+    <text x="55" y="148" font-size="10">AO = OC</text>
+    <text x="55" y="162" font-size="10">BO = OD</text>
+  </svg>`,
+
+  "parabola-yx2-minus4": `<svg viewBox="0 0 260 200" width="260" height="200" aria-label="Parabola y equals x squared minus 4">
+    <line x1="130" y1="20" x2="130" y2="180" stroke="#94a3b8"/><line x1="30" y1="120" x2="230" y2="120" stroke="#94a3b8"/>
+    <path d="M50 170 Q130 20 210 170" fill="none" stroke="#7c3aed" stroke-width="2" transform="translate(0,50)"/>
+    <circle cx="70" cy="120" r="4" fill="#dc2626"/><circle cx="190" cy="120" r="4" fill="#dc2626"/>
+    <text x="62" y="135" font-size="9">(−2,0)</text><text x="182" y="135" font-size="9">(2,0)</text>
+    <text x="75" y="195" font-size="10">y = x² − 4</text>
+  </svg>`,
+
+  "cylinder-spheres-rise": `<svg viewBox="0 0 220 220" width="220" height="220" aria-label="Spheres dropped in cylinder raising water">
+    <ellipse cx="110" cy="40" rx="55" ry="12" fill="#bae6fd" stroke="#0284c7"/>
+    <rect x="55" y="40" width="110" height="140" fill="#e0f2fe" stroke="#0284c7"/>
+    <ellipse cx="110" cy="180" rx="55" ry="12" fill="#7dd3fc" stroke="#0284c7"/>
+    <rect x="55" y="120" width="110" height="60" fill="#38bdf8" opacity="0.5"/>
+    <line x1="55" y1="120" x2="165" y2="120" stroke="#0369a1" stroke-dasharray="4"/>
+    <circle cx="85" cy="105" r="8" fill="#64748b"/><circle cx="110" cy="95" r="8" fill="#64748b"/><circle cx="135" cy="105" r="8" fill="#64748b"/>
+    <text x="45" y="118" font-size="9">+5.25 cm rise</text>
+    <text x="45" y="210" font-size="10">r = 7 cm cylinder</text>
+  </svg>`,
+
   "reflect-letter-a": `<svg viewBox="0 0 200 160" width="200" height="160" aria-label="Letter A reflection">
     <line x1="100" y1="20" x2="100" y2="140" stroke="#64748b" stroke-dasharray="5"/>
     <text x="72" y="100" font-size="48" font-family="serif" fill="#2563eb">A</text>
     <text x="108" y="100" font-size="48" font-family="serif" fill="#2563eb" opacity="0.5">A</text>
     <text x="55" y="155" font-size="10">Vertical mirror line</text>
+  </svg>`,
+
+  "line-intercept-triangle": `<svg viewBox="0 0 260 220" width="260" height="220" aria-label="Line intercepts forming triangle with axes">
+    <line x1="40" y1="170" x2="220" y2="170" stroke="#94a3b8"/><line x1="40" y1="30" x2="40" y2="170" stroke="#94a3b8"/>
+    <line x1="40" y1="170" x2="120" y2="170" stroke="#2563eb" stroke-width="2"/>
+    <line x1="40" y1="170" x2="40" y2="110" stroke="#2563eb" stroke-width="2"/>
+    <line x1="40" y1="110" x2="120" y2="170" stroke="#2563eb" stroke-width="2" stroke-dasharray="4"/>
+    <circle cx="120" cy="170" r="4" fill="#dc2626"/><circle cx="40" cy="110" r="4" fill="#dc2626"/>
+    <text x="112" y="185" font-size="9">(2,0)</text><text x="18" y="115" font-size="9">(0,−3)</text>
+    <text x="55" y="25" font-size="10">3x − 2y = 6 · area = 3 sq units</text>
+  </svg>`,
+
+  "abs-graph-v": `<svg viewBox="0 0 260 200" width="260" height="200" aria-label="Absolute value graph y equals absolute x">
+    <line x1="130" y1="20" x2="130" y2="180" stroke="#94a3b8"/><line x1="30" y1="170" x2="230" y2="170" stroke="#94a3b8"/>
+    <path d="M50 170 L130 30 L210 170" fill="none" stroke="#7c3aed" stroke-width="2"/>
+    <circle cx="130" cy="30" r="4" fill="#dc2626"/>
+    <text x="95" y="195" font-size="10">y = |x| · symmetric about y-axis</text>
+  </svg>`,
+
+  "parabola-y2x2-minus8": `<svg viewBox="0 0 260 200" width="260" height="200" aria-label="Parabola y equals 2x squared minus 8">
+    <line x1="130" y1="20" x2="130" y2="180" stroke="#94a3b8"/><line x1="30" y1="120" x2="230" y2="120" stroke="#94a3b8"/>
+    <path d="M50 170 Q130 20 210 170" fill="none" stroke="#7c3aed" stroke-width="2" transform="translate(0,30) scale(1,0.85)"/>
+    <circle cx="130" cy="150" r="4" fill="#dc2626"/>
+    <text x="108" y="165" font-size="9">(0,−8)</text>
+    <text x="75" y="195" font-size="10">y = 2x² − 8 · axis x = 0</text>
+  </svg>`,
+
+  "circle-line-intersect": `<svg viewBox="0 0 260 260" width="260" height="260" aria-label="Circle x squared plus y squared equals 25 with line y equals x">
+    <line x1="130" y1="20" x2="130" y2="240" stroke="#94a3b8"/><line x1="20" y1="130" x2="240" y2="130" stroke="#94a3b8"/>
+    <circle cx="130" cy="130" r="80" fill="none" stroke="#2563eb" stroke-width="2"/>
+    <line x1="50" y1="210" x2="210" y2="50" stroke="#dc2626" stroke-width="1.5"/>
+    <circle cx="180" cy="80" r="4" fill="#16a34a"/><circle cx="80" cy="180" r="4" fill="#16a34a"/>
+    <text x="55" y="255" font-size="10">x² + y² = 25 · y = x</text>
+  </svg>`,
+
+  "kite-diagonals": `<svg viewBox="0 0 240 200" width="240" height="200" aria-label="Kite with perpendicular diagonals">
+    <polygon points="120,25 200,100 120,175 40,100" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <line x1="120" y1="25" x2="120" y2="175" stroke="#64748b" stroke-dasharray="4"/>
+    <line x1="40" y1="100" x2="200" y2="100" stroke="#64748b" stroke-dasharray="4"/>
+    <text x="125" y="20" font-size="9">AB=AD=5</text>
+    <text x="125" y="190" font-size="9">CB=CD=13</text>
   </svg>`,
 };
 

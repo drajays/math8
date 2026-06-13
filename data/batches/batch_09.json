@@ -1,0 +1,1563 @@
+{
+  "batch": 9,
+  "title": "Gemini Advanced HOTS · Batch 9",
+  "questions": [
+    {
+      "id": "Q-GEM-B09-402",
+      "chapter": 1,
+      "batch": 9,
+      "batchNum": 1,
+      "globalNum": 402,
+      "localLabel": "Adv-Q1",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Prove that the sum of any two rational numbers is always a rational number. Give two examples.",
+      "answer": "If $\\dfrac{a}{b}$ and $\\dfrac{c}{d}$ are rationals ($b,d\\neq0$), then $\\dfrac{a}{b}+\\dfrac{c}{d}=\\dfrac{ad+bc}{bd}$ is rational. Examples: $\\dfrac12+\\dfrac13=\\dfrac56$; $-\\dfrac34+\\dfrac14=-\\dfrac12$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Definition",
+          "why": "Rational = $\\dfrac{\\text{integer}}{\\text{non-zero integer}}$.",
+          "math": "Take $\\dfrac{a}{b}$, $\\dfrac{c}{d}$."
+        },
+        {
+          "rule": "Add",
+          "why": "Common denominator $bd$.",
+          "math": "$\\dfrac{ad+bc}{bd}$"
+        },
+        {
+          "rule": "Closure",
+          "why": "$ad+bc$ and $bd$ are integers; $bd\\neq0$.",
+          "math": "Sum is rational"
+        },
+        {
+          "rule": "Examples",
+          "why": "Compute two sums.",
+          "math": "$\\dfrac56$, $-\\dfrac12$"
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-403",
+      "chapter": 1,
+      "batch": 9,
+      "batchNum": 2,
+      "globalNum": 403,
+      "localLabel": "Adv-Q2",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $\\dfrac{a}{b}$ is rational ($b\\neq0$), prove that its additive inverse is $-\\dfrac{a}{b}$.",
+      "answer": "Additive inverse of $\\dfrac{a}{b}$ is $-\\dfrac{a}{b}$ because $\\dfrac{a}{b}+\\left(-\\dfrac{a}{b}\\right)=\\dfrac{0}{b}=0$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Definition",
+          "why": "$x$ is inverse of $y$ if $x+y=0$.",
+          "math": "Test $-\\dfrac{a}{b}$."
+        },
+        {
+          "rule": "Add",
+          "why": "Same denominator.",
+          "math": "$\\dfrac{a-a}{b}=\\dfrac{0}{b}=0$"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "Sum is zero.",
+          "math": "They are additive inverses."
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-404",
+      "chapter": 1,
+      "batch": 9,
+      "batchNum": 3,
+      "globalNum": 404,
+      "localLabel": "Adv-Q3",
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Find five rational numbers between $-\\dfrac{3}{5}$ and $\\dfrac{2}{3}$ such that their average is zero.",
+      "answer": "$-\\dfrac12$, $-\\dfrac14$, $0$, $\\dfrac14$, $\\dfrac12$ (sum $=0$ ⇒ average $=0$).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Average trick",
+          "why": "Average $0$ ⇒ total sum $0$.",
+          "math": "Pick symmetric pairs around $0$."
+        },
+        {
+          "rule": "Interval",
+          "why": "$-\\dfrac35\\approx-0.6$, $\\dfrac23\\approx0.67$ straddle $0$.",
+          "math": "Use $\\pm\\dfrac14$, $\\pm\\dfrac12$."
+        },
+        {
+          "rule": "Fifth number",
+          "why": "Add $0$ without changing sum.",
+          "math": "Five numbers listed."
+        }
+      ],
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-405",
+      "chapter": 10,
+      "batch": 9,
+      "batchNum": 4,
+      "globalNum": 405,
+      "localLabel": "Adv-Q4",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $\\left(x+\\dfrac{1}{x}\\right)=3$, find $x^3+\\dfrac{1}{x^3}$.",
+      "answer": "$18$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Cube identity",
+          "why": "$(A+B)^3=A^3+B^3+3AB(A+B)$.",
+          "math": "Cube both sides."
+        },
+        {
+          "rule": "Expand",
+          "why": "$x^3+\\dfrac{1}{x^3}+3\\cdot1\\cdot3=27$.",
+          "math": "Middle product $x\\cdot\\dfrac1x=1$."
+        },
+        {
+          "rule": "Solve",
+          "why": "$x^3+\\dfrac{1}{x^3}+9=27$.",
+          "math": "$18$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-406",
+      "chapter": 2,
+      "batch": 9,
+      "batchNum": 5,
+      "globalNum": 406,
+      "localLabel": "Adv-Q5",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Simplify with positive exponents: $\\left[\\left(-\\dfrac{3}{4}\\right)^{-2}\\times\\left(-\\dfrac{3}{4}\\right)^{-3}\\right]\\div\\left(-\\dfrac{3}{4}\\right)^{-5}$.",
+      "answer": "$1$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Multiply powers",
+          "why": "Add exponents in bracket.",
+          "math": "$\\left(-\\dfrac34\\right)^{-5}$"
+        },
+        {
+          "rule": "Divide",
+          "why": "Subtract exponents: $-5-(-5)=0$.",
+          "math": "$\\left(-\\dfrac34\\right)^0=1$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-407",
+      "chapter": 2,
+      "batch": 9,
+      "batchNum": 6,
+      "globalNum": 407,
+      "localLabel": "Adv-Q6",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $2^{x-1}=8$ and $3^{2y-1}=81$, find $x+y$.",
+      "answer": "$6.5$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Match bases",
+          "why": "$8=2^3$, $81=3^4$.",
+          "math": "Equate exponents."
+        },
+        {
+          "rule": "Solve",
+          "why": "$x-1=3\\Rightarrow x=4$; $2y-1=4\\Rightarrow y=2.5$.",
+          "math": "$x+y=6.5$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-408",
+      "chapter": 4,
+      "batch": 9,
+      "batchNum": 7,
+      "globalNum": 408,
+      "localLabel": "Adv-Q7",
+      "topicId": "math-ch4",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Find the smallest number which when multiplied by $8788$ gives a perfect cube. Also find the cube root of the result.",
+      "answer": "Smallest multiplier $2$; product $17576$; cube root $26$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Factorise",
+          "why": "$8788=2^2\\times13^3$.",
+          "math": "Need one more $2$."
+        },
+        {
+          "rule": "Multiply",
+          "why": "$8788\\times2=17576=2^3\\times13^3$.",
+          "math": "Perfect cube."
+        },
+        {
+          "rule": "Cube root",
+          "why": "$\\sqrt[3]{17576}=2\\times13$.",
+          "math": "$26$"
+        }
+      ],
+      "linked_note_id": "CH04-sec-cube-numbers-or-perfect-cubes",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-409",
+      "chapter": 10,
+      "batch": 9,
+      "batchNum": 8,
+      "globalNum": 409,
+      "localLabel": "Adv-Q8",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Using $(a-b)^3=a^3-3a^2b+3ab^2-b^3$, find the cube of $97$.",
+      "answer": "$912673$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rewrite",
+          "why": "$97=(100-3)^3$.",
+          "math": "$A=100$, $B=3$."
+        },
+        {
+          "rule": "Expand",
+          "why": "$1000000-90000+2700-27$.",
+          "math": "Apply identity."
+        },
+        {
+          "rule": "Compute",
+          "why": "Left to right.",
+          "math": "$912673$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-410",
+      "chapter": 5,
+      "batch": 9,
+      "batchNum": 9,
+      "globalNum": 410,
+      "localLabel": "Adv-Q9",
+      "topicId": "math-ch5",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "A number divided by $7$ leaves remainder $5$; divided by $5$ leaves remainder $3$. Find the smallest 3-digit such number.",
+      "answer": "$103$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Trick",
+          "why": "$7-5=5-3=2$.",
+          "math": "Number $+2$ is divisible by $7$ and $5$."
+        },
+        {
+          "rule": "LCM",
+          "why": "Multiples of $\\text{lcm}(7,5)=35$ minus $2$.",
+          "math": "$33,68,103,138,\\ldots$"
+        },
+        {
+          "rule": "3-digit",
+          "why": "First $\\geq100$.",
+          "math": "$103$"
+        }
+      ],
+      "linked_note_id": "CH05-sec-numbers-in-general-form",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-411",
+      "chapter": 6,
+      "batch": 9,
+      "batchNum": 10,
+      "globalNum": 411,
+      "localLabel": "Adv-Q10",
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $A=\\{x:x\\text{ is a multiple of }4\\text{ between }1\\text{ and }30\\}$ and $B=\\{x:x\\text{ is a multiple of }6\\text{ between }1\\text{ and }30\\}$, find $A\\cup B$ and $A\\cap B$.",
+      "answer": "$A=\\{4,8,12,16,20,24,28\\}$; $B=\\{6,12,18,24\\}$; $A\\cup B=\\{4,6,8,12,16,18,20,24,28\\}$; $A\\cap B=\\{12,24\\}$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "List sets",
+          "why": "Multiples in $(1,30)$.",
+          "math": "Write $A$ and $B$."
+        },
+        {
+          "rule": "Union",
+          "why": "All distinct elements.",
+          "math": "$9$ elements."
+        },
+        {
+          "rule": "Intersection",
+          "why": "Multiples of $\\text{lcm}(4,6)=12$.",
+          "math": "$\\{12,24\\}$"
+        }
+      ],
+      "linked_note_id": "CH06-sec-union-of-sets",
+      "source": "gemini-batch-09",
+      "diagram": "venn-two-sets"
+    },
+    {
+      "id": "Q-GEM-B09-412",
+      "chapter": 6,
+      "batch": 9,
+      "batchNum": 11,
+      "globalNum": 412,
+      "localLabel": "Adv-Q11",
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $n(A)=25$, $n(B)=30$, $n(A\\cup B)=45$, find $n(A'\\cap B')$.",
+      "answer": "$n(U)-45$ (needs universal set size $n(U)$; by De Morgan $n(A'\\cap B')=n(U)-n(A\\cup B)$).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "De Morgan",
+          "why": "$A'\\cap B'=(A\\cup B)'$.",
+          "math": "Complement of union."
+        },
+        {
+          "rule": "Trick",
+          "why": "$n(U)$ not given.",
+          "math": "Answer $n(U)-45$."
+        }
+      ],
+      "linked_note_id": "CH06-sec-union-of-sets",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-413",
+      "chapter": 7,
+      "batch": 9,
+      "batchNum": 12,
+      "globalNum": 413,
+      "localLabel": "Adv-Q12",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "A number is increased by $20\\%$ and then decreased by $20\\%$. Find the net percentage change.",
+      "answer": "Net $4\\%$ decrease ($96\\%$ of original).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Base $100$",
+          "why": "After $+20\\%$: $120$.",
+          "math": "Then $-20\\%$ of $120$."
+        },
+        {
+          "rule": "Final",
+          "why": "$120\\times0.80=96$.",
+          "math": "Net change $-4\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-414",
+      "chapter": 7,
+      "batch": 9,
+      "batchNum": 13,
+      "globalNum": 414,
+      "localLabel": "Adv-Q13",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "A shopkeeper marks goods $40\\%$ above CP, then allows successive discounts of $10\\%$ and $5\\%$. Find overall profit $\\%$.",
+      "answer": "$19.7\\%$ profit",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "CP $100$",
+          "why": "MP $=140$.",
+          "math": "After $10\\%$: $126$."
+        },
+        {
+          "rule": "Second discount",
+          "why": "$126\\times0.95=119.70$.",
+          "math": "Profit $19.7\\%$ on CP $100$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-415",
+      "chapter": 8,
+      "batch": 9,
+      "batchNum": 14,
+      "globalNum": 415,
+      "localLabel": "Adv-Q14",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Difference between CI and SI on a sum for $3$ years at $10\\%$ p.a. is ₹$93$. Find the sum.",
+      "answer": "₹$3000$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "3-year diff formula",
+          "why": "$\\text{Diff}=P\\times r^2\\times(3+r)$, $r=0.1$.",
+          "math": "$93=P\\times0.01\\times3.1$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$P=93/0.031$.",
+          "math": "₹$3000$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-simple-interest",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-416",
+      "chapter": 8,
+      "batch": 9,
+      "batchNum": 15,
+      "globalNum": 416,
+      "localLabel": "Adv-Q15",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "A sum amounts to ₹$1331$ in $3$ years and ₹$1728$ in $6$ years at CI. Find the rate $\\%$ p.a.",
+      "answer": "$9\\dfrac{1}{11}\\%$ (≈ $9.09\\%$)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "3-year block",
+          "why": "$1728=1331\\left(1+\\dfrac{R}{100}\\right)^3$.",
+          "math": "Years 3–6 behave like new investment."
+        },
+        {
+          "rule": "Ratio",
+          "why": "$\\dfrac{1728}{1331}=\\left(\\dfrac{12}{11}\\right)^3$.",
+          "math": "Cube root both sides."
+        },
+        {
+          "rule": "Rate",
+          "why": "$1+\\dfrac{R}{100}=\\dfrac{12}{11}$.",
+          "math": "$R=\\dfrac{100}{11}\\%$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-simple-interest",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-417",
+      "chapter": 9,
+      "batch": 9,
+      "batchNum": 16,
+      "globalNum": 417,
+      "localLabel": "Adv-Q16",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $x$ varies directly as $y^2$ and $x=4$ when $y=2$, find $x$ when $y=5$.",
+      "answer": "$25$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Direct variation",
+          "why": "$x=ky^2$.",
+          "math": "Find $k$."
+        },
+        {
+          "rule": "Constant",
+          "why": "$4=k\\cdot4\\Rightarrow k=1$.",
+          "math": "$x=5^2=25$"
+        }
+      ],
+      "linked_note_id": "CH09-sec-direct-variation",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-418",
+      "chapter": 9,
+      "batch": 9,
+      "batchNum": 17,
+      "globalNum": 418,
+      "localLabel": "Adv-Q17",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "$12$ men complete work in $15$ days at $8$ h/day. How many men finish in $20$ days at $6$ h/day?",
+      "answer": "$12$ men",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Man-hours",
+          "why": "$12\\times15\\times8=1440$.",
+          "math": "Work fixed."
+        },
+        {
+          "rule": "New crew",
+          "why": "$M\\times20\\times6=1440$.",
+          "math": "$M=12$"
+        }
+      ],
+      "linked_note_id": "CH09-sec-direct-variation",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-419",
+      "chapter": 10,
+      "batch": 9,
+      "batchNum": 18,
+      "globalNum": 419,
+      "localLabel": "Adv-Q18",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $\\left(x+\\dfrac{1}{x}\\right)^2=9$, find $x^3+\\dfrac{1}{x^3}$.",
+      "answer": "$\\pm18$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Square root",
+          "why": "$x+\\dfrac1x=\\pm3$.",
+          "math": "Two cases."
+        },
+        {
+          "rule": "Cube identity",
+          "why": "$(x+\\dfrac1x)^3=x^3+\\dfrac1{x^3}+3(x+\\dfrac1x)$.",
+          "math": "Substitute $\\pm3$."
+        },
+        {
+          "rule": "Results",
+          "why": "$+3\\Rightarrow18$; $-3\\Rightarrow-18$.",
+          "math": "$\\pm18$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-420",
+      "chapter": 11,
+      "batch": 9,
+      "batchNum": 19,
+      "globalNum": 420,
+      "localLabel": "Adv-Q19",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Factorise completely: $x^3-3x^2-9x-5$.",
+      "answer": "$(x+1)^2(x-5)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Trial root",
+          "why": "$x=-1$ gives $0$.",
+          "math": "Factor $(x+1)$."
+        },
+        {
+          "rule": "Divide",
+          "why": "Quotient $x^2-4x-5$.",
+          "math": "Factor quadratic."
+        },
+        {
+          "rule": "Answer",
+          "why": "$(x+1)(x-5)$ with repeated root.",
+          "math": "$(x+1)^2(x-5)$"
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-421",
+      "chapter": 10,
+      "batch": 9,
+      "batchNum": 20,
+      "globalNum": 421,
+      "localLabel": "Adv-Q20",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $a+b+c=0$, prove that $a^3+b^3+c^3=3abc$.",
+      "answer": "Proved using $a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-bc-ca)$; RHS $=0$ when $a+b+c=0$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "Standard cubic identity.",
+          "math": "RHS has factor $(a+b+c)$."
+        },
+        {
+          "rule": "Given",
+          "why": "$a+b+c=0$.",
+          "math": "Entire RHS $=0$."
+        },
+        {
+          "rule": "Rearrange",
+          "why": "$a^3+b^3+c^3=3abc$.",
+          "math": "QED"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-422",
+      "chapter": 12,
+      "batch": 9,
+      "batchNum": 21,
+      "globalNum": 422,
+      "localLabel": "Adv-Q21",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Solve: $\\dfrac{2x-3}{x+2}-\\dfrac{3x-2}{x-3}=\\dfrac{5}{6}$.",
+      "answer": "$x=\\dfrac{-73\\pm\\sqrt{10081}}{22}$ (irrational roots)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "LCD",
+          "why": "Denominator $(x+2)(x-3)$.",
+          "math": "Cross-multiply."
+        },
+        {
+          "rule": "Expand numerators",
+          "why": "Top: $-x^2-13x+13$.",
+          "math": "Equation $\\dfrac{-x^2-13x+13}{x^2-x-6}=\\dfrac56$."
+        },
+        {
+          "rule": "Clear fractions",
+          "why": "$11x^2+73x-108=0$.",
+          "math": "Quadratic formula gives irrational roots."
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-423",
+      "chapter": 12,
+      "batch": 9,
+      "batchNum": 22,
+      "globalNum": 423,
+      "localLabel": "Adv-Q22",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Ages of A and B are in ratio $7:5$. After $6$ years the ratio will be $4:3$. Find present ages.",
+      "answer": "A $=42$ years, B $=30$ years",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Present",
+          "why": "$7x$ and $5x$.",
+          "math": "Future: add $6$."
+        },
+        {
+          "rule": "Equation",
+          "why": "$\\dfrac{7x+6}{5x+6}=\\dfrac43$.",
+          "math": "Cross-multiply."
+        },
+        {
+          "rule": "Solve",
+          "why": "$21x+18=20x+24\\Rightarrow x=6$.",
+          "math": "A $42$, B $30$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-424",
+      "chapter": 13,
+      "batch": 9,
+      "batchNum": 23,
+      "globalNum": 424,
+      "localLabel": "Adv-Q23",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "In parallelogram $ABCD$, diagonals meet at $O$. If $AO=(3x+2)$ cm and $OC=(5x-4)$ cm, find $AC$.",
+      "answer": "$22$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Property",
+          "why": "Diagonals bisect each other.",
+          "math": "$AO=OC$."
+        },
+        {
+          "rule": "Solve",
+          "why": "$3x+2=5x-4\\Rightarrow x=3$.",
+          "math": "$AO=11$ cm."
+        },
+        {
+          "rule": "Full diagonal",
+          "why": "$AC=2\\times AO$.",
+          "math": "$22$ cm"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-09",
+      "diagram": "parallelogram-diagonals"
+    },
+    {
+      "id": "Q-GEM-B09-425",
+      "chapter": 13,
+      "batch": 9,
+      "batchNum": 24,
+      "globalNum": 425,
+      "localLabel": "Adv-Q24",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Diagonals of a rhombus are in ratio $3:4$. If area is $384$ cm², find the diagonals.",
+      "answer": "$24$ cm and $32$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let diagonals",
+          "why": "$3x$ and $4x$.",
+          "math": "Area $\\dfrac12 d_1 d_2=384$."
+        },
+        {
+          "rule": "Equation",
+          "why": "$\\dfrac12\\cdot3x\\cdot4x=384\\Rightarrow6x^2=384$.",
+          "math": "$x=8$."
+        },
+        {
+          "rule": "Lengths",
+          "why": "$3x=24$, $4x=32$.",
+          "math": "Done."
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-09",
+      "diagram": "rhombus-diagonals"
+    },
+    {
+      "id": "Q-GEM-B09-426",
+      "chapter": 19,
+      "batch": 9,
+      "batchNum": 25,
+      "globalNum": 426,
+      "localLabel": "Adv-Q25",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Find the area of a regular hexagon with side $10$ cm (using equilateral triangles).",
+      "answer": "$150\\sqrt3$ cm² (≈ $259.8$ cm²)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "6 equilateral triangles.",
+          "math": "Area $=6\\times\\dfrac{\\sqrt3}{4}s^2$."
+        },
+        {
+          "rule": "Substitute",
+          "why": "$s=10$.",
+          "math": "$6\\times25\\sqrt3=150\\sqrt3$"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-09",
+      "diagram": "regular-hexagon"
+    },
+    {
+      "id": "Q-GEM-B09-427",
+      "chapter": 19,
+      "batch": 9,
+      "batchNum": 26,
+      "globalNum": 427,
+      "localLabel": "Adv-Q26",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "A trapezium has parallel sides in ratio $2:5$. Distance between them is $12$ cm. Area $420$ cm². Find parallel sides.",
+      "answer": "$20$ cm and $50$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let sides",
+          "why": "$2x$ and $5x$.",
+          "math": "Area formula."
+        },
+        {
+          "rule": "Solve",
+          "why": "$420=\\dfrac12(7x)(12)=42x$.",
+          "math": "$x=10$."
+        },
+        {
+          "rule": "Sides",
+          "why": "$20$ cm, $50$ cm.",
+          "math": ""
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-09",
+      "diagram": "trapezium-area"
+    },
+    {
+      "id": "Q-GEM-B09-428",
+      "chapter": 19,
+      "batch": 9,
+      "batchNum": 27,
+      "globalNum": 428,
+      "localLabel": "Adv-Q27",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Cuboid volume $2400$ cm³. Length : breadth : height $=4:3:2$. Find total surface area.",
+      "answer": "$52\\times100^{2/3}$ cm² (≈ $1120.3$ cm²)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Dimensions",
+          "why": "$4x,3x,2x$; $24x^3=2400$.",
+          "math": "$x^3=100$."
+        },
+        {
+          "rule": "TSA",
+          "why": "$2(lb+bh+hl)=52x^2$.",
+          "math": "$52\\times100^{2/3}$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-429",
+      "chapter": 19,
+      "batch": 9,
+      "batchNum": 28,
+      "globalNum": 429,
+      "localLabel": "Adv-Q28",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Cylindrical tank radius $7$ m. Water fills $\\dfrac34$ of height; water volume $4620$ m³. Find full tank height.",
+      "answer": "$40$ m",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Water height",
+          "why": "$\\dfrac34 h$.",
+          "math": "$4620=\\pi r^2\\cdot\\dfrac34 h$."
+        },
+        {
+          "rule": "Substitute",
+          "why": "$\\pi=\\dfrac{22}{7}$, $r=7$.",
+          "math": "$4620=115.5h$."
+        },
+        {
+          "rule": "Height",
+          "why": "$h=40$ m.",
+          "math": ""
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-09",
+      "diagram": "cylinder-tank"
+    },
+    {
+      "id": "Q-GEM-B09-430",
+      "chapter": 20,
+      "batch": 9,
+      "batchNum": 29,
+      "globalNum": 430,
+      "localLabel": "Adv-Q29",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Mean of $15$ numbers is $18$. Mean of first $8$ is $16$; mean of last $8$ is $19$. Find the $8$th number.",
+      "answer": "$10$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Totals",
+          "why": "Overall sum $270$.",
+          "math": "Halves sum to $128+152=280$."
+        },
+        {
+          "rule": "Overlap trick",
+          "why": "8th counted twice.",
+          "math": "$280-270=10$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-data-handling",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-431",
+      "chapter": 20,
+      "batch": 9,
+      "batchNum": 30,
+      "globalNum": 431,
+      "localLabel": "Adv-Q30",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Two dice thrown. Probability sum is neither $7$ nor $11$.",
+      "answer": "$\\dfrac{7}{9}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Unwanted sums",
+          "why": "7: $6$ ways; 11: $2$ ways.",
+          "math": "$8/36=2/9$."
+        },
+        {
+          "rule": "Complement",
+          "why": "$1-2/9$.",
+          "math": "$7/9$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-432",
+      "chapter": 10,
+      "batch": 9,
+      "batchNum": 31,
+      "globalNum": 432,
+      "localLabel": "Adv-Q31",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $\\left(x+\\dfrac{1}{x}\\right)=5$, find $x^4+\\dfrac{1}{x^4}$.",
+      "answer": "$527$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Square once",
+          "why": "$x^2+\\dfrac{1}{x^2}=23$.",
+          "math": "From $(x+\\dfrac1x)^2=25$."
+        },
+        {
+          "rule": "Square again",
+          "why": "$(x^2+\\dfrac1{x^2})^2=x^4+\\dfrac1{x^4}+2$.",
+          "math": "$529-2=527$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-433",
+      "chapter": 10,
+      "batch": 9,
+      "batchNum": 32,
+      "globalNum": 433,
+      "localLabel": "Adv-Q32",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Simplify: $(a+b+c)^3-(a+b-c)^3-6c(a+b)^2+2c^3$.",
+      "answer": "$4c^3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Substitute",
+          "why": "$X=a+b$.",
+          "math": "$(X+c)^3-(X-c)^3-6cX^2+2c^3$."
+        },
+        {
+          "rule": "Cube difference",
+          "why": "Leaves $6X^2c+2c^3$.",
+          "math": "Cancel $6cX^2$."
+        },
+        {
+          "rule": "Result",
+          "why": "$2c^3+2c^3$.",
+          "math": "$4c^3$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-434",
+      "chapter": 11,
+      "batch": 9,
+      "batchNum": 33,
+      "globalNum": 434,
+      "localLabel": "Adv-Q33",
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Factorise $x^3+y^3+z^3-3xyz$ when $x+y+z=0$.",
+      "answer": "$0$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$x^3+y^3+z^3-3xyz=(x+y+z)(\\cdots)$.",
+          "math": "Use Q20 result."
+        },
+        {
+          "rule": "Given",
+          "why": "$x+y+z=0$.",
+          "math": "Whole expression $=0$."
+        }
+      ],
+      "linked_note_id": "CH11-sec-factors-of-algebraic-expressions",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-435",
+      "chapter": 12,
+      "batch": 9,
+      "batchNum": 34,
+      "globalNum": 435,
+      "localLabel": "Adv-Q34",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "A two-digit number: tens digit is twice the units digit. If $18$ is **subtracted** (typo fix: not added), digits reverse. Find the number.",
+      "answer": "$42$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Setup",
+          "why": "Tens $=2y$, units $=y$; number $21y$.",
+          "math": "Reversed $12y$."
+        },
+        {
+          "rule": "Equation",
+          "why": "$21y-18=12y$.",
+          "math": "$9y=18\\Rightarrow y=2$."
+        },
+        {
+          "rule": "Number",
+          "why": "Tens $4$, units $2$.",
+          "math": "$42$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-436",
+      "chapter": 13,
+      "batch": 9,
+      "batchNum": 35,
+      "globalNum": 436,
+      "localLabel": "Adv-Q35",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Prove that the diagonals of a parallelogram bisect each other.",
+      "answer": "Proved by ASA congruence of $\\triangle AOD$ and $\\triangle COB$ (opposite sides equal; alternate angles equal) ⇒ $AO=OC$, $DO=OB$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Draw",
+          "why": "Diagonals meet at $O$.",
+          "math": "Compare $\\triangle AOD$, $\\triangle COB$."
+        },
+        {
+          "rule": "ASA",
+          "why": "$AD=CB$; alternate interior angles equal.",
+          "math": "Triangles congruent."
+        },
+        {
+          "rule": "Conclusion",
+          "why": "Corresponding parts equal.",
+          "math": "Diagonals bisect each other."
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-09",
+      "diagram": "parallelogram-diagonals"
+    },
+    {
+      "id": "Q-GEM-B09-437",
+      "chapter": 3,
+      "batch": 9,
+      "batchNum": 36,
+      "globalNum": 437,
+      "localLabel": "Adv-Q36",
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Find the smallest square number divisible by each of $8$, $12$ and $15$.",
+      "answer": "$3600$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "LCM",
+          "why": "$\\text{lcm}(8,12,15)=120$.",
+          "math": "Factor $120=2^3\\cdot3\\cdot5$."
+        },
+        {
+          "rule": "Make square",
+          "why": "Need partners for lone $2,3,5$.",
+          "math": "Multiply by $2\\times3\\times5=30$."
+        },
+        {
+          "rule": "Answer",
+          "why": "$120\\times30$.",
+          "math": "$3600$"
+        }
+      ],
+      "linked_note_id": "CH03-sec-square-numbers-or-perfect-squares",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-438",
+      "chapter": 2,
+      "batch": 9,
+      "batchNum": 37,
+      "globalNum": 438,
+      "localLabel": "Adv-Q37",
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $3^{2x-1}=81$ and $5^{y-2}=625$, find $x+y$.",
+      "answer": "$8.5$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Bases",
+          "why": "$81=3^4$, $625=5^4$.",
+          "math": "Equate exponents."
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=2.5$, $y=6$.",
+          "math": "$x+y=8.5$"
+        }
+      ],
+      "linked_note_id": "CH02-sec-laws-of-exponents",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-439",
+      "chapter": 8,
+      "batch": 9,
+      "batchNum": 38,
+      "globalNum": 439,
+      "localLabel": "Adv-Q38",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "CI on a sum for $2$ years at $10\\%$ is ₹$420$. Find SI for same sum, period and rate.",
+      "answer": "₹$400$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Find P",
+          "why": "CI $21\\%$ of P $=420$.",
+          "math": "$P=2000$."
+        },
+        {
+          "rule": "SI",
+          "why": "$\\dfrac{2000\\times10\\times2}{100}$.",
+          "math": "₹$400$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-simple-interest",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-440",
+      "chapter": 7,
+      "batch": 9,
+      "batchNum": 39,
+      "globalNum": 440,
+      "localLabel": "Adv-Q39",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Shopkeeper buys at $20\\%$ discount on MP ₹$1200$, sells at $25\\%$ profit on CP. Find SP.",
+      "answer": "₹$1200$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "CP",
+          "why": "$20\\%$ off ₹$1200$ → CP ₹$960$.",
+          "math": "Profit on CP."
+        },
+        {
+          "rule": "SP",
+          "why": "$25\\%$ of $960=240$.",
+          "math": "SP $=1200$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-441",
+      "chapter": 9,
+      "batch": 9,
+      "batchNum": 40,
+      "globalNum": 441,
+      "localLabel": "Adv-Q40",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $x$ varies inversely as $y$ and $y=12$ when $x=8$, find $x$ when $y=16$.",
+      "answer": "$6$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Inverse",
+          "why": "$xy=k$.",
+          "math": "$k=96$."
+        },
+        {
+          "rule": "New $x$",
+          "why": "$x\\cdot16=96$.",
+          "math": "$x=6$"
+        }
+      ],
+      "linked_note_id": "CH09-sec-direct-variation",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-442",
+      "chapter": 12,
+      "batch": 9,
+      "batchNum": 41,
+      "globalNum": 442,
+      "localLabel": "Adv-Q41",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Solve: $\\dfrac{x+3}{2x-1}=\\dfrac{x-2}{x+4}$.",
+      "answer": "$x=6\\pm\\sqrt{46}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Cross-multiply",
+          "why": "$(x+3)(x+4)=(2x-1)(x-2)$.",
+          "math": "Expand."
+        },
+        {
+          "rule": "Quadratic",
+          "why": "$x^2-12x-10=0$.",
+          "math": "Formula: $\\dfrac{12\\pm\\sqrt{184}}{2}$."
+        },
+        {
+          "rule": "Simplify root",
+          "why": "$\\sqrt{184}=2\\sqrt{46}$.",
+          "math": "$6\\pm\\sqrt{46}$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-443",
+      "chapter": 12,
+      "batch": 9,
+      "batchNum": 42,
+      "globalNum": 443,
+      "localLabel": "Adv-Q42",
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Father's age is $4$ times son's. After $8$ years father will be $2.5$ times as old as son. Find present ages.",
+      "answer": "Son $8$, father $32$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Present",
+          "why": "Son $x$, father $4x$.",
+          "math": "Future ages $+8$."
+        },
+        {
+          "rule": "Equation",
+          "why": "$4x+8=2.5(x+8)$.",
+          "math": "$1.5x=12$."
+        },
+        {
+          "rule": "Ages",
+          "why": "$x=8$.",
+          "math": "Son $8$, father $32$"
+        }
+      ],
+      "linked_note_id": "CH12-sec-equations",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-444",
+      "chapter": 13,
+      "batch": 9,
+      "batchNum": 43,
+      "globalNum": 444,
+      "localLabel": "Adv-Q43",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "In rhombus $ABCD$, $\\angle ABC=120^\\circ$, side $10$ cm. Find $\\angle ADC$ and diagonals.",
+      "answer": "$\\angle ADC=120^\\circ$; diagonals $10$ cm and $10\\sqrt3$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Angles",
+          "why": "Opposite angles equal.",
+          "math": "$\\angle ADC=120^\\circ$; acute angles $60^\\circ$."
+        },
+        {
+          "rule": "Short diagonal",
+          "why": "$\\triangle ABD$ equilateral.",
+          "math": "$BD=10$ cm."
+        },
+        {
+          "rule": "Long diagonal",
+          "why": "Half-diagonals in right triangle.",
+          "math": "$AC=10\\sqrt3$ cm"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-09",
+      "diagram": "rhombus-diagonals"
+    },
+    {
+      "id": "Q-GEM-B09-445",
+      "chapter": 19,
+      "batch": 9,
+      "batchNum": 44,
+      "globalNum": 445,
+      "localLabel": "Adv-Q44",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Trapezium: parallel sides $20$ cm and $30$ cm; non-parallel sides equal; height $12$ cm. Find area.",
+      "answer": "$300$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Area formula",
+          "why": "Needs parallel sides and height only.",
+          "math": "$\\dfrac12(20+30)\\times12$."
+        },
+        {
+          "rule": "Compute",
+          "why": "$25\\times12$.",
+          "math": "$300$ cm²"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-09",
+      "diagram": "trapezium-area"
+    },
+    {
+      "id": "Q-GEM-B09-446",
+      "chapter": 19,
+      "batch": 9,
+      "batchNum": 45,
+      "globalNum": 446,
+      "localLabel": "Adv-Q45",
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Cylinder radius $7$ cm, water height $15$ cm. Spherical balls radius $1.75$ cm dropped until water rises $5.25$ cm. How many balls?",
+      "answer": "$36$ spheres",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rise volume",
+          "why": "$\\pi\\cdot7^2\\cdot5.25=257.25\\pi$.",
+          "math": "Starting height is irrelevant."
+        },
+        {
+          "rule": "One sphere",
+          "why": "$\\dfrac43\\pi(1.75)^3\\approx7.146\\pi$.",
+          "math": "Divide volumes."
+        },
+        {
+          "rule": "Count",
+          "why": "$257.25/7.146$.",
+          "math": "$36$ exactly"
+        }
+      ],
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "gemini-batch-09",
+      "diagram": "cylinder-spheres-rise"
+    },
+    {
+      "id": "Q-GEM-B09-447",
+      "chapter": 20,
+      "batch": 9,
+      "batchNum": 46,
+      "globalNum": 447,
+      "localLabel": "Adv-Q46",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Mean, median and mode of a distribution are $45$, $48$ and $50$. State the empirical relationship between them.",
+      "answer": "For moderately skewed data: $\\text{Mode}\\approx3(\\text{Median})-2(\\text{Mean})$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Empirical rule",
+          "why": "Mode–Median–Mean relation.",
+          "math": "$\\text{Mode}\\approx3\\times48-2\\times45=54$ (approximate)."
+        },
+        {
+          "rule": "State formula",
+          "why": "This is the standard relationship asked.",
+          "math": "Formula above."
+        }
+      ],
+      "linked_note_id": "CH20-sec-data-handling",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-448",
+      "chapter": 20,
+      "batch": 9,
+      "batchNum": 47,
+      "globalNum": 448,
+      "localLabel": "Adv-Q47",
+      "topicId": "math-ch20",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Bag: $4$ red, $5$ blue, $6$ green. Three balls drawn. Probability all three different colours.",
+      "answer": "$\\dfrac{24}{91}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "One order",
+          "why": "R then B then G: $\\dfrac{4}{15}\\cdot\\dfrac{5}{14}\\cdot\\dfrac{6}{13}=\\dfrac{4}{91}$.",
+          "math": "Multiply by orders."
+        },
+        {
+          "rule": "Permutations",
+          "why": "$3!=6$ colour orders.",
+          "math": "$6\\times\\dfrac{4}{91}=\\dfrac{24}{91}$"
+        }
+      ],
+      "linked_note_id": "CH20-sec-likely",
+      "source": "gemini-batch-09"
+    },
+    {
+      "id": "Q-GEM-B09-449",
+      "chapter": 16,
+      "batch": 9,
+      "batchNum": 48,
+      "globalNum": 449,
+      "localLabel": "Adv-Q48",
+      "topicId": "math-ch16",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "Draw the graph of $y=x^2-4$ and find $x$-axis intercepts.",
+      "answer": "Parabola through $(-2,0)$ and $(2,0)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Set $y=0$",
+          "why": "$x^2-4=0$.",
+          "math": "$x=\\pm2$."
+        },
+        {
+          "rule": "Graph",
+          "why": "U-shaped parabola shifted down $4$.",
+          "math": "Intercepts $(\\pm2,0)$"
+        }
+      ],
+      "linked_note_id": "CH16-sec-linear-graphs",
+      "source": "gemini-batch-09",
+      "diagram": "parabola-yx2-minus4"
+    },
+    {
+      "id": "Q-GEM-B09-450",
+      "chapter": 17,
+      "batch": 9,
+      "batchNum": 49,
+      "globalNum": 450,
+      "localLabel": "Adv-Q49",
+      "topicId": "math-ch17",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "How many lines of symmetry does a regular octagon have? What is its order of rotational symmetry?",
+      "answer": "$8$ lines of symmetry; rotational symmetry of order $8$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Regular polygon",
+          "why": "Lines of symmetry $=$ number of sides.",
+          "math": "$8$ lines."
+        },
+        {
+          "rule": "Rotation",
+          "why": "Looks same after $360/8=45^\\circ$.",
+          "math": "Order $8$"
+        }
+      ],
+      "linked_note_id": "CH17-sec-line-symmetry",
+      "source": "gemini-batch-09",
+      "diagram": "octagon-lines-symmetry"
+    },
+    {
+      "id": "Q-GEM-B09-451",
+      "chapter": 10,
+      "batch": 9,
+      "batchNum": 50,
+      "globalNum": 451,
+      "localLabel": "Adv-Q50",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Advanced HOTS · Batch 9",
+      "question": "If $\\dfrac{a}{b}+\\dfrac{b}{a}=5$, find $\\dfrac{a^3}{b^3}+\\dfrac{b^3}{a^3}$.",
+      "answer": "$110$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Substitute",
+          "why": "Let $x=\\dfrac{a}{b}$.",
+          "math": "$x+\\dfrac1x=5$."
+        },
+        {
+          "rule": "Cube",
+          "why": "$125=x^3+\\dfrac1{x^3}+15$.",
+          "math": "Same as Adv-Q4 pattern."
+        },
+        {
+          "rule": "Answer",
+          "why": "$125-15$.",
+          "math": "$110$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-09"
+    }
+  ],
+  "count": 50,
+  "globalRange": [
+    402,
+    451
+  ]
+}

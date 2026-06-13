@@ -1,6 +1,6 @@
-# Gemini question batches (500 total)
+# Gemini question batches (501 total)
 
-Upload **10 batches × 50 questions** here. Existing textbook questions are **never deleted** — batches merge at load time.
+Upload **10 batches** here (batches 1–7: 50 each; batch 8: 51; batches 9–10: 50 Advanced HOTS each). Existing textbook questions are **never deleted** — batches merge at load time.
 
 ## Files
 
@@ -14,7 +14,8 @@ Upload **10 batches × 50 questions** here. Existing textbook questions are **ne
 | `batch_06.json` | 251–300 | Ch 13 (30), Ch 14 (12), Ch 18 (8) |
 | `batch_07.json` | 301–350 | Ch 18 (4), Ch 19 (40), Ch 20 (6) |
 | `batch_08.json` | 351–401 | Ch 20 (27), Ch 16 (12), Ch 17 (12) |
-| `batch_10.json` | 451–500 | (TBD) |
+| `batch_09.json` | 402–451 | Advanced HOTS (Ch 1–20 mixed) |
+| `batch_10.json` | 452–501 | Advanced HOTS (Ch 1–20 mixed) |
 
 ## Add a new batch
 

@@ -37,8 +37,8 @@ def step(rule, why, math):
     return {"rule": rule, "why": why, "math": math}
 
 
-def mk_q(batch, global_num, chapter, question, answer, steps, *, local_label=None, linked_note_id=None, diagram=None):
-    bnum = global_num - (batch - 1) * 50
+def mk_q(batch, global_num, chapter, question, answer, steps, *, local_label=None, linked_note_id=None, diagram=None, subtopic=None, batch_num=None):
+    bnum = batch_num if batch_num is not None else global_num - (batch - 1) * 50
     lid = f"Q-GEM-B{batch:02d}-{global_num:03d}"
     out = {
         "id": lid,
@@ -49,7 +49,7 @@ def mk_q(batch, global_num, chapter, question, answer, steps, *, local_label=Non
         "localLabel": local_label or f"Q{global_num}",
         "topicId": TOPIC_BY_CH[chapter],
         "type": "practice",
-        "subtopic": f"Gemini Open Glassbox · Batch {batch}",
+        "subtopic": subtopic or f"Gemini Open Glassbox · Batch {batch}",
         "question": question,
         "answer": answer,
         "options": [],
@@ -1453,7 +1453,637 @@ def batch_08():
     return qs
 
 
-BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03, 4: batch_04, 5: batch_05, 6: batch_06, 7: batch_07, 8: batch_08}
+def batch_09():
+    """Advanced HOTS · Adv-Q1–Q50 · global Q402–451."""
+    B = 9
+    ST = "Gemini Advanced HOTS · Batch 9"
+    qs = []
+    adv = [0]
+
+    N1 = "CH01-sec-rational-numbers"
+    N2 = "CH02-sec-laws-of-exponents"
+    N3 = "CH03-sec-square-numbers-or-perfect-squares"
+    N4 = "CH04-sec-cube-numbers-or-perfect-cubes"
+    N5 = "CH05-sec-numbers-in-general-form"
+    N6 = "CH06-sec-union-of-sets"
+    N7 = "CH07-sec-percentage"
+    N8 = "CH08-sec-simple-interest"
+    N9 = "CH09-sec-direct-variation"
+    N10 = "CH10-sec-fundamental-concepts"
+    N11 = "CH11-sec-factors-of-algebraic-expressions"
+    N12 = "CH12-sec-equations"
+    N13 = "CH13-sec-quadrilateral"
+    N19 = "CH19-sec-area-and-perimeter-of-some-plane-figures"
+    N20 = "CH20-sec-data-handling"
+    N20P = "CH20-sec-likely"
+    N16 = "CH16-sec-linear-graphs"
+    N17S = "CH17-sec-line-symmetry"
+    N17R = "CH17-sec-rotational-symmetry"
+
+    def put(ch, qu, ans, st, nid, diagram=None):
+        adv[0] += 1
+        n = adv[0]
+        gn = 401 + n
+        qs.append(mk_q(B, gn, ch, qu, ans, st, local_label=f"Adv-Q{n}", linked_note_id=nid,
+                       diagram=diagram, subtopic=ST, batch_num=n))
+
+    # Q1–Q8: Rationals & exponents
+    put(1, "Prove that the sum of any two rational numbers is always a rational number. Give two examples.",
+        "If $\\dfrac{a}{b}$ and $\\dfrac{c}{d}$ are rationals ($b,d\\neq0$), then $\\dfrac{a}{b}+\\dfrac{c}{d}=\\dfrac{ad+bc}{bd}$ is rational. Examples: $\\dfrac12+\\dfrac13=\\dfrac56$; $-\\dfrac34+\\dfrac14=-\\dfrac12$.",
+        [step("Definition", "Rational = $\\dfrac{\\text{integer}}{\\text{non-zero integer}}$.", "Take $\\dfrac{a}{b}$, $\\dfrac{c}{d}$."),
+         step("Add", "Common denominator $bd$.", "$\\dfrac{ad+bc}{bd}$"),
+         step("Closure", "$ad+bc$ and $bd$ are integers; $bd\\neq0$.", "Sum is rational"),
+         step("Examples", "Compute two sums.", "$\\dfrac56$, $-\\dfrac12$")], N1)
+
+    put(1, "If $\\dfrac{a}{b}$ is rational ($b\\neq0$), prove that its additive inverse is $-\\dfrac{a}{b}$.",
+        "Additive inverse of $\\dfrac{a}{b}$ is $-\\dfrac{a}{b}$ because $\\dfrac{a}{b}+\\left(-\\dfrac{a}{b}\\right)=\\dfrac{0}{b}=0$.",
+        [step("Definition", "$x$ is inverse of $y$ if $x+y=0$.", "Test $-\\dfrac{a}{b}$."),
+         step("Add", "Same denominator.", "$\\dfrac{a-a}{b}=\\dfrac{0}{b}=0$"),
+         step("Conclusion", "Sum is zero.", "They are additive inverses.")], N1)
+
+    put(1, "Find five rational numbers between $-\\dfrac{3}{5}$ and $\\dfrac{2}{3}$ such that their average is zero.",
+        "$-\\dfrac12$, $-\\dfrac14$, $0$, $\\dfrac14$, $\\dfrac12$ (sum $=0$ ⇒ average $=0$).",
+        [step("Average trick", "Average $0$ ⇒ total sum $0$.", "Pick symmetric pairs around $0$."),
+         step("Interval", "$-\\dfrac35\\approx-0.6$, $\\dfrac23\\approx0.67$ straddle $0$.", "Use $\\pm\\dfrac14$, $\\pm\\dfrac12$."),
+         step("Fifth number", "Add $0$ without changing sum.", "Five numbers listed.")], N1)
+
+    put(10, "If $\\left(x+\\dfrac{1}{x}\\right)=3$, find $x^3+\\dfrac{1}{x^3}$.",
+        "$18$",
+        [step("Cube identity", "$(A+B)^3=A^3+B^3+3AB(A+B)$.", "Cube both sides."),
+         step("Expand", "$x^3+\\dfrac{1}{x^3}+3\\cdot1\\cdot3=27$.", "Middle product $x\\cdot\\dfrac1x=1$."),
+         step("Solve", "$x^3+\\dfrac{1}{x^3}+9=27$.", "$18$")], N10)
+
+    put(2, "Simplify with positive exponents: $\\left[\\left(-\\dfrac{3}{4}\\right)^{-2}\\times\\left(-\\dfrac{3}{4}\\right)^{-3}\\right]\\div\\left(-\\dfrac{3}{4}\\right)^{-5}$.",
+        "$1$",
+        [step("Multiply powers", "Add exponents in bracket.", "$\\left(-\\dfrac34\\right)^{-5}$"),
+         step("Divide", "Subtract exponents: $-5-(-5)=0$.", "$\\left(-\\dfrac34\\right)^0=1$")], N2)
+
+    put(2, "If $2^{x-1}=8$ and $3^{2y-1}=81$, find $x+y$.",
+        "$6.5$",
+        [step("Match bases", "$8=2^3$, $81=3^4$.", "Equate exponents."),
+         step("Solve", "$x-1=3\\Rightarrow x=4$; $2y-1=4\\Rightarrow y=2.5$.", "$x+y=6.5$")], N2)
+
+    put(4, "Find the smallest number which when multiplied by $8788$ gives a perfect cube. Also find the cube root of the result.",
+        "Smallest multiplier $2$; product $17576$; cube root $26$.",
+        [step("Factorise", "$8788=2^2\\times13^3$.", "Need one more $2$."),
+         step("Multiply", "$8788\\times2=17576=2^3\\times13^3$.", "Perfect cube."),
+         step("Cube root", "$\\sqrt[3]{17576}=2\\times13$.", "$26$")], N4)
+
+    put(10, "Using $(a-b)^3=a^3-3a^2b+3ab^2-b^3$, find the cube of $97$.",
+        "$912673$",
+        [step("Rewrite", "$97=(100-3)^3$.", "$A=100$, $B=3$."),
+         step("Expand", "$1000000-90000+2700-27$.", "Apply identity."),
+         step("Compute", "Left to right.", "$912673$")], N10)
+
+    # Q9–Q15: Sets & commercial math
+    put(5, "A number divided by $7$ leaves remainder $5$; divided by $5$ leaves remainder $3$. Find the smallest 3-digit such number.",
+        "$103$",
+        [step("Trick", "$7-5=5-3=2$.", "Number $+2$ is divisible by $7$ and $5$."),
+         step("LCM", "Multiples of $\\text{lcm}(7,5)=35$ minus $2$.", "$33,68,103,138,\\ldots$"),
+         step("3-digit", "First $\\geq100$.", "$103$")], N5)
+
+    put(6, "If $A=\\{x:x\\text{ is a multiple of }4\\text{ between }1\\text{ and }30\\}$ and $B=\\{x:x\\text{ is a multiple of }6\\text{ between }1\\text{ and }30\\}$, find $A\\cup B$ and $A\\cap B$.",
+        "$A=\\{4,8,12,16,20,24,28\\}$; $B=\\{6,12,18,24\\}$; $A\\cup B=\\{4,6,8,12,16,18,20,24,28\\}$; $A\\cap B=\\{12,24\\}$.",
+        [step("List sets", "Multiples in $(1,30)$.", "Write $A$ and $B$."),
+         step("Union", "All distinct elements.", "$9$ elements."),
+         step("Intersection", "Multiples of $\\text{lcm}(4,6)=12$.", "$\\{12,24\\}$")], N6, "venn-two-sets")
+
+    put(6, "If $n(A)=25$, $n(B)=30$, $n(A\\cup B)=45$, find $n(A'\\cap B')$.",
+        "$n(U)-45$ (needs universal set size $n(U)$; by De Morgan $n(A'\\cap B')=n(U)-n(A\\cup B)$).",
+        [step("De Morgan", "$A'\\cap B'=(A\\cup B)'$.", "Complement of union."),
+         step("Trick", "$n(U)$ not given.", "Answer $n(U)-45$.")], N6)
+
+    put(7, "A number is increased by $20\\%$ and then decreased by $20\\%$. Find the net percentage change.",
+        "Net $4\\%$ decrease ($96\\%$ of original).",
+        [step("Base $100$", "After $+20\\%$: $120$.", "Then $-20\\%$ of $120$."),
+         step("Final", "$120\\times0.80=96$.", "Net change $-4\\%$")], N7)
+
+    put(7, "A shopkeeper marks goods $40\\%$ above CP, then allows successive discounts of $10\\%$ and $5\\%$. Find overall profit $\\%$.",
+        "$19.7\\%$ profit",
+        [step("CP $100$", "MP $=140$.", "After $10\\%$: $126$."),
+         step("Second discount", "$126\\times0.95=119.70$.", "Profit $19.7\\%$ on CP $100$")], N7)
+
+    put(8, "Difference between CI and SI on a sum for $3$ years at $10\\%$ p.a. is ₹$93$. Find the sum.",
+        "₹$3000$",
+        [step("3-year diff formula", "$\\text{Diff}=P\\times r^2\\times(3+r)$, $r=0.1$.", "$93=P\\times0.01\\times3.1$"),
+         step("Solve", "$P=93/0.031$.", "₹$3000$")], N8)
+
+    put(8, "A sum amounts to ₹$1331$ in $3$ years and ₹$1728$ in $6$ years at CI. Find the rate $\\%$ p.a.",
+        "$9\\dfrac{1}{11}\\%$ (≈ $9.09\\%$)",
+        [step("3-year block", "$1728=1331\\left(1+\\dfrac{R}{100}\\right)^3$.", "Years 3–6 behave like new investment."),
+         step("Ratio", "$\\dfrac{1728}{1331}=\\left(\\dfrac{12}{11}\\right)^3$.", "Cube root both sides."),
+         step("Rate", "$1+\\dfrac{R}{100}=\\dfrac{12}{11}$.", "$R=\\dfrac{100}{11}\\%$")], N8)
+
+    # Q16–Q24: Algebra & equations
+    put(9, "If $x$ varies directly as $y^2$ and $x=4$ when $y=2$, find $x$ when $y=5$.",
+        "$25$",
+        [step("Direct variation", "$x=ky^2$.", "Find $k$."),
+         step("Constant", "$4=k\\cdot4\\Rightarrow k=1$.", "$x=5^2=25$")], N9)
+
+    put(9, "$12$ men complete work in $15$ days at $8$ h/day. How many men finish in $20$ days at $6$ h/day?",
+        "$12$ men",
+        [step("Man-hours", "$12\\times15\\times8=1440$.", "Work fixed."),
+         step("New crew", "$M\\times20\\times6=1440$.", "$M=12$")], N9)
+
+    put(10, "If $\\left(x+\\dfrac{1}{x}\\right)^2=9$, find $x^3+\\dfrac{1}{x^3}$.",
+        "$\\pm18$",
+        [step("Square root", "$x+\\dfrac1x=\\pm3$.", "Two cases."),
+         step("Cube identity", "$(x+\\dfrac1x)^3=x^3+\\dfrac1{x^3}+3(x+\\dfrac1x)$.", "Substitute $\\pm3$."),
+         step("Results", "$+3\\Rightarrow18$; $-3\\Rightarrow-18$.", "$\\pm18$")], N10)
+
+    put(11, "Factorise completely: $x^3-3x^2-9x-5$.",
+        "$(x+1)^2(x-5)$",
+        [step("Trial root", "$x=-1$ gives $0$.", "Factor $(x+1)$."),
+         step("Divide", "Quotient $x^2-4x-5$.", "Factor quadratic."),
+         step("Answer", "$(x+1)(x-5)$ with repeated root.", "$(x+1)^2(x-5)$")], N11)
+
+    put(10, "If $a+b+c=0$, prove that $a^3+b^3+c^3=3abc$.",
+        "Proved using $a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-bc-ca)$; RHS $=0$ when $a+b+c=0$.",
+        [step("Identity", "Standard cubic identity.", "RHS has factor $(a+b+c)$."),
+         step("Given", "$a+b+c=0$.", "Entire RHS $=0$."),
+         step("Rearrange", "$a^3+b^3+c^3=3abc$.", "QED")], N10)
+
+    put(12, "Solve: $\\dfrac{2x-3}{x+2}-\\dfrac{3x-2}{x-3}=\\dfrac{5}{6}$.",
+        "$x=\\dfrac{-73\\pm\\sqrt{10081}}{22}$ (irrational roots)",
+        [step("LCD", "Denominator $(x+2)(x-3)$.", "Cross-multiply."),
+         step("Expand numerators", "Top: $-x^2-13x+13$.", "Equation $\\dfrac{-x^2-13x+13}{x^2-x-6}=\\dfrac56$."),
+         step("Clear fractions", "$11x^2+73x-108=0$.", "Quadratic formula gives irrational roots.")], N12)
+
+    put(12, "Ages of A and B are in ratio $7:5$. After $6$ years the ratio will be $4:3$. Find present ages.",
+        "A $=42$ years, B $=30$ years",
+        [step("Present", "$7x$ and $5x$.", "Future: add $6$."),
+         step("Equation", "$\\dfrac{7x+6}{5x+6}=\\dfrac43$.", "Cross-multiply."),
+         step("Solve", "$21x+18=20x+24\\Rightarrow x=6$.", "A $42$, B $30$")], N12)
+
+    put(13, "In parallelogram $ABCD$, diagonals meet at $O$. If $AO=(3x+2)$ cm and $OC=(5x-4)$ cm, find $AC$.",
+        "$22$ cm",
+        [step("Property", "Diagonals bisect each other.", "$AO=OC$."),
+         step("Solve", "$3x+2=5x-4\\Rightarrow x=3$.", "$AO=11$ cm."),
+         step("Full diagonal", "$AC=2\\times AO$.", "$22$ cm")], N13, "parallelogram-diagonals")
+
+    put(13, "Diagonals of a rhombus are in ratio $3:4$. If area is $384$ cm², find the diagonals.",
+        "$24$ cm and $32$ cm",
+        [step("Let diagonals", "$3x$ and $4x$.", "Area $\\dfrac12 d_1 d_2=384$."),
+         step("Equation", "$\\dfrac12\\cdot3x\\cdot4x=384\\Rightarrow6x^2=384$.", "$x=8$."),
+         step("Lengths", "$3x=24$, $4x=32$.", "Done.")], N13, "rhombus-diagonals")
+
+    # Q25–Q30: Mensuration, stats, probability
+    put(19, "Find the area of a regular hexagon with side $10$ cm (using equilateral triangles).",
+        "$150\\sqrt3$ cm² (≈ $259.8$ cm²)",
+        [step("Split", "6 equilateral triangles.", "Area $=6\\times\\dfrac{\\sqrt3}{4}s^2$."),
+         step("Substitute", "$s=10$.", "$6\\times25\\sqrt3=150\\sqrt3$")], N19, "regular-hexagon")
+
+    put(19, "A trapezium has parallel sides in ratio $2:5$. Distance between them is $12$ cm. Area $420$ cm². Find parallel sides.",
+        "$20$ cm and $50$ cm",
+        [step("Let sides", "$2x$ and $5x$.", "Area formula."),
+         step("Solve", "$420=\\dfrac12(7x)(12)=42x$.", "$x=10$."),
+         step("Sides", "$20$ cm, $50$ cm.", "")], N19, "trapezium-area")
+
+    put(19, "Cuboid volume $2400$ cm³. Length : breadth : height $=4:3:2$. Find total surface area.",
+        "$52\\times100^{2/3}$ cm² (≈ $1120.3$ cm²)",
+        [step("Dimensions", "$4x,3x,2x$; $24x^3=2400$.", "$x^3=100$."),
+         step("TSA", "$2(lb+bh+hl)=52x^2$.", "$52\\times100^{2/3}$ cm²")], N19)
+
+    put(19, "Cylindrical tank radius $7$ m. Water fills $\\dfrac34$ of height; water volume $4620$ m³. Find full tank height.",
+        "$40$ m",
+        [step("Water height", "$\\dfrac34 h$.", "$4620=\\pi r^2\\cdot\\dfrac34 h$."),
+         step("Substitute", "$\\pi=\\dfrac{22}{7}$, $r=7$.", "$4620=115.5h$."),
+         step("Height", "$h=40$ m.", "")], N19, "cylinder-tank")
+
+    put(20, "Mean of $15$ numbers is $18$. Mean of first $8$ is $16$; mean of last $8$ is $19$. Find the $8$th number.",
+        "$10$",
+        [step("Totals", "Overall sum $270$.", "Halves sum to $128+152=280$."),
+         step("Overlap trick", "8th counted twice.", "$280-270=10$")], N20)
+
+    put(20, "Two dice thrown. Probability sum is neither $7$ nor $11$.",
+        "$\\dfrac{7}{9}$",
+        [step("Unwanted sums", "7: $6$ ways; 11: $2$ ways.", "$8/36=2/9$."),
+         step("Complement", "$1-2/9$.", "$7/9$")], N20P)
+
+    # Q31–Q40: Heavy algebra & identities
+    put(10, "If $\\left(x+\\dfrac{1}{x}\\right)=5$, find $x^4+\\dfrac{1}{x^4}$.",
+        "$527$",
+        [step("Square once", "$x^2+\\dfrac{1}{x^2}=23$.", "From $(x+\\dfrac1x)^2=25$."),
+         step("Square again", "$(x^2+\\dfrac1{x^2})^2=x^4+\\dfrac1{x^4}+2$.", "$529-2=527$")], N10)
+
+    put(10, "Simplify: $(a+b+c)^3-(a+b-c)^3-6c(a+b)^2+2c^3$.",
+        "$4c^3$",
+        [step("Substitute", "$X=a+b$.", "$(X+c)^3-(X-c)^3-6cX^2+2c^3$."),
+         step("Cube difference", "Leaves $6X^2c+2c^3$.", "Cancel $6cX^2$."),
+         step("Result", "$2c^3+2c^3$.", "$4c^3$")], N10)
+
+    put(11, "Factorise $x^3+y^3+z^3-3xyz$ when $x+y+z=0$.",
+        "$0$",
+        [step("Identity", "$x^3+y^3+z^3-3xyz=(x+y+z)(\\cdots)$.", "Use Q20 result."),
+         step("Given", "$x+y+z=0$.", "Whole expression $=0$.")], N11)
+
+    put(12, "A two-digit number: tens digit is twice the units digit. If $18$ is **subtracted** (typo fix: not added), digits reverse. Find the number.",
+        "$42$",
+        [step("Setup", "Tens $=2y$, units $=y$; number $21y$.", "Reversed $12y$."),
+         step("Equation", "$21y-18=12y$.", "$9y=18\\Rightarrow y=2$."),
+         step("Number", "Tens $4$, units $2$.", "$42$")], N12)
+
+    put(13, "Prove that the diagonals of a parallelogram bisect each other.",
+        "Proved by ASA congruence of $\\triangle AOD$ and $\\triangle COB$ (opposite sides equal; alternate angles equal) ⇒ $AO=OC$, $DO=OB$.",
+        [step("Draw", "Diagonals meet at $O$.", "Compare $\\triangle AOD$, $\\triangle COB$."),
+         step("ASA", "$AD=CB$; alternate interior angles equal.", "Triangles congruent."),
+         step("Conclusion", "Corresponding parts equal.", "Diagonals bisect each other.")], N13, "parallelogram-diagonals")
+
+    put(3, "Find the smallest square number divisible by each of $8$, $12$ and $15$.",
+        "$3600$",
+        [step("LCM", "$\\text{lcm}(8,12,15)=120$.", "Factor $120=2^3\\cdot3\\cdot5$."),
+         step("Make square", "Need partners for lone $2,3,5$.", "Multiply by $2\\times3\\times5=30$."),
+         step("Answer", "$120\\times30$.", "$3600$")], N3)
+
+    put(2, "If $3^{2x-1}=81$ and $5^{y-2}=625$, find $x+y$.",
+        "$8.5$",
+        [step("Bases", "$81=3^4$, $625=5^4$.", "Equate exponents."),
+         step("Solve", "$x=2.5$, $y=6$.", "$x+y=8.5$")], N2)
+
+    put(8, "CI on a sum for $2$ years at $10\\%$ is ₹$420$. Find SI for same sum, period and rate.",
+        "₹$400$",
+        [step("Find P", "CI $21\\%$ of P $=420$.", "$P=2000$."),
+         step("SI", "$\\dfrac{2000\\times10\\times2}{100}$.", "₹$400$")], N8)
+
+    put(7, "Shopkeeper buys at $20\\%$ discount on MP ₹$1200$, sells at $25\\%$ profit on CP. Find SP.",
+        "₹$1200$",
+        [step("CP", "$20\\%$ off ₹$1200$ → CP ₹$960$.", "Profit on CP."),
+         step("SP", "$25\\%$ of $960=240$.", "SP $=1200$")], N7)
+
+    put(9, "If $x$ varies inversely as $y$ and $y=12$ when $x=8$, find $x$ when $y=16$.",
+        "$6$",
+        [step("Inverse", "$xy=k$.", "$k=96$."),
+         step("New $x$", "$x\\cdot16=96$.", "$x=6$")], N9)
+
+    # Q41–Q50: Extreme word problems
+    put(12, "Solve: $\\dfrac{x+3}{2x-1}=\\dfrac{x-2}{x+4}$.",
+        "$x=6\\pm\\sqrt{46}$",
+        [step("Cross-multiply", "$(x+3)(x+4)=(2x-1)(x-2)$.", "Expand."),
+         step("Quadratic", "$x^2-12x-10=0$.", "Formula: $\\dfrac{12\\pm\\sqrt{184}}{2}$."),
+         step("Simplify root", "$\\sqrt{184}=2\\sqrt{46}$.", "$6\\pm\\sqrt{46}$")], N12)
+
+    put(12, "Father's age is $4$ times son's. After $8$ years father will be $2.5$ times as old as son. Find present ages.",
+        "Son $8$, father $32$",
+        [step("Present", "Son $x$, father $4x$.", "Future ages $+8$."),
+         step("Equation", "$4x+8=2.5(x+8)$.", "$1.5x=12$."),
+         step("Ages", "$x=8$.", "Son $8$, father $32$")], N12)
+
+    put(13, "In rhombus $ABCD$, $\\angle ABC=120^\\circ$, side $10$ cm. Find $\\angle ADC$ and diagonals.",
+        "$\\angle ADC=120^\\circ$; diagonals $10$ cm and $10\\sqrt3$ cm",
+        [step("Angles", "Opposite angles equal.", "$\\angle ADC=120^\\circ$; acute angles $60^\\circ$."),
+         step("Short diagonal", "$\\triangle ABD$ equilateral.", "$BD=10$ cm."),
+         step("Long diagonal", "Half-diagonals in right triangle.", "$AC=10\\sqrt3$ cm")], N13, "rhombus-diagonals")
+
+    put(19, "Trapezium: parallel sides $20$ cm and $30$ cm; non-parallel sides equal; height $12$ cm. Find area.",
+        "$300$ cm²",
+        [step("Area formula", "Needs parallel sides and height only.", "$\\dfrac12(20+30)\\times12$."),
+         step("Compute", "$25\\times12$.", "$300$ cm²")], N19, "trapezium-area")
+
+    put(19, "Cylinder radius $7$ cm, water height $15$ cm. Spherical balls radius $1.75$ cm dropped until water rises $5.25$ cm. How many balls?",
+        "$36$ spheres",
+        [step("Rise volume", "$\\pi\\cdot7^2\\cdot5.25=257.25\\pi$.", "Starting height is irrelevant."),
+         step("One sphere", "$\\dfrac43\\pi(1.75)^3\\approx7.146\\pi$.", "Divide volumes."),
+         step("Count", "$257.25/7.146$.", "$36$ exactly")], N19, "cylinder-spheres-rise")
+
+    put(20, "Mean, median and mode of a distribution are $45$, $48$ and $50$. State the empirical relationship between them.",
+        "For moderately skewed data: $\\text{Mode}\\approx3(\\text{Median})-2(\\text{Mean})$.",
+        [step("Empirical rule", "Mode–Median–Mean relation.", "$\\text{Mode}\\approx3\\times48-2\\times45=54$ (approximate)."),
+         step("State formula", "This is the standard relationship asked.", "Formula above.")], N20)
+
+    put(20, "Bag: $4$ red, $5$ blue, $6$ green. Three balls drawn. Probability all three different colours.",
+        "$\\dfrac{24}{91}$",
+        [step("One order", "R then B then G: $\\dfrac{4}{15}\\cdot\\dfrac{5}{14}\\cdot\\dfrac{6}{13}=\\dfrac{4}{91}$.", "Multiply by orders."),
+         step("Permutations", "$3!=6$ colour orders.", "$6\\times\\dfrac{4}{91}=\\dfrac{24}{91}$")], N20P)
+
+    put(16, "Draw the graph of $y=x^2-4$ and find $x$-axis intercepts.",
+        "Parabola through $(-2,0)$ and $(2,0)$",
+        [step("Set $y=0$", "$x^2-4=0$.", "$x=\\pm2$."),
+         step("Graph", "U-shaped parabola shifted down $4$.", "Intercepts $(\\pm2,0)$")], N16, "parabola-yx2-minus4")
+
+    put(17, "How many lines of symmetry does a regular octagon have? What is its order of rotational symmetry?",
+        "$8$ lines of symmetry; rotational symmetry of order $8$.",
+        [step("Regular polygon", "Lines of symmetry $=$ number of sides.", "$8$ lines."),
+         step("Rotation", "Looks same after $360/8=45^\\circ$.", "Order $8$")], N17S, "octagon-lines-symmetry")
+
+    put(10, "If $\\dfrac{a}{b}+\\dfrac{b}{a}=5$, find $\\dfrac{a^3}{b^3}+\\dfrac{b^3}{a^3}$.",
+        "$110$",
+        [step("Substitute", "Let $x=\\dfrac{a}{b}$.", "$x+\\dfrac1x=5$."),
+         step("Cube", "$125=x^3+\\dfrac1{x^3}+15$.", "Same as Adv-Q4 pattern."),
+         step("Answer", "$125-15$.", "$110$")], N10)
+
+    return qs
+
+
+def batch_10():
+    """Advanced HOTS · Adv-Q51–Q100 · global Q452–501."""
+    B = 10
+    ST = "Gemini Advanced HOTS · Batch 10"
+    qs = []
+    adv = [50]
+
+    N5 = "CH05-sec-numbers-in-general-form"
+    N7 = "CH07-sec-percentage"
+    N8 = "CH08-sec-simple-interest"
+    N9 = "CH09-sec-direct-variation"
+    N10 = "CH10-sec-fundamental-concepts"
+    N11 = "CH11-sec-factors-of-algebraic-expressions"
+    N12 = "CH12-sec-equations"
+    N13 = "CH13-sec-quadrilateral"
+    N16 = "CH16-sec-linear-graphs"
+    N19 = "CH19-sec-area-and-perimeter-of-some-plane-figures"
+    N20 = "CH20-sec-data-handling"
+    N20P = "CH20-sec-likely"
+
+    def put(ch, qu, ans, st, nid, diagram=None):
+        adv[0] += 1
+        n = adv[0]
+        gn = 451 + (n - 50)
+        qs.append(mk_q(B, gn, ch, qu, ans, st, local_label=f"Adv-Q{n}", linked_note_id=nid,
+                       diagram=diagram, subtopic=ST, batch_num=n - 50))
+
+    # Q51–Q64: Heavy algebra & identities
+    put(10, "Prove that $(a+b)^3-(a-b)^3=2b(3a^2+b^2)$.",
+        "Proved: expand cubes, subtract → $6a^2b+2b^3=2b(3a^2+b^2)$.",
+        [step("Expand cubes", "$(a+b)^3=a^3+3a^2b+3ab^2+b^3$.", "$(a-b)^3=a^3-3a^2b+3ab^2-b^3$."),
+         step("Subtract", "$a^3$ and $3ab^2$ cancel.", "$6a^2b+2b^3$"),
+         step("Factor", "GCF $2b$.", "$2b(3a^2+b^2)$")], N10)
+
+    put(11, "Factorise: $8x^3+27y^3+64z^3-72xyz$.",
+        "$(2x+3y+4z)(4x^2+9y^2+16z^2-6xy-12yz-8xz)$",
+        [step("Identity", "$A^3+B^3+C^3-3ABC=(A+B+C)(\\cdots)$.", "$A=2x$, $B=3y$, $C=4z$."),
+         step("Check", "$-3(2x)(3y)(4z)=-72xyz$.", "Identity applies."),
+         step("Factor", "Plug into formula.", "Product above.")], N11)
+
+    put(12, "A two-digit number is $4$ times the sum of its digits. If $9$ is added, the digits reverse. Find the number.",
+        "$12$",
+        [step("Setup", "Number $10x+y$.", "Digits $x,y$."),
+         step("First rule", "$10x+y=4(x+y)$.", "$2x=y$."),
+         step("Second rule", "$(10x+y)+9=10y+x$.", "$x-y=-1$; with $y=2x$ get $x=1$, $y=2$."),
+         step("Answer", "Tens $1$, units $2$.", "$12$")], N12)
+
+    put(13, "In parallelogram $ABCD$, $AB=2x+5$, $BC=3x-8$, $CD=x+12$. Find $x$ and all sides.",
+        "$x=7$; sides $19,13,19,13$ cm",
+        [step("Opposite sides", "$AB=CD$.", "$2x+5=x+12$."),
+         step("Solve", "$x=7$.", "Substitute."),
+         step("Sides", "$AB=CD=19$; $BC=AD=13$.", "Done.")], N13, "parallelogram-diagonals")
+
+    put(19, "Find the area of a regular pentagon with side $8$ cm.",
+        "$110.08$ cm²",
+        [step("Formula", "Area $\\approx1.72\\times\\text{side}^2$.", "Standard pentagon multiplier."),
+         step("Compute", "$1.72\\times64$.", "$110.08$ cm²")], N19, "polygon-pentagon-coords")
+
+    put(19, "Cuboid: length $=$ breadth $+2$ cm, height $=$ breadth $-1$ cm, volume $240$ cm³. Find dimensions.",
+        "Breadth $6$ cm, length $8$ cm, height $5$ cm",
+        [step("Let breadth", "$x$; volume $(x+2)(x)(x-1)=240$.", "Trial and error."),
+         step("Try $x=6$", "$(8)(6)(5)=240$.", "Perfect match."),
+         step("Dimensions", "$6,8,5$ cm.", "")], N19, "cuboid-dims")
+
+    put(19, "Cylinder: CSA $440$ cm², volume $1540$ cm³. Find radius and height.",
+        "$r=7$ cm, $h=10$ cm",
+        [step("Divide formulas", "$\\dfrac{\\pi r^2 h}{2\\pi rh}=\\dfrac{1540}{440}$.", "$\\dfrac r2=3.5\\Rightarrow r=7$."),
+         step("Height", "$2\\pi rh=440$.", "$h=10$ cm")], N19, "cylinder-tank")
+
+    put(20, "Marks: $45,55,60,72,80,65,58,75,68,82$. Find mean deviation from the mean.",
+        "$9.4$",
+        [step("Mean", "Sum $660$.", "Mean $66$."),
+         step("Deviations", "Absolute distances from $66$.", "Sum $94$."),
+         step("MD", "$94/10$.", "$9.4$")], N20)
+
+    put(20, "Two cards drawn from a deck of $52$. Probability both are kings.",
+        "$\\dfrac{1}{221}$",
+        [step("First king", "$4/52=1/13$.", "Without replacement."),
+         step("Second king", "$3/51=1/17$.", "Multiply."),
+         step("Answer", "$1/13\\times1/17$.", "$1/221$")], N20P)
+
+    put(16, "Draw the graph of $3x-2y=6$ and find the area of the triangle formed with the coordinate axes.",
+        "Area $=3$ square units; intercepts $(2,0)$ and $(0,-3)$.",
+        [step("Intercepts", "$x$-intercept $(2,0)$; $y$-intercept $(0,-3)$.", "Plot line."),
+         step("Triangle", "Base $2$, height $3$ with origin.", "$\\dfrac12\\times2\\times3=3$")], N16, "line-intercept-triangle")
+
+    put(10, "If $\\left(x+\\dfrac{1}{x}\\right)=4$, find $x^5+\\dfrac{1}{x^5}$.",
+        "$724$",
+        [step("Square", "$x^2+\\dfrac1{x^2}=14$.", "From $(x+\\dfrac1x)^2=16$."),
+         step("Cube", "$x^3+\\dfrac1{x^3}=52$.", "Cube identity with $4$."),
+         step("Multiply", "$(x^2+\\dfrac1{x^2})(x^3+\\dfrac1{x^3})=728$.", "Middle term $x+\\dfrac1x=4$."),
+         step("Answer", "$728-4$.", "$724$")], N10)
+
+    put(10, "Simplify: $(a+b)^3+(b+c)^3+(c+a)^3-3(a+b)(b+c)(c+a)$.",
+        "$2(a^3+b^3+c^3-3abc)$",
+        [step("Substitute", "$X=a+b$, $Y=b+c$, $Z=c+a$.", "$X^3+Y^3+Z^3-3XYZ$."),
+         step("Sum", "$X+Y+Z=2(a+b+c)$.", "Standard identity."),
+         step("Result", "Evaluates to $2(a^3+b^3+c^3-3abc)$.", "")], N10)
+
+    put(11, "Factorise: $x^4+4$ (Sophie Germain identity).",
+        "$(x^2-2x+2)(x^2+2x+2)$",
+        [step("Add/subtract", "$x^4+4x^2+4-4x^2$.", "Complete square."),
+         step("Difference of squares", "$(x^2+2)^2-(2x)^2$.", "Factor."),
+         step("Answer", "Two quadratics.", "$(x^2-2x+2)(x^2+2x+2)$")], N11)
+
+    put(12, "Sum of digits of a two-digit number is $9$. If the number is multiplied by $4$, digits reverse. Find the number.",
+        "No integer solution as written (textbook typo). If multiplied by $4.5$, answer is $18$; if increased by $45$, $27\\to72$ also works.",
+        [step("Test candidates", "Digits sum $9$: $18,27,36,45,54,63,72,81$.", "Multiply each by $4$."),
+         step("Check", "None gives reversed digits.", "Impossible as stated."),
+         step("Likely typo", "$\\times4.5$: $18\\times4.5=81$.", "Or $+45$ variant.")], N12)
+
+    # Q65–Q77: Geometry proofs & tricks
+    put(13, "Kite $ABCD$: $AB=AD=5$ cm, $CB=CD=13$ cm. One diagonal is $24$ cm — find diagonals.",
+        "Trap: max diagonal $\\leq18$ cm, so $24$ cm is impossible. If short diagonal $BD=8$ cm, long diagonal $AC=15$ cm.",
+        [step("Impossible data", "Longest stretch $5+13=18$ cm.", "$24$ cm cannot fit."),
+         step("Assume $BD=8$", "Half $=4$.", "Pythagoras on top/bottom triangles."),
+         step("Long diagonal", "$3+12$.", "$AC=15$ cm")], N13, "kite-diagonals")
+
+    put(19, "Trapezium field: parallel sides $40$ m and $25$ m; non-parallel sides $13$ m and $14$ m. Plough at ₹$5$/m².",
+        "₹$1820$",
+        [step("Inner triangle", "Base $15$ m; sides $13,14$.", "Heron area $84$ m²."),
+         step("Height", "$84=\\dfrac12\\times15\\times h$.", "$h=11.2$ m."),
+         step("Trapezium area", "$\\dfrac12(40+25)\\times11.2=364$ m².", "Cost $364\\times5=$ ₹$1820$")], N19, "trapezium-field")
+
+    put(19, "Cylinder $r=7$ cm, $h=20$ cm melted into spheres $r=1.75$ cm. How many spheres?",
+        "$137$ whole spheres ($960/7\\approx137.14$)",
+        [step("Cylinder vol", "$980\\pi$.", "Sphere vol $\\dfrac{343\\pi}{48}$."),
+         step("Divide", "Cancel $\\pi$; simplify.", "$960/7$."),
+         step("Whole spheres", "Take integer part.", "$137$")], N19, "cylinder-tank")
+
+    put(20, "Mean of $20$ numbers is $15$. Each number is multiplied by $3$, then $5$ is added. New mean?",
+        "$50$",
+        [step("Rule", "Same operation on all data changes mean the same way.", "Apply to mean."),
+         step("Compute", "$15\\times3+5$.", "$50$")], N20)
+
+    put(20, "Bag: $5$ red, $4$ blue. Two drawn without replacement. P(second is red | first was blue)?",
+        "$5/8$",
+        [step("Given", "First ball blue.", "$8$ balls left, $5$ red."),
+         step("Answer", "$5/8$.", "")], N20P)
+
+    put(16, "Draw the graph of $y=|x|$ and describe its symmetry.",
+        "V-shaped graph through origin; symmetric about the $y$-axis.",
+        [step("Shape", "$|-2|=|2|=2$.", "Cannot go below $x$-axis."),
+         step("Symmetry", "Mirror across $y$-axis.", "Vertex at $(0,0)$")], N16, "abs-graph-v")
+
+    put(10, "If $\\dfrac{a}{b}=\\dfrac34$, find $\\dfrac{a^3+b^3}{a^3-b^3}$.",
+        "$-\\dfrac{91}{37}$",
+        [step("Substitute", "$a=3$, $b=4$.", "Compute cubes."),
+         step("Numerator", "$27+64=91$.", "Denominator $27-64=-37$."),
+         step("Answer", "$-91/37$.", "")], N10)
+
+    put(5, "Prove: if a number is divisible by $9$, the sum of its digits is divisible by $9$.",
+        "For $100a+10b+c=9(11a+b)+(a+b+c)$; first part divisible by $9$, so digit sum must be too.",
+        [step("3-digit form", "$100a+10b+c$.", "Split place values."),
+         step("Rearrange", "$9(11a+b)+(a+b+c)$.", "Digit sum $a+b+c$."),
+         step("Conclusion", "Divisibility by $9$ forces digit sum divisible by $9$.", "QED")], N5)
+
+    put(8, "CI on a sum for $1\\dfrac12$ years at $8\\%$ p.a. compounded half-yearly is ₹$306$. Find the sum.",
+        "₹$2448.70$ (approx.)",
+        [step("Half-yearly", "Rate $4\\%$, $n=3$ periods.", "$A=P(1.04)^3$."),
+         step("CI", "$0.124864P=306$.", "$P\\approx2448.70$")], N8)
+
+    put(7, "Two horses sold at ₹$4000$ each: $25\\%$ gain on one, $25\\%$ loss on other. Overall profit or loss $\\%$?",
+        "$6.25\\%$ loss",
+        [step("Shortcut", "Equal SP, equal gain/loss rates → net loss.", "$\\text{Loss}\\%=r^2/100$."),
+         step("Compute", "$25^2/100$.", "$6.25\\%$ loss")], N7)
+
+    put(9, "If $x\\propto y$ and $y\\propto z$, prove $x\\propto z$.",
+        "$x=k_1y$, $y=k_2z$ ⇒ $x=(k_1k_2)z$ ⇒ $x\\propto z$.",
+        [step("Direct laws", "$x=k_1y$, $y=k_2z$.", "Substitute."),
+         step("Combine", "$x=(k_1k_2)z$.", "Product of constants is constant."),
+         step("Conclusion", "$x\\propto z$.", "QED")], N9)
+
+    put(12, "Solve: $\\dfrac{2}{x-3}+\\dfrac{3}{x+2}=\\dfrac{5}{x-1}$.",
+        "$x=7$",
+        [step("Combine left", "$\\dfrac{5x-5}{x^2-x-6}=\\dfrac{5}{x-1}$.", "Numerator $5(x-1)$."),
+         step("Cancel $5$", "$\\dfrac{x-1}{x^2-x-6}=\\dfrac{1}{x-1}$.", "Cross-multiply."),
+         step("Solve", "$x^2-2x+1=x^2-x-6$.", "$x=7$")], N12)
+
+    put(13, "In a parallelogram, one angle is $30^\\circ$ more than twice the smallest angle. Find all angles.",
+        "$50^\\circ,130^\\circ,50^\\circ,130^\\circ$",
+        [step("Let smallest", "$x$; adjacent $2x+30$.", "Supplementary pair."),
+         step("Equation", "$x+(2x+30)=180$.", "$x=50$."),
+         step("Angles", "Opposite pairs equal.", "$50^\\circ,130^\\circ$ each pair")], N13, "parallelogram-diagonals")
+
+    # Q78–Q100: Ultimate brain busters
+    put(19, "Find the area of a regular octagon with side $10$ cm.",
+        "$200(1+\\sqrt2)$ cm² (≈ $482.8$ cm²)",
+        [step("Formula", "Area $=2(1+\\sqrt2)\\times\\text{side}^2$.", "Substitute $s=10$."),
+         step("Compute", "$2(1+\\sqrt2)\\times100$.", "$200(1+\\sqrt2)$ cm²")], N19, "octagon-lines-symmetry")
+
+    put(19, "Cylindrical tank $r=3.5$ m, $h=6$ m full of water. How many $7$-litre buckets?",
+        "$33000$ buckets",
+        [step("Volume", "$231$ m³.", "$\\pi r^2 h$."),
+         step("Litres", "$231000$ L.", "Divide by $7$."),
+         step("Buckets", "$33000$.", "")], N19, "cylinder-tank")
+
+    put(20, "Mean $=52$, variance $=144$. Find coefficient of variation.",
+        "≈ $23.07\\%$",
+        [step("SD", "$\\sqrt{144}=12$.", "CV formula."),
+         step("CV", "$(12/52)\\times100$.", "$300/13\\approx23.07\\%$")], N20)
+
+    put(20, "Three cards from a deck of $52$. Probability all same suit.",
+        "≈ $0.0129$ ($\\approx1.3\\%$)",
+        [step("One suit path", "Hearts: $13/52\\times12/51\\times11/50$.", "Any suit same probability."),
+         step("Multiply", "Simplify fraction.", "≈ $0.0129$")], N20P)
+
+    put(10, "If $\\left(x+\\dfrac{1}{x}\\right)=6$, find $x^6+\\dfrac{1}{x^6}$.",
+        "$39202$",
+        [step("Square", "$x^2+\\dfrac1{x^2}=34$.", "From $36$."),
+         step("Cube the square", "$34^3=39304$.", "$x^6+\\dfrac1{x^6}+3(34)=39304$."),
+         step("Answer", "$39304-102$.", "$39202$")], N10)
+
+    put(11, "Factorise: $x^4-16$.",
+        "$(x-2)(x+2)(x^2+4)$",
+        [step("First DOS", "$(x^2-4)(x^2+4)$.", "Factor $x^2-4$ again."),
+         step("Answer", "$(x-2)(x+2)(x^2+4)$.", "")], N11)
+
+    put(5, "Number divided by $3,4,5$ leaves remainders $2,3,4$. Find smallest such number.",
+        "$59$",
+        [step("Gap trick", "$3-2=4-3=5-4=1$.", "Number $+1$ divisible by $3,4,5$."),
+         step("LCM", "$\\text{lcm}(3,4,5)=60$.", "$60-1=59$")], N5)
+
+    put(19, "Rectangle: length $5$ cm more than breadth; diagonal $13$ cm. Find area.",
+        "≈ $72$ cm² ($B\\approx6.35$ cm, $L\\approx11.35$ cm)",
+        [step("Pythagoras", "$B^2+(B+5)^2=169$.", "$2B^2+10B-144=0$."),
+         step("Quadratic", "$B^2+5B-72=0$.", "$B\\approx6.35$."),
+         step("Area", "$L\\times B$.", "≈ $72$ cm²")], N19)
+
+    put(19, "Trapezium: parallel sides $18$ cm and $12$ cm; equal legs $5$ cm each. Find area.",
+        "$60$ cm²",
+        [step("Isosceles", "Triangle base $(18-12)/2=3$ cm.", "Height from Pythagoras $=4$ cm."),
+         step("Area", "$\\dfrac12(18+12)\\times4$.", "$60$ cm²")], N19, "trapezium-area")
+
+    put(19, "Sphere $r=6$ cm melted into cones $r=3$ cm, $h=4$ cm. How many cones?",
+        "$24$ cones",
+        [step("Sphere", "$288\\pi$.", "Cone $12\\pi$ each."),
+         step("Divide", "$288\\pi/12\\pi$.", "$24$")], N19)
+
+    put(20, "Mean of $25$ observations is $36$. Mean of first $13$ is $32$; mean of last $13$ is $40$. Find $13$th observation.",
+        "$36$",
+        [step("Totals", "Overall $900$.", "Halves $416+520=936$."),
+         step("Overlap", "$13$th counted twice.", "$936-900=36$")], N20)
+
+    put(20, "Bag: $6$ red, $4$ white. Draw without replacement until white appears. P(white on 4th draw)?",
+        "$2/21$",
+        [step("Pattern", "RRRW.", "Sequential probabilities."),
+         step("Multiply", "$(6/10)(5/9)(4/8)(4/7)$.", "$2/21$")], N20P)
+
+    put(16, "Draw the graph of $y=2x^2-8$. Find vertex and axis of symmetry.",
+        "Vertex $(0,-8)$; axis of symmetry $x=0$ (the $y$-axis).",
+        [step("Parabola", "U-shape, coefficient $2>0$.", "Shift down $8$."),
+         step("Vertex", "At $x=0$, $y=-8$.", "Axis $x=0$")], N16, "parabola-y2x2-minus8")
+
+    put(10, "If $\\dfrac{a}{b}=\\dfrac57$, find $\\dfrac{a^2+b^2}{a^2-b^2}$.",
+        "$-\\dfrac{37}{12}$",
+        [step("Substitute", "$a=5$, $b=7$.", "Compute."),
+         step("Answer", "$(25+49)/(25-49)$.", "$-37/12$")], N10)
+
+    put(8, "CI for $2$ years at $5\\%$ is ₹$51$. Find SI for $3$ years at $6\\%$ on same sum.",
+        "₹$89.56$ (approx.)",
+        [step("Find P", "Effective CI rate $10.25\\%$.", "$P\\approx497.56$."),
+         step("SI", "$497.56\\times6\\times3/100$.", "₹$89.56$")], N8)
+
+    put(7, "Buys at $15\\%$ discount, sells at $20\\%$ profit, gain ₹$85$. Find marked price.",
+        "₹$500$",
+        [step("CP", "$0.2y=85\\Rightarrow y=425$.", "Cost price."),
+         step("MP", "$0.85x=425$.", "₹$500$")], N7)
+
+    put(9, "If $x\\propto y$ and $x\\propto\\dfrac1z$, and $x=12$ when $y=8,z=4$, find $x$ when $y=10,z=5$.",
+        "$12$",
+        [step("Joint variation", "$x=k(y/z)$.", "$k=6$ from $12=k(2)$."),
+         step("New value", "$x=6(10/5)$.", "$12$")], N9)
+
+    put(12, "Solve: $\\dfrac{x-2}{x+3}+\\dfrac{x+3}{x-2}=\\dfrac{10}{3}$.",
+        "$x=-5.5$ or $x=4.5$",
+        [step("Let $U$", "$U=\\dfrac{x-2}{x+3}$; second term $=1/U$.", "$U+1/U=10/3$."),
+         step("Quadratic in $U$", "$3U^2-10U+3=0$.", "$U=3$ or $U=1/3$."),
+         step("Back-substitute", "Two linear equations.", "$-5.5$, $4.5$")], N12)
+
+    put(13, "Rhombus: diagonals in ratio $2:3$, area $384$ cm². Find side.",
+        "$4\\sqrt{26}$ cm (≈ $20.39$ cm)",
+        [step("Diagonals", "$2x,3x$; $3x^2=384$.", "$x=8\\sqrt2$."),
+         step("Half-diagonals", "$8\\sqrt2$, $12\\sqrt2$.", "Side $=\\sqrt{128+288}=4\\sqrt{26}$")], N13, "rhombus-diagonals")
+
+    put(19, "Cylinder diameter $14$ m, height $10$ m. Water filled to $7$ m. Volume in kilolitres?",
+        "$1078$ kilolitres",
+        [step("Water volume", "$r=7$, $h=7$.", "$\\pi r^2 h=1078$ m³."),
+         step("Convert", "$1$ m³ $=1$ kilolitre.", "$1078$ kL")], N19, "cylinder-tank")
+
+    put(20, "Mode $=45$, median $=50$, mean $=55$. Comment on skewness.",
+        "Positively skewed (right-skewed): Mean $>$ Median $>$ Mode.",
+        [step("Compare", "Mean $55>$ median $50>$ mode $45$.", "Long tail toward higher values."),
+         step("Conclusion", "Positive skew.", "")], N20)
+
+    put(20, "Two dice thrown. Probability product is a prime number.",
+        "$1/6$",
+        [step("Prime product", "Need $1\\times p$ with $p\\in\\{2,3,5\\}$.", "Six ordered pairs."),
+         step("Probability", "$6/36$.", "$1/6$")], N20P)
+
+    put(16, "Draw the graph of $x^2+y^2=25$ and find intersection with $y=x$.",
+        "Circle centre $(0,0)$, radius $5$; intersections $\\left(\\pm\\sqrt{12.5},\\pm\\sqrt{12.5}\\right)$ (≈ $\\pm3.53$).",
+        [step("Circle", "$x^2+y^2=25$.", "Radius $5$ at origin."),
+         step("Substitute $y=x$", "$2x^2=25$.", "$x=\\pm\\sqrt{12.5}$."),
+         step("Points", "$y=x$ gives matching coordinates.", "≈ $(3.53,3.53)$ and $(-3.53,-3.53)$")], N16, "circle-line-intersect")
+
+    return qs
+
+
+BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03, 4: batch_04, 5: batch_05, 6: batch_06, 7: batch_07, 8: batch_08, 9: batch_09, 10: batch_10}
 
 
 def build(batch_num: int):
@@ -1462,7 +2092,7 @@ def build(batch_num: int):
     BATCHES_DIR.mkdir(parents=True, exist_ok=True)
     data = {
         "batch": batch_num,
-        "title": f"Gemini Open Glassbox · Batch {batch_num}",
+        "title": f"Gemini Advanced HOTS · Batch {batch_num}" if batch_num >= 9 else f"Gemini Open Glassbox · Batch {batch_num}",
         "questions": BUILDERS[batch_num](),
     }
     qs = data["questions"]

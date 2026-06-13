@@ -11,7 +11,7 @@
     triangle: "△", bigcirc: "◯", circ: "∘", times2: "×",
     alpha: "α", beta: "β", theta: "θ", lambda: "λ", Delta: "Δ",
     gcd: "gcd", lcm: "lcm", min: "min", max: "max", mod: "mod",
-    infty: "∞", sqrt: "√", quad: "\u2003", qquad: "\u2003\u2003",
+    propto: "∝", therefore: "∴", because: "∵",
   };
   const SPACE = { ";": "\u2005", ",": "\u2009", ":": "\u2005", "!": "", " ": "\u2002" };
 

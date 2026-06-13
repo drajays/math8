@@ -1,0 +1,1401 @@
+{
+  "batch": 3,
+  "title": "Gemini Open Glassbox · Batch 3",
+  "count": 50,
+  "globalRange": [
+    101,
+    150
+  ],
+  "questions": [
+    {
+      "id": "Q-GEM-B03-101",
+      "chapter": 6,
+      "batch": 3,
+      "batchNum": 1,
+      "globalNum": 101,
+      "localLabel": "Ch6-Q13",
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "$U=\\{1,\\ldots,20\\}$, $A=$ multiples of $3$, $B=$ multiples of $5$. Find $n(A\\cup B)$.",
+      "answer": "$9$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Build sets",
+          "why": "$A=\\{3,6,9,12,15,18\\}$, $B=\\{5,10,15,20\\}$.",
+          "math": "Within universe"
+        },
+        {
+          "rule": "Union",
+          "why": "$A\\cup B=\\{3,5,6,9,10,12,15,18,20\\}$.",
+          "math": "No duplicates"
+        },
+        {
+          "rule": "Count",
+          "why": "$n(A\\cup B)=9$.",
+          "math": "$9$"
+        }
+      ],
+      "linked_note_id": "CH06-sec-overlapping-intersecting-sets",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-102",
+      "chapter": 6,
+      "batch": 3,
+      "batchNum": 2,
+      "globalNum": 102,
+      "localLabel": "Ch6-Q14",
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Roster form of $\\{x\\mid x^2=9,\\,x\\in\\mathbb{N}\\}$.",
+      "answer": "$\\{3\\}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Solve",
+          "why": "$x^2=9$ gives $x=\\pm 3$.",
+          "math": "Square roots"
+        },
+        {
+          "rule": "Natural",
+          "why": "$-3\\notin\\mathbb{N}$.",
+          "math": "$\\{3\\}$"
+        }
+      ],
+      "linked_note_id": "CH06-sec-overlapping-intersecting-sets",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-103",
+      "chapter": 6,
+      "batch": 3,
+      "batchNum": 3,
+      "globalNum": 103,
+      "localLabel": "Ch6-Q15",
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "$n(A)=25$, $n(B)=30$, $n(A\\cap B)=10$. Find $n(A'\\cap B')$.",
+      "answer": "$n(U)-45$ (needs $n(U)$)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "$n(A\\cup B)$",
+          "why": "$25+30-10=45$.",
+          "math": "Standard formula"
+        },
+        {
+          "rule": "De Morgan",
+          "why": "$(A\\cup B)'=A'\\cap B'$.",
+          "math": "Outside both circles"
+        },
+        {
+          "rule": "Trap",
+          "why": "Need $n(U)$ for exact count.",
+          "math": "$n(U)-45$"
+        }
+      ],
+      "linked_note_id": "CH06-sec-complement-of-a-set",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-104",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 4,
+      "globalNum": 104,
+      "localLabel": "Ch7-Q1",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Convert $\\dfrac{3}{8}$ into percentage.",
+      "answer": "$37.5\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$\\dfrac{3}{8}\\times 100$.",
+          "math": "$300/8$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$37.5\\%$.",
+          "math": "$37.5\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-105",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 5,
+      "globalNum": 105,
+      "localLabel": "Ch7-Q2",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "What percent of $80$ is $24$?",
+      "answer": "$30\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Fraction",
+          "why": "$24/80$.",
+          "math": "Part over whole"
+        },
+        {
+          "rule": "Percent",
+          "why": "$\\dfrac{24}{80}\\times 100=30\\%$.",
+          "math": "$30\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-106",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 6,
+      "globalNum": 106,
+      "localLabel": "Ch7-Q3",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Find $35\\%$ of $400$.",
+      "answer": "$140$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Translate",
+          "why": "$\\dfrac{35}{100}\\times 400$.",
+          "math": "'Of' means multiply"
+        },
+        {
+          "rule": "Calculate",
+          "why": "Zeros cancel → $35\\times 4$.",
+          "math": "$140$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-107",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 7,
+      "globalNum": 107,
+      "localLabel": "Ch7-Q4",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "If $25\\%$ of a number is $75$, find the number.",
+      "answer": "$300$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$\\dfrac{25}{100}x=75$.",
+          "math": "$x/4=75$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=75\\times 4$.",
+          "math": "$300$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-108",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 8,
+      "globalNum": 108,
+      "localLabel": "Ch7-Q5",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "A number increased by $20\\%$ becomes $360$. Find original.",
+      "answer": "$300$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Percent",
+          "why": "New = $120\\%$ of original.",
+          "math": "$1.2x=360$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=360/1.2$.",
+          "math": "$300$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-109",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 9,
+      "globalNum": 109,
+      "localLabel": "Ch7-Q6",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Express $0.075$ as a percentage.",
+      "answer": "$7.5\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rule",
+          "why": "Multiply decimal by $100$.",
+          "math": "$0.075\\times 100=7.5\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-110",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 10,
+      "globalNum": 110,
+      "localLabel": "Ch7-Q7",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Price rises from ₹$250$ to ₹$300$. Find percentage increase.",
+      "answer": "$20\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Difference",
+          "why": "$300-250=50$.",
+          "math": "Over original"
+        },
+        {
+          "rule": "Percent",
+          "why": "$\\dfrac{50}{250}\\times 100=20\\%$.",
+          "math": "$20\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-111",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 11,
+      "globalNum": 111,
+      "localLabel": "Ch7-Q8",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Class of $50$ students: $60\\%$ girls. How many boys?",
+      "answer": "$20$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Boys %",
+          "why": "$100-60=40\\%$.",
+          "math": "Rest of class"
+        },
+        {
+          "rule": "Calculate",
+          "why": "$\\dfrac{40}{100}\\times 50$.",
+          "math": "$20$ boys"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-112",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 12,
+      "globalNum": 112,
+      "localLabel": "Ch7-Q9",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "$15\\%$ discount on article marked ₹$800$. Selling price?",
+      "answer": "₹$680$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Pay",
+          "why": "$100-15=85\\%$ of marked price.",
+          "math": "$\\dfrac{85}{100}\\times 800$"
+        },
+        {
+          "rule": "SP",
+          "why": "$85\\times 8$.",
+          "math": "₹$680$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-113",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 13,
+      "globalNum": 113,
+      "localLabel": "Ch7-Q10",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "If $40\\%$ of a number is $240$, find $75\\%$ of it.",
+      "answer": "$450$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Find number",
+          "why": "$x=240\\times 100/40=600$.",
+          "math": "Original"
+        },
+        {
+          "rule": "$75\\%$",
+          "why": "$\\dfrac{75}{100}\\times 600$.",
+          "math": "$450$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-114",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 14,
+      "globalNum": 114,
+      "localLabel": "Ch7-Q11",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Convert $125\\%$ to fraction in lowest terms.",
+      "answer": "$\\dfrac{5}{4}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Over 100",
+          "why": "$125/100$.",
+          "math": "Divide by $25$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$5/4$.",
+          "math": "$\\dfrac{5}{4}$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-115",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 15,
+      "globalNum": 115,
+      "localLabel": "Ch7-Q12",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Score $45$ out of $60$. Percentage?",
+      "answer": "$75\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Fraction",
+          "why": "$45/60=3/4$.",
+          "math": "$\\times 100$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$75\\%$.",
+          "math": "$75\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-116",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 16,
+      "globalNum": 116,
+      "localLabel": "Ch7-Q13",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "$12.5\\%$ of a number is $75$. Find the number.",
+      "answer": "$600$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$\\dfrac{12.5}{100}x=75$.",
+          "math": "$12.5x=7500$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=7500/12.5$.",
+          "math": "$600$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-117",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 17,
+      "globalNum": 117,
+      "localLabel": "Ch7-Q14",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Population $54000$ increases $8\\%$ per year. Population after $2$ years?",
+      "answer": "$62986$ (approx.)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Year 1",
+          "why": "$54000\\times 1.08=58320$.",
+          "math": "Compound growth"
+        },
+        {
+          "rule": "Year 2",
+          "why": "$58320\\times 1.08=62985.6$.",
+          "math": "Round → $62986$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-118",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 18,
+      "globalNum": 118,
+      "localLabel": "Ch7-Q15",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "What percent is $\\dfrac{3}{5}$ of $\\dfrac{4}{7}$?",
+      "answer": "$105\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Ratio",
+          "why": "$\\dfrac{3/5}{4/7}\\times 100$.",
+          "math": "Flip and multiply"
+        },
+        {
+          "rule": "Simplify",
+          "why": "$\\dfrac{21}{20}\\times 100$.",
+          "math": "$105\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-119",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 19,
+      "globalNum": 119,
+      "localLabel": "Ch7-Q16",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Number decreased $25\\%$ becomes $225$. Find original.",
+      "answer": "$300$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Left",
+          "why": "$75\\%$ of original.",
+          "math": "$\\dfrac{3}{4}x=225$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=225\\times\\dfrac{4}{3}$.",
+          "math": "$300$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-120",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 20,
+      "globalNum": 120,
+      "localLabel": "Ch7-Q17",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Find $120\\%$ of $250$.",
+      "answer": "$300$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Calculate",
+          "why": "$\\dfrac{120}{100}\\times 250$.",
+          "math": "$1.2\\times 250=300$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-121",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 21,
+      "globalNum": 121,
+      "localLabel": "Ch7-Q18",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "If $30\\%$ of $x=45\\%$ of $y$, find ratio $x:y$.",
+      "answer": "$3:2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$30x=45y$.",
+          "math": "Clear denominators"
+        },
+        {
+          "rule": "Ratio",
+          "why": "$x/y=45/30=3/2$.",
+          "math": "$3:2$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-122",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 22,
+      "globalNum": 122,
+      "localLabel": "Ch8-Q1",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Buy ₹$800$, sell ₹$960$. Profit percent?",
+      "answer": "$20\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Profit",
+          "why": "$960-800=160$.",
+          "math": "SP − CP"
+        },
+        {
+          "rule": "Percent",
+          "why": "$\\dfrac{160}{800}\\times 100$.",
+          "math": "$20\\%$ on CP"
+        }
+      ],
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-123",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 23,
+      "globalNum": 123,
+      "localLabel": "Ch8-Q2",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Sell watch ₹$720$ at $10\\%$ loss. Find CP.",
+      "answer": "₹$800$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "SP",
+          "why": "$90\\%$ of CP $=720$.",
+          "math": "Loss $10\\%$"
+        },
+        {
+          "rule": "CP",
+          "why": "$720\\times 100/90$.",
+          "math": "₹$800$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-124",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 24,
+      "globalNum": 124,
+      "localLabel": "Ch8-Q3",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "CP ₹$450$, profit $20\\%$. Find SP.",
+      "answer": "₹$540$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "SP",
+          "why": "$120\\%$ of CP.",
+          "math": "$1.2\\times 450=540$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-125",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 25,
+      "globalNum": 125,
+      "localLabel": "Ch8-Q4",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "$10\\%$ discount, $20\\%$ profit. CP ₹$500$. Marked price?",
+      "answer": "₹$666.67$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "SP",
+          "why": "$1.2\\times 500=600$.",
+          "math": "$20\\%$ profit"
+        },
+        {
+          "rule": "MP",
+          "why": "$600$ is $90\\%$ of MP.",
+          "math": "$600/0.9=666.67$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-discount",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-126",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 26,
+      "globalNum": 126,
+      "localLabel": "Ch8-Q5",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Buy ₹$1200$, sell at $15\\%$ loss. SP?",
+      "answer": "₹$1020$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "SP",
+          "why": "$85\\%$ of CP.",
+          "math": "$0.85\\times 1200=1020$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-127",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 27,
+      "globalNum": 127,
+      "localLabel": "Ch8-Q6",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Mark $25\\%$ above CP, $10\\%$ discount. Profit %?",
+      "answer": "$12.5\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Assume CP",
+          "why": "CP $=100$, MP $=125$.",
+          "math": "Easy numbers"
+        },
+        {
+          "rule": "SP",
+          "why": "$125-12.5=112.5$.",
+          "math": "Profit $12.5$ on $100$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-discount",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-128",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 28,
+      "globalNum": 128,
+      "localLabel": "Ch8-Q7",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "SP ₹$720$ after $10\\%$ discount. Marked price?",
+      "answer": "₹$800$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Relation",
+          "why": "$720=90\\%$ of MP.",
+          "math": "$720/0.9$"
+        },
+        {
+          "rule": "MP",
+          "why": "₹$800$.",
+          "math": "₹$800$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-discount",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-129",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 29,
+      "globalNum": 129,
+      "localLabel": "Ch8-Q8",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Buy $12$ for ₹$240$, sell at ₹$25$ each. Profit %?",
+      "answer": "$25\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Per item",
+          "why": "CP $=20$, SP $=25$.",
+          "math": "Profit $5$"
+        },
+        {
+          "rule": "Percent",
+          "why": "$5/20\\times 100$.",
+          "math": "$25\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-130",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 30,
+      "globalNum": 130,
+      "localLabel": "Ch8-Q9",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "CP ₹$600$, SP ₹$540$. Loss %?",
+      "answer": "$10\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Loss",
+          "why": "$60$.",
+          "math": "$60/600\\times 100=10\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-131",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 31,
+      "globalNum": 131,
+      "localLabel": "Ch8-Q10",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "$15\\%$ gain, SP ₹$920$. Find CP.",
+      "answer": "₹$800$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$1.15\\times\\text{CP}=920$.",
+          "math": "$920/1.15$"
+        },
+        {
+          "rule": "CP",
+          "why": "₹$800$.",
+          "math": "₹$800$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-132",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 32,
+      "globalNum": 132,
+      "localLabel": "Ch8-Q11",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "MP ₹$800$, $10\\%$ discount, $20\\%$ profit. CP?",
+      "answer": "₹$600$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "SP",
+          "why": "$0.9\\times 800=720$.",
+          "math": "After discount"
+        },
+        {
+          "rule": "CP",
+          "why": "$720/1.2$.",
+          "math": "₹$600$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-discount",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-133",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 33,
+      "globalNum": 133,
+      "localLabel": "Ch8-Q12",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Two articles sold ₹$1200$ each: $20\\%$ gain and $20\\%$ loss. Overall result?",
+      "answer": "$4\\%$ loss",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "CPs",
+          "why": "CP$_1=1000$, CP$_2=1500$.",
+          "math": "Same SP trick"
+        },
+        {
+          "rule": "Overall",
+          "why": "Cost $2500$, sold $2400$.",
+          "math": "$100/2500=4\\%$ loss"
+        }
+      ],
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-134",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 34,
+      "globalNum": 134,
+      "localLabel": "Ch8-Q13",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "MP ₹$500$, SP ₹$425$. Discount %?",
+      "answer": "$15\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Discount",
+          "why": "$75$.",
+          "math": "On MP"
+        },
+        {
+          "rule": "Percent",
+          "why": "$75/500\\times 100$.",
+          "math": "$15\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-discount",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-135",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 35,
+      "globalNum": 135,
+      "localLabel": "Ch8-Q14",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Buy $10\\%$ below MP, sell $10\\%$ above MP. Profit %?",
+      "answer": "$22.22\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let MP",
+          "why": "MP $=100$, CP $=90$, SP $=110$.",
+          "math": "Easy numbers"
+        },
+        {
+          "rule": "Profit",
+          "why": "$20/90\\times 100$.",
+          "math": "$22.22\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-136",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 36,
+      "globalNum": 136,
+      "localLabel": "Ch8-Q15",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "CP of $10$ articles = SP of $9$ articles. Profit %?",
+      "answer": "$11.11\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let CP",
+          "why": "CP per article $=10$.",
+          "math": "10 CP = 9 SP"
+        },
+        {
+          "rule": "Percent",
+          "why": "SP $=100/9$, profit $=10/9$.",
+          "math": "$11.11\\%$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-137",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 37,
+      "globalNum": 137,
+      "localLabel": "Ch8-Q16",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "$8\\%$ discount, $15\\%$ profit. CP ₹$850$. MP?",
+      "answer": "₹$1062.5$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "SP",
+          "why": "$1.15\\times 850=977.5$.",
+          "math": "Profit first"
+        },
+        {
+          "rule": "MP",
+          "why": "$977.5/0.92$.",
+          "math": "₹$1062.5$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-discount",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-138",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 38,
+      "globalNum": 138,
+      "localLabel": "Ch8-Q17",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "CP ₹$750$, loss $12\\%$. SP?",
+      "answer": "₹$660$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "SP",
+          "why": "$88\\%$ of CP.",
+          "math": "$0.88\\times 750=660$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-139",
+      "chapter": 7,
+      "batch": 3,
+      "batchNum": 39,
+      "globalNum": 139,
+      "localLabel": "Ch8-Q18",
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "MP ₹$1200$, discount $15\\%$, profit $20\\%$. CP?",
+      "answer": "₹$850$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "SP",
+          "why": "$0.85\\times 1200=1020$.",
+          "math": "Discount"
+        },
+        {
+          "rule": "CP",
+          "why": "$1020/1.2$.",
+          "math": "₹$850$"
+        }
+      ],
+      "linked_note_id": "CH07-sec-discount",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-140",
+      "chapter": 8,
+      "batch": 3,
+      "batchNum": 40,
+      "globalNum": 140,
+      "localLabel": "Ch9-Q1",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Simple interest on ₹$5000$ for $3$ years at $8\\%$ p.a.",
+      "answer": "₹$1200$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$\\text{SI}=PRT/100$.",
+          "math": "$(5000\\times 8\\times 3)/100$"
+        },
+        {
+          "rule": "SI",
+          "why": "$50\\times 24$.",
+          "math": "₹$1200$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-simple-interest",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-141",
+      "chapter": 8,
+      "batch": 3,
+      "batchNum": 41,
+      "globalNum": 141,
+      "localLabel": "Ch9-Q2",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Amount and CI on ₹$8000$ for $2$ years at $10\\%$ compounded annually.",
+      "answer": "Amount ₹$9680$, CI ₹$1680$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Year 1",
+          "why": "$8000+800=8800$.",
+          "math": "$10\\%$ on principal"
+        },
+        {
+          "rule": "Year 2",
+          "why": "$8800+880=9680$.",
+          "math": "Interest on new amount"
+        },
+        {
+          "rule": "CI",
+          "why": "$9680-8000$.",
+          "math": "₹$1680$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-142",
+      "chapter": 8,
+      "batch": 3,
+      "batchNum": 42,
+      "globalNum": 142,
+      "localLabel": "Ch9-Q3",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Amounts to ₹$9800$ after $5$ years and ₹$12005$ after $8$ years at SI. Rate?",
+      "answer": "$12\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "3-year SI",
+          "why": "$12005-9800=2205$.",
+          "math": "Equal yearly interest"
+        },
+        {
+          "rule": "Yearly",
+          "why": "$2205/3=735$.",
+          "math": "Find principal"
+        },
+        {
+          "rule": "Rate",
+          "why": "P $=6125$.",
+          "math": "$735/6125\\times 100=12\\%$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-simple-interest",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-143",
+      "chapter": 8,
+      "batch": 3,
+      "batchNum": 43,
+      "globalNum": 143,
+      "localLabel": "Ch9-Q4",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Principal if SI for $4$ years at $6.25\\%$ is ₹$2500$.",
+      "answer": "₹$10000$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$2500=(P\\times 6.25\\times 4)/100$.",
+          "math": "$25P/100$"
+        },
+        {
+          "rule": "P",
+          "why": "$(2500\\times 100)/25$.",
+          "math": "₹$10000$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-simple-interest",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-144",
+      "chapter": 8,
+      "batch": 3,
+      "batchNum": 44,
+      "globalNum": 144,
+      "localLabel": "Ch9-Q5",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "CI on ₹$16000$ for $9$ months at $20\\%$ p.a. compounded quarterly.",
+      "answer": "₹$2522$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Quarters",
+          "why": "$n=3$, rate $5\\%$ per quarter.",
+          "math": "$A=P(1.05)^3$"
+        },
+        {
+          "rule": "Amount",
+          "why": "$16000\\times 1.157625$.",
+          "math": "CI $=18522-16000$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-145",
+      "chapter": 8,
+      "batch": 3,
+      "batchNum": 45,
+      "globalNum": 145,
+      "localLabel": "Ch9-Q6",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Difference CI−SI for $2$ years at $5\\%$ is ₹$15$. Find sum.",
+      "answer": "₹$6000$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Shortcut",
+          "why": "$15=P(0.05)^2$.",
+          "math": "2-year difference"
+        },
+        {
+          "rule": "P",
+          "why": "$15/0.0025$.",
+          "math": "₹$6000$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-146",
+      "chapter": 8,
+      "batch": 3,
+      "batchNum": 46,
+      "globalNum": 146,
+      "localLabel": "Ch9-Q7",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Time for ₹$5000$ to amount to ₹$6655$ at $10\\%$ CI p.a.",
+      "answer": "$3$ years",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$6655=5000(1.1)^n$.",
+          "math": "$1.331=(1.1)^n$"
+        },
+        {
+          "rule": "Power",
+          "why": "$1.1^3=1.331$.",
+          "math": "$3$ years"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-147",
+      "chapter": 8,
+      "batch": 3,
+      "batchNum": 47,
+      "globalNum": 147,
+      "localLabel": "Ch9-Q8",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Sum becomes $4$ times in $4$ years at CI. Rate?",
+      "answer": "$41.4\\%$ (approx.)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$4P=P(1+R/100)^4$.",
+          "math": "$4=(1+R/100)^4$"
+        },
+        {
+          "rule": "Root",
+          "why": "$\\sqrt[4]{4}=\\sqrt{2}\\approx 1.414$.",
+          "math": "$R\\approx 41.4\\%$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-148",
+      "chapter": 8,
+      "batch": 3,
+      "batchNum": 48,
+      "globalNum": 148,
+      "localLabel": "Ch9-Q9",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "SI on ₹$25000$ for $146$ days at $6\\%$ p.a.",
+      "answer": "₹$600$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Time",
+          "why": "$T=146/365=2/5$ year.",
+          "math": "Convert days"
+        },
+        {
+          "rule": "SI",
+          "why": "$(25000\\times 6\\times 2/5)/100$.",
+          "math": "₹$600$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-simple-interest",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-149",
+      "chapter": 8,
+      "batch": 3,
+      "batchNum": 49,
+      "globalNum": 149,
+      "localLabel": "Ch9-Q10",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "Amount and CI on ₹$12500$ for $9$ months at $8\\%$ compounded quarterly.",
+      "answer": "Amount ₹$13265.1$, CI ₹$765.1$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Quarters",
+          "why": "$n=3$, rate $2\\%$.",
+          "math": "$A=12500(1.02)^3$"
+        },
+        {
+          "rule": "CI",
+          "why": "$13265.1-12500$.",
+          "math": "₹$765.1$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-03"
+    },
+    {
+      "id": "Q-GEM-B03-150",
+      "chapter": 8,
+      "batch": 3,
+      "batchNum": 50,
+      "globalNum": 150,
+      "localLabel": "Ch9-Q11",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 3",
+      "question": "SI on sum for $2$ years at $4\\%$ is ₹$320$. Find CI same period.",
+      "answer": "₹$326.4$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Principal",
+          "why": "$P=4000$.",
+          "math": "From SI formula"
+        },
+        {
+          "rule": "CI",
+          "why": "Year 1: $160$; Year 2: $166.4$.",
+          "math": "$326.4$ total"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-03"
+    }
+  ]
+}

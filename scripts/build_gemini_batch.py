@@ -15,6 +15,8 @@ NOTE_BY_CH = {
     4: "CH04-sec-cube-numbers-or-perfect-cubes",
     5: "CH05-sec-numbers-in-general-form",
     6: "CH06-sec-union-of-sets",
+    7: "CH07-sec-percentage",
+    8: "CH08-sec-simple-interest",
 }
 
 TOPIC_BY_CH = {n: f"math-ch{n}" for n in range(1, 21)}
@@ -24,7 +26,7 @@ def step(rule, why, math):
     return {"rule": rule, "why": why, "math": math}
 
 
-def mk_q(batch, global_num, chapter, question, answer, steps, *, local_label=None):
+def mk_q(batch, global_num, chapter, question, answer, steps, *, local_label=None, linked_note_id=None):
     bnum = global_num - (batch - 1) * 50
     lid = f"Q-GEM-B{batch:02d}-{global_num:03d}"
     return {
@@ -41,7 +43,7 @@ def mk_q(batch, global_num, chapter, question, answer, steps, *, local_label=Non
         "answer": answer,
         "options": [],
         "glassboxSteps": steps,
-        "linked_note_id": NOTE_BY_CH.get(chapter, f"CH{chapter:02d}-sec-introduction"),
+        "linked_note_id": linked_note_id or NOTE_BY_CH.get(chapter, f"CH{chapter:02d}-sec-introduction"),
         "source": f"gemini-batch-{batch:02d}",
     }
 
@@ -404,7 +406,189 @@ def batch_02():
     return qs
 
 
-BUILDERS = {1: batch_01, 2: batch_02}
+def batch_03():
+    B = 3
+    qs = []
+    N7 = "CH07-sec-percentage"
+    N7PL = "CH07-sec-profit-and-loss"
+    N7D = "CH07-sec-discount"
+    N8SI = "CH08-sec-simple-interest"
+    N8CI = "CH08-sec-deducing-a-formula-for-compound-interest"
+    N6O = "CH06-sec-overlapping-intersecting-sets"
+    N6C = "CH06-sec-complement-of-a-set"
+
+    ch6 = [
+        (101, "$U=\\{1,\\ldots,20\\}$, $A=$ multiples of $3$, $B=$ multiples of $5$. Find $n(A\\cup B)$.", "$9$",
+         [step("Build sets", "$A=\\{3,6,9,12,15,18\\}$, $B=\\{5,10,15,20\\}$.", "Within universe"),
+          step("Union", "$A\\cup B=\\{3,5,6,9,10,12,15,18,20\\}$.", "No duplicates"),
+          step("Count", "$n(A\\cup B)=9$.", "$9$")], N6O),
+        (102, "Roster form of $\\{x\\mid x^2=9,\\,x\\in\\mathbb{N}\\}$.", "$\\{3\\}$",
+         [step("Solve", "$x^2=9$ gives $x=\\pm 3$.", "Square roots"),
+          step("Natural", "$-3\\notin\\mathbb{N}$.", "$\\{3\\}$")], N6O),
+        (103, "$n(A)=25$, $n(B)=30$, $n(A\\cap B)=10$. Find $n(A'\\cap B')$.", "$n(U)-45$ (needs $n(U)$)",
+         [step("$n(A\\cup B)$", "$25+30-10=45$.", "Standard formula"),
+          step("De Morgan", "$(A\\cup B)'=A'\\cap B'$.", "Outside both circles"),
+          step("Trap", "Need $n(U)$ for exact count.", "$n(U)-45$")], N6C),
+    ]
+    for gn, qu, ans, st, nid in ch6:
+        qs.append(mk_q(B, gn, 6, qu, ans, st, local_label=f"Ch6-Q{gn-88}", linked_note_id=nid))
+
+    ch7_pct = [
+        (104, "Convert $\\dfrac{3}{8}$ into percentage.", "$37.5\\%$",
+         [step("Formula", "$\\dfrac{3}{8}\\times 100$.", "$300/8$"),
+          step("Answer", "$37.5\\%$.", "$37.5\\%$")]),
+        (105, "What percent of $80$ is $24$?", "$30\\%$",
+         [step("Fraction", "$24/80$.", "Part over whole"),
+          step("Percent", "$\\dfrac{24}{80}\\times 100=30\\%$.", "$30\\%$")]),
+        (106, "Find $35\\%$ of $400$.", "$140$",
+         [step("Translate", "$\\dfrac{35}{100}\\times 400$.", "'Of' means multiply"),
+          step("Calculate", "Zeros cancel → $35\\times 4$.", "$140$")]),
+        (107, "If $25\\%$ of a number is $75$, find the number.", "$300$",
+         [step("Equation", "$\\dfrac{25}{100}x=75$.", "$x/4=75$"),
+          step("Solve", "$x=75\\times 4$.", "$300$")]),
+        (108, "A number increased by $20\\%$ becomes $360$. Find original.", "$300$",
+         [step("Percent", "New = $120\\%$ of original.", "$1.2x=360$"),
+          step("Solve", "$x=360/1.2$.", "$300$")]),
+        (109, "Express $0.075$ as a percentage.", "$7.5\\%$",
+         [step("Rule", "Multiply decimal by $100$.", "$0.075\\times 100=7.5\\%$")]),
+        (110, "Price rises from ₹$250$ to ₹$300$. Find percentage increase.", "$20\\%$",
+         [step("Difference", "$300-250=50$.", "Over original"),
+          step("Percent", "$\\dfrac{50}{250}\\times 100=20\\%$.", "$20\\%$")]),
+        (111, "Class of $50$ students: $60\\%$ girls. How many boys?", "$20$",
+         [step("Boys %", "$100-60=40\\%$.", "Rest of class"),
+          step("Calculate", "$\\dfrac{40}{100}\\times 50$.", "$20$ boys")]),
+        (112, "$15\\%$ discount on article marked ₹$800$. Selling price?", "₹$680$",
+         [step("Pay", "$100-15=85\\%$ of marked price.", "$\\dfrac{85}{100}\\times 800$"),
+          step("SP", "$85\\times 8$.", "₹$680$")]),
+        (113, "If $40\\%$ of a number is $240$, find $75\\%$ of it.", "$450$",
+         [step("Find number", "$x=240\\times 100/40=600$.", "Original"),
+          step("$75\\%$", "$\\dfrac{75}{100}\\times 600$.", "$450$")]),
+        (114, "Convert $125\\%$ to fraction in lowest terms.", "$\\dfrac{5}{4}$",
+         [step("Over 100", "$125/100$.", "Divide by $25$"),
+          step("Answer", "$5/4$.", "$\\dfrac{5}{4}$")]),
+        (115, "Score $45$ out of $60$. Percentage?", "$75\\%$",
+         [step("Fraction", "$45/60=3/4$.", "$\\times 100$"),
+          step("Answer", "$75\\%$.", "$75\\%$")]),
+        (116, "$12.5\\%$ of a number is $75$. Find the number.", "$600$",
+         [step("Equation", "$\\dfrac{12.5}{100}x=75$.", "$12.5x=7500$"),
+          step("Solve", "$x=7500/12.5$.", "$600$")]),
+        (117, "Population $54000$ increases $8\\%$ per year. Population after $2$ years?", "$62986$ (approx.)",
+         [step("Year 1", "$54000\\times 1.08=58320$.", "Compound growth"),
+          step("Year 2", "$58320\\times 1.08=62985.6$.", "Round → $62986$")]),
+        (118, "What percent is $\\dfrac{3}{5}$ of $\\dfrac{4}{7}$?", "$105\\%$",
+         [step("Ratio", "$\\dfrac{3/5}{4/7}\\times 100$.", "Flip and multiply"),
+          step("Simplify", "$\\dfrac{21}{20}\\times 100$.", "$105\\%$")]),
+        (119, "Number decreased $25\\%$ becomes $225$. Find original.", "$300$",
+         [step("Left", "$75\\%$ of original.", "$\\dfrac{3}{4}x=225$"),
+          step("Solve", "$x=225\\times\\dfrac{4}{3}$.", "$300$")]),
+        (120, "Find $120\\%$ of $250$.", "$300$",
+         [step("Calculate", "$\\dfrac{120}{100}\\times 250$.", "$1.2\\times 250=300$")]),
+        (121, "If $30\\%$ of $x=45\\%$ of $y$, find ratio $x:y$.", "$3:2$",
+         [step("Equation", "$30x=45y$.", "Clear denominators"),
+          step("Ratio", "$x/y=45/30=3/2$.", "$3:2$")]),
+    ]
+    for gn, qu, ans, st in ch7_pct:
+        qs.append(mk_q(B, gn, 7, qu, ans, st, local_label=f"Ch7-Q{gn-103}", linked_note_id=N7))
+
+    ch7_pl = [
+        (122, "Buy ₹$800$, sell ₹$960$. Profit percent?", "$20\\%$",
+         [step("Profit", "$960-800=160$.", "SP − CP"),
+          step("Percent", "$\\dfrac{160}{800}\\times 100$.", "$20\\%$ on CP")], N7PL),
+        (123, "Sell watch ₹$720$ at $10\\%$ loss. Find CP.", "₹$800$",
+         [step("SP", "$90\\%$ of CP $=720$.", "Loss $10\\%$"),
+          step("CP", "$720\\times 100/90$.", "₹$800$")], N7PL),
+        (124, "CP ₹$450$, profit $20\\%$. Find SP.", "₹$540$",
+         [step("SP", "$120\\%$ of CP.", "$1.2\\times 450=540$")], N7PL),
+        (125, "$10\\%$ discount, $20\\%$ profit. CP ₹$500$. Marked price?", "₹$666.67$",
+         [step("SP", "$1.2\\times 500=600$.", "$20\\%$ profit"),
+          step("MP", "$600$ is $90\\%$ of MP.", "$600/0.9=666.67$")], N7D),
+        (126, "Buy ₹$1200$, sell at $15\\%$ loss. SP?", "₹$1020$",
+         [step("SP", "$85\\%$ of CP.", "$0.85\\times 1200=1020$")], N7PL),
+        (127, "Mark $25\\%$ above CP, $10\\%$ discount. Profit %?", "$12.5\\%$",
+         [step("Assume CP", "CP $=100$, MP $=125$.", "Easy numbers"),
+          step("SP", "$125-12.5=112.5$.", "Profit $12.5$ on $100$")], N7D),
+        (128, "SP ₹$720$ after $10\\%$ discount. Marked price?", "₹$800$",
+         [step("Relation", "$720=90\\%$ of MP.", "$720/0.9$"),
+          step("MP", "₹$800$.", "₹$800$")], N7D),
+        (129, "Buy $12$ for ₹$240$, sell at ₹$25$ each. Profit %?", "$25\\%$",
+         [step("Per item", "CP $=20$, SP $=25$.", "Profit $5$"),
+          step("Percent", "$5/20\\times 100$.", "$25\\%$")], N7PL),
+        (130, "CP ₹$600$, SP ₹$540$. Loss %?", "$10\\%$",
+         [step("Loss", "$60$.", "$60/600\\times 100=10\\%$")], N7PL),
+        (131, "$15\\%$ gain, SP ₹$920$. Find CP.", "₹$800$",
+         [step("Equation", "$1.15\\times\\text{CP}=920$.", "$920/1.15$"),
+          step("CP", "₹$800$.", "₹$800$")], N7PL),
+        (132, "MP ₹$800$, $10\\%$ discount, $20\\%$ profit. CP?", "₹$600$",
+         [step("SP", "$0.9\\times 800=720$.", "After discount"),
+          step("CP", "$720/1.2$.", "₹$600$")], N7D),
+        (133, "Two articles sold ₹$1200$ each: $20\\%$ gain and $20\\%$ loss. Overall result?", "$4\\%$ loss",
+         [step("CPs", "CP$_1=1000$, CP$_2=1500$.", "Same SP trick"),
+          step("Overall", "Cost $2500$, sold $2400$.", "$100/2500=4\\%$ loss")], N7PL),
+        (134, "MP ₹$500$, SP ₹$425$. Discount %?", "$15\\%$",
+         [step("Discount", "$75$.", "On MP"),
+          step("Percent", "$75/500\\times 100$.", "$15\\%$")], N7D),
+        (135, "Buy $10\\%$ below MP, sell $10\\%$ above MP. Profit %?", "$22.22\\%$",
+         [step("Let MP", "MP $=100$, CP $=90$, SP $=110$.", "Easy numbers"),
+          step("Profit", "$20/90\\times 100$.", "$22.22\\%$")], N7PL),
+        (136, "CP of $10$ articles = SP of $9$ articles. Profit %?", "$11.11\\%$",
+         [step("Let CP", "CP per article $=10$.", "10 CP = 9 SP"),
+          step("Percent", "SP $=100/9$, profit $=10/9$.", "$11.11\\%$")], N7PL),
+        (137, "$8\\%$ discount, $15\\%$ profit. CP ₹$850$. MP?", "₹$1062.5$",
+         [step("SP", "$1.15\\times 850=977.5$.", "Profit first"),
+          step("MP", "$977.5/0.92$.", "₹$1062.5$")], N7D),
+        (138, "CP ₹$750$, loss $12\\%$. SP?", "₹$660$",
+         [step("SP", "$88\\%$ of CP.", "$0.88\\times 750=660$")], N7PL),
+        (139, "MP ₹$1200$, discount $15\\%$, profit $20\\%$. CP?", "₹$850$",
+         [step("SP", "$0.85\\times 1200=1020$.", "Discount"),
+          step("CP", "$1020/1.2$.", "₹$850$")], N7D),
+    ]
+    for gn, qu, ans, st, nid in ch7_pl:
+        qs.append(mk_q(B, gn, 7, qu, ans, st, local_label=f"Ch8-Q{gn-121}", linked_note_id=nid))
+
+    ch8_int = [
+        (140, "Simple interest on ₹$5000$ for $3$ years at $8\\%$ p.a.", "₹$1200$",
+         [step("Formula", "$\\text{SI}=PRT/100$.", "$(5000\\times 8\\times 3)/100$"),
+          step("SI", "$50\\times 24$.", "₹$1200$")], N8SI),
+        (141, "Amount and CI on ₹$8000$ for $2$ years at $10\\%$ compounded annually.", "Amount ₹$9680$, CI ₹$1680$",
+         [step("Year 1", "$8000+800=8800$.", "$10\\%$ on principal"),
+          step("Year 2", "$8800+880=9680$.", "Interest on new amount"),
+          step("CI", "$9680-8000$.", "₹$1680$")], N8CI),
+        (142, "Amounts to ₹$9800$ after $5$ years and ₹$12005$ after $8$ years at SI. Rate?", "$12\\%$",
+         [step("3-year SI", "$12005-9800=2205$.", "Equal yearly interest"),
+          step("Yearly", "$2205/3=735$.", "Find principal"),
+          step("Rate", "P $=6125$.", "$735/6125\\times 100=12\\%$")], N8SI),
+        (143, "Principal if SI for $4$ years at $6.25\\%$ is ₹$2500$.", "₹$10000$",
+         [step("Formula", "$2500=(P\\times 6.25\\times 4)/100$.", "$25P/100$"),
+          step("P", "$(2500\\times 100)/25$.", "₹$10000$")], N8SI),
+        (144, "CI on ₹$16000$ for $9$ months at $20\\%$ p.a. compounded quarterly.", "₹$2522$",
+         [step("Quarters", "$n=3$, rate $5\\%$ per quarter.", "$A=P(1.05)^3$"),
+          step("Amount", "$16000\\times 1.157625$.", "CI $=18522-16000$")], N8CI),
+        (145, "Difference CI−SI for $2$ years at $5\\%$ is ₹$15$. Find sum.", "₹$6000$",
+         [step("Shortcut", "$15=P(0.05)^2$.", "2-year difference"),
+          step("P", "$15/0.0025$.", "₹$6000$")], N8CI),
+        (146, "Time for ₹$5000$ to amount to ₹$6655$ at $10\\%$ CI p.a.", "$3$ years",
+         [step("Equation", "$6655=5000(1.1)^n$.", "$1.331=(1.1)^n$"),
+          step("Power", "$1.1^3=1.331$.", "$3$ years")], N8CI),
+        (147, "Sum becomes $4$ times in $4$ years at CI. Rate?", "$41.4\\%$ (approx.)",
+         [step("Formula", "$4P=P(1+R/100)^4$.", "$4=(1+R/100)^4$"),
+          step("Root", "$\\sqrt[4]{4}=\\sqrt{2}\\approx 1.414$.", "$R\\approx 41.4\\%$")], N8CI),
+        (148, "SI on ₹$25000$ for $146$ days at $6\\%$ p.a.", "₹$600$",
+         [step("Time", "$T=146/365=2/5$ year.", "Convert days"),
+          step("SI", "$(25000\\times 6\\times 2/5)/100$.", "₹$600$")], N8SI),
+        (149, "Amount and CI on ₹$12500$ for $9$ months at $8\\%$ compounded quarterly.", "Amount ₹$13265.1$, CI ₹$765.1$",
+         [step("Quarters", "$n=3$, rate $2\\%$.", "$A=12500(1.02)^3$"),
+          step("CI", "$13265.1-12500$.", "₹$765.1$")], N8CI),
+        (150, "SI on sum for $2$ years at $4\\%$ is ₹$320$. Find CI same period.", "₹$326.4$",
+         [step("Principal", "$P=4000$.", "From SI formula"),
+          step("CI", "Year 1: $160$; Year 2: $166.4$.", "$326.4$ total")], N8CI),
+    ]
+    for gn, qu, ans, st, nid in ch8_int:
+        qs.append(mk_q(B, gn, 8, qu, ans, st, local_label=f"Ch9-Q{gn-139}", linked_note_id=nid))
+
+    return qs
+
+
+BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03}
 
 
 def build(batch_num: int):

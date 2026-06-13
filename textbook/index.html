@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>ICSE Class 8 Maths · Aggarwal · Glass-Box</title>
 <script>
 /* GitHub Pages: /math8/textbook (no slash) breaks ../ relative fetches — normalize first */
@@ -207,15 +210,21 @@ a{color:var(--blue)}
 .notes-md em{color:var(--on-var)}
 
 /* —— Practice panel (notes-style reader) —— */
-#panel-practice.active{display:flex;flex-direction:column;min-height:0;padding:0}
-#panel-practice .panel-scroll{padding:0}
-.practice-md{font-size:16px;flex:1;min-height:0;max-height:none;overflow:auto;padding:0;scroll-behavior:smooth}
+/* Force-kill legacy practice toolbar if an old cached HTML ever loads */
+#practice-hero,.practice-toolbar,.practice-top-row,.practice-content-center,
+#q-meta,#q-search,#q-filters,#scroll-jump-select,#practice-layout-tabs,
+#practice-split-view,#practice-scroll-view,#q-list,#glass-host,#scroll-feed{display:none!important;height:0!important;overflow:hidden!important;margin:0!important;padding:0!important;border:0!important}
+#panel-practice.active{display:flex;flex-direction:column;min-height:0;padding:0;flex:1}
+#panel-practice .panel-scroll{padding:0;flex:1;min-height:0}
+.practice-md{font-size:16px;flex:1;min-height:0;max-height:none;overflow:auto;padding:0;scroll-behavior:smooth;height:100%}
 .practice-md::-webkit-scrollbar{width:8px}
 .practice-md::-webkit-scrollbar-thumb{background:rgba(225,29,72,.35);border-radius:var(--pill)}
 .practice-block{padding:24px clamp(16px,3vw,32px) 36px;border-bottom:1px solid var(--border);scroll-margin-top:4px}
 .practice-block:last-child{border-bottom:none;padding-bottom:48px}
 .practice-problem{font-family:var(--serif);font-size:17px;line-height:1.72;color:var(--on);margin-bottom:24px}
 .practice-problem .problem{margin-bottom:14px}
+.practice-block-actions{display:flex;margin:0 0 20px}
+.practice-block-actions .q-admin{margin-left:0}
 .practice-solution .steps{margin-bottom:14px}
 
 .glass-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow)}
@@ -357,8 +366,8 @@ sup.msup,sub.msub{font-family:inherit}
     <div class="card" id="main-content-card">
       <div class="content-layout" id="content-layout">
         <div class="content-main">
-        <div class="panel active" id="panel-notes"><div class="panel-scroll notes-md empty" id="notes">Pick a chapter.</div></div>
-        <div class="panel" id="panel-practice">
+        <div class="panel" id="panel-notes"><div class="panel-scroll notes-md empty" id="notes">Pick a chapter.</div></div>
+        <div class="panel active" id="panel-practice">
           <div class="panel-scroll practice-md empty" id="practice-feed">Pick a chapter.</div>
         </div>
         <div class="panel" id="panel-mindmap"><div class="panel-scroll mindmap empty" id="mindmap"></div></div>
@@ -378,8 +387,8 @@ sup.msup,sub.msub{font-family:inherit}
           </div>
           <div class="mode-sidebar-body" id="mode-sidebar-body">
             <div class="mode-tabs" id="tabs" role="tablist">
-              <button type="button" class="mode-tab tab active" data-tab="notes" role="tab" aria-selected="true"><span class="mode-tab-icon">📝</span><span class="mode-tab-label">Notes</span></button>
-              <button type="button" class="mode-tab tab" data-tab="practice" role="tab" aria-selected="false"><span class="mode-tab-icon">❓</span><span class="mode-tab-label">Practice</span></button>
+              <button type="button" class="mode-tab tab" data-tab="notes" role="tab" aria-selected="false"><span class="mode-tab-icon">📝</span><span class="mode-tab-label">Notes</span></button>
+              <button type="button" class="mode-tab tab active" data-tab="practice" role="tab" aria-selected="true"><span class="mode-tab-icon">❓</span><span class="mode-tab-label">Practice</span></button>
               <button type="button" class="mode-tab tab" data-tab="mindmap" role="tab" aria-selected="false"><span class="mode-tab-icon">🧠</span><span class="mode-tab-label">Mind Map</span></button>
               <button type="button" class="mode-tab tab" data-tab="cheat" role="tab" aria-selected="false"><span class="mode-tab-icon">⚡</span><span class="mode-tab-label">Cheat Sheet</span></button>
               <button type="button" class="mode-tab tab" data-tab="oneword" role="tab" aria-selected="false"><span class="mode-tab-icon">🔤</span><span class="mode-tab-label">One Word</span></button>
@@ -895,6 +904,7 @@ function paintPracticeFeed(qs){
   if (!feed) return;
   feed.innerHTML = qs.map(q => `<article class="practice-block" id="scroll-${esc(q.id)}">
       <div class="practice-problem">${questionBodyHtml(q)}</div>
+      <div class="practice-block-actions">${questionAdminBarHtml(q)}</div>
       <div class="practice-solution">
         <ol class="steps">${(q.glassboxSteps || []).map((s, i) =>
           `<li class="step"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math mathline">${splitRenderTex(s.math)}</div></li>`

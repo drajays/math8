@@ -680,7 +680,7 @@ function base64ToText(b64){
   return new TextDecoder().decode(bytes);
 }
 
-async function ghApi(path, token, opts){
+async function ghApi(path, token, opts = {}){
   const res = await fetch("https://api.github.com" + path, {
     ...opts,
     headers: {
@@ -691,7 +691,11 @@ async function ghApi(path, token, opts){
     },
   });
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(data.message || res.statusText || String(res.status));
+  if (!res.ok) {
+    const detail = data.message || res.statusText || String(res.status);
+    const extra = data.errors ? " — " + JSON.stringify(data.errors) : "";
+    throw new Error(detail + extra);
+  }
   return data;
 }
 

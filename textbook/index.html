@@ -161,8 +161,27 @@ a{color:var(--blue)}
 
 /* —— Practice panel —— */
 .practice-toolbar{margin-bottom:10px}
+.practice-layout-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.practice-layout-tabs{display:flex;gap:4px;padding:4px;background:var(--bg);border-radius:var(--pill);border:1px solid var(--border)}
+.practice-layout-tab{border:none;background:transparent;border-radius:var(--pill);padding:8px 14px;font-size:12px;font-weight:600;cursor:pointer;color:var(--on-var);font-family:var(--sans);transition:all .15s;white-space:nowrap}
+.practice-layout-tab:hover{background:var(--surface);color:var(--on)}
+.practice-layout-tab.active{background:linear-gradient(135deg,#e11d48,#be123c);color:#fff;box-shadow:0 2px 10px rgba(225,29,72,.22)}
+.practice-view[hidden]{display:none!important}
 .practice-q-row{margin-bottom:14px}
 .q-list{display:flex;flex-direction:column;gap:6px;max-height:22vh;overflow:auto;padding-right:4px}
+.scroll-jump{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px;padding:10px 12px;background:var(--glass);border-radius:var(--r-lg);border:1px solid var(--border);max-height:80px;overflow-y:auto;position:sticky;top:0;z-index:3;backdrop-filter:blur(8px);box-shadow:0 4px 12px rgba(14,27,46,.06)}
+.scroll-jump-label{font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--on-dim);width:100%;margin-bottom:2px}
+.scroll-jump-btn{font-family:var(--mono);font-size:10px;font-weight:600;min-width:30px;height:30px;padding:0 6px;border:1.5px solid var(--border);background:var(--surface);border-radius:8px;cursor:pointer;color:var(--on-var);transition:all .12s}
+.scroll-jump-btn:hover{border-color:#e11d48;background:#fff1f2;color:#e11d48}
+.scroll-feed{display:flex;flex-direction:column;gap:28px;padding-bottom:32px}
+.scroll-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);scroll-margin-top:16px}
+.scroll-card-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px 16px;background:linear-gradient(90deg,#fff1f2,#fff);border-bottom:1px solid var(--border)}
+.scroll-card-num{font-family:var(--mono);font-size:11px;font-weight:700;color:#e11d48;background:#ffe4e6;padding:4px 10px;border-radius:var(--pill);border:1px solid #fecdd3}
+.scroll-problem{padding:16px 18px;border-bottom:1px dashed var(--border)}
+.scroll-problem .problem{margin-bottom:0}
+.scroll-solution{padding:16px 18px 20px;background:linear-gradient(180deg,#f8fafc,#fff)}
+.scroll-solution-label{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--emerald);margin:0 0 14px;display:flex;align-items:center;gap:8px}
+.scroll-solution-label::after{content:"";flex:1;height:1px;background:var(--border)}
 .glass-workspace{min-width:0}
 .glass-split{display:grid;grid-template-columns:1fr 1fr;min-height:360px;border-top:1px solid var(--border)}
 .glass-problem,.glass-solution{padding:16px 18px;overflow-y:auto;max-height:52vh}
@@ -333,9 +352,21 @@ sup.msup,sub.msub{font-family:inherit}
                 <input class="q-search" id="q-search" type="search" placeholder="Search questions…" autocomplete="off">
                 <div class="q-filters" id="q-filters"></div>
               </div>
+              <div class="practice-layout-bar">
+                <div class="practice-layout-tabs" id="practice-layout-tabs" role="tablist" aria-label="Practice layout">
+                  <button type="button" class="practice-layout-tab active" data-layout="scroll" role="tab" aria-selected="true">📜 Continuous scroll</button>
+                  <button type="button" class="practice-layout-tab" data-layout="split" role="tab" aria-selected="false">↔ Side by side</button>
+                </div>
+              </div>
             </div>
-            <div class="practice-q-row"><div class="q-list" id="q-list"></div></div>
-            <main class="glass-workspace" id="glass-host"><div class="empty-state">Select a question for glass-box derivation.</div></main>
+            <div id="practice-split-view" class="practice-view">
+              <div class="practice-q-row"><div class="q-list" id="q-list"></div></div>
+              <main class="glass-workspace" id="glass-host"><div class="empty-state">Select a question for glass-box derivation.</div></main>
+            </div>
+            <div id="practice-scroll-view" class="practice-view" hidden>
+              <div class="scroll-jump" id="scroll-jump" hidden></div>
+              <div class="scroll-feed" id="scroll-feed"></div>
+            </div>
           </div>
         </div>
         <div class="panel" id="panel-mindmap"><div class="panel-scroll mindmap empty" id="mindmap"></div></div>
@@ -360,6 +391,7 @@ const $$ = s => [...document.querySelectorAll(s)];
 let MANIFEST = null, CUR = null, CACHE = {}, QIDX = 0, REVEAL = 0, LOAD_TOKEN = 0;
 let CUR_QUESTIONS = [], Q_FILTER = "all", Q_SEARCH = "", Q_SOURCE = "all";
 let GLASS_STEP_MODE = false;
+let PRACTICE_LAYOUT = "scroll";
 const BATCH_COUNT = 10;
 
 function safeStr(v){ return v == null ? "" : String(v); }
@@ -623,6 +655,8 @@ function paintQuestions(qs){
   if (!Array.isArray(qs) || !qs.length){
     $("#q-list").innerHTML = "";
     $("#glass-host").innerHTML = '<div class="empty-state">No questions in this chapter.</div>';
+    $("#scroll-feed").innerHTML = '<div class="empty-state">No questions in this chapter.</div>';
+    $("#scroll-jump").hidden = true;
     $("#q-meta").textContent = "0 questions";
     return;
   }
@@ -630,11 +664,12 @@ function paintQuestions(qs){
   if (!visible.length){
     $("#q-list").innerHTML = '<div class="empty-state">No questions match your filter.</div>';
     $("#glass-host").innerHTML = '<div class="empty-state">Adjust search or filter.</div>';
+    $("#scroll-feed").innerHTML = '<div class="empty-state">No questions match your filter.</div>';
+    $("#scroll-jump").hidden = true;
     $("#q-meta").textContent = `0 of ${qs.length} shown`;
     return;
   }
-  const sel = visible.find(q => qs.indexOf(q) === QIDX) || visible[0];
-  QIDX = qs.indexOf(sel);
+  if (!visible.find(q => qs.indexOf(q) === QIDX)) QIDX = qs.indexOf(visible[0]);
   const types = { mcq: 0, fill_blank: 0, true_false: 0, practice: 0 };
   qs.forEach(q => types[q.type] = (types[q.type] || 0) + 1);
   const batchN = qs.filter(q => String(q.source || "").startsWith("gemini")).length;
@@ -642,7 +677,64 @@ function paintQuestions(qs){
   let meta = `${visible.length} of ${qs.length} shown · ${types.mcq||0} MCQ · ${types.fill_blank||0} fill · ${types.true_false||0} T/F · ${types.practice||0} practice`;
   if (batchN) meta += ` · ${batchN} Gemini`;
   if (hotsN) meta += ` · ${hotsN} HOTS`;
+  meta += PRACTICE_LAYOUT === "scroll" ? " · scroll view" : " · side by side";
   $("#q-meta").textContent = meta;
+  applyPracticeLayoutVisibility();
+  if (PRACTICE_LAYOUT === "scroll") {
+    paintScrollFeed(qs, visible);
+    return;
+  }
+  paintSplitQuestionList(qs, visible);
+  showGlass(qs[QIDX]);
+}
+
+function applyPracticeLayoutVisibility(){
+  const split = $("#practice-split-view");
+  const scroll = $("#practice-scroll-view");
+  if (split) split.hidden = PRACTICE_LAYOUT !== "split";
+  if (scroll) scroll.hidden = PRACTICE_LAYOUT !== "scroll";
+  $$(".practice-layout-tab").forEach(t => {
+    const on = t.dataset.layout === PRACTICE_LAYOUT;
+    t.classList.toggle("active", on);
+    t.setAttribute("aria-selected", on ? "true" : "false");
+  });
+}
+
+function questionHeadBadges(q){
+  const isGem = String(q.source || "").startsWith("gemini");
+  const isHots = isHotsQuestion(q);
+  return `<span class="q-id">${esc(q.id)}</span>
+    <span class="q-type ${esc(q.type)}">${esc(TYPE_LABEL[q.type] || q.type)}</span>
+    ${isHots ? `<span class="q-hots">Advanced HOTS</span>` : ""}
+    ${isGem ? `<span class="q-batch">Gemini · Batch ${esc(String(q.batch || ""))} · ${esc(safeStr(q.localLabel || ""))}</span>` : ""}`;
+}
+
+function questionOptsHtml(q){
+  if (q.type !== "mcq" || !q.options || !q.options.length) return "";
+  return `<ul class="opts">${q.options.map((o, i) =>
+    `<li class="opt${i === q.correctOption ? " correct" : ""}">
+      <span class="ol">${OPT_LABELS[i] || i + 1}.</span>
+      <span class="mathline">${splitRenderTex(o)}</span>
+      ${i === q.correctOption ? '<span class="mark">✓</span>' : ""}
+    </li>`
+  ).join("")}</ul>`;
+}
+
+function questionBodyHtml(q){
+  const diagram = q.diagram && typeof renderPracticeDiagram === "function" ? renderPracticeDiagram(q.diagram) : "";
+  return `<div class="problem"><div class="mathline">${splitRenderTex(cleanQuestionText(q.question))}</div>${diagram}</div>${questionOptsHtml(q)}`;
+}
+
+function solutionStepsHtml(q, idPrefix){
+  return `<ol class="steps" id="${idPrefix}-steps">${(q.glassboxSteps || []).map((s, i) =>
+    `<li class="step" data-i="${i}"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math mathline">${splitRenderTex(s.math)}</div></li>`
+  ).join("")}</ol>
+  <button class="btn" id="${idPrefix}-btn-next">Reveal next step ↓</button>
+  <div class="answer" id="${idPrefix}-ans"><span class="mathline">Answer: ${splitRenderTex(q.answer)}</span></div>
+  <div class="glass-link">Linked note: ${esc(safeStr(q.linked_note_id))}</div>`;
+}
+
+function paintSplitQuestionList(qs, visible){
   const list = $("#q-list"); list.innerHTML = "";
   visible.forEach(q => {
     const i = qs.indexOf(q);
@@ -657,41 +749,61 @@ function paintQuestions(qs){
         ${isGem ? `<span class="q-source">Batch ${q.batch || ""}</span>` : ""}
       </div>
       <div class="q-preview">${splitRenderTex(cleanQuestionText(q.question))}</div>`;
-    d.onclick = () => { QIDX = i; paintQuestions(qs); showGlass(q); };
+    d.onclick = () => { QIDX = i; paintSplitQuestionList(qs, visible); showGlass(q); };
     list.appendChild(d);
   });
-  showGlass(qs[QIDX]);
+}
+
+function paintScrollFeed(qs, visible){
+  const feed = $("#scroll-feed");
+  const jump = $("#scroll-jump");
+  if (!feed) return;
+  jump.hidden = !visible.length;
+  jump.innerHTML = `<span class="scroll-jump-label">Jump to question</span>` +
+    visible.map((q, n) => {
+      const label = safeStr(q.localLabel) || String(n + 1);
+      return `<button type="button" class="scroll-jump-btn" data-target="scroll-${esc(q.id)}" title="${esc(q.id)}">${esc(label.length > 8 ? String(n + 1) : label)}</button>`;
+    }).join("");
+  jump.querySelectorAll(".scroll-jump-btn").forEach(btn => {
+    btn.onclick = () => {
+      const el = document.getElementById(btn.dataset.target);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+  });
+  feed.innerHTML = visible.map((q, n) => {
+    const label = safeStr(q.localLabel) || `Q${n + 1}`;
+    return `<article class="scroll-card" id="scroll-${esc(q.id)}">
+      <header class="scroll-card-head">
+        <span class="scroll-card-num">${esc(label)}</span>
+        ${questionHeadBadges(q)}
+      </header>
+      <section class="scroll-problem">
+        <h3 class="pane-label">Problem</h3>
+        ${questionBodyHtml(q)}
+      </section>
+      <section class="scroll-solution">
+        <h3 class="scroll-solution-label">Glass-box solution</h3>
+        <ol class="steps">${(q.glassboxSteps || []).map((s, i) =>
+          `<li class="step"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math mathline">${splitRenderTex(s.math)}</div></li>`
+        ).join("")}</ol>
+        <div class="answer"><span class="mathline">Answer: ${splitRenderTex(q.answer)}</span></div>
+        <div class="glass-link">Linked note: ${esc(safeStr(q.linked_note_id))}</div>
+      </section>
+    </article>`;
+  }).join("");
 }
 
 function showGlass(q){
   if (!q) return;
   const host = $("#glass-host");
-  let opts = "";
-  if (q.type === "mcq" && q.options && q.options.length) {
-    opts = `<ul class="opts">${q.options.map((o, i) =>
-      `<li class="opt${i === q.correctOption ? " correct" : ""}">
-        <span class="ol">${OPT_LABELS[i] || i + 1}.</span>
-        <span class="mathline">${splitRenderTex(o)}</span>
-        ${i === q.correctOption ? '<span class="mark">✓</span>' : ""}
-      </li>`
-    ).join("")}</ul>`;
-  }
-  const isGem = String(q.source || "").startsWith("gemini");
-  const isHots = isHotsQuestion(q);
   host.innerHTML = `
     <div class="glass-panel">
-      <div class="glass-panel-head">
-        <span class="q-id">${esc(q.id)}</span>
-        <span class="q-type ${esc(q.type)}">${esc(TYPE_LABEL[q.type] || q.type)}</span>
-        ${isHots ? `<span class="q-hots">Advanced HOTS</span>` : ""}
-        ${isGem ? `<span class="q-batch">Gemini · Batch ${esc(String(q.batch || ""))} · ${esc(safeStr(q.localLabel || ""))}</span>` : ""}
-      </div>
+      <div class="glass-panel-head">${questionHeadBadges(q)}</div>
       <div class="glass-panel-body">
         <div class="glass-split">
           <div class="glass-problem">
             <h3 class="pane-label">Problem</h3>
-            <div class="problem"><div class="mathline">${splitRenderTex(cleanQuestionText(q.question))}</div>${q.diagram && typeof renderPracticeDiagram === "function" ? renderPracticeDiagram(q.diagram) : ""}</div>
-            ${opts}
+            ${questionBodyHtml(q)}
           </div>
           <div class="glass-solution">
             <div class="glass-solution-head">
@@ -700,12 +812,7 @@ function showGlass(q){
                 <input type="checkbox" id="glass-step-mode"> Step-by-step reveal
               </label>
             </div>
-            <ol class="steps" id="steps">${(q.glassboxSteps || []).map((s, i) =>
-              `<li class="step" data-i="${i}"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math mathline">${splitRenderTex(s.math)}</div></li>`
-            ).join("")}</ol>
-            <button class="btn" id="btn-next">Reveal next step ↓</button>
-            <div class="answer" id="ans"><span class="mathline">Answer: ${splitRenderTex(q.answer)}</span></div>
-            <div class="glass-link">Linked note: ${esc(safeStr(q.linked_note_id))}</div>
+            ${solutionStepsHtml(q, "glass")}
           </div>
         </div>
       </div>
@@ -713,7 +820,7 @@ function showGlass(q){
   REVEAL = 0;
   wireGlassModeToggle();
   applyReveal();
-  $("#btn-next").onclick = () => { REVEAL++; applyReveal(); };
+  $("#glass-btn-next")?.addEventListener("click", () => { REVEAL++; applyReveal(); });
 }
 
 function wireGlassModeToggle(){
@@ -729,9 +836,9 @@ function wireGlassModeToggle(){
 }
 
 function applyReveal(){
-  const steps = $$('#steps .step');
-  const ans = $('#ans');
-  const btn = $('#btn-next');
+  const steps = $$('#glass-steps .step');
+  const ans = $('#glass-ans');
+  const btn = $('#glass-btn-next');
   if (!GLASS_STEP_MODE) {
     steps.forEach(s => s.classList.remove('pending'));
     if (ans) ans.style.display = 'block';
@@ -770,6 +877,14 @@ $("#q-search")?.addEventListener("input", e => {
   if (CUR_QUESTIONS.length) paintQuestions(CUR_QUESTIONS);
 });
 
+$$("#practice-layout-tabs .practice-layout-tab").forEach(t => {
+  t.onclick = () => {
+    PRACTICE_LAYOUT = t.dataset.layout === "scroll" ? "scroll" : "split";
+    try { localStorage.setItem("math8-practice-layout", PRACTICE_LAYOUT); } catch(e){}
+    if (CUR_QUESTIONS.length) paintQuestions(CUR_QUESTIONS);
+  };
+});
+
 $$('#tabs .tab').forEach(t => t.onclick = () => {
   $$('#tabs .tab').forEach(x=>x.classList.remove('active'));
   t.classList.add('active');
@@ -801,6 +916,9 @@ $('#sidebar-toggle')?.addEventListener('click', () => {
     if (saved === '1') setSidebarCollapsed(true);
     const glassMode = localStorage.getItem('math8-glass-step-mode');
     if (glassMode === '1') GLASS_STEP_MODE = true;
+    const savedLayout = localStorage.getItem('math8-practice-layout');
+    if (savedLayout === 'scroll' || savedLayout === 'split') PRACTICE_LAYOUT = savedLayout;
+    applyPracticeLayoutVisibility();
     MANIFEST = await loadJson("manifest.json?v=5");
     paintChapters();
     if(MANIFEST.chapters.length) selectChapter(MANIFEST.chapters[0]);

@@ -69,16 +69,50 @@ a{color:var(--blue)}
 .chap-label{font-weight:600;line-height:1.3;color:var(--on)}
 .ch-title-wrap{font-family:var(--serif);font-size:1.05rem}
 
-/* —— Tabs —— */
-.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;padding:4px;background:var(--bg);border-radius:var(--pill);border:1px solid var(--border)}
-.tab{border:none;background:transparent;border-radius:var(--pill);padding:8px 14px;font-size:12px;font-weight:600;cursor:pointer;color:var(--on-var);transition:all .15s;font-family:var(--sans)}
-.tab:hover{background:var(--surface);color:var(--on)}
-.tab.active{color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12)}
-.tab[data-tab="notes"].active{background:linear-gradient(135deg,#6366f1,#4338ca)}
-.tab[data-tab="practice"].active{background:linear-gradient(135deg,#e11d48,#be123c)}
-.tab[data-tab="mindmap"].active{background:linear-gradient(135deg,#0d9488,#0f766e)}
-.tab[data-tab="cheat"].active{background:linear-gradient(135deg,#d97706,#b45309)}
-.tab[data-tab="oneword"].active{background:linear-gradient(135deg,#7c3aed,#6d28d9)}
+/* —— Content + mode sidebar (right) —— */
+.content-layout{display:grid;grid-template-columns:1fr var(--mode-w,210px);align-items:stretch;min-height:480px}
+.content-layout.mode-collapsed{--mode-w:52px}
+.content-main{min-width:0;padding:16px 18px;border-right:1px solid var(--border)}
+.mode-sidebar{min-width:0;background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(248,250,252,.9));display:flex;flex-direction:column}
+.mode-sidebar-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 14px;border-bottom:1px solid var(--border)}
+.mode-sidebar-title{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--on-dim);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mode-sidebar-toggle{flex-shrink:0;width:32px;height:32px;border:1.5px solid var(--border);border-radius:8px;background:var(--surface);cursor:pointer;font-size:14px;line-height:1;color:var(--on-var);display:grid;place-items:center;transition:transform .25s,background .15s,border-color .15s}
+.mode-sidebar-toggle:hover{background:var(--blue-soft);border-color:var(--blue);color:var(--blue)}
+.content-layout.mode-collapsed .mode-sidebar-toggle{transform:rotate(180deg)}
+.mode-sidebar-body{flex:1;overflow:auto;padding:8px;transition:padding .2s}
+.content-layout.mode-collapsed .mode-sidebar-body{padding:4px 2px}
+.content-layout.mode-collapsed .mode-sidebar-title{font-size:0;width:0;overflow:hidden}
+.content-layout.mode-collapsed .mode-sidebar-head{flex-direction:column;justify-content:flex-start;padding:12px 6px;gap:10px;min-height:120px;border-bottom:none}
+.content-layout.mode-collapsed .mode-sidebar-head::after{content:"Sections";font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--on-dim);writing-mode:vertical-rl;transform:rotate(180deg);flex:1;display:flex;align-items:center;justify-content:center}
+.content-layout.mode-collapsed .mode-tabs{padding:4px 2px;gap:4px}
+.content-layout.mode-collapsed .mode-tab-label{display:none}
+.content-layout.mode-collapsed .mode-tab{justify-content:center;padding:10px 6px;min-width:0}
+.content-layout.mode-collapsed .mode-tab.active{box-shadow:0 0 0 2px rgba(255,255,255,.8),0 2px 8px rgba(0,0,0,.15)}
+
+/* —— Mode tabs (vertical, right sidebar) —— */
+.mode-tabs{display:flex;flex-direction:column;gap:5px}
+.mode-tab{display:flex;align-items:center;gap:10px;width:100%;border:1.5px solid transparent;background:var(--surface);border-radius:var(--r);padding:10px 12px;font-size:13px;font-weight:600;cursor:pointer;color:var(--on-var);transition:all .15s;font-family:var(--sans);text-align:left}
+.mode-tab:hover{border-color:var(--border);background:var(--bg);color:var(--on);transform:translateX(-2px)}
+.mode-tab.active{color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12);border-color:transparent}
+.mode-tab-icon{font-size:1.1rem;line-height:1;flex-shrink:0;width:1.4em;text-align:center}
+.mode-tab-label{line-height:1.3}
+.mode-tab[data-tab="notes"].active{background:linear-gradient(135deg,#6366f1,#4338ca)}
+.mode-tab[data-tab="practice"].active{background:linear-gradient(135deg,#e11d48,#be123c)}
+.mode-tab[data-tab="mindmap"].active{background:linear-gradient(135deg,#0d9488,#0f766e)}
+.mode-tab[data-tab="cheat"].active{background:linear-gradient(135deg,#d97706,#b45309)}
+.mode-tab[data-tab="oneword"].active{background:linear-gradient(135deg,#7c3aed,#6d28d9)}
+@media(max-width:900px){
+  .content-layout{grid-template-columns:1fr}
+  .content-main{border-right:none;border-bottom:1px solid var(--border)}
+  .mode-sidebar{border-top:1px solid var(--border)}
+  .mode-tabs{flex-direction:row;flex-wrap:wrap}
+  .mode-tab{flex:1 1 auto;min-width:calc(50% - 6px);justify-content:center}
+  .mode-tab-label{font-size:12px}
+  .mode-sidebar-toggle{display:none}
+  .content-layout.mode-collapsed{--mode-w:auto}
+  .content-layout.mode-collapsed .mode-sidebar-body{opacity:1;max-height:none;padding:8px;pointer-events:auto}
+  .content-layout.mode-collapsed .mode-tab-label{display:inline}
+}
 
 .panel{display:none}.panel.active{display:block}
 .panel-scroll{max-height:72vh;overflow:auto;scroll-behavior:smooth;padding:2px 4px 2px 0}
@@ -372,14 +406,8 @@ sup.msup,sub.msub{font-family:inherit}
     </aside>
     <div class="card">
       <div class="card-head ch-title-wrap"><span id="ch-title">Select a chapter</span></div>
-      <div class="card-body">
-        <div class="tabs" id="tabs">
-          <button class="tab active" data-tab="notes">📝 Notes</button>
-          <button class="tab" data-tab="practice">❓ Practice</button>
-          <button class="tab" data-tab="mindmap">🧠 Mind Map</button>
-          <button class="tab" data-tab="cheat">⚡ Cheat Sheet</button>
-          <button class="tab" data-tab="oneword">🔤 One Word</button>
-        </div>
+      <div class="content-layout" id="content-layout">
+        <div class="content-main">
         <div class="panel active" id="panel-notes"><div class="panel-scroll notes-md empty" id="notes">Pick a chapter.</div></div>
         <div class="panel" id="panel-practice">
           <div class="panel-scroll" id="practice-scroll">
@@ -423,6 +451,22 @@ sup.msup,sub.msub{font-family:inherit}
             <div class="ow-reveal ow-reveal-hint" id="ow-reveal">Tap a card to reveal the answer.</div>
           </div>
         </div>
+        </div>
+        <aside class="mode-sidebar" id="mode-sidebar" aria-label="Section navigation">
+          <div class="mode-sidebar-head">
+            <span class="mode-sidebar-title">Sections</span>
+            <button type="button" class="mode-sidebar-toggle" id="mode-sidebar-toggle" title="Collapse sections panel" aria-expanded="true" aria-controls="mode-sidebar-body">▶</button>
+          </div>
+          <div class="mode-sidebar-body" id="mode-sidebar-body">
+            <div class="mode-tabs" id="tabs" role="tablist">
+              <button type="button" class="mode-tab tab active" data-tab="notes" role="tab" aria-selected="true"><span class="mode-tab-icon">📝</span><span class="mode-tab-label">Notes</span></button>
+              <button type="button" class="mode-tab tab" data-tab="practice" role="tab" aria-selected="false"><span class="mode-tab-icon">❓</span><span class="mode-tab-label">Practice</span></button>
+              <button type="button" class="mode-tab tab" data-tab="mindmap" role="tab" aria-selected="false"><span class="mode-tab-icon">🧠</span><span class="mode-tab-label">Mind Map</span></button>
+              <button type="button" class="mode-tab tab" data-tab="cheat" role="tab" aria-selected="false"><span class="mode-tab-icon">⚡</span><span class="mode-tab-label">Cheat Sheet</span></button>
+              <button type="button" class="mode-tab tab" data-tab="oneword" role="tab" aria-selected="false"><span class="mode-tab-icon">🔤</span><span class="mode-tab-label">One Word</span></button>
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   </div>
@@ -1180,10 +1224,33 @@ $$("#practice-layout-tabs .practice-layout-tab").forEach(t => {
 });
 
 $$('#tabs .tab').forEach(t => t.onclick = () => {
-  $$('#tabs .tab').forEach(x=>x.classList.remove('active'));
+  if ($('#content-layout')?.classList.contains('mode-collapsed')) {
+    setModeSidebarCollapsed(false);
+  }
+  $$('#tabs .tab').forEach(x => {
+    x.classList.remove('active');
+    x.setAttribute('aria-selected', 'false');
+  });
   t.classList.add('active');
+  t.setAttribute('aria-selected', 'true');
   $$('.panel').forEach(p=>p.classList.remove('active'));
   $('#panel-'+t.dataset.tab).classList.add('active');
+});
+
+function setModeSidebarCollapsed(collapsed){
+  const layout = $('#content-layout');
+  const btn = $('#mode-sidebar-toggle');
+  if (!layout) return;
+  layout.classList.toggle('mode-collapsed', collapsed);
+  if (btn){
+    btn.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    btn.title = collapsed ? 'Expand sections panel' : 'Collapse sections panel';
+  }
+  try { localStorage.setItem('math8-mode-sidebar-collapsed', collapsed ? '1' : '0'); } catch(e){}
+}
+
+$('#mode-sidebar-toggle')?.addEventListener('click', () => {
+  setModeSidebarCollapsed(!$('#content-layout').classList.contains('mode-collapsed'));
 });
 
 function setSidebarCollapsed(collapsed){
@@ -1208,6 +1275,8 @@ $('#sidebar-toggle')?.addEventListener('click', () => {
   try {
     const saved = localStorage.getItem('math8-sidebar-collapsed');
     if (saved === '1') setSidebarCollapsed(true);
+    const modeSaved = localStorage.getItem('math8-mode-sidebar-collapsed');
+    if (modeSaved === '1') setModeSidebarCollapsed(true);
     const glassMode = localStorage.getItem('math8-glass-step-mode');
     if (glassMode === '1') GLASS_STEP_MODE = true;
     const savedLayout = localStorage.getItem('math8-practice-layout');

@@ -17,6 +17,8 @@ NOTE_BY_CH = {
     6: "CH06-sec-union-of-sets",
     7: "CH07-sec-percentage",
     8: "CH08-sec-simple-interest",
+    9: "CH09-sec-direct-variation",
+    10: "CH10-sec-fundamental-concepts",
 }
 
 TOPIC_BY_CH = {n: f"math-ch{n}" for n in range(1, 21)}
@@ -588,7 +590,194 @@ def batch_03():
     return qs
 
 
-BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03}
+def batch_04():
+    B = 4
+    qs = []
+    N8SI = "CH08-sec-simple-interest"
+    N8CI = "CH08-sec-deducing-a-formula-for-compound-interest"
+    N9D = "CH09-sec-direct-variation"
+    N9I = "CH09-sec-inverse-variation"
+    N10 = "CH10-sec-fundamental-concepts"
+    N10D = "CH10-sec-distributive-law"
+    N10I = "CH10-sec-a-2-2ab-b-2"
+
+    ch8 = [
+        (151, "Find principal if CI for $2$ years at $10\\%$ is ₹$420$.", "₹$2000$",
+         [step("2-year CI", "$121\\%-100\\%=21\\%$ of principal.", "CI rate block"),
+          step("Equation", "$0.21P=420$.", "Solve"),
+          step("P", "$420/0.21$.", "₹$2000$")], N8CI),
+        (152, "Amount ₹$1331$ in $3$ years at $10\\%$ CI. Find principal.", "₹$1000$",
+         [step("Formula", "$1331=P(1.1)^3$.", "Plug values"),
+          step("Power", "$(1.1)^3=1.331$.", "$P=1331/1.331$"),
+          step("P", "₹$1000$.", "₹$1000$")], N8CI),
+        (153, "₹$8000$ amounts to ₹$9261$ in $3$ years at CI. Rate?", "$5\\%$",
+         [step("Ratio", "$9261/8000=(21/20)^3$.", "Cube root both sides"),
+          step("Rate", "$21/20=1+R/100$.", "$R=5\\%$")], N8CI),
+        (154, "CI−SI on ₹$8000$ for $3$ years is ₹$61$. Find rate.", "$5\\%$",
+         [step("3-yr diff", "$61=8000\\times r^2(3+r)$.", "Test clean rates"),
+          step("Test $5\\%$", "$r=0.05$ gives $61$.", "$5\\%$")], N8CI),
+        (155, "Time to double money at $10\\%$ CI p.a.", "$\\approx 7.27$ years (between $7$ and $8$)",
+         [step("Equation", "$2P=P(1.1)^n$.", "$2=(1.1)^n$"),
+          step("Check", "$(1.1)^7\\approx 1.948$, $(1.1)^8\\approx 2.143$.", "$\\approx 7.27$ yr")], N8CI),
+        (156, "SI on ₹$18000$ for $2$ yr $4$ mo at $7.5\\%$ p.a.", "₹$3150$",
+         [step("Time", "$T=2+4/12=7/3$ years.", "Convert months"),
+          step("SI", "$\\dfrac{18000\\times 7.5\\times 7/3}{100}$.", "$60\\times 7.5\\times 7$"),
+          step("Answer", "₹$3150$.", "₹$3150$")], N8SI),
+        (157, "Amount ₹$4410$ in $2$ yr, ₹$4851$ in $3$ yr at CI. Rate?", "$10\\%$",
+         [step("1-yr interest", "$4851-4410=441$.", "On ₹$4410$"),
+          step("Rate", "$441/4410\\times 100$.", "$10\\%$")], N8CI),
+        (158, "CI on ₹$10000$ for $1\\dfrac{1}{2}$ yr at $8\\%$ compounded half-yearly.", "₹$1248.64$",
+         [step("Setup", "$n=3$, quarterly rate $4\\%$.", "$A=10000(1.04)^3$"),
+          step("CI", "$11248.64-10000$.", "₹$1248.64$")], N8CI),
+        (159, "SI ₹$720$ for $3$ yr at $8\\%$. Find CI same sum, period, rate.", "₹$779.136$",
+         [step("Principal", "$P=3000$.", "From SI formula"),
+          step("CI years", "$240+259.20+279.936$.", "₹$779.136$")], N8CI),
+    ]
+    for gn, qu, ans, st, nid in ch8:
+        qs.append(mk_q(B, gn, 8, qu, ans, st, local_label=f"Ch9-Q{gn-139}", linked_note_id=nid))
+
+    ch9 = [
+        (160, "$x\\propto y$, $x=12$ when $y=4$. Find $x$ when $y=15$.", "$45$",
+         [step("Constant", "$x/y=12/4=3$.", "Direct variation"),
+          step("Solve", "$x=15\\times 3$.", "$45$")], N9D),
+        (161, "$15$ workers build wall in $48$ hr. Workers for $30$ hr?", "$24$",
+         [step("Inverse", "$15\\times 48=x\\times 30$.", "Worker-hours fixed"),
+          step("Solve", "$x=720/30$.", "$24$ workers")], N9I),
+        (162, "$5$ kg potatoes cost ₹$75$. Cost of $12$ kg?", "₹$180$",
+         [step("Per kg", "₹$15$/kg$.", "Direct"),
+          step("Cost", "$15\\times 12$.", "₹$180$")], N9D),
+        (163, "$y$ varies inversely as $x$; $y=8$ when $x=6$. Find $y$ when $x=4$.", "$12$",
+         [step("Constant", "$xy=48$.", "Inverse"),
+          step("Solve", "$y=48/4$.", "$12$")], N9I),
+        (164, "Car travels $360$ km in $5$ hr. Distance in $7$ hr?", "$504$ km",
+         [step("Speed", "$72$ km/h.", "Direct"),
+          step("Distance", "$72\\times 7$.", "$504$ km")], N9D),
+        (165, "$10$ pipes fill tank in $24$ min. Time for $15$ pipes?", "$16$ min",
+         [step("Work", "$10\\times 24=240$ pipe-min.", "Inverse"),
+          step("Time", "$240/15$.", "$16$ min")], N9I),
+        (166, "$x\\propto y^2$; $x=12$ when $y=2$. Find $x$ when $y=5$.", "$75$",
+         [step("Constant", "$12=k\\times 4$, $k=3$.", "$x=3y^2$"),
+          step("Solve", "$3\\times 25$.", "$75$")], N9D),
+        (167, "$8$ men finish work in $12$ days. Days for $6$ men?", "$16$",
+         [step("Man-days", "$96$.", "Inverse"),
+          step("Days", "$96/6$.", "$16$ days")], N9I),
+        (168, "Same speed: $240$ km in $4$ hr. Time for $360$ km?", "$6$ hr",
+         [step("Speed", "$60$ km/h.", "Distance/time direct"),
+          step("Time", "$360/60$.", "$6$ hr")], N9D),
+        (169, "$x\\propto y$; $y=15$ when $x=45$. Find $x$ when $y=25$.", "$75$",
+         [step("Ratio", "$x/y=3$.", "Direct"),
+          step("Solve", "$x=3\\times 25$.", "$75$")], N9D),
+        (170, "$500$ men, provisions $24$ days. Reinforcement $100$ men. Days left?", "$20$",
+         [step("Rations", "$12000$ man-days.", "Inverse"),
+          step("Days", "$12000/600$.", "$20$ days")], N9I),
+        (171, "$8$ kg rice ₹$240$. Cost of $15$ kg?", "₹$450$",
+         [step("Per kg", "₹$30$.", "Direct"),
+          step("Cost", "$30\\times 15$.", "₹$450$")], N9D),
+        (172, "$x$ inversely as $y$; $x=30$, $y=8$. Find $x$ when $y=12$.", "$20$",
+         [step("Constant", "$xy=240$.", "Inverse"),
+          step("Solve", "$x=20$.", "$20$")], N9I),
+        (173, "$12$ men in $15$ days. Men for $20$ days?", "$9$",
+         [step("Work", "$180$ man-days.", "Inverse"),
+          step("Men", "$180/20$.", "$9$")], N9I),
+        (174, "Weight $\\propto$ volume: $20$ cm³ weighs $50$ g. Weight of $35$ cm³?", "$87.5$ g",
+         [step("Density", "$2.5$ g/cm³.", "Direct"),
+          step("Weight", "$2.5\\times 35$.", "$87.5$ g")], N9D),
+    ]
+    for gn, qu, ans, st, nid in ch9:
+        qs.append(mk_q(B, gn, 9, qu, ans, st, local_label=f"Ch10-Q{gn-159}", linked_note_id=nid))
+
+    ch10_alg = [
+        (175, "Add: $3x^2-5xy+7y^2$ and $-2x^2+8xy-3y^2$.", "$x^2+3xy+4y^2$",
+         [step("Like terms", "Combine $x^2$, $xy$, $y^2$.", "Coefficients"),
+          step("Answer", "$x^2+3xy+4y^2$.", "$x^2+3xy+4y^2$")]),
+        (176, "Subtract $(5a-3b+2c)$ from $(8a+4b-7c)$.", "$3a+7b-9c$",
+         [step("Order", "$(8a+4b-7c)-(5a-3b+2c)$.", "Flip signs"),
+          step("Combine", "Group like terms.", "$3a+7b-9c$")]),
+        (177, "Multiply $(3x+4y)(2x-5y)$.", "$6x^2-7xy-20y^2$",
+         [step("FOIL", "Distribute both terms.", "$6x^2-15xy+8xy-20y^2$"),
+          step("Combine", "$-15xy+8xy$.", "$6x^2-7xy-20y^2$")]),
+        (178, "Divide $12x^3-8x^2+6x$ by $2x$.", "$6x^2-4x+3$",
+         [step("Termwise", "Divide each term by $2x$.", "Subtract exponents"),
+          step("Answer", "$6x^2-4x+3$.", "$6x^2-4x+3$")]),
+        (179, "Simplify $(2x+3y)^2-(2x-3y)^2$.", "$24xy$",
+         [step("Expand", "Both squares.", "Subtract"),
+          step("Cancel", "$x^2,y^2$ cancel.", "$24xy$")]),
+        (180, "Value of $3x^2-5x+7$ when $x=-2$.", "$29$",
+         [step("Substitute", "$3(4)-5(-2)+7$.", "Order of ops"),
+          step("Calculate", "$12+10+7$.", "$29$")]),
+        (181, "Add $4x^2y-3xy^2+7xy$, $-2x^2y+5xy^2-3xy$, $6x^2y-xy^2+2xy$.", "$8x^2y+xy^2+6xy$",
+         [step("Group", "Match exponents exactly.", "Like terms"),
+          step("Answer", "$8x^2y+xy^2+6xy$.", "$8x^2y+xy^2+6xy$")]),
+        (182, "Multiply $(x+3)(x-3)(x^2+9)$.", "$x^4-81$",
+         [step("First pair", "$(x+3)(x-3)=x^2-9$.", "Difference of squares"),
+          step("Second", "$(x^2-9)(x^2+9)$.", "$x^4-81$")]),
+        (183, "$a+b=7$, $ab=12$. Find $a^2+b^2$.", "$25$",
+         [step("Identity", "$(a+b)^2=a^2+2ab+b^2$.", "$49=a^2+24+b^2$"),
+          step("Solve", "$a^2+b^2=25$.", "$25$")]),
+        (184, "Divide $6x^3+11x^2-39x-65$ by $2x-5$.", "$3x^2+13x+13$",
+         [step("Long div.", "$6x^3/2x=3x^2$.", "Repeat steps"),
+          step("Answer", "No remainder.", "$3x^2+13x+13$")]),
+        (185, "Simplify $(3x+2y+5z)-(x-y+2z)+(2x+3y-z)$.", "$4x+6y+2z$",
+         [step("Signs", "Distribute minus.", "Group"),
+          step("Answer", "$4x+6y+2z$.", "$4x+6y+2z$")]),
+        (186, "Product $(x+y+z)(x-y+z)$.", "$x^2+2xz+z^2-y^2$",
+         [step("Group", "$((x+z)+y)((x+z)-y)$.", "A²−B²"),
+          step("Expand", "$(x+z)^2-y^2$.", "$x^2+2xz+z^2-y^2$")]),
+        (187, "$x=2,y=-1,z=3$. Evaluate $2x^2y-3xy^2+5xyz$.", "$-44$",
+         [step("Substitute", "Plug values.", "Exponents first"),
+          step("Calculate", "$-8-6-30$.", "$-44$")]),
+        (188, "Subtract $3a^2-2ab+5b^2$ from $5a^2+3ab-2b^2$.", "$2a^2+5ab-7b^2$",
+         [step("Order", "Second minus first.", "Flip signs"),
+          step("Combine", "Like terms.", "$2a^2+5ab-7b^2$")]),
+        (189, "Multiply $(2x-3y)(4x^2+6xy+9y^2)$.", "$8x^3-27y^3$",
+         [step("Identity", "$(A-B)(A^2+AB+B^2)=A^3-B^3$.", "$A=2x,B=3y$"),
+          step("Answer", "$8x^3-27y^3$.", "$8x^3-27y^3$")]),
+        (190, "Divide $8x^3-27$ by $2x-3$.", "$4x^2+6x+9$",
+         [step("Factor", "$8x^3-27=(2x-3)(4x^2+6x+9)$.", "Difference of cubes"),
+          step("Quotient", "Cancel divisor.", "$4x^2+6x+9$")]),
+        (191, "Coefficient of $x^2$ in $(x-3)(2x+5)(3x-1)$.", "$-5$",
+         [step("First pair", "$2x^2-x-15$.", "Multiply by $(3x-1)$"),
+          step("Hunt $x^2$", "$-2x^2-3x^2$.", "Coeff $-5$")]),
+        (192, "$x+\\dfrac{1}{x}=5$. Find $x^2+\\dfrac{1}{x^2}$.", "$23$",
+         [step("Square", "$(x+1/x)^2=25$.", "Expand"),
+          step("Solve", "$x^2+2+1/x^2=25$.", "$23$")]),
+        (193, "Add $(a^2+b^2+c^2)+(2ab+2bc+2ca)$ and simplify.", "$(a+b+c)^2$",
+         [step("Write out", "All terms.", "Recognise identity"),
+          step("Answer", "$(a+b+c)^2$.", "$(a+b+c)^2$")]),
+        (194, "Simplify $3(x+y)^2-2(x-y)^2+5xy$ when $x=1,y=2$.", "$35$",
+         [step("Substitute", "$3(9)-2(1)+10$.", "Evaluate"),
+          step("Answer", "$27-2+10$.", "$35$")]),
+    ]
+    for gn, qu, ans, st in ch10_alg:
+        nid = N10D if gn in (177, 182, 186, 189, 190, 191) else N10
+        qs.append(mk_q(B, gn, 10, qu, ans, st, local_label=f"Ch11-Q{gn-174}", linked_note_id=nid))
+
+    ch10_id = [
+        (195, "Expand $(3x+5y)^2$ using identity.", "$9x^2+30xy+25y^2$",
+         [step("Identity", "$(A+B)^2=A^2+2AB+B^2$.", "$A=3x,B=5y$"),
+          step("Expand", "Square each part.", "$9x^2+30xy+25y^2$")]),
+        (196, "Find $(98)^2$ using $(a+b)^2$ identity.", "$9604$",
+         [step("Split", "$(90+8)^2$.", "Addition identity"),
+          step("Calculate", "$8100+1440+64$.", "$9604$")]),
+        (197, "Expand $(x-7)(x+7)$.", "$x^2-49$",
+         [step("Identity", "$(A-B)(A+B)=A^2-B^2$.", "$x^2-49$")]),
+        (198, "Find $(102)^3$ using identity.", "$1061208$",
+         [step("Split", "$(100+2)^3$.", "Cube identity"),
+          step("Calculate", "$1000000+60000+1200+8$.", "$1061208$")]),
+        (199, "Expand $(2x+3y+4z)^2$.", "$4x^2+9y^2+16z^2+12xy+24yz+16xz$",
+         [step("Identity", "$(A+B+C)^2$ formula.", "Plug $2x,3y,4z$"),
+          step("Answer", "Expand all cross terms.", "Full expansion")]),
+        (200, "Find $103\\times 97$ using identity.", "$9991$",
+         [step("Pattern", "$(100+3)(100-3)$.", "$A^2-B^2$"),
+          step("Calculate", "$10000-9$.", "$9991$")]),
+    ]
+    for gn, qu, ans, st in ch10_id:
+        qs.append(mk_q(B, gn, 10, qu, ans, st, local_label=f"Ch12-Q{gn-194}", linked_note_id=N10I))
+
+    return qs
+
+
+BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03, 4: batch_04}
 
 
 def build(batch_num: int):

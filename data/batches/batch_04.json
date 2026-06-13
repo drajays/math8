@@ -1,0 +1,1421 @@
+{
+  "batch": 4,
+  "title": "Gemini Open Glassbox · Batch 4",
+  "count": 50,
+  "globalRange": [
+    151,
+    200
+  ],
+  "questions": [
+    {
+      "id": "Q-GEM-B04-151",
+      "chapter": 8,
+      "batch": 4,
+      "batchNum": 1,
+      "globalNum": 151,
+      "localLabel": "Ch9-Q12",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Find principal if CI for $2$ years at $10\\%$ is ₹$420$.",
+      "answer": "₹$2000$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "2-year CI",
+          "why": "$121\\%-100\\%=21\\%$ of principal.",
+          "math": "CI rate block"
+        },
+        {
+          "rule": "Equation",
+          "why": "$0.21P=420$.",
+          "math": "Solve"
+        },
+        {
+          "rule": "P",
+          "why": "$420/0.21$.",
+          "math": "₹$2000$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-152",
+      "chapter": 8,
+      "batch": 4,
+      "batchNum": 2,
+      "globalNum": 152,
+      "localLabel": "Ch9-Q13",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Amount ₹$1331$ in $3$ years at $10\\%$ CI. Find principal.",
+      "answer": "₹$1000$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$1331=P(1.1)^3$.",
+          "math": "Plug values"
+        },
+        {
+          "rule": "Power",
+          "why": "$(1.1)^3=1.331$.",
+          "math": "$P=1331/1.331$"
+        },
+        {
+          "rule": "P",
+          "why": "₹$1000$.",
+          "math": "₹$1000$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-153",
+      "chapter": 8,
+      "batch": 4,
+      "batchNum": 3,
+      "globalNum": 153,
+      "localLabel": "Ch9-Q14",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "₹$8000$ amounts to ₹$9261$ in $3$ years at CI. Rate?",
+      "answer": "$5\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Ratio",
+          "why": "$9261/8000=(21/20)^3$.",
+          "math": "Cube root both sides"
+        },
+        {
+          "rule": "Rate",
+          "why": "$21/20=1+R/100$.",
+          "math": "$R=5\\%$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-154",
+      "chapter": 8,
+      "batch": 4,
+      "batchNum": 4,
+      "globalNum": 154,
+      "localLabel": "Ch9-Q15",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "CI−SI on ₹$8000$ for $3$ years is ₹$61$. Find rate.",
+      "answer": "$5\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "3-yr diff",
+          "why": "$61=8000\\times r^2(3+r)$.",
+          "math": "Test clean rates"
+        },
+        {
+          "rule": "Test $5\\%$",
+          "why": "$r=0.05$ gives $61$.",
+          "math": "$5\\%$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-155",
+      "chapter": 8,
+      "batch": 4,
+      "batchNum": 5,
+      "globalNum": 155,
+      "localLabel": "Ch9-Q16",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Time to double money at $10\\%$ CI p.a.",
+      "answer": "$\\approx 7.27$ years (between $7$ and $8$)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$2P=P(1.1)^n$.",
+          "math": "$2=(1.1)^n$"
+        },
+        {
+          "rule": "Check",
+          "why": "$(1.1)^7\\approx 1.948$, $(1.1)^8\\approx 2.143$.",
+          "math": "$\\approx 7.27$ yr"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-156",
+      "chapter": 8,
+      "batch": 4,
+      "batchNum": 6,
+      "globalNum": 156,
+      "localLabel": "Ch9-Q17",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "SI on ₹$18000$ for $2$ yr $4$ mo at $7.5\\%$ p.a.",
+      "answer": "₹$3150$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Time",
+          "why": "$T=2+4/12=7/3$ years.",
+          "math": "Convert months"
+        },
+        {
+          "rule": "SI",
+          "why": "$\\dfrac{18000\\times 7.5\\times 7/3}{100}$.",
+          "math": "$60\\times 7.5\\times 7$"
+        },
+        {
+          "rule": "Answer",
+          "why": "₹$3150$.",
+          "math": "₹$3150$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-simple-interest",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-157",
+      "chapter": 8,
+      "batch": 4,
+      "batchNum": 7,
+      "globalNum": 157,
+      "localLabel": "Ch9-Q18",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Amount ₹$4410$ in $2$ yr, ₹$4851$ in $3$ yr at CI. Rate?",
+      "answer": "$10\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "1-yr interest",
+          "why": "$4851-4410=441$.",
+          "math": "On ₹$4410$"
+        },
+        {
+          "rule": "Rate",
+          "why": "$441/4410\\times 100$.",
+          "math": "$10\\%$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-158",
+      "chapter": 8,
+      "batch": 4,
+      "batchNum": 8,
+      "globalNum": 158,
+      "localLabel": "Ch9-Q19",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "CI on ₹$10000$ for $1\\dfrac{1}{2}$ yr at $8\\%$ compounded half-yearly.",
+      "answer": "₹$1248.64$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Setup",
+          "why": "$n=3$, quarterly rate $4\\%$.",
+          "math": "$A=10000(1.04)^3$"
+        },
+        {
+          "rule": "CI",
+          "why": "$11248.64-10000$.",
+          "math": "₹$1248.64$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-159",
+      "chapter": 8,
+      "batch": 4,
+      "batchNum": 9,
+      "globalNum": 159,
+      "localLabel": "Ch9-Q20",
+      "topicId": "math-ch8",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "SI ₹$720$ for $3$ yr at $8\\%$. Find CI same sum, period, rate.",
+      "answer": "₹$779.136$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Principal",
+          "why": "$P=3000$.",
+          "math": "From SI formula"
+        },
+        {
+          "rule": "CI years",
+          "why": "$240+259.20+279.936$.",
+          "math": "₹$779.136$"
+        }
+      ],
+      "linked_note_id": "CH08-sec-deducing-a-formula-for-compound-interest",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-160",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 10,
+      "globalNum": 160,
+      "localLabel": "Ch10-Q1",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$x\\propto y$, $x=12$ when $y=4$. Find $x$ when $y=15$.",
+      "answer": "$45$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Constant",
+          "why": "$x/y=12/4=3$.",
+          "math": "Direct variation"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=15\\times 3$.",
+          "math": "$45$"
+        }
+      ],
+      "linked_note_id": "CH09-sec-direct-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-161",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 11,
+      "globalNum": 161,
+      "localLabel": "Ch10-Q2",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$15$ workers build wall in $48$ hr. Workers for $30$ hr?",
+      "answer": "$24$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Inverse",
+          "why": "$15\\times 48=x\\times 30$.",
+          "math": "Worker-hours fixed"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=720/30$.",
+          "math": "$24$ workers"
+        }
+      ],
+      "linked_note_id": "CH09-sec-inverse-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-162",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 12,
+      "globalNum": 162,
+      "localLabel": "Ch10-Q3",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$5$ kg potatoes cost ₹$75$. Cost of $12$ kg?",
+      "answer": "₹$180$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Per kg",
+          "why": "₹$15$/kg$.",
+          "math": "Direct"
+        },
+        {
+          "rule": "Cost",
+          "why": "$15\\times 12$.",
+          "math": "₹$180$"
+        }
+      ],
+      "linked_note_id": "CH09-sec-direct-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-163",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 13,
+      "globalNum": 163,
+      "localLabel": "Ch10-Q4",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$y$ varies inversely as $x$; $y=8$ when $x=6$. Find $y$ when $x=4$.",
+      "answer": "$12$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Constant",
+          "why": "$xy=48$.",
+          "math": "Inverse"
+        },
+        {
+          "rule": "Solve",
+          "why": "$y=48/4$.",
+          "math": "$12$"
+        }
+      ],
+      "linked_note_id": "CH09-sec-inverse-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-164",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 14,
+      "globalNum": 164,
+      "localLabel": "Ch10-Q5",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Car travels $360$ km in $5$ hr. Distance in $7$ hr?",
+      "answer": "$504$ km",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Speed",
+          "why": "$72$ km/h.",
+          "math": "Direct"
+        },
+        {
+          "rule": "Distance",
+          "why": "$72\\times 7$.",
+          "math": "$504$ km"
+        }
+      ],
+      "linked_note_id": "CH09-sec-direct-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-165",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 15,
+      "globalNum": 165,
+      "localLabel": "Ch10-Q6",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$10$ pipes fill tank in $24$ min. Time for $15$ pipes?",
+      "answer": "$16$ min",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Work",
+          "why": "$10\\times 24=240$ pipe-min.",
+          "math": "Inverse"
+        },
+        {
+          "rule": "Time",
+          "why": "$240/15$.",
+          "math": "$16$ min"
+        }
+      ],
+      "linked_note_id": "CH09-sec-inverse-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-166",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 16,
+      "globalNum": 166,
+      "localLabel": "Ch10-Q7",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$x\\propto y^2$; $x=12$ when $y=2$. Find $x$ when $y=5$.",
+      "answer": "$75$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Constant",
+          "why": "$12=k\\times 4$, $k=3$.",
+          "math": "$x=3y^2$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$3\\times 25$.",
+          "math": "$75$"
+        }
+      ],
+      "linked_note_id": "CH09-sec-direct-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-167",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 17,
+      "globalNum": 167,
+      "localLabel": "Ch10-Q8",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$8$ men finish work in $12$ days. Days for $6$ men?",
+      "answer": "$16$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Man-days",
+          "why": "$96$.",
+          "math": "Inverse"
+        },
+        {
+          "rule": "Days",
+          "why": "$96/6$.",
+          "math": "$16$ days"
+        }
+      ],
+      "linked_note_id": "CH09-sec-inverse-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-168",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 18,
+      "globalNum": 168,
+      "localLabel": "Ch10-Q9",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Same speed: $240$ km in $4$ hr. Time for $360$ km?",
+      "answer": "$6$ hr",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Speed",
+          "why": "$60$ km/h.",
+          "math": "Distance/time direct"
+        },
+        {
+          "rule": "Time",
+          "why": "$360/60$.",
+          "math": "$6$ hr"
+        }
+      ],
+      "linked_note_id": "CH09-sec-direct-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-169",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 19,
+      "globalNum": 169,
+      "localLabel": "Ch10-Q10",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$x\\propto y$; $y=15$ when $x=45$. Find $x$ when $y=25$.",
+      "answer": "$75$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Ratio",
+          "why": "$x/y=3$.",
+          "math": "Direct"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=3\\times 25$.",
+          "math": "$75$"
+        }
+      ],
+      "linked_note_id": "CH09-sec-direct-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-170",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 20,
+      "globalNum": 170,
+      "localLabel": "Ch10-Q11",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$500$ men, provisions $24$ days. Reinforcement $100$ men. Days left?",
+      "answer": "$20$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rations",
+          "why": "$12000$ man-days.",
+          "math": "Inverse"
+        },
+        {
+          "rule": "Days",
+          "why": "$12000/600$.",
+          "math": "$20$ days"
+        }
+      ],
+      "linked_note_id": "CH09-sec-inverse-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-171",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 21,
+      "globalNum": 171,
+      "localLabel": "Ch10-Q12",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$8$ kg rice ₹$240$. Cost of $15$ kg?",
+      "answer": "₹$450$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Per kg",
+          "why": "₹$30$.",
+          "math": "Direct"
+        },
+        {
+          "rule": "Cost",
+          "why": "$30\\times 15$.",
+          "math": "₹$450$"
+        }
+      ],
+      "linked_note_id": "CH09-sec-direct-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-172",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 22,
+      "globalNum": 172,
+      "localLabel": "Ch10-Q13",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$x$ inversely as $y$; $x=30$, $y=8$. Find $x$ when $y=12$.",
+      "answer": "$20$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Constant",
+          "why": "$xy=240$.",
+          "math": "Inverse"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=20$.",
+          "math": "$20$"
+        }
+      ],
+      "linked_note_id": "CH09-sec-inverse-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-173",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 23,
+      "globalNum": 173,
+      "localLabel": "Ch10-Q14",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$12$ men in $15$ days. Men for $20$ days?",
+      "answer": "$9$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Work",
+          "why": "$180$ man-days.",
+          "math": "Inverse"
+        },
+        {
+          "rule": "Men",
+          "why": "$180/20$.",
+          "math": "$9$"
+        }
+      ],
+      "linked_note_id": "CH09-sec-inverse-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-174",
+      "chapter": 9,
+      "batch": 4,
+      "batchNum": 24,
+      "globalNum": 174,
+      "localLabel": "Ch10-Q15",
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Weight $\\propto$ volume: $20$ cm³ weighs $50$ g. Weight of $35$ cm³?",
+      "answer": "$87.5$ g",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Density",
+          "why": "$2.5$ g/cm³.",
+          "math": "Direct"
+        },
+        {
+          "rule": "Weight",
+          "why": "$2.5\\times 35$.",
+          "math": "$87.5$ g"
+        }
+      ],
+      "linked_note_id": "CH09-sec-direct-variation",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-175",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 25,
+      "globalNum": 175,
+      "localLabel": "Ch11-Q1",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Add: $3x^2-5xy+7y^2$ and $-2x^2+8xy-3y^2$.",
+      "answer": "$x^2+3xy+4y^2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Like terms",
+          "why": "Combine $x^2$, $xy$, $y^2$.",
+          "math": "Coefficients"
+        },
+        {
+          "rule": "Answer",
+          "why": "$x^2+3xy+4y^2$.",
+          "math": "$x^2+3xy+4y^2$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-176",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 26,
+      "globalNum": 176,
+      "localLabel": "Ch11-Q2",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Subtract $(5a-3b+2c)$ from $(8a+4b-7c)$.",
+      "answer": "$3a+7b-9c$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Order",
+          "why": "$(8a+4b-7c)-(5a-3b+2c)$.",
+          "math": "Flip signs"
+        },
+        {
+          "rule": "Combine",
+          "why": "Group like terms.",
+          "math": "$3a+7b-9c$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-177",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 27,
+      "globalNum": 177,
+      "localLabel": "Ch11-Q3",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Multiply $(3x+4y)(2x-5y)$.",
+      "answer": "$6x^2-7xy-20y^2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "FOIL",
+          "why": "Distribute both terms.",
+          "math": "$6x^2-15xy+8xy-20y^2$"
+        },
+        {
+          "rule": "Combine",
+          "why": "$-15xy+8xy$.",
+          "math": "$6x^2-7xy-20y^2$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-distributive-law",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-178",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 28,
+      "globalNum": 178,
+      "localLabel": "Ch11-Q4",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Divide $12x^3-8x^2+6x$ by $2x$.",
+      "answer": "$6x^2-4x+3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Termwise",
+          "why": "Divide each term by $2x$.",
+          "math": "Subtract exponents"
+        },
+        {
+          "rule": "Answer",
+          "why": "$6x^2-4x+3$.",
+          "math": "$6x^2-4x+3$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-179",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 29,
+      "globalNum": 179,
+      "localLabel": "Ch11-Q5",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Simplify $(2x+3y)^2-(2x-3y)^2$.",
+      "answer": "$24xy$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Expand",
+          "why": "Both squares.",
+          "math": "Subtract"
+        },
+        {
+          "rule": "Cancel",
+          "why": "$x^2,y^2$ cancel.",
+          "math": "$24xy$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-180",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 30,
+      "globalNum": 180,
+      "localLabel": "Ch11-Q6",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Value of $3x^2-5x+7$ when $x=-2$.",
+      "answer": "$29$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Substitute",
+          "why": "$3(4)-5(-2)+7$.",
+          "math": "Order of ops"
+        },
+        {
+          "rule": "Calculate",
+          "why": "$12+10+7$.",
+          "math": "$29$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-181",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 31,
+      "globalNum": 181,
+      "localLabel": "Ch11-Q7",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Add $4x^2y-3xy^2+7xy$, $-2x^2y+5xy^2-3xy$, $6x^2y-xy^2+2xy$.",
+      "answer": "$8x^2y+xy^2+6xy$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Group",
+          "why": "Match exponents exactly.",
+          "math": "Like terms"
+        },
+        {
+          "rule": "Answer",
+          "why": "$8x^2y+xy^2+6xy$.",
+          "math": "$8x^2y+xy^2+6xy$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-182",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 32,
+      "globalNum": 182,
+      "localLabel": "Ch11-Q8",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Multiply $(x+3)(x-3)(x^2+9)$.",
+      "answer": "$x^4-81$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "First pair",
+          "why": "$(x+3)(x-3)=x^2-9$.",
+          "math": "Difference of squares"
+        },
+        {
+          "rule": "Second",
+          "why": "$(x^2-9)(x^2+9)$.",
+          "math": "$x^4-81$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-distributive-law",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-183",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 33,
+      "globalNum": 183,
+      "localLabel": "Ch11-Q9",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$a+b=7$, $ab=12$. Find $a^2+b^2$.",
+      "answer": "$25$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(a+b)^2=a^2+2ab+b^2$.",
+          "math": "$49=a^2+24+b^2$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$a^2+b^2=25$.",
+          "math": "$25$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-184",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 34,
+      "globalNum": 184,
+      "localLabel": "Ch11-Q10",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Divide $6x^3+11x^2-39x-65$ by $2x-5$.",
+      "answer": "$3x^2+13x+13$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Long div.",
+          "why": "$6x^3/2x=3x^2$.",
+          "math": "Repeat steps"
+        },
+        {
+          "rule": "Answer",
+          "why": "No remainder.",
+          "math": "$3x^2+13x+13$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-185",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 35,
+      "globalNum": 185,
+      "localLabel": "Ch11-Q11",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Simplify $(3x+2y+5z)-(x-y+2z)+(2x+3y-z)$.",
+      "answer": "$4x+6y+2z$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Signs",
+          "why": "Distribute minus.",
+          "math": "Group"
+        },
+        {
+          "rule": "Answer",
+          "why": "$4x+6y+2z$.",
+          "math": "$4x+6y+2z$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-186",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 36,
+      "globalNum": 186,
+      "localLabel": "Ch11-Q12",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Product $(x+y+z)(x-y+z)$.",
+      "answer": "$x^2+2xz+z^2-y^2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Group",
+          "why": "$((x+z)+y)((x+z)-y)$.",
+          "math": "A²−B²"
+        },
+        {
+          "rule": "Expand",
+          "why": "$(x+z)^2-y^2$.",
+          "math": "$x^2+2xz+z^2-y^2$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-distributive-law",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-187",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 37,
+      "globalNum": 187,
+      "localLabel": "Ch11-Q13",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$x=2,y=-1,z=3$. Evaluate $2x^2y-3xy^2+5xyz$.",
+      "answer": "$-44$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Substitute",
+          "why": "Plug values.",
+          "math": "Exponents first"
+        },
+        {
+          "rule": "Calculate",
+          "why": "$-8-6-30$.",
+          "math": "$-44$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-188",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 38,
+      "globalNum": 188,
+      "localLabel": "Ch11-Q14",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Subtract $3a^2-2ab+5b^2$ from $5a^2+3ab-2b^2$.",
+      "answer": "$2a^2+5ab-7b^2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Order",
+          "why": "Second minus first.",
+          "math": "Flip signs"
+        },
+        {
+          "rule": "Combine",
+          "why": "Like terms.",
+          "math": "$2a^2+5ab-7b^2$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-189",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 39,
+      "globalNum": 189,
+      "localLabel": "Ch11-Q15",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Multiply $(2x-3y)(4x^2+6xy+9y^2)$.",
+      "answer": "$8x^3-27y^3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(A-B)(A^2+AB+B^2)=A^3-B^3$.",
+          "math": "$A=2x,B=3y$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$8x^3-27y^3$.",
+          "math": "$8x^3-27y^3$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-distributive-law",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-190",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 40,
+      "globalNum": 190,
+      "localLabel": "Ch11-Q16",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Divide $8x^3-27$ by $2x-3$.",
+      "answer": "$4x^2+6x+9$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Factor",
+          "why": "$8x^3-27=(2x-3)(4x^2+6x+9)$.",
+          "math": "Difference of cubes"
+        },
+        {
+          "rule": "Quotient",
+          "why": "Cancel divisor.",
+          "math": "$4x^2+6x+9$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-distributive-law",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-191",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 41,
+      "globalNum": 191,
+      "localLabel": "Ch11-Q17",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Coefficient of $x^2$ in $(x-3)(2x+5)(3x-1)$.",
+      "answer": "$-5$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "First pair",
+          "why": "$2x^2-x-15$.",
+          "math": "Multiply by $(3x-1)$"
+        },
+        {
+          "rule": "Hunt $x^2$",
+          "why": "$-2x^2-3x^2$.",
+          "math": "Coeff $-5$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-distributive-law",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-192",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 42,
+      "globalNum": 192,
+      "localLabel": "Ch11-Q18",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "$x+\\dfrac{1}{x}=5$. Find $x^2+\\dfrac{1}{x^2}$.",
+      "answer": "$23$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Square",
+          "why": "$(x+1/x)^2=25$.",
+          "math": "Expand"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x^2+2+1/x^2=25$.",
+          "math": "$23$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-193",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 43,
+      "globalNum": 193,
+      "localLabel": "Ch11-Q19",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Add $(a^2+b^2+c^2)+(2ab+2bc+2ca)$ and simplify.",
+      "answer": "$(a+b+c)^2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Write out",
+          "why": "All terms.",
+          "math": "Recognise identity"
+        },
+        {
+          "rule": "Answer",
+          "why": "$(a+b+c)^2$.",
+          "math": "$(a+b+c)^2$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-194",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 44,
+      "globalNum": 194,
+      "localLabel": "Ch11-Q20",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Simplify $3(x+y)^2-2(x-y)^2+5xy$ when $x=1,y=2$.",
+      "answer": "$35$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Substitute",
+          "why": "$3(9)-2(1)+10$.",
+          "math": "Evaluate"
+        },
+        {
+          "rule": "Answer",
+          "why": "$27-2+10$.",
+          "math": "$35$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-fundamental-concepts",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-195",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 45,
+      "globalNum": 195,
+      "localLabel": "Ch12-Q1",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Expand $(3x+5y)^2$ using identity.",
+      "answer": "$9x^2+30xy+25y^2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(A+B)^2=A^2+2AB+B^2$.",
+          "math": "$A=3x,B=5y$"
+        },
+        {
+          "rule": "Expand",
+          "why": "Square each part.",
+          "math": "$9x^2+30xy+25y^2$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-196",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 46,
+      "globalNum": 196,
+      "localLabel": "Ch12-Q2",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Find $(98)^2$ using $(a+b)^2$ identity.",
+      "answer": "$9604$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "$(90+8)^2$.",
+          "math": "Addition identity"
+        },
+        {
+          "rule": "Calculate",
+          "why": "$8100+1440+64$.",
+          "math": "$9604$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-197",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 47,
+      "globalNum": 197,
+      "localLabel": "Ch12-Q3",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Expand $(x-7)(x+7)$.",
+      "answer": "$x^2-49$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(A-B)(A+B)=A^2-B^2$.",
+          "math": "$x^2-49$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-198",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 48,
+      "globalNum": 198,
+      "localLabel": "Ch12-Q4",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Find $(102)^3$ using identity.",
+      "answer": "$1061208$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "$(100+2)^3$.",
+          "math": "Cube identity"
+        },
+        {
+          "rule": "Calculate",
+          "why": "$1000000+60000+1200+8$.",
+          "math": "$1061208$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-199",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 49,
+      "globalNum": 199,
+      "localLabel": "Ch12-Q5",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Expand $(2x+3y+4z)^2$.",
+      "answer": "$4x^2+9y^2+16z^2+12xy+24yz+16xz$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(A+B+C)^2$ formula.",
+          "math": "Plug $2x,3y,4z$"
+        },
+        {
+          "rule": "Answer",
+          "why": "Expand all cross terms.",
+          "math": "Full expansion"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-04"
+    },
+    {
+      "id": "Q-GEM-B04-200",
+      "chapter": 10,
+      "batch": 4,
+      "batchNum": 50,
+      "globalNum": 200,
+      "localLabel": "Ch12-Q6",
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 4",
+      "question": "Find $103\\times 97$ using identity.",
+      "answer": "$9991$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Pattern",
+          "why": "$(100+3)(100-3)$.",
+          "math": "$A^2-B^2$"
+        },
+        {
+          "rule": "Calculate",
+          "why": "$10000-9$.",
+          "math": "$9991$"
+        }
+      ],
+      "linked_note_id": "CH10-sec-a-2-2ab-b-2",
+      "source": "gemini-batch-04"
+    }
+  ]
+}

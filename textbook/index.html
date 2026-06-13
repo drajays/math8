@@ -176,6 +176,7 @@ a{color:var(--blue)}
 .scroll-feed{display:flex;flex-direction:column;gap:28px;padding-bottom:32px}
 .scroll-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);scroll-margin-top:16px}
 .scroll-card-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px 16px;background:linear-gradient(90deg,#fff1f2,#fff);border-bottom:1px solid var(--border)}
+.glass-panel-head .q-id,.scroll-card-head .q-id{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--on-var)}
 .scroll-card-num{font-family:var(--mono);font-size:11px;font-weight:700;color:#e11d48;background:#ffe4e6;padding:4px 10px;border-radius:var(--pill);border:1px solid #fecdd3}
 .scroll-problem{padding:16px 18px;border-bottom:1px dashed var(--border)}
 .scroll-problem .problem{margin-bottom:0}
@@ -235,7 +236,6 @@ a{color:var(--blue)}
 
 .glass-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow)}
 .glass-panel-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px 16px;background:linear-gradient(90deg,#fff1f2,#fff);border-bottom:1px solid var(--border)}
-.glass-panel-head .q-id{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--on-var)}
 .glass-panel-head .q-type{font-family:var(--mono);font-size:10px;font-weight:700;text-transform:uppercase;padding:3px 8px;border-radius:var(--pill)}
 .glass-panel-head .q-type.mcq{background:var(--blue-soft);color:var(--blue)}
 .glass-panel-head .q-type.fill_blank{background:var(--emerald-soft);color:var(--emerald)}
@@ -267,6 +267,39 @@ a{color:var(--blue)}
 .btn{border:none;border-radius:var(--r);padding:10px 18px;font-weight:600;cursor:pointer;background:linear-gradient(135deg,#e11d48,#be123c);color:#fff;margin-top:10px;box-shadow:0 2px 10px rgba(225,29,72,.25);transition:transform .12s,box-shadow .12s}
 .btn:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(225,29,72,.3)}
 .glass-link{font-family:var(--mono);font-size:10px;color:var(--on-dim);margin-top:12px;padding:8px 10px;background:var(--bg);border-radius:var(--r)}
+
+/* —— Question edit / delete —— */
+.q-admin{display:flex;gap:6px;margin-left:auto;flex-shrink:0}
+.q-admin-btn{border:1.5px solid var(--border);background:var(--surface);border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;font-family:var(--sans);cursor:pointer;color:var(--on-var);transition:all .12s;line-height:1.2}
+.q-admin-btn:hover{border-color:var(--blue);background:var(--blue-soft);color:var(--blue)}
+.q-admin-btn--del:hover{border-color:#dc2626;background:#fef2f2;color:#dc2626}
+.glass-panel-head,.scroll-card-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.glass-panel-head-main,.scroll-card-head-main{display:flex;flex-wrap:wrap;align-items:center;gap:8px;flex:1;min-width:0}
+.q-item .q-admin{margin-left:0;margin-top:4px}
+.q-item-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.restore-hidden-btn{border:1.5px solid #fed7aa;background:#fff7ed;color:#c2410c;border-radius:var(--pill);padding:7px 12px;font-size:11px;font-weight:600;font-family:var(--sans);cursor:pointer;white-space:nowrap}
+.restore-hidden-btn:hover{background:#ffedd5;border-color:#fb923c}
+
+.q-edit-overlay{position:fixed;inset:0;background:rgba(14,27,46,.45);z-index:100;display:grid;place-items:center;padding:20px;backdrop-filter:blur(4px)}
+.q-edit-overlay[hidden]{display:none!important}
+.q-edit-modal{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:0 24px 60px rgba(14,27,46,.28);width:min(640px,100%);max-height:90vh;overflow:hidden;display:flex;flex-direction:column}
+.q-edit-head{padding:16px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px;background:linear-gradient(90deg,#fff1f2,#fff)}
+.q-edit-head h2{margin:0;font-family:var(--serif);font-size:1.15rem;color:var(--primary)}
+.q-edit-id{font-family:var(--mono);font-size:10px;color:var(--on-dim)}
+.q-edit-body{padding:16px 18px;overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:14px}
+.q-edit-field label{display:block;font-family:var(--mono);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--on-dim);margin-bottom:6px}
+.q-edit-field textarea,.q-edit-field input[type=text],.q-edit-field select{width:100%;font-family:var(--mono);font-size:13px;padding:10px 12px;border:1.5px solid var(--border);border-radius:var(--r);background:var(--bg);line-height:1.5;resize:vertical}
+.q-edit-field textarea{min-height:72px}
+.q-edit-field textarea:focus,.q-edit-field input:focus,.q-edit-field select:focus{outline:none;border-color:#e11d48;box-shadow:0 0 0 3px #ffe4e6}
+.q-edit-steps-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.q-edit-steps-head label{margin:0}
+.q-edit-step{border:1px solid var(--border);border-radius:var(--r);padding:10px 12px;background:var(--bg);display:flex;flex-direction:column;gap:8px}
+.q-edit-step input,.q-edit-step textarea{font-family:var(--mono);font-size:12px;padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:var(--surface)}
+.q-edit-step-rm{align-self:flex-end;border:none;background:#fef2f2;color:#dc2626;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer}
+.q-edit-foot{padding:14px 18px;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;background:var(--bg)}
+.q-edit-foot .btn-del{margin-right:auto;background:linear-gradient(135deg,#dc2626,#b91c1c)}
+.q-edit-note{font-family:var(--mono);font-size:10px;color:var(--on-dim);margin:0}
+.q-edit-mcq-grid{display:grid;gap:8px}
 
 /* —— Mind map —— */
 .mind-doc,.cheat-doc,.rich-doc{font-family:var(--serif)}
@@ -355,6 +388,7 @@ sup.msup,sub.msub{font-family:inherit}
               <div class="practice-top-row">
                 <div class="q-stats" id="q-meta">Select a chapter to practice.</div>
                 <div class="practice-top-right">
+                  <button type="button" id="restore-hidden-btn" class="restore-hidden-btn" hidden>Restore hidden</button>
                   <select id="scroll-jump-select" class="scroll-jump-select" hidden aria-label="Jump to question">
                     <option value="">Jump to…</option>
                   </select>
@@ -393,6 +427,48 @@ sup.msup,sub.msub{font-family:inherit}
     </div>
   </div>
 </div>
+
+<div class="q-edit-overlay" id="q-edit-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="q-edit-title">
+  <div class="q-edit-modal">
+    <div class="q-edit-head">
+      <div>
+        <h2 id="q-edit-title">Edit question</h2>
+        <div class="q-edit-id" id="q-edit-id-label"></div>
+      </div>
+      <button type="button" class="q-admin-btn" id="q-edit-close" aria-label="Close">✕</button>
+    </div>
+    <form class="q-edit-body" id="q-edit-form">
+      <p class="q-edit-note">Changes save in this browser only — they do not modify the GitHub files.</p>
+      <div class="q-edit-field">
+        <label for="q-edit-question">Question</label>
+        <textarea id="q-edit-question" rows="3" required></textarea>
+      </div>
+      <div class="q-edit-field" id="q-edit-mcq-wrap" hidden>
+        <label>MCQ options</label>
+        <div class="q-edit-mcq-grid" id="q-edit-mcq"></div>
+        <label for="q-edit-correct" style="margin-top:8px">Correct option</label>
+        <select id="q-edit-correct"></select>
+      </div>
+      <div class="q-edit-field">
+        <label for="q-edit-answer">Answer</label>
+        <textarea id="q-edit-answer" rows="2" required></textarea>
+      </div>
+      <div class="q-edit-field">
+        <div class="q-edit-steps-head">
+          <label>Glass-box steps</label>
+          <button type="button" class="q-admin-btn" id="q-edit-add-step">+ Add step</button>
+        </div>
+        <div id="q-edit-steps"></div>
+      </div>
+    </form>
+    <div class="q-edit-foot">
+      <button type="button" class="btn btn-del" id="q-edit-delete">Delete question</button>
+      <button type="button" class="q-admin-btn" id="q-edit-cancel">Cancel</button>
+      <button type="button" class="btn" id="q-edit-save">Save changes</button>
+    </div>
+  </div>
+</div>
+
 <script src="../shared/math-render.js?v=4"></script>
 <script src="../shared/notes-render.js?v=3"></script>
 <script src="../shared/practice-diagrams.js?v=4"></script>
@@ -403,6 +479,8 @@ let MANIFEST = null, CUR = null, CACHE = {}, QIDX = 0, REVEAL = 0, LOAD_TOKEN = 
 let CUR_QUESTIONS = [], Q_FILTER = "all", Q_SEARCH = "", Q_SOURCE = "all";
 let GLASS_STEP_MODE = false;
 let PRACTICE_LAYOUT = "scroll";
+let EDIT_QID = null;
+const OVERRIDE_KEY = "math8-question-overrides";
 const BATCH_COUNT = 10;
 
 function safeStr(v){ return v == null ? "" : String(v); }
@@ -501,6 +579,199 @@ function normOneWord(raw){
 
 function esc(s){ return String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
 
+function getOverrides(){
+  try {
+    const raw = JSON.parse(localStorage.getItem(OVERRIDE_KEY) || "{}") || {};
+    if (!Array.isArray(raw.deleted)) raw.deleted = [];
+    if (!raw.edits || typeof raw.edits !== "object") raw.edits = {};
+    return raw;
+  } catch(e){ return { deleted: [], edits: {} }; }
+}
+
+function saveOverrides(o){
+  try { localStorage.setItem(OVERRIDE_KEY, JSON.stringify(o)); } catch(e){}
+  updateRestoreButton();
+}
+
+function applyQuestionOverrides(qs){
+  const o = getOverrides();
+  const deleted = new Set(o.deleted || []);
+  return qs.filter(q => !deleted.has(q.id)).map(q => {
+    const edit = o.edits[q.id];
+    if (!edit) return q;
+    const merged = { ...q, ...edit };
+    if (edit.glassboxSteps) merged.glassboxSteps = edit.glassboxSteps.map(s => ({
+      rule: safeStr(s.rule || "Step"),
+      why: safeStr(s.why),
+      math: safeStr(s.math),
+    }));
+    if (edit.options) merged.options = edit.options.map(opt => safeStr(opt));
+    return merged;
+  });
+}
+
+function getRawQuestionById(id){
+  if (!CUR || !CACHE[CUR.tag]) return null;
+  return CACHE[CUR.tag].rawQuestions.find(q => q.id === id) || null;
+}
+
+function getEffectiveQuestion(id){
+  return CUR_QUESTIONS.find(q => q.id === id) || applyQuestionOverrides([getRawQuestionById(id)].filter(Boolean))[0] || null;
+}
+
+function refreshQuestionsFromCache(){
+  if (!CUR || !CACHE[CUR.tag]) return;
+  const data = CACHE[CUR.tag];
+  data.questions = applyQuestionOverrides(data.rawQuestions);
+  CUR_QUESTIONS = data.questions;
+  updateRestoreButton();
+  paintQuestionFilters(CUR_QUESTIONS);
+  paintQuestions(CUR_QUESTIONS);
+}
+
+function updateRestoreButton(){
+  const btn = $("#restore-hidden-btn");
+  if (!btn) return;
+  const n = (getOverrides().deleted || []).length;
+  btn.hidden = !n;
+  btn.textContent = n ? `Restore ${n} hidden` : "Restore hidden";
+}
+
+function questionAdminBarHtml(q){
+  return `<div class="q-admin">
+    <button type="button" class="q-admin-btn" data-edit-q="${esc(q.id)}" title="Edit question">✎ Edit</button>
+    <button type="button" class="q-admin-btn q-admin-btn--del" data-delete-q="${esc(q.id)}" title="Hide question">🗑 Delete</button>
+  </div>`;
+}
+
+function deleteQuestionById(id){
+  const q = getEffectiveQuestion(id);
+  if (!q) return;
+  const preview = cleanQuestionText(q.question).slice(0, 80);
+  if (!confirm(`Hide this question?\n\n${preview}${preview.length >= 80 ? "…" : ""}\n\nYou can restore hidden questions with "Restore hidden".`)) return;
+  const o = getOverrides();
+  if (!o.deleted.includes(id)) o.deleted.push(id);
+  saveOverrides(o);
+  closeEditModal();
+  refreshQuestionsFromCache();
+}
+
+function restoreAllHidden(){
+  const o = getOverrides();
+  if (!o.deleted.length) return;
+  if (!confirm(`Restore all ${o.deleted.length} hidden question(s)?`)) return;
+  o.deleted = [];
+  saveOverrides(o);
+  refreshQuestionsFromCache();
+}
+
+function openEditModal(id){
+  const q = getEffectiveQuestion(id);
+  if (!q) return;
+  EDIT_QID = id;
+  $("#q-edit-id-label").textContent = id;
+  $("#q-edit-question").value = cleanQuestionText(q.question);
+  $("#q-edit-answer").value = safeStr(q.answer);
+  const mcqWrap = $("#q-edit-mcq-wrap");
+  const mcqGrid = $("#q-edit-mcq");
+  const correctSel = $("#q-edit-correct");
+  if (q.type === "mcq" && q.options && q.options.length) {
+    mcqWrap.hidden = false;
+    mcqGrid.innerHTML = q.options.map((o, i) =>
+      `<div class="q-edit-field"><label>Option ${OPT_LABELS[i] || i + 1}</label><textarea class="q-edit-opt" data-i="${i}" rows="2">${esc(o)}</textarea></div>`
+    ).join("");
+    correctSel.innerHTML = q.options.map((_, i) =>
+      `<option value="${i}"${i === q.correctOption ? " selected" : ""}>${OPT_LABELS[i] || i + 1}</option>`
+    ).join("");
+  } else {
+    mcqWrap.hidden = true;
+    mcqGrid.innerHTML = "";
+    correctSel.innerHTML = "";
+  }
+  paintEditSteps(q.glassboxSteps || []);
+  $("#q-edit-overlay").hidden = false;
+  document.body.style.overflow = "hidden";
+}
+
+function closeEditModal(){
+  EDIT_QID = null;
+  $("#q-edit-overlay").hidden = true;
+  document.body.style.overflow = "";
+}
+
+function paintEditSteps(steps){
+  const root = $("#q-edit-steps");
+  if (!root) return;
+  root.innerHTML = (steps.length ? steps : [{ rule: "Step", why: "", math: "" }]).map((s, i) =>
+    `<div class="q-edit-step" data-i="${i}">
+      <input type="text" class="edit-step-rule" placeholder="Rule" value="${esc(s.rule || "")}">
+      <textarea class="edit-step-why" rows="2" placeholder="Why">${esc(s.why || "")}</textarea>
+      <textarea class="edit-step-math" rows="2" placeholder="Math (LaTeX OK)">${esc(s.math || "")}</textarea>
+      <button type="button" class="q-edit-step-rm" data-rm-step="${i}">Remove step</button>
+    </div>`
+  ).join("");
+  root.querySelectorAll("[data-rm-step]").forEach(btn => {
+    btn.onclick = () => {
+      btn.closest(".q-edit-step")?.remove();
+      if (!root.querySelector(".q-edit-step")) paintEditSteps([{ rule: "Step", why: "", math: "" }]);
+    };
+  });
+}
+
+function collectEditSteps(){
+  return $$("#q-edit-steps .q-edit-step").map(row => ({
+    rule: safeStr(row.querySelector(".edit-step-rule")?.value || "Step"),
+    why: safeStr(row.querySelector(".edit-step-why")?.value),
+    math: safeStr(row.querySelector(".edit-step-math")?.value),
+  })).filter(s => s.rule || s.why || s.math);
+}
+
+function saveEditModal(){
+  if (!EDIT_QID) return;
+  const q = getEffectiveQuestion(EDIT_QID);
+  if (!q) return;
+  const patch = {
+    question: $("#q-edit-question").value.trim(),
+    answer: $("#q-edit-answer").value.trim(),
+    glassboxSteps: collectEditSteps(),
+  };
+  if (!patch.question || !patch.answer){ alert("Question and answer are required."); return; }
+  if (q.type === "mcq") {
+    patch.options = $$(".q-edit-opt").map(ta => ta.value.trim());
+    patch.correctOption = Number($("#q-edit-correct").value) || 0;
+  }
+  const o = getOverrides();
+  o.edits[EDIT_QID] = { ...(o.edits[EDIT_QID] || {}), ...patch };
+  saveOverrides(o);
+  closeEditModal();
+  refreshQuestionsFromCache();
+}
+
+function wireQuestionAdmin(){
+  if (wireQuestionAdmin._done) return;
+  wireQuestionAdmin._done = true;
+  $("#practice-content-center")?.addEventListener("click", e => {
+    const editBtn = e.target.closest("[data-edit-q]");
+    const delBtn = e.target.closest("[data-delete-q]");
+    if (editBtn) { e.preventDefault(); e.stopPropagation(); openEditModal(editBtn.dataset.editQ); return; }
+    if (delBtn) { e.preventDefault(); e.stopPropagation(); deleteQuestionById(delBtn.dataset.deleteQ); }
+  });
+  $("#q-edit-close")?.addEventListener("click", closeEditModal);
+  $("#q-edit-cancel")?.addEventListener("click", closeEditModal);
+  $("#q-edit-save")?.addEventListener("click", saveEditModal);
+  $("#q-edit-delete")?.addEventListener("click", () => { if (EDIT_QID) deleteQuestionById(EDIT_QID); });
+  $("#q-edit-add-step")?.addEventListener("click", () => {
+    const steps = collectEditSteps();
+    steps.push({ rule: "Step", why: "", math: "" });
+    paintEditSteps(steps);
+  });
+  $("#q-edit-overlay")?.addEventListener("click", e => { if (e.target.id === "q-edit-overlay") closeEditModal(); });
+  $("#restore-hidden-btn")?.addEventListener("click", restoreAllHidden);
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && !$("#q-edit-overlay")?.hidden) closeEditModal();
+  });
+}
+
 async function loadText(url){
   const r = await fetch(resolveUrl(url)); if(!r.ok) throw new Error(resolveUrl(url) + " → " + r.status); return r.text();
 }
@@ -544,10 +815,12 @@ async function loadChapter(ch){
     loadJson(f.questions), loadJson(f.facts), loadText(f.notes),
     loadText(f.mindmap), loadText(f.cheatsheet), loadJson(f.oneword)
   ]);
-  const batchQs = await loadBatchQuestions(chNum);
   const baseQs = normQuestions(questions);
+  const batchQs = await loadBatchQuestions(chNum);
+  const rawQuestions = baseQs.concat(batchQs);
   CACHE[ch.tag] = {
-    questions: baseQs.concat(batchQs),
+    rawQuestions,
+    questions: applyQuestionOverrides(rawQuestions),
     baseCount: baseQs.length,
     batchCount: batchQs.length,
     facts: Array.isArray(facts) ? facts : [],
@@ -689,6 +962,7 @@ function paintQuestions(qs){
   if (batchN) meta += ` · ${batchN} Gemini`;
   if (hotsN) meta += ` · ${hotsN} HOTS`;
   $("#q-meta").textContent = meta;
+  updateRestoreButton();
   applyPracticeLayoutVisibility();
   if (PRACTICE_LAYOUT === "scroll") {
     paintScrollFeed(qs, visible);
@@ -754,12 +1028,12 @@ function paintSplitQuestionList(qs, visible){
     d.className = "q-item" + (i === QIDX ? " active" : "");
     const isGem = String(q.source || "").startsWith("gemini");
     const isHots = isHotsQuestion(q);
-    d.innerHTML = `<div class="q-meta">
+    d.innerHTML = `<div class="q-item-head"><div class="q-meta">
         <span class="q-id">${esc(q.id)}</span>
         <span class="q-type ${esc(q.type)}">${esc(TYPE_LABEL[q.type] || q.type)}</span>
         ${isHots ? `<span class="q-hots">HOTS</span>` : ""}
         ${isGem ? `<span class="q-source">Batch ${q.batch || ""}</span>` : ""}
-      </div>
+      </div>${questionAdminBarHtml(q)}</div>
       <div class="q-preview">${splitRenderTex(cleanQuestionText(q.question))}</div>`;
     d.onclick = () => { QIDX = i; paintSplitQuestionList(qs, visible); showGlass(q); };
     list.appendChild(d);
@@ -788,8 +1062,11 @@ function paintScrollFeed(qs, visible){
     const label = safeStr(q.localLabel) || `Q${n + 1}`;
     return `<article class="scroll-card" id="scroll-${esc(q.id)}">
       <header class="scroll-card-head">
-        <span class="scroll-card-num">${esc(label)}</span>
-        ${questionHeadBadges(q)}
+        <div class="scroll-card-head-main">
+          <span class="scroll-card-num">${esc(label)}</span>
+          ${questionHeadBadges(q)}
+        </div>
+        ${questionAdminBarHtml(q)}
       </header>
       <section class="scroll-problem">
         <h3 class="pane-label">Problem</h3>
@@ -812,7 +1089,10 @@ function showGlass(q){
   const host = $("#glass-host");
   host.innerHTML = `
     <div class="glass-panel">
-      <div class="glass-panel-head">${questionHeadBadges(q)}</div>
+      <div class="glass-panel-head">
+        <div class="glass-panel-head-main">${questionHeadBadges(q)}</div>
+        ${questionAdminBarHtml(q)}
+      </div>
       <div class="glass-panel-body">
         <div class="glass-split">
           <div class="glass-problem">
@@ -933,6 +1213,8 @@ $('#sidebar-toggle')?.addEventListener('click', () => {
     const savedLayout = localStorage.getItem('math8-practice-layout');
     if (savedLayout === 'scroll' || savedLayout === 'split') PRACTICE_LAYOUT = savedLayout;
     applyPracticeLayoutVisibility();
+    updateRestoreButton();
+    wireQuestionAdmin();
     MANIFEST = await loadJson("manifest.json?v=5");
     paintChapters();
     if(MANIFEST.chapters.length) selectChapter(MANIFEST.chapters[0]);

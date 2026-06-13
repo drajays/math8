@@ -469,7 +469,7 @@ async function loadBatchQuestions(chNum){
   for (let b = 1; b <= BATCH_COUNT; b++) {
     const tag = String(b).padStart(2, "0");
     try {
-      const data = await loadJson(`data/batches/batch_${tag}.json?v=1`);
+      const data = await loadJson(`data/batches/batch_${tag}.json?v=2`);
       const qs = data.questions || data;
       if (Array.isArray(qs)) {
         qs.forEach(q => { if (Number(q.chapter) === chNum) out.push(q); });

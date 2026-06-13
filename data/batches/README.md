@@ -7,7 +7,7 @@ Upload **10 batches × 50 questions** here. Existing textbook questions are **ne
 | File | Global Q# | Chapters |
 |------|-----------|----------|
 | `batch_01.json` | 1–50 | Ch 1–3 |
-| `batch_02.json` | 51–100 | (TBD) |
+| `batch_02.json` | 51–100 | Ch 3 (8), Ch 4 (15), Ch 5 (15), Ch 6 (12) |
 | … | … | … |
 | `batch_10.json` | 451–500 | (TBD) |
 

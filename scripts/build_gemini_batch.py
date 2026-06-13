@@ -12,6 +12,9 @@ NOTE_BY_CH = {
     1: "CH01-sec-rational-numbers",
     2: "CH02-sec-laws-of-exponents",
     3: "CH03-sec-square-numbers-or-perfect-squares",
+    4: "CH04-sec-cube-numbers-or-perfect-cubes",
+    5: "CH05-sec-numbers-in-general-form",
+    6: "CH06-sec-union-of-sets",
 }
 
 TOPIC_BY_CH = {n: f"math-ch{n}" for n in range(1, 21)}
@@ -245,7 +248,163 @@ def batch_01():
     return qs
 
 
-BUILDERS = {1: batch_01}
+def batch_02():
+    B = 2
+    qs = []
+
+    ch3 = [
+        (51, "Evaluate: $\\sqrt{0.04}+\\sqrt{0.09}+\\sqrt{0.16}$.", "$0.9$",
+         [step("Fractions", "$0.04=\\dfrac{4}{100}$, $0.09=\\dfrac{9}{100}$, $0.16=\\dfrac{16}{100}$.", "Convert decimals"),
+          step("Roots", "$\\sqrt{\\dfrac{4}{100}}=0.2$, $\\sqrt{\\dfrac{9}{100}}=0.3$, $\\sqrt{\\dfrac{16}{100}}=0.4$.", "Take square roots"),
+          step("Add", "$0.2+0.3+0.4=0.9$.", "$0.9$")]),
+        (52, "Find $\\sqrt{\\dfrac{625}{1296}}\\times\\sqrt{\\dfrac{1296}{625}}$.", "$1$",
+         [step("Combine", "$\\sqrt{\\dfrac{625}{1296}\\times\\dfrac{1296}{625}}$.", "One radical"),
+          step("Cancel", "Fractions are reciprocals → product is $1$.", "$\\sqrt{1}=1$")]),
+        (53, "Area of a square field is $5184\\,\\text{m}^2$. Find the side.", "$72\\,\\text{m}$",
+         [step("Formula", "Side$^2$ = Area.", "$\\text{Side}=\\sqrt{5184}$"),
+          step("Factor", "$5184=2^6\\times 3^4$.", "Pair primes"),
+          step("Root", "$(2^3)(3^2)=72$.", "$72\\,\\text{m}$")]),
+        (54, "Two consecutive odd numbers have squares summing to $514$. Find them.", "$15$ and $17$",
+         [step("Let", "Numbers $x$ and $x+2$.", "$x^2+(x+2)^2=514$"),
+          step("Test", "$15^2=225$, $17^2=289$.", "$225+289=514$")]),
+        (55, "Find $\\sqrt{0.00059049}$.", "$0.0243$",
+         [step("Fraction", "$\\dfrac{59049}{10^8}$.", "$\\sqrt{10^8}=10^4$"),
+          step("Root top", "$\\sqrt{59049}=243$.", "$\\dfrac{243}{10000}=0.0243$")]),
+        (56, "Using $(a-b)^2=a^2-2ab+b^2$, find $48^2$.", "$2304$",
+         [step("Split", "$48=50-2$, so $a=50$, $b=2$.", "$(50-2)^2$"),
+          step("Expand", "$2500-200+4$.", "$2304$")]),
+        (57, "Smallest number to multiply by $9408$ to get a perfect square.", "$3$",
+         [step("Factor", "$9408=2^6\\times 3\\times 7^2$.", "Unpaired factor: $3$"),
+          step("Answer", "Multiply by $3$.", "$3$")]),
+        (58, "Find $\\sqrt{1225}$ and verify by long division.", "$35$",
+         [step("Factor", "$1225=5^2\\times 7^2$.", "$5\\times 7=35$"),
+          step("Long div.", "Groups $\\overline{12}|\\overline{25}$ → $35$.", "$35$")]),
+    ]
+    for gn, qu, ans, st in ch3:
+        qs.append(mk_q(B, gn, 3, qu, ans, st, local_label=f"Ch3-Q{gn-40}"))
+
+    ch4 = [
+        (59, "Find $12^3$ using $(a+b)^3=a^3+3a^2b+3ab^2+b^3$.", "$1728$",
+         [step("Split", "$12=10+2$.", "Plug into identity"),
+          step("Calculate", "$1000+600+120+8$.", "$1728$")]),
+        (60, "Find $\\sqrt[3]{17576}$ by prime factorisation.", "$26$",
+         [step("Factor", "$17576=2^3\\times 13^3$.", "Groups of three"),
+          step("Root", "$2\\times 13=26$.", "$26$")]),
+        (61, "Smallest number to divide $8788$ so quotient is a perfect cube.", "$4$",
+         [step("Factor", "$8788=2^2\\times 13^3$.", "Unpaired $2$s"),
+          step("Divide", "Remove $2^2$.", "$4$")]),
+        (62, "Find $\\sqrt[3]{0.000216}$.", "$0.06$",
+         [step("Fraction", "$\\dfrac{216}{10^6}$.", "$\\sqrt[3]{216}=6$"),
+          step("Result", "$\\dfrac{6}{100}=0.06$.", "$0.06$")]),
+        (63, "Cube of a number is $17576$. Find the number.", "$26$",
+         [step("Same as Q60", "$\\sqrt[3]{17576}$.", "$26$")]),
+        (64, "Find $\\sqrt[3]{13824}$ by estimation.", "$24$",
+         [step("Ones", "Ends in $4$ → ones digit $4$.", "$4^3$ ends in $4$"),
+          step("Tens", "Group $13|824$ → tens digit $2$.", "$24$")]),
+        (65, "Smallest cube divisible by $6$, $9$, and $15$.", "$27000$",
+         [step("LCM", "LCM$(6,9,15)=90$.", "Factor $90=2\\times 3^2\\times 5$"),
+          step("Cube", "Need triplets: multiply by $2^2\\times 3\\times 5^2$.", "$27000$")]),
+        (66, "Evaluate $\\sqrt[3]{0.000729}$.", "$0.09$",
+         [step("Fraction", "$\\dfrac{729}{10^6}$.", "$9/100$")]),
+        (67, "Two consecutive numbers whose cubes sum to $1729$.", "$9$ and $10$",
+         [step("Cubes", "$9^3=729$, $10^3=1000$.", "$729+1000=1729$")]),
+        (68, "Find $\\sqrt[3]{32768}$.", "$32$",
+         [step("Estimate", "Ones digit $2$; tens from group $32$.", "$32$")]),
+        (69, "Which are perfect cubes? $216$, $1000$, $1728$, $1331$.", "All four",
+         [step("Check", "$6^3=216$, $10^3=1000$, $12^3=1728$, $11^3=1331$.", "All perfect cubes")]),
+        (70, "Smallest multiplier for $8788$ to become a perfect cube.", "$2$",
+         [step("Factor", "$8788=2^2\\times 13^3$.", "Need one more $2$")]),
+        (71, "Find $\\sqrt[3]{0.000000008}$.", "$0.002$",
+         [step("Fraction", "$\\dfrac{8}{10^9}$.", "$2/1000$")]),
+        (72, "Volume of cube is $17576\\,\\text{cm}^3$. Find side.", "$26\\,\\text{cm}$",
+         [step("Side", "$\\sqrt[3]{17576}=26$.", "$26\\,\\text{cm}$")]),
+        (73, "Find $\\sqrt[3]{0.001331}$.", "$1.1$",
+         [step("Fraction", "$\\dfrac{1331}{1000}$.", "$11/10$")]),
+    ]
+    for gn, qu, ans, st in ch4:
+        qs.append(mk_q(B, gn, 4, qu, ans, st, local_label=f"Ch4-Q{gn-58}"))
+
+    ch5 = [
+        (74, "Find digit $a$ if $67a3$ is divisible by $9$.", "$a=2$",
+         [step("Sum", "$6+7+a+3=16+a$.", "Must be multiple of $9$"),
+          step("Solve", "$16+a=18$.", "$a=2$")]),
+        (75, "4-digit number starting with $5$, divisible by $11$, odd−even digit sums equal.", "e.g. $5005$",
+         [step("Form", "$5xyz$.", "$(5+y)-(x+z)=0$"),
+          step("Example", "$x=0,z=5,y=0$ → $5005$.", "$5005$")]),
+        (76, "Missing digit in $5\\_3$ for divisibility by $11$.", "$8$",
+         [step("Odds", "$5+3=8$.", "Evens: $x$"),
+          step("Solve", "$8-x=0$.", "$x=8$")]),
+        (77, "If $3A+4B=5C$ (digits), find one solution.", "$A=2,B=1,C=2$",
+         [step("Test", "$3(2)+4(1)=10$.", "$5C=10$, $C=2$")]),
+        (78, "Smallest 4-digit number divisible by $2,3,4,5,6$.", "$1020$",
+         [step("LCM", "LCM$=60$.", "$60\\times 17=1020$")]),
+        (79, "Smallest 3-digit number: remainder $3$ mod $7$, remainder $2$ mod $5$.", "$122$",
+         [step("List", "$7k+3$: $17,52,87,122,\\ldots$", "Check mod $5$"),
+          step("Answer", "$122$.", "$122$")]),
+        (80, "Test divisibility of $1729$ by $7$, $11$, $13$.", "Div by $7$ and $13$; not by $11$",
+         [step("$7$", "$1729\\div 7=247$.", "Yes"),
+          step("$11$", "$16-3=13$.", "No"),
+          step("$13$", "$1729\\div 13=133$.", "Yes")]),
+        (81, "Find $x$ if $2x3$ is divisible by $9$.", "$x=4$",
+         [step("Sum", "$5+x=9$.", "$x=4$")]),
+        (82, "3-digit number divisible by $11$ with digit sum $12$. Find all.", "$165,264,363,462,561,660$",
+         [step("Middle", "$y=6$.", "$x+z=6$"),
+          step("List", "Pairs summing to $6$.", "Six numbers")]),
+        (83, "Remainder when $987654321$ is divided by $9$.", "$0$",
+         [step("Sum digits", "$45$.", "Divisible by $9$")]),
+        (84, "If divisible by $3$ and $5$, must be divisible by ___?", "$15$",
+         [step("Concept", "Product of coprime divisors.", "$15$")]),
+        (85, "Smallest number leaving remainder $1$ when divided by $2,3,4,5,6$.", "$61$",
+         [step("LCM", "LCM$=60$.", "$60+1=61$")]),
+        (86, "Is $1729$ a Hardy–Ramanujan number (two cube sums)?", "Yes",
+         [step("Way 1", "$12^3+1^3=1729$.", ""),
+          step("Way 2", "$10^3+9^3=1729$.", "Yes")]),
+        (87, "Missing digit in $4\\_28$ for divisibility by $11$.", "$9$",
+         [step("Diff", "$(x+8)-6=x+2$.", "$x+2=11$, $x=9$")]),
+        (88, "2-digit number equals $4\\times$ sum of its digits. Find all.", "$12,24,36,48$",
+         [step("Equation", "$10x+y=4(x+y)$.", "$2x=y$"),
+          step("List", "$x=1\\ldots 4$.", "Four answers")]),
+    ]
+    for gn, qu, ans, st in ch5:
+        qs.append(mk_q(B, gn, 5, qu, ans, st, local_label=f"Ch5-Q{gn-73}"))
+
+    ch6 = [
+        (89, "$A=\\{1,2,3,4,5\\}$, $B=\\{3,4,5,6,7\\}$. Find $A\\cup B$ and $A\\cap B$.", "$A\\cup B=\\{1,2,3,4,5,6,7\\}$, $A\\cap B=\\{3,4,5\\}$",
+         [step("Union", "All elements without repeat.", "$\\{1,2,3,4,5,6,7\\}$"),
+          step("Intersection", "Common elements.", "$\\{3,4,5\\}$")]),
+        (90, "Set of all even prime numbers.", "$\\{2\\}$",
+         [step("Primes", "Only $2$ is even and prime.", "$\\{2\\}$")]),
+        (91, "$n(A)=15$, $n(B)=12$, $n(A\\cap B)=7$. Find $n(A\\cup B)$.", "$20$",
+         [step("Formula", "$n(A\\cup B)=n(A)+n(B)-n(A\\cap B)$.", "$15+12-7=20$")]),
+        (92, "Roster form: (i) natural numbers $<10$ (ii) primes between $10$ and $20$.", "(i) $\\{1,\\ldots,9\\}$ (ii) $\\{11,13,17,19\\}$",
+         [step("(i)", "Natural numbers from $1$.", "$\\{1,2,3,4,5,6,7,8,9\\}$"),
+          step("(ii)", "Primes in range.", "$\\{11,13,17,19\\}$")]),
+        (93, "$A=\\{x:x\\text{ multiple of }3\\}$, $B=\\{x:x\\text{ multiple of }4\\}$. Find $A\\cap B$.", "Multiples of $12$",
+         [step("Overlap", "LCM of $3$ and $4$.", "$\\{12,24,36,\\ldots\\}$")]),
+        (94, "Venn diagram for $A\\cup B$ when $A$, $B$ are disjoint.", "Two separate circles, both shaded",
+         [step("Disjoint", "No common elements.", "Shade both circles for union")]),
+        (95, "$U=\\{1,\\ldots,10\\}$, $A=\\{1,3,5,7,9\\}$. Find $A'$.", "$\\{2,4,6,8,10\\}$",
+         [step("Complement", "Evens in universe.", "$\\{2,4,6,8,10\\}$")]),
+        (96, "Cardinal number of distinct letters in MATHEMATICS.", "$8$",
+         [step("Unique", "$\\{M,A,T,H,E,I,C,S\\}$.", "$8$")]),
+        (97, "$n(A\\cup B)=35$, $n(A)=20$, $n(B)=18$. Find $n(A\\cap B)$.", "$3$",
+         [step("Formula", "$35=20+18-x$.", "$x=3$")]),
+        (98, "Set-builder form of $\\{2,4,6,8,10\\}$.", "$\\{x\\mid x\\text{ even natural}, x\\le 10\\}$",
+         [step("Rule", "Even naturals up to $10$.", "Set-builder notation")]),
+        (99, "$A=\\{2,4,6,8\\}$, $B=\\{1,2,3,4,5\\}$. Find $A-B$ and $B-A$.", "$A-B=\\{6,8\\}$, $B-A=\\{1,3,5\\}$",
+         [step("$A-B$", "Remove overlap from $A$.", "$\\{6,8\\}$"),
+          step("$B-A$", "Remove overlap from $B$.", "$\\{1,3,5\\}$")]),
+        (100, "Prove $A\\cup A=A$ and $A\\cap A=A$.", "Both identities hold",
+         [step("Union", "Combining $A$ with itself gives $A$.", "$A\\cup A=A$"),
+          step("Intersection", "Overlap of $A$ with itself is $A$.", "$A\\cap A=A$")]),
+    ]
+    for gn, qu, ans, st in ch6:
+        qs.append(mk_q(B, gn, 6, qu, ans, st, local_label=f"Ch6-Q{gn-88}"))
+
+    return qs
+
+
+BUILDERS = {1: batch_01, 2: batch_02}
 
 
 def build(batch_num: int):

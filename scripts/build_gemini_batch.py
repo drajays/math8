@@ -21,6 +21,9 @@ NOTE_BY_CH = {
     10: "CH10-sec-fundamental-concepts",
     11: "CH11-sec-factors-of-algebraic-expressions",
     12: "CH12-sec-equations",
+    13: "CH13-sec-quadrilateral",
+    14: "CH14-sec-construction-of-quadrilaterals",
+    18: "CH18-sec-drawing-2-d-representation-of-3-d-objects",
 }
 
 TOPIC_BY_CH = {n: f"math-ch{n}" for n in range(1, 21)}
@@ -941,7 +944,184 @@ def batch_05():
     return qs
 
 
-BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03, 4: batch_04, 5: batch_05}
+def batch_06():
+    B = 6
+    qs = []
+    N13P = "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n"
+    N13Q = "CH13-sec-quadrilateral"
+    N14C = "CH14-sec-steps-of-construction"
+    N18D = "CH18-sec-drawing-2-d-representation-of-3-d-objects"
+    N18P = "CH18-sec-polyhedron"
+
+    ch13_poly = [
+        (251, "Sum of interior angles of a hexagon.", "$720^\\circ$",
+         [step("Formula", "$(n-2)\\times 180$, $n=6$.", "$(6-2)\\times 180$"),
+          step("Answer", "$4\\times 180$.", "$720^\\circ$")]),
+        (252, "Each interior angle of regular polygon is $135^\\circ$. Number of sides?", "$8$",
+         [step("Exterior", "$180-135=45^\\circ$.", "Exterior trick"),
+          step("Sides", "$360/45$.", "$8$ (octagon)")]),
+        (253, "Each exterior angle of a regular octagon.", "$45^\\circ$",
+         [step("Rule", "Exterior sum $360^\\circ$.", "$360/8$"),
+          step("Answer", "$45^\\circ$.", "$45^\\circ$")]),
+        (254, "Interior angle sum $1260^\\circ$. Number of sides?", "$9$",
+         [step("Equation", "$(n-2)\\times 180=1260$.", "$n-2=7$"),
+          step("Answer", "$n=9$.", "Nonagon")]),
+        (255, "Quadrilateral angles in ratio $2:3:5:6$. Find all angles.", "$45^\\circ,67.5^\\circ,112.5^\\circ,135^\\circ$",
+         [step("Sum", "Quadrilateral sum $360^\\circ$.", "$16x=360$"),
+          step("Angles", "$x=22.5$.", "Multiply each ratio")]),
+        (256, "Number of diagonals in a heptagon.", "$14$",
+         [step("Formula", "$\\dfrac{n(n-3)}{2}$, $n=7$.", "$7\\times 4/2$"),
+          step("Answer", "$14$.", "$14$ diagonals")]),
+        (257, "Each exterior angle $24^\\circ$. Number of sides?", "$15$",
+         [step("Divide", "$360/24$.", "$15$ sides")]),
+        (258, "Hexagon interior angles in ratio $2:3:4:5:6:7$. Find all.", "$53.33^\\circ,80^\\circ,106.67^\\circ,133.33^\\circ,160^\\circ,186.67^\\circ$",
+         [step("Sum", "Hexagon sum $720^\\circ$.", "$27x=720$"),
+          step("Scale", "$x=80/3$.", "Multiply each ratio")]),
+        (259, "Each interior angle of regular $15$-gon.", "$156^\\circ$",
+         [step("Exterior", "$360/15=24^\\circ$.", "$180-24$"),
+          step("Answer", "$156^\\circ$.", "$156^\\circ$")]),
+        (260, "Polygon has $20$ diagonals. Number of sides?", "$8$",
+         [step("Equation", "$\\dfrac{n(n-3)}{2}=20$.", "$n^2-3n-40=0$"),
+          step("Factor", "$(n-8)(n+5)=0$.", "$n=8$")]),
+        (261, "Sum of all exterior angles of any polygon.", "$360^\\circ$",
+         [step("Rule", "Universal geometry fact.", "Always $360^\\circ$")]),
+        (262, "Pentagon: three equal angles, other two $100^\\circ$ and $120^\\circ$.", "$106\\dfrac{2}{3}^\\circ$ each",
+         [step("Sum", "Pentagon sum $540^\\circ$.", "$3x+220=540$"),
+          step("Solve", "$3x=320$.", "$106.67^\\circ$ each")]),
+        (263, "Regular polygon: each interior angle $144^\\circ$. Sides?", "$10$",
+         [step("Exterior", "$36^\\circ$.", "$360/36$"),
+          step("Answer", "Decagon.", "$10$ sides")]),
+        (264, "Exterior angles ratio $1:2:3:4:5$ (regular assumed). Sides?", "$5$",
+         [step("Count", "Five ratio parts → five angles.", "Pentagon"),
+          step("Note", "True regular polygon needs equal angles.", "$5$ sides")]),
+        (265, "Each interior angle of regular nonagon.", "$140^\\circ$",
+         [step("Exterior", "$360/9=40^\\circ$.", "$180-40$"),
+          step("Answer", "$140^\\circ$.", "$140^\\circ$")]),
+    ]
+    for gn, qu, ans, st in ch13_poly:
+        qs.append(mk_q(B, gn, 13, qu, ans, st, local_label=f"Ch15-Q{gn-250}", linked_note_id=N13P))
+
+    ch13_quad = [
+        (266, "Parallelogram ABCD: $\\angle A=65^\\circ$. Find all angles.", "$65^\\circ,115^\\circ,65^\\circ,115^\\circ$",
+         [step("Opposite", "$\\angle C=65^\\circ$.", "Adjacent sum $180^\\circ$"),
+          step("Others", "$\\angle B=\\angle D=115^\\circ$.", "All four angles")]),
+        (267, "Rhombus diagonals $16$ cm and $12$ cm. Find side.", "$10$ cm",
+         [step("Half diags", "Right triangle $8$ and $6$.", "Pythagoras"),
+          step("Side", "$8^2+6^2=100$.", "$10$ cm")]),
+        (268, "Rectangle: length $3$ cm more than breadth; perimeter $34$ cm.", "Breadth $7$ cm, length $10$ cm",
+         [step("Let", "Breadth $x$, length $x+3$.", "$2(2x+3)=34$"),
+          step("Solve", "$x=7$.", "Breadth $7$, length $10$")]),
+        (269, "Square diagonals $10\\sqrt{2}$ cm. Find side.", "$10$ cm",
+         [step("Pythagoras", "$2s^2=(10\\sqrt{2})^2$.", "$s^2=100$"),
+          step("Side", "$s=10$ cm.", "$10$ cm")]),
+        (270, "Parallelogram ABCD: $AB=2x+3$, $BC=x+7$. Find $x$ (rhombus case).", "$x=4$",
+         [step("Rhombus", "Adjacent sides equal.", "$2x+3=x+7$"),
+          step("Solve", "$x=4$.", "$x=4$")]),
+        (271, "Prove rectangle diagonals are equal and bisect each other.", "Proved via SAS congruence",
+         [step("Triangles", "$\\triangle ADC\\cong\\triangle BCD$.", "SAS"),
+          step("Conclude", "$AC=BD$; parallelogram diagonals bisect.", "Both properties")]),
+        (272, "Rhombus: one angle $60^\\circ$. Find all angles.", "$60^\\circ,120^\\circ,60^\\circ,120^\\circ$",
+         [step("Parallelogram rules", "Opposite equal.", "Adjacent supplementary")]),
+        (273, "Parallelogram diagonals $8$ cm and $6$ cm. Find area (rhombus case).", "$24$ cm²",
+         [step("Rhombus area", "$\\dfrac{1}{2}d_1 d_2$.", "$\\dfrac{1}{2}\\times 8\\times 6$"),
+          step("Answer", "$24$ cm².", "$24$ cm²")]),
+        (274, "Trapezium ABCD: $AB\\parallel DC$, $AB=8$, $DC=12$, height $5$. Area?", "$50$ cm²",
+         [step("Formula", "$\\dfrac{1}{2}(8+12)\\times 5$.", "Parallel sides"),
+          step("Answer", "$50$ cm².", "$50$ cm²")]),
+        (275, "Prove diagonals of a rectangle are equal.", "Same proof as Q271",
+         [step("SAS", "Congruent triangles.", "$AC=BD$")]),
+        (276, "Kite: unequal sides $5$ cm and $7$ cm. Perimeter?", "$24$ cm",
+         [step("Sides", "$5,5,7,7$.", "Two pairs adjacent"),
+          step("Perimeter", "$24$ cm.", "$24$ cm")]),
+        (277, "Prove rhombus diagonals bisect at right angles.", "Proved via SSS congruence",
+         [step("Four triangles", "All congruent.", "Central angles equal"),
+          step("Right angle", "$360/4=90^\\circ$.", "$90^\\circ$")]),
+        (278, "Parallelogram: diagonals meet at $O$, $AO=3$ cm. Find $AC$.", "$6$ cm",
+         [step("Bisect", "Diagonals halve each other.", "$AC=2\\times AO$"),
+          step("Answer", "$6$ cm.", "$6$ cm")]),
+        (279, "Rhombus diagonals $16$ cm and $12$ cm. Area?", "$96$ cm²",
+         [step("Formula", "$\\dfrac{1}{2}\\times 16\\times 12$.", "$8\\times 12$"),
+          step("Answer", "$96$ cm².", "$96$ cm²")]),
+        (280, "Square: each angle $90^\\circ$. Prove all sides equal.", "Definition / congruent triangles",
+         [step("Logic", "Square defined with equal sides.", "Or from equal diagonals at $90^\\circ$")]),
+    ]
+    for gn, qu, ans, st in ch13_quad:
+        qs.append(mk_q(B, gn, 13, qu, ans, st, local_label=f"Ch16-Q{gn-265}", linked_note_id=N13Q))
+
+    ch14 = [
+        (281, "Construct quadrilateral ABCD: $AB=4$, $BC=3.5$, $CD=5$, $DA=4.5$, $AC=6$ cm.", "See steps",
+         [step("Diagonal", "Draw $AC=6$ cm.", "Anchor line"),
+          step("Arcs", "Find $B$ above, $D$ below.", "Connect sides")], N14C),
+        (282, "Construct parallelogram: $AB=5$, $BC=4$, $\\angle ABC=60^\\circ$.", "See steps",
+         [step("Base", "$AB=5$ cm, $60^\\circ$ at $B$.", "Mark $C$ at $4$ cm"),
+          step("Complete", "Arcs for $D$.", "Join sides")], N14C),
+        (283, "Construct rhombus with diagonals $6$ cm and $8$ cm.", "See steps",
+         [step("Diagonal", "Draw $8$ cm horizontal.", "Perpendicular bisector"),
+          step("Second", "Mark $3$ cm above/below centre.", "Connect vertices")], N14C),
+        (284, "Construct rectangle: sides $5$ cm and $3.5$ cm.", "See steps",
+         [step("Base", "$5$ cm with $90^\\circ$ at ends.", "Mark height $3.5$ cm"),
+          step("Top", "Connect $C$ and $D$.", "Rectangle complete")], N14C),
+        (285, "Construct square of side $4.5$ cm.", "See steps",
+         [step("Same as rectangle", "Base $4.5$ cm.", "$90^\\circ$ verticals"),
+          step("Top", "Cut at $4.5$ cm.", "Square complete")], N14C),
+        (286, "Construct quadrilateral: $AB=4$, $BC=3$, $CD=5$, $DA=6$, $BD=7$ cm.", "See steps",
+         [step("Diagonal", "Draw $BD=7$ cm.", "Arcs for $A$ and $C$"),
+          step("Connect", "Join all vertices.", "Quadrilateral done")], N14C),
+        (287, "Construct kite: sides $5$ cm and $7$ cm, diagonal $8$ cm.", "See steps",
+         [step("Diagonal", "Draw $8$ cm line.", "Arcs $5$ and $7$ from ends"),
+          step("Kite", "Connect intersection points.", "Kite shape")], N14C),
+        (288, "Construct parallelogram: sides $4$, $3$ cm, diagonal $5$ cm.", "See steps",
+         [step("Base", "$AB=4$ cm.", "Arcs $5$ from $A$, $3$ from $B$"),
+          step("Complete", "Find $D$, join.", "Parallelogram")], N14C),
+        (289, "Construct rhombus: side $5$ cm, diagonal $6$ cm.", "See steps",
+         [step("Diagonal", "$AC=6$ cm.", "Arcs radius $5$ from $A,C$"),
+          step("Connect", "Mark $B,D$.", "Rhombus")], N14C),
+        (290, "Construct rectangle: perimeter $24$ cm, length $7$ cm.", "See steps",
+         [step("Breadth", "$B=5$ cm.", "From perimeter"),
+          step("Draw", "$7\\times 5$ rectangle.", "Construct")], N14C),
+        (291, "Construct square with diagonal $6$ cm.", "See steps",
+         [step("Diagonal", "$AC=6$ cm.", "Perpendicular bisector"),
+          step("Vertices", "Mark $3$ cm each way.", "Square")], N14C),
+        (292, "Construct quadrilateral: sides $3,4,5,6$ cm, diagonal $7$ cm.", "See steps",
+         [step("Diagonal", "$AC=7$ cm.", "Arcs for $B$ and $D$"),
+          step("Connect", "Sides in order.", "Quadrilateral")], N14C),
+    ]
+    for gn, qu, ans, st, nid in ch14:
+        qs.append(mk_q(B, gn, 14, qu, ans, st, local_label=f"Ch17-Q{gn-280}", linked_note_id=nid))
+
+    ch18 = [
+        (293, "Draw net of cuboid $4\\times 3\\times 2$ cm.", "Six connected rectangles",
+         [step("Layout", "Central $4\\times 3$.", "Attach $4\\times 2$ and $3\\times 2$ faces"),
+          step("Lid", "One more $4\\times 3$.", "Unfolded box")], N18D),
+        (294, "Isometric view of cube side $3$ cm.", "See steps",
+         [step("Dots", "Vertical $3$ dots.", "Diagonals $3$ each way"),
+          step("Close", "Build top face.", "3D block")], N18D),
+        (295, "Front, side, top views of cylinder on base.", "Rectangle, rectangle, circle",
+         [step("Front/Side", "Looks like rectangle.", "Side view same"),
+          step("Top", "Circle.", "Three views")], N18D),
+        (296, "Edges, vertices, faces of triangular prism?", "$9$ edges, $6$ vertices, $5$ faces",
+         [step("Count", "2 triangles + 3 rectangles.", "Euler check"),
+          step("Verify", "$F+V=E+2$.", "$5+6=9+2$")], N18P),
+        (297, "Net of square pyramid: base $4$ cm, slant height $5$ cm.", "Square + four triangles",
+         [step("Base", "$4\\times 4$ square.", "Triangles on each side"),
+          step("Height", "Triangle height $5$ cm.", "Star shape")], N18D),
+        (298, "Verify Euler's formula for tetrahedron.", "Verified: $4+4=6+2$",
+         [step("Count", "$F=4,V=4,E=6$.", "Plug in formula"),
+          step("Check", "$8=8$.", "Verified")], N18P),
+        (299, "2-D representation of cuboid with hidden edges dotted.", "See steps",
+         [step("Draw", "Two offset rectangles.", "Connect corners"),
+          step("Hidden", "Dotted back edges.", "Solid sketch")], N18D),
+        (300, "How many edges does a pentagonal prism have?", "$15$",
+         [step("Count", "5 bottom + 5 top + 5 vertical.", "$5+5+5$"),
+          step("Answer", "$15$ edges.", "$15$")], N18P),
+    ]
+    for gn, qu, ans, st, nid in ch18:
+        qs.append(mk_q(B, gn, 18, qu, ans, st, local_label=f"Ch18-Q{gn-292}", linked_note_id=nid))
+
+    return qs
+
+
+BUILDERS = {1: batch_01, 2: batch_02, 3: batch_03, 4: batch_04, 5: batch_05, 6: batch_06}
 
 
 def build(batch_num: int):

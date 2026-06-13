@@ -1,0 +1,1386 @@
+{
+  "batch": 6,
+  "title": "Gemini Open Glassbox · Batch 6",
+  "count": 50,
+  "globalRange": [
+    251,
+    300
+  ],
+  "questions": [
+    {
+      "id": "Q-GEM-B06-251",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 1,
+      "globalNum": 251,
+      "localLabel": "Ch15-Q1",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Sum of interior angles of a hexagon.",
+      "answer": "$720^\\circ$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$(n-2)\\times 180$, $n=6$.",
+          "math": "$(6-2)\\times 180$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$4\\times 180$.",
+          "math": "$720^\\circ$"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-252",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 2,
+      "globalNum": 252,
+      "localLabel": "Ch15-Q2",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Each interior angle of regular polygon is $135^\\circ$. Number of sides?",
+      "answer": "$8$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Exterior",
+          "why": "$180-135=45^\\circ$.",
+          "math": "Exterior trick"
+        },
+        {
+          "rule": "Sides",
+          "why": "$360/45$.",
+          "math": "$8$ (octagon)"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-253",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 3,
+      "globalNum": 253,
+      "localLabel": "Ch15-Q3",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Each exterior angle of a regular octagon.",
+      "answer": "$45^\\circ$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rule",
+          "why": "Exterior sum $360^\\circ$.",
+          "math": "$360/8$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$45^\\circ$.",
+          "math": "$45^\\circ$"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-254",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 4,
+      "globalNum": 254,
+      "localLabel": "Ch15-Q4",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Interior angle sum $1260^\\circ$. Number of sides?",
+      "answer": "$9$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$(n-2)\\times 180=1260$.",
+          "math": "$n-2=7$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$n=9$.",
+          "math": "Nonagon"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-255",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 5,
+      "globalNum": 255,
+      "localLabel": "Ch15-Q5",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Quadrilateral angles in ratio $2:3:5:6$. Find all angles.",
+      "answer": "$45^\\circ,67.5^\\circ,112.5^\\circ,135^\\circ$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sum",
+          "why": "Quadrilateral sum $360^\\circ$.",
+          "math": "$16x=360$"
+        },
+        {
+          "rule": "Angles",
+          "why": "$x=22.5$.",
+          "math": "Multiply each ratio"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-256",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 6,
+      "globalNum": 256,
+      "localLabel": "Ch15-Q6",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Number of diagonals in a heptagon.",
+      "answer": "$14$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$\\dfrac{n(n-3)}{2}$, $n=7$.",
+          "math": "$7\\times 4/2$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$14$.",
+          "math": "$14$ diagonals"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-257",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 7,
+      "globalNum": 257,
+      "localLabel": "Ch15-Q7",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Each exterior angle $24^\\circ$. Number of sides?",
+      "answer": "$15$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Divide",
+          "why": "$360/24$.",
+          "math": "$15$ sides"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-258",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 8,
+      "globalNum": 258,
+      "localLabel": "Ch15-Q8",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Hexagon interior angles in ratio $2:3:4:5:6:7$. Find all.",
+      "answer": "$53.33^\\circ,80^\\circ,106.67^\\circ,133.33^\\circ,160^\\circ,186.67^\\circ$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sum",
+          "why": "Hexagon sum $720^\\circ$.",
+          "math": "$27x=720$"
+        },
+        {
+          "rule": "Scale",
+          "why": "$x=80/3$.",
+          "math": "Multiply each ratio"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-259",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 9,
+      "globalNum": 259,
+      "localLabel": "Ch15-Q9",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Each interior angle of regular $15$-gon.",
+      "answer": "$156^\\circ$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Exterior",
+          "why": "$360/15=24^\\circ$.",
+          "math": "$180-24$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$156^\\circ$.",
+          "math": "$156^\\circ$"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-260",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 10,
+      "globalNum": 260,
+      "localLabel": "Ch15-Q10",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Polygon has $20$ diagonals. Number of sides?",
+      "answer": "$8$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Equation",
+          "why": "$\\dfrac{n(n-3)}{2}=20$.",
+          "math": "$n^2-3n-40=0$"
+        },
+        {
+          "rule": "Factor",
+          "why": "$(n-8)(n+5)=0$.",
+          "math": "$n=8$"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-261",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 11,
+      "globalNum": 261,
+      "localLabel": "Ch15-Q11",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Sum of all exterior angles of any polygon.",
+      "answer": "$360^\\circ$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rule",
+          "why": "Universal geometry fact.",
+          "math": "Always $360^\\circ$"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-262",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 12,
+      "globalNum": 262,
+      "localLabel": "Ch15-Q12",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Pentagon: three equal angles, other two $100^\\circ$ and $120^\\circ$.",
+      "answer": "$106\\dfrac{2}{3}^\\circ$ each",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sum",
+          "why": "Pentagon sum $540^\\circ$.",
+          "math": "$3x+220=540$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$3x=320$.",
+          "math": "$106.67^\\circ$ each"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-263",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 13,
+      "globalNum": 263,
+      "localLabel": "Ch15-Q13",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Regular polygon: each interior angle $144^\\circ$. Sides?",
+      "answer": "$10$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Exterior",
+          "why": "$36^\\circ$.",
+          "math": "$360/36$"
+        },
+        {
+          "rule": "Answer",
+          "why": "Decagon.",
+          "math": "$10$ sides"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-264",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 14,
+      "globalNum": 264,
+      "localLabel": "Ch15-Q14",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Exterior angles ratio $1:2:3:4:5$ (regular assumed). Sides?",
+      "answer": "$5$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Count",
+          "why": "Five ratio parts → five angles.",
+          "math": "Pentagon"
+        },
+        {
+          "rule": "Note",
+          "why": "True regular polygon needs equal angles.",
+          "math": "$5$ sides"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-265",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 15,
+      "globalNum": 265,
+      "localLabel": "Ch15-Q15",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Each interior angle of regular nonagon.",
+      "answer": "$140^\\circ$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Exterior",
+          "why": "$360/9=40^\\circ$.",
+          "math": "$180-40$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$140^\\circ$.",
+          "math": "$140^\\circ$"
+        }
+      ],
+      "linked_note_id": "CH13-sec-n-2-times3-2n-rightarrow-3n-6-2n",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-266",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 16,
+      "globalNum": 266,
+      "localLabel": "Ch16-Q1",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Parallelogram ABCD: $\\angle A=65^\\circ$. Find all angles.",
+      "answer": "$65^\\circ,115^\\circ,65^\\circ,115^\\circ$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Opposite",
+          "why": "$\\angle C=65^\\circ$.",
+          "math": "Adjacent sum $180^\\circ$"
+        },
+        {
+          "rule": "Others",
+          "why": "$\\angle B=\\angle D=115^\\circ$.",
+          "math": "All four angles"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-267",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 17,
+      "globalNum": 267,
+      "localLabel": "Ch16-Q2",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Rhombus diagonals $16$ cm and $12$ cm. Find side.",
+      "answer": "$10$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Half diags",
+          "why": "Right triangle $8$ and $6$.",
+          "math": "Pythagoras"
+        },
+        {
+          "rule": "Side",
+          "why": "$8^2+6^2=100$.",
+          "math": "$10$ cm"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-268",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 18,
+      "globalNum": 268,
+      "localLabel": "Ch16-Q3",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Rectangle: length $3$ cm more than breadth; perimeter $34$ cm.",
+      "answer": "Breadth $7$ cm, length $10$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let",
+          "why": "Breadth $x$, length $x+3$.",
+          "math": "$2(2x+3)=34$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=7$.",
+          "math": "Breadth $7$, length $10$"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-269",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 19,
+      "globalNum": 269,
+      "localLabel": "Ch16-Q4",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Square diagonals $10\\sqrt{2}$ cm. Find side.",
+      "answer": "$10$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Pythagoras",
+          "why": "$2s^2=(10\\sqrt{2})^2$.",
+          "math": "$s^2=100$"
+        },
+        {
+          "rule": "Side",
+          "why": "$s=10$ cm.",
+          "math": "$10$ cm"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-270",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 20,
+      "globalNum": 270,
+      "localLabel": "Ch16-Q5",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Parallelogram ABCD: $AB=2x+3$, $BC=x+7$. Find $x$ (rhombus case).",
+      "answer": "$x=4$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rhombus",
+          "why": "Adjacent sides equal.",
+          "math": "$2x+3=x+7$"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=4$.",
+          "math": "$x=4$"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-271",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 21,
+      "globalNum": 271,
+      "localLabel": "Ch16-Q6",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Prove rectangle diagonals are equal and bisect each other.",
+      "answer": "Proved via SAS congruence",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Triangles",
+          "why": "$\\triangle ADC\\cong\\triangle BCD$.",
+          "math": "SAS"
+        },
+        {
+          "rule": "Conclude",
+          "why": "$AC=BD$; parallelogram diagonals bisect.",
+          "math": "Both properties"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-272",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 22,
+      "globalNum": 272,
+      "localLabel": "Ch16-Q7",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Rhombus: one angle $60^\\circ$. Find all angles.",
+      "answer": "$60^\\circ,120^\\circ,60^\\circ,120^\\circ$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Parallelogram rules",
+          "why": "Opposite equal.",
+          "math": "Adjacent supplementary"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-273",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 23,
+      "globalNum": 273,
+      "localLabel": "Ch16-Q8",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Parallelogram diagonals $8$ cm and $6$ cm. Find area (rhombus case).",
+      "answer": "$24$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rhombus area",
+          "why": "$\\dfrac{1}{2}d_1 d_2$.",
+          "math": "$\\dfrac{1}{2}\\times 8\\times 6$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$24$ cm².",
+          "math": "$24$ cm²"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-274",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 24,
+      "globalNum": 274,
+      "localLabel": "Ch16-Q9",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Trapezium ABCD: $AB\\parallel DC$, $AB=8$, $DC=12$, height $5$. Area?",
+      "answer": "$50$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$\\dfrac{1}{2}(8+12)\\times 5$.",
+          "math": "Parallel sides"
+        },
+        {
+          "rule": "Answer",
+          "why": "$50$ cm².",
+          "math": "$50$ cm²"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-275",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 25,
+      "globalNum": 275,
+      "localLabel": "Ch16-Q10",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Prove diagonals of a rectangle are equal.",
+      "answer": "Same proof as Q271",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "SAS",
+          "why": "Congruent triangles.",
+          "math": "$AC=BD$"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-276",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 26,
+      "globalNum": 276,
+      "localLabel": "Ch16-Q11",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Kite: unequal sides $5$ cm and $7$ cm. Perimeter?",
+      "answer": "$24$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sides",
+          "why": "$5,5,7,7$.",
+          "math": "Two pairs adjacent"
+        },
+        {
+          "rule": "Perimeter",
+          "why": "$24$ cm.",
+          "math": "$24$ cm"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-277",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 27,
+      "globalNum": 277,
+      "localLabel": "Ch16-Q12",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Prove rhombus diagonals bisect at right angles.",
+      "answer": "Proved via SSS congruence",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Four triangles",
+          "why": "All congruent.",
+          "math": "Central angles equal"
+        },
+        {
+          "rule": "Right angle",
+          "why": "$360/4=90^\\circ$.",
+          "math": "$90^\\circ$"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-278",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 28,
+      "globalNum": 278,
+      "localLabel": "Ch16-Q13",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Parallelogram: diagonals meet at $O$, $AO=3$ cm. Find $AC$.",
+      "answer": "$6$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Bisect",
+          "why": "Diagonals halve each other.",
+          "math": "$AC=2\\times AO$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$6$ cm.",
+          "math": "$6$ cm"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-279",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 29,
+      "globalNum": 279,
+      "localLabel": "Ch16-Q14",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Rhombus diagonals $16$ cm and $12$ cm. Area?",
+      "answer": "$96$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "$\\dfrac{1}{2}\\times 16\\times 12$.",
+          "math": "$8\\times 12$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$96$ cm².",
+          "math": "$96$ cm²"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-280",
+      "chapter": 13,
+      "batch": 6,
+      "batchNum": 30,
+      "globalNum": 280,
+      "localLabel": "Ch16-Q15",
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Square: each angle $90^\\circ$. Prove all sides equal.",
+      "answer": "Definition / congruent triangles",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Logic",
+          "why": "Square defined with equal sides.",
+          "math": "Or from equal diagonals at $90^\\circ$"
+        }
+      ],
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-281",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 31,
+      "globalNum": 281,
+      "localLabel": "Ch17-Q1",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct quadrilateral ABCD: $AB=4$, $BC=3.5$, $CD=5$, $DA=4.5$, $AC=6$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Diagonal",
+          "why": "Draw $AC=6$ cm.",
+          "math": "Anchor line"
+        },
+        {
+          "rule": "Arcs",
+          "why": "Find $B$ above, $D$ below.",
+          "math": "Connect sides"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-282",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 32,
+      "globalNum": 282,
+      "localLabel": "Ch17-Q2",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct parallelogram: $AB=5$, $BC=4$, $\\angle ABC=60^\\circ$.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Base",
+          "why": "$AB=5$ cm, $60^\\circ$ at $B$.",
+          "math": "Mark $C$ at $4$ cm"
+        },
+        {
+          "rule": "Complete",
+          "why": "Arcs for $D$.",
+          "math": "Join sides"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-283",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 33,
+      "globalNum": 283,
+      "localLabel": "Ch17-Q3",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct rhombus with diagonals $6$ cm and $8$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Diagonal",
+          "why": "Draw $8$ cm horizontal.",
+          "math": "Perpendicular bisector"
+        },
+        {
+          "rule": "Second",
+          "why": "Mark $3$ cm above/below centre.",
+          "math": "Connect vertices"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-284",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 34,
+      "globalNum": 284,
+      "localLabel": "Ch17-Q4",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct rectangle: sides $5$ cm and $3.5$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Base",
+          "why": "$5$ cm with $90^\\circ$ at ends.",
+          "math": "Mark height $3.5$ cm"
+        },
+        {
+          "rule": "Top",
+          "why": "Connect $C$ and $D$.",
+          "math": "Rectangle complete"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-285",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 35,
+      "globalNum": 285,
+      "localLabel": "Ch17-Q5",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct square of side $4.5$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Same as rectangle",
+          "why": "Base $4.5$ cm.",
+          "math": "$90^\\circ$ verticals"
+        },
+        {
+          "rule": "Top",
+          "why": "Cut at $4.5$ cm.",
+          "math": "Square complete"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-286",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 36,
+      "globalNum": 286,
+      "localLabel": "Ch17-Q6",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct quadrilateral: $AB=4$, $BC=3$, $CD=5$, $DA=6$, $BD=7$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Diagonal",
+          "why": "Draw $BD=7$ cm.",
+          "math": "Arcs for $A$ and $C$"
+        },
+        {
+          "rule": "Connect",
+          "why": "Join all vertices.",
+          "math": "Quadrilateral done"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-287",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 37,
+      "globalNum": 287,
+      "localLabel": "Ch17-Q7",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct kite: sides $5$ cm and $7$ cm, diagonal $8$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Diagonal",
+          "why": "Draw $8$ cm line.",
+          "math": "Arcs $5$ and $7$ from ends"
+        },
+        {
+          "rule": "Kite",
+          "why": "Connect intersection points.",
+          "math": "Kite shape"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-288",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 38,
+      "globalNum": 288,
+      "localLabel": "Ch17-Q8",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct parallelogram: sides $4$, $3$ cm, diagonal $5$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Base",
+          "why": "$AB=4$ cm.",
+          "math": "Arcs $5$ from $A$, $3$ from $B$"
+        },
+        {
+          "rule": "Complete",
+          "why": "Find $D$, join.",
+          "math": "Parallelogram"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-289",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 39,
+      "globalNum": 289,
+      "localLabel": "Ch17-Q9",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct rhombus: side $5$ cm, diagonal $6$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Diagonal",
+          "why": "$AC=6$ cm.",
+          "math": "Arcs radius $5$ from $A,C$"
+        },
+        {
+          "rule": "Connect",
+          "why": "Mark $B,D$.",
+          "math": "Rhombus"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-290",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 40,
+      "globalNum": 290,
+      "localLabel": "Ch17-Q10",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct rectangle: perimeter $24$ cm, length $7$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Breadth",
+          "why": "$B=5$ cm.",
+          "math": "From perimeter"
+        },
+        {
+          "rule": "Draw",
+          "why": "$7\\times 5$ rectangle.",
+          "math": "Construct"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-291",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 41,
+      "globalNum": 291,
+      "localLabel": "Ch17-Q11",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct square with diagonal $6$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Diagonal",
+          "why": "$AC=6$ cm.",
+          "math": "Perpendicular bisector"
+        },
+        {
+          "rule": "Vertices",
+          "why": "Mark $3$ cm each way.",
+          "math": "Square"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-292",
+      "chapter": 14,
+      "batch": 6,
+      "batchNum": 42,
+      "globalNum": 292,
+      "localLabel": "Ch17-Q12",
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Construct quadrilateral: sides $3,4,5,6$ cm, diagonal $7$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Diagonal",
+          "why": "$AC=7$ cm.",
+          "math": "Arcs for $B$ and $D$"
+        },
+        {
+          "rule": "Connect",
+          "why": "Sides in order.",
+          "math": "Quadrilateral"
+        }
+      ],
+      "linked_note_id": "CH14-sec-steps-of-construction",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-293",
+      "chapter": 18,
+      "batch": 6,
+      "batchNum": 43,
+      "globalNum": 293,
+      "localLabel": "Ch18-Q1",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Draw net of cuboid $4\\times 3\\times 2$ cm.",
+      "answer": "Six connected rectangles",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Layout",
+          "why": "Central $4\\times 3$.",
+          "math": "Attach $4\\times 2$ and $3\\times 2$ faces"
+        },
+        {
+          "rule": "Lid",
+          "why": "One more $4\\times 3$.",
+          "math": "Unfolded box"
+        }
+      ],
+      "linked_note_id": "CH18-sec-drawing-2-d-representation-of-3-d-objects",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-294",
+      "chapter": 18,
+      "batch": 6,
+      "batchNum": 44,
+      "globalNum": 294,
+      "localLabel": "Ch18-Q2",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Isometric view of cube side $3$ cm.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Dots",
+          "why": "Vertical $3$ dots.",
+          "math": "Diagonals $3$ each way"
+        },
+        {
+          "rule": "Close",
+          "why": "Build top face.",
+          "math": "3D block"
+        }
+      ],
+      "linked_note_id": "CH18-sec-drawing-2-d-representation-of-3-d-objects",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-295",
+      "chapter": 18,
+      "batch": 6,
+      "batchNum": 45,
+      "globalNum": 295,
+      "localLabel": "Ch18-Q3",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Front, side, top views of cylinder on base.",
+      "answer": "Rectangle, rectangle, circle",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Front/Side",
+          "why": "Looks like rectangle.",
+          "math": "Side view same"
+        },
+        {
+          "rule": "Top",
+          "why": "Circle.",
+          "math": "Three views"
+        }
+      ],
+      "linked_note_id": "CH18-sec-drawing-2-d-representation-of-3-d-objects",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-296",
+      "chapter": 18,
+      "batch": 6,
+      "batchNum": 46,
+      "globalNum": 296,
+      "localLabel": "Ch18-Q4",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Edges, vertices, faces of triangular prism?",
+      "answer": "$9$ edges, $6$ vertices, $5$ faces",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Count",
+          "why": "2 triangles + 3 rectangles.",
+          "math": "Euler check"
+        },
+        {
+          "rule": "Verify",
+          "why": "$F+V=E+2$.",
+          "math": "$5+6=9+2$"
+        }
+      ],
+      "linked_note_id": "CH18-sec-polyhedron",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-297",
+      "chapter": 18,
+      "batch": 6,
+      "batchNum": 47,
+      "globalNum": 297,
+      "localLabel": "Ch18-Q5",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Net of square pyramid: base $4$ cm, slant height $5$ cm.",
+      "answer": "Square + four triangles",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Base",
+          "why": "$4\\times 4$ square.",
+          "math": "Triangles on each side"
+        },
+        {
+          "rule": "Height",
+          "why": "Triangle height $5$ cm.",
+          "math": "Star shape"
+        }
+      ],
+      "linked_note_id": "CH18-sec-drawing-2-d-representation-of-3-d-objects",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-298",
+      "chapter": 18,
+      "batch": 6,
+      "batchNum": 48,
+      "globalNum": 298,
+      "localLabel": "Ch18-Q6",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "Verify Euler's formula for tetrahedron.",
+      "answer": "Verified: $4+4=6+2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Count",
+          "why": "$F=4,V=4,E=6$.",
+          "math": "Plug in formula"
+        },
+        {
+          "rule": "Check",
+          "why": "$8=8$.",
+          "math": "Verified"
+        }
+      ],
+      "linked_note_id": "CH18-sec-polyhedron",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-299",
+      "chapter": 18,
+      "batch": 6,
+      "batchNum": 49,
+      "globalNum": 299,
+      "localLabel": "Ch18-Q7",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "2-D representation of cuboid with hidden edges dotted.",
+      "answer": "See steps",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Draw",
+          "why": "Two offset rectangles.",
+          "math": "Connect corners"
+        },
+        {
+          "rule": "Hidden",
+          "why": "Dotted back edges.",
+          "math": "Solid sketch"
+        }
+      ],
+      "linked_note_id": "CH18-sec-drawing-2-d-representation-of-3-d-objects",
+      "source": "gemini-batch-06"
+    },
+    {
+      "id": "Q-GEM-B06-300",
+      "chapter": 18,
+      "batch": 6,
+      "batchNum": 50,
+      "globalNum": 300,
+      "localLabel": "Ch18-Q8",
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Gemini Open Glassbox · Batch 6",
+      "question": "How many edges does a pentagonal prism have?",
+      "answer": "$15$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Count",
+          "why": "5 bottom + 5 top + 5 vertical.",
+          "math": "$5+5+5$"
+        },
+        {
+          "rule": "Answer",
+          "why": "$15$ edges.",
+          "math": "$15$"
+        }
+      ],
+      "linked_note_id": "CH18-sec-polyhedron",
+      "source": "gemini-batch-06"
+    }
+  ]
+}

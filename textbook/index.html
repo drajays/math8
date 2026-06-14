@@ -399,16 +399,30 @@ sup.msup,sub.msub{font-family:inherit}
             <div class="practice-gen-main">
               <span class="practice-gen-label">🎲 Generate</span>
               <select class="practice-gen-kind" id="practice-gen-kind" aria-label="Problem type">
-                <option value="same_add">Add (same denominator)</option>
-                <option value="same_sub">Subtract (same denominator)</option>
-                <option value="diff_add">Add (different denominators)</option>
-                <option value="mixed">Mixed random</option>
+                <option value="mixed_all" selected>Any operation (mixed)</option>
+                <optgroup label="Addition &amp; subtraction">
+                  <option value="same_add">Add (same denominator)</option>
+                  <option value="same_sub">Subtract (same denominator)</option>
+                  <option value="diff_add">Add (different denominators)</option>
+                  <option value="diff_sub">Subtract (different denominators)</option>
+                </optgroup>
+                <optgroup label="Multiplication &amp; division">
+                  <option value="multiply">Multiply fractions</option>
+                  <option value="divide">Divide fractions</option>
+                </optgroup>
+                <optgroup label="Inverses &amp; properties">
+                  <option value="additive_inverse">Additive inverse</option>
+                  <option value="multiplicative_inverse">Multiplicative inverse</option>
+                  <option value="sum_additive_inverse">Sum with additive inverse (= 0)</option>
+                  <option value="product_reciprocal">Product with reciprocal (= 1)</option>
+                  <option value="compare">Compare two rationals</option>
+                </optgroup>
               </select>
               <input class="practice-gen-count" id="practice-gen-count" type="number" min="1" max="20" value="5" aria-label="Number of problems">
               <button type="button" class="practice-gen-run" id="practice-gen-run">Add to practice</button>
             </div>
             <div class="practice-gen-meta">
-              <span id="practice-gen-session-info">Random fraction problems for extra practice</span>
+              <span id="practice-gen-session-info">Generate any rational-number operation</span>
               <button type="button" class="practice-gen-clear" id="practice-gen-clear" hidden>Clear generated</button>
             </div>
           </div>
@@ -515,7 +529,7 @@ sup.msup,sub.msub{font-family:inherit}
   </div>
 </div>
 
-<script src="../shared/practice-generator.js?v=2"></script>
+<script src="../shared/practice-generator.js?v=3"></script>
 <script src="../shared/math-render.js?v=4"></script>
 <script src="../shared/notes-render.js?v=4"></script>
 <script src="../shared/practice-diagrams.js?v=4"></script>
@@ -701,14 +715,14 @@ function updatePracticeGenBar(){
   const info = $("#practice-gen-session-info");
   const clearBtn = $("#practice-gen-clear");
   const n = CUR ? getSessionQuestions(CUR.tag).length : 0;
-  if (info) info.textContent = n ? `${n} generated problem(s) in this chapter` : "Few fixed examples — generate more fraction practice below";
+  if (info) info.textContent = n ? `${n} generated problem(s) in this chapter` : "Generate any rational-number operation";
   if (clearBtn) clearBtn.hidden = !n;
 }
 
 function runPracticeGenerator(){
   if (!CUR || typeof PracticeGenerator === "undefined") return;
   const count = Math.min(20, Math.max(1, Number($("#practice-gen-count")?.value) || 5));
-  const kind = $("#practice-gen-kind")?.value || "same_add";
+  const kind = $("#practice-gen-kind")?.value || "mixed_all";
   const sample = CACHE[CUR.tag]?.rawQuestions?.[0];
   const noteId = sample?.linked_note_id || "";
   const qs = PracticeGenerator.generate(count, kind, CUR.num, noteId);

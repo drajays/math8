@@ -1,0 +1,222 @@
+{
+  "title": "Visualising Solid Shapes · Batch 5",
+  "chapter": 18,
+  "count": 8,
+  "questions": [
+    {
+      "id": "Q-CH18-B05-001",
+      "chapter": 18,
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Draw the net of a cuboid with dimensions $5$ cm $\\times$ $4$ cm $\\times$ $3$ cm. Also describe its isometric view.",
+      "answer": "Net: cross of six rectangles ($5\\times4$ centre, four side faces, one lid); isometric: 3-unit vertical, 5 left, 4 right on dot grid.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Net",
+          "why": "Six faces: central $5\\times4$; top/bottom $5\\times3$; left/right $3\\times4$; one extra $5\\times4$ lid.",
+          "math": "\\text{Fold into cuboid } 5\\times4\\times3"
+        },
+        {
+          "rule": "Isometric",
+          "why": "120° axes; parallel edges equal.",
+          "math": "3 \\text{ vertical},\\; 5 \\text{ down-left},\\; 4 \\text{ down-right}"
+        }
+      ],
+      "explanation": "Net = six rectangles; isometric on dot paper with 5, 4, 3 units.",
+      "linked_note_id": "CH18-sec-visualising-solid-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH18-B05-002",
+      "chapter": 18,
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Sketch the front view, side view and top view of a cylinder standing on its base.",
+      "answer": "Top: circle; Front & Side: identical rectangles (height $\\times$ diameter).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Top view",
+          "why": "Looking down at circular base.",
+          "math": "\\text{circle}"
+        },
+        {
+          "rule": "Front & side",
+          "why": "Orthographic elevation.",
+          "math": "\\text{rectangle: height } \\times \\text{ diameter}"
+        }
+      ],
+      "explanation": "Plan = circle; elevations = rectangles.",
+      "linked_note_id": "CH18-sec-visualising-solid-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH18-B05-003",
+      "chapter": 18,
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Draw the isometric sketch of a cube of edge $4$ cm.",
+      "answer": "Three rhombus faces meeting at a vertex; all edges 4 units on isometric dot paper.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Start",
+          "why": "Vertical edge 4 units.",
+          "math": "4 \\text{ down}"
+        },
+        {
+          "rule": "Complete",
+          "why": "4 units down-left and down-right; close parallel faces.",
+          "math": "\\text{all edges } 4"
+        }
+      ],
+      "explanation": "Isometric cube: all edges 4 units.",
+      "linked_note_id": "CH18-sec-visualising-solid-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH18-B05-004",
+      "chapter": 18,
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "A cube is cut into $27$ smaller equal cubes ($3\\times3\\times3$). How many small cubes have 3, 2, 1, or 0 faces painted?",
+      "answer": "3 faces: 8 · 2 faces: 12 · 1 face: 6 · 0 faces: 1",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "3 faces",
+          "why": "Corner cubes.",
+          "math": "8"
+        },
+        {
+          "rule": "2 faces",
+          "why": "Middle of each edge.",
+          "math": "12"
+        },
+        {
+          "rule": "1 face",
+          "why": "Centre of each face.",
+          "math": "6"
+        },
+        {
+          "rule": "0 faces",
+          "why": "Interior core: $(n-2)^3$ with $n=3$.",
+          "math": "1"
+        }
+      ],
+      "explanation": "8 + 12 + 6 + 1 = 27 painted-cube count.",
+      "linked_note_id": "CH18-sec-visualising-solid-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH18-B05-005",
+      "chapter": 18,
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Draw the front elevation, side elevation and plan of a triangular prism (on rectangular base).",
+      "answer": "Front: triangle; Plan: rectangle with ridge line; Side: rectangle.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Front",
+          "why": "Triangular end face.",
+          "math": "\\triangle"
+        },
+        {
+          "rule": "Plan",
+          "why": "Top view shows rectangular base + ridge.",
+          "math": "\\text{rectangle with centre line}"
+        },
+        {
+          "rule": "Side",
+          "why": "Rectangular face.",
+          "math": "\\text{rectangle}"
+        }
+      ],
+      "explanation": "Front = triangle; plan = rectangle; side = rectangle.",
+      "linked_note_id": "CH18-sec-visualising-solid-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH18-B05-006",
+      "chapter": 18,
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Represent a cone in 2D with dimensions and shade.",
+      "answer": "Isosceles triangle with elliptical base; label height $h$ and radius $r$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Outline",
+          "why": "Triangle with curved (elliptical) base.",
+          "math": "\\text{apex to base}"
+        },
+        {
+          "rule": "Labels",
+          "why": "Dashed height $h$; radius $r$ on base.",
+          "math": "h,\\; r"
+        }
+      ],
+      "explanation": "2D cone: triangle + elliptical base; mark $h$ and $r$.",
+      "linked_note_id": "CH18-sec-visualising-solid-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH18-B05-007",
+      "chapter": 18,
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "A solid has 6 faces, 12 edges and 8 vertices. Identify it and verify Euler's formula $V-E+F=2$.",
+      "answer": "Cube or cuboid; $8-12+6=2$ verified.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identify",
+          "why": "6 faces, 12 edges, 8 vertices.",
+          "math": "\\text{cube/cuboid}"
+        },
+        {
+          "rule": "Euler",
+          "why": "Substitute values.",
+          "math": "8-12+6=2\\; \\checkmark"
+        }
+      ],
+      "explanation": "Cuboid/cube; Euler formula verified.",
+      "linked_note_id": "CH18-sec-visualising-solid-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH18-B05-008",
+      "chapter": 18,
+      "topicId": "math-ch18",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Draw an oblique sketch of a cuboid.",
+      "answer": "True front face on square grid; depth lines at $45°$; dashed hidden edges.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Front face",
+          "why": "Draw true dimensions (e.g. $5\\times3$).",
+          "math": "\\text{rectangle}"
+        },
+        {
+          "rule": "Depth",
+          "why": "$45°$ receding lines connect back face.",
+          "math": "\\text{dash hidden edges}"
+        }
+      ],
+      "explanation": "Oblique: true front + 45° depth lines.",
+      "linked_note_id": "CH18-sec-visualising-solid-shapes",
+      "source": "practice-session"
+    }
+  ]
+}

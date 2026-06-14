@@ -1,0 +1,212 @@
+{
+  "title": "Direct and Inverse Variation · Batch 3",
+  "chapter": 9,
+  "count": 8,
+  "questions": [
+    {
+      "id": "Q-CH09-B03-001",
+      "chapter": 9,
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "If $x$ varies directly as $y$ and $x = 12$ when $y = 4$, find $x$ when $y = 15$.",
+      "answer": "$x = 45$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Direct variation: $\\frac{x_1}{y_1} = \\frac{x_2}{y_2}$.",
+          "math": "\\dfrac{12}{4} = \\dfrac{x}{15}"
+        },
+        {
+          "rule": "Solve",
+          "why": "Simplify and cross-multiply.",
+          "math": "3 = \\dfrac{x}{15} \\Rightarrow x = 45"
+        }
+      ],
+      "explanation": "$\\frac{12}{4} = \\frac{x}{15}$ → $x = 45$.",
+      "linked_note_id": "CH09-sec-direct-and-inverse-variation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH09-B03-002",
+      "chapter": 9,
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "If $10$ men can complete a work in $12$ days, how many men are required to complete the same work in $8$ days?",
+      "answer": "$15$ men",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Inverse variation: $m_1 d_1 = m_2 d_2$.",
+          "math": "10 \\times 12 = m_2 \\times 8"
+        },
+        {
+          "rule": "Solve",
+          "why": "Divide.",
+          "math": "120 = 8 m_2 \\Rightarrow m_2 = 15"
+        }
+      ],
+      "explanation": "$10 \\times 12 = 8 m_2$ → 15 men.",
+      "linked_note_id": "CH09-sec-direct-and-inverse-variation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH09-B03-003",
+      "chapter": 9,
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "A car travels $360$ km in $5$ hours. How much distance will it travel in $7$ hours at the same speed?",
+      "answer": "$504$ km",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Speed",
+          "why": "Direct variation of distance and time.",
+          "math": "\\dfrac{360}{5} = 72 \\text{ km/h}"
+        },
+        {
+          "rule": "Distance",
+          "why": "Multiply speed by 7 hours.",
+          "math": "72 \\times 7 = 504 \\text{ km}"
+        }
+      ],
+      "explanation": "Speed 72 km/h → 504 km in 7 h.",
+      "linked_note_id": "CH09-sec-direct-and-inverse-variation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH09-B03-004",
+      "chapter": 9,
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "If $15$ pipes of the same diameter can fill a tank in $36$ minutes, how many pipes are needed to fill it in $20$ minutes?",
+      "answer": "$27$ pipes",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Inverse variation: $p_1 t_1 = p_2 t_2$.",
+          "math": "15 \\times 36 = p_2 \\times 20"
+        },
+        {
+          "rule": "Solve",
+          "why": "540 = 20 $p_2$.",
+          "math": "p_2 = 27"
+        }
+      ],
+      "explanation": "$15 \\times 36 = 20 p_2$ → 27 pipes.",
+      "linked_note_id": "CH09-sec-direct-and-inverse-variation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH09-B03-005",
+      "chapter": 9,
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "$x$ varies inversely as $y$. When $x = 15$, $y = 4$. Find $y$ when $x = 20$.",
+      "answer": "$y = 3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Constant",
+          "why": "$xy = k$.",
+          "math": "k = 15 \\times 4 = 60"
+        },
+        {
+          "rule": "Solve",
+          "why": "Substitute $x = 20$.",
+          "math": "20y = 60 \\Rightarrow y = 3"
+        }
+      ],
+      "explanation": "$k = 60$ → $y = 3$ when $x = 20$.",
+      "linked_note_id": "CH09-sec-direct-and-inverse-variation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH09-B03-006",
+      "chapter": 9,
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "A garrison of $500$ men had provisions for $24$ days. A reinforcement of $100$ men arrived. For how many days will the food last now?",
+      "answer": "$20$ days",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Total man-days",
+          "why": "Food fixed.",
+          "math": "500 \\times 24 = 12000"
+        },
+        {
+          "rule": "New days",
+          "why": "600 men share the same total.",
+          "math": "600 \\times d = 12000 \\Rightarrow d = 20"
+        }
+      ],
+      "explanation": "12000 man-days ÷ 600 men = 20 days.",
+      "linked_note_id": "CH09-sec-direct-and-inverse-variation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH09-B03-007",
+      "chapter": 9,
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "The cost of $5$ kg potatoes is ₹$75$. Find the cost of $8$ kg. Also: with a fixed budget of ₹$75$, if price rises from ₹$15$/kg to ₹$25$/kg, how many kg can be bought?",
+      "answer": "₹$120$ for 8 kg; $3$ kg at ₹$25$/kg with fixed ₹$75$ budget",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Direct (cost vs kg)",
+          "why": "Cost per kg = 75/5.",
+          "math": "15 \\times 8 = 120"
+        },
+        {
+          "rule": "Inverse (budget fixed)",
+          "why": "Quantity × price = constant budget.",
+          "math": "75 / 25 = 3 \\text{ kg}"
+        }
+      ],
+      "explanation": "8 kg costs ₹120; at ₹25/kg, ₹75 buys 3 kg.",
+      "linked_note_id": "CH09-sec-direct-and-inverse-variation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH09-B03-008",
+      "chapter": 9,
+      "topicId": "math-ch9",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "$6$ men or $10$ women can finish a piece of work in $24$ days. In how many days will $12$ men and $15$ women finish the work?",
+      "answer": "$6\\dfrac{6}{7}$ days",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Convert to women",
+          "why": "$6$ men $= 10$ women → $1$ man $= \\frac{5}{3}$ women.",
+          "math": "12 \\text{ men} = 20 \\text{ women}"
+        },
+        {
+          "rule": "Total workforce",
+          "why": "20 + 15 = 35 women.",
+          "math": "35 \\text{ women}"
+        },
+        {
+          "rule": "Inverse variation",
+          "why": "$10 \\times 24 = 35 \\times d$.",
+          "math": "d = \\dfrac{240}{35} = \\dfrac{48}{7} = 6\\dfrac{6}{7}"
+        }
+      ],
+      "explanation": "35 women-equivalent → $\\frac{48}{7}$ days.",
+      "linked_note_id": "CH09-sec-direct-and-inverse-variation",
+      "source": "practice-session"
+    }
+  ]
+}

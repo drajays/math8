@@ -1,0 +1,242 @@
+{
+  "title": "Construction of Quadrilaterals · Batch 4",
+  "chapter": 14,
+  "count": 8,
+  "questions": [
+    {
+      "id": "Q-CH14-B04-001",
+      "chapter": 14,
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Construct quadrilateral $ABCD$ where $AB=5$ cm, $BC=4.5$ cm, $CD=6$ cm, $DA=5.5$ cm and diagonal $AC=7$ cm.",
+      "answer": "Steps: draw $AC=7$ cm; arcs from $A$ (5 cm) and $C$ (4.5 cm) give $B$; arcs from $A$ (5.5 cm) and $C$ (6 cm) give $D$; join sides.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Step 1",
+          "why": "Draw diagonal first.",
+          "math": "AC=7 \\text{ cm}"
+        },
+        {
+          "rule": "Step 2",
+          "why": "Locate $B$.",
+          "math": "AB=5,\\; BC=4.5"
+        },
+        {
+          "rule": "Step 3",
+          "why": "Locate $D$.",
+          "math": "AD=5.5,\\; CD=6"
+        },
+        {
+          "rule": "Step 4",
+          "why": "Complete quadrilateral.",
+          "math": "Join AB, BC, CD, DA"
+        }
+      ],
+      "explanation": "Diagonal-first arc method.",
+      "linked_note_id": "CH14-sec-construction-of-quadrilaterals",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH14-B04-002",
+      "chapter": 14,
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Construct a rhombus whose diagonals are $6$ cm and $8$ cm.",
+      "answer": "Steps: draw $AC=8$ cm; perpendicular bisector at $O$; mark $B,D$ at 3 cm from $O$; join.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Diagonal 1",
+          "why": "Draw $AC=8$ cm; bisect at $O$.",
+          "math": "AO=OC=4"
+        },
+        {
+          "rule": "Diagonal 2",
+          "why": "Perpendicular at $O$; $BO=OD=3$.",
+          "math": "BD=6"
+        },
+        {
+          "rule": "Join",
+          "why": "Connect vertices.",
+          "math": "ABCD \\text{ rhombus}"
+        }
+      ],
+      "explanation": "Diagonals 8 cm and 6 cm via perpendicular bisector.",
+      "linked_note_id": "CH14-sec-construction-of-quadrilaterals",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH14-B04-003",
+      "chapter": 14,
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Construct parallelogram $ABCD$ with $AB=5$ cm, $AD=4$ cm and $\\angle A=60°$.",
+      "answer": "Steps: draw $AB=5$; $60°$ at $A$; cut $AD=4$; arcs locate $C$; join.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Base & angle",
+          "why": "$AB=5$; construct $60°$ at $A$.",
+          "math": "AB=5,\\; \\angle A=60°"
+        },
+        {
+          "rule": "Side $AD$",
+          "why": "Mark 4 cm on angle arm.",
+          "math": "AD=4"
+        },
+        {
+          "rule": "Vertex $C$",
+          "why": "Arcs: 5 cm from $D$, 4 cm from $B$.",
+          "math": "Join BC, DC"
+        }
+      ],
+      "explanation": "Base-angle-arc method for parallelogram.",
+      "linked_note_id": "CH14-sec-construction-of-quadrilaterals",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH14-B04-004",
+      "chapter": 14,
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Construct an isosceles triangle with base $6$ cm and equal sides $5$ cm each.",
+      "answer": "Steps: draw $BC=6$; intersect arcs of radius 5 cm from $B$ and $C$ at $A$; join.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Base",
+          "why": "Draw $BC=6$ cm.",
+          "math": "BC=6"
+        },
+        {
+          "rule": "Apex",
+          "why": "Arcs radius 5 from $B$ and $C$.",
+          "math": "AB=AC=5"
+        }
+      ],
+      "explanation": "SSS arc intersection at apex.",
+      "linked_note_id": "CH14-sec-construction-of-quadrilaterals",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH14-B04-005",
+      "chapter": 14,
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Construct a square with side $4.5$ cm and verify diagonals.",
+      "answer": "Steps: draw $AB=4.5$; $90°$ at $A,B$; cut 4.5 cm to $D,C$; join. Diagonal $\\approx 6.36$ cm.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Base",
+          "why": "AB=4.5 cm.",
+          "math": "AB=4.5"
+        },
+        {
+          "rule": "Right angles",
+          "why": "Construct $90°$ at $A$ and $B$.",
+          "math": "AD=BC=4.5"
+        },
+        {
+          "rule": "Verify diagonal",
+          "why": "$\\sqrt{4.5^2+4.5^2}$.",
+          "math": "\\approx 6.36 \\text{ cm}"
+        }
+      ],
+      "explanation": "Square side 4.5 cm; diagonal ≈ 6.36 cm.",
+      "linked_note_id": "CH14-sec-construction-of-quadrilaterals",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH14-B04-006",
+      "chapter": 14,
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Construct a rectangle with length $7$ cm and breadth $5$ cm. Construct and measure diagonals.",
+      "answer": "Steps: $AB=7$; $90°$ at $A,B$; cut 5 cm to $D,C$; join. Diagonal $\\approx 8.6$ cm.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Base",
+          "why": "$AB=7$ cm.",
+          "math": "AB=7"
+        },
+        {
+          "rule": "Breadth",
+          "why": "$90°$ arms; $AD=BC=5$.",
+          "math": "5 \\text{ cm}"
+        },
+        {
+          "rule": "Diagonal",
+          "why": "$\\sqrt{7^2+5^2}=\\sqrt{74}$.",
+          "math": "\\approx 8.6 \\text{ cm}"
+        }
+      ],
+      "explanation": "Rectangle 7×5 cm; diagonal ≈ 8.6 cm.",
+      "linked_note_id": "CH14-sec-construction-of-quadrilaterals",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH14-B04-007",
+      "chapter": 14,
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Construct a triangle with sides $5$ cm, $6$ cm, $7$ cm and then construct its circumcircle.",
+      "answer": "Steps: SSS triangle; perpendicular bisectors of two sides meet at circumcenter $O$; draw circle through $A$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Triangle",
+          "why": "Base 7 cm; arcs 5 and 6 cm.",
+          "math": "BC=7,\\; AB=5,\\; AC=6"
+        },
+        {
+          "rule": "Circumcenter",
+          "why": "Intersection of perpendicular bisectors.",
+          "math": "O"
+        },
+        {
+          "rule": "Circumcircle",
+          "why": "Radius $OA$.",
+          "math": "Circle through A, B, C"
+        }
+      ],
+      "explanation": "SSS triangle + perpendicular bisectors → circumcircle.",
+      "linked_note_id": "CH14-sec-construction-of-quadrilaterals",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH14-B04-008",
+      "chapter": 14,
+      "topicId": "math-ch14",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Using ruler and compass only, construct a $75°$ angle and bisect it.",
+      "answer": "Steps: build $60°+15°=75°$; bisect to get two $37.5°$ angles.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "$75°$ angle",
+          "why": "$60°$ + bisected gap to $90°$ gives $15°$ more.",
+          "math": "60°+15°=75°"
+        },
+        {
+          "rule": "Bisect",
+          "why": "Standard angle bisector construction.",
+          "math": "37.5° \\text{ each}"
+        }
+      ],
+      "explanation": "75° via 60°+15°; bisect → 37.5° each.",
+      "linked_note_id": "CH14-sec-construction-of-quadrilaterals",
+      "source": "practice-session"
+    }
+  ]
+}

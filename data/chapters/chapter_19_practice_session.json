@@ -1,0 +1,477 @@
+{
+  "title": "Mensuration · Batch 5",
+  "chapter": 19,
+  "count": 18,
+  "questions": [
+    {
+      "id": "Q-CH19-B05-001",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Find the area of a trapezium whose parallel sides are $25$ cm and $15$ cm and the distance between them is $12$ cm.",
+      "answer": "$240$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "Area $= \\frac{1}{2}(a+b)h$.",
+          "math": "\\frac{1}{2}(25+15)\\times12"
+        },
+        {
+          "rule": "Calculate",
+          "why": "Simplify.",
+          "math": "20\\times12=240 \\text{ cm}^2"
+        }
+      ],
+      "explanation": "Area = 240 cm².",
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-002",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "The area of a trapezium is $480$ cm² and the distance between parallel sides is $15$ cm. If one parallel side is $20$ cm, find the other.",
+      "answer": "$44$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Substitute",
+          "why": "Use area formula.",
+          "math": "480=\\frac{1}{2}(20+b)\\times15"
+        },
+        {
+          "rule": "Solve",
+          "why": "Multiply by 2, divide by 15.",
+          "math": "960=15(20+b) \\Rightarrow 64=20+b \\Rightarrow b=44"
+        }
+      ],
+      "explanation": "Other parallel side = 44 cm.",
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-003",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Find the area of a regular hexagon with side $6$ cm.",
+      "answer": "$54\\sqrt{3}$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Decompose",
+          "why": "Hexagon = 6 equilateral triangles.",
+          "math": "A_{\\triangle}=\\frac{\\sqrt{3}}{4}s^2"
+        },
+        {
+          "rule": "Calculate",
+          "why": "Side $=6$.",
+          "math": "6\\times\\frac{\\sqrt{3}}{4}\\times36=54\\sqrt{3}"
+        }
+      ],
+      "explanation": "Area = $54\\sqrt{3}$ cm².",
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-004",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "A field is trapezium-shaped with parallel sides $25$ m and $10$ m, and non-parallel sides $14$ m and $13$ m. Find the area.",
+      "answer": "$196$ m²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Divide",
+          "why": "Drop line parallel to 13 m side → parallelogram + triangle (sides 13, 14, 15).",
+          "math": "s=21"
+        },
+        {
+          "rule": "Heron",
+          "why": "Triangle area.",
+          "math": "\\sqrt{21\\times8\\times7\\times6}=84"
+        },
+        {
+          "rule": "Height",
+          "why": "$84=\\frac{1}{2}\\times15\\times h$.",
+          "math": "h=11.2"
+        },
+        {
+          "rule": "Trapezium",
+          "why": "Apply formula.",
+          "math": "\\frac{1}{2}(25+10)\\times11.2=196"
+        }
+      ],
+      "explanation": "Area = 196 m².",
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-005",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Find the area of an irregular polygon by dividing it into triangles and trapeziums.",
+      "answer": "Split polygon with diagonals/perpendiculars; sum areas of simpler parts.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Strategy",
+          "why": "Any polygon can be triangulated.",
+          "math": "A_{\\text{total}}=\\sum A_i"
+        },
+        {
+          "rule": "Example",
+          "why": "Quadrilateral → two triangles by one diagonal.",
+          "math": "A=\\frac{1}{2}d(h_1+h_2)"
+        }
+      ],
+      "explanation": "Divide into triangles/trapeziums; add their areas.",
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-006",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "The diagonals of a rhombus are $16$ cm and $12$ cm. Find its area.",
+      "answer": "$96$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "Rhombus area from diagonals.",
+          "math": "A=\\frac{1}{2}d_1d_2"
+        },
+        {
+          "rule": "Calculate",
+          "why": "Substitute.",
+          "math": "\\frac{1}{2}\\times16\\times12=96"
+        }
+      ],
+      "explanation": "Area = 96 cm².",
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-007",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "A parallelogram and a triangle have the same base and lie between the same parallels. Compare their areas.",
+      "answer": "Triangle area is half the parallelogram area (ratio 1:2).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Parallelogram",
+          "why": "Same base and height.",
+          "math": "A_p=bh"
+        },
+        {
+          "rule": "Triangle",
+          "why": "Same base and height.",
+          "math": "A_t=\\frac{1}{2}bh"
+        }
+      ],
+      "explanation": "Triangle = $\\frac{1}{2}$ parallelogram.",
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-008",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Find the area of a regular pentagon with side $8$ cm.",
+      "answer": "$\\approx 110.11$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Central angle",
+          "why": "$360°/5=72°$; half-angle $36°$, half-base $4$ cm.",
+          "math": "a=\\frac{4}{\\tan36°}\\approx5.505"
+        },
+        {
+          "rule": "One triangle",
+          "why": "$\\frac{1}{2}\\times8\\times a$.",
+          "math": "\\approx22.02"
+        },
+        {
+          "rule": "Total",
+          "why": "Five identical triangles.",
+          "math": "5\\times22.02\\approx110.11"
+        }
+      ],
+      "explanation": "Area $\\approx 110.11$ cm².",
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-009",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "A square and an equilateral triangle have equal perimeters. Compare their areas.",
+      "answer": "Square has larger area ($9x^2$ vs $4\\sqrt{3}x^2$).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let perimeter",
+          "why": "Common perimeter $12x$.",
+          "math": "s_{\\square}=3x,\\; s_{\\triangle}=4x"
+        },
+        {
+          "rule": "Areas",
+          "why": "Use standard formulas.",
+          "math": "A_{\\square}=9x^2,\\; A_{\\triangle}=4\\sqrt{3}x^2"
+        },
+        {
+          "rule": "Compare",
+          "why": "$9>4\\sqrt{3}\\approx6.928$.",
+          "math": "\\text{square larger}"
+        }
+      ],
+      "explanation": "Square encloses more area for equal perimeter.",
+      "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-010",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Find the total surface area and volume of a cuboid $15$ cm $\\times$ $10$ cm $\\times$ $8$ cm.",
+      "answer": "TSA $=700$ cm²; Volume $=1200$ cm³",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "TSA",
+          "why": "$2(lb+bh+lh)$.",
+          "math": "2(150+80+120)=700"
+        },
+        {
+          "rule": "Volume",
+          "why": "$l\\times b\\times h$.",
+          "math": "15\\times10\\times8=1200"
+        }
+      ],
+      "explanation": "TSA 700 cm²; volume 1200 cm³.",
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-011",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "A cube has volume $729$ cm³. Find its total surface area and edge.",
+      "answer": "Edge $=9$ cm; TSA $=486$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Edge",
+          "why": "$\\sqrt[3]{729}$.",
+          "math": "9 \\text{ cm}"
+        },
+        {
+          "rule": "TSA",
+          "why": "$6a^2$.",
+          "math": "6\\times81=486"
+        }
+      ],
+      "explanation": "Edge 9 cm; TSA 486 cm².",
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-012",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "The curved surface area of a cylinder is $440$ cm² and its height is $10$ cm. Find its volume ($\\pi=22/7$).",
+      "answer": "$1540$ cm³",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Find $r$",
+          "why": "$CSA=2\\pi rh$.",
+          "math": "440=2\\times\\frac{22}{7}\\times r\\times10 \\Rightarrow r=7"
+        },
+        {
+          "rule": "Volume",
+          "why": "$\\pi r^2h$.",
+          "math": "\\frac{22}{7}\\times49\\times10=1540"
+        }
+      ],
+      "explanation": "Radius 7 cm; volume 1540 cm³.",
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-013",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "A cylindrical tank has radius $7$ m and height $5$ m. Find the capacity in litres ($1$ m³ $=1000$ L).",
+      "answer": "$770{,}000$ litres",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Volume",
+          "why": "$\\pi r^2h$.",
+          "math": "\\frac{22}{7}\\times49\\times5=770 \\text{ m}^3"
+        },
+        {
+          "rule": "Convert",
+          "why": "Multiply by 1000.",
+          "math": "770\\times1000=770{,}000"
+        }
+      ],
+      "explanation": "Capacity = 770,000 L.",
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-014",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "Find the total surface area of a closed cylinder whose volume is $1540$ cm³ and height is $10$ cm.",
+      "answer": "$748$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Radius",
+          "why": "From volume (same as Q174).",
+          "math": "r=7"
+        },
+        {
+          "rule": "TSA",
+          "why": "$2\\pi r(r+h)$.",
+          "math": "2\\times\\frac{22}{7}\\times7\\times17=748"
+        }
+      ],
+      "explanation": "TSA = 748 cm².",
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-015",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "A cuboid $8$ cm $\\times$ $6$ cm $\\times$ $4$ cm is melted and recast into a cube. Find the edge of the cube.",
+      "answer": "$4\\sqrt[3]{3}$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Volume",
+          "why": "Volume conserved.",
+          "math": "8\\times6\\times4=192"
+        },
+        {
+          "rule": "Edge",
+          "why": "$a^3=192$.",
+          "math": "a=\\sqrt[3]{192}=4\\sqrt[3]{3}"
+        }
+      ],
+      "explanation": "Edge = $4\\sqrt[3]{3}$ cm (≈ 5.85 cm).",
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-016",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "The ratio of radii of two cylinders is $2:3$ and their heights are in ratio $5:4$. Find the ratio of their volumes.",
+      "answer": "$5:9$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Volume ratio",
+          "why": "$V\\propto r^2h$.",
+          "math": "\\frac{V_1}{V_2}=\\left(\\frac{2}{3}\\right)^2\\times\\frac{5}{4}"
+        },
+        {
+          "rule": "Simplify",
+          "why": "Cancel common factors.",
+          "math": "\\frac{4}{9}\\times\\frac{5}{4}=\\frac{5}{9}"
+        }
+      ],
+      "explanation": "Volume ratio = 5:9.",
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-017",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "A rectangular tank $2.5$ m long, $1.5$ m wide and $1$ m deep is full of water. Find the volume of water in litres.",
+      "answer": "$3750$ litres",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Volume",
+          "why": "$l\\times b\\times h$.",
+          "math": "2.5\\times1.5\\times1=3.75 \\text{ m}^3"
+        },
+        {
+          "rule": "Convert",
+          "why": "$\\times1000$.",
+          "math": "3750 \\text{ L}"
+        }
+      ],
+      "explanation": "3750 litres of water.",
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH19-B05-018",
+      "chapter": 19,
+      "topicId": "math-ch19",
+      "type": "practice",
+      "subtopic": "Batch 5 · Detailed Solutions",
+      "question": "An open cylindrical drum of radius $14$ cm and height $80$ cm is full of water. How many full cylindrical glasses of radius $3.5$ cm and height $10$ cm can be filled?",
+      "answer": "$128$ glasses",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Ratio",
+          "why": "Divide volumes; $\\pi$ cancels.",
+          "math": "\\frac{14^2\\times80}{3.5^2\\times10}"
+        },
+        {
+          "rule": "Calculate",
+          "why": "Simplify.",
+          "math": "\\frac{196\\times80}{12.25\\times10}=128"
+        }
+      ],
+      "explanation": "128 full glasses.",
+      "linked_note_id": "CH19-sec-volume-and-capacity",
+      "source": "practice-session"
+    }
+  ]
+}

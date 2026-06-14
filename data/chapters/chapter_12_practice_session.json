@@ -1,0 +1,477 @@
+{
+  "title": "Linear Equations and Inequalities · Batch 3 & 4",
+  "chapter": 12,
+  "count": 17,
+  "questions": [
+    {
+      "id": "Q-CH12-B03-001",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Solve: $3(2x - 1) - 2(3x + 4) = 5(x - 2) + 3$.",
+      "answer": "$x = -\\dfrac{4}{5}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Expand",
+          "why": "Remove brackets.",
+          "math": "6x-3-6x-8=5x-10+3"
+        },
+        {
+          "rule": "Simplify",
+          "why": "Collect terms.",
+          "math": "-11=5x-7"
+        },
+        {
+          "rule": "Solve",
+          "why": "Isolate $x$.",
+          "math": "-4=5x \\Rightarrow x=-\\dfrac{4}{5}"
+        }
+      ],
+      "explanation": "$x = -\\frac{4}{5}$.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B03-002",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "The sum of three consecutive even numbers is $48$. Find the numbers.",
+      "answer": "$14$, $16$, $18$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let numbers",
+          "why": "$x$, $x+2$, $x+4$.",
+          "math": "x+(x+2)+(x+4)=48"
+        },
+        {
+          "rule": "Solve",
+          "why": "$3x+6=48$.",
+          "math": "x=14"
+        },
+        {
+          "rule": "Numbers",
+          "why": "Add 2 each time.",
+          "math": "14,\\; 16,\\; 18"
+        }
+      ],
+      "explanation": "Numbers: 14, 16, 18.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B03-003",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "A number is $12$ more than the other. If their sum is $48$, find the numbers.",
+      "answer": "$18$ and $30$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Set up",
+          "why": "Smaller $=x$, larger $=x+12$.",
+          "math": "x+(x+12)=48"
+        },
+        {
+          "rule": "Solve",
+          "why": "$2x+12=48$.",
+          "math": "x=18,\\; x+12=30"
+        }
+      ],
+      "explanation": "Numbers: 18 and 30.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B03-004",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Solve and verify: $\\dfrac{2x - 3}{5} + \\dfrac{x + 2}{3} = 4$.",
+      "answer": "$x = \\dfrac{59}{11}$ (verified)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Clear fractions",
+          "why": "Multiply by LCM 15.",
+          "math": "3(2x-3)+5(x+2)=60"
+        },
+        {
+          "rule": "Expand",
+          "why": "Simplify.",
+          "math": "11x+1=60 \\Rightarrow x=\\dfrac{59}{11}"
+        },
+        {
+          "rule": "Verify",
+          "why": "Substitute into LHS.",
+          "math": "LHS=\\dfrac{17}{11}+\\dfrac{27}{11}=4=RHS\\; \\checkmark"
+        }
+      ],
+      "explanation": "$x=\\frac{59}{11}$; verified.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B03-005",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "A man's age is $4$ times his son's age. After $5$ years, his age will be $3$ times his son's age. Find their present ages.",
+      "answer": "Son: $10$ years; Man: $40$ years",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Present ages",
+          "why": "Son $=x$, man $=4x$.",
+          "math": "x,\\; 4x"
+        },
+        {
+          "rule": "After 5 years",
+          "why": "Set up equation.",
+          "math": "4x+5=3(x+5)"
+        },
+        {
+          "rule": "Solve",
+          "why": "$4x+5=3x+15$.",
+          "math": "x=10,\\; 4x=40"
+        }
+      ],
+      "explanation": "Son 10, man 40.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-001",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "The perimeter of a rectangle is $40$ cm. If its length is $4$ cm more than its breadth, find the dimensions.",
+      "answer": "Breadth $= 8$ cm; Length $= 12$ cm",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let breadth",
+          "why": "$B = x$, length $L = x + 4$.",
+          "math": "P = 2(L+B)"
+        },
+        {
+          "rule": "Equation",
+          "why": "Substitute into perimeter formula.",
+          "math": "2(x+x+4)=40 \\Rightarrow 4x+8=40"
+        },
+        {
+          "rule": "Solve",
+          "why": "$4x=32$.",
+          "math": "x=8;\\; L=12"
+        }
+      ],
+      "explanation": "Breadth 8 cm, length 12 cm.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-002",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Solve: $\\dfrac{5x}{3} - \\dfrac{x-3}{2} = \\dfrac{2x+1}{4}$.",
+      "answer": "$x = -\\dfrac{15}{8}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Clear fractions",
+          "why": "LCM of 3, 2, 4 is 12.",
+          "math": "20x-6(x-3)=3(2x+1)"
+        },
+        {
+          "rule": "Expand",
+          "why": "Remove brackets.",
+          "math": "20x-6x+18=6x+3"
+        },
+        {
+          "rule": "Solve",
+          "why": "Collect $x$ terms.",
+          "math": "14x+18=6x+3 \\Rightarrow 8x=-15 \\Rightarrow x=-\\dfrac{15}{8}"
+        }
+      ],
+      "explanation": "$x = -\\frac{15}{8}$.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-003",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "A sum of ₹$500$ is in denominations of ₹$5$ and ₹$10$. If the number of ₹$10$ notes is twice the number of ₹$5$ notes, find the number of each.",
+      "answer": "₹$5$ notes: $20$; ₹$10$ notes: $40$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Let ₹5 notes",
+          "why": "$x$ notes of ₹5; ₹10 notes $= 2x$.",
+          "math": "5x+10(2x)=500"
+        },
+        {
+          "rule": "Solve",
+          "why": "$25x=500$.",
+          "math": "x=20;\\; 2x=40"
+        }
+      ],
+      "explanation": "20 notes of ₹5, 40 notes of ₹10.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-004",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "The denominator of a fraction is $3$ more than the numerator. If $2$ is added to both, the fraction becomes $\\dfrac{4}{5}$. Find the fraction.",
+      "answer": "$\\dfrac{10}{13}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Set up",
+          "why": "Fraction $\\frac{x}{x+3}$; after adding 2: $\\frac{x+2}{x+5}$.",
+          "math": "\\dfrac{x+2}{x+5}=\\dfrac{4}{5}"
+        },
+        {
+          "rule": "Cross-multiply",
+          "why": "Clear fractions.",
+          "math": "5(x+2)=4(x+5) \\Rightarrow 5x+10=4x+20"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=10$.",
+          "math": "\\dfrac{10}{13}"
+        }
+      ],
+      "explanation": "Numerator 10, denominator 13 → $\\frac{10}{13}$.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-005",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Solve and represent on number line: $3x + 5 > 2x - 7$, $x \\in \\mathbb{N}$.",
+      "answer": "$x > -12$; solution set $\\{1,2,3,\\ldots\\}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Isolate $x$",
+          "why": "Subtract $2x$, subtract 5.",
+          "math": "x > -12"
+        },
+        {
+          "rule": "Natural numbers",
+          "why": "$\\mathbb{N}=\\{1,2,3,\\ldots\\}$.",
+          "math": "\\{1,2,3,4,\\ldots\\}"
+        }
+      ],
+      "explanation": "$x>12$ → all natural numbers 1, 2, 3, …",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-006",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Solve: $2(x - 3) \\le 5x + 9$ and represent the solution set on the number line.",
+      "answer": "$x \\ge -5$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Expand",
+          "why": "Remove brackets.",
+          "math": "2x-6 \\le 5x+9"
+        },
+        {
+          "rule": "Isolate",
+          "why": "Collect $x$ on one side.",
+          "math": "-15 \\le 3x \\Rightarrow x \\ge -5"
+        }
+      ],
+      "explanation": "Solution: $x \\ge -5$ (solid dot at $-5$, ray rightward).",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-007",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Solve: $5 - 2x \\ge 3$ where $x$ is an integer. Represent on the number line.",
+      "answer": "$x \\le 1$; integers $\\{\\ldots,-3,-2,-1,0,1\\}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rearrange",
+          "why": "$-2x \\ge -2$.",
+          "math": "-2x \\ge -2"
+        },
+        {
+          "rule": "Divide by $-2$",
+          "why": "Flip inequality sign.",
+          "math": "x \\le 1"
+        }
+      ],
+      "explanation": "$x \\le 1$; integer dots at …, −1, 0, 1.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-008",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Find the solution set: $\\dfrac{3x+4}{5} < \\dfrac{2x+7}{3}$, $x \\in \\mathbb{R}$.",
+      "answer": "$x > -23$; solution $(-23, \\infty)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Clear fractions",
+          "why": "Multiply by LCM 15.",
+          "math": "3(3x+4) < 5(2x+7)"
+        },
+        {
+          "rule": "Simplify",
+          "why": "Expand and isolate.",
+          "math": "9x+12 < 10x+35 \\Rightarrow -23 < x"
+        }
+      ],
+      "explanation": "$x > -23$.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-009",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Solve and graph: $4x - 7 > 5$ and $3x + 2 < 14$ (find intersection).",
+      "answer": "$3 < x < 4$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "First inequation",
+          "why": "$4x > 12$.",
+          "math": "x > 3"
+        },
+        {
+          "rule": "Second inequation",
+          "why": "$3x < 12$.",
+          "math": "x < 4"
+        },
+        {
+          "rule": "Intersection",
+          "why": "Both must hold.",
+          "math": "3 < x < 4"
+        }
+      ],
+      "explanation": "Open segment between 3 and 4.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-010",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "A number is such that when multiplied by $3$ and then $5$ is subtracted, the result is greater than $10$. Find the smallest integer satisfying it.",
+      "answer": "$6$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Inequation",
+          "why": "Let number be $x$.",
+          "math": "3x-5 > 10"
+        },
+        {
+          "rule": "Solve",
+          "why": "$3x > 15$.",
+          "math": "x > 5"
+        },
+        {
+          "rule": "Smallest integer",
+          "why": "Strictly greater than 5.",
+          "math": "6"
+        }
+      ],
+      "explanation": "$x>5$ → smallest integer 6.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-011",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Solve: $-3 \\le 2x + 1 < 7$ and represent on the number line ($x$ integer).",
+      "answer": "$-2 \\le x < 3$; integers $\\{-2,-1,0,1,2\\}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Subtract 1",
+          "why": "All three parts.",
+          "math": "-4 \\le 2x < 6"
+        },
+        {
+          "rule": "Divide by 2",
+          "why": "Isolate $x$.",
+          "math": "-2 \\le x < 3"
+        }
+      ],
+      "explanation": "Integers: −2, −1, 0, 1, 2.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH12-B04-012",
+      "chapter": 12,
+      "topicId": "math-ch12",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "The sum of two numbers is at most $25$. If one is at least $10$, find possible values for the other.",
+      "answer": "$y \\le 15$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Inequations",
+          "why": "$x+y \\le 25$, $x \\ge 10$.",
+          "math": "x+y \\le 25"
+        },
+        {
+          "rule": "Maximum $y$",
+          "why": "When $x=10$: $10+y \\le 25$.",
+          "math": "y \\le 15"
+        }
+      ],
+      "explanation": "Other number $y \\le 15$.",
+      "linked_note_id": "CH12-sec-linear-equations-and-inequalities-in-one-variabl",
+      "source": "practice-session"
+    }
+  ]
+}

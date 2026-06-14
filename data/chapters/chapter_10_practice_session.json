@@ -1,0 +1,462 @@
+{
+  "title": "Algebraic Expressions and Identities · Batch 3",
+  "chapter": 10,
+  "count": 18,
+  "questions": [
+    {
+      "id": "Q-CH10-B03-001",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Add: $3x^2 - 5xy + 7y^2$, $-2x^2 + 4xy - y^2$, and $5x^2 - 3xy + 2y^2$.",
+      "answer": "$6x^2 - 4xy + 8y^2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "$x^2$ terms",
+          "why": "Combine coefficients.",
+          "math": "(3-2+5)x^2 = 6x^2"
+        },
+        {
+          "rule": "$xy$ terms",
+          "why": "Combine.",
+          "math": "(-5+4-3)xy = -4xy"
+        },
+        {
+          "rule": "$y^2$ terms",
+          "why": "Combine.",
+          "math": "(7-1+2)y^2 = 8y^2"
+        }
+      ],
+      "explanation": "Sum: $6x^2 - 4xy + 8y^2$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-002",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Subtract $(4a^2 - 3ab + 5b^2)$ from $(7a^2 + 2ab - 3b^2)$.",
+      "answer": "$3a^2 + 5ab - 8b^2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Distribute minus",
+          "why": "Change signs of subtrahend.",
+          "math": "7a^2+2ab-3b^2-4a^2+3ab-5b^2"
+        },
+        {
+          "rule": "Combine",
+          "why": "Like terms.",
+          "math": "3a^2+5ab-8b^2"
+        }
+      ],
+      "explanation": "$(7a^2+2ab-3b^2)-(4a^2-3ab+5b^2) = 3a^2+5ab-8b^2$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-003",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Multiply: $(3x - 4y + 5)$ by $(2x + y - 3)$.",
+      "answer": "$6x^2 - 5xy - 4y^2 + x + 17y - 15$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Distribute",
+          "why": "Multiply each term of first by each of second.",
+          "math": "6x^2+3xy-9x-8xy-4y^2+12y+10x+5y-15"
+        },
+        {
+          "rule": "Combine",
+          "why": "Group like terms.",
+          "math": "6x^2-5xy-4y^2+x+17y-15"
+        }
+      ],
+      "explanation": "Expanded and simplified to $6x^2 - 5xy - 4y^2 + x + 17y - 15$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-004",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Divide: $12x^3 - 8x^2 + 6x$ by $2x$.",
+      "answer": "$6x^2 - 4x + 3$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Term-wise division",
+          "why": "Divide each term by $2x$.",
+          "math": "\\dfrac{12x^3}{2x}-\\dfrac{8x^2}{2x}+\\dfrac{6x}{2x}"
+        },
+        {
+          "rule": "Simplify",
+          "why": "Exponent rules.",
+          "math": "6x^2-4x+3"
+        }
+      ],
+      "explanation": "$(12x^3-8x^2+6x) \\div 2x = 6x^2-4x+3$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-005",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Simplify: $(3a + 2b)^2 - (3a - 2b)^2$.",
+      "answer": "$24ab$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(x+y)^2-(x-y)^2 = 4xy$.",
+          "math": "4(3a)(2b)"
+        },
+        {
+          "rule": "Result",
+          "why": "Multiply.",
+          "math": "24ab"
+        }
+      ],
+      "explanation": "Identity → $24ab$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-006",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "If $x + y = 7$ and $xy = 12$, find $x^2 + y^2$ and $x^3 + y^3$.",
+      "answer": "$x^2+y^2=25$; $x^3+y^3=91$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "$x^2+y^2$",
+          "why": "$(x+y)^2-2xy$.",
+          "math": "49-24=25"
+        },
+        {
+          "rule": "$x^3+y^3$",
+          "why": "$(x+y)(x^2+y^2-xy)$.",
+          "math": "7(25-12)=91"
+        }
+      ],
+      "explanation": "$x^2+y^2=25$; $x^3+y^3=91$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-007",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "From the sum of $3a - 2b + 4c$ and $-5a + 6b - 2c$, subtract $2a - 3b + c$.",
+      "answer": "$-4a + 7b + c$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sum first",
+          "why": "Add the first two expressions.",
+          "math": "-2a+4b+2c"
+        },
+        {
+          "rule": "Subtract",
+          "why": "Distribute minus sign.",
+          "math": "-2a+4b+2c-2a+3b-c=-4a+7b+c"
+        }
+      ],
+      "explanation": "Result: $-4a+7b+c$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-008",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Find the value of $2x^2 - 3xy + 5y^2$ when $x = -2$, $y = 3$.",
+      "answer": "$71$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Substitute",
+          "why": "Replace $x$ and $y$.",
+          "math": "2(-2)^2-3(-2)(3)+5(3)^2"
+        },
+        {
+          "rule": "Evaluate",
+          "why": "Order of operations.",
+          "math": "8+18+45=71"
+        }
+      ],
+      "explanation": "Substitution gives 71.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-009",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Factor out common terms: $4x^2y - 8xy^2 + 12x^3y$.",
+      "answer": "$4xy(x - 2y + 3x^2)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "GCF",
+          "why": "Coefficients GCD 4; lowest powers $x^1 y^1$.",
+          "math": "4xy"
+        },
+        {
+          "rule": "Factor",
+          "why": "Divide each term by GCF.",
+          "math": "4xy(x-2y+3x^2)"
+        }
+      ],
+      "explanation": "GCF $4xy$ → $4xy(x-2y+3x^2)$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-010",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Using an identity, find $(98)^2$ without actual multiplication.",
+      "answer": "$9604$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(a-b)^2 = a^2-2ab+b^2$ with $a=100$, $b=2$.",
+          "math": "(100-2)^2"
+        },
+        {
+          "rule": "Evaluate",
+          "why": "Compute.",
+          "math": "10000-400+4=9604"
+        }
+      ],
+      "explanation": "$(100-2)^2 = 9604$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-011",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Expand using identities: $(2x + 3y + 4z)^2$.",
+      "answer": "$4x^2 + 9y^2 + 16z^2 + 12xy + 24yz + 16zx$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(a+b+c)^2 = a^2+b^2+c^2+2ab+2bc+2ca$.",
+          "math": "(2x)^2+(3y)^2+(4z)^2+2(2x)(3y)+2(3y)(4z)+2(4z)(2x)"
+        },
+        {
+          "rule": "Result",
+          "why": "Simplify.",
+          "math": "4x^2+9y^2+16z^2+12xy+24yz+16zx"
+        }
+      ],
+      "explanation": "Expanded: $4x^2+9y^2+16z^2+12xy+24yz+16zx$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-012",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "If $a + b = 5$ and $ab = 6$, find $a^2 + b^2$ and $a^3 + b^3$.",
+      "answer": "$a^2+b^2=13$; $a^3+b^3=35$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "$a^2+b^2$",
+          "why": "$(a+b)^2-2ab$.",
+          "math": "25-12=13"
+        },
+        {
+          "rule": "$a^3+b^3$",
+          "why": "$(a+b)(a^2+b^2-ab)$.",
+          "math": "5(13-6)=35"
+        }
+      ],
+      "explanation": "$a^2+b^2=13$; $a^3+b^3=35$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-013",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Factorise using identity: $x^2 + 10x + 25 - 9y^2$.",
+      "answer": "$(x + 5 + 3y)(x + 5 - 3y)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Perfect square",
+          "why": "Group first three terms.",
+          "math": "(x+5)^2-(3y)^2"
+        },
+        {
+          "rule": "Difference of squares",
+          "why": "$A^2-B^2=(A-B)(A+B)$.",
+          "math": "(x+5+3y)(x+5-3y)"
+        }
+      ],
+      "explanation": "$(x+5)^2-(3y)^2$ → $(x+5+3y)(x+5-3y)$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-014",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Evaluate $(103)^3$ using the identity $(a+b)^3$.",
+      "answer": "$1092727$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Set $a=100$, $b=3$",
+          "why": "$(a+b)^3 = a^3+3a^2b+3ab^2+b^3$.",
+          "math": "1000000+30000+2700+27"
+        },
+        {
+          "rule": "Add",
+          "why": "Combine.",
+          "math": "1092727"
+        }
+      ],
+      "explanation": "$(100+3)^3 = 1092727$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-015",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Prove: $(a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca$ by expansion.",
+      "answer": "Proved.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Group",
+          "why": "Let $X=a+b$, $Y=c$.",
+          "math": "((a+b)+c)^2=(a+b)^2+2(a+b)c+c^2"
+        },
+        {
+          "rule": "Expand",
+          "why": "Expand $(a+b)^2$.",
+          "math": "a^2+2ab+b^2+2ac+2bc+c^2"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "Rearrange.",
+          "math": "a^2+b^2+c^2+2ab+2bc+2ca\\; \\checkmark"
+        }
+      ],
+      "explanation": "Expand and rearrange → identity proved.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-016",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "If $x - \\dfrac{1}{x} = 3$, find $x^2 + \\dfrac{1}{x^2}$ and $x^3 - \\dfrac{1}{x^3}$.",
+      "answer": "$x^2+\\dfrac{1}{x^2}=11$; $x^3-\\dfrac{1}{x^3}=36$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Square",
+          "why": "$(x-1/x)^2 = x^2-2+1/x^2$.",
+          "math": "x^2+1/x^2=11"
+        },
+        {
+          "rule": "Cube",
+          "why": "$(x-1/x)^3 = x^3-1/x^3-3(x-1/x)$.",
+          "math": "27=x^3-1/x^3-9 \\Rightarrow x^3-1/x^3=36"
+        }
+      ],
+      "explanation": "$x^2+1/x^2=11$; $x^3-1/x^3=36$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-017",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Using identity, simplify: $\\left(x + \\dfrac{1}{x}\\right)^2 - \\left(x - \\dfrac{1}{x}\\right)^2$.",
+      "answer": "$4$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$(A+B)^2-(A-B)^2=4AB$.",
+          "math": "4(x)(1/x)=4"
+        }
+      ],
+      "explanation": "Identity → 4.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH10-B03-018",
+      "chapter": 10,
+      "topicId": "math-ch10",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Find $(a + b)^3 - (a - b)^3$ and simplify.",
+      "answer": "$2b(3a^2 + b^2)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Expand both",
+          "why": "Use cube identities.",
+          "math": "(a^3+3a^2b+3ab^2+b^3)-(a^3-3a^2b+3ab^2-b^3)"
+        },
+        {
+          "rule": "Simplify",
+          "why": "Cancel terms.",
+          "math": "6a^2b+2b^3=2b(3a^2+b^2)"
+        }
+      ],
+      "explanation": "Difference = $2b(3a^2+b^2)$.",
+      "linked_note_id": "CH10-sec-algebraic-expressions-and-identities",
+      "source": "practice-session"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "title": "Exponents and Powers · Batch 1",
+  "chapter": 2,
+  "count": 9,
+  "questions": [
+    {
+      "id": "Q-CH02-B01-001",
+      "chapter": 2,
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Simplify: $\\dfrac{a^3 \\cdot b^2 \\cdot c^4}{a^2 \\cdot b^3 \\cdot c}$ and express in simplest form.",
+      "answer": "$\\dfrac{a c^3}{b}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Quotient law",
+          "why": "$\\frac{x^m}{x^n} = x^{m-n}$.",
+          "math": "\\dfrac{x^m}{x^n} = x^{m-n}"
+        },
+        {
+          "rule": "Apply to each base",
+          "why": "Subtract exponents for $a$, $b$, $c$.",
+          "math": "a^{1} \\cdot b^{-1} \\cdot c^{3}"
+        },
+        {
+          "rule": "Simplest form",
+          "why": "Write negative exponent as reciprocal.",
+          "math": "\\dfrac{a c^3}{b}"
+        }
+      ],
+      "explanation": "Quotient law: $\\frac{ac^3}{b}$.",
+      "linked_note_id": "CH02-sec-exponents-and-powers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH02-B01-002",
+      "chapter": 2,
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "If $2^5 \\cdot 3^4 \\cdot 5^2 = 2^m \\cdot 3^n \\cdot 5^p$, find $m$, $n$, $p$.",
+      "answer": "$m = 5$, $n = 4$, $p = 2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "By unique prime factorisation, exponents of matching bases must be equal.",
+          "math": "2^5 \\cdot 3^4 \\cdot 5^2 = 2^m \\cdot 3^n \\cdot 5^p"
+        },
+        {
+          "rule": "Compare exponents",
+          "why": "Match each prime base.",
+          "math": "m = 5,\\; n = 4,\\; p = 2"
+        }
+      ],
+      "explanation": "Unique prime factorisation → $m=5$, $n=4$, $p=2$.",
+      "linked_note_id": "CH02-sec-exponents-and-powers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH02-B01-003",
+      "chapter": 2,
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Evaluate: $(3^0 + 4^0 + 5^0) \\times (2^{-3} + 3^{-2})$.",
+      "answer": "$\\dfrac{17}{24}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Zero exponent",
+          "why": "Any non-zero number to power 0 equals 1.",
+          "math": "3^0 + 4^0 + 5^0 = 1 + 1 + 1 = 3"
+        },
+        {
+          "rule": "Negative exponents",
+          "why": "$x^{-n} = \\frac{1}{x^n}$.",
+          "math": "2^{-3} + 3^{-2} = \\dfrac{1}{8} + \\dfrac{1}{9}"
+        },
+        {
+          "rule": "Add fractions",
+          "why": "LCM of 8 and 9 is 72.",
+          "math": "3 \\times \\left(\\dfrac{9+8}{72}\\right) = 3 \\times \\dfrac{17}{72} = \\dfrac{17}{24}"
+        }
+      ],
+      "explanation": "$(1+1+1)(\\frac{1}{8}+\\frac{1}{9}) = 3 \\times \\frac{17}{72} = \\frac{17}{24}$.",
+      "linked_note_id": "CH02-sec-exponents-and-powers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH02-B01-004",
+      "chapter": 2,
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Simplify and express with positive exponents: $\\dfrac{x^{-3} y^2}{x^2 y^{-4}} \\cdot (x y^{-1})$.",
+      "answer": "$\\dfrac{y^5}{x^4}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Simplify fraction",
+          "why": "Apply quotient law inside the fraction.",
+          "math": "x^{-5} y^{6}"
+        },
+        {
+          "rule": "Multiply",
+          "why": "Add exponents when multiplying like bases.",
+          "math": "x^{-4} y^{5}"
+        },
+        {
+          "rule": "Positive exponents",
+          "why": "Move negative exponents to denominator.",
+          "math": "\\dfrac{y^5}{x^4}"
+        }
+      ],
+      "explanation": "Simplify → $x^{-4}y^5$ → $\\frac{y^5}{x^4}$.",
+      "linked_note_id": "CH02-sec-exponents-and-powers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH02-B01-005",
+      "chapter": 2,
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the value of $x$ if: $\\dfrac{5^{x-1} \\cdot 3^{2x-3}}{15^{x-2}} = 1$.",
+      "answer": "No integer solution for $x$ ($3^{x-1} = \\frac{1}{5}$). If denominator were $15^{x-1}$, then $x = 2$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Factorise 15",
+          "why": "$15 = 5 \\times 3$.",
+          "math": "15^{x-2} = 5^{x-2} \\cdot 3^{x-2}"
+        },
+        {
+          "rule": "Quotient rule",
+          "why": "Subtract exponents for each base.",
+          "math": "5^{1} \\cdot 3^{x-1} = 1"
+        },
+        {
+          "rule": "Analyse",
+          "why": "$5 \\cdot 3^{x-1} = 1$ implies $3^{x-1} = \\frac{1}{5}$, which has no integer solution.",
+          "math": "3^{x-1} = \\dfrac{1}{5}"
+        }
+      ],
+      "explanation": "$5 \\cdot 3^{x-1} = 1$ → no integer $x$. Note: if denominator were $15^{x-1}$, then $x=2$.",
+      "linked_note_id": "CH02-sec-exponents-and-powers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH02-B01-006",
+      "chapter": 2,
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Express $0.00000000837$ in standard form (scientific notation).",
+      "answer": "$8.37 \\times 10^{-9}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Standard form: $A \\times 10^n$ where $1 \\le A < 10$.",
+          "math": "A \\times 10^n"
+        },
+        {
+          "rule": "Shift decimal",
+          "why": "Move decimal 9 places right to get 8.37.",
+          "math": "8.37 \\times 10^{-9}"
+        }
+      ],
+      "explanation": "Move decimal 9 places → $8.37 \\times 10^{-9}$.",
+      "linked_note_id": "CH02-sec-exponents-and-powers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH02-B01-007",
+      "chapter": 2,
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Simplify: $\\left[\\dfrac{a^{m+n}}{a^m}\\right]^n \\cdot \\left[\\dfrac{a^{n-p}}{a^n}\\right]^m$.",
+      "answer": "$a^{n^2 - pm}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "First bracket",
+          "why": "Quotient then power rule: $(x^a)^b = x^{ab}$.",
+          "math": "\\left[a^{(m+n)-m}\\right]^n = a^{n^2}"
+        },
+        {
+          "rule": "Second bracket",
+          "why": "Same rules.",
+          "math": "\\left[a^{(n-p)-n}\\right]^m = a^{-pm}"
+        },
+        {
+          "rule": "Multiply",
+          "why": "Add exponents.",
+          "math": "a^{n^2} \\cdot a^{-pm} = a^{n^2 - pm}"
+        }
+      ],
+      "explanation": "First bracket $a^{n^2}$, second $a^{-pm}$ → $a^{n^2-pm}$.",
+      "linked_note_id": "CH02-sec-exponents-and-powers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH02-B01-008",
+      "chapter": 2,
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "If $a = 2$, $b = 3$, evaluate: $\\dfrac{a^b + b^a}{a^{b-1} + b^{a-1}}$.",
+      "answer": "$\\dfrac{17}{7}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Substitute",
+          "why": "Replace $a=2$, $b=3$.",
+          "math": "\\dfrac{2^3 + 3^2}{2^{2} + 3^{1}}"
+        },
+        {
+          "rule": "Evaluate",
+          "why": "Compute powers.",
+          "math": "\\dfrac{8 + 9}{4 + 3} = \\dfrac{17}{7}"
+        }
+      ],
+      "explanation": "$\\frac{8+9}{4+3} = \\frac{17}{7}$.",
+      "linked_note_id": "CH02-sec-exponents-and-powers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH02-B01-009",
+      "chapter": 2,
+      "topicId": "math-ch2",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Prove that $\\dfrac{a^m}{a^n} = a^{m-n}$ using laws of exponents (for positive integers $m > n$).",
+      "answer": "Proved: cancelling $n$ factors of $a$ leaves $m-n$ factors.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Definition",
+          "why": "$a^m$ is $a$ multiplied $m$ times; $a^n$ is $a$ multiplied $n$ times.",
+          "math": "a^m = \\underbrace{a \\cdot a \\cdots a}_{m \\text{ times}}"
+        },
+        {
+          "rule": "Division",
+          "why": "Since $m > n$, cancel $n$ factors of $a$ from numerator and denominator.",
+          "math": "\\dfrac{a^m}{a^n} = \\underbrace{a \\cdot a \\cdots a}_{m-n \\text{ times}}"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "Remaining product equals $a^{m-n}$.",
+          "math": "a^{m-n}\\; \\checkmark"
+        }
+      ],
+      "explanation": "Cancel $n$ factors of $a$ → $a^{m-n}$. Proved.",
+      "linked_note_id": "CH02-sec-exponents-and-powers",
+      "source": "practice-session"
+    }
+  ]
+}

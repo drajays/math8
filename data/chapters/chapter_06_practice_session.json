@@ -1,0 +1,257 @@
+{
+  "title": "Operations on Sets · Batch 2",
+  "chapter": 6,
+  "count": 9,
+  "questions": [
+    {
+      "id": "Q-CH06-B02-001",
+      "chapter": 6,
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "If $U = \\{1,2,3,4,5,6,7,8,9,10\\}$, $A = \\{2,4,6,8,10\\}$, $B = \\{1,3,5,7,9\\}$, find $A' \\cup B'$ and $(A \\cap B)'$.",
+      "answer": "$A' \\cup B' = U$; $(A \\cap B)' = U$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Complements",
+          "why": "$A'=\\{1,3,5,7,9\\}=B$ and $B'=A$.",
+          "math": "A' = B,\\; B' = A"
+        },
+        {
+          "rule": "$A' \\cup B'$",
+          "why": "Union of complements covers all of $U$.",
+          "math": "A' \\cup B' = U"
+        },
+        {
+          "rule": "$(A \\cap B)'$",
+          "why": "$A \\cap B = \\emptyset$; complement of empty set is $U$.",
+          "math": "(A \\cap B)' = U"
+        }
+      ],
+      "explanation": "$A'=B$, $B'=A$ → $A'\\cup B'=U$; $(A\\cap B)'=U$ (De Morgan confirmed).",
+      "linked_note_id": "CH06-sec-operations-on-sets",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH06-B02-002",
+      "chapter": 6,
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "Given $n(U)=50$, $n(A)=20$, $n(B)=25$, $n(A \\cap B)=8$, find $n(A \\cup B)$ and $n(A' \\cap B')$.",
+      "answer": "$n(A \\cup B)=37$; $n(A' \\cap B')=13$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Union formula",
+          "why": "$n(A \\cup B)=n(A)+n(B)-n(A \\cap B)$.",
+          "math": "20 + 25 - 8 = 37"
+        },
+        {
+          "rule": "Outside both sets",
+          "why": "By De Morgan: $n(A' \\cap B')=n(U)-n(A \\cup B)$.",
+          "math": "50 - 37 = 13"
+        }
+      ],
+      "explanation": "$n(A\\cup B)=37$; $n(A'\\cap B')=13$.",
+      "linked_note_id": "CH06-sec-operations-on-sets",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH06-B02-003",
+      "chapter": 6,
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "Draw a Venn diagram to represent: students who play cricket or football but not both in a class of $40$ (with numbers).",
+      "answer": "Shade $(C \\cup F) - (C \\cap F)$: only-cricket and only-football regions (e.g. 15 + 15, with 5 in both and 5 in neither).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Cricket or football but not both = symmetric difference.",
+          "math": "(C \\cup F) - (C \\cap F)"
+        },
+        {
+          "rule": "Diagram",
+          "why": "Two overlapping circles in rectangle $U$; leave intersection unshaded.",
+          "math": "\\text{Shade left and right moons only}"
+        },
+        {
+          "rule": "Example numbers",
+          "why": "Sample partition of 40.",
+          "math": "15 \\text{ only C},\\; 15 \\text{ only F},\\; 5 \\text{ both},\\; 5 \\text{ neither}"
+        }
+      ],
+      "explanation": "Shade only-cricket and only-football moons; exclude intersection.",
+      "linked_note_id": "CH06-sec-operations-on-sets",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH06-B02-004",
+      "chapter": 6,
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "If $A = \\{x : x \\text{ is a prime number less than } 20\\}$ and $B = \\{x : x \\text{ is a multiple of } 3 \\text{ less than } 20\\}$, find $A \\cap B$ and $A - B$.",
+      "answer": "$A \\cap B = \\{3\\}$; $A - B = \\{2,5,7,11,13,17,19\\}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Roster form",
+          "why": "List elements explicitly.",
+          "math": "A = \\{2,3,5,7,11,13,17,19\\},\\; B = \\{3,6,9,12,15,18\\}"
+        },
+        {
+          "rule": "$A \\cap B$",
+          "why": "Common elements.",
+          "math": "\\{3\\}"
+        },
+        {
+          "rule": "$A - B$",
+          "why": "In $A$ but not in $B$.",
+          "math": "\\{2,5,7,11,13,17,19\\}"
+        }
+      ],
+      "explanation": "$A\\cap B=\\{3\\}$; $A-B=\\{2,5,7,11,13,17,19\\}$.",
+      "linked_note_id": "CH06-sec-operations-on-sets",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH06-B02-005",
+      "chapter": 6,
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "Prove that $A \\cup B = B \\cup A$ using sets from $U = \\{1,\\ldots,10\\}$.",
+      "answer": "Proved with example: $\\{1,2,3\\}\\cup\\{3,4,5\\}=\\{1,2,3,4,5\\}$ both ways.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Choose sets",
+          "why": "Example from $U$.",
+          "math": "A = \\{1,2,3\\},\\; B = \\{3,4,5\\}"
+        },
+        {
+          "rule": "LHS",
+          "why": "Union of $A$ and $B$.",
+          "math": "A \\cup B = \\{1,2,3,4,5\\}"
+        },
+        {
+          "rule": "RHS",
+          "why": "Union of $B$ and $A$.",
+          "math": "B \\cup A = \\{1,2,3,4,5\\}"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "Commutative property of union.",
+          "math": "A \\cup B = B \\cup A\\; \\checkmark"
+        }
+      ],
+      "explanation": "Example shows $A\\cup B = B\\cup A$. Proved.",
+      "linked_note_id": "CH06-sec-operations-on-sets",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH06-B02-006",
+      "chapter": 6,
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "Find the number of elements in the power set of $A = \\{a,b,c,d\\}$.",
+      "answer": "$16$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "Power set has $2^n$ subsets.",
+          "math": "2^n"
+        },
+        {
+          "rule": "Apply",
+          "why": "$n=4$.",
+          "math": "2^4 = 16"
+        }
+      ],
+      "explanation": "$n(A)=4$ → power set has $2^4=16$ elements.",
+      "linked_note_id": "CH06-sec-operations-on-sets",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH06-B02-007",
+      "chapter": 6,
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "If $n(A)=12$, $n(B)=15$, $n(A \\cup B)=23$, find $n(A \\cap B)$ and discuss $n(A' \\cap B')$.",
+      "answer": "$n(A \\cap B)=4$; $n(A' \\cap B')$ needs $n(U)$ (would be 0 if $A \\cup B = U$).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Intersection",
+          "why": "Rearrange union formula.",
+          "math": "n(A \\cap B) = 12 + 15 - 23 = 4"
+        },
+        {
+          "rule": "$n(A' \\cap B')$",
+          "why": "$= n(U) - n(A \\cup B)$; $n(U)$ not given.",
+          "math": "n(A' \\cap B') = n(U) - 23"
+        }
+      ],
+      "explanation": "$n(A\\cap B)=4$; $n(A'\\cap B')$ requires $n(U)$.",
+      "linked_note_id": "CH06-sec-operations-on-sets",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH06-B02-008",
+      "chapter": 6,
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "Represent in roster and set-builder form: (i) set of even prime numbers (ii) set of vowels in \"MATHEMATICS\".",
+      "answer": "(i) Roster $\\{2\\}$ · (ii) Roster $\\{A,E,I\\}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "(i) Even primes",
+          "why": "Only 2 is even and prime.",
+          "math": "\\{2\\},\\; \\{x : x \\text{ is an even prime}\\}"
+        },
+        {
+          "rule": "(ii) Vowels",
+          "why": "No repeats in a set.",
+          "math": "\\{A,E,I\\},\\; \\{x : x \\text{ is a vowel in MATHEMATICS}\\}"
+        }
+      ],
+      "explanation": "(i) $\\{2\\}$ · (ii) $\\{A,E,I\\}$.",
+      "linked_note_id": "CH06-sec-operations-on-sets",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH06-B02-009",
+      "chapter": 6,
+      "topicId": "math-ch6",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "If $A \\subset B$ and $B \\subset C$, prove $A \\subset C$ with an example.",
+      "answer": "Proved: e.g. $A=\\{1\\}$, $B=\\{1,2\\}$, $C=\\{1,2,3\\}$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Example",
+          "why": "Construct nested subsets.",
+          "math": "A=\\{1\\},\\; B=\\{1,2\\},\\; C=\\{1,2,3\\}"
+        },
+        {
+          "rule": "Check",
+          "why": "Every element of $A$ lies in $C$.",
+          "math": "1 \\in C \\Rightarrow A \\subset C"
+        }
+      ],
+      "explanation": "Transitivity: $A\\subset B\\subset C$ → $A\\subset C$. Proved.",
+      "linked_note_id": "CH06-sec-operations-on-sets",
+      "source": "practice-session"
+    }
+  ]
+}

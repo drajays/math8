@@ -1,0 +1,222 @@
+{
+  "title": "Cubes and Cube Roots · Batch 1",
+  "chapter": 4,
+  "count": 8,
+  "questions": [
+    {
+      "id": "Q-CH04-B01-001",
+      "chapter": 4,
+      "topicId": "math-ch4",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the cube of:\n\n(i) $-7$\n\n(ii) $2.5$\n\n(iii) $\\dfrac{5}{6}$",
+      "answer": "(i) $-343$ · (ii) $15.625$ · (iii) $\\dfrac{125}{216}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "(i)",
+          "why": "Negative × negative × negative = negative.",
+          "math": "(-7)^3 = -343"
+        },
+        {
+          "rule": "(ii)",
+          "why": "$2.5 \\times 2.5 \\times 2.5$.",
+          "math": "15.625"
+        },
+        {
+          "rule": "(iii)",
+          "why": "Cube numerator and denominator.",
+          "math": "\\left(\\dfrac{5}{6}\\right)^3 = \\dfrac{125}{216}"
+        }
+      ],
+      "explanation": "(i) $-343$ · (ii) 15.625 · (iii) $\\frac{125}{216}$.",
+      "linked_note_id": "CH04-sec-cubes-and-cube-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH04-B01-002",
+      "chapter": 4,
+      "topicId": "math-ch4",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the cube root of $17576$ by prime factorisation method.",
+      "answer": "$26$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Factorise",
+          "why": "Divide repeatedly by 2, then recognise $13^3$.",
+          "math": "17576 = 2^3 \\cdot 13^3"
+        },
+        {
+          "rule": "Cube root",
+          "why": "Take one factor from each group of three.",
+          "math": "2 \\times 13 = 26"
+        }
+      ],
+      "explanation": "$17576 = 2^3 \\cdot 13^3$ → $\\sqrt[3]{17576} = 26$.",
+      "linked_note_id": "CH04-sec-cubes-and-cube-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH04-B01-003",
+      "chapter": 4,
+      "topicId": "math-ch4",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the smallest number by which $8788$ must be divided so that the quotient is a perfect cube.",
+      "answer": "$4$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Factorise",
+          "why": "$8788 = 2^2 \\cdot 13^3$.",
+          "math": "2^2 \\cdot 13^3"
+        },
+        {
+          "rule": "Identify unpaired factor",
+          "why": "$13^3$ forms a complete group; $2^2$ does not.",
+          "math": "\\text{Divide by } 2^2 = 4"
+        }
+      ],
+      "explanation": "$8788 = 2^2 \\cdot 13^3$ → divide by 4.",
+      "linked_note_id": "CH04-sec-cubes-and-cube-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH04-B01-004",
+      "chapter": 4,
+      "topicId": "math-ch4",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "The volume of a cube is $216\\,\\text{cm}^3$. Find its edge and total surface area.",
+      "answer": "Edge $= 6\\,\\text{cm}$; TSA $= 216\\,\\text{cm}^2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Edge",
+          "why": "Volume $= \\text{edge}^3$.",
+          "math": "\\sqrt[3]{216} = 6\\,\\text{cm}"
+        },
+        {
+          "rule": "TSA",
+          "why": "TSA $= 6 \\times \\text{edge}^2$.",
+          "math": "6 \\times 36 = 216\\,\\text{cm}^2"
+        }
+      ],
+      "explanation": "Edge = 6 cm; TSA = 216 cm².",
+      "linked_note_id": "CH04-sec-cubes-and-cube-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH04-B01-005",
+      "chapter": 4,
+      "topicId": "math-ch4",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Evaluate: $\\sqrt[3]{0.000216} + \\sqrt[3]{0.000008} - \\sqrt[3]{0.000001}$.",
+      "answer": "$0.07$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Each cube root",
+          "why": "Cube root reduces decimal places by a factor of 3.",
+          "math": "0.06 + 0.02 - 0.01"
+        },
+        {
+          "rule": "Calculate",
+          "why": "Add and subtract.",
+          "math": "0.07"
+        }
+      ],
+      "explanation": "$0.06 + 0.02 - 0.01 = 0.07$.",
+      "linked_note_id": "CH04-sec-cubes-and-cube-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH04-B01-006",
+      "chapter": 4,
+      "topicId": "math-ch4",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the cube root of $13824$.",
+      "answer": "$24$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Group digits",
+          "why": "Group in threes from the right: $\\overline{13}\\,\\overline{824}$.",
+          "math": "\\overline{13}\\,\\overline{824}"
+        },
+        {
+          "rule": "Units digit",
+          "why": "824 ends in 4; only $4^3=64$ ends in 4 → units digit 4.",
+          "math": "\\text{units digit } 4"
+        },
+        {
+          "rule": "Tens digit",
+          "why": "$2^3=8 \\le 13 < 27=3^3$ → tens digit 2.",
+          "math": "\\sqrt[3]{13824} = 24"
+        }
+      ],
+      "explanation": "Estimation: groups $\\overline{13}\\,\\overline{824}$ → cube root 24.",
+      "linked_note_id": "CH04-sec-cubes-and-cube-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH04-B01-007",
+      "chapter": 4,
+      "topicId": "math-ch4",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "If $\\sqrt[3]{a/b} = \\dfrac{5}{6}$, find $a/b$ and $a + b$.",
+      "answer": "$a/b = \\dfrac{125}{216}$; $a + b = 341$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Cube both sides",
+          "why": "Reverse the cube root.",
+          "math": "\\dfrac{a}{b} = \\left(\\dfrac{5}{6}\\right)^3 = \\dfrac{125}{216}"
+        },
+        {
+          "rule": "Sum",
+          "why": "If $a=125$, $b=216$ in simplest form.",
+          "math": "a + b = 125 + 216 = 341"
+        }
+      ],
+      "explanation": "$a/b = \\frac{125}{216}$; $a+b = 341$.",
+      "linked_note_id": "CH04-sec-cubes-and-cube-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH04-B01-008",
+      "chapter": 4,
+      "topicId": "math-ch4",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the cube root of $42875$.",
+      "answer": "$35$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Group digits",
+          "why": "$\\overline{42}\\,\\overline{875}$.",
+          "math": "\\overline{42}\\,\\overline{875}"
+        },
+        {
+          "rule": "Units digit",
+          "why": "875 ends in 5; only cubes ending in 5 come from numbers ending in 5.",
+          "math": "\\text{units digit } 5"
+        },
+        {
+          "rule": "Tens digit",
+          "why": "$3^3=27 < 42 < 64=4^3$ → tens digit 3.",
+          "math": "\\sqrt[3]{42875} = 35"
+        }
+      ],
+      "explanation": "Grouping method → cube root 35.",
+      "linked_note_id": "CH04-sec-cubes-and-cube-roots",
+      "source": "practice-session"
+    }
+  ]
+}

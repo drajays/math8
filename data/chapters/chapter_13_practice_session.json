@@ -1,0 +1,472 @@
+{
+  "title": "Understanding Shapes · Batch 4",
+  "chapter": 13,
+  "count": 18,
+  "questions": [
+    {
+      "id": "Q-CH13-B04-001",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Find the sum of interior angles of a polygon with $9$ sides. Also find each interior angle if regular.",
+      "answer": "Sum $= 1260°$; each regular interior angle $= 140°$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sum formula",
+          "why": "$(n-2)\\times 180°$.",
+          "math": "(9-2)\\times 180°=1260°"
+        },
+        {
+          "rule": "Regular polygon",
+          "why": "Divide by $n$.",
+          "math": "1260°/9=140°"
+        }
+      ],
+      "explanation": "Sum 1260°; each angle 140°.",
+      "linked_note_id": "CH13-sec-understanding-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-002",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "An exterior angle of a regular polygon is $24°$. Find the number of sides.",
+      "answer": "$15$ sides",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Exterior angles sum",
+          "why": "Always $360°$ for convex polygon.",
+          "math": "n=360°/24°=15"
+        }
+      ],
+      "explanation": "$360° ÷ 24° = 15$ sides.",
+      "linked_note_id": "CH13-sec-understanding-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-003",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Prove that the sum of exterior angles of any polygon is $360°$ (one at each vertex).",
+      "answer": "Proved.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Linear pairs",
+          "why": "At each vertex: $i_k+e_k=180°$.",
+          "math": "\\sum(i_k+e_k)=180°\\cdot n"
+        },
+        {
+          "rule": "Interior sum",
+          "why": "$\\sum i_k=(n-2)\\cdot 180°$.",
+          "math": "(n-2)180°+\\sum e=180°n"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "Simplify.",
+          "math": "\\sum e=360°\\; \\checkmark"
+        }
+      ],
+      "explanation": "Interior + exterior argument → 360°. Proved.",
+      "linked_note_id": "CH13-sec-understanding-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-004",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "The interior angles of a hexagon are in the ratio $2:3:4:5:6:7$. Find all the angles.",
+      "answer": "$\\dfrac{160}{3}°$, $80°$, $\\dfrac{320}{3}°$, $\\dfrac{400}{3}°$, $160°$, $\\dfrac{560}{3}°$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Hexagon sum",
+          "why": "$(6-2)\\times 180°=720°$.",
+          "math": "720°"
+        },
+        {
+          "rule": "Ratio",
+          "why": "$2x+3x+4x+5x+6x+7x=720°$.",
+          "math": "27x=720° \\Rightarrow x=\\dfrac{80}{3}°"
+        },
+        {
+          "rule": "Angles",
+          "why": "Multiply ratio parts.",
+          "math": "\\dfrac{160}{3}°,\\; 80°,\\; \\dfrac{320}{3}°,\\; \\dfrac{400}{3}°,\\; 160°,\\; \\dfrac{560}{3}°"
+        }
+      ],
+      "explanation": "$x=\\frac{80}{3}°$; six angles as above.",
+      "linked_note_id": "CH13-sec-understanding-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-005",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "In a quadrilateral, three angles are equal and the fourth is $120°$. Find each equal angle.",
+      "answer": "$80°$ each",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Quadrilateral sum",
+          "why": "$360°$ total.",
+          "math": "3x+120°=360°"
+        },
+        {
+          "rule": "Solve",
+          "why": "$3x=240°$.",
+          "math": "x=80°"
+        }
+      ],
+      "explanation": "Each equal angle = 80°.",
+      "linked_note_id": "CH13-sec-understanding-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-006",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Find the measure of each angle of a regular octagon.",
+      "answer": "$135°$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Exterior angle",
+          "why": "$360°/8$.",
+          "math": "45°"
+        },
+        {
+          "rule": "Interior",
+          "why": "$180°-45°$.",
+          "math": "135°"
+        }
+      ],
+      "explanation": "Interior angle = 135°.",
+      "linked_note_id": "CH13-sec-understanding-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-007",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "If one angle of a triangle is $90°$ and the other two are in ratio $2:3$, find the angles.",
+      "answer": "$36°$ and $54°$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Triangle sum",
+          "why": "$180°$ total.",
+          "math": "90°+2x+3x=180°"
+        },
+        {
+          "rule": "Solve",
+          "why": "$5x=90°$.",
+          "math": "x=18°;\\; 36°,\\; 54°"
+        }
+      ],
+      "explanation": "Other angles: 36° and 54°.",
+      "linked_note_id": "CH13-sec-understanding-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-008",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Prove that in any triangle, the sum of angles is $180°$.",
+      "answer": "Proved.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Construction",
+          "why": "Through $A$, draw line parallel to $BC$.",
+          "math": "XY \\parallel BC"
+        },
+        {
+          "rule": "Alternate angles",
+          "why": "$\\angle XAB=\\angle B$, $\\angle YAC=\\angle C$.",
+          "math": "\\angle XAB+\\angle A+\\angle YAC=180°"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "Substitute.",
+          "math": "\\angle A+\\angle B+\\angle C=180°\\; \\checkmark"
+        }
+      ],
+      "explanation": "Parallel line + alternate angles → 180°. Proved.",
+      "linked_note_id": "CH13-sec-understanding-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-009",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "The angles of a quadrilateral are in ratio $1:2:3:4$. Find the angles.",
+      "answer": "$36°$, $72°$, $108°$, $144°$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sum",
+          "why": "$x+2x+3x+4x=360°$.",
+          "math": "10x=360°"
+        },
+        {
+          "rule": "Solve",
+          "why": "$x=36°$.",
+          "math": "36°,\\; 72°,\\; 108°,\\; 144°"
+        }
+      ],
+      "explanation": "Angles: 36°, 72°, 108°, 144°.",
+      "linked_note_id": "CH13-sec-understanding-shapes",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-010",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Prove that the diagonals of a parallelogram bisect each other.",
+      "answer": "Proved: $AO=OC$, $BO=OD$ by ASA congruence of $\\triangle AOB$ and $\\triangle COD$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Congruence setup",
+          "why": "In $\\parallelogram$ $ABCD$, diagonals meet at $O$.",
+          "math": "AB=CD,\\; \\angle OAB=\\angle OCD,\\; \\angle OBA=\\angle ODC"
+        },
+        {
+          "rule": "ASA",
+          "why": "$\\triangle AOB \\cong \\triangle COD$.",
+          "math": "AO=OC,\\; BO=OD"
+        }
+      ],
+      "explanation": "ASA on $\\triangle AOB$, $\\triangle COD$ → diagonals bisect. Proved.",
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-011",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "In parallelogram $ABCD$, if $\\angle A = 65°$, find all other angles and prove opposite sides equal.",
+      "answer": "Angles: $65°$, $115°$, $65°$, $115°$; $AB=CD$, $AD=BC$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Angles",
+          "why": "Opposite equal; adjacent supplementary.",
+          "math": "65°,\\; 115°,\\; 65°,\\; 115°"
+        },
+        {
+          "rule": "Sides",
+          "why": "$\\triangle ABC \\cong \\triangle CDA$ (ASA).",
+          "math": "AB=CD,\\; AD=BC"
+        }
+      ],
+      "explanation": "Angles as above; opposite sides equal by ASA.",
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-012",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Prove that the diagonals of a rhombus bisect each other at right angles.",
+      "answer": "Proved: $\\angle AOB = 90°$ via SSS congruence.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Bisection",
+          "why": "Rhombus is a parallelogram → diagonals bisect.",
+          "math": "AO=OC,\\; BO=OD"
+        },
+        {
+          "rule": "SSS",
+          "why": "$\\triangle AOB \\cong \\triangle AOD$ ($AB=AD$, common $AO$, $BO=OD$).",
+          "math": "\\angle AOB=\\angle AOD=90°"
+        }
+      ],
+      "explanation": "SSS → right angles at intersection. Proved.",
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-013",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "In rectangle $ABCD$, diagonals $AC$ and $BD$ intersect at $O$. Prove $AO=OC$ and the triangles are congruent.",
+      "answer": "$AO=OC$ (parallelogram); $AC=BD$ by SAS on $\\triangle ADC$ and $\\triangle BCD$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Bisection",
+          "why": "Rectangle is a parallelogram.",
+          "math": "AO=OC"
+        },
+        {
+          "rule": "Equal diagonals",
+          "why": "$\\triangle ADC \\cong \\triangle BCD$ (SAS).",
+          "math": "AC=BD"
+        }
+      ],
+      "explanation": "Diagonals bisect and are equal.",
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-014",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "The diagonals of a rhombus are $16$ cm and $12$ cm. Find its side and area.",
+      "answer": "Side $= 10$ cm; Area $= 96$ cm²",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Half-diagonals",
+          "why": "Right triangle legs 8 cm and 6 cm.",
+          "math": "8,\\; 6"
+        },
+        {
+          "rule": "Side",
+          "why": "Pythagoras.",
+          "math": "\\sqrt{8^2+6^2}=10 \\text{ cm}"
+        },
+        {
+          "rule": "Area",
+          "why": "$\\frac{1}{2}d_1 d_2$.",
+          "math": "\\frac{1}{2}\\times 16\\times 12=96 \\text{ cm}^2"
+        }
+      ],
+      "explanation": "Side 10 cm; area 96 cm².",
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-015",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "Prove that each pair of opposite angles of a parallelogram are equal.",
+      "answer": "Proved: $\\angle A=\\angle C$, $\\angle B=\\angle D$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Supplementary pairs",
+          "why": "Consecutive interior angles with parallel sides.",
+          "math": "\\angle A+\\angle B=180°,\\; \\angle B+\\angle C=180°"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "Equate expressions.",
+          "math": "\\angle A=\\angle C;\\; \\angle B=\\angle D"
+        }
+      ],
+      "explanation": "Consecutive interior angle argument. Proved.",
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-016",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "In a square, prove all sides equal, all angles $90°$, diagonals equal and bisect at $90°$.",
+      "answer": "Proved (combines parallelogram, rectangle, rhombus properties).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Sides & angles",
+          "why": "Parallelogram with one right angle and adjacent sides equal.",
+          "math": "AB=BC=CD=DA;\\; \\text{all } 90°"
+        },
+        {
+          "rule": "Diagonals",
+          "why": "Equal (rectangle) and perpendicular (rhombus).",
+          "math": "AC=BD;\\; \\angle AOB=90°"
+        }
+      ],
+      "explanation": "Square inherits rectangle + rhombus diagonal properties. Proved.",
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-017",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "A parallelogram has one angle $75°$. Find the other angles and prove adjacent angles supplementary.",
+      "answer": "$75°$, $105°$, $75°$, $105°$; adjacent angles sum to $180°$.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Angles",
+          "why": "Opposite equal; adjacent supplementary.",
+          "math": "75°,\\; 105°,\\; 75°,\\; 105°"
+        },
+        {
+          "rule": "Proof",
+          "why": "Parallel lines + transversal → consecutive interior angles sum $180°$.",
+          "math": "\\angle A+\\angle B=180°"
+        }
+      ],
+      "explanation": "Angles 75°, 105°, …; adjacent supplementary by parallel lines.",
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH13-B04-018",
+      "chapter": 13,
+      "topicId": "math-ch13",
+      "type": "practice",
+      "subtopic": "Batch 4 · Detailed Solutions",
+      "question": "If $ABCD$ is a trapezium with $AB \\parallel DC$, prove angles on the same side of a transversal are supplementary.",
+      "answer": "$\\angle A+\\angle D=180°$ and $\\angle B+\\angle C=180°$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Parallel sides",
+          "why": "$AB \\parallel DC$.",
+          "math": "AB \\parallel DC"
+        },
+        {
+          "rule": "Transversals",
+          "why": "$AD$ and $BC$ cross parallel lines.",
+          "math": "\\angle A+\\angle D=180°,\\; \\angle B+\\angle C=180°"
+        }
+      ],
+      "explanation": "Consecutive interior angles on parallel lines. Proved.",
+      "linked_note_id": "CH13-sec-quadrilateral",
+      "source": "practice-session"
+    }
+  ]
+}

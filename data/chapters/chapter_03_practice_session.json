@@ -1,0 +1,252 @@
+{
+  "title": "Squares and Square Roots · Batch 1",
+  "chapter": 3,
+  "count": 9,
+  "questions": [
+    {
+      "id": "Q-CH03-B01-001",
+      "chapter": 3,
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the square of:\n\n(i) $0.07$\n\n(ii) $1.5$\n\n(iii) $\\dfrac{25}{36}$",
+      "answer": "(i) $0.0049$ · (ii) $2.25$ · (iii) $\\dfrac{625}{1296}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "(i)",
+          "why": "$0.07 \\times 0.07$; 2 decimal places × 2 = 4.",
+          "math": "0.0049"
+        },
+        {
+          "rule": "(ii)",
+          "why": "$1.5 \\times 1.5$.",
+          "math": "2.25"
+        },
+        {
+          "rule": "(iii)",
+          "why": "Square numerator and denominator separately.",
+          "math": "\\left(\\dfrac{25}{36}\\right)^2 = \\dfrac{625}{1296}"
+        }
+      ],
+      "explanation": "(i) 0.0049 · (ii) 2.25 · (iii) $\\frac{625}{1296}$.",
+      "linked_note_id": "CH03-sec-squares-and-square-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH03-B01-002",
+      "chapter": 3,
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the square root of $7921$ by prime factorisation method and verify by division method.",
+      "answer": "$\\sqrt{7921} = 89$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Prime factorisation",
+          "why": "Test primes; $7921 = 89 \\times 89$.",
+          "math": "\\sqrt{7921} = 89"
+        },
+        {
+          "rule": "Division method",
+          "why": "Pair digits: $\\overline{79}\\,\\overline{21}$. Largest square $\\le 79$ is $64=8^2$.",
+          "math": "8^2 = 64;\\; \\text{remainder } 15;\\; \\text{bring down } 21 \\Rightarrow 1521"
+        },
+        {
+          "rule": "Verify",
+          "why": "$169 \\times 9 = 1521$; remainder 0.",
+          "math": "89\\; \\checkmark"
+        }
+      ],
+      "explanation": "Prime factorisation and long division both give $\\sqrt{7921} = 89$.",
+      "linked_note_id": "CH03-sec-squares-and-square-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH03-B01-003",
+      "chapter": 3,
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "The area of a square field is $5184\\,\\text{m}^2$. Find the length of its side and perimeter.",
+      "answer": "Side $= 72\\,\\text{m}$; Perimeter $= 288\\,\\text{m}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Side length",
+          "why": "Side $= \\sqrt{5184}$. Long division: $\\overline{51}\\,\\overline{84}$.",
+          "math": "\\sqrt{5184} = 72\\,\\text{m}"
+        },
+        {
+          "rule": "Perimeter",
+          "why": "Perimeter $= 4 \\times$ side.",
+          "math": "4 \\times 72 = 288\\,\\text{m}"
+        }
+      ],
+      "explanation": "Side = 72 m; perimeter = 288 m.",
+      "linked_note_id": "CH03-sec-squares-and-square-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH03-B01-004",
+      "chapter": 3,
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the smallest number by which $2592$ must be multiplied so that the product is a perfect square.",
+      "answer": "$2$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Prime factorise",
+          "why": "Break 2592 into prime powers.",
+          "math": "2592 = 2^5 \\cdot 3^4"
+        },
+        {
+          "rule": "Pair factors",
+          "why": "Perfect square needs even powers for every prime.",
+          "math": "2^5 \\text{ has one unpaired } 2"
+        },
+        {
+          "rule": "Answer",
+          "why": "Multiply by 2 to make $2^6$.",
+          "math": "2"
+        }
+      ],
+      "explanation": "$2592 = 2^5 \\cdot 3^4$ → multiply by 2.",
+      "linked_note_id": "CH03-sec-squares-and-square-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH03-B01-005",
+      "chapter": 3,
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the square root of $0.00059049$.",
+      "answer": "$0.0243$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Rewrite",
+          "why": "Express as fraction over power of 10.",
+          "math": "0.00059049 = \\dfrac{59049}{10^8}"
+        },
+        {
+          "rule": "Numerator root",
+          "why": "$\\sqrt{59049} = 243$.",
+          "math": "243"
+        },
+        {
+          "rule": "Result",
+          "why": "Divide by $10^4$.",
+          "math": "\\dfrac{243}{10000} = 0.0243"
+        }
+      ],
+      "explanation": "$\\sqrt{59049}/10^4 = 0.0243$.",
+      "linked_note_id": "CH03-sec-squares-and-square-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH03-B01-006",
+      "chapter": 3,
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Evaluate: $\\sqrt{0.09} + \\sqrt{0.0064} - \\sqrt{0.0004}$ and simplify.",
+      "answer": "$0.36$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Each root",
+          "why": "Square root halves decimal places for perfect squares.",
+          "math": "\\sqrt{0.09}=0.3,\\; \\sqrt{0.0064}=0.08,\\; \\sqrt{0.0004}=0.02"
+        },
+        {
+          "rule": "Calculate",
+          "why": "Add and subtract.",
+          "math": "0.3 + 0.08 - 0.02 = 0.36"
+        }
+      ],
+      "explanation": "$0.3 + 0.08 - 0.02 = 0.36$.",
+      "linked_note_id": "CH03-sec-squares-and-square-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH03-B01-007",
+      "chapter": 3,
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "A gardener wants to plant $2025$ trees in his garden so that the number of trees in each row equals the number of rows. Find the number of rows.",
+      "answer": "$45$ rows",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Set up",
+          "why": "If rows $=$ trees per row $= x$, then $x^2 = 2025$.",
+          "math": "x^2 = 2025"
+        },
+        {
+          "rule": "Square root",
+          "why": "Ends in 25 → root ends in 5; $\\sqrt{2025} = 45$.",
+          "math": "x = 45"
+        }
+      ],
+      "explanation": "$x^2 = 2025$ → $x = 45$ rows.",
+      "linked_note_id": "CH03-sec-squares-and-square-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH03-B01-008",
+      "chapter": 3,
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the value of $\\sqrt{3 + 2\\sqrt{2}} + \\sqrt{3 - 2\\sqrt{2}}$.",
+      "answer": "$2\\sqrt{2}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Perfect squares",
+          "why": "$3 + 2\\sqrt{2} = (\\sqrt{2}+1)^2$ and $3 - 2\\sqrt{2} = (\\sqrt{2}-1)^2$.",
+          "math": "(\\sqrt{2}+1)^2,\\; (\\sqrt{2}-1)^2"
+        },
+        {
+          "rule": "Simplify",
+          "why": "Take square roots and add.",
+          "math": "(\\sqrt{2}+1) + (\\sqrt{2}-1) = 2\\sqrt{2}"
+        }
+      ],
+      "explanation": "$(\\sqrt{2}+1) + (\\sqrt{2}-1) = 2\\sqrt{2}$.",
+      "linked_note_id": "CH03-sec-squares-and-square-roots",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH03-B01-009",
+      "chapter": 3,
+      "topicId": "math-ch3",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Using an algebraic identity, find $(98)^2$ without actual multiplication.",
+      "answer": "$9604$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "Use $(a-b)^2 = a^2 - 2ab + b^2$ with $a=100$, $b=2$.",
+          "math": "(100-2)^2"
+        },
+        {
+          "rule": "Expand",
+          "why": "Substitute and compute.",
+          "math": "10000 - 400 + 4 = 9604"
+        }
+      ],
+      "explanation": "$(100-2)^2 = 10000 - 400 + 4 = 9604$.",
+      "linked_note_id": "CH03-sec-squares-and-square-roots",
+      "source": "practice-session"
+    }
+  ]
+}

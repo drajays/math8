@@ -1,0 +1,247 @@
+{
+  "title": "Playing with Numbers · Batch 1 & 2",
+  "chapter": 5,
+  "count": 8,
+  "questions": [
+    {
+      "id": "Q-CH05-B01-001",
+      "chapter": 5,
+      "topicId": "math-ch5",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the value of $A$ and $B$ if the number $5A3B$ is divisible by $99$ (use divisibility rules).",
+      "answer": "No valid single-digit pair $(A, B)$ exists (conditions for 9 and 11 contradict).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Divisibility by 11",
+          "why": "Alternating sum: $(A+B) - 8$ must be 0 or $\\pm 11$.",
+          "math": "A + B = 8"
+        },
+        {
+          "rule": "Divisibility by 9",
+          "why": "Sum of digits $= 8 + (A+B) = 16$.",
+          "math": "16 \\text{ is not divisible by } 9"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "The two rules contradict — no solution.",
+          "math": "\\text{No valid } (A, B)"
+        }
+      ],
+      "explanation": "Rule for 11 → $A+B=8$; rule for 9 → sum = 16 (not divisible by 9). No solution.",
+      "linked_note_id": "CH05-sec-playing-with-numbers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH05-B01-002",
+      "chapter": 5,
+      "topicId": "math-ch5",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "A number is formed by two digits. The sum of its digits is $9$. If $27$ is added to the number, the digits are reversed. Find the number.",
+      "answer": "$36$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Algebraic form",
+          "why": "Two-digit number: $10x + y$.",
+          "math": "x + y = 9"
+        },
+        {
+          "rule": "Reversal condition",
+          "why": "$(10x+y)+27 = 10y+x$.",
+          "math": "9y - 9x = 27 \\Rightarrow y - x = 3"
+        },
+        {
+          "rule": "Solve",
+          "why": "Add equations: $2y=12$.",
+          "math": "y=6,\\; x=3 \\Rightarrow 36"
+        }
+      ],
+      "explanation": "$x+y=9$, $y-x=3$ → number 36.",
+      "linked_note_id": "CH05-sec-playing-with-numbers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH05-B01-003",
+      "chapter": 5,
+      "topicId": "math-ch5",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Using the generalised form, prove that a number is divisible by $9$ if the sum of its digits is divisible by $9$.",
+      "answer": "Proved.",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Generalised form",
+          "why": "4-digit number $abcd = 1000a + 100b + 10c + d$.",
+          "math": "abcd = 1000a + 100b + 10c + d"
+        },
+        {
+          "rule": "Rewrite",
+          "why": "Express as multiples of 9 plus digit sum.",
+          "math": "= 9(111a + 11b + c) + (a+b+c+d)"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "First part is a multiple of 9; divisibility depends on digit sum.",
+          "math": "\\text{Divisible by 9 iff } (a+b+c+d) \\text{ is divisible by 9}"
+        }
+      ],
+      "explanation": "$abcd = 9(111a+11b+c) + (a+b+c+d)$. Proved.",
+      "linked_note_id": "CH05-sec-playing-with-numbers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH05-B01-004",
+      "chapter": 5,
+      "topicId": "math-ch5",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "Find the missing digits in: $\\_\\,4\\,\\_\\,5\\,\\_$ is divisible by $11$ (use alternating sum rule).",
+      "answer": "Example: $24453$ (any digits with $A+B+C=9$, $A \\neq 0$)",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Alternating sum",
+          "why": "Odd positions: $A, B, C$. Even positions: $4, 5$.",
+          "math": "(A+B+C) - 9 = 0 \\text{ or } 11"
+        },
+        {
+          "rule": "Condition",
+          "why": "Since $A,B,C$ are single digits, $A+B+C = 9$.",
+          "math": "A + B + C = 9"
+        },
+        {
+          "rule": "Example",
+          "why": "Let $A=2, B=4, C=3$.",
+          "math": "24453"
+        }
+      ],
+      "explanation": "$A+B+C=9$. Example: 24453.",
+      "linked_note_id": "CH05-sec-playing-with-numbers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH05-B01-005",
+      "chapter": 5,
+      "topicId": "math-ch5",
+      "type": "practice",
+      "subtopic": "Batch 1 · Detailed Solutions",
+      "question": "A three-digit number $4ab$ is divisible by $3$ and $11$. If $a + b = 6$, find $a$ and $b$.",
+      "answer": "No solution ($a+b=6$ forces digit sum $10$, not divisible by 3).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Divisibility by 3",
+          "why": "Sum of digits $= 4 + a + b = 4 + 6 = 10$.",
+          "math": "10 \\text{ is not divisible by } 3"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "Given $a+b=6$ contradicts divisibility by 3.",
+          "math": "\\text{No valid } (a, b)"
+        }
+      ],
+      "explanation": "Digit sum = 10 (not divisible by 3). Impossible with $a+b=6$.",
+      "linked_note_id": "CH05-sec-playing-with-numbers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH05-B02-001",
+      "chapter": 5,
+      "topicId": "math-ch5",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "Express $98765$ in the generalised form and check divisibility by $11$.",
+      "answer": "$98765$ is not divisible by $11$ (alternating difference $= 7$).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Generalised form",
+          "why": "Expand by place value.",
+          "math": "9 \\times 10000 + 8 \\times 1000 + 7 \\times 100 + 6 \\times 10 + 5"
+        },
+        {
+          "rule": "Rule for 11",
+          "why": "Alternating sum (from right): odd positions minus even positions must be 0 or a multiple of 11.",
+          "math": "(5+7+9) - (6+8) = 21 - 14 = 7"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "$7$ is not 0 or a multiple of 11.",
+          "math": "98765 \\text{ is not divisible by } 11"
+        }
+      ],
+      "explanation": "Alternating sum: $(5+7+9)-(6+8)=7$ → not divisible by 11.",
+      "linked_note_id": "CH05-sec-playing-with-numbers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH05-B02-002",
+      "chapter": 5,
+      "topicId": "math-ch5",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "Find the smallest positive number which leaves remainder $3$ when divided by $5$ and remainder $4$ when divided by $7$.",
+      "answer": "$18$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Condition 1",
+          "why": "Numbers of form $5k+3$.",
+          "math": "3,\\; 8,\\; 13,\\; 18,\\; 23,\\; 28,\\; 33,\\; \\ldots"
+        },
+        {
+          "rule": "Condition 2",
+          "why": "Numbers of form $7m+4$.",
+          "math": "4,\\; 11,\\; 18,\\; 25,\\; 32,\\; \\ldots"
+        },
+        {
+          "rule": "Answer",
+          "why": "First common value.",
+          "math": "18"
+        }
+      ],
+      "explanation": "Lists intersect at 18 — smallest such number.",
+      "linked_note_id": "CH05-sec-playing-with-numbers",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH05-B02-003",
+      "chapter": 5,
+      "topicId": "math-ch5",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "If $2A3 + 3B4 = 5C7$ and $A + B + C = 12$, find $A$, $B$, $C$ (letter puzzle; assume standard typo $3B4$ not $B4$).",
+      "answer": "$C = 6$; $A + B = 6$ (e.g. $A=2$, $B=4$).",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Units column",
+          "why": "$3+4=7$ — no carry.",
+          "math": "3 + 4 = 7"
+        },
+        {
+          "rule": "Hundreds column",
+          "why": "$2+3=5$ — matches.",
+          "math": "2 + 3 = 5"
+        },
+        {
+          "rule": "Tens column",
+          "why": "No carry in or out → $A+B=C$.",
+          "math": "A + B = C"
+        },
+        {
+          "rule": "Use sum condition",
+          "why": "$A+B+C=12$ and $C=A+B$.",
+          "math": "C + C = 12 \\Rightarrow C = 6;\\quad A + B = 6"
+        }
+      ],
+      "explanation": "With $2A3+3B4=5C7$: $C=6$, $A+B=6$. Note: original $B4$ form is impossible.",
+      "linked_note_id": "CH05-sec-playing-with-numbers",
+      "source": "practice-session"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "title": "Factorisation · Batch 3",
+  "chapter": 11,
+  "count": 9,
+  "questions": [
+    {
+      "id": "Q-CH11-B03-001",
+      "chapter": 11,
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Factorise completely: $12x^2y - 18xy^2 + 6xy$.",
+      "answer": "$6xy(2x - 3y + 1)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "GCF",
+          "why": "GCD 6; shared $xy$.",
+          "math": "6xy"
+        },
+        {
+          "rule": "Factor",
+          "why": "Divide each term.",
+          "math": "6xy(2x-3y+1)"
+        }
+      ],
+      "explanation": "GCF $6xy$ → $6xy(2x-3y+1)$.",
+      "linked_note_id": "CH11-sec-factorisation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH11-B03-002",
+      "chapter": 11,
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Factorise: $x^2 + 5x + 6$ and verify by expansion.",
+      "answer": "$(x+2)(x+3)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split middle term",
+          "why": "Numbers multiplying to 6, adding to 5.",
+          "math": "2,\\; 3"
+        },
+        {
+          "rule": "Factor",
+          "why": "Group.",
+          "math": "(x+2)(x+3)"
+        },
+        {
+          "rule": "Verify",
+          "why": "Expand.",
+          "math": "x^2+5x+6\\; \\checkmark"
+        }
+      ],
+      "explanation": "$(x+2)(x+3)$; verified.",
+      "linked_note_id": "CH11-sec-factorisation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH11-B03-003",
+      "chapter": 11,
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Factorise by grouping: $ax + bx + ay + by$.",
+      "answer": "$(a+b)(x+y)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Group",
+          "why": "Pair terms.",
+          "math": "(ax+bx)+(ay+by)"
+        },
+        {
+          "rule": "Factor",
+          "why": "Common binomial.",
+          "math": "(a+b)(x+y)"
+        }
+      ],
+      "explanation": "$(a+b)(x+y)$.",
+      "linked_note_id": "CH11-sec-factorisation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH11-B03-004",
+      "chapter": 11,
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Factorise: $4x^2 + 12xy + 9y^2 - 9$ (adjusted from likely typo $4x^2-9y^2+12xy-9$).",
+      "answer": "$(2x+3y-3)(2x+3y+3)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Perfect square",
+          "why": "Group as trinomial minus 9.",
+          "math": "(2x+3y)^2-3^2"
+        },
+        {
+          "rule": "Difference of squares",
+          "why": "$A^2-B^2$.",
+          "math": "(2x+3y-3)(2x+3y+3)"
+        }
+      ],
+      "explanation": "Assuming $4x^2+12xy+9y^2-9$ → $(2x+3y\\pm 3)$.",
+      "linked_note_id": "CH11-sec-factorisation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH11-B03-005",
+      "chapter": 11,
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Factorise: $x^3 + 8$ (sum of cubes).",
+      "answer": "$(x+2)(x^2-2x+4)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Identity",
+          "why": "$a^3+b^3=(a+b)(a^2-ab+b^2)$.",
+          "math": "x^3+2^3"
+        },
+        {
+          "rule": "Apply",
+          "why": "Substitute.",
+          "math": "(x+2)(x^2-2x+4)"
+        }
+      ],
+      "explanation": "$x^3+8=(x+2)(x^2-2x+4)$.",
+      "linked_note_id": "CH11-sec-factorisation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH11-B03-006",
+      "chapter": 11,
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Factorise the quadratic: $x^2 - 7x + 12$.",
+      "answer": "$(x-3)(x-4)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split",
+          "why": "Product 12, sum $-7$.",
+          "math": "-3,\\; -4"
+        },
+        {
+          "rule": "Factor",
+          "why": "Write binomials.",
+          "math": "(x-3)(x-4)"
+        }
+      ],
+      "explanation": "$(x-3)(x-4)$.",
+      "linked_note_id": "CH11-sec-factorisation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH11-B03-007",
+      "chapter": 11,
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Factorise: $2x^2 + 7x + 6$.",
+      "answer": "$(x+2)(2x+3)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Split middle",
+          "why": "$ac=12$, sum 7 → 3 and 4.",
+          "math": "2x^2+4x+3x+6"
+        },
+        {
+          "rule": "Group",
+          "why": "Factor pairs.",
+          "math": "(x+2)(2x+3)"
+        }
+      ],
+      "explanation": "$(x+2)(2x+3)$.",
+      "linked_note_id": "CH11-sec-factorisation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH11-B03-008",
+      "chapter": 11,
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Resolve into factors: $a^3 - b^3 - a + b$.",
+      "answer": "$(a-b)(a^2+ab+b^2-1)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Group",
+          "why": "Cubes and linear terms.",
+          "math": "(a^3-b^3)-(a-b)"
+        },
+        {
+          "rule": "Factor",
+          "why": "Common $(a-b)$.",
+          "math": "(a-b)(a^2+ab+b^2-1)"
+        }
+      ],
+      "explanation": "$(a-b)(a^2+ab+b^2-1)$.",
+      "linked_note_id": "CH11-sec-factorisation",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH11-B03-009",
+      "chapter": 11,
+      "topicId": "math-ch11",
+      "type": "practice",
+      "subtopic": "Batch 3 · Detailed Solutions",
+      "question": "Factorise: (i) $(x^2-4x+3)(x^2-2x-3)$ (ii) $x^4-16$.",
+      "answer": "(i) $(x-1)(x+1)(x-3)^2$ · (ii) $(x-2)(x+2)(x^2+4)$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "(i) First quadratic",
+          "why": "$x^2-4x+3$.",
+          "math": "(x-1)(x-3)"
+        },
+        {
+          "rule": "(i) Second quadratic",
+          "why": "$x^2-2x-3$.",
+          "math": "(x-3)(x+1)"
+        },
+        {
+          "rule": "(i) Combine",
+          "why": "Collect factors.",
+          "math": "(x-1)(x+1)(x-3)^2"
+        },
+        {
+          "rule": "(ii) $x^4-16$",
+          "why": "Difference of squares twice.",
+          "math": "(x-2)(x+2)(x^2+4)"
+        }
+      ],
+      "explanation": "(i) $(x-1)(x+1)(x-3)^2$ · (ii) $(x-2)(x+2)(x^2+4)$.",
+      "linked_note_id": "CH11-sec-factorisation",
+      "source": "practice-session"
+    }
+  ]
+}

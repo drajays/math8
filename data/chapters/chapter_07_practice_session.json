@@ -1,0 +1,452 @@
+{
+  "title": "Percentage and its Applications · Batch 2",
+  "chapter": 7,
+  "count": 17,
+  "questions": [
+    {
+      "id": "Q-CH07-B02-001",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "Convert: (i) $\\dfrac{3}{8}$ into percent (ii) $0.075$ into percent (iii) $125\\%$ into fraction.",
+      "answer": "(i) $37.5\\%$ · (ii) $7.5\\%$ · (iii) $\\dfrac{5}{4}$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "(i)",
+          "why": "Multiply by $100\\%$.",
+          "math": "\\dfrac{3}{8} \\times 100\\% = 37.5\\%"
+        },
+        {
+          "rule": "(ii)",
+          "why": "Multiply by $100\\%$.",
+          "math": "0.075 \\times 100\\% = 7.5\\%"
+        },
+        {
+          "rule": "(iii)",
+          "why": "Divide by 100 and simplify.",
+          "math": "125\\% = \\dfrac{125}{100} = \\dfrac{5}{4}"
+        }
+      ],
+      "explanation": "(i) 37.5% · (ii) 7.5% · (iii) $\\frac{5}{4}$.",
+      "linked_note_id": "CH07-sec-percentage",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-002",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "A number is increased by $20\\%$ and then decreased by $20\\%$. Find the net percentage change.",
+      "answer": "$4\\%$ decrease",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Assume 100",
+          "why": "Convenient base.",
+          "math": "100 \\xrightarrow{+20\\%} 120 \\xrightarrow{-20\\%} 96"
+        },
+        {
+          "rule": "Net change",
+          "why": "$100-96=4$.",
+          "math": "4\\% \\text{ decrease}"
+        },
+        {
+          "rule": "Shortcut",
+          "why": "Equal $\\pm x\\%$ gives loss $x^2/100$.",
+          "math": "20^2/100 = 4\\%"
+        }
+      ],
+      "explanation": "100 → 120 → 96: net 4% decrease.",
+      "linked_note_id": "CH07-sec-percentage-and-its-applications",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-003",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "If $15\\%$ of a number is $45$, find $35\\%$ of the number.",
+      "answer": "$105$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Find number",
+          "why": "$0.15x=45$.",
+          "math": "x = 45/0.15 = 300"
+        },
+        {
+          "rule": "35% of 300",
+          "why": "Multiply.",
+          "math": "0.35 \\times 300 = 105"
+        }
+      ],
+      "explanation": "$x=300$ → 35% of 300 = 105.",
+      "linked_note_id": "CH07-sec-percentage-and-its-applications",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-004",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "In a class of $50$ students, $60\\%$ are girls. If $10\\%$ of girls and $20\\%$ of boys failed, find the number who passed.",
+      "answer": "$43$ students passed",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Girls and boys",
+          "why": "60% of 50.",
+          "math": "30 \\text{ girls},\\; 20 \\text{ boys}"
+        },
+        {
+          "rule": "Passed",
+          "why": "Subtract failures.",
+          "math": "27 \\text{ girls passed} + 16 \\text{ boys passed} = 43"
+        }
+      ],
+      "explanation": "30 girls (27 pass) + 20 boys (16 pass) = 43 passed.",
+      "linked_note_id": "CH07-sec-percentage-and-its-applications",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-005",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "The price of sugar is increased by $25\\%$. By what percent must consumption be reduced so expenditure stays the same?",
+      "answer": "$20\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "Required reduction $= \\frac{R}{100+R}\\times 100\\%$.",
+          "math": "\\dfrac{25}{125} \\times 100\\% = 20\\%"
+        }
+      ],
+      "explanation": "$\\frac{25}{125}\\times 100\\% = 20\\%$ reduction needed.",
+      "linked_note_id": "CH07-sec-percentage-and-its-applications",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-006",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "A man's salary is first increased by $10\\%$ and then decreased by $10\\%$. Find net % change and final salary if original was ₹$25000$.",
+      "answer": "₹$24750$; $1\\%$ decrease",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "After +10%",
+          "why": "Multiply by 1.10.",
+          "math": "25000 \\times 1.10 = 27500"
+        },
+        {
+          "rule": "After −10%",
+          "why": "Multiply by 0.90.",
+          "math": "27500 \\times 0.90 = 24750"
+        },
+        {
+          "rule": "Net %",
+          "why": "Shortcut: $10^2/100=1\\%$ loss.",
+          "math": "1\\% \\text{ decrease}"
+        }
+      ],
+      "explanation": "Final ₹24750; net 1% decrease.",
+      "linked_note_id": "CH07-sec-percentage-and-its-applications",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-007",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "Express $2.5$ as percent of $12.5$. Also find what percent $12.5$ is of $2.5$.",
+      "answer": "$2.5$ is $20\\%$ of $12.5$; $12.5$ is $500\\%$ of $2.5$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "First part",
+          "why": "$(A/B)\\times 100$.",
+          "math": "\\dfrac{2.5}{12.5} \\times 100 = 20\\%"
+        },
+        {
+          "rule": "Second part",
+          "why": "Reverse ratio.",
+          "math": "\\dfrac{12.5}{2.5} \\times 100 = 500\\%"
+        }
+      ],
+      "explanation": "2.5 is 20% of 12.5; 12.5 is 500% of 2.5.",
+      "linked_note_id": "CH07-sec-percentage-and-its-applications",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-008",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "In an examination, $30\\%$ failed in English, $25\\%$ in Maths. If $15\\%$ failed in both, find $\\%$ who passed in both subjects.",
+      "answer": "$60\\%$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Failed in at least one",
+          "why": "Set formula on percentages.",
+          "math": "30 + 25 - 15 = 40\\%"
+        },
+        {
+          "rule": "Passed both",
+          "why": "Complement.",
+          "math": "100\\% - 40\\% = 60\\%"
+        }
+      ],
+      "explanation": "40% fail at least one → 60% pass both.",
+      "linked_note_id": "CH07-sec-percentage-and-its-applications",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-009",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "A mixture contains $40\\%$ milk and $60\\%$ water. How much water must be added to make it $25\\%$ milk?",
+      "answer": "Add water equal to $60\\%$ of the initial mixture volume",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Milk constant",
+          "why": "Let initial volume $= V$.",
+          "math": "0.4V \\text{ milk unchanged}"
+        },
+        {
+          "rule": "Equation",
+          "why": "Milk is 25% of new total.",
+          "math": "0.4V = 0.25(V+w)"
+        },
+        {
+          "rule": "Solve",
+          "why": "Isolate $w$.",
+          "math": "w = 0.6V"
+        }
+      ],
+      "explanation": "$0.4V=0.25(V+w)$ → add $0.6V$ water.",
+      "linked_note_id": "CH07-sec-percentage-and-its-applications",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-010",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "A shopkeeper buys $80$ articles for ₹$2400$ and sells them at a profit of $16\\%$. Find the selling price of one article.",
+      "answer": "₹$34.80$ per article",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "CP per article",
+          "why": "Divide total cost.",
+          "math": "2400/80 = 30"
+        },
+        {
+          "rule": "SP",
+          "why": "Add 16% profit.",
+          "math": "30 + 0.16 \\times 30 = 34.80"
+        }
+      ],
+      "explanation": "CP ₹30 → SP ₹34.80.",
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-011",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "A man buys a TV for ₹$18500$ and sells it at a loss of $8\\%$. Find the selling price.",
+      "answer": "₹$17020$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Formula",
+          "why": "SP = CP × (1 − loss%).",
+          "math": "18500 \\times 0.92 = 17020"
+        }
+      ],
+      "explanation": "SP = 18500 × 0.92 = ₹17020.",
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-012",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "The marked price of a shirt is ₹$850$. A shopkeeper allows $8\\%$ discount and still makes $15\\%$ profit. Find the cost price.",
+      "answer": "₹$680$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "SP after discount",
+          "why": "850 × 0.92.",
+          "math": "782"
+        },
+        {
+          "rule": "CP",
+          "why": "SP = CP × 1.15.",
+          "math": "782/1.15 = 680"
+        }
+      ],
+      "explanation": "SP ₹782 → CP ₹680.",
+      "linked_note_id": "CH07-sec-discount",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-013",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "A trader sells an article at $12.5\\%$ profit. If he had sold it for ₹$90$ more, he would have gained $25\\%$. Find the cost price.",
+      "answer": "₹$720$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Profit difference",
+          "why": "25% − 12.5% = 12.5% of CP = ₹90.",
+          "math": "0.125 \\times CP = 90"
+        },
+        {
+          "rule": "Solve",
+          "why": "Divide.",
+          "math": "CP = 720"
+        }
+      ],
+      "explanation": "12.5% of CP = 90 → CP = ₹720.",
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-014",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "A dealer buys an article for ₹$380$. At what price must he mark it so that after $5\\%$ discount he makes $25\\%$ profit?",
+      "answer": "₹$500$",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Required SP",
+          "why": "380 × 1.25.",
+          "math": "475"
+        },
+        {
+          "rule": "Marked price",
+          "why": "M × 0.95 = 475.",
+          "math": "M = 500"
+        }
+      ],
+      "explanation": "Need SP ₹475 → MP ₹500.",
+      "linked_note_id": "CH07-sec-discount",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-015",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "By selling $90$ ball pens for ₹$160$, a shopkeeper loses $20\\%$. How many ball pens should he sell for ₹$96$ to gain $20\\%$?",
+      "answer": "$36$ pens",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "CP per pen",
+          "why": "SP ₹160/90 at 80% of CP.",
+          "math": "CP = \\dfrac{16/9}{0.8} = \\dfrac{20}{9}"
+        },
+        {
+          "rule": "Target SP per pen",
+          "why": "CP × 1.20.",
+          "math": "8/3"
+        },
+        {
+          "rule": "Count",
+          "why": "96 ÷ (8/3).",
+          "math": "36 \\text{ pens}"
+        }
+      ],
+      "explanation": "CP ₹20/9 → sell 36 pens for ₹96 at 20% gain.",
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-016",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "The cost price of $12$ pens is equal to the selling price of $15$ pens. Find the gain or loss percent.",
+      "answer": "$20\\%$ loss",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Assume ₹60",
+          "why": "LCM of 12 and 15.",
+          "math": "CP_{12}=SP_{15}=60"
+        },
+        {
+          "rule": "Per pen",
+          "why": "CP = 5, SP = 4.",
+          "math": "Loss = 1"
+        },
+        {
+          "rule": "Loss %",
+          "why": "$(1/5)\\times 100$.",
+          "math": "20\\% \\text{ loss}"
+        }
+      ],
+      "explanation": "CP ₹5, SP ₹4 per pen → 20% loss.",
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "practice-session"
+    },
+    {
+      "id": "Q-CH07-B02-017",
+      "chapter": 7,
+      "topicId": "math-ch7",
+      "type": "practice",
+      "subtopic": "Batch 2 · Detailed Solutions",
+      "question": "A man sold two horses for ₹$4000$ each. On one he gains $25\\%$ and on the other loses $25\\%$. Find his overall gain or loss percent.",
+      "answer": "$6.25\\%$ overall loss",
+      "options": [],
+      "glassboxSteps": [
+        {
+          "rule": "Shortcut",
+          "why": "Equal ±x% at same SP → loss $x^2/100$.",
+          "math": "25^2/100 = 6.25\\%"
+        },
+        {
+          "rule": "Verify",
+          "why": "Total CP > total SP.",
+          "math": "CP_1=3200,\\; CP_2=5333.33;\\; \\text{loss } 6.25\\%"
+        }
+      ],
+      "explanation": "Equal ±25% at same SP → 6.25% net loss.",
+      "linked_note_id": "CH07-sec-profit-and-loss",
+      "source": "practice-session"
+    }
+  ]
+}

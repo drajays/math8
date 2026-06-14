@@ -1030,7 +1030,7 @@ async function loadBatchQuestions(chNum){
 
 async function loadPracticeSessionQuestions(tag){
   try {
-    const data = await loadJson(`data/chapters/chapter_${tag}_practice_session.json?v=1`);
+    const data = await loadJson(`data/chapters/chapter_${tag}_practice_session.json?v=6`);
     const qs = data.questions || data;
     return normQuestions(Array.isArray(qs) ? qs : []);
   } catch (e) { return []; }

@@ -728,7 +728,7 @@
       "type": "practice",
       "subtopic": "Gemini Advanced HOTS · Batch 10",
       "question": "CI on a sum for $1\\dfrac12$ years at $8\\%$ p.a. compounded half-yearly is ₹$306$. Find the sum.",
-      "answer": "₹$2448.70$ (approx.)",
+      "answer": "₹$2450.66$ (approx.)",
       "options": [],
       "glassboxSteps": [
         {
@@ -738,12 +738,13 @@
         },
         {
           "rule": "CI",
-          "why": "$0.124864P=306$.",
-          "math": "$P\\approx2448.70$"
+          "why": "$0.124864P = 306$.",
+          "math": "$P = 306/0.124864 \\approx 2450.66$"
         }
       ],
       "linked_note_id": "CH08-sec-simple-interest",
-      "source": "gemini-batch-10"
+      "source": "gemini-batch-10",
+      "explanation": "Half-yearly: $P(1.04)^3 - P = 306$ → $P \\approx ₹2450.66$."
     },
     {
       "id": "Q-GEM-B10-475",

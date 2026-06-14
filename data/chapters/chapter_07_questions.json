@@ -12,26 +12,26 @@
       "$ 3\\frac{11}{32}g $",
       "$ 2\\frac{11}{32}g $"
     ],
-    "correctOption": 0,
-    "answer": "$ 3\\frac{11}{32} $ kg",
+    "correctOption": 1,
+    "answer": "$2\\frac{11}{32}$ kg",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "$ 3\\frac{1}{8}\\% $ of 75 kg is equal to"
+        "rule": "Convert %",
+        "why": "$3\\frac{1}{8}\\% = \\frac{25}{8}\\% = \\frac{25}{800}$.",
+        "math": "\\frac{25}{800}"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "rule": "Multiply",
+        "why": "$\\frac{25}{800} \\times 75 = \\frac{1875}{800}$.",
+        "math": "\\frac{75}{32}"
       },
       {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "$ 3\\frac{11}{32} $ kg"
+        "rule": "Mixed form",
+        "why": "$\\frac{75}{32} = 2 + \\frac{11}{32}$.",
+        "math": "2\\frac{11}{32}\\text{ kg}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $$ 3\\frac{1}{8}\\% $ of 75 kg is equal to$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$ 3\\frac{11}{32} $ kg$",
+    "explanation": "$3\\frac{1}{8}\\%$ of 75 kg $= \\frac{25}{800}\\times 75 = 2\\frac{11}{32}$ kg (Option B).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -49,26 +49,26 @@
       "$ \\frac{1}{48} $",
       "None of these"
     ],
-    "correctOption": 0,
-    "answer": "$\\frac{3}{48}$",
+    "correctOption": 2,
+    "answer": "$\\frac{1}{48}$",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "$2\\frac{1}{12}\\%$ is equivalent to"
+        "rule": "Mixed %",
+        "why": "$2\\frac{1}{12}\\% = \\frac{25}{12}\\%$.",
+        "math": "\\frac{25}{12}\\%"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "rule": "As fraction",
+        "why": "Divide by 100: $\\frac{25}{12 \\times 100}$.",
+        "math": "\\frac{25}{1200}"
       },
       {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "$\\frac{3}{48}$"
+        "rule": "Simplify",
+        "why": "Cancel HCF 25.",
+        "math": "\\frac{1}{48}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $$2\\frac{1}{12}\\%$ is equivalent to$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$\\frac{3}{48}$$",
+    "explanation": "$2\\frac{1}{12}\\% = \\frac{25}{1200} = \\frac{1}{48}$ (Option C).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -84,28 +84,28 @@
       "26%",
       "26.50%",
       "167.75%",
-      ""
+      "26.25%"
     ],
-    "correctOption": 0,
-    "answer": "26%",
+    "correctOption": 3,
+    "answer": "26.25%",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "21 : 80 is equivalent to"
+        "rule": "Ratio to fraction",
+        "why": "$21:80 = \\frac{21}{80}$.",
+        "math": "\\frac{21}{80}"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "rule": "To percent",
+        "why": "Multiply by 100%.",
+        "math": "\\frac{21}{80} \\times 100\\%"
       },
       {
         "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "26%"
+        "why": "$\\frac{2100}{80} = 26.25\\%$ exactly.",
+        "math": "26.25\\%"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $21 : 80 is equivalent to$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $26%$",
+    "explanation": "$\\frac{21}{80}\\times 100\\% = 26.25\\%$ (Option D).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -120,29 +120,29 @@
     "options": [
       "800",
       "820",
-      "",
-      ""
+      "840",
+      "860"
     ],
-    "correctOption": 0,
-    "answer": "800",
+    "correctOption": 2,
+    "answer": "840",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "If 5% of a number is 42, then number is"
+        "rule": "Equation",
+        "why": "$5\\%$ of $x = 42$.",
+        "math": "0.05x = 42"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "rule": "Solve",
+        "why": "Divide by 0.05 (or multiply by 20).",
+        "math": "x = 42 \\div 0.05"
       },
       {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "800"
+        "rule": "Answer",
+        "why": "$42 \\times 20 = 840$.",
+        "math": "840"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $If 5% of a number is 42, then number is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $800$",
+    "explanation": "$42 \\div 0.05 = 840$ (Option C).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -157,29 +157,24 @@
     "options": [
       "50%",
       "10%",
-      "840",
-      "860"
+      "15%",
+      "20%"
     ],
-    "correctOption": 0,
-    "answer": "50%",
+    "correctOption": 3,
+    "answer": "20%",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "What % of 150 is 30?"
+        "rule": "Set up",
+        "why": "Find what percent of 150 equals 30.",
+        "math": "\\frac{30}{150} \\times 100\\%"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "50%"
+        "rule": "Simplify",
+        "why": "$\\frac{30}{150} = \\frac{1}{5}$.",
+        "math": "20\\%"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $What % of 150 is 30?$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $50%$",
+    "explanation": "$30$ is $\\frac{1}{5}$ of $150$ → $20\\%$ (Option D).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -190,33 +185,33 @@
     "topicId": "math-ch7",
     "type": "mcq",
     "subtopic": "Glassbox Question Bank",
-    "question": "A number increased by 25%",
+    "question": "A number is increased by 25%. By what percent must the new number be decreased to restore the original number?",
     "options": [
       "10%",
       "15%",
       "20%",
-      ""
+      "25%"
     ],
-    "correctOption": 0,
-    "answer": "10%",
+    "correctOption": 2,
+    "answer": "20%",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "A number increased by 25%"
+        "rule": "After increase",
+        "why": "New value $= 1.25x$.",
+        "math": "1.25x"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "rule": "Restore condition",
+        "why": "Need $1.25x \\times (1 - d/100) = x$.",
+        "math": "1 - \\frac{d}{100} = 0.8"
       },
       {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "10%"
+        "rule": "Solve",
+        "why": "$d = 20$.",
+        "math": "20\\%"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $A number increased by 25%$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $10%$",
+    "explanation": "After +25%, a 20% decrease restores the original ($1.25 \\times 0.8 = 1$).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -234,26 +229,26 @@
       "124",
       ""
     ],
-    "correctOption": 0,
-    "answer": "132",
+    "correctOption": 2,
+    "answer": "124",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "A number increased by 25% gives 155. The number is"
+        "rule": "Equation",
+        "why": "$x + 25\\%\\text{ of }x = 155$.",
+        "math": "1.25x = 155"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "rule": "Solve",
+        "why": "Divide by 1.25.",
+        "math": "x = 155 \\div 1.25"
       },
       {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "132"
+        "rule": "Answer",
+        "why": "$155/1.25 = 124$.",
+        "math": "124"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $A number increased by 25% gives 155. The number is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $132$",
+    "explanation": "$155 \\div 1.25 = 124$ (Option C).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -271,26 +266,21 @@
       "25%",
       "30%"
     ],
-    "correctOption": 0,
-    "answer": "15%",
+    "correctOption": 2,
+    "answer": "25%",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "Naman buys a game for ₹600 and sells it for ₹750, his profit % is"
+        "rule": "Profit",
+        "why": "Profit $= 750 - 600$.",
+        "math": "₹150"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "15%"
+        "rule": "Profit %",
+        "why": "Always on CP: $\\frac{150}{600}\\times 100\\%$.",
+        "math": "25\\%"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Naman buys a game for ₹600 and sells it for ₹750, his profit % is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $15%$",
+    "explanation": "Profit ₹150 on CP ₹600 → $\\frac{150}{600}\\times 100\\% = 25\\%$ (Option C).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -301,7 +291,7 @@
     "topicId": "math-ch7",
     "type": "mcq",
     "subtopic": "Glassbox Question Bank",
-    "question": "Cost price of a watch is  $ \\bar{z}680 $.",
+    "question": "Cost price of a watch is ₹680. If Rishabh sells it at a profit of 35%, then S.P. is",
     "options": [
       "₹918",
       "₹919",
@@ -312,22 +302,17 @@
     "answer": "₹918",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "Cost price of a watch is  $ \\bar{z}680 $."
+        "rule": "Formula",
+        "why": "SP $= \\text{CP} \\times (1 + \\text{profit}\\%)$.",
+        "math": "680 \\times 1.35"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
+        "rule": "Calculate",
+        "why": "$680 \\times 1.35 = 918$.",
         "math": "₹918"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Cost price of a watch is  $ \\bar{z}680 $.$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $₹918$",
+    "explanation": "SP $= 680 \\times 1.35 = ₹918$ (Option A).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -345,26 +330,21 @@
       "25%",
       "30%"
     ],
-    "correctOption": 0,
-    "answer": "15%",
+    "correctOption": 2,
+    "answer": "25%",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "On selling an article for ₹150, Riya gains ₹30. Her gain percentage is"
+        "rule": "Find CP",
+        "why": "CP $= \\text{SP} - \\text{gain}$.",
+        "math": "150 - 30 = 120"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "15%"
+        "rule": "Gain %",
+        "why": "$\\frac{30}{120}\\times 100\\%$.",
+        "math": "25\\%"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $On selling an article for ₹150, Riya gains ₹30. Her gain percentage is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $15%$",
+    "explanation": "CP ₹120, gain ₹30 → $\\frac{30}{120}\\times 100\\% = 25\\%$ (Option C).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -382,26 +362,26 @@
       "no gain no loss",
       "none of these"
     ],
-    "correctOption": 0,
-    "answer": "gain",
+    "correctOption": 1,
+    "answer": "loss",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "If the cost price of 5 articles is equal to the selling price of 6 articles, then there is"
+        "rule": "Relation",
+        "why": "CP of 5 articles $=$ SP of 6 articles.",
+        "math": "5 \\times CP = 6 \\times SP"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "rule": "Compare",
+        "why": "$\\frac{SP}{CP} = \\frac{5}{6} < 1$.",
+        "math": "SP < CP"
       },
       {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "gain"
+        "rule": "Conclusion",
+        "why": "Selling below cost price means a loss.",
+        "math": "\\text{loss}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $If the cost price of 5 articles is equal to the selling price of 6 articles, then there is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $gain$",
+    "explanation": "Revenue from 6 items equals cost of only 5 → loss (Option B).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -423,22 +403,17 @@
     "answer": "₹540",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "Marked price of an article is ₹675. If it is sold at a discount of 20%, then S.P. is"
+        "rule": "Discount",
+        "why": "20% off marked price.",
+        "math": "675 \\times 0.80"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
+        "rule": "SP",
+        "why": "$675 - 20\\% = 540$.",
         "math": "₹540"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Marked price of an article is ₹675. If it is sold at a discount of 20%, then S.P. is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $₹540$",
+    "explanation": "SP $= 675 \\times 0.80 = ₹540$ (Option A). ✓",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -456,26 +431,21 @@
       "15%",
       "20%"
     ],
-    "correctOption": 0,
-    "answer": "5%",
+    "correctOption": 1,
+    "answer": "10%",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "A jacket is marked for ₹2590. If the S.P. of jacket is ₹2331, then discount % is"
+        "rule": "Discount amount",
+        "why": "$2590 - 2331$.",
+        "math": "₹259"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "5%"
+        "rule": "Discount %",
+        "why": "$\\frac{259}{2590}\\times 100\\%$.",
+        "math": "10\\%"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $A jacket is marked for ₹2590. If the S.P. of jacket is ₹2331, then discount % is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $5%$",
+    "explanation": "Discount ₹259 → $\\frac{259}{2590}\\times 100\\% = 10\\%$ (Option B).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -497,22 +467,17 @@
     "answer": "₹769.50",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "Marked price of a showpiece is ₹950. S.P. of showpiece after two successive discounts of 10% and 10% is"
+        "rule": "First discount",
+        "why": "10% off ₹950.",
+        "math": "950 \\times 0.90 = 855"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "₹769.50"
+        "rule": "Second discount",
+        "why": "Another 10% off.",
+        "math": "855 \\times 0.90 = 769.50"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Marked price of a showpiece is ₹950. S.P. of showpiece after two successive discounts of 10% and 10% is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $₹769.50$",
+    "explanation": "Successive 10% discounts: $950 \\times 0.9 \\times 0.9 = ₹769.50$ (Option A). ✓",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -530,26 +495,21 @@
       "₹700",
       "None of these."
     ],
-    "correctOption": 0,
-    "answer": "₹801.43",
+    "correctOption": 2,
+    "answer": "₹700",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "S.P. of a board game is ₹784 including 12% GST. The original price of board game is"
+        "rule": "GST included",
+        "why": "₹784 includes 12% GST → price before tax $\\times 1.12$.",
+        "math": "784 = P \\times 1.12"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "₹801.43"
+        "rule": "Original price",
+        "why": "Divide by 1.12.",
+        "math": "784 \\div 1.12 = 700"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $S.P. of a board game is ₹784 including 12% GST. The original price of board game is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $₹801.43$",
+    "explanation": "Original price $= 784 \\div 1.12 = ₹700$ (Option C).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -567,26 +527,21 @@
       "₹1131",
       "₹1311"
     ],
-    "correctOption": 0,
-    "answer": "₹1068",
+    "correctOption": 1,
+    "answer": "₹1239",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "List price of an article is ₹1050. If 18% GST is charged, then bill amount is"
+        "rule": "Bill amount",
+        "why": "List price + 18% GST.",
+        "math": "1050 \\times 1.18"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "₹1068"
+        "rule": "Calculate",
+        "why": "$1050 + 189$.",
+        "math": "₹1239"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $List price of an article is ₹1050. If 18% GST is charged, then bill amount is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $₹1068$",
+    "explanation": "Bill $= 1050 \\times 1.18 = ₹1239$ (Option B).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook",
     "linksTo": "math-ch07npercentage"
@@ -597,22 +552,37 @@
     "topicId": "math-ch7",
     "type": "fill_blank",
     "subtopic": "Glassbox Question Bank",
-    "question": "Fill in the blanks:\n\n(i) Percentage is the numerator of a fraction with denominator  $ \\cdots $\n\n(ii) 15% of ..... is 135\n\n(iii)  $ \\frac{3}{4} = \\ldots \\% $\n\n(iv) 50 paise = .....% of 8 rupees\n\n(v) A shopkeeper earns a profit if S.P. is .... than C.P.\n\n(vi) Loss or profit % is always calculated on a per share basis basis. The additional expenses on transportation, labour, repairing etc. are called .... expenses.\n\n(viii) Amount deducted from the marked price of an article is called .....\n\n(ix) D",
-    "blankAnswer": "",
-    "answer": "",
+    "question": "Fill in the blanks:\n\n(i) Percentage is the numerator of a fraction with denominator ………\n\n(ii) 15% of ……… is 135\n\n(iii) $\\frac{3}{4} =$ ………%\n\n(iv) 50 paise = ………% of 8 rupees\n\n(v) A shopkeeper earns a profit if S.P. is ……… than C.P.\n\n(vi) Loss or profit % is always calculated on ……… price.\n\n(vii) The additional expenses on transportation, labour, repairing etc. are called ……… expenses.\n\n(viii) Amount deducted from the marked price of an article is called ………\n\n(ix) Discount = Marked price − ……… price.",
+    "blankAnswer": "(i) 100 · (ii) 900 · (iii) 75 · (iv) 6.25 · (v) more · (vi) cost · (vii) overhead · (viii) discount · (ix) selling",
+    "answer": "(i) 100 · (ii) 900 · (iii) 75 · (iv) 6.25 · (v) more · (vi) cost · (vii) overhead · (viii) discount · (ix) selling",
     "glassboxSteps": [
       {
-        "rule": "Recall",
-        "why": "Use definition from notes.",
-        "math": "Fill in the blanks:\n\n(i) Percentage is the numerator of a fraction with denominator  $ \\cdots $\n\n(ii) 15% of ..... is 135\n\n(iii)  $ \\frac{3}{4} = \\ldots \\% $\n\n(iv) 50 paise = .....% of 8 rupees\n\n(v) A shopkeeper earns a profit if S.P. is .... than C.P.\n\n(vi) Loss or profit % is always calculated on a per share basis basis. The additional expenses on transportation, labour, repairing etc. are called .... expenses.\n\n(viii) Amount deducted from the marked price of an article is called .....\n\n(ix) D"
+        "rule": "(i)",
+        "why": "Percent means ‘per hundred’.",
+        "math": "100"
       },
       {
-        "rule": "Fill",
-        "why": "Insert the missing term.",
-        "math": "?"
+        "rule": "(ii)",
+        "why": "$0.15x = 135 \\Rightarrow x = 900$.",
+        "math": "900"
+      },
+      {
+        "rule": "(iii)",
+        "why": "$\\frac{3}{4} = 0.75 = 75\\%$.",
+        "math": "75"
+      },
+      {
+        "rule": "(iv)",
+        "why": "$\\frac{0.50}{8.00}\\times 100\\% = 6.25\\%$.",
+        "math": "6.25"
+      },
+      {
+        "rule": "(v)–(ix)",
+        "why": "Profit when SP > CP; % on CP; overheads; discount; SP.",
+        "math": "more; cost; overhead; discount; selling"
       }
     ],
-    "explanation": "Step 1 (Recall): Use definition from notes. → $Fill in the blanks:\n\n(i) Percentage is the numerator of a fraction with denominator  $ \\cdots $\n\n(ii) 15% of ..... is 135\n\n(iii)  $ \\frac{3}{4} = \\ldots \\% $\n\n(iv) 50 paise = .....% of 8 rupees\n\n(v) A shopkeeper earns a profit if S.P. is .... than C.P.\n\n(vi) Loss or profit % is always calculated on a per share basis basis. The additional expenses on transportation, labour, repairing etc. are called .... expenses.\n\n(viii) Amount deducted from the marked price of an article is called .....\n\n(ix) D$ Step 2 (Fill): Insert the missing term. → $?$",
+    "explanation": "(i) 100 · (ii) 900 · (iii) 75% · (iv) 6.25% · (v) more · (vi) cost · (vii) overhead · (viii) discount · (ix) selling",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook"
   },
@@ -623,21 +593,36 @@
     "type": "true_false",
     "subtopic": "Glassbox Question Bank",
     "question": "State whether the following statements are true (T) or false (F):\n\n(i) Discount is always calculated on marked price.\n\n(ii) Two successive discounts of 20% and 20% are equivalent to single discount of 40%.\n\n(iii) Overheads are always added to the original cost to get the total cost.\n\n(iv) If S.P. is less than C.P. then shopkeeper suffers a loss.\n\n(v) GST is always calculated on selling price.",
-    "correctAnswer": "true",
-    "answer": "true",
+    "correctAnswer": "(i) T · (ii) F · (iii) T · (iv) T · (v) T",
+    "answer": "(i) T · (ii) F · (iii) T · (iv) T · (v) T",
     "glassboxSteps": [
       {
-        "rule": "Analyse",
-        "why": "Test the statement against definition.",
-        "math": "State whether the following statements are true (T) or false (F):\n\n(i) Discount is always calculated on marked price.\n\n(ii) Two successive discounts of 20% and 20% are equivalent to single discount of 40%.\n\n(iii) Overheads are always added to the original cost to get the total cost.\n\n(iv) If S.P. is less than C.P. then shopkeeper suffers a loss.\n\n(v) GST is always calculated on selling price."
+        "rule": "(i)",
+        "why": "Discount is always on marked price.",
+        "math": "True"
       },
       {
-        "rule": "Verdict",
-        "why": "State true or false with reason.",
-        "math": "true"
+        "rule": "(ii)",
+        "why": "Two 20% discounts: $0.8 \\times 0.8 = 0.64$ → 36% off, not 40%.",
+        "math": "False"
+      },
+      {
+        "rule": "(iii)",
+        "why": "Overheads are added to original cost.",
+        "math": "True"
+      },
+      {
+        "rule": "(iv)",
+        "why": "SP < CP means loss.",
+        "math": "True"
+      },
+      {
+        "rule": "(v)",
+        "why": "GST is calculated on the selling/list price.",
+        "math": "True"
       }
     ],
-    "explanation": "Step 1 (Analyse): Test the statement against definition. → $State whether the following statements are true (T) or false (F):\n\n(i) Discount is always calculated on marked price.\n\n(ii) Two successive discounts of 20% and 20% are equivalent to single discount of 40%.\n\n(iii) Overheads are always added to the original cost to get the total cost.\n\n(iv) If S.P. is less than C.P. then shopkeeper suffers a loss.\n\n(v) GST is always calculated on selling price.$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "explanation": "(i) T · (ii) F (36% equivalent, not 40%) · (iii) T · (iv) T · (v) T",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
     "source": "textbook"
   },
@@ -645,51 +630,70 @@
     "id": "Q-CH07-092",
     "chapter": 7,
     "topicId": "math-ch7",
-    "type": "true_false",
+    "type": "mcq",
     "subtopic": "Glassbox Question Bank",
     "question": "Statement I: Profit % or loss % is always calculated on CP.\n\nStatement II: When the selling price is greater than the cost price, the seller incurs a loss.",
-    "correctAnswer": "true",
-    "answer": "true",
+    "correctAnswer": "Statement I is true but Statement II is false",
+    "answer": "Statement I is true but Statement II is false",
     "glassboxSteps": [
       {
-        "rule": "Analyse",
-        "why": "Test the statement against definition.",
-        "math": "Statement I: Profit % or loss % is always calculated on CP.\n\nStatement II: When the selling price is greater than the cost price, the seller incurs a loss."
+        "rule": "Statement I",
+        "why": "Profit % and loss % are always calculated on CP.",
+        "math": "True"
       },
       {
-        "rule": "Verdict",
-        "why": "State true or false with reason.",
-        "math": "true"
+        "rule": "Statement II",
+        "why": "When SP > CP, the seller makes a profit, not a loss.",
+        "math": "False"
       }
     ],
-    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Statement I: Profit % or loss % is always calculated on CP.\n\nStatement II: When the selling price is greater than the cost price, the seller incurs a loss.$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "explanation": "I is true (base is CP); II is false (SP > CP → profit).",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
-    "source": "textbook"
+    "source": "textbook",
+    "options": [
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true",
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false"
+    ],
+    "correctOption": 0
   },
   {
     "id": "Q-CH07-093",
     "chapter": 7,
     "topicId": "math-ch7",
-    "type": "true_false",
+    "type": "mcq",
     "subtopic": "Glassbox Question Bank",
     "question": "Statement I: If the SP of an item is doubled, then the profit % also doubles. Statement II: If the CP of an item is halved, then the profit % doubles.",
-    "correctAnswer": "true",
-    "answer": "true",
+    "correctAnswer": "Both Statement I and Statement II are false",
+    "answer": "Both Statement I and Statement II are false",
     "glassboxSteps": [
       {
-        "rule": "Analyse",
-        "why": "Test the statement against definition.",
-        "math": "Statement I: If the SP of an item is doubled, then the profit % also doubles. Statement II: If the CP of an item is halved, then the profit % doubles."
+        "rule": "Statement I",
+        "why": "Profit % $= \\frac{SP-CP}{CP}\\times 100$. Doubling SP does not simply double this ratio.",
+        "math": "False"
       },
       {
-        "rule": "Verdict",
-        "why": "State true or false with reason.",
-        "math": "true"
+        "rule": "Statement II",
+        "why": "Halving CP changes both numerator and denominator; profit % does not simply double.",
+        "math": "False"
+      },
+      {
+        "rule": "Counterexample",
+        "why": "CP=100, SP=120 → 20%. Double SP to 240 → 140%; halve CP to 50 → 140%. Neither is 40%.",
+        "math": "\\text{Both false}"
       }
     ],
-    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Statement I: If the SP of an item is doubled, then the profit % also doubles. Statement II: If the CP of an item is halved, then the profit % doubles.$ Step 2 (Verdict): State true or false with reason. → $true$",
+    "explanation": "Profit % is $\\frac{SP-CP}{CP}\\times 100$; doubling SP or halving CP does not neatly double the percentage.",
     "linked_note_id": "CH07-sec-percentage-and-its-applications",
-    "source": "textbook"
+    "source": "textbook",
+    "options": [
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true",
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false"
+    ],
+    "correctOption": 3
   },
   {
     "id": "Q-CH07-094",

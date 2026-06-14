@@ -1943,9 +1943,9 @@ def batch_10():
          step("Conclusion", "Divisibility by $9$ forces digit sum divisible by $9$.", "QED")], N5)
 
     put(8, "CI on a sum for $1\\dfrac12$ years at $8\\%$ p.a. compounded half-yearly is ₹$306$. Find the sum.",
-        "₹$2448.70$ (approx.)",
-        [step("Half-yearly", "Rate $4\\%$, $n=3$ periods.", "$A=P(1.04)^3$."),
-         step("CI", "$0.124864P=306$.", "$P\\approx2448.70$")], N8)
+        "₹$2450.66$ (approx.)",
+         [step("Half-yearly", "Rate $4\\%$, $n=3$ periods.", "$A=P(1.04)^3$."),
+         step("CI", "$0.124864P=306$.", "$P=306/0.124864\\approx2450.66$")], N8)
 
     put(7, "Two horses sold at ₹$4000$ each: $25\\%$ gain on one, $25\\%$ loss on other. Overall profit or loss $\\%$?",
         "$6.25\\%$ loss",

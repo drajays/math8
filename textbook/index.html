@@ -1015,7 +1015,7 @@ async function loadJson(url){
 
 function chapterPaths(tag){
   const p = "data/chapters/chapter_" + tag + "_";
-  const v = "?v=7";
+  const v = "?v=9";
   return {
     questions: p + "questions.json" + v,
     facts: p + "facts.json" + v,
@@ -1031,7 +1031,7 @@ async function loadBatchQuestions(chNum){
   for (let b = 1; b <= BATCH_COUNT; b++) {
     const tag = String(b).padStart(2, "0");
     try {
-      const data = await loadJson(`data/batches/batch_${tag}.json?v=11`);
+      const data = await loadJson(`data/batches/batch_${tag}.json?v=12`);
       const qs = data.questions || data;
       if (Array.isArray(qs)) {
         qs.forEach(q => { if (Number(q.chapter) === chNum) out.push(q); });

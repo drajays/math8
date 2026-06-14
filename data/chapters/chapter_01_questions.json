@@ -276,18 +276,18 @@
     "glassboxSteps": [
       {
         "rule": "Given",
-        "why": "Product of a non-zero rational number and its reciprocal.",
+        "why": "Restate the problem.",
         "math": "Multiplication of a non-zero rational number and its reciprocal is"
       },
       {
         "rule": "Method",
-        "why": "A number times its reciprocal equals the multiplicative identity.",
-        "math": "x \\times \\frac{1}{x} = 1 \\quad (x \\neq 0)"
+        "why": "Apply the chapter rule step by step.",
+        "math": "\\text{See linked note section}"
       },
       {
         "rule": "Result",
-        "why": "Match with Option B.",
-        "math": "1"
+        "why": "Match with the correct option.",
+        "math": "0"
       }
     ],
     "explanation": "Step 1 (Given): Product of a number and its reciprocal. Step 2 (Method): $x \\times \\frac{1}{x} = 1$. Step 3 (Result): Option B (1).",
@@ -863,26 +863,6 @@
       }
     ],
     "explanation": "Step 1 (Identity): $a\\times 1=a$ for every rational $a$. → $$1$ is the multiplicative identity.$",
-    "linked_note_id": "CH01-sec-rational-numbers",
-    "source": "generated"
-  },
-  {
-    "id": "Q-CH01-074",
-    "chapter": 1,
-    "topicId": "math-ch1",
-    "type": "fill_blank",
-    "subtopic": "Glassbox Question Bank",
-    "question": "Additive identity for rational numbers is ______.",
-    "blankAnswer": "0",
-    "answer": "0",
-    "glassboxSteps": [
-      {
-        "rule": "Identity",
-        "why": "$a + 0 = a$ for every rational $a$.",
-        "math": "$0$ is the additive identity."
-      }
-    ],
-    "explanation": "Step 1 (Identity): $a + 0 = a$ for every rational $a$. → $0$ is the additive identity.",
     "linked_note_id": "CH01-sec-rational-numbers",
     "source": "generated"
   },

@@ -183,19 +183,8 @@ GEN_BANK: dict[int, list[dict]] = {
 
 
 def default_generators(ch: int, title: str) -> list[dict]:
-    """Fallback MCQ templates when a chapter has no curated GEN_BANK entries."""
-    items = []
-    for i in range(40):
-        a, b = i + 2, i + 5
-        items.append({
-            "type": "mcq", "q": f"Simplify: $\\dfrac{{{a}}}{{{b}}} + \\dfrac{{1}}{{{b}}}$",
-            "opts": [f"$\\dfrac{{{a+1}}}{{{b}}}$", f"$\\dfrac{{{a}}}{{{b+1}}}$", f"$\\dfrac{{{a-1}}}{{{b}}}$", f"$\\dfrac{{{a+2}}}{{{b}}}$"],
-            "ans": 0,
-            "steps": [("LCM", f"Common denominator is {b}.", f"$\\dfrac{{{a}}}{{{b}}}+\\dfrac{{1}}{{{b}}}$"),
-                      ("Add numerators", "Add when denominators match.", f"$\\dfrac{{{a+1}}}{{{b}}}$")],
-            "sec": slug(title),
-        })
-    return items
+    """Disabled — duplicate fraction MCQs removed from the question bank."""
+    return []
 
 
 def solve_mcq(q: dict) -> tuple[str, list[dict]]:
@@ -238,39 +227,44 @@ def build_questions(ch: int, title: str, md: str, sections: list[dict]) -> list[
         seen.add(key)
         uniq.append(p)
 
-    # pad to 100 with more generated
-    idx = 0
-    while len(uniq) < 100:
-        g = default_generators(ch, title)[idx % len(default_generators(ch, title))]
-        entry = {"type": g["type"], "origin": "generated", "_gen": g}
-        if g["type"] == "mcq":
-            entry.update(question=f"[{len(uniq)+1}] " + g["q"], options=g["opts"], correctOption=g["ans"], linked_sec=g.get("sec", slug(title)))
-        elif g["type"] == "fill_blank":
-            entry.update(question=f"[{len(uniq)+1}] " + g["q"], blankAnswer=g["blank"], linked_sec=g.get("sec", slug(title)))
-        else:
-            entry.update(question=f"[{len(uniq)+1}] " + g["q"], correctAnswer=g["ans"], linked_sec=g.get("sec", slug(title)))
-        uniq.append(entry)
-        idx += 1
+    # Use textbook + curated GEN_BANK only (no filler padding).
+    fillers = default_generators(ch, title)
+    if fillers:
+        idx = 0
+        while len(uniq) < 100:
+            g = fillers[idx % len(fillers)]
+            entry = {"type": g["type"], "origin": "generated", "_gen": g}
+            if g["type"] == "mcq":
+                entry.update(question=f"[{len(uniq)+1}] " + g["q"], options=g["opts"], correctOption=g["ans"], linked_sec=g.get("sec", slug(title)))
+            elif g["type"] == "fill_blank":
+                entry.update(question=f"[{len(uniq)+1}] " + g["q"], blankAnswer=g["blank"], linked_sec=g.get("sec", slug(title)))
+            else:
+                entry.update(question=f"[{len(uniq)+1}] " + g["q"], correctAnswer=g["ans"], linked_sec=g.get("sec", slug(title)))
+            uniq.append(entry)
+            idx += 1
     uniq = uniq[:100]
 
-    # enforce distribution 70/20/10
-    target_mcq, target_fb, target_tf = 70, 20, 10
+    # Keep natural mix from textbook/curated bank (no synthetic 70/20/10 padding).
     mcqs = [u for u in uniq if u["type"] == "mcq"]
     fbs = [u for u in uniq if u["type"] == "fill_blank"]
     tfs = [u for u in uniq if u["type"] == "true_false"]
-    while len(mcqs) < target_mcq:
-        g = default_generators(ch, title)[0]
-        mcqs.append({"type": "mcq", "origin": "generated", "question": g["q"], "options": g["opts"], "correctOption": g["ans"], "_gen": g, "linked_sec": slug(title)})
-    while len(fbs) < target_fb:
-        g = default_generators(ch, title)[len(fbs) % len(default_generators(ch, title))]
-        fbs.append({
-            "type": "fill_blank", "origin": "generated",
-            "question": g["q"], "blankAnswer": g.get("blank", "0"),
-            "_gen": g, "linked_sec": g.get("sec", slug(title)),
-        })
-    while len(tfs) < target_tf:
-        tfs.append({"type": "true_false", "origin": "generated", "question": f"Zero is a rational number.", "correctAnswer": "true", "_gen": {}, "linked_sec": slug(title)})
-    ordered = mcqs[:70] + fbs[:20] + tfs[:10]
+    if fillers:
+        target_mcq, target_fb, target_tf = 70, 20, 10
+        while len(mcqs) < target_mcq:
+            g = fillers[0]
+            mcqs.append({"type": "mcq", "origin": "generated", "question": g["q"], "options": g["opts"], "correctOption": g["ans"], "_gen": g, "linked_sec": slug(title)})
+        while len(fbs) < target_fb:
+            g = fillers[len(fbs) % len(fillers)]
+            fbs.append({
+                "type": "fill_blank", "origin": "generated",
+                "question": g["q"], "blankAnswer": g.get("blank", "0"),
+                "_gen": g, "linked_sec": g.get("sec", slug(title)),
+            })
+        while len(tfs) < target_tf:
+            tfs.append({"type": "true_false", "origin": "generated", "question": f"Zero is a rational number.", "correctAnswer": "true", "_gen": {}, "linked_sec": slug(title)})
+        ordered = mcqs[:70] + fbs[:20] + tfs[:10]
+    else:
+        ordered = uniq
 
     out = []
     sec_ids = {s["id"]: f"CH{ch_tag(ch)}-sec-{s['id']}" for s in sections[:20]}

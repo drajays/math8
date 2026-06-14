@@ -312,7 +312,7 @@ Also find the cardinal number of the sets $B \cup C$, $A \cap B$, $A \cap C$ and
 
 Is $P \cup Q$ a proper superset of $P \cap Q$?
 
-5. If $A = \{$ letters of word INTEGRITY\}$ and $B = \{$ letters of word RECKONING$\}$, find
+5. If $A = \{\text{letters of word INTEGRITY}\}$ and $B = \{\text{letters of word RECKONING}\}$, find
 
 (i) $A \cup B$
 

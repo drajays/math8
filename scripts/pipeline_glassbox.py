@@ -183,31 +183,18 @@ GEN_BANK: dict[int, list[dict]] = {
 
 
 def default_generators(ch: int, title: str) -> list[dict]:
-    """Fallback generator templates per chapter topic."""
-    base = title.split()[0].lower()
+    """Fallback MCQ templates when a chapter has no curated GEN_BANK entries."""
     items = []
     for i in range(40):
-        t = i % 10
-        if t < 7:
-            a, b = i + 2, i + 5
-            items.append({
-                "type": "mcq", "q": f"Simplify: $\\dfrac{{{a}}}{{{b}}} + \\dfrac{{1}}{{{b}}}$",
-                "opts": [f"$\\dfrac{{{a+1}}}{{{b}}}$", f"$\\dfrac{{{a}}}{{{b+1}}}$", f"$\\dfrac{{{a-1}}}{{{b}}}$", f"$\\dfrac{{{a+2}}}{{{b}}}$"],
-                "ans": 0,
-                "steps": [("LCM", f"Common denominator is {b}.", f"$\\dfrac{{{a}}}{{{b}}}+\\dfrac{{1}}{{{b}}}$"),
-                          ("Add numerators", "Add when denominators match.", f"$\\dfrac{{{a+1}}}{{{b}}}$")],
-                "sec": slug(title),
-            })
-        elif t < 9:
-            items.append({
-                "type": "fill_blank", "q": f"In chapter {ch} ({title}), the symbol for 'therefore' is ______.",
-                "blank": "∴", "steps": [("Recall", "Mathematical shorthand for logical conclusion.", "$\\therefore$")], "sec": slug(title),
-            })
-        else:
-            items.append({
-                "type": "true_false", "q": f"Class 8 ICSE topic '{title}' includes exam-style objective questions.",
-                "ans": "true", "steps": [("Syllabus", "Aggarwal text covers this chapter.", "True.")], "sec": slug(title),
-            })
+        a, b = i + 2, i + 5
+        items.append({
+            "type": "mcq", "q": f"Simplify: $\\dfrac{{{a}}}{{{b}}} + \\dfrac{{1}}{{{b}}}$",
+            "opts": [f"$\\dfrac{{{a+1}}}{{{b}}}$", f"$\\dfrac{{{a}}}{{{b+1}}}$", f"$\\dfrac{{{a-1}}}{{{b}}}$", f"$\\dfrac{{{a+2}}}{{{b}}}$"],
+            "ans": 0,
+            "steps": [("LCM", f"Common denominator is {b}.", f"$\\dfrac{{{a}}}{{{b}}}+\\dfrac{{1}}{{{b}}}$"),
+                      ("Add numerators", "Add when denominators match.", f"$\\dfrac{{{a+1}}}{{{b}}}$")],
+            "sec": slug(title),
+        })
     return items
 
 
@@ -275,7 +262,12 @@ def build_questions(ch: int, title: str, md: str, sections: list[dict]) -> list[
         g = default_generators(ch, title)[0]
         mcqs.append({"type": "mcq", "origin": "generated", "question": g["q"], "options": g["opts"], "correctOption": g["ans"], "_gen": g, "linked_sec": slug(title)})
     while len(fbs) < target_fb:
-        fbs.append({"type": "fill_blank", "origin": "generated", "question": f"The additive identity is ______.", "blankAnswer": "0", "_gen": {}, "linked_sec": slug(title)})
+        g = default_generators(ch, title)[len(fbs) % len(default_generators(ch, title))]
+        fbs.append({
+            "type": "fill_blank", "origin": "generated",
+            "question": g["q"], "blankAnswer": g.get("blank", "0"),
+            "_gen": g, "linked_sec": g.get("sec", slug(title)),
+        })
     while len(tfs) < target_tf:
         tfs.append({"type": "true_false", "origin": "generated", "question": f"Zero is a rational number.", "correctAnswer": "true", "_gen": {}, "linked_sec": slug(title)})
     ordered = mcqs[:70] + fbs[:20] + tfs[:10]

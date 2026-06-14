@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>ICSE Class 8 Maths · Aggarwal · Glass-Box</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
 <script>
 /* GitHub Pages: /math8/textbook (no slash) breaks ../ relative fetches — normalize first */
 (function(){
@@ -347,6 +347,8 @@ a{color:var(--blue)}
 .ow-reveal-hint{color:var(--on-dim);font-style:italic;text-align:center}
 /* math rendering */
 .mathline,.math,.problem .mathline{line-height:1.75;word-break:break-word;overflow-wrap:anywhere}
+.mathline .katex,.step .math .katex{font-size:1.05em}
+.step .math .katex-display{margin:.35em 0}
 .step .math,.problem,.answer{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
 .step .math::-webkit-scrollbar,.problem::-webkit-scrollbar,.answer::-webkit-scrollbar{height:4px}
 .step .math::-webkit-scrollbar-thumb,.problem::-webkit-scrollbar-thumb,.answer::-webkit-scrollbar-thumb{background:rgba(99,102,241,.35);border-radius:var(--pill)}
@@ -490,8 +492,9 @@ sup.msup,sub.msub{font-family:inherit}
   </div>
 </div>
 
-<script src="../shared/math-render.js?v=4"></script>
-<script src="../shared/notes-render.js?v=4"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script src="../shared/math-render.js?v=6"></script>
+<script src="../shared/notes-render.js?v=6"></script>
 <script src="../shared/practice-diagrams.js?v=4"></script>
 <script>
 const $ = s => document.querySelector(s);
@@ -509,7 +512,16 @@ function safeStr(v){ return v == null ? "" : String(v); }
 const TYPE_LABEL = { mcq: "MCQ", fill_blank: "Fill", true_false: "T/F", practice: "Practice" };
 const OPT_LABELS = "ABCDEF";
 
-function texHtml(tex){ return MathRender.render(safeStr(tex)); }
+function texHtml(tex){
+  const s = safeStr(tex);
+  if (!s) return "";
+  if (typeof katex !== "undefined") {
+    try {
+      return katex.renderToString(s, { throwOnError: false, strict: "ignore", trust: false });
+    } catch (e) { /* fallback below */ }
+  }
+  return MathRender.render(s);
+}
 const RDEPS = { esc, texHtml };
 
 function splitRenderTex(text){
@@ -1003,13 +1015,14 @@ async function loadJson(url){
 
 function chapterPaths(tag){
   const p = "data/chapters/chapter_" + tag + "_";
+  const v = "?v=7";
   return {
-    questions: p + "questions.json",
-    facts: p + "facts.json",
-    notes: p + "notes.md",
-    mindmap: p + "mindmap.md",
-    cheatsheet: p + "cheatsheet.md",
-    oneword: p + "oneword.json",
+    questions: p + "questions.json" + v,
+    facts: p + "facts.json" + v,
+    notes: p + "notes.md" + v,
+    mindmap: p + "mindmap.md" + v,
+    cheatsheet: p + "cheatsheet.md" + v,
+    oneword: p + "oneword.json" + v,
   };
 }
 
@@ -1152,7 +1165,7 @@ function practiceBlockHtml(q, num){
       <div class="practice-block-actions">${questionAdminBarHtml(q)}</div>
       <div class="practice-solution">
         <ol class="steps">${(q.glassboxSteps || []).map((s, i) =>
-          `<li class="step"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${splitRenderTex(s.why)}</div><div class="math">${splitRenderTex(s.math)}</div></li>`
+          `<li class="step"><span class="num">${i + 1}</span><span class="rule">${splitRenderTex(s.rule)}</span><div class="why">${splitRenderTex(s.why)}</div><div class="math">${splitRenderTex(s.math)}</div></li>`
         ).join("")}</ol>
         <div class="answer"><span class="mathline">${splitRenderTex(q.answer)}</span></div>
       </div>

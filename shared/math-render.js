@@ -4,7 +4,8 @@
     times: "×", div: "÷", cdot: "·", pm: "±", mp: "∓", approx: "≈",
     le: "≤", ge: "≥", leq: "≤", geq: "≥", neq: "≠", ne: "≠",
     angle: "∠", checkmark: "✓", varnothing: "∅", emptyset: "∅",
-    cup: "∪", cap: "∩", in: "∈", notin: "∉", subset: "⊂", subseteq: "⊆",
+    cup: "∪", cap: "∩", in: "∈", notin: "∉", subset: "⊂", subseteq: "⊆", supseteq: "⊇",
+    phi: "φ", xi: "ξ", mid: "∣", neg: "¬", forall: "∀", exists: "∃",
     pi: "π", Rightarrow: "⇒", rightarrow: "→", to: "→", implies: "⇒",
     longrightarrow: "⟶", longleftarrow: "⟵", leftarrow: "←", mapsto: "↦", gets: "←",
     ldots: "…", dots: "…", cdots: "⋯", sum: "∑", prod: "∏",
@@ -60,7 +61,14 @@
           out += `<span class="msqrt">${idx ? `<span class="mroot">${esc(idx)}</span>` : ""}<span class="mradsign">√</span><span class="mrad">${render(a.body)}</span></span>`;
           i = a.next; continue;
         }
-        if (name === "text" || name === "mathrm" || name === "operatorname") {
+        if (name === "mathbb") {
+          const a = readGroup(s, i);
+          const letter = a.body.trim();
+          const bb = { N: "ℕ", Z: "ℤ", Q: "ℚ", R: "ℝ", W: "𝕎", C: "ℂ" };
+          out += bb[letter] || `<span class="mtext">${esc(letter)}</span>`;
+          i = a.next; continue;
+        }
+        if (name === "text" || name === "mathrm" || name === "operatorname" || name === "mathbf") {
           const a = readGroup(s, i);
           out += `<span class="mtext">${esc(a.body)}</span>`; i = a.next; continue;
         }
@@ -75,7 +83,7 @@
         out += `<${c === "^" ? "sup" : "sub"} class="m${c === "^" ? "sup" : "sub"}">${render(a.body)}</${c === "^" ? "sup" : "sub"}>`;
         i = a.next; continue;
       }
-      if (c === "{" || c === "}") { i++; continue; }
+      if (c === "{" || c === "}") { out += esc(c); i++; continue; }
       if (c === "$") { i++; continue; }
       if (/[a-zA-Z]/.test(c)) { out += `<i class="mvar">${c}</i>`; i++; continue; }
       out += esc(c); i++;

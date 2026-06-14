@@ -27,7 +27,7 @@
   }
 
   function looksLikeBareLatex(s) {
-    return /\\(?:frac|left|right|dfrac|tfrac|sqrt|text|mathrm|[a-zA-Z]{2,})/.test(s);
+    return /\\(?:frac|left|right|dfrac|tfrac|sqrt|text|mathrm|mathbb|mathbf|cup|cap|mid|in|notin|phi|xi|subseteq|ldots|checkmark|quad|;|[a-zA-Z]{2,})|\\[{};,]|∈|∪|∩|φ|ξ|≤|≥|≠/.test(s);
   }
 
   function splitRenderTex(text, deps) {
@@ -36,7 +36,7 @@
     if (!hasDollarMath(s) && looksLikeBareLatex(s)) {
       return `<span class="mathline">${deps.texHtml(s)}</span>`;
     }
-    const re = /\$\$([^$]+)\$\$|\$([^$]+)\$/g;
+    const re = /\$\$([\s\S]+?)\$\$|\$([\s\S]+?)\$/g;
     let out = "", last = 0, m;
     while ((m = re.exec(s)) !== null) {
       out += inlineFmt(s.slice(last, m.index), deps.esc);

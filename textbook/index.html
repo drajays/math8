@@ -495,7 +495,7 @@ sup.msup,sub.msub{font-family:inherit}
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
 <script src="../shared/math-render.js?v=6"></script>
 <script src="../shared/notes-render.js?v=6"></script>
-<script src="../shared/practice-diagrams.js?v=4"></script>
+<script src="../shared/practice-diagrams.js?v=6"></script>
 <script>
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -1031,7 +1031,7 @@ async function loadBatchQuestions(chNum){
   for (let b = 1; b <= BATCH_COUNT; b++) {
     const tag = String(b).padStart(2, "0");
     try {
-      const data = await loadJson(`data/batches/batch_${tag}.json?v=10`);
+      const data = await loadJson(`data/batches/batch_${tag}.json?v=11`);
       const qs = data.questions || data;
       if (Array.isArray(qs)) {
         qs.forEach(q => { if (Number(q.chapter) === chNum) out.push(q); });
@@ -1043,7 +1043,7 @@ async function loadBatchQuestions(chNum){
 
 async function loadPracticeSessionQuestions(tag){
   try {
-    const data = await loadJson(`data/chapters/chapter_${tag}_practice_session.json?v=6`);
+    const data = await loadJson(`data/chapters/chapter_${tag}_practice_session.json?v=7`);
     const qs = data.questions || data;
     return normQuestions(Array.isArray(qs) ? qs : []);
   } catch (e) { return []; }

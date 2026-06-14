@@ -143,6 +143,34 @@ const PRACTICE_DIAGRAMS = {
     <text x="90" y="170" font-size="10" fill="#64748b">Neither outside circles</text>
   </svg>`,
 
+  "venn-disjoint-union": `<svg viewBox="0 0 300 200" width="300" height="200" aria-label="Venn diagram for A union B when A and B are disjoint">
+    <rect x="10" y="15" width="280" height="150" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+    <text x="272" y="35" font-size="12" fill="#475569">U</text>
+    <circle cx="95" cy="95" r="50" fill="#93c5fd" fill-opacity="0.9" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="205" cy="95" r="50" fill="#93c5fd" fill-opacity="0.9" stroke="#2563eb" stroke-width="2"/>
+    <text x="82" y="100" font-size="14" font-weight="bold" fill="#1e40af">A</text>
+    <text x="198" y="100" font-size="14" font-weight="bold" fill="#1e40af">B</text>
+    <text x="55" y="185" font-size="11" fill="#334155">A ∪ B shaded; A ∩ B = ∅ (disjoint sets)</text>
+  </svg>`,
+
+  "venn-symmetric-difference": `<svg viewBox="0 0 320 220" width="320" height="220" aria-label="Venn diagram for symmetric difference C triangle F">
+    <rect x="15" y="15" width="290" height="165" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+    <text x="285" y="35" font-size="12" fill="#475569">U (40 students)</text>
+    <path fill="#93c5fd" fill-opacity="0.9" fill-rule="evenodd" stroke="#2563eb" stroke-width="2"
+      d="M 115 37 A 58 58 0 1 0 115 153 A 58 58 0 1 0 115 37
+         M 205 37 A 58 58 0 1 1 205 153 A 58 58 0 1 1 205 37 Z"/>
+    <path fill="#fca5a5" fill-opacity="0.9" fill-rule="evenodd" stroke="#dc2626" stroke-width="2"
+      d="M 205 37 A 58 58 0 1 0 205 153 A 58 58 0 1 0 205 37
+         M 115 37 A 58 58 0 1 1 115 153 A 58 58 0 1 1 115 37 Z"/>
+    <text x="78" y="98" font-size="12" font-weight="bold" fill="#1e40af">15</text>
+    <text x="218" y="98" font-size="12" font-weight="bold" fill="#991b1b">15</text>
+    <text x="152" y="98" font-size="12" font-weight="bold" fill="#334155">5</text>
+    <text x="152" y="155" font-size="11" fill="#64748b">5 neither</text>
+    <text x="72" y="12" font-size="11" fill="#2563eb">C (cricket)</text>
+    <text x="210" y="12" font-size="11" fill="#dc2626">F (football)</text>
+    <text x="35" y="205" font-size="11" fill="#334155">Shaded: C ⊕ F = (C ∪ F) − (C ∩ F); overlap (5) left unshaded</text>
+  </svg>`,
+
   "double-bar-students": `<svg viewBox="0 0 320 200" width="320" height="200" aria-label="Double bar graph">
     <line x1="40" y1="170" x2="300" y2="170" stroke="#64748b"/><line x1="40" y1="30" x2="40" y2="170" stroke="#64748b"/>
     <rect x="55" y="80" width="12" height="90" fill="#6366f1"/><rect x="69" y="95" width="12" height="75" fill="#f472b6"/>

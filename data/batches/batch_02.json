@@ -1142,15 +1142,27 @@
       "type": "practice",
       "subtopic": "Gemini Open Glassbox · Batch 2",
       "question": "Venn diagram for $A\\cup B$ when $A$, $B$ are disjoint.",
-      "answer": "Two separate circles, both shaded",
+      "answer": "Two non-overlapping circles, both shaded (see diagram)",
       "options": [],
       "glassboxSteps": [
         {
           "rule": "Disjoint",
-          "why": "No common elements.",
-          "math": "Shade both circles for union"
+          "why": "$A \\cap B = \\emptyset$ — the circles do not overlap.",
+          "math": "A \\cap B = \\emptyset"
+        },
+        {
+          "rule": "Union",
+          "why": "$A \\cup B$ is every element in $A$ or in $B$; shade both entire circles.",
+          "math": "\\text{Shade } A \\text{ and } B \\text{ fully}"
+        },
+        {
+          "rule": "Diagram",
+          "why": "Universe $U$ as rectangle; disjoint circles labelled $A$, $B$.",
+          "math": "\\text{See Venn diagram below}"
         }
       ],
+      "diagram": "venn-disjoint-union",
+      "explanation": "Draw $A$ and $B$ as separate circles inside $U$; shade both for $A \\cup B$.",
       "linked_note_id": "CH06-sec-union-of-sets",
       "source": "gemini-batch-02"
     },
@@ -1234,15 +1246,26 @@
       "type": "practice",
       "subtopic": "Gemini Open Glassbox · Batch 2",
       "question": "Set-builder form of $\\{2,4,6,8,10\\}$.",
-      "answer": "$\\{x\\mid x\\text{ even natural}, x\\le 10\\}$",
+      "answer": "$\\{x \\mid x \\in \\mathbb{N}, x \\text{ is even}, x \\le 10\\}$",
       "options": [],
       "glassboxSteps": [
         {
-          "rule": "Rule",
-          "why": "Even naturals up to $10$.",
-          "math": "Set-builder notation"
+          "rule": "Standard form",
+          "why": "State membership in $\\mathbb{N}$ and the evenness condition explicitly.",
+          "math": "\\{x \\mid x \\in \\mathbb{N}, x \\text{ is even}, x \\le 10\\}"
+        },
+        {
+          "rule": "Generation form",
+          "why": "Even naturals are $2n$; here $n=1,2,3,4,5$.",
+          "math": "\\{2n \\mid n \\in \\mathbb{N}, 1 \\le n \\le 5\\}"
+        },
+        {
+          "rule": "Check",
+          "why": "Both forms list $\\{2,4,6,8,10\\}$.",
+          "math": "2,4,6,8,10"
         }
       ],
+      "explanation": "$\\{x \\mid x \\in \\mathbb{N}, x \\text{ is even}, x \\le 10\\}$; equivalently $\\{2n \\mid n \\in \\mathbb{N}, 1 \\le n \\le 5\\}$.",
       "linked_note_id": "CH06-sec-union-of-sets",
       "source": "gemini-batch-02"
     },
@@ -1285,20 +1308,41 @@
       "type": "practice",
       "subtopic": "Gemini Open Glassbox · Batch 2",
       "question": "Prove $A\\cup A=A$ and $A\\cap A=A$.",
-      "answer": "Both identities hold",
+      "answer": "$A \\cup A = A$ and $A \\cap A = A$ (proved by element-chasing)",
       "options": [],
       "glassboxSteps": [
         {
-          "rule": "Union",
-          "why": "Combining $A$ with itself gives $A$.",
-          "math": "$A\\cup A=A$"
+          "rule": "$(A \\cup A) \\subseteq A$",
+          "why": "Let $x \\in A \\cup A$. By definition, $x \\in A$ or $x \\in A$, which simplifies to $x \\in A$.",
+          "math": "x \\in A \\cup A \\Rightarrow x \\in A"
         },
         {
-          "rule": "Intersection",
-          "why": "Overlap of $A$ with itself is $A$.",
-          "math": "$A\\cap A=A$"
+          "rule": "$A \\subseteq (A \\cup A)$",
+          "why": "If $x \\in A$, then $x \\in A$ or $x \\in A$ is true, so $x \\in A \\cup A$.",
+          "math": "x \\in A \\Rightarrow x \\in A \\cup A"
+        },
+        {
+          "rule": "$A \\cup A = A$",
+          "why": "Both are subsets of each other, so the sets are equal.",
+          "math": "A \\cup A = A"
+        },
+        {
+          "rule": "$(A \\cap A) \\subseteq A$",
+          "why": "Let $x \\in A \\cap A$. By definition, $x \\in A$ and $x \\in A$, so $x \\in A$.",
+          "math": "x \\in A \\cap A \\Rightarrow x \\in A"
+        },
+        {
+          "rule": "$A \\subseteq (A \\cap A)$",
+          "why": "If $x \\in A$, then $x \\in A$ and $x \\in A$ both hold, so $x \\in A \\cap A$.",
+          "math": "x \\in A \\Rightarrow x \\in A \\cap A"
+        },
+        {
+          "rule": "$A \\cap A = A$",
+          "why": "Mutual inclusion gives equality.",
+          "math": "A \\cap A = A"
         }
       ],
+      "explanation": "Prove each identity by showing both sides are subsets of each other (element-chasing).",
       "linked_note_id": "CH06-sec-union-of-sets",
       "source": "gemini-batch-02"
     }

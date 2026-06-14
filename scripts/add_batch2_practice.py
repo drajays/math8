@@ -15,9 +15,9 @@ META = {
 }
 
 
-def q(ch, num, question, answer, steps, explanation, note_id=None):
+def q(ch, num, question, answer, steps, explanation, note_id=None, diagram=None):
     topic, default_note, _ = META[ch]
-    return {
+    out = {
         "id": f"Q-CH{ch:02d}-B02-{num:03d}",
         "chapter": ch,
         "topicId": topic,
@@ -31,6 +31,9 @@ def q(ch, num, question, answer, steps, explanation, note_id=None):
         "linked_note_id": note_id or default_note,
         "source": "practice-session",
     }
+    if diagram:
+        out["diagram"] = diagram
+    return out
 
 
 BATCH = []
@@ -77,11 +80,14 @@ BATCH.append(q(6, 1,
     "If $U = \\{1,2,3,4,5,6,7,8,9,10\\}$, $A = \\{2,4,6,8,10\\}$, $B = \\{1,3,5,7,9\\}$, find $A' \\cup B'$ and $(A \\cap B)'$.",
     "$A' \\cup B' = U$; $(A \\cap B)' = U$",
     [
-        {"rule": "Complements", "why": "$A'=\\{1,3,5,7,9\\}=B$ and $B'=A$.", "math": "A' = B,\\; B' = A"},
-        {"rule": "$A' \\cup B'$", "why": "Union of complements covers all of $U$.", "math": "A' \\cup B' = U"},
-        {"rule": "$(A \\cap B)'$", "why": "$A \\cap B = \\emptyset$; complement of empty set is $U$.", "math": "(A \\cap B)' = U"},
+        {"rule": "Identify sets", "why": "$A$ = evens in $U$; $B$ = odds in $U$.", "math": "A = \\{2,4,6,8,10\\},\\; B = \\{1,3,5,7,9\\}"},
+        {"rule": "Partition of $U$", "why": "$A$ and $B$ are mutually exclusive ($A \\cap B = \\emptyset$) and collectively exhaustive ($A \\cup B = U$): every element of $U$ is in exactly one of them.", "math": "A \\cap B = \\emptyset,\\; A \\cup B = U"},
+        {"rule": "Complements", "why": "Since $B$ is exactly the non-evens in $U$, $A' = B$; similarly $B' = A$.", "math": "A' = B,\\; B' = A"},
+        {"rule": "$A' \\cup B'$", "why": "Union of complements equals $B \\cup A = U$.", "math": "A' \\cup B' = U"},
+        {"rule": "$(A \\cap B)'$", "why": "Because $A \\cap B = \\emptyset$, its complement is the entire universal set: $\\emptyset' = U$.", "math": "(A \\cap B)' = U"},
+        {"rule": "De Morgan check", "why": "$(A \\cup B)' = A' \\cap B' = \\emptyset$ and $(A \\cap B)' = A' \\cup B' = U$ — consistent with the partition.", "math": "(A \\cap B)' = A' \\cup B' = U"},
     ],
-    "$A'=B$, $B'=A$ → $A'\\cup B'=U$; $(A\\cap B)'=U$ (De Morgan confirmed).",
+    "$A$ (evens) and $B$ (odds) partition $U$, so $A \\cap B = \\emptyset$ and $(A \\cap B)' = U$; also $A' \\cup B' = U$.",
 ))
 
 BATCH.append(q(6, 2,
@@ -96,13 +102,14 @@ BATCH.append(q(6, 2,
 
 BATCH.append(q(6, 3,
     "Draw a Venn diagram to represent: students who play cricket or football but not both in a class of $40$ (with numbers).",
-    "Shade $(C \\cup F) - (C \\cap F)$: only-cricket and only-football regions (e.g. 15 + 15, with 5 in both and 5 in neither).",
+    "Shade $C \\oplus F = (C \\cup F) - (C \\cap F)$: only-cricket and only-football regions (15 + 15, with 5 in both and 5 in neither).",
     [
-        {"rule": "Concept", "why": "Cricket or football but not both = symmetric difference.", "math": "(C \\cup F) - (C \\cap F)"},
-        {"rule": "Diagram", "why": "Two overlapping circles in rectangle $U$; leave intersection unshaded.", "math": "\\text{Shade left and right moons only}"},
-        {"rule": "Example numbers", "why": "Sample partition of 40.", "math": "15 \\text{ only C},\\; 15 \\text{ only F},\\; 5 \\text{ both},\\; 5 \\text{ neither}"},
+        {"rule": "Symmetric difference", "why": "Cricket or football but not both = elements in exactly one of $C$ or $F$.", "math": "C \\oplus F = (C \\cup F) - (C \\cap F)"},
+        {"rule": "Diagram", "why": "Two overlapping circles in rectangle $U$; shade the left and right crescents only — leave the intersection unshaded.", "math": "\\text{Shade } C \\setminus F \\text{ and } F \\setminus C"},
+        {"rule": "Example numbers", "why": "Sample partition of 40: $15 + 15 + 5 + 5 = 40$.", "math": "15 \\text{ only C},\\; 15 \\text{ only F},\\; 5 \\text{ both},\\; 5 \\text{ neither}"},
     ],
-    "Shade only-cricket and only-football moons; exclude intersection.",
+    "Shade only-cricket and only-football crescents ($C \\oplus F$); exclude the intersection. See diagram.",
+    diagram="venn-symmetric-difference",
 ))
 
 BATCH.append(q(6, 4,

@@ -397,25 +397,36 @@ def batch_02():
           step("(ii)", "Primes in range.", "$\\{11,13,17,19\\}$")]),
         (93, "$A=\\{x:x\\text{ multiple of }3\\}$, $B=\\{x:x\\text{ multiple of }4\\}$. Find $A\\cap B$.", "Multiples of $12$",
          [step("Overlap", "LCM of $3$ and $4$.", "$\\{12,24,36,\\ldots\\}$")]),
-        (94, "Venn diagram for $A\\cup B$ when $A$, $B$ are disjoint.", "Two separate circles, both shaded",
-         [step("Disjoint", "No common elements.", "Shade both circles for union")]),
+        (94, "Venn diagram for $A\\cup B$ when $A$, $B$ are disjoint.", "Two non-overlapping circles, both shaded (see diagram)",
+         [step("Disjoint", "$A \\cap B = \\emptyset$ — the circles do not overlap.", "A \\cap B = \\emptyset"),
+          step("Union", "$A \\cup B$ is every element in $A$ or in $B$; shade both entire circles.", "\\text{Shade } A \\text{ and } B \\text{ fully}"),
+          step("Diagram", "Universe $U$ as rectangle; disjoint circles labelled $A$, $B$.", "\\text{See Venn diagram below}")],
+         "venn-disjoint-union"),
         (95, "$U=\\{1,\\ldots,10\\}$, $A=\\{1,3,5,7,9\\}$. Find $A'$.", "$\\{2,4,6,8,10\\}$",
          [step("Complement", "Evens in universe.", "$\\{2,4,6,8,10\\}$")]),
         (96, "Cardinal number of distinct letters in MATHEMATICS.", "$8$",
          [step("Unique", "$\\{M,A,T,H,E,I,C,S\\}$.", "$8$")]),
         (97, "$n(A\\cup B)=35$, $n(A)=20$, $n(B)=18$. Find $n(A\\cap B)$.", "$3$",
          [step("Formula", "$35=20+18-x$.", "$x=3$")]),
-        (98, "Set-builder form of $\\{2,4,6,8,10\\}$.", "$\\{x\\mid x\\text{ even natural}, x\\le 10\\}$",
-         [step("Rule", "Even naturals up to $10$.", "Set-builder notation")]),
+        (98, "Set-builder form of $\\{2,4,6,8,10\\}$.", "$\\{x \\mid x \\in \\mathbb{N}, x \\text{ is even}, x \\le 10\\}$",
+         [step("Standard form", "State membership in $\\mathbb{N}$ and the evenness condition explicitly.", "\\{x \\mid x \\in \\mathbb{N}, x \\text{ is even}, x \\le 10\\}"),
+          step("Generation form", "Even naturals are $2n$; here $n=1,2,3,4,5$.", "\\{2n \\mid n \\in \\mathbb{N}, 1 \\le n \\le 5\\}"),
+          step("Check", "Both forms list $\\{2,4,6,8,10\\}$.", "2,4,6,8,10")]),
         (99, "$A=\\{2,4,6,8\\}$, $B=\\{1,2,3,4,5\\}$. Find $A-B$ and $B-A$.", "$A-B=\\{6,8\\}$, $B-A=\\{1,3,5\\}$",
          [step("$A-B$", "Remove overlap from $A$.", "$\\{6,8\\}$"),
           step("$B-A$", "Remove overlap from $B$.", "$\\{1,3,5\\}$")]),
-        (100, "Prove $A\\cup A=A$ and $A\\cap A=A$.", "Both identities hold",
-         [step("Union", "Combining $A$ with itself gives $A$.", "$A\\cup A=A$"),
-          step("Intersection", "Overlap of $A$ with itself is $A$.", "$A\\cap A=A$")]),
+        (100, "Prove $A\\cup A=A$ and $A\\cap A=A$.", "$A \\cup A = A$ and $A \\cap A = A$ (proved by element-chasing)",
+         [step("$(A \\cup A) \\subseteq A$", "Let $x \\in A \\cup A$. By definition, $x \\in A$ or $x \\in A$, which simplifies to $x \\in A$.", "x \\in A \\cup A \\Rightarrow x \\in A"),
+          step("$A \\subseteq (A \\cup A)$", "If $x \\in A$, then $x \\in A$ or $x \\in A$ is true, so $x \\in A \\cup A$.", "x \\in A \\Rightarrow x \\in A \\cup A"),
+          step("$A \\cup A = A$", "Both are subsets of each other, so the sets are equal.", "A \\cup A = A"),
+          step("$(A \\cap A) \\subseteq A$", "Let $x \\in A \\cap A$. By definition, $x \\in A$ and $x \\in A$, so $x \\in A$.", "x \\in A \\cap A \\Rightarrow x \\in A"),
+          step("$A \\subseteq (A \\cap A)$", "If $x \\in A$, then $x \\in A$ and $x \\in A$ both hold, so $x \\in A \\cap A$.", "x \\in A \\Rightarrow x \\in A \\cap A"),
+          step("$A \\cap A = A$", "Mutual inclusion gives equality.", "A \\cap A = A")]),
     ]
-    for gn, qu, ans, st in ch6:
-        qs.append(mk_q(B, gn, 6, qu, ans, st, local_label=f"Ch6-Q{gn-88}"))
+    for item in ch6:
+        diagram = item[4] if len(item) == 5 else None
+        gn, qu, ans, st = item[:4]
+        qs.append(mk_q(B, gn, 6, qu, ans, st, local_label=f"Ch6-Q{gn-88}", diagram=diagram))
 
     return qs
 

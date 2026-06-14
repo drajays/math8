@@ -22,10 +22,22 @@
       .replace(/`([^`]+)`/g, "<code>$1</code>");
   }
 
+  function hasDollarMath(s) {
+    return /\$\$[^$]+\$\$|\$[^$]+\$/.test(s);
+  }
+
+  function looksLikeBareLatex(s) {
+    return /\\(?:frac|left|right|dfrac|tfrac|sqrt|text|mathrm|[a-zA-Z]{2,})/.test(s);
+  }
+
   function splitRenderTex(text, deps) {
+    const s = String(text ?? "");
+    if (!s) return "";
+    if (!hasDollarMath(s) && looksLikeBareLatex(s)) {
+      return `<span class="mathline">${deps.texHtml(s)}</span>`;
+    }
     const re = /\$\$([^$]+)\$\$|\$([^$]+)\$/g;
     let out = "", last = 0, m;
-    const s = String(text ?? "");
     while ((m = re.exec(s)) !== null) {
       out += inlineFmt(s.slice(last, m.index), deps.esc);
       out += `<span class="mathline">${deps.texHtml(m[1] ?? m[2])}</span>`;

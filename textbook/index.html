@@ -485,7 +485,7 @@ sup.msup,sub.msub{font-family:inherit}
 </div>
 
 <script src="../shared/math-render.js?v=4"></script>
-<script src="../shared/notes-render.js?v=3"></script>
+<script src="../shared/notes-render.js?v=4"></script>
 <script src="../shared/practice-diagrams.js?v=4"></script>
 <script>
 const $ = s => document.querySelector(s);
@@ -1139,7 +1139,7 @@ function paintPracticeFeed(qs){
       <div class="practice-block-actions">${questionAdminBarHtml(q)}</div>
       <div class="practice-solution">
         <ol class="steps">${(q.glassboxSteps || []).map((s, i) =>
-          `<li class="step"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${esc(s.why)}</div><div class="math mathline">${splitRenderTex(s.math)}</div></li>`
+          `<li class="step"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${splitRenderTex(s.why)}</div><div class="math">${splitRenderTex(s.math)}</div></li>`
         ).join("")}</ol>
         <div class="answer"><span class="mathline">${splitRenderTex(q.answer)}</span></div>
       </div>

@@ -226,6 +226,18 @@ a{color:var(--blue)}
 .practice-block-actions{display:flex;margin:0 0 20px}
 .practice-block-actions .q-admin{margin-left:0}
 .practice-solution .steps{margin-bottom:14px}
+.practice-gen-bar{flex-shrink:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 14px;padding:10px 14px;border-bottom:1px solid var(--border);background:linear-gradient(90deg,#fff1f2,#fff);position:sticky;top:0;z-index:4}
+.practice-gen-main{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.practice-gen-label{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--on-var);white-space:nowrap}
+.practice-gen-kind,.practice-gen-count{font-family:var(--mono);font-size:12px;padding:7px 10px;border:1.5px solid var(--border);border-radius:var(--r);background:var(--surface)}
+.practice-gen-count{width:4rem}
+.practice-gen-run{border:none;border-radius:var(--r);padding:8px 14px;font-size:12px;font-weight:700;font-family:var(--sans);cursor:pointer;color:#fff;background:linear-gradient(135deg,#e11d48,#be123c);box-shadow:0 2px 8px rgba(225,29,72,.2)}
+.practice-gen-run:hover{transform:translateY(-1px)}
+.practice-gen-meta{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10px;color:var(--on-dim)}
+.practice-gen-clear{border:1.5px solid var(--border);background:var(--surface);border-radius:var(--pill);padding:5px 10px;font-size:10px;font-weight:600;font-family:var(--sans);cursor:pointer;color:var(--on-var)}
+.practice-gen-clear:hover{border-color:#e11d48;color:#e11d48}
+.practice-block--generated{border-left:3px solid #fbbf24;padding-left:calc(clamp(16px,3vw,32px) - 3px)}
+.practice-block--generated .practice-problem .problem{border-left-color:#f59e0b}
 
 .glass-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow)}
 .glass-panel-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px 16px;background:linear-gradient(90deg,#fff1f2,#fff);border-bottom:1px solid var(--border)}
@@ -381,6 +393,23 @@ sup.msup,sub.msub{font-family:inherit}
         <div class="content-main">
         <div class="panel" id="panel-notes"><div class="panel-scroll notes-md empty" id="notes">Pick a chapter.</div></div>
         <div class="panel active" id="panel-practice">
+          <div class="practice-gen-bar" id="practice-gen-bar">
+            <div class="practice-gen-main">
+              <span class="practice-gen-label">🎲 Generate</span>
+              <select class="practice-gen-kind" id="practice-gen-kind" aria-label="Problem type">
+                <option value="same_add">Add (same denominator)</option>
+                <option value="same_sub">Subtract (same denominator)</option>
+                <option value="diff_add">Add (different denominators)</option>
+                <option value="mixed">Mixed random</option>
+              </select>
+              <input class="practice-gen-count" id="practice-gen-count" type="number" min="1" max="20" value="5" aria-label="Number of problems">
+              <button type="button" class="practice-gen-run" id="practice-gen-run">Add to practice</button>
+            </div>
+            <div class="practice-gen-meta">
+              <span id="practice-gen-session-info">Random fraction problems for extra practice</span>
+              <button type="button" class="practice-gen-clear" id="practice-gen-clear" hidden>Clear generated</button>
+            </div>
+          </div>
           <div class="panel-scroll practice-md empty" id="practice-feed">Pick a chapter.</div>
         </div>
         <div class="panel" id="panel-mindmap"><div class="panel-scroll mindmap empty" id="mindmap"></div></div>
@@ -484,6 +513,7 @@ sup.msup,sub.msub{font-family:inherit}
   </div>
 </div>
 
+<script src="../shared/practice-generator.js?v=1"></script>
 <script src="../shared/math-render.js?v=4"></script>
 <script src="../shared/notes-render.js?v=4"></script>
 <script src="../shared/practice-diagrams.js?v=4"></script>
@@ -494,6 +524,7 @@ let MANIFEST = null, CUR = null, CACHE = {}, LOAD_TOKEN = 0;
 let CUR_QUESTIONS = [];
 let EDIT_QID = null;
 const OVERRIDE_KEY = "math8-question-overrides";
+const SESSION_KEY = "math8-practice-session";
 const GH_TOKEN_KEY = "math8-gh-token";
 const GITHUB_REPO = "drajays/math8";
 const GITHUB_BRANCH = "main";
@@ -607,6 +638,96 @@ function getOverrides(){
 function saveOverrides(o){
   try { localStorage.setItem(OVERRIDE_KEY, JSON.stringify(o)); } catch(e){}
   updatePushButtonState();
+}
+
+function getSessionStore(){
+  try { return JSON.parse(localStorage.getItem(SESSION_KEY) || "{}") || {}; }
+  catch(e){ return {}; }
+}
+
+function saveSessionStore(o){
+  try { localStorage.setItem(SESSION_KEY, JSON.stringify(o)); } catch(e){}
+}
+
+function getSessionQuestions(tag){
+  if (!tag) return [];
+  return getSessionStore()[tag] || [];
+}
+
+function appendSessionQuestions(tag, qs){
+  const store = getSessionStore();
+  store[tag] = (store[tag] || []).concat(qs);
+  saveSessionStore(store);
+}
+
+function clearSessionQuestions(tag){
+  const store = getSessionStore();
+  delete store[tag];
+  saveSessionStore(store);
+}
+
+function removeSessionQuestion(tag, id){
+  const store = getSessionStore();
+  store[tag] = (store[tag] || []).filter(q => q.id !== id);
+  if (!store[tag]?.length) delete store[tag];
+  saveSessionStore(store);
+}
+
+function getMergedQuestions(){
+  if (!CUR || !CACHE[CUR.tag]) return [];
+  const o = getOverrides();
+  const deleted = new Set(o.deleted || []);
+  const base = applyQuestionOverrides(CACHE[CUR.tag].rawQuestions);
+  const session = getSessionQuestions(CUR.tag)
+    .filter(q => !deleted.has(q.id))
+    .map(q => {
+      const edit = o.edits[q.id];
+      if (!edit) return q;
+      const merged = { ...q, ...edit };
+      if (edit.glassboxSteps) merged.glassboxSteps = edit.glassboxSteps.map(s => ({
+        rule: safeStr(s.rule || "Step"),
+        why: safeStr(s.why),
+        math: safeStr(s.math),
+      }));
+      if (edit.options) merged.options = edit.options.map(opt => safeStr(opt));
+      return merged;
+    });
+  return base.concat(session);
+}
+
+function updatePracticeGenBar(){
+  const info = $("#practice-gen-session-info");
+  const clearBtn = $("#practice-gen-clear");
+  const n = CUR ? getSessionQuestions(CUR.tag).length : 0;
+  if (info) info.textContent = n ? `${n} generated problem(s) in this chapter` : "Few fixed examples — generate more fraction practice below";
+  if (clearBtn) clearBtn.hidden = !n;
+}
+
+function runPracticeGenerator(){
+  if (!CUR || typeof PracticeGenerator === "undefined") return;
+  const count = Math.min(20, Math.max(1, Number($("#practice-gen-count")?.value) || 5));
+  const kind = $("#practice-gen-kind")?.value || "same_add";
+  const sample = CACHE[CUR.tag]?.rawQuestions?.[0];
+  const noteId = sample?.linked_note_id || "";
+  const qs = PracticeGenerator.generate(count, kind, CUR.num, noteId);
+  appendSessionQuestions(CUR.tag, qs);
+  refreshQuestionsFromCache();
+  requestAnimationFrame(() => {
+    const feed = $("#practice-feed");
+    if (feed) feed.scrollTop = feed.scrollHeight;
+  });
+}
+
+function wirePracticeGenerator(){
+  if (wirePracticeGenerator._done) return;
+  wirePracticeGenerator._done = true;
+  $("#practice-gen-run")?.addEventListener("click", runPracticeGenerator);
+  $("#practice-gen-clear")?.addEventListener("click", () => {
+    if (!CUR || !getSessionQuestions(CUR.tag).length) return;
+    if (!confirm("Remove all generated problems from this chapter?")) return;
+    clearSessionQuestions(CUR.tag);
+    refreshQuestionsFromCache();
+  });
 }
 
 function questionSourceInfo(id){
@@ -821,10 +942,9 @@ function getEffectiveQuestion(id){
 
 function refreshQuestionsFromCache(){
   if (!CUR || !CACHE[CUR.tag]) return;
-  const data = CACHE[CUR.tag];
-  data.questions = applyQuestionOverrides(data.rawQuestions);
-  CUR_QUESTIONS = data.questions;
+  CUR_QUESTIONS = getMergedQuestions();
   paintQuestions(CUR_QUESTIONS);
+  updatePracticeGenBar();
 }
 
 function questionAdminBarHtml(q){
@@ -839,6 +959,12 @@ function deleteQuestionById(id){
   if (!q) return;
   const preview = cleanQuestionText(q.question).slice(0, 80);
   if (!confirm(`Hide this question?\n\n${preview}${preview.length >= 80 ? "…" : ""}\n\nYou can restore hidden questions with "Restore hidden".`)) return;
+  if (String(id).startsWith("Q-SESS-") && CUR) {
+    removeSessionQuestion(CUR.tag, id);
+    closeEditModal();
+    refreshQuestionsFromCache();
+    return;
+  }
   const o = getOverrides();
   if (!o.deleted.includes(id)) o.deleted.push(id);
   saveOverrides(o);
@@ -1055,8 +1181,9 @@ async function selectChapter(ch){
     $("#cheat").classList.remove("empty");
     paintPanelHero("#oneword-hero", "oneword", data.oneword.length + " cards", chapterLabel(ch), null);
     syncPracticeSideTools(getActiveTab());
-    CUR_QUESTIONS = data.questions;
-    paintQuestions(data.questions);
+    CUR_QUESTIONS = getMergedQuestions();
+    paintQuestions(CUR_QUESTIONS);
+    updatePracticeGenBar();
     paintOneWord(data.oneword);
   } catch(e){
     if (token !== LOAD_TOKEN) return;
@@ -1134,7 +1261,9 @@ function questionBodyHtml(q){
 function paintPracticeFeed(qs){
   const feed = $("#practice-feed");
   if (!feed) return;
-  feed.innerHTML = qs.map(q => `<article class="practice-block" id="scroll-${esc(q.id)}">
+  feed.innerHTML = qs.map(q => {
+    const gen = String(q.source || "").startsWith("session-generated");
+    return `<article class="practice-block${gen ? " practice-block--generated" : ""}" id="scroll-${esc(q.id)}">
       <div class="practice-problem">${questionBodyHtml(q)}</div>
       <div class="practice-block-actions">${questionAdminBarHtml(q)}</div>
       <div class="practice-solution">
@@ -1143,7 +1272,8 @@ function paintPracticeFeed(qs){
         ).join("")}</ol>
         <div class="answer"><span class="mathline">${splitRenderTex(q.answer)}</span></div>
       </div>
-    </article>`).join("");
+    </article>`;
+  }).join("");
   feed.scrollTop = 0;
 }
 
@@ -1222,7 +1352,9 @@ $('#sidebar-toggle')?.addEventListener('click', () => {
     if (modeSaved === '1') setModeSidebarCollapsed(true);
     wireQuestionAdmin();
     wireGitPush();
+    wirePracticeGenerator();
     updatePushButtonState();
+    updatePracticeGenBar();
     syncPracticeSideTools(getActiveTab());
     MANIFEST = await loadJson("manifest.json?v=5");
     paintChapters();

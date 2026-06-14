@@ -271,26 +271,26 @@
       "-1",
       "none of these"
     ],
-    "correctOption": 0,
-    "answer": "0",
+    "correctOption": 1,
+    "answer": "1",
     "glassboxSteps": [
       {
         "rule": "Given",
-        "why": "Restate the problem.",
+        "why": "Product of a non-zero rational number and its reciprocal.",
         "math": "Multiplication of a non-zero rational number and its reciprocal is"
       },
       {
         "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "why": "A number times its reciprocal equals the multiplicative identity.",
+        "math": "x \\times \\frac{1}{x} = 1 \\quad (x \\neq 0)"
       },
       {
         "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "0"
+        "why": "Match with Option B.",
+        "math": "1"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Multiplication of a non-zero rational number and its reciprocal is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $0$",
+    "explanation": "Step 1 (Given): Product of a number and its reciprocal. Step 2 (Method): $x \\times \\frac{1}{x} = 1$. Step 3 (Result): Option B (1).",
     "linked_note_id": "CH01-sec-rational-numbers",
     "source": "textbook",
     "linksTo": "math-ch01nrational-n"
@@ -677,17 +677,17 @@
     "answer": "$\\dfrac{3}{5}$",
     "glassboxSteps": [
       {
-        "rule": "LCM",
-        "why": "Common denominator is 5.",
+        "rule": "Denominators match",
+        "why": "The denominators are already the same ($5$). Keep the denominator as is.",
         "math": "$\\dfrac{2}{5}+\\dfrac{1}{5}$"
       },
       {
         "rule": "Add numerators",
-        "why": "Add when denominators match.",
+        "why": "Combine the top numbers: $2 + 1 = 3$.",
         "math": "$\\dfrac{3}{5}$"
       }
     ],
-    "explanation": "Step 1 (LCM): Common denominator is 5. → $$\\dfrac{2}{5}+\\dfrac{1}{5}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{3}{5}$$",
+    "explanation": "Step 1 (Denominators match): Both fractions have denominator 5. Step 2 (Add numerators): $2 + 1 = 3$, so $\\dfrac{3}{5}$.",
     "linked_note_id": "CH01-sec-rational-numbers",
     "source": "generated",
     "linksTo": "math-ch01nrational-n"
@@ -709,17 +709,17 @@
     "answer": "$\\dfrac{5}{7}$",
     "glassboxSteps": [
       {
-        "rule": "LCM",
-        "why": "Common denominator is 7.",
+        "rule": "Denominators match",
+        "why": "The denominators are already the same ($7$). Keep the denominator as is.",
         "math": "$\\dfrac{4}{7}+\\dfrac{1}{7}$"
       },
       {
         "rule": "Add numerators",
-        "why": "Add when denominators match.",
+        "why": "Combine the top numbers: $4 + 1 = 5$.",
         "math": "$\\dfrac{5}{7}$"
       }
     ],
-    "explanation": "Step 1 (LCM): Common denominator is 7. → $$\\dfrac{4}{7}+\\dfrac{1}{7}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{5}{7}$$",
+    "explanation": "Step 1 (Denominators match): Both fractions have denominator 7. Step 2 (Add numerators): $4 + 1 = 5$, so $\\dfrac{5}{7}$.",
     "linked_note_id": "CH01-sec-rational-numbers",
     "source": "generated",
     "linksTo": "math-ch01nrational-n"
@@ -741,113 +741,17 @@
     "answer": "$\\dfrac{13}{15}$",
     "glassboxSteps": [
       {
-        "rule": "LCM",
-        "why": "Common denominator is 15.",
+        "rule": "Denominators match",
+        "why": "The denominators are already the same ($15$). Keep the denominator as is.",
         "math": "$\\dfrac{12}{15}+\\dfrac{1}{15}$"
       },
       {
         "rule": "Add numerators",
-        "why": "Add when denominators match.",
+        "why": "Combine the top numbers: $12 + 1 = 13$.",
         "math": "$\\dfrac{13}{15}$"
       }
     ],
-    "explanation": "Step 1 (LCM): Common denominator is 15. → $$\\dfrac{12}{15}+\\dfrac{1}{15}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{13}{15}$$",
-    "linked_note_id": "CH01-sec-rational-numbers",
-    "source": "generated",
-    "linksTo": "math-ch01nrational-n"
-  },
-  {
-    "id": "Q-CH01-047",
-    "chapter": 1,
-    "topicId": "math-ch1",
-    "type": "mcq",
-    "subtopic": "Glassbox Question Bank",
-    "question": "[60] Simplify: $\\dfrac{2}{5} + \\dfrac{1}{5}$",
-    "options": [
-      "$\\dfrac{3}{5}$",
-      "$\\dfrac{2}{6}$",
-      "$\\dfrac{1}{5}$",
-      "$\\dfrac{4}{5}$"
-    ],
-    "correctOption": 0,
-    "answer": "$\\dfrac{3}{5}$",
-    "glassboxSteps": [
-      {
-        "rule": "LCM",
-        "why": "Common denominator is 5.",
-        "math": "$\\dfrac{2}{5}+\\dfrac{1}{5}$"
-      },
-      {
-        "rule": "Add numerators",
-        "why": "Add when denominators match.",
-        "math": "$\\dfrac{3}{5}$"
-      }
-    ],
-    "explanation": "Step 1 (LCM): Common denominator is 5. → $$\\dfrac{2}{5}+\\dfrac{1}{5}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{3}{5}$$",
-    "linked_note_id": "CH01-sec-rational-numbers",
-    "source": "generated",
-    "linksTo": "math-ch01nrational-n"
-  },
-  {
-    "id": "Q-CH01-049",
-    "chapter": 1,
-    "topicId": "math-ch1",
-    "type": "mcq",
-    "subtopic": "Glassbox Question Bank",
-    "question": "[62] Simplify: $\\dfrac{4}{7} + \\dfrac{1}{7}$",
-    "options": [
-      "$\\dfrac{5}{7}$",
-      "$\\dfrac{4}{8}$",
-      "$\\dfrac{3}{7}$",
-      "$\\dfrac{6}{7}$"
-    ],
-    "correctOption": 0,
-    "answer": "$\\dfrac{5}{7}$",
-    "glassboxSteps": [
-      {
-        "rule": "LCM",
-        "why": "Common denominator is 7.",
-        "math": "$\\dfrac{4}{7}+\\dfrac{1}{7}$"
-      },
-      {
-        "rule": "Add numerators",
-        "why": "Add when denominators match.",
-        "math": "$\\dfrac{5}{7}$"
-      }
-    ],
-    "explanation": "Step 1 (LCM): Common denominator is 7. → $$\\dfrac{4}{7}+\\dfrac{1}{7}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{5}{7}$$",
-    "linked_note_id": "CH01-sec-rational-numbers",
-    "source": "generated",
-    "linksTo": "math-ch01nrational-n"
-  },
-  {
-    "id": "Q-CH01-054",
-    "chapter": 1,
-    "topicId": "math-ch1",
-    "type": "mcq",
-    "subtopic": "Glassbox Question Bank",
-    "question": "[70] Simplify: $\\dfrac{12}{15} + \\dfrac{1}{15}$",
-    "options": [
-      "$\\dfrac{13}{15}$",
-      "$\\dfrac{12}{16}$",
-      "$\\dfrac{11}{15}$",
-      "$\\dfrac{14}{15}$"
-    ],
-    "correctOption": 0,
-    "answer": "$\\dfrac{13}{15}$",
-    "glassboxSteps": [
-      {
-        "rule": "LCM",
-        "why": "Common denominator is 15.",
-        "math": "$\\dfrac{12}{15}+\\dfrac{1}{15}$"
-      },
-      {
-        "rule": "Add numerators",
-        "why": "Add when denominators match.",
-        "math": "$\\dfrac{13}{15}$"
-      }
-    ],
-    "explanation": "Step 1 (LCM): Common denominator is 15. → $$\\dfrac{12}{15}+\\dfrac{1}{15}$$ Step 2 (Add numerators): Add when denominators match. → $$\\dfrac{13}{15}$$",
+    "explanation": "Step 1 (Denominators match): Both fractions have denominator 15. Step 2 (Add numerators): $12 + 1 = 13$, so $\\dfrac{13}{15}$.",
     "linked_note_id": "CH01-sec-rational-numbers",
     "source": "generated",
     "linksTo": "math-ch01nrational-n"

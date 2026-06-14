@@ -51,8 +51,8 @@
       correctOption,
       answer: ans,
       glassboxSteps: [
-        { rule: "LCM", why: `Common denominator is ${d}.`, math: expr },
-        { rule: "Add numerators", why: "Add when denominators match.", math: `$\\dfrac{${sum}}{${d}}$` },
+        { rule: "Denominators match", why: `The denominators are already the same (${d}). Keep the denominator as is.`, math: expr },
+        { rule: "Add numerators", why: `Combine the top numbers: ${n1} + ${n2} = ${sum}.`, math: `$\\dfrac{${sum}}{${d}}$` },
       ],
       linked_note_id: linkedNoteId || "",
       source: "session-generated",
@@ -87,8 +87,8 @@
       correctOption,
       answer: ans,
       glassboxSteps: [
-        { rule: "LCM", why: `Common denominator is ${d}.`, math: expr },
-        { rule: "Subtract numerators", why: "Subtract when denominators match.", math: `$\\dfrac{${diff}}{${d}}$` },
+        { rule: "Denominators match", why: `The denominators are already the same (${d}). Keep the denominator as is.`, math: expr },
+        { rule: "Subtract numerators", why: `Subtract the top numbers: ${n1} - ${n2} = ${diff}.`, math: `$\\dfrac{${diff}}{${d}}$` },
       ],
       linked_note_id: linkedNoteId || "",
       source: "session-generated",

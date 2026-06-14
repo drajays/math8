@@ -1,0 +1,1027 @@
+{
+  "title": "Rational Numbers · Full Test Paper",
+  "chapter": 1,
+  "count": 30,
+  "questions": [
+    {
+      "id": "Q-CH01-027",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section A",
+      "question": "Which of the following is not a rational number?\n\n(a) $0$\n(b) $-\\dfrac{7}{1}$\n(c) $\\sqrt{2}$\n(d) $\\dfrac{5}{0}$",
+      "answer": "$\\dfrac{5}{0}$",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "A rational number can be written as $\\dfrac{p}{q}$ where $p,q$ are integers and $q \\neq 0$.",
+          "math": "\\mathbb{Q} = \\left\\{\\dfrac{p}{q} : p,q \\in \\mathbb{Z},\\, q \\neq 0\\right\\}"
+        },
+        {
+          "rule": "Analyse (a)",
+          "why": "$0 = \\dfrac{0}{1}$ — valid fraction form.",
+          "math": "0 \\in \\mathbb{Q}"
+        },
+        {
+          "rule": "Analyse (b)",
+          "why": "$-\\dfrac{7}{1}$ is already in $\\dfrac{p}{q}$ form.",
+          "math": "-\\dfrac{7}{1} \\in \\mathbb{Q}"
+        },
+        {
+          "rule": "Analyse (c)",
+          "why": "$\\sqrt{2}$ cannot be written as a ratio of integers — it is irrational (not rational, but still a number).",
+          "math": "\\sqrt{2} \\notin \\mathbb{Q}"
+        },
+        {
+          "rule": "Analyse (d)",
+          "why": "$\\dfrac{5}{0}$ has denominator zero — undefined; it is not a number at all.",
+          "math": "\\dfrac{5}{0} \\text{ is undefined}"
+        },
+        {
+          "rule": "Result",
+          "why": "In standard curriculum framing, the undefined expression is the intended answer.",
+          "math": "\\text{Answer: (d) } \\dfrac{5}{0}"
+        }
+      ],
+      "explanation": "Concept: rational = $\\dfrac{p}{q}$, $q \\neq 0$. (a) 0 is rational. (b) $-\\frac{7}{1}$ is rational. (c) $\\sqrt{2}$ is irrational (not rational, but still a number). (d) $\\frac{5}{0}$ is undefined — not a number. Answer: (d).",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-028",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section A",
+      "question": "The additive identity of rational numbers is:\n\n(a) $1$\n(b) $-1$\n(c) $0$\n(d) None of these",
+      "answer": "$0$",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "The additive identity is the number that leaves any rational $a$ unchanged when added: $a + 0 = a$.",
+          "math": "a + 0 = a"
+        },
+        {
+          "rule": "Result",
+          "why": "Zero satisfies this for every rational number.",
+          "math": "\\text{Answer: (c) } 0"
+        }
+      ],
+      "explanation": "Additive identity: $a + 0 = a$. Answer: (c) 0.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-029",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section A",
+      "question": "The multiplicative inverse (reciprocal) of $-\\dfrac{5}{7}$ is:\n\n(a) $\\dfrac{7}{5}$\n(b) $-\\dfrac{7}{5}$\n(c) $\\dfrac{5}{7}$\n(d) $-\\dfrac{5}{7}$",
+      "answer": "$-\\dfrac{7}{5}$",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Multiplicative inverse of $a$ is $b$ such that $a \\times b = 1$. For a fraction, flip numerator and denominator.",
+          "math": "\\left(-\\dfrac{5}{7}\\right) \\times b = 1"
+        },
+        {
+          "rule": "Method",
+          "why": "Flip $-\\dfrac{5}{7}$ to get $-\\dfrac{7}{5}$.",
+          "math": "-\\dfrac{5}{7} \\times \\left(-\\dfrac{7}{5}\\right) = \\dfrac{35}{35} = 1"
+        },
+        {
+          "rule": "Result",
+          "why": "Product equals 1.",
+          "math": "\\text{Answer: (b) } -\\dfrac{7}{5}"
+        }
+      ],
+      "explanation": "Reciprocal of $-\\frac{5}{7}$: flip to $-\\frac{7}{5}$. Check: $(-\\frac{5}{7})(-\\frac{7}{5}) = 1$. Answer: (b).",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-030",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section A",
+      "question": "Which property is illustrated by: $\\dfrac{3}{5} + \\left(-\\dfrac{3}{5}\\right) = 0$?\n\n(a) Commutative property\n(b) Associative property\n(c) Existence of additive inverse\n(d) Closure property",
+      "answer": "Existence of additive inverse",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Every rational number $a$ has an additive inverse $-a$ such that $a + (-a) = 0$.",
+          "math": "a + (-a) = 0"
+        },
+        {
+          "rule": "Apply",
+          "why": "$\\dfrac{3}{5}$ and $-\\dfrac{3}{5}$ are negatives of each other; their sum is the additive identity 0.",
+          "math": "\\dfrac{3}{5} + \\left(-\\dfrac{3}{5}\\right) = 0"
+        },
+        {
+          "rule": "Result",
+          "why": "This demonstrates existence of additive inverse.",
+          "math": "\\text{Answer: (c) Existence of additive inverse}"
+        }
+      ],
+      "explanation": "Adding a number to its negative gives 0 — existence of additive inverse. Answer: (c).",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-031",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section A",
+      "question": "On the number line, the rational number $-\\dfrac{4}{5}$ lies:\n\n(a) To the right of $0$\n(b) At $-1$\n(c) Between $-1$ and $0$\n(d) To the left of $-1$",
+      "answer": "Between $-1$ and $0$",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "$-\\dfrac{4}{5}$ is a negative proper fraction: less than 0 but greater than $-1$.",
+          "math": "-1 < -\\dfrac{4}{5} < 0"
+        },
+        {
+          "rule": "Result",
+          "why": "It lies between $-1$ and $0$ on the number line.",
+          "math": "\\text{Answer: (c) Between } -1 \\text{ and } 0"
+        }
+      ],
+      "explanation": "$-\\frac{4}{5}$ is negative and $|{-\\frac{4}{5}}| < 1$, so it lies between $-1$ and $0$. Answer: (c).",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-032",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section A",
+      "question": "The product of two rational numbers is always:\n\n(a) An integer\n(b) A whole number\n(c) A rational number\n(d) An irrational number",
+      "answer": "A rational number",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Closure under multiplication: if $a,b \\in \\mathbb{Q}$, then $a \\times b \\in \\mathbb{Q}$.",
+          "math": "\\dfrac{p}{q} \\times \\dfrac{r}{s} = \\dfrac{pr}{qs} \\in \\mathbb{Q}"
+        },
+        {
+          "rule": "Result",
+          "why": "The product is always another rational number.",
+          "math": "\\text{Answer: (c) A rational number}"
+        }
+      ],
+      "explanation": "Closure property: product of two rationals is always rational. Answer: (c).",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-033",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section A",
+      "question": "What should be subtracted from $-\\dfrac{2}{3}$ to get $-\\dfrac{5}{6}$?\n\n(a) $\\dfrac{1}{6}$\n(b) $-\\dfrac{1}{6}$\n(c) $\\dfrac{1}{2}$\n(d) $-\\dfrac{1}{2}$",
+      "answer": "$\\dfrac{1}{6}$",
+      "glassboxSteps": [
+        {
+          "rule": "Set up equation",
+          "why": "Let the unknown be $x$. Subtraction means: $-\\dfrac{2}{3} - x = -\\dfrac{5}{6}$.",
+          "math": "-\\dfrac{2}{3} - x = -\\dfrac{5}{6}"
+        },
+        {
+          "rule": "Isolate $x$",
+          "why": "Rearrange: $x = -\\dfrac{2}{3} + \\dfrac{5}{6}$.",
+          "math": "x = -\\dfrac{2}{3} + \\dfrac{5}{6}"
+        },
+        {
+          "rule": "Common denominator",
+          "why": "LCM of 3 and 6 is 6.",
+          "math": "x = -\\dfrac{4}{6} + \\dfrac{5}{6} = \\dfrac{1}{6}"
+        },
+        {
+          "rule": "Result",
+          "why": "Subtract $\\dfrac{1}{6}$ from $-\\dfrac{2}{3}$ to get $-\\dfrac{5}{6}$.",
+          "math": "\\text{Answer: (a) } \\dfrac{1}{6}"
+        }
+      ],
+      "explanation": "Let $x$ be subtracted: $-\\frac{2}{3} - x = -\\frac{5}{6}$ → $x = -\\frac{2}{3} + \\frac{5}{6} = -\\frac{4}{6} + \\frac{5}{6} = \\frac{1}{6}$. Answer: (a).",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-034",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section A",
+      "question": "Division of rational numbers is:\n\n(a) Commutative only\n(b) Associative only\n(c) Neither commutative nor associative\n(d) Both commutative and associative",
+      "answer": "Neither commutative nor associative",
+      "glassboxSteps": [
+        {
+          "rule": "Commutative test",
+          "why": "In general $\\dfrac{1}{2} \\div \\dfrac{1}{4} = 2$ but $\\dfrac{1}{4} \\div \\dfrac{1}{2} = \\dfrac{1}{2}$ — not equal.",
+          "math": "\\dfrac{1}{2} \\div \\dfrac{1}{4} \\neq \\dfrac{1}{4} \\div \\dfrac{1}{2}"
+        },
+        {
+          "rule": "Associative test",
+          "why": "Changing grouping changes the result: $(a \\div b) \\div c \\neq a \\div (b \\div c)$ in general.",
+          "math": "\\text{Division is not associative}"
+        },
+        {
+          "rule": "Result",
+          "why": "Division fails both properties.",
+          "math": "\\text{Answer: (c) Neither commutative nor associative}"
+        }
+      ],
+      "explanation": "Division is not commutative ($\\frac{1}{2} \\div \\frac{1}{4} \\neq \\frac{1}{4} \\div \\frac{1}{2}$) and not associative. Answer: (c).",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-035",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section A",
+      "question": "The rational number which is its own additive inverse is:\n\n(a) $1$\n(b) $-1$\n(c) $0$\n(d) None of these",
+      "answer": "$0$",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "A number that is its own additive inverse satisfies $x = -x$.",
+          "math": "x = -x"
+        },
+        {
+          "rule": "Solve",
+          "why": "Adding $x$ to both sides: $2x = 0$, so $x = 0$.",
+          "math": "2x = 0 \\Rightarrow x = 0"
+        },
+        {
+          "rule": "Result",
+          "why": "Only 0 equals its own negative.",
+          "math": "\\text{Answer: (c) } 0"
+        }
+      ],
+      "explanation": "If $x = -x$, then $2x = 0$, so $x = 0$. Answer: (c).",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-036",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section A",
+      "question": "Between any two distinct rational numbers, there are:\n\n(a) No rational numbers\n(b) Exactly one rational number\n(c) Infinitely many rational numbers\n(d) Finitely many rational numbers",
+      "answer": "Infinitely many rational numbers",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Density property: between any two distinct rationals $a$ and $b$, you can always find another rational, e.g. their average $\\dfrac{a+b}{2}$.",
+          "math": "\\dfrac{a+b}{2} \\in \\mathbb{Q},\\; a < \\dfrac{a+b}{2} < b"
+        },
+        {
+          "rule": "Result",
+          "why": "This process can be repeated without limit.",
+          "math": "\\text{Answer: (c) Infinitely many rational numbers}"
+        }
+      ],
+      "explanation": "Density property: between any two distinct rationals, infinitely many rationals exist (e.g. take repeated averages). Answer: (c).",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-037",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section B",
+      "question": "Every integer is a ________ number, but every rational number is not necessarily an ________.",
+      "answer": "rational, integer",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Any integer $n$ can be written as $\\dfrac{n}{1}$, so it is rational.",
+          "math": "n = \\dfrac{n}{1} \\in \\mathbb{Q}"
+        },
+        {
+          "rule": "Counterexample",
+          "why": "A rational like $\\dfrac{1}{2}$ cannot be written as a whole integer.",
+          "math": "\\dfrac{1}{2} \\in \\mathbb{Q} \\text{ but } \\dfrac{1}{2} \\notin \\mathbb{Z}"
+        },
+        {
+          "rule": "Result",
+          "why": "Fill the blanks accordingly.",
+          "math": "\\text{rational, integer}"
+        }
+      ],
+      "explanation": "Every integer is rational ($n = \\frac{n}{1}$), but not every rational is an integer (e.g. $\\frac{1}{2}$). Answers: rational, integer.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-038",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section B",
+      "question": "The multiplicative identity of rational numbers is ________, and the additive identity is ________.",
+      "answer": "$1$ and $0$",
+      "glassboxSteps": [
+        {
+          "rule": "Multiplicative identity",
+          "why": "$a \\times 1 = a$ for every rational $a$.",
+          "math": "1"
+        },
+        {
+          "rule": "Additive identity",
+          "why": "$a + 0 = a$ for every rational $a$.",
+          "math": "0"
+        },
+        {
+          "rule": "Result",
+          "why": "Fill: 1 and 0.",
+          "math": "1,\\; 0"
+        }
+      ],
+      "explanation": "Multiplicative identity: 1 ($a \\times 1 = a$). Additive identity: 0 ($a + 0 = a$). Answers: 1, 0.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-039",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section B",
+      "question": "Subtraction of rational numbers is ________ commutative but ________ associative.",
+      "answer": "not, not",
+      "glassboxSteps": [
+        {
+          "rule": "Commutative",
+          "why": "In general $a - b \\neq b - a$ (e.g. $\\dfrac{1}{2} - \\dfrac{1}{3} \\neq \\dfrac{1}{3} - \\dfrac{1}{2}$).",
+          "math": "a - b \\neq b - a"
+        },
+        {
+          "rule": "Associative",
+          "why": "$(a - b) - c \\neq a - (b - c)$ in general.",
+          "math": "\\text{Subtraction is not associative}"
+        },
+        {
+          "rule": "Result",
+          "why": "Both blanks: not.",
+          "math": "\\text{not, not}"
+        }
+      ],
+      "explanation": "Subtraction is neither commutative nor associative. Answers: not, not.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-040",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section B",
+      "question": "Zero has a multiplicative inverse.",
+      "answer": "false",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Multiplicative inverse of 0 would satisfy $0 \\times x = 1$.",
+          "math": "0 \\times x = 1"
+        },
+        {
+          "rule": "Analyse",
+          "why": "Any number multiplied by 0 gives 0, never 1. No such $x$ exists.",
+          "math": "0 \\times x = 0 \\neq 1"
+        },
+        {
+          "rule": "Result",
+          "why": "The statement is false.",
+          "math": "\\text{False}"
+        }
+      ],
+      "explanation": "No number times 0 equals 1, so 0 has no multiplicative inverse. Answer: False.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-041",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section B",
+      "question": "The rational numbers are closed under division except when the divisor is zero.",
+      "answer": "true",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Closure under division: $\\dfrac{p/q}{r/s} = \\dfrac{ps}{qr}$ is rational when $r \\neq 0$.",
+          "math": "\\dfrac{a}{b} \\div \\dfrac{c}{d} = \\dfrac{ad}{bc} \\in \\mathbb{Q}\\; (c,d \\neq 0)"
+        },
+        {
+          "rule": "Exception",
+          "why": "Division by zero is undefined.",
+          "math": "\\div 0 \\text{ is undefined}"
+        },
+        {
+          "rule": "Result",
+          "why": "Closed except when divisor is 0.",
+          "math": "\\text{True}"
+        }
+      ],
+      "explanation": "Quotient of two non-zero rationals is rational; division by 0 is undefined. Answer: True.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-042",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section C",
+      "question": "Write the additive inverse and multiplicative inverse of each:\n\n(i) $-\\dfrac{8}{3}$\n\n(ii) $\\dfrac{5}{-7}$",
+      "answer": "(i) Additive inverse: $\\dfrac{8}{3}$; Multiplicative inverse: $-\\dfrac{3}{8}$\n\n(ii) Standard form: $-\\dfrac{5}{7}$; Additive inverse: $\\dfrac{5}{7}$; Multiplicative inverse: $-\\dfrac{7}{5}$",
+      "glassboxSteps": [
+        {
+          "rule": "(i) Additive inverse",
+          "why": "Change the sign.",
+          "math": "-\\left(-\\dfrac{8}{3}\\right) = \\dfrac{8}{3}"
+        },
+        {
+          "rule": "(i) Multiplicative inverse",
+          "why": "Flip numerator and denominator.",
+          "math": "\\dfrac{1}{-\\frac{8}{3}} = -\\dfrac{3}{8}"
+        },
+        {
+          "rule": "(ii) Standard form",
+          "why": "Move negative sign to numerator: $\\dfrac{5}{-7} = -\\dfrac{5}{7}$.",
+          "math": "-\\dfrac{5}{7}"
+        },
+        {
+          "rule": "(ii) Additive inverse",
+          "why": "Change sign.",
+          "math": "\\dfrac{5}{7}"
+        },
+        {
+          "rule": "(ii) Multiplicative inverse",
+          "why": "Flip the fraction.",
+          "math": "-\\dfrac{7}{5}"
+        }
+      ],
+      "explanation": "(i) $-\\frac{8}{3}$: additive inverse $\\frac{8}{3}$, multiplicative inverse $-\\frac{3}{8}$. (ii) $\\frac{5}{-7} = -\\frac{5}{7}$: additive inverse $\\frac{5}{7}$, multiplicative inverse $-\\frac{7}{5}$.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-043",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section C",
+      "question": "Represent the following rational numbers on a number line:\n\n(i) $-\\dfrac{3}{4}$\n\n(ii) $\\dfrac{5}{3}$",
+      "answer": "(i) Mark 0 and $-1$; divide the interval into 4 equal parts; the 3rd mark left of 0 is $-\\dfrac{3}{4}$.\n\n(ii) $\\dfrac{5}{3} = 1\\dfrac{2}{3}$; mark 0, 1, 2; divide 1 to 2 into 3 parts; 2nd mark after 1 is $\\dfrac{5}{3}$.",
+      "glassboxSteps": [
+        {
+          "rule": "(i) Setup",
+          "why": "$-\\dfrac{3}{4}$ lies between $-1$ and $0$. Denominator 4 → 4 equal divisions.",
+          "math": "-1 < -\\dfrac{3}{4} < 0"
+        },
+        {
+          "rule": "(i) Locate",
+          "why": "From 0, move 3 units left among 4 divisions → $-\\dfrac{3}{4}$.",
+          "math": "-\\dfrac{3}{4}"
+        },
+        {
+          "rule": "(ii) Mixed number",
+          "why": "$\\dfrac{5}{3} = 1\\dfrac{2}{3}$, between 1 and 2.",
+          "math": "1\\dfrac{2}{3}"
+        },
+        {
+          "rule": "(ii) Locate",
+          "why": "Divide 1 to 2 into 3 parts; 2nd mark from 1 is $\\dfrac{5}{3}$.",
+          "math": "\\dfrac{5}{3}"
+        }
+      ],
+      "explanation": "(i) Between $-1$ and $0$, divide into 4 parts; 3rd mark left of 0 is $-\\frac{3}{4}$. (ii) $1\\frac{2}{3}$: divide 1–2 into 3 parts; 2nd mark is $\\frac{5}{3}$.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-044",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section C",
+      "question": "Find five rational numbers between $-\\dfrac{1}{2}$ and $\\dfrac{3}{4}$.",
+      "answer": "$-\\dfrac{3}{8},\\; -\\dfrac{2}{8},\\; -\\dfrac{1}{8},\\; 0,\\; \\dfrac{1}{8}$ (other correct variations exist)",
+      "glassboxSteps": [
+        {
+          "rule": "Step 1",
+          "why": "Make denominators equal. LCM of 2 and 4 is 4.",
+          "math": "-\\dfrac{1}{2} = -\\dfrac{2}{4},\\quad \\dfrac{3}{4} = \\dfrac{3}{4}"
+        },
+        {
+          "rule": "Step 2",
+          "why": "Between $-\\dfrac{2}{4}$ and $\\dfrac{3}{4}$: $-\\dfrac{1}{4}, 0, \\dfrac{1}{4}, \\dfrac{2}{4}$ — only 4 numbers.",
+          "math": "-\\dfrac{1}{4},\\; 0,\\; \\dfrac{1}{4},\\; \\dfrac{2}{4}"
+        },
+        {
+          "rule": "Step 3",
+          "why": "Multiply numerator and denominator by 2 to get more slots.",
+          "math": "-\\dfrac{2}{4} = -\\dfrac{4}{8},\\quad \\dfrac{3}{4} = \\dfrac{6}{8}"
+        },
+        {
+          "rule": "Step 4",
+          "why": "Pick any five between $-\\dfrac{4}{8}$ and $\\dfrac{6}{8}$.",
+          "math": "-\\dfrac{3}{8},\\; -\\dfrac{2}{8},\\; -\\dfrac{1}{8},\\; 0,\\; \\dfrac{1}{8}"
+        }
+      ],
+      "explanation": "Equalise: $-\\frac{1}{2} = -\\frac{2}{4}$, $\\frac{3}{4}$. Expand to eighths: $-\\frac{4}{8}$ to $\\frac{6}{8}$. Five numbers: $-\\frac{3}{8}, -\\frac{2}{8}, -\\frac{1}{8}, 0, \\frac{1}{8}$.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-045",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section C",
+      "question": "Simplify and express in standard form:\n\n(i) $\\left(-\\dfrac{15}{24}\\right) \\div \\left(\\dfrac{5}{-8}\\right)$\n\n(ii) $\\left(-\\dfrac{7}{9}\\right) \\times \\left(\\dfrac{18}{-21}\\right)$",
+      "answer": "(i) $1$\n\n(ii) $\\dfrac{2}{3}$",
+      "glassboxSteps": [
+        {
+          "rule": "(i) Convert division",
+          "why": "Divide by a fraction = multiply by its reciprocal.",
+          "math": "-\\dfrac{15}{24} \\times \\left(-\\dfrac{8}{5}\\right)"
+        },
+        {
+          "rule": "(i) Multiply",
+          "why": "Negative × Negative = Positive.",
+          "math": "\\dfrac{15 \\times 8}{24 \\times 5} = \\dfrac{120}{120} = 1"
+        },
+        {
+          "rule": "(ii) Standard form",
+          "why": "Move negatives to numerators.",
+          "math": "-\\dfrac{7}{9} \\times \\left(-\\dfrac{18}{21}\\right)"
+        },
+        {
+          "rule": "(ii) Simplify before multiplying",
+          "why": "Reduce $\\dfrac{18}{21}$ by 3.",
+          "math": "-\\dfrac{7}{9} \\times \\left(-\\dfrac{6}{7}\\right)"
+        },
+        {
+          "rule": "(ii) Cancel and simplify",
+          "why": "7 cancels; product = $\\dfrac{6}{9} = \\dfrac{2}{3}$.",
+          "math": "\\dfrac{2}{3}"
+        }
+      ],
+      "explanation": "(i) $-\\frac{15}{24} \\div \\frac{5}{-8} = -\\frac{15}{24} \\times (-\\frac{8}{5}) = \\frac{120}{120} = 1$. (ii) $-\\frac{7}{9} \\times \\frac{18}{-21} = \\frac{6}{9} = \\frac{2}{3}$.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-046",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section C",
+      "question": "Verify the commutative property of addition for $-\\dfrac{5}{6}$ and $\\dfrac{2}{3}$.",
+      "answer": "LHS $= -\\dfrac{1}{6}$, RHS $= -\\dfrac{1}{6}$. Commutative property verified.",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "Commutative: $a + b = b + a$.",
+          "math": "a + b = b + a"
+        },
+        {
+          "rule": "LHS",
+          "why": "LCM of 6 and 3 is 6.",
+          "math": "-\\dfrac{5}{6} + \\dfrac{2}{3} = -\\dfrac{5}{6} + \\dfrac{4}{6} = -\\dfrac{1}{6}"
+        },
+        {
+          "rule": "RHS",
+          "why": "Same LCM.",
+          "math": "\\dfrac{2}{3} + \\left(-\\dfrac{5}{6}\\right) = \\dfrac{4}{6} - \\dfrac{5}{6} = -\\dfrac{1}{6}"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "LHS = RHS.",
+          "math": "-\\dfrac{1}{6} = -\\dfrac{1}{6}\\; \\checkmark"
+        }
+      ],
+      "explanation": "LHS: $-\\frac{5}{6} + \\frac{2}{3} = -\\frac{5}{6} + \\frac{4}{6} = -\\frac{1}{6}$. RHS: $\\frac{2}{3} + (-\\frac{5}{6}) = -\\frac{1}{6}$. Verified.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-047",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section D",
+      "question": "Evaluate:\n\n(i) $\\left(-\\dfrac{4}{5}\\right) + \\left(-\\dfrac{3}{10}\\right) - \\left(-\\dfrac{7}{15}\\right)$\n\n(ii) $\\left(\\dfrac{5}{6}\\right) \\div \\left(-\\dfrac{15}{18}\\right) \\times \\left(-\\dfrac{4}{9}\\right)$",
+      "answer": "(i) $-\\dfrac{19}{30}$\n\n(ii) $\\dfrac{4}{9}$",
+      "glassboxSteps": [
+        {
+          "rule": "(i) Simplify signs",
+          "why": "Remove brackets and double negatives.",
+          "math": "-\\dfrac{4}{5} - \\dfrac{3}{10} + \\dfrac{7}{15}"
+        },
+        {
+          "rule": "(i) Common denominator",
+          "why": "LCM of 5, 10, 15 is 30.",
+          "math": "-\\dfrac{24}{30} - \\dfrac{9}{30} + \\dfrac{14}{30} = \\dfrac{-24-9+14}{30} = -\\dfrac{19}{30}"
+        },
+        {
+          "rule": "(ii) Division first",
+          "why": "Convert division to multiplication by reciprocal.",
+          "math": "\\dfrac{5}{6} \\times \\left(-\\dfrac{18}{15}\\right) \\times \\left(-\\dfrac{4}{9}\\right)"
+        },
+        {
+          "rule": "(ii) Simplify",
+          "why": "$-\\dfrac{18}{15} = -\\dfrac{6}{5}$; 5 and 6 cancel in first two terms.",
+          "math": "-1 \\times \\left(-\\dfrac{4}{9}\\right) = \\dfrac{4}{9}"
+        }
+      ],
+      "explanation": "(i) LCM 30: $-\\frac{24}{30} - \\frac{9}{30} + \\frac{14}{30} = -\\frac{19}{30}$. (ii) $\\frac{5}{6} \\times (-\\frac{6}{5}) \\times (-\\frac{4}{9}) = \\frac{4}{9}$.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-048",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section D",
+      "question": "The sum of two rational numbers is $-\\dfrac{5}{6}$. If one of them is $\\dfrac{1}{3}$, find the other. Verify.",
+      "answer": "The other number is $-\\dfrac{7}{6}$.",
+      "glassboxSteps": [
+        {
+          "rule": "Set up",
+          "why": "Let unknown be $x$.",
+          "math": "x + \\dfrac{1}{3} = -\\dfrac{5}{6}"
+        },
+        {
+          "rule": "Solve",
+          "why": "LCM of 6 and 3 is 6.",
+          "math": "x = -\\dfrac{5}{6} - \\dfrac{1}{3} = -\\dfrac{5}{6} - \\dfrac{2}{6} = -\\dfrac{7}{6}"
+        },
+        {
+          "rule": "Verify",
+          "why": "Check: $-\\dfrac{7}{6} + \\dfrac{1}{3} = -\\dfrac{7}{6} + \\dfrac{2}{6} = -\\dfrac{5}{6}$ ✓",
+          "math": "-\\dfrac{7}{6} + \\dfrac{2}{6} = -\\dfrac{5}{6}"
+        }
+      ],
+      "explanation": "$x + \\frac{1}{3} = -\\frac{5}{6}$ → $x = -\\frac{7}{6}$. Verify: $-\\frac{7}{6} + \\frac{2}{6} = -\\frac{5}{6}$ ✓",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-049",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section D",
+      "question": "Verify the distributive property of multiplication over addition:\n$$-\\dfrac{3}{7} \\times \\left[\\dfrac{2}{5} + \\left(-\\dfrac{4}{9}\\right)\\right]$$",
+      "answer": "LHS $=$ RHS $= \\dfrac{2}{105}$. Property verified.",
+      "glassboxSteps": [
+        {
+          "rule": "Concept",
+          "why": "$a(b+c) = ab + ac$.",
+          "math": "a \\times (b+c) = (a \\times b) + (a \\times c)"
+        },
+        {
+          "rule": "LHS — bracket",
+          "why": "LCM of 5 and 9 is 45.",
+          "math": "\\dfrac{2}{5} - \\dfrac{4}{9} = \\dfrac{18}{45} - \\dfrac{20}{45} = -\\dfrac{2}{45}"
+        },
+        {
+          "rule": "LHS — multiply",
+          "why": "Negative × Negative = Positive.",
+          "math": "-\\dfrac{3}{7} \\times \\left(-\\dfrac{2}{45}\\right) = \\dfrac{6}{315} = \\dfrac{2}{105}"
+        },
+        {
+          "rule": "RHS — term 1",
+          "why": "Multiply $-\\dfrac{3}{7}$ by $\\dfrac{2}{5}$.",
+          "math": "-\\dfrac{3}{7} \\times \\dfrac{2}{5} = -\\dfrac{6}{35}"
+        },
+        {
+          "rule": "RHS — term 2",
+          "why": "Multiply $-\\dfrac{3}{7}$ by $-\\dfrac{4}{9}$.",
+          "math": "-\\dfrac{3}{7} \\times \\left(-\\dfrac{4}{9}\\right) = \\dfrac{12}{63} = \\dfrac{4}{21}"
+        },
+        {
+          "rule": "RHS — add",
+          "why": "LCM of 35 and 21 is 105.",
+          "math": "-\\dfrac{18}{105} + \\dfrac{20}{105} = \\dfrac{2}{105}"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "LHS = RHS.",
+          "math": "\\dfrac{2}{105} = \\dfrac{2}{105}\\; \\checkmark"
+        }
+      ],
+      "explanation": "LHS: bracket = $-\\frac{2}{45}$; product = $\\frac{2}{105}$. RHS: $-\\frac{6}{35} + \\frac{4}{21} = \\frac{2}{105}$. Verified.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-050",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section D",
+      "question": "Find ten rational numbers between $\\dfrac{2}{5}$ and $\\dfrac{3}{4}$.",
+      "answer": "$\\dfrac{17}{40},\\; \\dfrac{18}{40},\\; \\dfrac{19}{40},\\; \\dfrac{20}{40},\\; \\dfrac{21}{40},\\; \\dfrac{22}{40},\\; \\dfrac{23}{40},\\; \\dfrac{24}{40},\\; \\dfrac{25}{40},\\; \\dfrac{26}{40}$",
+      "glassboxSteps": [
+        {
+          "rule": "Step 1",
+          "why": "LCM of 5 and 4 is 20.",
+          "math": "\\dfrac{2}{5} = \\dfrac{8}{20},\\quad \\dfrac{3}{4} = \\dfrac{15}{20}"
+        },
+        {
+          "rule": "Step 2",
+          "why": "Only 6 integers between 8 and 15 — need more. Multiply by 2.",
+          "math": "\\dfrac{8}{20} = \\dfrac{16}{40},\\quad \\dfrac{15}{20} = \\dfrac{30}{40}"
+        },
+        {
+          "rule": "Step 3",
+          "why": "13 integers between 16 and 30 — pick any 10.",
+          "math": "\\dfrac{17}{40},\\; \\dfrac{18}{40},\\; \\ldots,\\; \\dfrac{26}{40}"
+        }
+      ],
+      "explanation": "Equalise to twentieths: $\\frac{8}{20}$ to $\\frac{15}{20}$. Expand to fortieths: $\\frac{16}{40}$ to $\\frac{30}{40}$. Ten numbers: $\\frac{17}{40}$ through $\\frac{26}{40}$.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-051",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section D",
+      "question": "A rational number is such that when $\\dfrac{2}{3}$ is added to it, the result is $\\dfrac{5}{6}$ more than the number itself.",
+      "answer": "No such rational number exists. The equation $x + \\dfrac{2}{3} = x + \\dfrac{5}{6}$ simplifies to $\\dfrac{4}{6} = \\dfrac{5}{6}$, which is false.",
+      "glassboxSteps": [
+        {
+          "rule": "Translate",
+          "why": "Let the number be $x$.",
+          "math": "x + \\dfrac{2}{3} = x + \\dfrac{5}{6}"
+        },
+        {
+          "rule": "Simplify",
+          "why": "Subtract $x$ from both sides.",
+          "math": "\\dfrac{2}{3} = \\dfrac{5}{6}"
+        },
+        {
+          "rule": "Compare",
+          "why": "Convert: $\\dfrac{2}{3} = \\dfrac{4}{6} \\neq \\dfrac{5}{6}$.",
+          "math": "\\dfrac{4}{6} = \\dfrac{5}{6}\\; \\text{(false)}"
+        },
+        {
+          "rule": "Conclusion",
+          "why": "Inconsistent equation — no solution exists.",
+          "math": "\\text{No such rational number}"
+        }
+      ],
+      "explanation": "Let $x$ be the number: $x + \\frac{2}{3} = x + \\frac{5}{6}$ → $\\frac{4}{6} = \\frac{5}{6}$ — contradiction. No solution.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-052",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section E",
+      "question": "A man spends $\\dfrac{3}{8}$ of his salary on rent, $\\dfrac{1}{5}$ on food, and $\\dfrac{1}{6}$ on education. From the remaining amount, he donates $\\dfrac{1}{10}$ to charity and is left with ₹4800. Find his monthly salary.",
+      "answer": "Monthly salary $= \\dfrac{640000}{31}$ (approx. ₹20,645.16)",
+      "glassboxSteps": [
+        {
+          "rule": "Let salary",
+          "why": "Let total monthly salary be $S$.",
+          "math": "S"
+        },
+        {
+          "rule": "Total spent",
+          "why": "LCM of 8, 5, 6 is 120.",
+          "math": "\\dfrac{45}{120} + \\dfrac{24}{120} + \\dfrac{20}{120} = \\dfrac{89}{120}S"
+        },
+        {
+          "rule": "Remaining",
+          "why": "Subtract from total salary.",
+          "math": "S - \\dfrac{89}{120}S = \\dfrac{31}{120}S"
+        },
+        {
+          "rule": "After donation",
+          "why": "Donates $\\dfrac{1}{10}$ of remainder; keeps $\\dfrac{9}{10}$.",
+          "math": "\\dfrac{9}{10} \\times \\dfrac{31}{120}S = \\dfrac{279}{1200}S"
+        },
+        {
+          "rule": "Solve",
+          "why": "Set equal to ₹4800.",
+          "math": "\\dfrac{279}{1200}S = 4800 \\Rightarrow S = 4800 \\times \\dfrac{1200}{279} = \\dfrac{640000}{31}"
+        },
+        {
+          "rule": "Value note",
+          "why": "Donating to charity promotes empathy, social responsibility, and compassion.",
+          "math": "\\text{₹ } \\dfrac{640000}{31} \\approx \\text{₹ } 20645.16"
+        }
+      ],
+      "explanation": "Spent $\\frac{89}{120}S$; remainder $\\frac{31}{120}S$. After donating $\\frac{1}{10}$, left with $\\frac{279}{1200}S = 4800$ → $S = \\frac{640000}{31} \\approx ₹20,645.16.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-053",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section E",
+      "question": "Rahul completes $\\dfrac{2}{5}$ of a work in 6 days. Suresh completes $\\dfrac{3}{7}$ of the same work in 9 days. They work together for 5 days, then Suresh finishes the remaining work alone. How many more days does Suresh need?",
+      "answer": "Suresh needs 9 more days.",
+      "glassboxSteps": [
+        {
+          "rule": "Rahul's rate",
+          "why": "If $\\dfrac{2}{5}$ in 6 days, full work in $6 \\times \\dfrac{5}{2} = 15$ days.",
+          "math": "\\text{1-day work} = \\dfrac{1}{15}"
+        },
+        {
+          "rule": "Suresh's rate",
+          "why": "If $\\dfrac{3}{7}$ in 9 days, full work in $9 \\times \\dfrac{7}{3} = 21$ days.",
+          "math": "\\text{1-day work} = \\dfrac{1}{21}"
+        },
+        {
+          "rule": "Combined 5 days",
+          "why": "LCM of 15 and 21 is 105.",
+          "math": "\\dfrac{7}{105} + \\dfrac{5}{105} = \\dfrac{12}{105} = \\dfrac{4}{35};\\quad 5 \\times \\dfrac{4}{35} = \\dfrac{4}{7}"
+        },
+        {
+          "rule": "Remaining",
+          "why": "Work left after 5 days.",
+          "math": "1 - \\dfrac{4}{7} = \\dfrac{3}{7}"
+        },
+        {
+          "rule": "Suresh alone",
+          "why": "At $\\dfrac{1}{21}$ per day, time for $\\dfrac{3}{7}$ work.",
+          "math": "21 \\times \\dfrac{3}{7} = 9 \\text{ days}"
+        }
+      ],
+      "explanation": "Rahul: 15 days total ($\\frac{1}{15}$/day). Suresh: 21 days ($\\frac{1}{21}$/day). Together 5 days → $\\frac{4}{7}$ done. Remaining $\\frac{3}{7}$: Suresh needs 9 days.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-054",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section E",
+      "question": "The area of a square is 64 m². The area of the square equals $4 + \\dfrac{2}{3}$ times the area of a rectangle. If the breadth of the rectangle is $\\dfrac{2}{5}$ of its length, find the dimensions of the rectangle.",
+      "answer": "Length = 15 m, Breadth = 6 m",
+      "glassboxSteps": [
+        {
+          "rule": "Square area",
+          "why": "Given area of square = 64 m².",
+          "math": "A_{\\square} = 64"
+        },
+        {
+          "rule": "Rectangle area",
+          "why": "$64 = 4 + \\dfrac{2}{3} A_r$.",
+          "math": "60 = \\dfrac{2}{3}A_r \\Rightarrow A_r = 90 \\text{ m}^2"
+        },
+        {
+          "rule": "Dimensions",
+          "why": "Let length = $l$, breadth = $\\dfrac{2}{5}l$.",
+          "math": "l \\times \\dfrac{2}{5}l = \\dfrac{2}{5}l^2 = 90"
+        },
+        {
+          "rule": "Solve",
+          "why": "$l^2 = 90 \\times \\dfrac{5}{2} = 225$.",
+          "math": "l = 15 \\text{ m},\\quad b = \\dfrac{2}{5} \\times 15 = 6 \\text{ m}"
+        }
+      ],
+      "explanation": "$64 = 4 + \\frac{2}{3}A_r$ → $A_r = 90$ m². With $b = \\frac{2}{5}l$: $\\frac{2}{5}l^2 = 90$ → $l = 15$ m, $b = 6$ m.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-055",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section E",
+      "question": "(i) Verify associativity of addition using $-\\dfrac{2}{3}$, $\\dfrac{4}{5}$, and $-\\dfrac{1}{6}$.\n\n(ii) Insert three rational numbers between $-\\dfrac{5}{4}$ and $\\dfrac{3}{2}$ with equal spacing.",
+      "answer": "(i) LHS $=$ RHS $= -\\dfrac{1}{30}$ — verified.\n\n(ii) $-\\dfrac{9}{16}$, $\\dfrac{1}{8}$, $\\dfrac{13}{16}$",
+      "glassboxSteps": [
+        {
+          "rule": "(i) LHS",
+          "why": "Compute $a + (b+c)$. Inside bracket: LCM 30.",
+          "math": "\\dfrac{4}{5} - \\dfrac{1}{6} = \\dfrac{19}{30};\\quad -\\dfrac{20}{30} + \\dfrac{19}{30} = -\\dfrac{1}{30}"
+        },
+        {
+          "rule": "(i) RHS",
+          "why": "Compute $(a+b)+c$. Inside bracket: LCM 15.",
+          "math": "-\\dfrac{10}{15} + \\dfrac{12}{15} = \\dfrac{2}{15};\\quad \\dfrac{4}{30} - \\dfrac{5}{30} = -\\dfrac{1}{30}"
+        },
+        {
+          "rule": "(ii) Distance",
+          "why": "Total distance between endpoints.",
+          "math": "\\dfrac{3}{2} - \\left(-\\dfrac{5}{4}\\right) = \\dfrac{11}{4}"
+        },
+        {
+          "rule": "(ii) Segment size",
+          "why": "3 inserted numbers → 4 equal segments.",
+          "math": "\\dfrac{11}{4} \\div 4 = \\dfrac{11}{16}"
+        },
+        {
+          "rule": "(ii) Insert",
+          "why": "Add $\\dfrac{11}{16}$ repeatedly from $-\\dfrac{5}{4} = -\\dfrac{20}{16}$.",
+          "math": "-\\dfrac{9}{16},\\; \\dfrac{2}{16} = \\dfrac{1}{8},\\; \\dfrac{13}{16}"
+        }
+      ],
+      "explanation": "(i) LHS = RHS = $-\\frac{1}{30}$. (ii) Segment = $\\frac{11}{16}$; three numbers: $-\\frac{9}{16}$, $\\frac{1}{8}$, $\\frac{13}{16}$.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    },
+    {
+      "id": "Q-CH01-056",
+      "chapter": 1,
+      "topicId": "math-ch1",
+      "type": "practice",
+      "subtopic": "Test Paper · Section E",
+      "question": "From 50 m of cloth, a tailor uses $7\\dfrac{1}{3}$ m for shirts and $14\\dfrac{2}{5}$ m for curtains. With the remaining cloth, how many complete tablecloths of $3\\dfrac{1}{4}$ m each can be made? What fraction of the original cloth is left unused?",
+      "answer": "8 complete tablecloths; $\\dfrac{17}{375}$ of original cloth left unused.",
+      "glassboxSteps": [
+        {
+          "rule": "Convert mixed fractions",
+          "why": "Shirts = $\\dfrac{22}{3}$ m, Curtains = $\\dfrac{72}{5}$ m, Tablecloth = $\\dfrac{13}{4}$ m.",
+          "math": "7\\dfrac{1}{3} = \\dfrac{22}{3},\\; 14\\dfrac{2}{5} = \\dfrac{72}{5},\\; 3\\dfrac{1}{4} = \\dfrac{13}{4}"
+        },
+        {
+          "rule": "Cloth used",
+          "why": "LCM of 3 and 5 is 15.",
+          "math": "\\dfrac{110}{15} + \\dfrac{216}{15} = \\dfrac{326}{15} \\text{ m}"
+        },
+        {
+          "rule": "Remaining",
+          "why": "Before tablecloths.",
+          "math": "50 - \\dfrac{326}{15} = \\dfrac{424}{15} \\text{ m}"
+        },
+        {
+          "rule": "Tablecloths",
+          "why": "Divide remaining by $\\dfrac{13}{4}$.",
+          "math": "\\dfrac{424}{15} \\div \\dfrac{13}{4} = \\dfrac{1696}{195} \\Rightarrow 8 \\text{ complete (since } 195 \\times 8 = 1560\\text{)}"
+        },
+        {
+          "rule": "Cloth used for 8",
+          "why": "$8 \\times \\dfrac{13}{4} = 26$ m.",
+          "math": "26 \\text{ m}"
+        },
+        {
+          "rule": "Unused fraction",
+          "why": "Left = $\\dfrac{424}{15} - 26 = \\dfrac{34}{15}$ m; fraction of 50 m.",
+          "math": "\\dfrac{34/15}{50} = \\dfrac{34}{750} = \\dfrac{17}{375}"
+        }
+      ],
+      "explanation": "Used $\\frac{326}{15}$ m; remaining $\\frac{424}{15}$ m. $\\frac{424}{15} \\div \\frac{13}{4} = \\frac{1696}{195}$ → 8 tablecloths. Unused: $\\frac{34}{15}$ m = $\\frac{17}{375}$ of original.",
+      "linked_note_id": "CH01-sec-rational-numbers",
+      "source": "practice-session",
+      "options": []
+    }
+  ]
+}

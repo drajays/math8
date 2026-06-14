@@ -228,18 +228,10 @@ a{color:var(--blue)}
 .practice-block-actions{display:flex;margin:0 0 20px}
 .practice-block-actions .q-admin{margin-left:0}
 .practice-solution .steps{margin-bottom:14px}
-.practice-gen-bar{flex-shrink:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 14px;padding:10px 14px;border-bottom:1px solid var(--border);background:linear-gradient(90deg,#fff1f2,#fff);position:sticky;top:0;z-index:4}
-.practice-gen-main{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
-.practice-gen-label{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--on-var);white-space:nowrap}
-.practice-gen-kind,.practice-gen-count{font-family:var(--mono);font-size:12px;padding:7px 10px;border:1.5px solid var(--border);border-radius:var(--r);background:var(--surface)}
-.practice-gen-count{width:4rem}
-.practice-gen-run{border:none;border-radius:var(--r);padding:8px 14px;font-size:12px;font-weight:700;font-family:var(--sans);cursor:pointer;color:#fff;background:linear-gradient(135deg,#e11d48,#be123c);box-shadow:0 2px 8px rgba(225,29,72,.2)}
-.practice-gen-run:hover{transform:translateY(-1px)}
-.practice-gen-meta{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10px;color:var(--on-dim)}
-.practice-gen-clear{border:1.5px solid var(--border);background:var(--surface);border-radius:var(--pill);padding:5px 10px;font-size:10px;font-weight:600;font-family:var(--sans);cursor:pointer;color:var(--on-var)}
-.practice-gen-clear:hover{border-color:#e11d48;color:#e11d48}
 .practice-block--generated{border-left:3px solid #fbbf24;padding-left:calc(clamp(16px,3vw,32px) - 3px)}
 .practice-block--generated .practice-problem .problem{border-left-color:#f59e0b}
+.practice-block--session{border-left:3px solid #6366f1;padding-left:calc(clamp(16px,3vw,32px) - 3px)}
+.practice-block--session .practice-q-num{background:linear-gradient(135deg,#6366f1,#4f46e5);box-shadow:0 2px 8px rgba(99,102,241,.25)}
 
 .glass-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow)}
 .glass-panel-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px 16px;background:linear-gradient(90deg,#fff1f2,#fff);border-bottom:1px solid var(--border)}
@@ -395,37 +387,6 @@ sup.msup,sub.msub{font-family:inherit}
         <div class="content-main">
         <div class="panel" id="panel-notes"><div class="panel-scroll notes-md empty" id="notes">Pick a chapter.</div></div>
         <div class="panel active" id="panel-practice">
-          <div class="practice-gen-bar" id="practice-gen-bar">
-            <div class="practice-gen-main">
-              <span class="practice-gen-label">🎲 Generate</span>
-              <select class="practice-gen-kind" id="practice-gen-kind" aria-label="Problem type">
-                <option value="mixed_all" selected>Any operation (mixed)</option>
-                <optgroup label="Addition &amp; subtraction">
-                  <option value="same_add">Add (same denominator)</option>
-                  <option value="same_sub">Subtract (same denominator)</option>
-                  <option value="diff_add">Add (different denominators)</option>
-                  <option value="diff_sub">Subtract (different denominators)</option>
-                </optgroup>
-                <optgroup label="Multiplication &amp; division">
-                  <option value="multiply">Multiply fractions</option>
-                  <option value="divide">Divide fractions</option>
-                </optgroup>
-                <optgroup label="Inverses &amp; properties">
-                  <option value="additive_inverse">Additive inverse</option>
-                  <option value="multiplicative_inverse">Multiplicative inverse</option>
-                  <option value="sum_additive_inverse">Sum with additive inverse (= 0)</option>
-                  <option value="product_reciprocal">Product with reciprocal (= 1)</option>
-                  <option value="compare">Compare two rationals</option>
-                </optgroup>
-              </select>
-              <input class="practice-gen-count" id="practice-gen-count" type="number" min="1" max="20" value="5" aria-label="Number of problems">
-              <button type="button" class="practice-gen-run" id="practice-gen-run">Add to practice</button>
-            </div>
-            <div class="practice-gen-meta">
-              <span id="practice-gen-session-info">Generate any rational-number operation</span>
-              <button type="button" class="practice-gen-clear" id="practice-gen-clear" hidden>Clear generated</button>
-            </div>
-          </div>
           <div class="panel-scroll practice-md empty" id="practice-feed">Pick a chapter.</div>
         </div>
         <div class="panel" id="panel-mindmap"><div class="panel-scroll mindmap empty" id="mindmap"></div></div>
@@ -529,7 +490,6 @@ sup.msup,sub.msub{font-family:inherit}
   </div>
 </div>
 
-<script src="../shared/practice-generator.js?v=3"></script>
 <script src="../shared/math-render.js?v=4"></script>
 <script src="../shared/notes-render.js?v=4"></script>
 <script src="../shared/practice-diagrams.js?v=4"></script>
@@ -540,7 +500,6 @@ let MANIFEST = null, CUR = null, CACHE = {}, LOAD_TOKEN = 0;
 let CUR_QUESTIONS = [];
 let EDIT_QID = null;
 const OVERRIDE_KEY = "math8-question-overrides";
-const SESSION_KEY = "math8-practice-session";
 const GH_TOKEN_KEY = "math8-gh-token";
 const GITHUB_REPO = "drajays/math8";
 const GITHUB_BRANCH = "main";
@@ -656,99 +615,22 @@ function saveOverrides(o){
   updatePushButtonState();
 }
 
-function getSessionStore(){
-  try { return JSON.parse(localStorage.getItem(SESSION_KEY) || "{}") || {}; }
-  catch(e){ return {}; }
-}
-
-function saveSessionStore(o){
-  try { localStorage.setItem(SESSION_KEY, JSON.stringify(o)); } catch(e){}
-}
-
-function getSessionQuestions(tag){
-  if (!tag) return [];
-  return getSessionStore()[tag] || [];
-}
-
-function appendSessionQuestions(tag, qs){
-  const store = getSessionStore();
-  store[tag] = (store[tag] || []).concat(qs);
-  saveSessionStore(store);
-}
-
-function clearSessionQuestions(tag){
-  const store = getSessionStore();
-  delete store[tag];
-  saveSessionStore(store);
-}
-
-function removeSessionQuestion(tag, id){
-  const store = getSessionStore();
-  store[tag] = (store[tag] || []).filter(q => q.id !== id);
-  if (!store[tag]?.length) delete store[tag];
-  saveSessionStore(store);
-}
-
 function getMergedQuestions(){
   if (!CUR || !CACHE[CUR.tag]) return [];
   const o = getOverrides();
   const deleted = new Set(o.deleted || []);
   const base = applyQuestionOverrides(CACHE[CUR.tag].rawQuestions);
-  const session = getSessionQuestions(CUR.tag)
-    .filter(q => !deleted.has(q.id))
-    .map(q => {
-      const edit = o.edits[q.id];
-      if (!edit) return q;
-      const merged = { ...q, ...edit };
-      if (edit.glassboxSteps) merged.glassboxSteps = edit.glassboxSteps.map(s => ({
-        rule: safeStr(s.rule || "Step"),
-        why: safeStr(s.why),
-        math: safeStr(s.math),
-      }));
-      if (edit.options) merged.options = edit.options.map(opt => safeStr(opt));
-      return merged;
-    });
-  return base.concat(session);
-}
-
-function updatePracticeGenBar(){
-  const info = $("#practice-gen-session-info");
-  const clearBtn = $("#practice-gen-clear");
-  const n = CUR ? getSessionQuestions(CUR.tag).length : 0;
-  if (info) info.textContent = n ? `${n} generated problem(s) in this chapter` : "Generate any rational-number operation";
-  if (clearBtn) clearBtn.hidden = !n;
-}
-
-function runPracticeGenerator(){
-  if (!CUR || typeof PracticeGenerator === "undefined") return;
-  const count = Math.min(20, Math.max(1, Number($("#practice-gen-count")?.value) || 5));
-  const kind = $("#practice-gen-kind")?.value || "mixed_all";
-  const sample = CACHE[CUR.tag]?.rawQuestions?.[0];
-  const noteId = sample?.linked_note_id || "";
-  const qs = PracticeGenerator.generate(count, kind, CUR.num, noteId);
-  appendSessionQuestions(CUR.tag, qs);
-  CUR_QUESTIONS = getMergedQuestions();
-  appendPracticeBlocks(qs);
-  updatePracticeCountLabel();
-  updatePracticeGenBar();
-  const feed = $("#practice-feed");
-  if (feed && qs[0]?.id) restorePracticeScroll(feed, qs[0].id);
-}
-
-function wirePracticeGenerator(){
-  if (wirePracticeGenerator._done) return;
-  wirePracticeGenerator._done = true;
-  $("#practice-gen-run")?.addEventListener("click", runPracticeGenerator);
-  $("#practice-gen-clear")?.addEventListener("click", () => {
-    if (!CUR || !getSessionQuestions(CUR.tag).length) return;
-    if (!confirm("Remove all generated problems from this chapter?")) return;
-    clearSessionQuestions(CUR.tag);
-    refreshQuestionsFromCache({ preserveScroll: true });
-  });
+  const practiceSession = applyQuestionOverrides(CACHE[CUR.tag].practiceSessionQuestions || [])
+    .filter(q => !deleted.has(q.id));
+  return base.concat(practiceSession);
 }
 
 function questionSourceInfo(id){
   const s = safeStr(id);
+  if (CUR && CACHE[CUR.tag]?.practiceSessionQuestions?.some(q => q.id === id)) {
+    const tag = safeStr(CUR.tag || String(CUR.num).padStart(2, "0"));
+    return { path: "data/chapters/chapter_" + tag + "_practice_session.json", kind: "practice-session" };
+  }
   let m = s.match(/^Q-CH(\d{1,2})-/i);
   if (m) return { path: "data/chapters/chapter_" + String(m[1]).padStart(2, "0") + "_questions.json", kind: "chapter" };
   m = s.match(/^Q-GEM-B(\d{1,2})-/i);
@@ -950,7 +832,9 @@ function applyQuestionOverrides(qs){
 
 function getRawQuestionById(id){
   if (!CUR || !CACHE[CUR.tag]) return null;
-  return CACHE[CUR.tag].rawQuestions.find(q => q.id === id) || null;
+  return CACHE[CUR.tag].rawQuestions.find(q => q.id === id)
+    || (CACHE[CUR.tag].practiceSessionQuestions || []).find(q => q.id === id)
+    || null;
 }
 
 function getEffectiveQuestion(id){
@@ -961,7 +845,6 @@ function refreshQuestionsFromCache(opts){
   if (!CUR || !CACHE[CUR.tag]) return;
   CUR_QUESTIONS = getMergedQuestions();
   paintQuestions(CUR_QUESTIONS, opts);
-  updatePracticeGenBar();
 }
 
 function questionAdminBarHtml(q){
@@ -978,15 +861,6 @@ function deleteQuestionById(id){
   if (!confirm(`Hide this question?\n\n${preview}${preview.length >= 80 ? "…" : ""}\n\nYou can restore hidden questions with "Restore hidden".`)) return;
   const feed = $("#practice-feed");
   const scrollTop = feed?.scrollTop ?? 0;
-  if (String(id).startsWith("Q-SESS-") && CUR) {
-    removeSessionQuestion(CUR.tag, id);
-    closeEditModal();
-    CUR_QUESTIONS = getMergedQuestions();
-    removePracticeBlockById(id);
-    if (!feed?.querySelector(".practice-block")) paintQuestions(CUR_QUESTIONS);
-    else { updatePracticeCountLabel(); restorePracticeScroll(feed, null, scrollTop); }
-    return;
-  }
   const o = getOverrides();
   if (!o.deleted.includes(id)) o.deleted.push(id);
   saveOverrides(o);
@@ -1154,23 +1028,34 @@ async function loadBatchQuestions(chNum){
   return normQuestions(out);
 }
 
+async function loadPracticeSessionQuestions(tag){
+  try {
+    const data = await loadJson(`data/chapters/chapter_${tag}_practice_session.json?v=1`);
+    const qs = data.questions || data;
+    return normQuestions(Array.isArray(qs) ? qs : []);
+  } catch (e) { return []; }
+}
+
 async function loadChapter(ch){
   if(CACHE[ch.tag]) return CACHE[ch.tag];
   const tag = safeStr(ch.tag || String(ch.num).padStart(2, "0"));
   const chNum = Number(ch.num);
   const f = chapterPaths(tag);
-  const [questions, facts, notes, mindmap, cheat, oneword] = await Promise.all([
+  const [questions, facts, notes, mindmap, cheat, oneword, practiceSessionQs] = await Promise.all([
     loadJson(f.questions), loadJson(f.facts), loadText(f.notes),
-    loadText(f.mindmap), loadText(f.cheatsheet), loadJson(f.oneword)
+    loadText(f.mindmap), loadText(f.cheatsheet), loadJson(f.oneword),
+    loadPracticeSessionQuestions(tag),
   ]);
   const baseQs = normQuestions(questions);
   const batchQs = await loadBatchQuestions(chNum);
   const rawQuestions = baseQs.concat(batchQs);
   CACHE[ch.tag] = {
     rawQuestions,
+    practiceSessionQuestions: practiceSessionQs,
     questions: applyQuestionOverrides(rawQuestions),
     baseCount: baseQs.length,
     batchCount: batchQs.length,
+    practiceSessionCount: practiceSessionQs.length,
     facts: Array.isArray(facts) ? facts : [],
     notes: safeStr(notes),
     mindmap: safeStr(mindmap),
@@ -1215,7 +1100,6 @@ async function selectChapter(ch){
     syncPracticeSideTools(getActiveTab());
     CUR_QUESTIONS = getMergedQuestions();
     paintQuestions(CUR_QUESTIONS, { resetScroll: true });
-    updatePracticeGenBar();
     paintOneWord(data.oneword);
   } catch(e){
     if (token !== LOAD_TOKEN) return;
@@ -1259,8 +1143,10 @@ function renumberPracticeBlocks(){
 }
 
 function practiceBlockHtml(q, num){
-  const gen = String(q.source || "").startsWith("session-generated");
-  return `<article class="practice-block${gen ? " practice-block--generated" : ""}" id="scroll-${esc(q.id)}" data-qid="${esc(q.id)}">
+  const src = String(q.source || "");
+  const extra = src === "practice-session" ? " practice-block--session"
+    : src.startsWith("session-generated") ? " practice-block--generated" : "";
+  return `<article class="practice-block${extra}" id="scroll-${esc(q.id)}" data-qid="${esc(q.id)}">
       <div class="practice-block-head"><span class="practice-q-num" aria-label="Question ${num}">${num}</span></div>
       <div class="practice-problem">${questionBodyHtml(q)}</div>
       <div class="practice-block-actions">${questionAdminBarHtml(q)}</div>
@@ -1293,16 +1179,6 @@ function removePracticeBlockById(id){
   const el = feed?.querySelector("#scroll-" + CSS.escape(id));
   if (el) el.remove();
   renumberPracticeBlocks();
-}
-
-function appendPracticeBlocks(newQs){
-  const feed = $("#practice-feed");
-  if (!feed || !newQs.length) return;
-  feed.classList.remove("empty");
-  const start = feed.querySelectorAll(".practice-block").length;
-  const wrapper = document.createElement("div");
-  wrapper.innerHTML = newQs.map((q, i) => practiceBlockHtml(q, start + i + 1)).join("");
-  while (wrapper.firstChild) feed.appendChild(wrapper.firstChild);
 }
 
 function paintQuestions(qs, opts){
@@ -1451,9 +1327,7 @@ $('#sidebar-toggle')?.addEventListener('click', () => {
     if (modeSaved === '1') setModeSidebarCollapsed(true);
     wireQuestionAdmin();
     wireGitPush();
-    wirePracticeGenerator();
     updatePushButtonState();
-    updatePracticeGenBar();
     syncPracticeSideTools(getActiveTab());
     MANIFEST = await loadJson("manifest.json?v=5");
     paintChapters();

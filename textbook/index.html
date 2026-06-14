@@ -219,8 +219,10 @@ a{color:var(--blue)}
 .practice-md{font-size:16px;flex:1;min-height:0;max-height:none;overflow:auto;padding:0;scroll-behavior:smooth;height:100%}
 .practice-md::-webkit-scrollbar{width:8px}
 .practice-md::-webkit-scrollbar-thumb{background:rgba(225,29,72,.35);border-radius:var(--pill)}
-.practice-block{padding:24px clamp(16px,3vw,32px) 36px;border-bottom:1px solid var(--border);scroll-margin-top:4px}
+.practice-block{padding:24px clamp(16px,3vw,32px) 36px;border-bottom:1px solid var(--border);scroll-margin-top:52px}
 .practice-block:last-child{border-bottom:none;padding-bottom:48px}
+.practice-block-head{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.practice-q-num{flex-shrink:0;min-width:2.1em;height:2.1em;padding:0 9px;border-radius:var(--pill);background:linear-gradient(135deg,#e11d48,#be123c);color:#fff;font-family:var(--mono);font-size:12px;font-weight:700;display:grid;place-items:center;box-shadow:0 2px 8px rgba(225,29,72,.2)}
 .practice-problem{font-family:var(--serif);font-size:17px;line-height:1.72;color:var(--on);margin-bottom:24px}
 .practice-problem .problem{margin-bottom:14px}
 .practice-block-actions{display:flex;margin:0 0 20px}
@@ -711,11 +713,12 @@ function runPracticeGenerator(){
   const noteId = sample?.linked_note_id || "";
   const qs = PracticeGenerator.generate(count, kind, CUR.num, noteId);
   appendSessionQuestions(CUR.tag, qs);
-  refreshQuestionsFromCache();
-  requestAnimationFrame(() => {
-    const feed = $("#practice-feed");
-    if (feed) feed.scrollTop = feed.scrollHeight;
-  });
+  CUR_QUESTIONS = getMergedQuestions();
+  appendPracticeBlocks(qs);
+  updatePracticeCountLabel();
+  updatePracticeGenBar();
+  const feed = $("#practice-feed");
+  if (feed && qs[0]?.id) restorePracticeScroll(feed, qs[0].id);
 }
 
 function wirePracticeGenerator(){
@@ -726,7 +729,7 @@ function wirePracticeGenerator(){
     if (!CUR || !getSessionQuestions(CUR.tag).length) return;
     if (!confirm("Remove all generated problems from this chapter?")) return;
     clearSessionQuestions(CUR.tag);
-    refreshQuestionsFromCache();
+    refreshQuestionsFromCache({ preserveScroll: true });
   });
 }
 
@@ -940,10 +943,10 @@ function getEffectiveQuestion(id){
   return CUR_QUESTIONS.find(q => q.id === id) || applyQuestionOverrides([getRawQuestionById(id)].filter(Boolean))[0] || null;
 }
 
-function refreshQuestionsFromCache(){
+function refreshQuestionsFromCache(opts){
   if (!CUR || !CACHE[CUR.tag]) return;
   CUR_QUESTIONS = getMergedQuestions();
-  paintQuestions(CUR_QUESTIONS);
+  paintQuestions(CUR_QUESTIONS, opts);
   updatePracticeGenBar();
 }
 
@@ -959,17 +962,25 @@ function deleteQuestionById(id){
   if (!q) return;
   const preview = cleanQuestionText(q.question).slice(0, 80);
   if (!confirm(`Hide this question?\n\n${preview}${preview.length >= 80 ? "…" : ""}\n\nYou can restore hidden questions with "Restore hidden".`)) return;
+  const feed = $("#practice-feed");
+  const scrollTop = feed?.scrollTop ?? 0;
   if (String(id).startsWith("Q-SESS-") && CUR) {
     removeSessionQuestion(CUR.tag, id);
     closeEditModal();
-    refreshQuestionsFromCache();
+    CUR_QUESTIONS = getMergedQuestions();
+    removePracticeBlockById(id);
+    if (!feed?.querySelector(".practice-block")) paintQuestions(CUR_QUESTIONS);
+    else { updatePracticeCountLabel(); restorePracticeScroll(feed, null, scrollTop); }
     return;
   }
   const o = getOverrides();
   if (!o.deleted.includes(id)) o.deleted.push(id);
   saveOverrides(o);
   closeEditModal();
-  refreshQuestionsFromCache();
+  CUR_QUESTIONS = getMergedQuestions();
+  removePracticeBlockById(id);
+  if (!feed?.querySelector(".practice-block")) paintQuestions(CUR_QUESTIONS);
+  else { updatePracticeCountLabel(); restorePracticeScroll(feed, null, scrollTop); }
 }
 
 function restoreAllHidden(){
@@ -1046,6 +1057,7 @@ function saveEditModal(){
   if (!EDIT_QID) return;
   const q = getEffectiveQuestion(EDIT_QID);
   if (!q) return;
+  const anchorId = EDIT_QID;
   const patch = {
     question: $("#q-edit-question").value.trim(),
     answer: $("#q-edit-answer").value.trim(),
@@ -1057,10 +1069,16 @@ function saveEditModal(){
     patch.correctOption = Number($("#q-edit-correct").value) || 0;
   }
   const o = getOverrides();
-  o.edits[EDIT_QID] = { ...(o.edits[EDIT_QID] || {}), ...patch };
+  o.edits[anchorId] = { ...(o.edits[anchorId] || {}), ...patch };
   saveOverrides(o);
   closeEditModal();
-  refreshQuestionsFromCache();
+  CUR_QUESTIONS = getMergedQuestions();
+  if (!updatePracticeBlockById(anchorId)) {
+    refreshQuestionsFromCache({ scrollAnchor: anchorId, preserveScroll: true });
+  } else {
+    updatePracticeCountLabel();
+    restorePracticeScroll($("#practice-feed"), anchorId);
+  }
 }
 
 function wireQuestionAdmin(){
@@ -1182,7 +1200,7 @@ async function selectChapter(ch){
     paintPanelHero("#oneword-hero", "oneword", data.oneword.length + " cards", chapterLabel(ch), null);
     syncPracticeSideTools(getActiveTab());
     CUR_QUESTIONS = getMergedQuestions();
-    paintQuestions(CUR_QUESTIONS);
+    paintQuestions(CUR_QUESTIONS, { resetScroll: true });
     updatePracticeGenBar();
     paintOneWord(data.oneword);
   } catch(e){
@@ -1196,10 +1214,86 @@ function isHotsQuestion(q){
   return safeStr(q.subtopic).includes("Advanced HOTS") || Number(q.batch) >= 9;
 }
 
-function paintQuestions(qs){
-  const feed = $("#practice-feed");
+function updatePracticeCountLabel(count){
   const practiceLabel = $('.mode-tab[data-tab="practice"] .mode-tab-label');
-  if (practiceLabel) practiceLabel.textContent = qs?.length ? `Practice (${qs.length})` : "Practice";
+  const n = count ?? CUR_QUESTIONS?.length ?? 0;
+  if (practiceLabel) practiceLabel.textContent = n ? `Practice (${n})` : "Practice";
+}
+
+function restorePracticeScroll(feed, anchorId, fallbackTop){
+  if (!feed) return;
+  requestAnimationFrame(() => {
+    if (anchorId) {
+      const el = feed.querySelector("#scroll-" + CSS.escape(anchorId));
+      if (el) { el.scrollIntoView({ block: "nearest", behavior: "auto" }); return; }
+    }
+    if (fallbackTop != null) feed.scrollTop = fallbackTop;
+  });
+}
+
+function renumberPracticeBlocks(){
+  const feed = $("#practice-feed");
+  if (!feed) return;
+  feed.querySelectorAll(".practice-block").forEach((el, i) => {
+    const numEl = el.querySelector(".practice-q-num");
+    const n = i + 1;
+    if (numEl) {
+      numEl.textContent = n;
+      numEl.setAttribute("aria-label", "Question " + n);
+    }
+  });
+}
+
+function practiceBlockHtml(q, num){
+  const gen = String(q.source || "").startsWith("session-generated");
+  return `<article class="practice-block${gen ? " practice-block--generated" : ""}" id="scroll-${esc(q.id)}" data-qid="${esc(q.id)}">
+      <div class="practice-block-head"><span class="practice-q-num" aria-label="Question ${num}">${num}</span></div>
+      <div class="practice-problem">${questionBodyHtml(q)}</div>
+      <div class="practice-block-actions">${questionAdminBarHtml(q)}</div>
+      <div class="practice-solution">
+        <ol class="steps">${(q.glassboxSteps || []).map((s, i) =>
+          `<li class="step"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${splitRenderTex(s.why)}</div><div class="math">${splitRenderTex(s.math)}</div></li>`
+        ).join("")}</ol>
+        <div class="answer"><span class="mathline">${splitRenderTex(q.answer)}</span></div>
+      </div>
+    </article>`;
+}
+
+function updatePracticeBlockById(id){
+  const feed = $("#practice-feed");
+  const idx = CUR_QUESTIONS.findIndex(q => q.id === id);
+  if (idx < 0 || !feed) return false;
+  const el = feed.querySelector("#scroll-" + CSS.escape(id));
+  if (!el) return false;
+  const wrapper = document.createElement("div");
+  wrapper.innerHTML = practiceBlockHtml(CUR_QUESTIONS[idx], idx + 1);
+  const next = wrapper.firstElementChild;
+  if (!next) return false;
+  el.replaceWith(next);
+  renumberPracticeBlocks();
+  return true;
+}
+
+function removePracticeBlockById(id){
+  const feed = $("#practice-feed");
+  const el = feed?.querySelector("#scroll-" + CSS.escape(id));
+  if (el) el.remove();
+  renumberPracticeBlocks();
+}
+
+function appendPracticeBlocks(newQs){
+  const feed = $("#practice-feed");
+  if (!feed || !newQs.length) return;
+  feed.classList.remove("empty");
+  const start = feed.querySelectorAll(".practice-block").length;
+  const wrapper = document.createElement("div");
+  wrapper.innerHTML = newQs.map((q, i) => practiceBlockHtml(q, start + i + 1)).join("");
+  while (wrapper.firstChild) feed.appendChild(wrapper.firstChild);
+}
+
+function paintQuestions(qs, opts){
+  updatePracticeCountLabel(qs?.length);
+  const feed = $("#practice-feed");
   if (!feed) return;
   if (!Array.isArray(qs) || !qs.length){
     feed.innerHTML = '<div class="empty-state">No questions in this chapter.</div>';
@@ -1207,7 +1301,7 @@ function paintQuestions(qs){
     return;
   }
   feed.classList.remove("empty");
-  paintPracticeFeed(qs);
+  paintPracticeFeed(qs, opts);
 }
 
 function getActiveTab(){
@@ -1258,23 +1352,14 @@ function questionBodyHtml(q){
   return `<div class="problem"><div class="mathline">${splitRenderTex(cleanQuestionText(q.question))}</div>${diagram}</div>${questionOptsHtml(q)}`;
 }
 
-function paintPracticeFeed(qs){
+function paintPracticeFeed(qs, opts){
   const feed = $("#practice-feed");
   if (!feed) return;
-  feed.innerHTML = qs.map(q => {
-    const gen = String(q.source || "").startsWith("session-generated");
-    return `<article class="practice-block${gen ? " practice-block--generated" : ""}" id="scroll-${esc(q.id)}">
-      <div class="practice-problem">${questionBodyHtml(q)}</div>
-      <div class="practice-block-actions">${questionAdminBarHtml(q)}</div>
-      <div class="practice-solution">
-        <ol class="steps">${(q.glassboxSteps || []).map((s, i) =>
-          `<li class="step"><span class="num">${i + 1}</span><span class="rule">${esc(s.rule)}</span><div class="why">${splitRenderTex(s.why)}</div><div class="math">${splitRenderTex(s.math)}</div></li>`
-        ).join("")}</ol>
-        <div class="answer"><span class="mathline">${splitRenderTex(q.answer)}</span></div>
-      </div>
-    </article>`;
-  }).join("");
-  feed.scrollTop = 0;
+  const preserve = opts?.preserveScroll || opts?.scrollAnchor;
+  const scrollTop = preserve ? feed.scrollTop : 0;
+  feed.innerHTML = qs.map((q, i) => practiceBlockHtml(q, i + 1)).join("");
+  if (opts?.resetScroll) feed.scrollTop = 0;
+  else if (preserve) restorePracticeScroll(feed, opts.scrollAnchor, scrollTop);
 }
 
 function paintOneWord(cards){

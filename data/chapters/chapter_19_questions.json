@@ -3,36 +3,45 @@
     "id": "Q-CH19-001",
     "chapter": 19,
     "topicId": "math-ch19",
-    "type": "mcq",
+    "type": "practice",
     "subtopic": "Glassbox Question Bank",
-    "question": "Fill in the labels.\n\n(i) Area of a parallelogram = base  $ \\times $ .....\n\n(ii) Area of a trapezium =  $ \\frac{1}{2} \\times \\ldots \\times $ distance between parallel sides\n\n(iii) Area of a rhombus =  $ \\frac{1}{2} \\times $ product of .....\n\n(iv) Area is measured in .... units.\n\n(v) Volume of a solid is the measurement of .... occupied by it.\n\n(vi) Volume is measured in .... units.\n\n(vii) The volume of a unit cube is ...\n\n(x) Volume of a cuboid = 1 × height.\n\n(xi) Cylinders in which line segment ",
-    "options": [
-      "Statement I is true but Statement II is false.",
-      "Statement I is false but Statement II is false.",
-      "Both Statement I and Statement II are true.",
-      "none of these.</td></tr><tr><td colspan=\"3\">STATEMENT I–II TYPE QUESTIONS</td></tr><tr><td style='text-align: center; wo"
-    ],
-    "correctOption": 0,
-    "answer": "Statement I is true but Statement II is false.",
+    "question": "Fill in the labels for the following statements:\n\n(i) Area of a parallelogram = base $\\times$ .....\n\n(ii) Area of a trapezium = $\\frac{1}{2} \\times$ ..... $\\times$ distance between parallel sides\n\n(iii) Area of a rhombus = $\\frac{1}{2} \\times$ product of .....\n\n(iv) Area is measured in ..... units.\n\n(v) Volume of a solid is the measurement of ..... occupied by it.\n\n(vi) Volume is measured in ..... units.\n\n(vii) The volume of a unit cube is .....\n\n(viii) Volume of a cuboid = ..... $\\times$ height",
+    "options": [],
+    "answer": "(i) height · (ii) sum of parallel sides · (iii) diagonals · (iv) square · (v) space · (vi) cubic · (vii) 1 cubic unit · (viii) base area (length $\\times$ breadth)",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "Fill in the labels.\n\n(i) Area of a parallelogram = base  $ \\times $ .....\n\n(ii) Area of a trapezium =  $ \\frac{1}{2} \\times \\ldots \\times $ distance between parallel sides\n\n(iii) Area of a rhombus =  $ \\frac{1}{2} \\times $ product of .....\n\n(iv) Area is measured in .... units.\n\n(v) Volume of a solid is the measurement of .... occupied by it.\n\n(vi) Volume is measured in .... units.\n\n(vii) The volume of a unit cube is ...\n\n(x) Volume of a cuboid = 1 × height.\n\n(xi) Cylinders in which line segment "
+        "rule": "(i) Parallelogram",
+        "why": "Area = base $\\times$ perpendicular height.",
+        "math": "\\text{height (altitude)}"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "rule": "(ii) Trapezium",
+        "why": "Average the parallel sides, then multiply by height.",
+        "math": "\\text{sum of parallel sides}"
       },
       {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "Statement I is true but Statement II is false."
+        "rule": "(iii) Rhombus",
+        "why": "Half the product of its diagonals.",
+        "math": "\\text{diagonals}"
+      },
+      {
+        "rule": "(iv)–(vi) Units",
+        "why": "Area is 2D; volume is 3D capacity.",
+        "math": "\\text{square; space; cubic}"
+      },
+      {
+        "rule": "(vii) Unit cube",
+        "why": "Each edge is 1 unit.",
+        "math": "1\\times1\\times1=1\\text{ cubic unit}"
+      },
+      {
+        "rule": "(viii) Cuboid",
+        "why": "Prism volume = base area $\\times$ height.",
+        "math": "\\text{base area (}l\\times b\\text{)}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Fill in the labels.\n\n(i) Area of a parallelogram = base  $ \\times $ .....\n\n(ii) Area of a trapezium =  $ \\frac{1}{2} \\times \\ldots \\times $ distance between parallel sides\n\n(iii) Area of a rhombus =  $ \\frac{1}{2} \\times $ product of .....\n\n(iv) Area is measured in .... units.\n\n(v) Volume of a solid is the measurement of .... occupied by it.\n\n(vi) Volume is measured in .... units.\n\n(vii) The volume of a unit cube is ...\n\n(x) Volume of a cuboid = 1 × height.\n\n(xi) Cylinders in which line segment $ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $Statement I is true but Statement II is false.$",
-    "linked_note_id": "CH19-sec-mensuration",
+    "explanation": "Standard mensuration labels: height, sum of parallel sides, diagonals, square/cubic units, space, 1 cubic unit, base area.",
+    "linked_note_id": "CH19-sec-area-and-perimeter-of-some-plane-figures",
     "source": "textbook",
     "linksTo": "math-ch19nmensuratio"
   },
@@ -50,26 +59,21 @@
       ""
     ],
     "correctOption": 0,
-    "answer": "F = 6, V = 6, E = 10",
+    "answer": "$F=6,\\; V=6,\\; E=10$",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "In a pentagonal pyramid number of faces, vertices and edges are"
+        "rule": "Pyramid with $n$-gon base",
+        "why": "One base face plus $n$ triangular faces meeting at the apex.",
+        "math": "F=n+1,\\; V=n+1,\\; E=2n"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "F = 6, V = 6, E = 10"
+        "rule": "Pentagonal base ($n=5$)",
+        "why": "Substitute $n=5$.",
+        "math": "F=6,\\; V=6,\\; E=10"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $In a pentagonal pyramid number of faces, vertices and edges are$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $F = 6, V = 6, E = 10$",
-    "linked_note_id": "CH19-sec-mensuration",
+    "explanation": "Pentagonal pyramid: 6 faces, 6 vertices, 10 edges (Option A).",
+    "linked_note_id": "CH18-sec-visualising-solid-shapes",
     "source": "textbook",
     "linksTo": "math-ch19nmensuratio"
   },
@@ -79,34 +83,29 @@
     "topicId": "math-ch19",
     "type": "mcq",
     "subtopic": "Glassbox Question Bank",
-    "question": "Point  $ (-10, 0) $ on the negative direction of x-axis",
+    "question": "Describe the position of the point $(-10, 0)$.",
     "options": [
-      "on the third quadrant",
-      "in the negative direction of y-axis",
-      "on the fourth quadrant",
-      ""
+      "on the negative direction of x-axis",
+      "in the third quadrant",
+      "on the negative direction of y-axis",
+      "in the fourth quadrant"
     ],
     "correctOption": 0,
-    "answer": "on the third quadrant",
+    "answer": "on the negative direction of x-axis",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "Point  $ (-10, 0) $ on the negative direction of x-axis"
+        "rule": "Read coordinates",
+        "why": "$x=-10$ (10 units left); $y=0$ (no vertical shift).",
+        "math": "(-10,0)"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "on the third quadrant"
+        "rule": "On an axis",
+        "why": "If $y=0$, the point lies on the $x$-axis, not inside a quadrant.",
+        "math": "\\text{negative }x\\text{-axis}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Point  $ (-10, 0) $ on the negative direction of x-axis$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $on the third quadrant$",
-    "linked_note_id": "CH19-sec-mensuration",
+    "explanation": "$(-10,0)$ is 10 units left of the origin on the negative $x$-axis (not in quadrant III).",
+    "linked_note_id": "CH16-sec-coordinate-system-and-graphs",
     "source": "textbook",
     "linksTo": "math-ch19nmensuratio"
   },
@@ -114,75 +113,97 @@
     "id": "Q-CH19-071",
     "chapter": 19,
     "topicId": "math-ch19",
-    "type": "fill_blank",
+    "type": "practice",
     "subtopic": "Glassbox Question Bank",
-    "question": "101630.83\n\n(iii) External volume of the box = $(98 \\times 84 \\times 77)\\ cm^{3} = 633864\\ cm^{3}$\n\nThe volume of the wood used in making the box\n\n= 633864 cm³ - 564000 cm³ = 69864 cm³\n\n(iv) The weight of the box = the weight of the wood\n\n= (69864 × 0.8) g = 55891.2 g\n\nExample 10. Water is pouring into a cuboidal reservoir at the rate of 40 litres per minute. If the capacity of reservoir is 84 m³, find the number of hours it will take to fill the reservoir.\n\nSolution. Given, capacity of reservoir",
-    "blankAnswer": "",
-    "answer": "",
+    "question": "Water is pouring into a cuboidal reservoir at the rate of 40 litres per minute. If the capacity of the reservoir is $84\\ \\text{m}^3$, find the number of hours it will take to fill the reservoir.",
+    "blankAnswer": "35",
+    "answer": "$35$ hours",
     "glassboxSteps": [
       {
-        "rule": "Recall",
-        "why": "Use definition from notes.",
-        "math": "101630.83\n\n(iii) External volume of the box = $(98 \\times 84 \\times 77)\\ cm^{3} = 633864\\ cm^{3}$\n\nThe volume of the wood used in making the box\n\n= 633864 cm³ - 564000 cm³ = 69864 cm³\n\n(iv) The weight of the box = the weight of the wood\n\n= (69864 × 0.8) g = 55891.2 g\n\nExample 10. Water is pouring into a cuboidal reservoir at the rate of 40 litres per minute. If the capacity of reservoir is 84 m³, find the number of hours it will take to fill the reservoir.\n\nSolution. Given, capacity of reservoir"
+        "rule": "Convert capacity",
+        "why": "$1\\ \\text{m}^3=1000$ litres.",
+        "math": "84\\times1000=84{,}000\\text{ L}"
       },
       {
-        "rule": "Fill",
-        "why": "Insert the missing term.",
-        "math": "?"
+        "rule": "Time in minutes",
+        "why": "Capacity $\\div$ rate.",
+        "math": "84{,}000\\div40=2100\\text{ min}"
+      },
+      {
+        "rule": "Convert to hours",
+        "why": "Divide by 60.",
+        "math": "2100\\div60=35\\text{ hours}"
       }
     ],
-    "explanation": "Step 1 (Recall): Use definition from notes. → $101630.83\n\n(iii) External volume of the box = $(98 \\times 84 \\times 77)\\ cm^{3} = 633864\\ cm^{3}$\n\nThe volume of the wood used in making the box\n\n= 633864 cm³ - 564000 cm³ = 69864 cm³\n\n(iv) The weight of the box = the weight of the wood\n\n= (69864 × 0.8) g = 55891.2 g\n\nExample 10. Water is pouring into a cuboidal reservoir at the rate of 40 litres per minute. If the capacity of reservoir is 84 m³, find the number of hours it will take to fill the reservoir.\n\nSolution. Given, capacity of reservoir$ Step 2 (Fill): Insert the missing term. → $?$",
-    "linked_note_id": "CH19-sec-mensuration",
+    "explanation": "84,000 L at 40 L/min takes 2100 min = 35 hours.",
+    "linked_note_id": "CH19-sec-volume-and-capacity",
     "source": "textbook"
   },
   {
     "id": "Q-CH19-072",
     "chapter": 19,
     "topicId": "math-ch19",
-    "type": "fill_blank",
+    "type": "practice",
     "subtopic": "Glassbox Question Bank",
-    "question": "Two cylindrical vessels are filled with milk. The radius of one vessel is 15 cm and height is 40 cm, and the radius of other vessel is 20 cm and height is 45 cm. Find the radius of another cylindrical vessel of height 30 cm which may just contain the milk which is in the two given vessels.",
-    "blankAnswer": "",
-    "answer": "",
+    "question": "Two cylindrical vessels are filled with milk. The radius of the first vessel is 15 cm and height is 40 cm; the radius of the second is 20 cm and height is 45 cm. Find the radius of a third cylindrical vessel of height 30 cm that can exactly hold the combined milk.",
+    "blankAnswer": "30",
+    "answer": "Radius $=30$ cm",
     "glassboxSteps": [
       {
-        "rule": "Recall",
-        "why": "Use definition from notes.",
-        "math": "Two cylindrical vessels are filled with milk. The radius of one vessel is 15 cm and height is 40 cm, and the radius of other vessel is 20 cm and height is 45 cm. Find the radius of another cylindrical vessel of height 30 cm which may just contain the milk which is in the two given vessels."
+        "rule": "$V_1$",
+        "why": "$\\pi r^2 h$.",
+        "math": "\\pi\\times15^2\\times40=9000\\pi\\text{ cm}^3"
       },
       {
-        "rule": "Fill",
-        "why": "Insert the missing term.",
-        "math": "?"
+        "rule": "$V_2$",
+        "why": "Second cylinder.",
+        "math": "\\pi\\times20^2\\times45=18{,}000\\pi\\text{ cm}^3"
+      },
+      {
+        "rule": "Total volume",
+        "why": "Milk volume is conserved.",
+        "math": "V_1+V_2=27{,}000\\pi"
+      },
+      {
+        "rule": "Find $R$",
+        "why": "$27{,}000\\pi=\\pi R^2\\times30$.",
+        "math": "R^2=900\\Rightarrow R=30\\text{ cm}"
       }
     ],
-    "explanation": "Step 1 (Recall): Use definition from notes. → $Two cylindrical vessels are filled with milk. The radius of one vessel is 15 cm and height is 40 cm, and the radius of other vessel is 20 cm and height is 45 cm. Find the radius of another cylindrical vessel of height 30 cm which may just contain the milk which is in the two given vessels.$ Step 2 (Fill): Insert the missing term. → $?$",
-    "linked_note_id": "CH19-sec-mensuration",
+    "explanation": "Combined volume $27{,}000\\pi$ cm³ → third cylinder radius 30 cm.",
+    "linked_note_id": "CH19-sec-volume-and-capacity",
     "source": "textbook"
   },
   {
     "id": "Q-CH19-091",
     "chapter": 19,
     "topicId": "math-ch19",
-    "type": "true_false",
+    "type": "mcq",
     "subtopic": "Glassbox Question Bank",
-    "question": "Statement I: The total surface area of a cylinder is  $ 2\\pi rh $\n\nStatement II: Total surface area of a cylinder is  $ 1000 \\, cm^3 $",
-    "correctAnswer": "true",
-    "answer": "true",
+    "question": "Evaluate the following statements:\n\nStatement I: The total surface area of a cylinder is $2\\pi rh$.\n\nStatement II: Total surface area of a cylinder is $1000\\ \\text{cm}^3$.",
+    "correctAnswer": "false",
+    "answer": "Both Statement I and Statement II are false",
     "glassboxSteps": [
       {
-        "rule": "Analyse",
-        "why": "Test the statement against definition.",
-        "math": "Statement I: The total surface area of a cylinder is  $ 2\\pi rh $\n\nStatement II: Total surface area of a cylinder is  $ 1000 \\, cm^3 $"
+        "rule": "Statement I",
+        "why": "$2\\pi rh$ is curved surface area only; TSA $=2\\pi r(r+h)$.",
+        "math": "\\text{Statement I: False}"
       },
       {
-        "rule": "Verdict",
-        "why": "State true or false with reason.",
-        "math": "true"
+        "rule": "Statement II",
+        "why": "Area uses square units (cm²), not cubic units (cm³).",
+        "math": "\\text{Statement II: False}"
       }
     ],
-    "explanation": "Step 1 (Analyse): Test the statement against definition. → $Statement I: The total surface area of a cylinder is  $ 2\\pi rh $\n\nStatement II: Total surface area of a cylinder is  $ 1000 \\, cm^3 $$ Step 2 (Verdict): State true or false with reason. → $true$",
-    "linked_note_id": "CH19-sec-mensuration",
-    "source": "textbook"
+    "explanation": "I gives CSA not TSA; II uses wrong dimensions. Both statements are false (Option D).",
+    "linked_note_id": "CH19-sec-volume-of-solids",
+    "source": "textbook",
+    "options": [
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true",
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false"
+    ],
+    "correctOption": 3
   }
 ]

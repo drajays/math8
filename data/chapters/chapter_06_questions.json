@@ -7,35 +7,35 @@
     "subtopic": "Glassbox Question Bank",
     "question": "If $A = \\{\\text{letters of word INTEGRITY}\\}$ and $B = \\{\\text{letters of word RECKONING}\\}$, find\n\n(i) $A \\cup B$\n\n(ii) $A \\cap B$\n\n(iii) $A - B$\n\n(iv) $B - A$\n\nAlso verify that:\n\n(a) $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$\n\n(b) $n(A - B) = n(A \\cup B) - n(B) = n(A) - n(A \\cap B)$\n\n(c) $n(B - A) = n(A \\cup B) - n(A) = n(B) - n(A \\cap B)$\n\n(d) $n(A \\cup B) = n(A - B) + n(B - A) + n(A \\cap B)$",
     "options": [],
-    "answer": "(i) $A \\cup B = \\{C,E,G,I,K,N,O,R,T,Y\\}$ · (ii) $A \\cap B = \\{E,G,I,N,R\\}$ · (iii) $A-B = \\{T,Y\\}$ · (iv) $B-A = \\{C,K,O\\}$; all four formulas verified.",
+    "answer": "(i) $A \\cup B = \\{I,N,T,E,G,R,Y,C,K,O\\}$ · (ii) $A \\cap B = \\{I,N,E,G,R\\}$ · (iii) $A-B = \\{T,Y\\}$ · (iv) $B-A = \\{C,K,O\\}$; $n(A \\cup B)=n(A)+n(B)-n(A \\cap B)$ gives $7+8-5=10$.",
     "glassboxSteps": [
       {
         "rule": "Form sets $A$ and $B$",
-        "why": "List distinct letters in each word (ignore repeats).",
-        "math": "A=\\{E,G,I,N,R,T,Y\\},\\; n(A)=7;\\quad B=\\{C,E,G,I,K,N,O,R\\},\\; n(B)=8"
+        "why": "A set lists each letter only once; ignore repeats in the word.",
+        "math": "A=\\{I,N,T,E,G,R,Y\\},\\; n(A)=7;\\quad B=\\{R,E,C,K,O,N,I,G\\},\\; n(B)=8"
       },
       {
-        "rule": "$A \\cap B$",
-        "why": "Letters common to both sets.",
-        "math": "A \\cap B = \\{E,G,I,N,R\\},\\; n(A \\cap B)=5"
+        "rule": "(i) $A \\cup B$",
+        "why": "Combine all unique letters from both sets.",
+        "math": "A \\cup B = \\{I,N,T,E,G,R,Y,C,K,O\\},\\; n(A \\cup B)=10"
       },
       {
-        "rule": "$A \\cup B$",
-        "why": "All distinct letters from $A$ and $B$ together.",
-        "math": "A \\cup B = \\{C,E,G,I,K,N,O,R,T,Y\\},\\; n(A \\cup B)=10"
+        "rule": "(ii) $A \\cap B$",
+        "why": "Keep letters present in both sets.",
+        "math": "A \\cap B = \\{I,N,E,G,R\\},\\; n(A \\cap B)=5"
       },
       {
-        "rule": "$A-B$ and $B-A$",
-        "why": "Elements in one set but not the other.",
-        "math": "A-B=\\{T,Y\\},\\; n(A-B)=2;\\quad B-A=\\{C,K,O\\},\\; n(B-A)=3"
+        "rule": "(iii) $A-B$ and (iv) $B-A$",
+        "why": "Elements in the first set that are not in the second.",
+        "math": "A-B=\\{T,Y\\};\\quad B-A=\\{C,K,O\\}"
       },
       {
         "rule": "Verify (a)–(d)",
-        "why": "Substitute the cardinalities found above.",
+        "why": "Substitute $n(A)=7$, $n(B)=8$, $n(A \\cap B)=5$, $n(A \\cup B)=10$.",
         "math": "7+8-5=10;\\; 10-8=2=7-5;\\; 10-7=3=8-5;\\; 2+3+5=10\\; \\checkmark"
       }
     ],
-    "explanation": "$A=\\{E,G,I,N,R,T,Y\\}$, $B=\\{C,E,G,I,K,N,O,R\\}$. Union has 10 letters; intersection 5; $A-B=\\{T,Y\\}$; $B-A=\\{C,K,O\\}$. All four cardinality formulas check.",
+    "explanation": "Distinct letters: $A=\\{I,N,T,E,G,R,Y\\}$, $B=\\{R,E,C,K,O,N,I,G\\}$. Union 10, intersection 5, $A-B=\\{T,Y\\}$, $B-A=\\{C,K,O\\}$. Cardinality formula verified.",
     "linked_note_id": "CH06-sec-operations-on-sets",
     "source": "textbook",
     "linksTo": "math-ch06noperations"
@@ -53,26 +53,26 @@
       "{red}",
       "{green, red}"
     ],
-    "correctOption": 0,
-    "answer": "B",
+    "correctOption": 3,
+    "answer": "$\\{\\text{green, red}\\}$",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "If A = {x | x is a colour of rainbow} and B = {white, red, green}, then A ∩ B is"
+        "rule": "Set $A$ (rainbow colours)",
+        "why": "Traditional VIBGYOR colours of the rainbow.",
+        "math": "A=\\{\\text{violet, indigo, blue, green, yellow, orange, red}\\}"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "rule": "Compare with $B$",
+        "why": "Find elements common to both sets.",
+        "math": "B=\\{\\text{white, red, green}\\}"
       },
       {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "B"
+        "rule": "$A \\cap B$",
+        "why": "White is not in $A$; red and green appear in both.",
+        "math": "A \\cap B = \\{\\text{green, red}\\}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $If A = {x | x is a colour of rainbow} and B = {white, red, green}, then A ∩ B is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $B$",
+    "explanation": "Rainbow colours include red and green, but not white. Intersection is $\\{\\text{green, red}\\}$ (Option D).",
     "linked_note_id": "CH06-sec-operations-on-sets",
     "source": "textbook",
     "linksTo": "math-ch06noperations"
@@ -90,26 +90,21 @@
       "$ \\{-1, 0, 1, 2, 3, 5, 7\\} $",
       "none of these"
     ],
-    "correctOption": 0,
-    "answer": "{5}",
+    "correctOption": 2,
+    "answer": "$\\{-1, 0, 1, 2, 3, 5, 7\\}$",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "If  $ P = \\{-1, 0, 1, 2, 5\\} $ and  $ Q = \\{3, 5, 7\\} $, then  $ P \\cup Q $ is"
+        "rule": "Union",
+        "why": "$P \\cup Q$ contains every element from $P$ and from $Q$, without repeating shared elements.",
+        "math": "P=\\{-1,0,1,2,5\\},\\; Q=\\{3,5,7\\}"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "{5}"
+        "rule": "Combine",
+        "why": "Start with all of $P$, then add $3$ and $7$ from $Q$ ($5$ is already listed).",
+        "math": "P \\cup Q = \\{-1,0,1,2,3,5,7\\}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $If  $ P = \\{-1, 0, 1, 2, 5\\} $ and  $ Q = \\{3, 5, 7\\} $, then  $ P \\cup Q $ is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → ${5}$",
+    "explanation": "Union lists all elements once: $\\{-1,0,1,2,3,5,7\\}$ (Option C). $\\{5\\}$ is the intersection, not the union.",
     "linked_note_id": "CH06-sec-operations-on-sets",
     "source": "textbook",
     "linksTo": "math-ch06noperations"
@@ -127,26 +122,21 @@
       "$\\{x \\mid x \\in A \\text{ and } x \\notin B\\}$",
       "{x | x ∈ B and x ∉ A}"
     ],
-    "correctOption": 0,
-    "answer": "$\\{x \\mid x \\in A \\text{ or } x \\in B\\}$",
+    "correctOption": 2,
+    "answer": "$\\{x \\mid x \\in A \\text{ and } x \\notin B\\}$",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "If $A$ and $B$ are two sets, then $A - B$ is defined as"
+        "rule": "Definition of $A-B$",
+        "why": "Set difference keeps elements that belong to $A$ but not to $B$.",
+        "math": "A-B=\\{x \\mid x \\in A \\text{ and } x \\notin B\\}"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "$\\{x \\mid x \\in A \\text{ or } x \\in B\\}$"
+        "rule": "Eliminate wrong options",
+        "why": "Option A is union; Option D is $B-A$.",
+        "math": "\\text{not } A \\cup B"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $If $A$ and $B$ are two sets, then $A - B$ is defined as$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$\\{x \\mid x \\in A \\text{ or } x \\in B\\}$$",
+    "explanation": "$A-B$ means elements in $A$ only: $\\{x \\mid x \\in A \\text{ and } x \\notin B\\}$ (Option C).",
     "linked_note_id": "CH06-sec-operations-on-sets",
     "source": "textbook",
     "linksTo": "math-ch06noperations"
@@ -157,33 +147,28 @@
     "topicId": "math-ch6",
     "type": "mcq",
     "subtopic": "Glassbox Question Bank",
-    "question": "If A is any set, then $A\\cap\\psi$ is",
+    "question": "If $A$ is any set, then $A \\cap \\phi$ is",
     "options": [
       "A",
       "$\\phi$",
       "$\\xi$",
       "none of these"
     ],
-    "correctOption": 0,
-    "answer": "A",
+    "correctOption": 1,
+    "answer": "$\\phi$",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "If A is any set, then $A\\cap\\psi$ is"
+        "rule": "Empty set",
+        "why": "$\\phi$ has no elements.",
+        "math": "A \\cap \\phi = ?"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "A"
+        "rule": "Intersection",
+        "why": "No element can belong to both $A$ and an empty set.",
+        "math": "A \\cap \\phi = \\phi"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $If A is any set, then $A\\cap\\psi$ is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $A$",
+    "explanation": "Intersecting any set with the empty set gives $\\phi$ (Option B).",
     "linked_note_id": "CH06-sec-operations-on-sets",
     "source": "textbook",
     "linksTo": "math-ch06noperations"
@@ -202,25 +187,20 @@
       "$\\xi$"
     ],
     "correctOption": 0,
-    "answer": "A",
+    "answer": "$A$",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "$A\\cap\\xi$ is same as"
+        "rule": "Universal set",
+        "why": "$\\xi$ contains every element under consideration; $A \\subseteq \\xi$.",
+        "math": "A \\cap \\xi"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "A"
+        "rule": "Common elements",
+        "why": "Every element of $A$ is already in $\\xi$.",
+        "math": "A \\cap \\xi = A"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $$A\\cap\\xi$ is same as$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $A$",
+    "explanation": "Intersecting a set with the universal set returns the set itself: $A$ (Option A).",
     "linked_note_id": "CH06-sec-operations-on-sets",
     "source": "textbook",
     "linksTo": "math-ch06noperations"
@@ -238,26 +218,21 @@
       "$\\{x \\mid x \\in \\mathrm{W} \\text{ and } x \\geq 10\\}$",
       "$\\{x \\mid x \\in \\mathrm{W} \\text{ and } x \\geq 11\\}$"
     ],
-    "correctOption": 0,
-    "answer": "$\\phi$",
+    "correctOption": 3,
+    "answer": "$\\{x \\mid x \\in \\mathrm{W} \\text{ and } x \\geq 11\\}$",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "If $\\xi = \\mathrm{W}$ and $\\mathrm{A} = \\{x \\mid x \\in \\mathrm{W} \\text{ and } x \\leq 10\\}$, then $\\mathrm{A}'$ is"
+        "rule": "Sets",
+        "why": "$\\xi=\\mathrm{W}=\\{0,1,2,3,\\ldots\\}$ and $A=\\{x \\in \\mathrm{W}: x \\leq 10\\}$.",
+        "math": "A=\\{0,1,2,\\ldots,10\\}"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "$\\phi$"
+        "rule": "Complement $A'$",
+        "why": "Elements of $\\xi$ not in $A$.",
+        "math": "A'=\\{x \\in \\mathrm{W}: x \\geq 11\\}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $If $\\xi = \\mathrm{W}$ and $\\mathrm{A} = \\{x \\mid x \\in \\mathrm{W} \\text{ and } x \\leq 10\\}$, then $\\mathrm{A}'$ is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $$\\phi$$",
+    "explanation": "Whole numbers greater than 10 form the complement: $\\{x \\in \\mathrm{W}: x \\geq 11\\}$ (Option D).",
     "linked_note_id": "CH06-sec-operations-on-sets",
     "source": "textbook",
     "linksTo": "math-ch06noperations"
@@ -268,33 +243,33 @@
     "topicId": "math-ch6",
     "type": "mcq",
     "subtopic": "Glassbox Question Bank",
-    "question": "If $\\xi = \\{x \\mid x \\in \\mathbb{N}, x \\leq 12\\}$, $A = \\{x \\mid x \\text{ is a multiple of } 3\\}$ and $B = \\{x \\mid x \\text{ is a multiple of } 4\\}$, then\n\n    $A \\cap B \\text{ is}$\n\n    $",
+    "question": "If $\\xi = \\{x \\mid x \\in \\mathbb{N}, x \\leq 12\\}$, $A = \\{x \\mid x \\text{ is a multiple of } 3\\}$ and $B = \\{x \\mid x \\text{ is a multiple of } 4\\}$, then $A \\cap B$ is",
     "options": [
-      "\\phi$\n\n    $",
-      "\\{0\\}$\n\n    $",
-      "\\{12\\}$\n\n    $",
-      "\\{0, 12\\}$"
+      "$\\phi$",
+      "$\\{0\\}$",
+      "$\\{12\\}$",
+      "$\\{0, 12\\}$"
     ],
-    "correctOption": 0,
-    "answer": "\\phi$\n\n    $",
+    "correctOption": 2,
+    "answer": "$\\{12\\}$",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "If $\\xi = \\{x \\mid x \\in \\mathbb{N}, x \\leq 12\\}$, $A = \\{x \\mid x \\text{ is a multiple of } 3\\}$ and $B = \\{x \\mid x \\text{ is a multiple of } 4\\}$, then\n\n    $A \\cap B \\text{ is}$\n\n    $"
+        "rule": "Universal set",
+        "why": "Natural numbers from 1 to 12.",
+        "math": "\\xi=\\{1,2,3,\\ldots,12\\}"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
+        "rule": "Sets $A$ and $B$",
+        "why": "List multiples within $\\xi$.",
+        "math": "A=\\{3,6,9,12\\},\\; B=\\{4,8,12\\}"
       },
       {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "\\phi$\n\n    $"
+        "rule": "$A \\cap B$",
+        "why": "Common multiples of 3 and 4 in $\\xi$.",
+        "math": "A \\cap B = \\{12\\}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $If $\\xi = \\{x \\mid x \\in \\mathbb{N}, x \\leq 12\\}$, $A = \\{x \\mid x \\text{ is a multiple of } 3\\}$ and $B = \\{x \\mid x \\text{ is a multiple of } 4\\}$, then\n\n    $A \\cap B \\text{ is}$\n\n    $$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $\\phi$\n\n    $$",
+    "explanation": "Only 12 is a common multiple of 3 and 4 up to 12. Since $\\mathbb{N}$ starts at 1, 0 is excluded (Option C).",
     "linked_note_id": "CH06-sec-operations-on-sets",
     "source": "textbook",
     "linksTo": "math-ch06noperations"
@@ -312,26 +287,21 @@
       "{3, 5, 7}",
       "{2}"
     ],
-    "correctOption": 0,
-    "answer": "{4, 6, 8}",
+    "correctOption": 1,
+    "answer": "$\\{0, 4, 6, 8\\}$",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "If $\\xi = \\{ \\text{all digits in our number system} \\}$, $A = \\{ x \\mid x \\text{ is prime} \\}$ and $B = \\{ x \\mid x \\text{ is even} \\}$, then $B - A$ is"
+        "rule": "Build sets",
+        "why": "Digits are 0–9; 0 and 1 are not prime.",
+        "math": "\\xi=\\{0,\\ldots,9\\},\\; A=\\{2,3,5,7\\},\\; B=\\{0,2,4,6,8\\}"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "{4, 6, 8}"
+        "rule": "$B-A$",
+        "why": "Even digits except those also prime (remove 2).",
+        "math": "B-A=\\{0,4,6,8\\}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $If $\\xi = \\{ \\text{all digits in our number system} \\}$, $A = \\{ x \\mid x \\text{ is prime} \\}$ and $B = \\{ x \\mid x \\text{ is even} \\}$, then $B - A$ is$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → ${4, 6, 8}$",
+    "explanation": "Even digits minus the prime digit 2 gives $\\{0,4,6,8\\}$ (Option B).",
     "linked_note_id": "CH06-sec-operations-on-sets",
     "source": "textbook",
     "linksTo": "math-ch06noperations"
@@ -349,26 +319,21 @@
       "15",
       "75"
     ],
-    "correctOption": 0,
-    "answer": "4",
+    "correctOption": 1,
+    "answer": "$5$",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "If A and B are two sets such that $n(\\mathrm{A}) = 22$, $n(\\mathrm{B}) = 18$ and $n(\\mathrm{A} \\cup \\mathrm{B}) = 35$, then $n(\\mathrm{A} \\cap \\mathrm{B})$"
+        "rule": "Formula",
+        "why": "$n(A \\cup B)=n(A)+n(B)-n(A \\cap B)$.",
+        "math": "35=22+18-n(A \\cap B)"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "4"
+        "rule": "Solve",
+        "why": "Rearrange for the intersection.",
+        "math": "n(A \\cap B)=40-35=5"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $If A and B are two sets such that $n(\\mathrm{A}) = 22$, $n(\\mathrm{B}) = 18$ and $n(\\mathrm{A} \\cup \\mathrm{B}) = 35$, then $n(\\mathrm{A} \\cap \\mathrm{B})$$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $4$",
+    "explanation": "$n(A \\cap B)=22+18-35=5$ (Option B).",
     "linked_note_id": "CH06-sec-operations-on-sets",
     "source": "textbook",
     "linksTo": "math-ch06noperations"

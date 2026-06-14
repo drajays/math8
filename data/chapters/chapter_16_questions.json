@@ -79,7 +79,7 @@
     "topicId": "math-ch16",
     "type": "mcq",
     "subtopic": "Glassbox Question Bank",
-    "question": "Point (-10, 0) lies",
+    "question": "Describe the position of the point $(-10, 0)$.",
     "options": [
       "on the negative direction of x-axis",
       "in the third quadrant",
@@ -90,22 +90,17 @@
     "answer": "on the negative direction of x-axis",
     "glassboxSteps": [
       {
-        "rule": "Given",
-        "why": "Restate the problem.",
-        "math": "Point (-10, 0) lies"
+        "rule": "Read coordinates",
+        "why": "$x=-10$ (10 units left); $y=0$ (no vertical shift).",
+        "math": "(-10,0)"
       },
       {
-        "rule": "Method",
-        "why": "Apply the chapter rule step by step.",
-        "math": "\\text{See linked note section}"
-      },
-      {
-        "rule": "Result",
-        "why": "Match with the correct option.",
-        "math": "on the negative direction of x-axis"
+        "rule": "On an axis",
+        "why": "If $y=0$, the point lies on the $x$-axis, not in a quadrant.",
+        "math": "\\text{negative }x\\text{-axis}"
       }
     ],
-    "explanation": "Step 1 (Given): Restate the problem. → $Point (-10, 0) lies$ Step 2 (Method): Apply the chapter rule step by step. → $\\text{See linked note section}$ Step 3 (Result): Match with the correct option. → $on the negative direction of x-axis$",
+    "explanation": "$(-10,0)$ lies on the negative $x$-axis, not in the third quadrant.",
     "linked_note_id": "CH16-sec-coordinate-system-and-graphs",
     "source": "textbook",
     "linksTo": "math-ch16ncoordinate"
